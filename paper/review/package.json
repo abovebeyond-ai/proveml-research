@@ -5,8 +5,13 @@
   "description": "The Vera review of ProveML paper 1: the build, its adapters, and the records that make the page reproducible.",
   "scripts": {
     "adapt": "node tex-adapter.mjs ../proveml-spec.tex > report/paper1-blocks.json",
-    "build": "node build.mjs && node artifact-gate.mjs report/review-page.html && node stream-infer.mjs report/review-page-artifact.html",
     "regenerate": "node regenerate.mjs",
+    "build": "node build.mjs",
+    "infer": "node build.mjs && node infer-cli.mjs && node build.mjs",
+    "gate": "node ${VERA_HOME:-$HOME/Projects/vera}/skill/gate.mjs report/review-page.html report/review-page-vera.html",
+    "push": "node ${VERA_HOME:-$HOME/Projects/vera}/skill/cli.mjs push paper1 report/review-page-vera.html --instance prod --by hello@shanedeconinck.be --title \"ProveML: Inline Claim Markup for Deterministic Verification of AI-Generated Text\"",
+    "pull": "node ${VERA_HOME:-$HOME/Projects/vera}/skill/cli.mjs pull paper1 report/review.json --instance prod",
+    "build:artifact": "node build.mjs && node artifact-gate.mjs report/review-page.html && node stream-infer.mjs report/review-page-artifact.html",
     "anchor": "node anchor-hedera.mjs && node anchor-rekor.mjs && node anchor-vana.mjs",
     "sign": "node sign-review.mjs",
     "verify": "node anchor-hedera.mjs --verify && node anchor-rekor.mjs --verify && node anchor-vana.mjs --verify && node sign-review.mjs --verify"
