@@ -470,8 +470,10 @@ const visibility = {}; const contentKeys = {};
     contentKeys[sid] = JSON.parse(readFileSync(kf, 'utf8')).raw;
   }
 }
+const approvalsRecord = existsSync('report/approvals.json') ? JSON.parse(readFileSync('report/approvals.json', 'utf8')) : null;
 const pageOptions = {
   visibility, contentKeys,
+  ...(approvalsRecord ? { approvals: approvalsRecord } : {}),
   store, subjects, snapshots, manifests, sourceTitles, adapters,
   allowMismatch: true,
   brandCss: houseCss().css, brandCssSource: houseCss().source,
