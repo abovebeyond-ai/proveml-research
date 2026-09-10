@@ -470,6 +470,12 @@ const { html, verified, total, proofs, roots } = reviewPage({
   leftLabel: 'the paper says', rightLabel: 'the source',
 });
 writeFileSync('report/review-page.html', html);
+// The index of the sources, for the push to Vera: titles, groups, and the effective
+// signatures (a PDPP grant counts as a rung), so the hosted record can name them.
+{
+  const groups = {}; for (const g of adapters.sourceGroups || []) for (const sid of g.ids) groups[sid] = g.title;
+  writeFileSync('report/sources/index.json', JSON.stringify({ titles: sourceTitles, groups, signatures: adapters.signatures || {} }, null, 1) + '\n');
+}
 mkdirSync('report/manifests', { recursive: true });
 for (const [id, m] of Object.entries(manifests)) writeFileSync('report/manifests/' + id + '.json', JSON.stringify(m, null, 1) + '\n');
 writeFileSync('report/review-page-proofs.json', JSON.stringify({ built: new Date().toISOString(), proofs }, null, 1) + '\n');
