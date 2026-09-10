@@ -1,6 +1,8 @@
 import { reviewPage, evidenceReviewId } from 'proveml/review-page';
 import { buildManifest } from 'proveml/manifest';
-import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'node:fs';
+import { writeFileSync, readFileSync, existsSync, mkdirSync, readdirSync, unlinkSync } from 'node:fs';
+import { join } from 'node:path';
+import { homedir } from 'node:os';
 import { createHash } from 'node:crypto';
 // A paragraph is addressed by what it says, not where it sits: its checks follow it
 // through renumbering and rebuilds, and expire only when its text changes.
@@ -436,7 +438,7 @@ const adapters = {
     { role: 'signed sources', options: [{ name: 'proveml-credential', state: 'available', note: 'source vouchers via did:web, in proveml-demos' }, { name: 'signed exchanges', state: 'known' }, { name: 'C2PA manifests', state: 'known' }], name: 'signed sources', what: 'a source that arrives signed lands on the top rung without any of the above', state: 'available', fits: 'proveml-credential, signed exchanges, C2PA manifests' },
   ],
   out: [
-    { role: 'hand-back', options: [{ name: 'artifact republish', state: 'plugged' }, { name: 'POST endpoint', state: 'available', note: 'the page already knows how to post its judgements to a URL' }, { name: 'clipboard copy', state: 'available' }, { name: 'git commit of the judgements', state: 'known' }], icon: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a5 5 0 0 1 8.7-3.4L13 6M13 2.5V6h-3.5M13 8a5 5 0 0 1-8.7 3.4L3 10M3 13.5V10h3.5"/></svg>', name: 'hand-back', plug: 'artifact republish', what: 'your judgements travel back into the page and into the next build, rekeyed to the hashes of the blocks they judged, so a yes survives renumbering and dies only when its text changes', fits: 'any channel that returns the judgements JSON' },
+    { role: 'hand-back', options: [{ name: 'Vera, vera.abovebeyond.ai', state: 'plugged', note: 'every judgement saved to the record as it is made, with who made it; hand back closes the round' }, { name: 'artifact republish', state: 'available', note: 'the page republishes itself with the judgements baked in' }, { name: 'clipboard copy', state: 'available' }, { name: 'git commit of the judgements', state: 'known' }], icon: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a5 5 0 0 1 8.7-3.4L13 6M13 2.5V6h-3.5M13 8a5 5 0 0 1-8.7 3.4L3 10M3 13.5V10h3.5"/></svg>', name: 'hand-back', plug: 'Vera, vera.abovebeyond.ai', what: 'every judgement is saved to the record as it is made, with who made it, and the next build reads it there, rekeyed to the hashes of the blocks they judged, so a yes survives renumbering and dies only when its text changes', fits: 'any channel that returns the judgements JSON' },
     signoffs.length
       ? { role: 'signer', name: 'signer', plug: 'did:web:abovebeyond.ai, key-1 (Ed25519)', what: 'the review root signed with the reviewer\'s did:web key and verified against the public DID document: signature, contract, and the root recomputed from the review', note: 'sign-review.mjs, using the credential adapter from proveml-demos', last: signoffs[signoffs.length - 1].issuedAt.slice(0, 16).replace('T', ' ') + ' UTC, ' + signoffs.length + ' sign-off' + (signoffs.length === 1 ? '' : 's'), fits: 'any signer: a passkey, another did:web key, an HSM', options: [{ name: 'did:web:abovebeyond.ai key-1', state: 'plugged' }, { name: 'passkey', state: 'available', note: 'the passkey signer in proveml-demos' }, { name: 'HSM', state: 'known' }] }
       : { role: 'signer', name: 'signer', what: 'nothing signs the review root yet', state: 'available', fits: 'a passkey, a did:web key, an HSM', options: [{ name: 'did:web key', state: 'available' }, { name: 'passkey', state: 'available' }, { name: 'HSM', state: 'known' }] },
@@ -449,7 +451,29 @@ const adapters = {
     ...(pdppReview ? [{ role: 'as a PDPP source', name: 'pdpp-out', plug: 'PDPP 0.1 source, two streams', what: 'the review served as a PDPP source: streams judgements and signoffs under a purpose-bound grant, so an editor reads the approvals on the reviewer\'s terms; fetched once as client editor for editorial review, with the credential itself withheld by the field projection', note: 'pdpp-review-server.mjs; ' + pdppReview.signoffs.length + ' sign-off record(s) and ' + pdppReview.judgements + ' judgement record(s) served under grant ' + pdppReview.grant.grant_id, fits: 'any PDPP client', options: [{ name: 'local source, Core 4/5/7/8', state: 'plugged' }, { name: 'a hosted PDPP source', state: 'known' }] }] : []),
   ],
 };
-const { html, verified, total, proofs, roots } = reviewPage({
+// Visibility per source, chosen here by the owner: the paper's own data and anything fetched
+// under a grant travel withheld (ciphertext under a content key the reader's device unwraps);
+// cited public works travel open; the pupil data is sealed, the demonstration of that state.
+// Content keys live outside the repository, one file per source, and are made on first use.
+import { randomBytes } from 'node:crypto';
+const KEYS_DIR = join(homedir(), '.config', 'vera', 'keys', 'paper1');
+const visibility = {}; const contentKeys = {};
+{
+  const own = new Set(['summary', 'summary2', 'residuals', 'deployment', 'benchmarks', 'dataset', 'finance', 'package']);
+  for (const sid of Object.keys(manifests)) visibility[sid] = sid === 'pdpp-students' ? 'sealed' : own.has(sid) ? 'withheld' : 'open';
+  if (process.env.VERA_VISIBILITY) for (const kv of process.env.VERA_VISIBILITY.split(',')) { const [sid, v] = kv.split('='); if (sid && v) visibility[sid.trim()] = v.trim(); }
+  mkdirSync(KEYS_DIR, { recursive: true });
+  for (const [sid, v] of Object.entries(visibility)) {
+    if (v !== 'withheld') continue;
+    const kf = join(KEYS_DIR, sid + '.json');
+    if (!existsSync(kf)) { const raw = randomBytes(32); writeFileSync(kf, JSON.stringify({ kid: 'ck_' + createHash('sha256').update(raw).digest('hex').slice(0, 16), raw: raw.toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '') }) + '\n', { mode: 0o600 }); }
+    contentKeys[sid] = JSON.parse(readFileSync(kf, 'utf8')).raw;
+  }
+}
+const approvalsRecord = existsSync('report/approvals.json') ? JSON.parse(readFileSync('report/approvals.json', 'utf8')) : null;
+const pageOptions = {
+  visibility, contentKeys,
+  ...(approvalsRecord ? { approvals: approvalsRecord } : {}),
   store, subjects, snapshots, manifests, sourceTitles, adapters,
   allowMismatch: true,
   brandCss: houseCss().css, brandCssSource: houseCss().source,
@@ -468,10 +492,29 @@ const { html, verified, total, proofs, roots } = reviewPage({
   storeName: 'ProveML: Inline Claim Markup for Deterministic Verification of AI-Generated Text', subjectsWord: 'sources',
   brand: { mark: '(ˆ◡ˆ)⌕', name: 'vera' },
   leftLabel: 'the paper says', rightLabel: 'the source',
-});
+};
+const { html, verified, total, proofs, roots } = reviewPage(pageOptions);
 writeFileSync('report/review-page.html', html);
+// The index of the sources, for the push to Vera: titles, groups, and the effective
+// signatures (a PDPP grant counts as a rung), so the hosted record can name them.
+{
+  const groups = {}; for (const g of pageOptions.sourceGroups || []) for (const sid of g.ids) groups[sid] = g.title;
+  writeFileSync('report/sources/index.json', JSON.stringify({ titles: sourceTitles, groups, signatures: pageOptions.signatures || {}, visibility }, null, 1) + '\n');
+}
 mkdirSync('report/manifests', { recursive: true });
 for (const [id, m] of Object.entries(manifests)) writeFileSync('report/manifests/' + id + '.json', JSON.stringify(m, null, 1) + '\n');
+// What the push sends for a withheld or sealed source: the same manifest without its text.
+{
+  const { encryptManifest, sealManifest, importContentKey } = await import(process.env.VERA_HOME ? process.env.VERA_HOME + '/skill/lib/crypto.mjs' : homedir() + '/Projects/vera/skill/lib/crypto.mjs');
+  mkdirSync('report/manifests-enc', { recursive: true });
+  for (const f of (existsSync('report/manifests-enc') ? readdirSync('report/manifests-enc') : [])) unlinkSync('report/manifests-enc/' + f);
+  for (const [id, m] of Object.entries(manifests)) {
+    if (visibility[id] === 'withheld') { const k = JSON.parse(readFileSync(join(KEYS_DIR, id + '.json'), 'utf8')); writeFileSync('report/manifests-enc/' + id + '.json', JSON.stringify(await encryptManifest(m, await importContentKey(k.raw), k.kid)) + '\n'); }
+    else if (visibility[id] === 'sealed') writeFileSync('report/manifests-enc/' + id + '.json', JSON.stringify(sealManifest(m)) + '\n');
+  }
+  const counts = Object.values(visibility).reduce((a, v) => ((a[v] = (a[v] || 0) + 1), a), {});
+  console.log('visibility:', Object.entries(counts).map(([k, n]) => n + ' ' + k).join(', '));
+}
 writeFileSync('report/review-page-proofs.json', JSON.stringify({ built: new Date().toISOString(), proofs }, null, 1) + '\n');
 writeFileSync('report/roots.json', JSON.stringify(roots, null, 1) + '\n');
 const ac = auditCheck(); console.log('audit quotes', ac.ok + ' ok', ac.bad.length ? 'BAD ' + ac.bad.join(',') : '');

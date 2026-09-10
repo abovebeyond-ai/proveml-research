@@ -1,0 +1,271 @@
+{
+ "titles": {
+  "benchmarks": "benchmark files (regenerated)",
+  "dataset": "dataset metadata",
+  "finance": "finance benchmark",
+  "summary": "frontier study summary (experiments/run-frontier.sh)",
+  "residuals": "frontier residual errors",
+  "deployment": "deployment numbers (deployment-numbers.mjs)",
+  "package": "the npm package (package.json)",
+  "summary2": "second frontier study summary (--tag frontier2)",
+  "magesh2025": "Magesh et al. 2025, arXiv 2405.20362 (abstract page)",
+  "liu2026citations": "Liu et al. 2026, arXiv 2606.21155 (abstract page)",
+  "omnibus2026": "Regulation (EU) 2026/1744, EUR-Lex",
+  "art50guidelines2026": "Article 50 guidelines, European Commission",
+  "pdpp-students": "pupil records, stream students, under a PDPP grant",
+  "cite-alignscore": "AlignScore (2023): AlignScore: Evaluating Factual Consistency with a Unified Alignment Function",
+  "cite-anthropicinterp": "anthropicinterp",
+  "cite-c2pa": "c2pa",
+  "cite-chan2026soundness": "Chan et al. (2026): Position: Logical Soundness is not a Reliable Criterion for Neurosymbolic Fact-Checking with LLMs",
+  "cite-claimlocked2026": "Claim-locked reporting (2026): Provenance Before Prose: Claim-Locked Reporting",
+  "cite-datareferencing2026": "The data-referencing study (2026): When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors",
+  "cite-deloitte2025": "deloitte2025",
+  "cite-dspy-assertions": "DSPy Assertions: Computational Constraints for Self-Refining Language Model Pipelines",
+  "cite-dtg2026": "Decode-time grammars (2026): Decode-Time Grammars",
+  "cite-euaiact": "The EU AI Act (2026): The EU AI Act: enforcement of the transparency rules",
+  "cite-evergreen2026": "Evergreen (2026): Evergreen: Efficient Claim Verification for Semantic Aggregates",
+  "cite-factool": "FacTool: Factuality Detection in Generative AI -- A Tool Augmented Framework for Multi-Task and Multi-Domain Scenarios",
+  "cite-factscore": "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation",
+  "cite-farquhar2024": "farquhar2024",
+  "cite-fever": "FEVER (2018): FEVER: a Large-scale Dataset for Fact Extraction and VERification",
+  "cite-feverous": "FEVEROUS (2021): FEVEROUS: Fact Extraction and VERification Over Unstructured and Structured information",
+  "cite-fhir-observation": "fhir-observation",
+  "cite-fhir": "fhir",
+  "cite-fullcite2026": "FullCite (2026): Explicit Evidence Grounding via Structured Inline Citation Generation",
+  "cite-gemini-double-check": "View related sources & double-check responses from Gemini Apps",
+  "cite-googleground": "googleground",
+  "cite-guardrails-ai": "Validators",
+  "cite-guardrails": "guardrails",
+  "cite-halldetect2026": "HallDetect (2026): HallDetect: Reference-Free Hallucination Detection",
+  "cite-ixbrl": "iXBRL",
+  "cite-ji2023": "ji2023",
+  "cite-kalai2024": "Calibrated language models (2024): Calibrated Language Models Must Hallucinate",
+  "cite-kalai2025": "Why Language Models Hallucinate (2025): Why Language Models Hallucinate",
+  "cite-leesee2004": "leesee2004",
+  "cite-magesh2025": "The legal-tools study (2025): Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools",
+  "cite-mccain2026": "mccain2026",
+  "cite-minicheck": "MiniCheck (2024): MiniCheck: Efficient Fact-Checking of LLMs on Grounding Documents",
+  "cite-nemo-guardrails": "NVIDIA NeMo Guardrails",
+  "cite-nemo": "nemo",
+  "cite-oraclegen": "oraclegen",
+  "cite-orgad2025": "orgad2025",
+  "cite-ouyang2022": "ouyang2022",
+  "cite-pcn2025": "Proof-Carrying Numbers (2025): Proof-Carrying Numbers (PCN): A Protocol for Trustworthy Numeric Answers from LLMs via Claim Verification",
+  "cite-picard": "PICARD (2021): PICARD: Parsing Incrementally for Constrained Auto-Regressive Decoding",
+  "cite-prov": "prov",
+  "cite-rarr": "RARR: Researching and Revising What Language Models Say, Using Language Models",
+  "cite-rdfa": "RDFa (2015): RDFa 1.1 Primer",
+  "cite-refchecker": "refchecker",
+  "cite-safe": "Long-form factuality in large language models",
+  "cite-selfcheckgpt": "selfcheckgpt",
+  "cite-summac": "SummaC (2022): SummaC: Re-Visiting NLI-based Models for Inconsistency Detection in Summarization",
+  "cite-symgen": "SymGen (2024): Towards Verifiable Text Generation with Symbolic References",
+  "cite-synchromesh": "Synchromesh (2022): Synchromesh: Reliable Code Generation from Pre-trained Language Models",
+  "cite-tabfact": "TabFact (2020): TabFact: A Large-scale Dataset for Table-based Fact Verification",
+  "cite-totto": "totto",
+  "cite-verifin2026": "VeriFin (2026): VeriFin: Neurosymbolic Verification for Numerical Financial QA",
+  "cite-webgpt": "WebGPT: Improving the factual accuracy of language models through web browsing",
+  "cite-xbrl": "xbrl",
+  "cite-xu2024": "xu2024"
+ },
+ "groups": {
+  "summary": "the paper’s own data",
+  "summary2": "the paper’s own data",
+  "residuals": "the paper’s own data",
+  "deployment": "the paper’s own data",
+  "benchmarks": "the paper’s own data",
+  "dataset": "the paper’s own data",
+  "finance": "the paper’s own data",
+  "package": "the paper’s own data",
+  "magesh2025": "works it cites",
+  "liu2026citations": "works it cites",
+  "cite-alignscore": "works it cites",
+  "cite-anthropicinterp": "works it cites",
+  "cite-c2pa": "works it cites",
+  "cite-chan2026soundness": "works it cites",
+  "cite-claimlocked2026": "works it cites",
+  "cite-datareferencing2026": "works it cites",
+  "cite-deloitte2025": "works it cites",
+  "cite-dspy-assertions": "works it cites",
+  "cite-dtg2026": "works it cites",
+  "cite-euaiact": "works it cites",
+  "cite-evergreen2026": "works it cites",
+  "cite-factool": "works it cites",
+  "cite-factscore": "works it cites",
+  "cite-farquhar2024": "works it cites",
+  "cite-fever": "works it cites",
+  "cite-feverous": "works it cites",
+  "cite-fhir-observation": "works it cites",
+  "cite-fhir": "works it cites",
+  "cite-fullcite2026": "works it cites",
+  "cite-gemini-double-check": "works it cites",
+  "cite-googleground": "works it cites",
+  "cite-guardrails-ai": "works it cites",
+  "cite-guardrails": "works it cites",
+  "cite-halldetect2026": "works it cites",
+  "cite-ixbrl": "works it cites",
+  "cite-ji2023": "works it cites",
+  "cite-kalai2024": "works it cites",
+  "cite-kalai2025": "works it cites",
+  "cite-leesee2004": "works it cites",
+  "cite-magesh2025": "works it cites",
+  "cite-mccain2026": "works it cites",
+  "cite-minicheck": "works it cites",
+  "cite-nemo-guardrails": "works it cites",
+  "cite-nemo": "works it cites",
+  "cite-oraclegen": "works it cites",
+  "cite-orgad2025": "works it cites",
+  "cite-ouyang2022": "works it cites",
+  "cite-pcn2025": "works it cites",
+  "cite-picard": "works it cites",
+  "cite-prov": "works it cites",
+  "cite-rarr": "works it cites",
+  "cite-rdfa": "works it cites",
+  "cite-refchecker": "works it cites",
+  "cite-safe": "works it cites",
+  "cite-selfcheckgpt": "works it cites",
+  "cite-summac": "works it cites",
+  "cite-symgen": "works it cites",
+  "cite-synchromesh": "works it cites",
+  "cite-tabfact": "works it cites",
+  "cite-totto": "works it cites",
+  "cite-verifin2026": "works it cites",
+  "cite-webgpt": "works it cites",
+  "cite-xbrl": "works it cites",
+  "cite-xu2024": "works it cites",
+  "omnibus2026": "regulation and official pages",
+  "art50guidelines2026": "regulation and official pages",
+  "pdpp-students": "personal data under a grant"
+ },
+ "signatures": {
+  "magesh2025": {
+   "level": "witnessed",
+   "issuer": "arxiv.org",
+   "method": "tls-transport+rfc3161",
+   "verifiedAt": "2026-09-02",
+   "transport": {
+    "host": "arxiv.org",
+    "certSha256": "74:9D:90:F5:22:6E:08:50:B2:91:9F:1E:61:9E:6A:86:86:4B:8B:20:6E:F9:B1:63:B5:31:5B:11:01:A9:AF:32",
+    "issuer": "/C=US/O=Certainly/CN=Certainly Intermediate R1",
+    "notAfter": "Sep 25 02:42:20 2026 GMT",
+    "fetchedAt": "2026-09-02T22:16:26.686Z",
+    "sameAsArchived": true,
+    "quotesInRefetch": {
+     "present": 1,
+     "of": 1
+    }
+   },
+   "timestamp": {
+    "tsa": "freetsa.org",
+    "at": "Sep  2 22:16:27 2026 GMT"
+   },
+   "witness": {
+    "archive": "web.archive.org",
+    "url": "https://web.archive.org/web/20260902221731/https://arxiv.org/abs/2405.20362",
+    "at": "2026-09-02T22:17:31Z"
+   }
+  },
+  "liu2026citations": {
+   "level": "witnessed",
+   "issuer": "arxiv.org",
+   "method": "tls-transport+rfc3161",
+   "verifiedAt": "2026-09-02",
+   "transport": {
+    "host": "arxiv.org",
+    "certSha256": "74:9D:90:F5:22:6E:08:50:B2:91:9F:1E:61:9E:6A:86:86:4B:8B:20:6E:F9:B1:63:B5:31:5B:11:01:A9:AF:32",
+    "issuer": "/C=US/O=Certainly/CN=Certainly Intermediate R1",
+    "notAfter": "Sep 25 02:42:20 2026 GMT",
+    "fetchedAt": "2026-09-02T22:16:27.376Z",
+    "sameAsArchived": true,
+    "quotesInRefetch": {
+     "present": 1,
+     "of": 1
+    }
+   },
+   "timestamp": {
+    "tsa": "freetsa.org",
+    "at": "Sep  2 22:16:27 2026 GMT"
+   },
+   "witness": {
+    "archive": "web.archive.org",
+    "url": "https://web.archive.org/web/20260902221830/https://arxiv.org/abs/2606.21155",
+    "at": "2026-09-02T22:18:30Z"
+   }
+  },
+  "omnibus2026": {
+   "level": "timestamped",
+   "issuer": "eur-lex.europa.eu",
+   "method": "tls-transport+rfc3161",
+   "verifiedAt": "2026-09-02",
+   "transport": {
+    "host": "eur-lex.europa.eu",
+    "certSha256": "4A:FE:0F:9E:67:CD:6F:95:55:2F:B6:37:F0:6A:2E:51:06:2A:40:09:A4:92:25:B2:F9:4F:DC:73:70:52:4C:E8",
+    "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M04",
+    "notAfter": "Dec 15 23:59:59 2026 GMT",
+    "fetchedAt": "2026-09-02T22:16:28.850Z",
+    "sameAsArchived": false,
+    "quotesInRefetch": {
+     "present": 1,
+     "of": 1
+    }
+   },
+   "timestamp": {
+    "tsa": "freetsa.org",
+    "at": "Sep  2 22:16:29 2026 GMT"
+   }
+  },
+  "pdpp-students": {
+   "level": "granted",
+   "issuer": "http://127.0.0.1:8790",
+   "method": "pdpp-0.1 client fetch",
+   "verifiedAt": "2026-09-03",
+   "grant": {
+    "version": "0.1.0",
+    "grant_id": "grt_7ab57693",
+    "issued_at": "2026-09-03T21:37:15.638Z",
+    "subject": {
+     "id": "school:sint-amandus"
+    },
+    "client": {
+     "client_id": "vera"
+    },
+    "source": {
+     "kind": "provider_native",
+     "id": "http://127.0.0.1:8790"
+    },
+    "source_declaration": {
+     "version": "2026-09-03"
+    },
+    "purpose_code": "https://pdpp.dev/purpose/research",
+    "access_mode": "single_use",
+    "streams": [
+     {
+      "name": "students",
+      "instance_ids": [
+       "sint-amandus-2025-2026"
+      ],
+      "fields": [
+       "id",
+       "offering",
+       "grade",
+       "ev",
+       "pass",
+       "source_updated_at"
+      ]
+     }
+    ],
+    "expires_at": "2026-09-03T22:37:15.638Z",
+    "acceptance": "explicit local provisioning"
+   },
+   "records": 741,
+   "pages": 8,
+   "fetchedAt": "2026-09-03T21:37:15.689Z",
+   "withheld": [
+    "name",
+    "class",
+    "school",
+    "stream_track"
+   ]
+  }
+ }
+}
