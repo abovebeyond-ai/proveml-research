@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{59}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -14,6 +14,29 @@ R.~Aly, Z.~Guo, M.~Schlichtkrull, J.~Thorne, A.~Vlachos, C.~Christodoulopoulos,
 \newblock In \emph{Proc. NeurIPS Datasets and Benchmarks Track}, 2021.
 \newblock arXiv:2106.05707.
 
+\bibitem[{Amazon Web Services}(2026{\natexlab{a}})]{bedrockautoreasoning2026}
+{Amazon Web Services}.
+\newblock What are automated reasoning checks in amazon bedrock guardrails?
+\newblock Amazon Bedrock User Guide,
+  \url{https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html},
+  2026{\natexlab{a}}.
+\newblock Accessed 10 September 2026.
+
+\bibitem[{Amazon Web Services}(2026{\natexlab{b}})]{bedrockgrounding2026}
+{Amazon Web Services}.
+\newblock Use contextual grounding check to filter hallucinations in responses.
+\newblock Amazon Bedrock User Guide,
+  \url{https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-contextual-grounding-check.html},
+  2026{\natexlab{b}}.
+\newblock Accessed 10 September 2026.
+
+\bibitem[Cao et~al.(2024)Cao, Raman, Dervovic, and Tan]{cao2024}
+Tianyu Cao, Natraj Raman, Danial Dervovic, and Chenhao Tan.
+\newblock Characterizing multimodal long-form summarization: A case study on
+  financial reports.
+\newblock arXiv:2404.06162, 2024.
+\newblock URL \url{https://arxiv.org/abs/2404.06162}.
+
 \bibitem[Chan et~al.(2026)Chan, Gaizauskas, and Zhao]{chan2026soundness}
 Jason Chan, Robert Gaizauskas, and Zhixue Zhao.
 \newblock Position: Logical soundness is not a reliable criterion for
@@ -26,6 +49,24 @@ W.~Chen, H.~Wang, J.~Chen, Y.~Zhang, H.~Wang, S.~Li, X.~Zhou, and W.~Y. Wang.
 \newblock {TabFact}: A large-scale dataset for table-based fact verification.
 \newblock In \emph{Proc. ICLR}, 2020.
 \newblock arXiv:1909.02164.
+
+\bibitem[Clark et~al.(2021)Clark, August, Serrano, Haduong, Gururangan, and
+  Smith]{clark2021}
+Elizabeth Clark, Tal August, Sofia Serrano, Nikita Haduong, Suchin Gururangan,
+  and Noah~A. Smith.
+\newblock All that's `human' is not gold: Evaluating human evaluation of
+  generated text.
+\newblock In \emph{Proc. ACL-IJCNLP (Volume 1: Long Papers)}, pages 7282--7296,
+  2021.
+\newblock \doi{10.18653/v1/2021.acl-long.565}.
+
+\bibitem[Dinu and Nadkarni(2007)]{dinu2007}
+Valentin Dinu and Prakash Nadkarni.
+\newblock Guidelines for the effective use of entity-attribute-value modeling
+  for biomedical databases.
+\newblock \emph{International Journal of Medical Informatics}, 76\penalty0
+  (11--12):\penalty0 769--779, 2007.
+\newblock \doi{10.1016/j.ijmedinf.2006.09.023}.
 
 \bibitem[{European AI Office}(2026)]{transparencycode2026}
 {European AI Office}.
@@ -45,17 +86,20 @@ W.~Chen, H.~Wang, J.~Chen, Y.~Zhang, H.~Wang, S.~Li, X.~Zhou, and W.~Y. Wang.
 \bibitem[{European Parliament and Council of the European
   Union}(2024)]{euaiact}
 {European Parliament and Council of the European Union}.
-\newblock Regulation ({EU}) 2024/1689 laying down harmonised rules on
-  artificial intelligence (artificial intelligence act).
-\newblock Official Journal of the European Union, 2024.
+\newblock Regulation ({EU}) 2024/1689 of the {European Parliament} and of the
+  {Council} of 13 {June} 2024 laying down harmonised rules on artificial
+  intelligence.
+\newblock Artificial Intelligence Act. Official Journal of the European Union,
+  \url{https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng}, 2024.
 
 \bibitem[{European Parliament and Council of the European
   Union}(2026)]{omnibus2026}
 {European Parliament and Council of the European Union}.
-\newblock Regulation ({EU}) 2026/1744 of 8 july 2026 amending regulations
-  ({EU}) 2024/1689, ({EU}) 2018/1139 and ({EU}) 2023/1230 as regards the
-  simplification of the implementation of harmonised rules on artificial
-  intelligence ({Digital Omnibus} on {AI}).
+\newblock Regulation ({EU}) 2026/1744 of the {European Parliament} and of the
+  {Council} of 8 {July} 2026 amending regulations ({EU}) 2024/1689, ({EU})
+  2018/1139 and ({EU}) 2023/1230 as regards the simplification of the
+  implementation of harmonised rules on artificial intelligence ({Digital
+  Omnibus} on {AI}).
 \newblock Official Journal of the European Union,
   \url{https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng}, 2026.
 
@@ -64,11 +108,39 @@ Xiao Fan, Jingyuan Li, Hongbin Guo, Yubo Han, and Yi~Zhang.
 \newblock Provenance before prose: Claim-locked reporting.
 \newblock arXiv:2608.25336, 2026.
 
+\bibitem[Gao et~al.(2023)Gao, Yen, Yu, and Chen]{alce}
+T.~Gao, H.~Yen, J.~Yu, and D.~Chen.
+\newblock Enabling large language models to generate text with citations.
+\newblock In \emph{Proc. EMNLP}, pages 6465--6488, 2023.
+\newblock \doi{10.18653/v1/2023.emnlp-main.398}.
+
 \bibitem[Hall et~al.(2026)Hall, Shome, and Eiers]{verifin2026}
 Bethel Hall, Sachi Shome, and William Eiers.
 \newblock {VeriFin}: A neurosymbolic framework for verifying {LLM}-generated
   financial claims.
 \newblock arXiv:2608.10213, 2026.
+
+\bibitem[Jakesch et~al.(2023)Jakesch, Hancock, and Naaman]{jakesch2023}
+Maurice Jakesch, Jeffrey~T. Hancock, and Mor Naaman.
+\newblock Human heuristics for {AI}-generated language are flawed.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 120\penalty0
+  (11):\penalty0 e2208839120, 2023.
+\newblock \doi{10.1073/pnas.2208839120}.
+
+\bibitem[Ji et~al.(2023)Ji, Lee, Frieske, Yu, Su, Xu, Ishii, Bang, Madotto, and
+  Fung]{ji2023}
+Z.~Ji, N.~Lee, R.~Frieske, T.~Yu, D.~Su, Y.~Xu, E.~Ishii, Y.~J. Bang,
+  A.~Madotto, and P.~Fung.
+\newblock Survey of hallucination in natural language generation.
+\newblock \emph{ACM Computing Surveys}, 55\penalty0 (12), 2023.
+\newblock \doi{10.1145/3571730}.
+
+\bibitem[Jones and Bergen(2026)]{jones2026}
+Cameron~R. Jones and Benjamin~K. Bergen.
+\newblock Large language models pass a standard three-party {Turing} test.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 123\penalty0
+  (21):\penalty0 e2524472123, 2026.
+\newblock \doi{10.1073/pnas.2524472123}.
 
 \bibitem[Kalai and Vempala(2024)]{kalai2024}
 A.~T. Kalai and S.~S. Vempala.
@@ -96,10 +168,22 @@ Jiwon Lee, Seokhyun Han, Rathijit Sen, Jinsoo Yeom, Ugur Cetintemel, and
 \newblock Evergreen: Efficient claim verification for semantic aggregates.
 \newblock arXiv:2604.26180, 2026.
 
+\bibitem[Liu et~al.(2023)Liu, Zhang, and Liang]{liu2023verifiability}
+Nelson~F. Liu, Tianyi Zhang, and Percy Liang.
+\newblock Evaluating verifiability in generative search engines.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  EMNLP 2023}, pages 7001--7025, 2023.
+\newblock \doi{10.18653/v1/2023.findings-emnlp.467}.
+
 \bibitem[Liu et~al.(2026)Liu, Stammbach, and Henderson]{liu2026citations}
 Patty Liu, Dominik Stammbach, and Peter Henderson.
 \newblock Who checks the citations? benchmarking legal hallucination detection.
 \newblock arXiv:2606.21155, 2026.
+
+\bibitem[MacFarlane(2024)]{commonmark}
+John MacFarlane.
+\newblock {CommonMark} spec.
+\newblock Version 0.31.2, \url{https://spec.commonmark.org/0.31.2/}, 2024.
 
 \bibitem[Magesh et~al.(2025)Magesh, Surani, Dahl, Suzgun, Manning, and
   Ho]{magesh2025}
@@ -117,11 +201,44 @@ N.~Mehrotra, A.~Kumar, S.~Gulwani, A.~Radhakrishna, and A.~Tiwari.
 \newblock In \emph{Proc. ACL Industry Track}, 2026.
 \newblock \doi{10.18653/v1/2026.acl-industry.138}.
 
+\bibitem[{Microsoft}(2026)]{azuregroundedness2026}
+{Microsoft}.
+\newblock Groundedness detection in azure ai content safety - azure ai
+  services.
+\newblock Azure AI Content Safety documentation,
+  \url{https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/groundedness},
+  2026.
+\newblock Accessed 10 September 2026.
+
+\bibitem[Nadkarni et~al.(1999)Nadkarni, Marenco, Chen, Skoufos, Shepherd, and
+  Miller]{nadkarni1999}
+Prakash~M. Nadkarni, Luis Marenco, Roland Chen, Emmanouil Skoufos, Gordon
+  Shepherd, and Perry Miller.
+\newblock Organization of heterogeneous scientific data using the {EAV/CR}
+  representation.
+\newblock \emph{Journal of the American Medical Informatics Association},
+  6\penalty0 (6):\penalty0 478--493, 1999.
+\newblock \doi{10.1136/jamia.1999.0060478}.
+
+\bibitem[Onweller et~al.(2026)Onweller, Lumer, Huber, Ramchandani, Subbiah, and
+  Feld]{citednotverified}
+H.~Onweller, E.~Lumer, A.~Huber, P.~Ramchandani, V.~K. Subbiah, and C.~Feld.
+\newblock Cited but not verified: Parsing and evaluating source attribution in
+  {LLM} deep research agents.
+\newblock arXiv:2605.06635, 2026.
+
 \bibitem[Oukelmoun et~al.(2026)Oukelmoun, Semmar, and
   De~Chalendar]{halldetect2026}
 Ismail Oukelmoun, Nasredine Semmar, and Ga{\"e}l De~Chalendar.
 \newblock {HallDetect}: Decomposed entailment for factuality checking.
 \newblock arXiv:2608.05823, 2026.
+
+\bibitem[Ozarda(2016)]{ozarda2016}
+Yesim Ozarda.
+\newblock Reference intervals: current status, recent developments and future
+  considerations.
+\newblock \emph{Biochemia Medica}, 26\penalty0 (1):\penalty0 5--16, 2016.
+\newblock \doi{10.11613/BM.2016.001}.
 
 \bibitem[Poesia et~al.(2022)Poesia, Polozov, Le, Tiwari, Soares, Meek, and
   Gulwani]{synchromesh}
@@ -131,6 +248,36 @@ G.~Poesia, O.~Polozov, V.~Le, A.~Tiwari, G.~Soares, C.~Meek, and S.~Gulwani.
 \newblock In \emph{Proc. ICLR}, 2022.
 \newblock arXiv:2201.11227.
 
+\bibitem[{Prometheus Authors}(2026)]{prometheusalerting}
+{Prometheus Authors}.
+\newblock Alerting rules.
+\newblock Prometheus documentation,
+  \url{https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/},
+  2026.
+\newblock Undated; accessed 10 September 2026.
+
+\bibitem[Rashkin et~al.(2023)Rashkin, Nikolaev, Lamm, Aroyo, Collins, Das,
+  Petrov, Tomar, Turc, and Reitter]{ais}
+H.~Rashkin, V.~Nikolaev, M.~Lamm, L.~Aroyo, M.~Collins, D.~Das, S.~Petrov,
+  G.~S. Tomar, I.~Turc, and D.~Reitter.
+\newblock Measuring attribution in natural language generation models.
+\newblock \emph{Computational Linguistics}, 49\penalty0 (4):\penalty0 777--840,
+  2023.
+\newblock \doi{10.1162/coli_a_00486}.
+
+\bibitem[Russell et~al.(2025)Russell, Karpinska, and Iyyer]{russell2025}
+Jenna Russell, Marzena Karpinska, and Mohit Iyyer.
+\newblock People who frequently use {ChatGPT} for writing tasks are accurate
+  and robust detectors of {AI}-generated text.
+\newblock In \emph{Proc. ACL (Volume 1: Long Papers)}, pages 5342--5373, 2025.
+\newblock \doi{10.18653/v1/2025.acl-long.267}.
+
+\bibitem[Schadow and McDonald(2024)]{ucum}
+Gunther Schadow and Clement~J. McDonald.
+\newblock The unified code for units of measure.
+\newblock Version 2.2, Regenstrief Institute and the {UCUM} Organization,
+  \url{https://ucum.org/ucum}, 2024.
+
 \bibitem[Scholak et~al.(2021)Scholak, Schucher, and Bahdanau]{picard}
 T.~Scholak, N.~Schucher, and D.~Bahdanau.
 \newblock {PICARD}: Parsing incrementally for constrained auto-regressive
@@ -138,11 +285,32 @@ T.~Scholak, N.~Schucher, and D.~Bahdanau.
 \newblock In \emph{Proc. EMNLP}, pages 9895--9901, 2021.
 \newblock \doi{10.18653/v1/2021.emnlp-main.779}.
 
+\bibitem[{SIX Financial Information}(2026)]{iso4217}
+{SIX Financial Information}.
+\newblock {ISO} 4217 - currency codes.
+\newblock Maintenance Agency for {ISO} 4217,
+  \url{https://www.six-group.com/en/products-services/financial-information/data-standards.html},
+  2026.
+
 \bibitem[Solatorio(2025)]{pcn2025}
 Aivin~V. Solatorio.
 \newblock Proof-carrying numbers ({PCN}): A protocol for trustworthy numeric
   answers from {LLMs} via claim verification.
 \newblock arXiv:2509.06902, 2025.
+
+\bibitem[{Stanford HAI}(2026)]{aiindex2026}
+{Stanford HAI}.
+\newblock The 2026 {AI} index report.
+\newblock Stanford Institute for Human-Centered Artificial Intelligence,
+  Economy chapter,
+  \url{https://hai.stanford.edu/ai-index/2026-ai-index-report/economy}, 2026.
+
+\bibitem[Sun et~al.(2025)Sun, Yin, Xu, Kolter, and Liu]{sun2025idiosyncrasies}
+Mingjie Sun, Yida Yin, Zhiqiu Xu, J.~Zico Kolter, and Zhuang Liu.
+\newblock Idiosyncrasies in large language models.
+\newblock In \emph{Proc. ICML}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2502.12150}.
+\newblock arXiv:2502.12150.
 
 \bibitem[Tang et~al.(2024)Tang, Laban, and Durrett]{minicheck}
 L.~Tang, P.~Laban, and G.~Durrett.
@@ -166,11 +334,56 @@ L.~Torroba~Hennigen, S.~Z. Shen, A.~Nrusimha, B.~Gapp, D.~Sontag, and Y.~Kim.
 \newblock In \emph{Proc. COLM}, 2024.
 \newblock arXiv:2311.09188.
 
+\bibitem[{Vectara}(2026)]{vectarahhem2026}
+{Vectara}.
+\newblock {HHEM}-2.1-open.
+\newblock Hugging Face,
+  \url{https://huggingface.co/vectara/hallucination_evaluation_model}, 2026.
+\newblock Accessed 10 September 2026.
+
 \bibitem[{W3C}(2015)]{rdfa}
 {W3C}.
 \newblock {RDFa} 1.1 primer --- third edition.
 \newblock W3C Working Group Note, \url{https://www.w3.org/TR/rdfa-primer/},
   2015.
+
+\bibitem[Walters and Wilder(2023)]{walters2023}
+William~H. Walters and Esther~Isabelle Wilder.
+\newblock Fabrication and errors in the bibliographic citations generated by
+  {ChatGPT}.
+\newblock \emph{Scientific Reports}, 13, 2023.
+\newblock \doi{10.1038/s41598-023-41032-5}.
+
+\bibitem[Wright et~al.(2026)Wright, Nall, Franklin, Horst, Kumah-Crystal,
+  Wright, and Mize]{wright2026}
+Aileen~P. Wright, Carolynn~K. Nall, Jacob J.~H. Franklin, Sara~N. Horst, Yaa~A.
+  Kumah-Crystal, Adam~T. Wright, and Dara~E. Mize.
+\newblock Enterprise-wide simultaneous deployment of ambient scribe technology:
+  lessons learned from an academic health system.
+\newblock \emph{Journal of the American Medical Informatics Association},
+  33\penalty0 (2), 2026.
+\newblock \doi{10.1093/jamia/ocaf186}.
+
+\bibitem[Wright et~al.(2022)Wright, Andrews, and Hutton]{jsonschema2022}
+Austin Wright, Henry Andrews, and Ben Hutton.
+\newblock {JSON} schema validation: A vocabulary for structural validation of
+  {JSON}.
+\newblock Internet-Draft draft-bhutton-json-schema-validation-01,
+  \url{https://json-schema.org/draft/2020-12/json-schema-validation}, 2022.
+
+\bibitem[{XBRL International}(2009{\natexlab{a}})]{xbrlvalidation2009}
+{XBRL International}.
+\newblock Validation 1.0.
+\newblock Recommendation 22 June 2009,
+  \url{https://www.xbrl.org/specification/validation/rec-2009-06-22/validation-rec-2009-06-22.html},
+  2009{\natexlab{a}}.
+
+\bibitem[{XBRL International}(2009{\natexlab{b}})]{xbrlvalueassertions2009}
+{XBRL International}.
+\newblock Value assertions 1.0.
+\newblock Recommendation 22 June 2009,
+  \url{https://www.xbrl.org/specification/valueassertions/rec-2009-06-22/valueassertions-rec-2009-06-22.html},
+  2009{\natexlab{b}}.
 
 \bibitem[{XBRL International}(2013)]{ixbrl}
 {XBRL International}.
@@ -178,6 +391,15 @@ L.~Torroba~Hennigen, S.~Z. Shen, A.~Nrusimha, B.~Gapp, D.~Sontag, and Y.~Kim.
 \newblock
   \url{https://www.xbrl.org/specification/inlinexbrl-part1/rec-2013-11-18/inlinexbrl-part1-rec-2013-11-18.html},
   2013.
+
+\bibitem[Xiong et~al.(2024)Xiong, Hu, Lu, Li, Fu, He, and Hooi]{xiong2024}
+Miao Xiong, Zhiyuan Hu, Xinyang Lu, Yifei Li, Jie Fu, Junxian He, and Bryan
+  Hooi.
+\newblock Can {LLMs} express their uncertainty? an empirical evaluation of
+  confidence elicitation in {LLMs}.
+\newblock In \emph{Proc. ICLR}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2306.13063}.
+\newblock arXiv:2306.13063.
 
 \bibitem[Yang et~al.(2026)Yang, Zhu, Han, Han, Shen, Wang, Ioannidis, and
   Rangwala]{datareferencing2026}
@@ -208,5 +430,12 @@ Shuoming Zhang, Ruiyuan Xu, Haofeng Li, Qiuchu Yu, Yangyu Zhang, Chunwei Xia,
 \newblock Decode-time grammars: Constrained {LLM} generation over a refinement
   order of grammar fragments.
 \newblock arXiv:2607.18357, 2026.
+
+\bibitem[Zhou et~al.(2024)Zhou, Hwang, Ren, and Sap]{zhou2024}
+Kaitlyn Zhou, Jena~D. Hwang, Xiang Ren, and Maarten Sap.
+\newblock Relying on the unreliable: The impact of language models' reluctance
+  to express uncertainty.
+\newblock In \emph{Proc. ACL (Volume 1: Long Papers)}, pages 3623--3643, 2024.
+\newblock \doi{10.18653/v1/2024.acl-long.198}.
 
 \end{thebibliography}

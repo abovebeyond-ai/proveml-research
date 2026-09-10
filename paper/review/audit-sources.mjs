@@ -53,17 +53,32 @@ export const auditSubjects = rw.map((c) => ({
   title: `${c.name} (${c.year})`,
   meta: c.title,
   claim: c.claim,
-  evidence: c.evidence.map((e) => ({ ...e, source: 'cite-' + c.id })),
+  // a claim about a cited work may quote a second archived document about it (the
+  // Commission's announcement next to the regulation): evidence may name its own source
+  evidence: c.evidence.map((e) => ({ ...e, source: 'cite-' + (e.source || c.id) })),
 }));
 
 // 2. a reference entry becomes a reading when its title sits in the archived snapshot
+// Typography differs between a bib entry and a rendered page (curly versus straight
+// quotes, "---" versus an em dash, title case); the match folds those, one code unit to
+// one, and the reading quotes the snapshot's own text at the matched span.
+const fold = (ch) => {
+  if ('\u201c\u201d\u201e"'.includes(ch)) return '"';
+  if ("\u2018\u2019\u201a`\u00b4'".includes(ch)) return "'";
+  if ('\u2013\u2014\u2010\u2011\u2212'.includes(ch)) return '-';
+  const l = ch.toLowerCase();
+  return l.length === 1 ? l : ch;
+};
+const foldStr = (s) => s.replace(/[\s\S]/g, fold);
 export const referenceEvidence = (key, title) => {
   const sid = 'cite-' + key;
   const snap = auditSnapshots[sid];
   if (!snap || !title) return null;
-  const t = squash(title);
-  if (!squash(snap).includes(t)) return null;
-  return { field: `paperref:${key}.title`, claimValue: title, basis: 'quote', source: sid, sourceQuote: t, sourceLocator: 'archived copy of the cited work, title' };
+  const t = foldStr(squash(title).replace(/\\&/g, '&').replace(/[{}]/g, '').replace(/---?/g, '-'));
+  const body = squash(snap);
+  const at = foldStr(body).indexOf(t);
+  if (at < 0) return null;
+  return { field: `paperref:${key}.title`, claimValue: title, basis: 'quote', source: sid, sourceQuote: body.slice(at, at + t.length), sourceLocator: 'archived copy of the cited work, title' };
 };
 
 // sanity: every quote in the audit must sit in its snapshot (it did when the audit was signed)

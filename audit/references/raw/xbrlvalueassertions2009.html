@@ -1,0 +1,749 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:s="http://xbrl.org/specification/2007" xmlns:diff="http://xbrl.org/specification/2007/diff"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Value Assertions 1.0</title><link rel="stylesheet" type="text/css" href="styles.css"></head><body>
+
+  <div class="head">
+<h1><a name="title" id="title"></a>Value Assertions 1.0</h1>
+<h2>Recommendation 22 June 2009</h2><p>Copyright ©2009 XBRL International Inc., All Rights Reserved.</p><dl><dt>This version:</dt><dd><a href="http://www.xbrl.org/Specification/valueAssertions/REC-2009-06-22/valueAssertions-REC-2009-06-22.html">&lt;http://www.xbrl.org/Specification/valueAssertions/REC-2009-06-22/valueAssertions-REC-2009-06-22.html&gt;</a></dd><dt>Editors:</dt><dd><a name="person-victor" id="person-victor"></a>
+            Victor Morilla,
+  
+             Banco de España
+             <a href="mailto:victor.morilla@bde.es">&lt;victor.morilla@bde.es&gt;</a>
+         </dd><dd><a name="person-geoff" id="person-geoff"></a>
+            Geoff Shuetrim,
+  
+             Galexy
+             <a href="mailto:geoff@galexy.net">&lt;geoff@galexy.net&gt;</a>
+         </dd><dt>Contributors:</dt><dd><a name="person-paul" id="person-paul"></a>
+            Paul Bull,
+  
+             Morgan Stanley
+             <a href="mailto:paul.bull@morganstanley.com">&lt;paul.bull@morganstanley.com&gt;</a>
+         </dd><dd><a name="person-herm" id="person-herm"></a>
+            Herm Fischer,
+  
+             UBMatrix / Mark V Systems
+             <a href="mailto:fischer@markv.com">&lt;fischer@markv.com&gt;</a>
+         </dd><dd><a name="person-goto" id="person-goto"></a>
+            Masatomo Goto,
+  
+             Fujitsu
+             <a href="mailto:mg@jp.fujitsu.com">&lt;mg@jp.fujitsu.com&gt;</a>
+         </dd><dd><a name="person-roland" id="person-roland"></a>
+            Roland Hommes,
+  
+             Rhocon / Consultant to Netherlands Tax and Customs Administration
+             <a href="mailto:roland@rhocon.nl">&lt;roland@rhocon.nl&gt;</a>
+         </dd><dd><a name="person-muramoto" id="person-muramoto"></a>
+            Takahide Muramoto,
+  
+             Fujitsu
+             <a href="mailto:taka.muramoto@jp.fujitsu.com">&lt;taka.muramoto@jp.fujitsu.com&gt;</a>
+         </dd><dd><a name="person-jim" id="person-jim"></a>
+            Jim Richards,
+  
+             JDR &amp; Associates
+             <a href="mailto:jdrassoc@iinet.net.au">&lt;jdrassoc@iinet.net.au&gt;</a>
+         </dd><dd><a name="person-michele" id="person-michele"></a>
+            Michele Romanelli,
+  
+             Banca d'Italia
+             <a href="mailto:michele.romanelli@bancaditalia.it">&lt;michele.romanelli@bancaditalia.it&gt;</a>
+         </dd></dl><hr><div><h2><a name="status" id="status"></a>Status</h2><p>Circulation of this  Recommendation is unrestricted. This document is normative. 
+          Recipients are invited to submit comments to
+        <a href="mailto:formula-feedback@xbrl.org">formula-feedback@xbrl.org</a>,
+        
+          and to submit notification of any relevant patent rights 
+          of which they are aware and provide supporting 
+          documentation.
+        </p></div><div>
+<h2><a name="abstract" id="abstract"></a>Abstract</h2>
+         <p>
+        This specification is an extension of the Validation
+        specification <a href="#VALIDATION">[VALIDATION]</a>.
+
+        It specifies syntax for assertions that can be used to a test 
+        values of facts in an XBRL business report. The assertions are 
+        similar to formulae, except that they omit the rules for constructing 
+        complete XBRL facts.
+      </p>
+      </div></div>
+
+  <div class="toc">
+<h2><a name="contents" id="contents"></a>Table of Contents</h2><p class="toc">1 <a href="#sec-intro">Introduction</a><br>
+   1.1 <a href="#sec-background">Background</a><br>
+   1.2 <a href="#sec-relationship-to-other-work">Relationship to other work</a><br>
+   1.3 <a href="#sec-language">Language independence</a><br>
+   1.4 <a href="#sec-terminology">Terminology</a><br>
+   1.5 <a href="#sec-document-conventions">Document conventions (non-normative)</a><br>
+   1.6 <a href="#sec-namespaces">Namespaces and namespace prefixes</a><br>
+   1.7 <a href="#sec-xpath-usage">XPath usage</a><br>
+2 <a href="#sec-syntax">Syntax</a><br>
+   2.1 <a href="#sec-syntax-va-resources">Value Assertions</a><br>
+3 <a href="#sec-processing-model">The processing model for value assertions</a><br>
+</p>
+<h3><a name="appendices" id="appendices"></a>Appendices</h3><p class="toc">A <a href="#sec-schema">Normative schema</a><br>
+B <a href="#sec-references">References</a><br>
+C <a href="#sec-ip-status">Intellectual property status (non-normative)</a><br>
+D <a href="#sec-acknowledgements">Acknowledgements (non-normative)</a><br>
+E <a href="#sec-history">Document history (non-normative)</a><br>
+F <a href="#sec-corrections">Errata corrections in this document</a><br>
+</p><h3><a name="examples" id="examples"></a>Table</h3><p class="toc">1 <a href="#table-namespaces">Namespaces and namespace prefixes</a><br></p><h3><a name="figures" id="figures"></a>Example</h3><p class="toc">1 <a href="#example-value-assertions">Value assertions</a><br></p>
+<h3><a name="definitions" id="definitions"></a>Definitions</h3><p class="toc"><a href="#term-rfc2119">rfc2119 terminology</a><br><a href="#term-va-assertion">value assertion</a><br><a href="#term-va-expression">value assertion expression</a><br></p></div><hr><div class="body">
+
+      <div class="div1"><a name="sec-intro" id="sec-intro"></a>
+         <h1>1 Introduction</h1>
+
+         <p>
+        This specification is an extension to the XBRL Validation
+        specification <a href="#VALIDATION">[VALIDATION]</a>.
+        It defines XML syntax <a href="#XML">[XML]</a>
+        for assertions that test the values of the variables of each
+        evaluation of a given variable set. It is a construct similar to
+        that of a formula resource, but its output is a boolean value
+        instead of a complete XBRL fact. The Boolean value is obtained
+        by evaluating the an XPath expression that is specified as part
+        of the assertion.
+      </p>
+
+         <p>
+        This kind of assertion supports the expression of business
+        rules that can be used to perform checks like those set out in 
+        <a href="#example-value-assertions"><b>
+        Example
+        1</b></a>.
+      </p>
+
+         <div class="chunkHeading"><a name="example-value-assertions" id="example-value-assertions"></a>Example 1: Value assertions</div><div class="nonNormativeExample">
+            
+            <ul>
+               <li>
+            Assets must be equal to liabilities plus equities.
+          </li>
+               <li>
+            The total amount of incomes for a company must be equal or
+            less than the addition of the total incomes of its
+            subsidiaries.
+          </li>
+               <li>
+            The figures of the balance sheet of a company must be equal
+            to the addition of its breakdown by market segment.
+          </li>
+               <li>
+            The difference of current assets of the current period and
+            the previous one must be lower than a certain threshold.
+          </li>
+               <li>
+            The difference between a starting balance and an ending
+            balance must be equal to the flows during the intervening
+            period.
+          </li>
+            </ul>
+
+         </div>
+
+         <p>
+        Many of the syntax constraints imposed by this specification are set
+        out in the normative schema <a href="#sec-schema"><b>Appendix A</b></a>.
+        To eliminate the potential for conflicts, this specification only 
+        describes syntax features that are not expressed in the normative
+        schema.
+      </p>
+
+         <div class="div2"><a name="sec-background" id="sec-background"></a>
+            <h2>1.1 Background</h2>
+
+            <p>
+          This specification is a member of a suite of similar
+          specifications that define specific types of assertions tested
+          against the information contained in XBRL business reports.
+        </p>
+
+         </div>
+
+         <div class="div2"><a name="sec-relationship-to-other-work" id="sec-relationship-to-other-work"></a>
+            <h2>1.2 Relationship to other work</h2>
+
+            <p>
+          This specification builds on the foundation provided by the XBRL
+          Variable specification <a href="#VARIABLES">[VARIABLES]</a>.
+        </p>
+            <p>
+          Although this specification does not depend on the XBRL Formula Specification <a href="#">[]</a>,
+          it uses a similar processing model and shares many features with that specification.
+        </p>
+
+         </div>
+
+         <div class="div2"><a name="sec-language" id="sec-language"></a>
+            <h2>1.3 Language independence</h2>
+            <p>
+    The official language of XBRL International's own work
+    products is English and the preferred spelling convention is
+    UK English.
+  </p>
+         </div>
+
+         <div class="div2"><a name="sec-terminology" id="sec-terminology"></a>
+            <h2>1.4 Terminology</h2>
+
+            <p>
+  This specification is consistent with the definitions of any of the
+  terms defined in specifications that it depends on.
+</p>
+
+            <p><span class="definition"><a name="term-rfc2119" id="term-rfc2119" title="rfc2119 terminology"></a>
+    The key words MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, 
+    SHOULD, SHOULD NOT, RECOMMENDED, MAY, and OPTIONAL, in this
+    specification, are to be interpreted as described in 
+    <a href="#RFC2119">[IETF RFC 2119]</a>.
+  </span></p>
+
+         </div>
+
+         <div class="div2"><a name="sec-document-conventions" id="sec-document-conventions"></a>
+            <h2>1.5 Document conventions (non-normative)</h2>
+  
+            <p><a href="../../variables/REC-2009-06-22/variables-REC-2009-06-22.html#sec-document-conventions">
+    Documentation conventions</a> follow those set out in
+    the XBRL Variables Specification <a href="#VARIABLES">[VARIABLES]</a>.
+  </p>
+
+         </div>
+
+         <div class="div2"><a name="sec-namespaces" id="sec-namespaces"></a>
+            <h2>1.6 Namespaces and namespace prefixes</h2>
+
+        
+            <p>
+    Namespace prefixes <a href="#XMLNAMES">[XML NAMES]</a> will be used 
+    for elements and attributes in
+    the form <code>ns:name</code> where <code class="value">ns</code> is the 
+    namespace prefix and <code class="value">name</code> is the local name. 
+    Throughout this specification, the mappings
+    from namespace prefixes to actual namespaces is consistent
+    with <a href="#table-namespaces"><b>
+        Table
+        1</b></a>.
+  </p>
+  
+            <p>
+    The prefix column in <a href="#table-namespaces"><b>
+        Table
+        1</b></a> is non normative. 
+    The namespace URI column is normative.
+  </p>
+
+
+            <div class="chunkHeading"><a name="table-namespaces" id="table-namespaces"></a>Table 1: Namespaces and namespace prefixes</div><table>
+               
+               <thead>
+                  <tr>
+                     <th>Prefix</th>
+                     <th>Namespace URI</th>
+                  </tr>
+               </thead>
+               <tbody>
+            
+                  <tr>
+                     <td>
+                        <code class="value">
+                           va
+                        </code>
+                     </td>
+                     <td>
+                        <code class="value">
+                           http://xbrl.org/2008/assertion/value
+                        </code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <code class="value">
+                           xbrlvae
+                        </code>
+                     </td>
+                     <td>
+                        <code class="value">
+                           http://xbrl.org/2008/assertion/value/error
+                        </code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <code class="value">eg</code>
+                     </td>
+                     <td>
+                        <code class="value">http://example.com/</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <code class="value">fn</code>
+                     </td>
+                     <td>
+                        <code class="value">http://www.w3.org/2005/xpath-functions</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <code class="value">link</code>
+                     </td>
+                     <td>
+                        <code class="value">http://www.xbrl.org/2003/linkbase</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <code class="value">xbrli</code>
+                     </td>
+                     <td>
+                        <code class="value">http://www.xbrl.org/2003/instance</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <code class="value">xfi</code>
+                     </td>
+                     <td>
+                        <code class="value">http://www.xbrl.org/2008/function/instance</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <code class="value">xbrldi</code>
+                     </td>
+                     <td>
+                        <code class="value">http://xbrl.org/2006/xbrldi</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <code class="value">xbrldt</code>
+                     </td>
+                     <td>
+                        <code class="value">http://xbrl.org/2005/xbrldt</code>
+                     </td>
+                  </tr>
+  
+                  <tr>
+                     <td>
+                        <code class="value">xl</code>
+                     </td>
+                     <td>
+                        <code class="value">http://www.xbrl.org/2003/XLink</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <code class="value">xlink</code>
+                     </td>
+                     <td>
+                        <code class="value">http://www.w3.org/1999/xlink</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <code class="value">xs</code>
+                     </td>
+                     <td>
+                        <code class="value">http://www.w3.org/2001/XMLSchema</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <code class="value">xsi</code>
+                     </td>
+                     <td>
+                        <code class="value">http://www.w3.org/2001/XMLSchema-instance</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <code class="value">gen</code>
+                     </td>
+                     <td>
+                        <code class="value">http://xbrl.org/2008/generic</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <code class="value">variable</code>
+                     </td>
+                     <td>
+                        <code class="value">http://xbrl.org/2008/variable</code>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <code class="value">iso4217</code>
+                     </td>
+                     <td>
+                        <code class="value">http://www.xbrl.org/2003/iso4217</code>
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <td>
+                        <code class="value">validation</code>
+                     </td>
+                     <td>
+                        <code class="value">http://xbrl.org/2008/validation</code>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+
+         </div>
+
+         <div class="div2"><a name="sec-xpath-usage" id="sec-xpath-usage"></a>
+            <h2>1.7 XPath usage</h2>
+            <p>
+    XPath usage is identical to that in the XBRL Variables Specification
+    <a href="#VARIABLES">[VARIABLES]</a>.
+  </p>
+         </div>
+
+      </div>
+
+      <div class="div1"><a name="sec-syntax" id="sec-syntax"></a>
+         <h1>2 Syntax</h1>
+
+      
+         <p>
+    This specification only provides a textual declaration of syntax
+    constraints when those constraints are not expressed by the
+    normative schema supplied with this specification.
+  </p>
+         <p>
+    Explanations of elements and attributes are only supplied when
+    explanations are not already provided in other
+    specifications.
+  </p>
+         <p>
+    Unless explicitly stated otherwise, a reference to a specific
+    element <strong>MUST</strong> be read as a reference to that 
+    element or to any element in its 
+    <a href="http://www.w3.org/TR/xmlschema-1/#key-equivalenceClass">substitution group</a>.
+  </p>
+
+
+         <div class="div2"><a name="sec-syntax-va-resources" id="sec-syntax-va-resources"></a>
+            <h2>2.1 Value Assertions</h2>
+
+            <p><span class="definition"><a name="term-va-assertion" id="term-va-assertion" title="value assertion"></a>
+            A <span class="term">value assertion</span> is a statement about a value that is provided in or can be derived
+            from an 
+            <a href="../../validation/REC-2009-06-22/validation-REC-2009-06-22.html#term-assertion-input">assertion input</a>.
+          </span></p>
+
+            <p>
+          Value assertions are expressed by the
+          <a href="#xml-value-assertion"><code class="element">
+      &lt;va:valueAssertion&gt;
+    </code></a>
+          element in the normative schema supplied with this specification.
+        </p>
+
+            <p><span class="definition"><a name="term-va-expression" id="term-va-expression" title="value assertion expression"></a>
+            A <span class="term">value assertion expression</span> is the XPath expression contained
+            by the <code class="attribute">
+      @test</code> attribute on a value assertion.
+          </span></p>
+
+         </div>
+
+      </div> 
+      
+
+    <div class="div1"><a name="sec-processing-model" id="sec-processing-model"></a>
+         <h1>3 The processing model for value assertions</h1>
+
+        <p>
+          The <a href="../../validation/REC-2009-06-22/validation-REC-2009-06-22.html#term-assertion-data-set">assertion 
+          data set</a> for a value assertion is an evaluation of the variable set 
+          defined by the value assertion.
+        </p>
+
+        <p>
+          Each different evaluation of a value assertion's variable set constitutes a 
+          different data set for the variable assertion.
+        </p>
+
+        <p>
+          Value assertion expressions <strong>MAY</strong> have dependencies on 
+          any of the variables and parameters in the variable sets defined by their value
+          assertions.  For this reason, value assertions can only be evaluated if the 
+          variable set that constitutes their data set has also been evaluated.
+        </p>
+
+        <p>
+          Value assertion expressions are evaluated using the <code class="element">
+      &lt;xbrli:xbrl&gt;
+    </code> element of the 
+          <a href="../../variables/REC-2009-06-22/variables-REC-2009-06-22.html#term-input-xbrl-instance">input XBRL instance</a>
+          as the <a href="http://www.w3.org/TR/xpath20/#dt-context-item">context item</a>.
+          The variables and parameters in the data set are in scope for the evaluation of the 
+          value assertion expression.
+        </p>
+
+        <p>
+          A value assertion <a href="../../validation/REC-2009-06-22/validation-REC-2009-06-22.html#term-assertion-test">test</a>
+          is the <a href="http://www.w3.org/TR/xpath20/#dt-ebv">effective Boolean value</a>
+          produced by evaluating the value assertion expression given a suitable data set.
+        </p>
+
+      </div>
+
+  </div>
+
+  <div class="back">
+
+      <div class="div1"><a name="sec-schema" id="sec-schema"></a>
+
+         <h1>Appendix A Normative schema</h1>
+
+      
+         <p>
+    The following is the XML schema provided as part of this
+    specification. This is normative. Non-normative versions (which
+    should be identical to these except for appropriate comments
+    indicating their non-normative status) are also provided as
+    separate files for convenience of users of the specification.
+  </p>
+  
+         <p>
+    NOTE: (non-normative) Following the schema maintenance policy of
+    XBRL International, it is the intent (but is not guaranteed)
+    that the location of non-normative versions of these schemas on
+    the web will be as follows:
+  </p>
+  
+         <ol>
+            <li>
+      While any schema is the most current RECOMMENDED version and
+      until it is superseded by any additional errata corrections a
+      non-normative version will reside on the web in the directory
+      <code>http://www.xbrl.org/2008/</code> - during the drafting process for
+      this specification this directory should contain a copy of the
+      most recent published version of the schema at
+      <a href="http://www.xbrl.org/2008/value-assertion.xsd">http://www.xbrl.org/2008/value-assertion.xsd</a>.
+    </li>
+            <li>
+      A non-normative version of each schema as corrected by any
+      update to the RECOMMENDATION will be archived in perpetuity on
+      the web in a directory that will contain a unique
+      identification indicating the date of the update.
+    </li>
+         </ol>
+      
+
+
+         <div class="xml-normative"><div class="verbatim">&lt;<span class="verbatim-element-name">schema</span> <span class="verbatim"><span class="verbatim-namespace-name"> xmlns:va</span>="<span class="verbatim-namespace-uri">http://xbrl.org/2008/assertion/value</span>"</span> <span class="verbatim"><span class="verbatim-namespace-name"> xmlns:validation</span>="<span class="verbatim-namespace-uri">http://xbrl.org/2008/validation</span>"</span> <span class="verbatim"><span class="verbatim-namespace-name"> xmlns</span>="<span class="verbatim-namespace-uri">http://www.w3.org/2001/XMLSchema</span>"</span> <span class="verbatim"><span class="verbatim-namespace-name"> xmlns:variable</span>="<span class="verbatim-namespace-uri">http://xbrl.org/2008/variable</span>"</span> <span class="verbatim"><span class="verbatim-attribute-name">targetNamespace</span>="<span class="verbatim-attribute-content">http://xbrl.org/2008/assertion/value</span>"</span> <span class="verbatim"><span class="verbatim-attribute-name">elementFormDefault</span>="<span class="verbatim-attribute-content">qualified</span>"</span><span class="verbatim">&gt;</span><div class="verbatim">&lt;<span class="verbatim-element-name">import</span> <span class="verbatim"><span class="verbatim-attribute-name">namespace</span>="<span class="verbatim-attribute-content">http://www.xbrl.org/2003/XLink</span>"</span> <span class="verbatim"><span class="verbatim-attribute-name">schemaLocation</span>="<span class="verbatim-attribute-content">http://www.xbrl.org/2003/xl-2003-12-31.xsd</span>"</span><span class="verbatim">/&gt;</span></div><div class="verbatim">&lt;<span class="verbatim-element-name">import</span> <span class="verbatim"><span class="verbatim-attribute-name">namespace</span>="<span class="verbatim-attribute-content">http://xbrl.org/2008/variable</span>"</span> <span class="verbatim"><span class="verbatim-attribute-name">schemaLocation</span>="<span class="verbatim-attribute-content">variable.xsd</span>"</span><span class="verbatim">/&gt;</span></div><div class="verbatim">&lt;<span class="verbatim-element-name">import</span> <span class="verbatim"><span class="verbatim-attribute-name">namespace</span>="<span class="verbatim-attribute-content">http://xbrl.org/2008/validation</span>"</span> <span class="verbatim"><span class="verbatim-attribute-name">schemaLocation</span>="<span class="verbatim-attribute-content">validation.xsd</span>"</span><span class="verbatim">/&gt;</span></div><div class="verbatim">&lt;<span class="verbatim-element-name">element</span> <span class="verbatim"><span class="verbatim-attribute-name"><a name="xml-value-assertion" id="xml-value-assertion"></a>id</span>="<span class="verbatim-attribute-content">xml-value-assertion</span>"</span> <span class="verbatim"><span class="verbatim-attribute-name">name</span>="<span class="verbatim-attribute-content">valueAssertion</span>"</span> <span class="verbatim"><span class="verbatim-attribute-name">substitutionGroup</span>="<span class="verbatim-attribute-content">validation:variableSetAssertion</span>"</span><span class="verbatim">&gt;</span><div class="verbatim">&lt;<span class="verbatim-element-name">complexType</span> <span class="verbatim"><span class="verbatim-attribute-name">mixed</span>="<span class="verbatim-attribute-content">true</span>"</span><span class="verbatim">&gt;</span><div class="verbatim">&lt;<span class="verbatim-element-name">complexContent</span> <span class="verbatim"><span class="verbatim-attribute-name">mixed</span>="<span class="verbatim-attribute-content">true</span>"</span><span class="verbatim">&gt;</span><div class="verbatim">&lt;<span class="verbatim-element-name">extension</span> <span class="verbatim"><span class="verbatim-attribute-name">base</span>="<span class="verbatim-attribute-content">validation:assertion.variableSet.type</span>"</span><span class="verbatim">&gt;</span><div class="verbatim">&lt;<span class="verbatim-element-name">attribute</span> <span class="verbatim"><span class="verbatim-attribute-name">name</span>="<span class="verbatim-attribute-content">test</span>"</span> <span class="verbatim"><span class="verbatim-attribute-name">type</span>="<span class="verbatim-attribute-content">variable:expression</span>"</span> <span class="verbatim"><span class="verbatim-attribute-name">use</span>="<span class="verbatim-attribute-content">required</span>"</span><span class="verbatim">/&gt;</span></div><span class="verbatim">&lt;/<span class="verbatim-element-name">extension</span>&gt;</span></div><span class="verbatim">&lt;/<span class="verbatim-element-name">complexContent</span>&gt;</span></div><span class="verbatim">&lt;/<span class="verbatim-element-name">complexType</span>&gt;</span></div><span class="verbatim">&lt;/<span class="verbatim-element-name">element</span>&gt;</span></div><span class="verbatim">&lt;/<span class="verbatim-element-name">schema</span>&gt;</span></div></div>
+
+      </div>
+
+      <div class="div1"><a name="sec-references" id="sec-references"></a>
+
+         <h1>Appendix B References</h1>
+
+         <dl>
+            
+            
+            
+            
+            
+            
+            
+         <dt class="label"><a name="RFC2119" id="RFC2119"></a>IETF RFC 2119</dt><dd>IETF (Internet Engineering Task Force). "RFC 2119: Key words for use in RFCs to  Indicate Requirement Levels"<br>Scott Bradner.<br>(See <a href="http://www.ietf.org/rfc/rfc2119.txt">http://www.ietf.org/rfc/rfc2119.txt</a>)</dd><dt class="label"><a name="VALIDATION" id="VALIDATION"></a>VALIDATION</dt><dd>XBRL International Inc.. "XBRL Validation 1.0"<br>Victor Morilla, and Geoff Shuetrim.<br>(See <a href="../../validation/REC-2009-06-22/validation-REC-2009-06-22.html">../../validation/REC-2009-06-22/validation-REC-2009-06-22.html</a>)</dd><dt class="label"><a name="VARIABLES" id="VARIABLES"></a>VARIABLES</dt><dd>XBRL International Inc.. "XBRL Variables 1.0"<br>Phillip Engel, Herm Fischer, Victor Morilla, Jim Richards, Geoff Shuetrim, David vun Kannon, and Hugh Wallis.<br>(See <a href="../../variables/REC-2009-06-22/variables-REC-2009-06-22.html">../../variables/REC-2009-06-22/variables-REC-2009-06-22.html</a>)</dd><dt class="label"><a name="XML" id="XML"></a>XML</dt><dd>W3C (World Wide Web Consortium). "Extensible Markup Language (XML) 1.0 (Fourth Edition)"<br>Tim Bray, Jean Paoli, C. M. Sperberg-McQueen, Eve Maler, and François Yergeau.<br>(See <a href="http://www.w3.org/TR/REC-xml/">http://www.w3.org/TR/REC-xml/</a>)</dd><dt class="label"><a name="XMLNAMES" id="XMLNAMES"></a>XML NAMES</dt><dd>W3C (World Wide Web Consortium). "Namespaces in XML 1.0 (Second Edition)"<br>Tim Bray, Dave Hollander, Andrew Layman, and Richard Tobin.<br>(See <a href="http://www.w3.org/TR/REC-xml-names/">http://www.w3.org/TR/REC-xml-names/</a>)</dd><dt class="label"><a name="XMLSCHEMA-STRUCTURES" id="XMLSCHEMA-STRUCTURES"></a>XML SCHEMA STRUCTURES</dt><dd>W3C (World Wide Web Consortium). "XML Schema Part 1: Structures Second Edition"<br>Henry S. Thompson, David Beech, Murray Maloney, and Noah Mendelsohn.<br>(See <a href="http://www.w3.org/TR/xmlschema-1/">http://www.w3.org/TR/xmlschema-1/</a>)</dd><dt class="label"><a name="XPATH2" id="XPATH2"></a>XPATH 2.0</dt><dd>W3C (World Wide Web Consortium). "XML Path Language (XPath) 2.0"<br>Anders Berglund, Scott Boag, Don Chamberlin, Mary F. Fernández, Michael Kay, Jonathan Robie, and Jérôme Siméon.<br>(See <a href="http://www.w3.org/TR/xpath20/">http://www.w3.org/TR/xpath20/</a>)</dd></dl>
+
+      </div>
+
+      <div class="div1"><a name="sec-ip-status" id="sec-ip-status"></a>
+         <h1>Appendix C Intellectual property status (non-normative)</h1>
+  
+         <p>
+    This document and translations of it may be copied and
+    furnished to others, and derivative works that comment on or
+    otherwise explain it or assist in its implementation may be
+    prepared, copied, published and distributed, in whole or in
+    part, without restriction of any kind, provided that the above
+    copyright notice and this paragraph are included on all such
+    copies and derivative works. However, this document itself may
+    not be modified in any way, such as by removing the copyright
+    notice or references to XBRL International or XBRL
+    organizations, except as required to translate it into
+    languages other than English. Members of XBRL International
+    agree to grant certain licenses under the XBRL International
+    Intellectual Property Policy 
+    (<a href="http://www.xbrl.org/legal/">www.xbrl.org/legal</a>).
+  </p>
+
+         <p>
+    This document and the information contained herein is provided
+    on an "AS IS" basis and XBRL INTERNATIONAL DISCLAIMS ALL
+    WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+    ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT
+    INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
+    MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+  </p>
+
+         <p>
+    The attention of users of this document is directed to the
+    possibility that compliance with or adoption of XBRL
+    International specifications may require use of an invention
+    covered by patent rights. XBRL International shall not be
+    responsible for identifying patents for which a license may be
+    required by any XBRL International specification, or for
+    conducting legal inquiries into the legal validity or scope of
+    those patents that are brought to its attention. XBRL
+    International specifications are prospective and advisory
+    only. Prospective users are responsible for protecting
+    themselves against liability for infringement of patents. XBRL
+    International takes no position regarding the validity or
+    scope of any intellectual property or other rights that might
+    be claimed to pertain to the implementation or use of the
+    technology described in this document or the extent to which
+    any license under such rights might or might not be available;
+    neither does it represent that it has made any effort to
+    identify any such rights. Members of XBRL International agree
+    to grant certain licenses under the XBRL International
+    Intellectual Property Policy 
+    (<a href="http://www.xbrl.org/legal/">www.xbrl.org/legal</a>).
+  </p>
+      </div>
+      <div class="div1"><a name="sec-acknowledgements" id="sec-acknowledgements"></a>
+         <h1>Appendix D Acknowledgements (non-normative)</h1>
+         <p>
+    This document could not have been written without the
+    contributions of many people including the participants in the
+    Formula Working Group.
+  </p>
+
+      </div>
+
+      <div class="div1"><a name="sec-history" id="sec-history"></a>
+         <h1>Appendix E Document history (non-normative)</h1>
+
+         <table class="revisions"><tr><th>Date</th><th>Author</th><th>Details</th></tr>
+
+            <tr><td>30 June 2007</td><td>Geoff Shuetrim</td><td>
+               <p class="revision">Initial draft created.</p>
+            </td></tr>
+
+            <tr><td>22 July 2007</td><td>Geoff Shuetrim</td><td>
+               <p class="revision">Converted to XML format.</p>
+            </td></tr>
+
+            <tr><td>15 October 2007</td><td>Geoff Shuetrim</td><td>
+               <p class="revision">Adapted to XBRLspec syntax.</p>
+            </td></tr>
+
+            <tr><td>15 October 2007</td><td>Geoff Shuetrim</td><td>
+               <p class="revision">Adapted to XBRLspec syntax.</p>
+            </td></tr>
+
+            <tr><td>20 November 2007</td><td>Victor Morilla</td><td>
+               <p class="revision">Created fact value assertions from validation report spec</p>
+            </td></tr>
+
+            <tr><td>24 November 2007</td><td>Victor Morilla</td><td>
+               <p class="revision">Removed references to variable set resources</p>
+            </td></tr>
+
+            <tr><td>06 December 2007</td><td>Victor Morilla</td><td>
+               <p class="revision">References to the definition of the assertion data set</p>
+            </td></tr>
+
+            <tr><td>16 December 2007</td><td>Victor Morilla</td><td>
+               <p class="revision">Changed namespace of value assertions from 
+          http://xbrl.org/2008/value-assertion to
+          http://xbrl.org/2008/assertion/value</p> 
+            </td></tr>
+
+            <tr><td>29 January 2008</td><td>Victor Morilla</td><td>
+               <p class="revision">Removed constraint on the number of fact variables of value
+          assertions and its corresponding error
+           as suggested by <a href="#person-herm"><b>Herm Fischer</b></a>. This way,
+          this document is consistent with the formula specification and
+          assertions not dependent on fact variables can be expressed. 
+          </p>
+            </td></tr>
+
+            <tr><td>31 January 2008</td><td>Geoff Shuetrim</td><td>
+               <p class="revision">
+            Standardised the format of the hyperlinks to the normative schema.
+          </p>
+               <p class="revision">
+            Standardised the boilerplate text for errata.
+          </p>
+            </td></tr>
+
+            <tr><td>05 February 2008</td><td>Geoff Shuetrim</td><td>
+               <p class="revision">
+            Aligned the element name for the value assertion resource to the element
+            name in the normative schema.
+          </p>
+            </td></tr>
+
+            <tr><td>06 February 2008</td><td>Geoff Shuetrim</td><td>
+               <p class="revision">
+            Clarified the definition of the data set for a value assertion.
+          </p>
+               <p class="revision">
+            Eliminated the redundant section on relationships that are allowed
+            to value assertions.
+          </p>
+               <p class="revision">
+            Combined the section on the test defined by a value assertion with the section
+            on the processing model for value assertions.
+          </p>
+               <p class="revision">
+            Eliminated redundant parts of the processing model documentation.
+          </p>
+               <p class="revision">
+            Eliminated the reference to an XML attribute in the abstract because the abstract
+            should be completely non-technical.
+          </p>
+            </td></tr>
+
+            <tr><td>20 March 2008</td><td>Geoff Shuetrim</td><td>
+               <p class="revision">
+            Fixed broken hyperlinks.
+          </p>
+            </td></tr>
+
+            <tr><td>19 March 2009</td><td>Geoff Shuetrim</td><td>
+               <p class="revision">
+            Changed the term "target XBRL instance" to "input XBRL instance".
+            Ensured that all usages of the terms input XBRL instance and output
+            XBRL instance reference the term definition.
+          </p>
+            </td></tr>
+
+         </table>
+
+      </div>
+
+      <div class="div1"><a name="sec-corrections" id="sec-corrections"></a>
+         <h1>Appendix F Errata corrections in this document</h1>
+  
+         <p>
+    This appendix contains a list of the errata that have been
+    incorporated into this document. This represents all those
+    errata corrections that have been approved by the XBRL
+    International Formula Working Group up to and
+    including 22 June 2009. 
+    Hyperlinks to relevant e-mail threads may
+    only be followed by those who have access to the relevant
+    mailing lists. Access to internal XBRL mailing lists is
+    restricted to members of XBRL International Inc.
+  </p>
+  
+         <p>No errata have been incorporated into this document.</p>
+  
+      </div>
+
+  </div>
+
+</body></html>

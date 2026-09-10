@@ -2,8 +2,8 @@
   {
     "id": "ixbrl",
     "name": "iXBRL (XBRL International)",
-    "sourceUrl": "https://www.xbrl.org/ixbrl",
-    "sourceLabel": "Official iXBRL overview",
+    "sourceUrl": "https://www.xbrl.org/specification/inlinexbrl-part1/rec-2013-11-18/inlinexbrl-part1-rec-2013-11-18.html",
+    "sourceLabel": "Inline XBRL Part 1 specification",
     "fetchFormat": "html",
     "localPath": "references/raw/ixbrl.html"
   },
@@ -78,5 +78,293 @@
     "sourceLabel": "Gemini help page",
     "fetchFormat": "html",
     "localPath": "references/raw/gemini-double-check.html"
+  },
+  {
+    "id": "clark2021",
+    "name": "Clark et al. 2021, ACL",
+    "sourceUrl": "https://aclanthology.org/2021.acl-long.565/",
+    "sourceLabel": "Clark et al. 2021, ACL",
+    "fetchFormat": "html",
+    "localPath": "references/raw/clark2021.html"
+  },
+  {
+    "id": "jakesch2023",
+    "name": "Jakesch, Hancock and Naaman 2023, PNAS",
+    "sourceUrl": "https://arxiv.org/abs/2206.07271",
+    "sourceLabel": "Jakesch, Hancock and Naaman 2023, PNAS",
+    "fetchFormat": "html",
+    "localPath": "references/raw/jakesch2023.html"
+  },
+  {
+    "id": "jones2026",
+    "name": "Jones and Bergen 2026, PNAS",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13214042/",
+    "sourceLabel": "Jones and Bergen 2026, PNAS",
+    "fetchFormat": "html",
+    "localPath": "references/raw/jones2026.html"
+  },
+  {
+    "id": "russell2025",
+    "name": "Russell, Karpinska and Iyyer 2025, ACL",
+    "sourceUrl": "https://aclanthology.org/2025.acl-long.267/",
+    "sourceLabel": "Russell, Karpinska and Iyyer 2025, ACL",
+    "fetchFormat": "html",
+    "localPath": "references/raw/russell2025.html"
+  },
+  {
+    "id": "zhou2024",
+    "name": "Zhou et al. 2024, ACL",
+    "sourceUrl": "https://aclanthology.org/2024.acl-long.198/",
+    "sourceLabel": "Zhou et al. 2024, ACL",
+    "fetchFormat": "html",
+    "localPath": "references/raw/zhou2024.html"
+  },
+  {
+    "id": "xiong2024",
+    "name": "Xiong et al. 2024, ICLR",
+    "sourceUrl": "https://arxiv.org/abs/2306.13063",
+    "sourceLabel": "Xiong et al. 2024, ICLR",
+    "fetchFormat": "html",
+    "localPath": "references/raw/xiong2024.html"
+  },
+  {
+    "id": "walters2023",
+    "name": "Walters and Wilder 2023, Scientific Reports",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10484980/",
+    "sourceLabel": "Walters and Wilder 2023, Scientific Reports (PMC copy)",
+    "fetchFormat": "html",
+    "localPath": "references/raw/walters2023.html"
+  },
+  {
+    "id": "cao2024",
+    "name": "Cao et al. 2024",
+    "sourceUrl": "https://arxiv.org/html/2404.06162v2",
+    "sourceLabel": "Cao et al. 2024",
+    "fetchFormat": "html",
+    "localPath": "references/raw/cao2024.html"
+  },
+  {
+    "id": "liu2023verifiability",
+    "name": "Liu, Zhang and Liang 2023, Findings of EMNLP",
+    "sourceUrl": "https://aclanthology.org/2023.findings-emnlp.467/",
+    "sourceLabel": "Liu, Zhang and Liang 2023, Findings of EMNLP",
+    "fetchFormat": "html",
+    "localPath": "references/raw/liu2023verifiability.html"
+  },
+  {
+    "id": "aiindex2026",
+    "name": "Stanford HAI, 2026 AI Index Report, Economy chapter",
+    "sourceUrl": "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy",
+    "sourceLabel": "Stanford HAI, 2026 AI Index Report, Economy chapter",
+    "fetchFormat": "html",
+    "localPath": "references/raw/aiindex2026.html"
+  },
+  {
+    "id": "wright2026",
+    "name": "Wright et al. 2026, JAMIA",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12844588/",
+    "sourceLabel": "Wright et al. 2026, JAMIA (PMC copy)",
+    "fetchFormat": "html",
+    "localPath": "references/raw/wright2026.html"
+  },
+  {
+    "id": "nadkarni1999",
+    "name": "Nadkarni et al. 1999, JAMIA",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC61391/",
+    "sourceLabel": "Nadkarni et al. 1999, JAMIA",
+    "fetchFormat": "html",
+    "localPath": "references/raw/nadkarni1999.html"
+  },
+  {
+    "id": "dinu2007",
+    "name": "Dinu and Nadkarni 2007, IJMI",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2110957/",
+    "sourceLabel": "Dinu and Nadkarni 2007, IJMI",
+    "fetchFormat": "html",
+    "localPath": "references/raw/dinu2007.html"
+  },
+  {
+    "id": "ozarda2016",
+    "name": "Ozarda 2016, Biochemia Medica",
+    "sourceUrl": "https://biochemia-medica.com/en/journal/26/1/10.11613/BM.2016.001/fullArticle",
+    "sourceLabel": "Ozarda 2016, Biochemia Medica",
+    "fetchFormat": "html",
+    "localPath": "references/raw/ozarda2016.html"
+  },
+  {
+    "id": "jsonschema2022",
+    "name": "JSON Schema Validation draft 2020-12",
+    "sourceUrl": "https://json-schema.org/draft/2020-12/json-schema-validation",
+    "sourceLabel": "JSON Schema Validation draft 2020-12",
+    "fetchFormat": "html",
+    "localPath": "references/raw/jsonschema2022.html"
+  },
+  {
+    "id": "prometheusalerting",
+    "name": "Prometheus alerting rules documentation",
+    "sourceUrl": "https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/",
+    "sourceLabel": "Prometheus alerting rules documentation",
+    "fetchFormat": "html",
+    "localPath": "references/raw/prometheusalerting.html"
+  },
+  {
+    "id": "bedrockgrounding2026",
+    "name": "Amazon Bedrock Guardrails, contextual grounding check",
+    "sourceUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-contextual-grounding-check.html",
+    "sourceLabel": "Amazon Bedrock Guardrails, contextual grounding check",
+    "fetchFormat": "html",
+    "localPath": "references/raw/bedrockgrounding2026.html"
+  },
+  {
+    "id": "bedrockautoreasoning2026",
+    "name": "Amazon Bedrock Guardrails, Automated Reasoning checks",
+    "sourceUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html",
+    "sourceLabel": "Amazon Bedrock Guardrails, Automated Reasoning checks",
+    "fetchFormat": "html",
+    "localPath": "references/raw/bedrockautoreasoning2026.html"
+  },
+  {
+    "id": "azuregroundedness2026",
+    "name": "Azure AI Content Safety, groundedness detection",
+    "sourceUrl": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/groundedness",
+    "sourceLabel": "Azure AI Content Safety, groundedness detection",
+    "fetchFormat": "html",
+    "localPath": "references/raw/azuregroundedness2026.html"
+  },
+  {
+    "id": "vectarahhem2026",
+    "name": "Vectara HHEM model card",
+    "sourceUrl": "https://huggingface.co/vectara/hallucination_evaluation_model/raw/main/README.md",
+    "sourceLabel": "Vectara HHEM model card",
+    "fetchFormat": "html",
+    "localPath": "references/raw/vectarahhem2026.html"
+  },
+  {
+    "id": "xbrlvalidation2009",
+    "name": "XBRL Validation 1.0",
+    "sourceUrl": "https://www.xbrl.org/specification/validation/rec-2009-06-22/validation-rec-2009-06-22.html",
+    "sourceLabel": "XBRL Validation 1.0",
+    "fetchFormat": "html",
+    "localPath": "references/raw/xbrlvalidation2009.html"
+  },
+  {
+    "id": "xbrlvalueassertions2009",
+    "name": "XBRL Value Assertions 1.0",
+    "sourceUrl": "https://www.xbrl.org/specification/valueassertions/rec-2009-06-22/valueassertions-rec-2009-06-22.html",
+    "sourceLabel": "XBRL Value Assertions 1.0",
+    "fetchFormat": "html",
+    "localPath": "references/raw/xbrlvalueassertions2009.html"
+  },
+  {
+    "id": "commonmark",
+    "name": "CommonMark Spec 0.31.2",
+    "sourceUrl": "https://spec.commonmark.org/0.31.2/",
+    "sourceLabel": "CommonMark Spec 0.31.2",
+    "fetchFormat": "html",
+    "localPath": "references/raw/commonmark.html"
+  },
+  {
+    "id": "sun2025idiosyncrasies",
+    "name": "Sun et al. 2025, ICML",
+    "sourceUrl": "https://arxiv.org/html/2502.12150v2",
+    "sourceLabel": "Sun et al. 2025, ICML",
+    "fetchFormat": "html",
+    "localPath": "references/raw/sun2025idiosyncrasies.html"
+  },
+  {
+    "id": "ais",
+    "name": "Rashkin et al. 2023, Computational Linguistics",
+    "sourceUrl": "https://aclanthology.org/2023.cl-4.2/",
+    "sourceLabel": "Rashkin et al. 2023, Computational Linguistics",
+    "fetchFormat": "html",
+    "localPath": "references/raw/ais.html"
+  },
+  {
+    "id": "alce",
+    "name": "Gao et al. 2023, EMNLP",
+    "sourceUrl": "https://aclanthology.org/2023.emnlp-main.398/",
+    "sourceLabel": "Gao et al. 2023, EMNLP",
+    "fetchFormat": "html",
+    "localPath": "references/raw/alce.html"
+  },
+  {
+    "id": "citednotverified",
+    "name": "Onweller et al. 2026, arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2605.06635",
+    "sourceLabel": "Onweller et al. 2026, arXiv",
+    "fetchFormat": "html",
+    "localPath": "references/raw/citednotverified.html"
+  },
+  {
+    "id": "liu2026citations",
+    "name": "Liu, Stammbach and Henderson 2026, arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2606.21155",
+    "sourceLabel": "Liu, Stammbach and Henderson 2026, arXiv",
+    "fetchFormat": "html",
+    "localPath": "references/raw/liu2026citations.html"
+  },
+  {
+    "id": "ten2026",
+    "name": "Mehrotra et al. 2026, ACL Industry Track",
+    "sourceUrl": "https://aclanthology.org/2026.acl-industry.138/",
+    "sourceLabel": "Mehrotra et al. 2026, ACL Industry Track",
+    "fetchFormat": "html",
+    "localPath": "references/raw/ten2026.html"
+  },
+  {
+    "id": "art50guidelines2026",
+    "name": "European Commission, Article 50 guidelines",
+    "sourceUrl": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+    "sourceLabel": "European Commission, Article 50 guidelines",
+    "fetchFormat": "html",
+    "localPath": "references/raw/art50guidelines2026.html"
+  },
+  {
+    "id": "omnibus2026",
+    "name": "Regulation (EU) 2026/1744, EUR-Lex",
+    "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng",
+    "sourceLabel": "Regulation (EU) 2026/1744, EUR-Lex",
+    "fetchFormat": "html",
+    "localPath": "references/raw/omnibus2026.html"
+  },
+  {
+    "id": "transparencycode2026",
+    "name": "European AI Office, Code of Practice on Transparency",
+    "sourceUrl": "https://digital-strategy.ec.europa.eu/en/faqs/signing-code-practice-transparency-ai-generated-content",
+    "sourceLabel": "European AI Office, Code of Practice on Transparency",
+    "fetchFormat": "html",
+    "localPath": "references/raw/transparencycode2026.html"
+  },
+  {
+    "id": "ucum",
+    "name": "The Unified Code for Units of Measure",
+    "sourceUrl": "https://ucum.org/ucum",
+    "sourceLabel": "The Unified Code for Units of Measure",
+    "fetchFormat": "html",
+    "localPath": "references/raw/ucum.html"
+  },
+  {
+    "id": "iso4217",
+    "name": "ISO 4217 - Currency Codes",
+    "sourceUrl": "https://www.six-group.com/en/products-services/financial-information/data-standards.html",
+    "sourceLabel": "SIX, Maintenance Agency for ISO 4217",
+    "fetchFormat": "html",
+    "localPath": "references/raw/iso4217.html"
+  },
+  {
+    "id": "euaiact-news",
+    "name": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+    "sourceUrl": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+    "sourceLabel": "European Commission news item, 2026",
+    "fetchFormat": "html",
+    "localPath": "references/raw/euaiact-news.html"
+  },
+  {
+    "id": "ixbrl-overview",
+    "name": "iXBRL overview (XBRL International)",
+    "sourceUrl": "https://www.xbrl.org/ixbrl",
+    "sourceLabel": "Official iXBRL overview",
+    "fetchFormat": "html",
+    "localPath": "references/raw/ixbrl-overview.html"
   }
 ]

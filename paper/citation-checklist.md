@@ -4,9 +4,21 @@ For each reference: read what the paper says it does, open the source, and decid
 whether the sentence is a fair description. Metadata is already machine-checked
 (`npm run audit:bibliography`); this is the part that needs a person.
 
-66 references, 61 cited in prose.
+103 references, 53 cited in prose.
 
 ---
+
+## aiindex2026
+
+**The 2026 AI Index Report**  
+Stanford HAI · Stanford Institute for Human-Centered Artificial Intelligence, Economy chapter, \urlhttps://hai.stanford.edu/ai-index/2026-ai-index-report/economy 2026  
+<https://hai.stanford.edu/ai-index/2026-ai-index-report/economy>
+
+What the paper claims (1 place):
+
+- Generative AI is used in at least one business function at 70\% of surveyed organizations, in legal research and in clinical documentation.
+
+- [ ] checked
 
 ## ais
 
@@ -16,7 +28,7 @@ Rashkin, H. and Nikolaev, V. and Lamm, M. and Aroyo, L. and Collins, M. and Das,
 
 What the paper claims (1 place):
 
-- The AIS framework gives this field its shared evaluation vocabulary --- whether a statement is attributable to identified sources, as judged by humans --- and ALCE benchmarks citation generation directly, scoring whether generated statements are supported by the passages they cite.
+- Even systems built to cite leave about half of their sentences without full citation support, and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -28,43 +40,79 @@ Gao, T. and Yen, H. and Yu, J. and Chen, D. · Proc. EMNLP 2023
 
 What the paper claims (1 place):
 
-- The AIS framework gives this field its shared evaluation vocabulary --- whether a statement is attributable to identified sources, as judged by humans --- and ALCE benchmarks citation generation directly, scoring whether generated statements are supported by the passages they cite.
+- Even systems built to cite leave about half of their sentences without full citation support, and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
-## alignmentbottleneck
+## art50guidelines2026
 
-**The Alignment Bottleneck in Decomposition-Based Claim Verification**  
-Akhter, M. E. and Ruggeri, F. and Bilal, I. M. and Procter, R. and Liakata, M. · arXiv:2602.10380 2026  
-<https://arxiv.org/abs/2602.10380>
+**Guidelines on the implementation of the transparency obligations for certain AI systems under Article 50 of the AI Act**  
+European Commission · Adopted 20 July 2026, \urlhttps://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems 2026  
+<https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems>
 
 What the paper claims (1 place):
 
-- show that decomposition helps only when the evidence is granular and aligned per sub-claim --- a property ProveML's fact store has by construction rather than by retrieval.
+- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026.
 
 - [ ] checked
 
-## bainbridge1983
+## azuregroundedness2026
 
-**Ironies of automation**  
-Bainbridge, L. · Automatica 1983  
-<https://doi.org/10.1016/0005-1098(83)90046-8>
+**Groundedness detection in Azure AI Content Safety - Azure AI services**  
+Microsoft · Azure AI Content Safety documentation, \urlhttps://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/groundedness 2026  
+<https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/groundedness>
 
 What the paper claims (1 place):
 
-- This creates precisely the conditions described in Bainbridge's classic analysis of the ironies of automation and well-documented in the trust-in-automation literature: as automated systems become more reliable, human operators trust them more and monitor them less.
+- The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check, Azure AI Content Safety groundedness detection, Vectara's HHEM and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text.
 
 - [ ] checked
 
-## c2pa
+## bedrockautoreasoning2026
 
-**C2PA Technical Specification**  
-Coalition for Content Provenance and Authenticity · \urlhttps://c2pa.org/specifications/ 2022  
-<https://c2pa.org/specifications/>
+**What are Automated Reasoning checks in Amazon Bedrock Guardrails?**  
+Amazon Web Services · Amazon Bedrock User Guide, \urlhttps://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html 2026  
+<https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html>
 
 What the paper claims (1 place):
 
-- Provenance standards. W3C PROV-O and C2PA provide document-level provenance metadata.
+- The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check, Azure AI Content Safety groundedness detection, Vectara's HHEM and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text.
+
+- [ ] checked
+
+## bedrockgrounding2026
+
+**Use contextual grounding check to filter hallucinations in responses**  
+Amazon Web Services · Amazon Bedrock User Guide, \urlhttps://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-contextual-grounding-check.html 2026  
+<https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-contextual-grounding-check.html>
+
+What the paper claims (1 place):
+
+- The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check, Azure AI Content Safety groundedness detection, Vectara's HHEM and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text.
+
+- [ ] checked
+
+## cao2024
+
+**Characterizing Multimodal Long-form Summarization: A Case Study on Financial Reports**  
+Cao, Tianyu and Raman, Natraj and Dervovic, Danial and Tan, Chenhao · arXiv:2404.06162 2024  
+<https://arxiv.org/abs/2404.06162>
+
+What the paper claims (1 place):
+
+- They generate text that is plausible but factually incorrect: fabricated citations, 55\% of those produced by GPT-3.5 and 18\% of those by GPT-4 in one study; numbers with no basis in the source; and statements whose citations do not support them.
+
+- [ ] checked
+
+## chan2026soundness
+
+**Position: Logical Soundness is not a Reliable Criterion for Neurosymbolic Fact-Checking with LLMs**  
+Chan, Jason and Gaizauskas, Robert and Zhao, Zhixue · arXiv:2604.04177 2026  
+<https://arxiv.org/abs/2604.04177>
+
+What the paper claims (1 place):
+
+- And a set of verified claims does not verify the sentence around them: argue that formally sound conclusions invite unsupported inferences by the reader, and nothing in ProveML's verdict speaks to what the prose between two verified claims implies.
 
 - [ ] checked
 
@@ -76,105 +124,103 @@ Onweller, H. and Lumer, E. and Huber, A. and Ramchandani, P. and Subbiah, V. K. 
 
 What the paper claims (1 place):
 
-- quantify the consequence: parsing inline citations out of LLM-generated Markdown is deterministic and reliable, but checking what those citations support is not, and even frontier models' citations frequently fail that check.
+- Even systems built to cite leave about half of their sentences without full citation support, and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
-## claimdb
+## claimlocked2026
 
-**ClaimDB: A Fact Verification Benchmark over Large Structured Data**  
-Theologitis, M. and Dammu, P. P. S. and Shah, C. and Suciu, D. · Proc. ACL 2026  
-<https://doi.org/10.18653/v1/2026.acl-long.1589>
+**Provenance Before Prose: Claim-Locked Reporting**  
+Fan, Xiao and Li, Jingyuan and Guo, Hongbin and Han, Yubo and Zhang, Yi · arXiv:2608.25336 2026  
+<https://arxiv.org/abs/2608.25336>
 
 What the paper claims (1 place):
 
-- ClaimDB benchmarks fact verification over large structured databases, where reading the evidence breaks down and verification shifts to executable programs; it also reports that models struggle to abstain when the data cannot decide a claim, which matches our finding in Section~sec:education.
+- Claim-locked reporting is the 2026 form of that strategy --- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose --- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce.
 
 - [ ] checked
 
-## deloitte2025
+## clark2021
 
-**Deloitte was caught using AI in \$290,000 report to help the Australian government crack down on welfare after a researcher flagged hallucinations**  
-Paoli, N. · Fortune, \urlhttps://fortune.com/2025/10/07/deloitte-ai-australia-government-report-hallucinations-technology-290000-refund/ 2025  
-<https://fortune.com/2025/10/07/deloitte-ai-australia-government-report-hallucinations-technology-290000-refund/>
+**All That's `Human' Is Not Gold: Evaluating Human Evaluation of Generated Text**  
+Clark, Elizabeth and August, Tal and Serrano, Sofia and Haduong, Nikita and Gururangan, Suchin and Smith, Noah A. · Proc. ACL-IJCNLP (Volume 1: Long Papers) 2021  
+<https://doi.org/10.18653/v1/2021.acl-long.565>
 
 What the paper claims (1 place):
 
-- Meanwhile, the consequences are real and adoption is accelerating. In 2025, Deloitte delivered a government report with AI-fabricated citations.
+- Introduction Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content; readers who write with these models daily still can.
 
 - [ ] checked
 
-## dspy
+## commonmark
 
-**DSPy: Compiling Declarative Language Model Calls into State-of-the-Art Pipelines**  
-Khattab, O. and Singhvi, A. and Maheshwari, P. and Zhang, Z. and Santhanam, K. and Vardhamanan, S. and Haq, S. and Sharma, A. and Joshi, T. T. and Moazam, H. and Miller, H. and Zaharia, M. and Potts, C. · Proc. ICLR 2024  
-<https://arxiv.org/abs/2310.03714>
+**CommonMark Spec**  
+MacFarlane, John · Version 0.31.2, \urlhttps://spec.commonmark.org/0.31.2/ 2024  
+<https://spec.commonmark.org/0.31.2/>
 
 What the paper claims (1 place):
 
-- Output validation (Guardrails AI, DSPy, NeMo Guardrails ): programmatic constraint enforcement that can operate at output or sentence level.
+- Instruction-tuned models routinely answer in Markdown, and a CommonMark-conformant renderer passes the constructs through unchanged, because characters not given an interpretation by any Markdown rule are parsed as plain textual content; in our runs every model produced the markup on every query.
+
+- [ ] checked
+
+## datareferencing2026
+
+**When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors**  
+Yang, Yuqing and Zhu, Qi and Han, Zhen and Han, Boran and Shen, Zhengyuan and Wang, Shuai and Ioannidis, Vassilis N. and Rangwala, Huzefa · arXiv:2606.32029 2026  
+<https://arxiv.org/abs/2606.32029>
+
+What the paper claims (1 place):
+
+- measure the failure class our residual errors belong to --- values miscited from a table the model was shown --- and detect it with a trained critic; ProveML detects it with a lookup.
+
+- [ ] checked
+
+## dinu2007
+
+**Guidelines for the effective use of entity-attribute-value modeling for biomedical databases**  
+Dinu, Valentin and Nadkarni, Prakash · International Journal of Medical Informatics 2007  
+<https://doi.org/10.1016/j.ijmedinf.2006.09.023>
+
+What the paper claims (1 place):
+
+- Conditions compose with AND, OR, NOT and can reference earlier labels: The fact store is a flat key-value index in the Entity-Attribute-Value pattern; any source with records and fields flattens into it as type:id.field $$ value, with optional companion keys for units and nested sub-paths for hierarchical data: The store is the single point of trust and the canonicalization point: the guarantee is "consistent with the fact store", not "true", and verification is always relative to an immutable store state (deployments can bind a snapshot identifier to each result).
+
+- [ ] checked
+
+## dtg2026
+
+**Decode-Time Grammars: Constrained LLM Generation over a Refinement Order of Grammar Fragments**  
+Zhang, Shuoming and Xu, Ruiyuan and Li, Haofeng and Yu, Qiuchu and Zhang, Yangyu and Xia, Chunwei and Feng, Xiaobing and Wang, Chenxi and Cui, Huimin and Zhao, Jiacheng · arXiv:2607.18357 2026  
+<https://arxiv.org/abs/2607.18357>
+
+What the paper claims (1 place):
+
+- Probabilistic faithfulness checkers, academic (SummaC, summac; AlignScore, alignscore; MiniCheck, minicheck; HallDetect, halldetect2026) and industrial, score responses after generation; Evergreen verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation and decode-time grammars whose reference slots admit only declared names are the constrained-generation route to the same end, and the natural next step for ProveML (Section~sec:limitations).
 
 - [ ] checked
 
 ## euaiact
 
-**Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)**  
-European Parliament and Council of the European Union · Official Journal of the European Union 2024  
-<(no link in the entry)>
+**Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence**  
+European Parliament and Council of the European Union · Artificial Intelligence Act. Official Journal of the European Union, \urlhttps://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng 2024  
+<https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng>
 
 What the paper claims (1 place):
 
-- The EU AI Act classifies AI systems used for consequential decisions as "high-risk" (Annex III), requiring transparency, human oversight, and risk management.
+- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026.
 
 - [ ] checked
 
-## evidencesurvey
+## evergreen2026
 
-**Attribution, Citation, and Quotation: A Survey of Evidence-based Text Generation with Large Language Models**  
-Schreieder, T. and Schopf, T. and F\"arber, M. · Proc. ACL 2026  
-<https://doi.org/10.18653/v1/2026.acl-long.1430>
+**Evergreen: Efficient Claim Verification for Semantic Aggregates**  
+Lee, Jiwon and Han, Seokhyun and Sen, Rathijit and Yeom, Jinsoo and Cetintemel, Ugur and Datta, Anindya · arXiv:2604.26180 2026  
+<https://arxiv.org/abs/2604.26180>
 
 What the paper claims (1 place):
 
-- For the wider landscape, survey 134 papers and 300 metrics on evidence-based generation.
-
-- [ ] checked
-
-## factool
-
-**FacTool: Factuality Detection in Generative AI -- A Tool Augmented Framework for Multi-Task and Multi-Domain Scenarios**  
-Chern, I-C. and Chern, S. and Chen, S. and Yuan, W. and Feng, K. and Zhou, C. and He, J. and Neubig, G. and Liu, P. · arXiv:2307.13528 2023  
-<https://arxiv.org/abs/2307.13528>
-
-What the paper claims (2 places):
-
-- Current approaches to the AI reliability problem include several strategies, none of which addresses the structural verification gap: enumerate Post-hoc fact-checking (FActScore, SAFE, FacTool, SelfCheckGPT, RefChecker ): decompose, sample, or re-check generated text after the fact against external sources or model-generated consistency signals.
-- Post-hoc fact-checking (AI in the loop). FActScore, SAFE, FacTool, and OpenFactCheck (COLING 2025) decompose generated text into atomic claims and verify each using LLMs or web search.
-
-- [ ] checked
-
-## factscore
-
-**FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation**  
-Min, S. and Krishna, K. and Lyu, X. and Lewis, M. and Yih, W. and Koh, P. and Iyyer, M. and Zettlemoyer, L. and Hajishirzi, H. · Proc. EMNLP 2023  
-<https://doi.org/10.18653/v1/2023.emnlp-main.741>
-
-What the paper claims (2 places):
-
-- Current approaches to the AI reliability problem include several strategies, none of which addresses the structural verification gap: enumerate Post-hoc fact-checking (FActScore, SAFE, FacTool, SelfCheckGPT, RefChecker ): decompose, sample, or re-check generated text after the fact against external sources or model-generated consistency signals.
-- Post-hoc fact-checking (AI in the loop). FActScore, SAFE, FacTool, and OpenFactCheck (COLING 2025) decompose generated text into atomic claims and verify each using LLMs or web search.
-
-- [ ] checked
-
-## farquhar2024
-
-**Detecting hallucinations in large language models using semantic entropy**  
-Farquhar, S. and Kossen, J. and Kuhn, L. and Gal, Y. · Nature 2024  
-<https://doi.org/10.1038/s41586-024-07421-0>
-
-What the paper claims (1 place):
-
-- Emerging interpretability research can detect some internal uncertainty signals, but probes do not generalize across tasks, entropy methods fail on confident errors, and probing methods require white-box access.
+- Probabilistic faithfulness checkers, academic (SummaC, summac; AlignScore, alignscore; MiniCheck, minicheck; HallDetect, halldetect2026) and industrial, score responses after generation; Evergreen verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation and decode-time grammars whose reference slots admit only declared names are the constrained-generation route to the same end, and the natural next step for ProveML (Section~sec:limitations).
 
 - [ ] checked
 
@@ -186,7 +232,7 @@ Thorne, J. and Vlachos, A. and Christodoulopoulos, C. and Mittal, A. · Proc. NA
 
 What the paper claims (1 place):
 
-- Data-grounded generation. Fact verification against evidence has a canonical benchmark lineage --- FEVER for textual sources, TabFact for tables, FEVEROUS for both at once --- in which a trained model judges whether evidence supports a claim; ProveML sits outside that lineage by making the judgment a lookup rather than a model.
+- Fact verification against evidence has a canonical benchmark lineage --- FEVER, TabFact, FEVEROUS --- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup.
 
 - [ ] checked
 
@@ -198,120 +244,31 @@ Aly, R. and Guo, Z. and Schlichtkrull, M. and Thorne, J. and Vlachos, A. and Chr
 
 What the paper claims (1 place):
 
-- Data-grounded generation. Fact verification against evidence has a canonical benchmark lineage --- FEVER for textual sources, TabFact for tables, FEVEROUS for both at once --- in which a trained model judges whether evidence supports a claim; ProveML sits outside that lineage by making the judgment a lookup rather than a model.
+- Fact verification against evidence has a canonical benchmark lineage --- FEVER, TabFact, FEVEROUS --- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup.
 
 - [ ] checked
 
-## fhir
+## fullcite2026
 
-**FHIR (Fast Healthcare Interoperability Resources), Release 5**  
-HL7 International ·  2023  
-<https://hl7.org/fhir/R5/>
-
-What the paper claims (2 places):
-
-- Design philosophy. ProveML is deliberately assembled from established patterns rather than invented from scratch: itemize[nosep] Host language: Markdown (natively produced by LLMs) Inline tagging model from iXBRL Operator vocabulary from FHIR clinical reference ranges and JSON Schema validation Fact store from the Entity-Attribute-Value (EAV) pattern; arrive at a comparable typed key-value state with a non-probabilistic admission check, in the agent/tool setting rather than in text Verify-then-render pipeline from standard compiler design itemize A skeptical reader should find each component familiar.
-- Threshold Registry The threshold registry draws on the design patterns of clinical reference ranges (HL7 FHIR ), JSON Schema validation, and monitoring alert systems (Grafana, Datadog).
-
-- [ ] checked
-
-## finground
-
-**FinGround: Detecting and Grounding Financial Hallucinations via Atomic Claim Verification**  
-Guo, D. and Wu, J. and Yiu, S. M. · Proc. ACL Industry Track 2026  
-<https://arxiv.org/abs/2604.23588>
-
-What the paper claims (2 places):
-
-- Domain-specific pipelines such as FinGround add deterministic sub-steps (recomputing a stated figure from a table) but still decompose and classify claims with a model.
-- FinGround is the closest 2026 system: it decomposes financial answers into typed atomic claims, recomputes arithmetic ones against structured tables, and rewrites unsupported claims with table-cell citations.
-
-- [ ] checked
-
-## finverbench
-
-**FinVerBench: Benchmark Validity and Calibration in Large Language Model Financial Statement Verification**  
-Panda, S. · arXiv:2605.29586 2026  
-<https://arxiv.org/abs/2605.29586>
+**Explicit Evidence Grounding via Structured Inline Citation Generation**  
+Yeginbergen, Anar and W\"uhrl, Amelie and Rogers, Anna and Agerri, Rodrigo · arXiv:2606.07130 2026  
+<https://arxiv.org/abs/2606.07130>
 
 What the paper claims (1 place):
 
-- FinVerBench verifies statements against SEC XBRL filings and finds measured performance shifts with numeric rendering (rounded vs.\ unrounded) --- an external measurement of the canonicalization sensitivity we discuss in Section~sec:limitations.
+- Probabilistic faithfulness checkers, academic (SummaC, summac; AlignScore, alignscore; MiniCheck, minicheck; HallDetect, halldetect2026) and industrial, score responses after generation; Evergreen verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation and decode-time grammars whose reference slots admit only declared names are the constrained-generation route to the same end, and the natural next step for ProveML (Section~sec:limitations).
 
 - [ ] checked
 
-## gartner2023
+## iso4217
 
-**More Than 80\% of Enterprises Will Have Used Generative AI APIs or Deployed Generative AI-Enabled Applications by 2026**  
-Gartner · Press Release 2023  
-<(no link in the entry)>
+**ISO 4217 - Currency Codes**  
+SIX Financial Information · Maintenance Agency for ISO 4217, \urlhttps://www.six-group.com/en/products-services/financial-information/data-standards.html 2026  
+<https://www.six-group.com/en/products-services/financial-information/data-standards.html>
 
 What the paper claims (1 place):
 
-- Yet the majority of organizations now use AI in at least one function, and Gartner projected that over 80\% of enterprises would have used generative AI APIs or deployed generative AI-enabled applications by 2026.
-
-- [ ] checked
-
-## gavel
-
-**GAVEL: Evidence-Contract Debate with Mechanized Scrutiny for Provenance-Grounded Fact-Checking**  
-Xu, R. and Li, G. and Sheng, V. S. · Findings of ACL 2026  
-<https://doi.org/10.18653/v1/2026.findings-acl.1789>
-
-What the paper claims (2 places):
-
-- That sweep found systems that bind claims to evidence contracts, emit provenance triples, or maintain typed key-value state with non-probabilistic admission, but none that extends an authoring format with inline claim markup, and none that constrains qualitative wording through a declared threshold vocabulary.
-- GAVEL moves partway toward a binding contract: debating agents must state atomic subclaims bound to explicit evidence units, and a scrutinizer validates cited identifiers and quoted spans deterministically --- but the debate that produces the subclaims is model-driven, and the evidence units are text spans rather than addressable data paths.
-
-- [ ] checked
-
-## genprove
-
-**GenProve: Learning to Generate Text with Fine-Grained Provenance**  
-Wei, J. and Wang, X. and Liao, Y. and Dong, J. and Liu, Y. and Jia, C. and Yu, B. and Zhu, J. · Proc. ACL 2026  
-<https://doi.org/10.18653/v1/2026.acl-long.228>
-
-What the paper claims (2 places):
-
-- That sweep found systems that bind claims to evidence contracts, emit provenance triples, or maintain typed key-value state with non-probabilistic admission, but none that extends an authoring format with inline claim markup, and none that constrains qualitative wording through a declared threshold vocabulary.
-- GenProve learns to emit provenance triples alongside the answer, and reports a sharp gap between surface quotation, which models handle, and inference-backed provenance, which they do not --- a split that maps onto which claims ProveML can bind deterministically at all.
-
-- [ ] checked
-
-## googlebard2023
-
-**Google AI chatbot Bard offers inaccurate information in company ad**  
-Coulter, M. and Bensinger, G. · Reuters 2023  
-<(no link in the entry)>
-
-What the paper claims (1 place):
-
-- Earlier, fabricated ChatGPT citations were submitted to a U.S.\ federal court, and a factual error in the launch demo materials for Google's Bard contributed to a \$100 billion market-cap drop.
-
-- [ ] checked
-
-## googleground
-
-**Grounding with Google Search**  
-Google · Gemini API documentation, \urlhttps://ai.google.dev/gemini-api/docs/grounding 2024  
-<https://ai.google.dev/gemini-api/docs/grounding>
-
-What the paper claims (2 places):
-
-- Some systems (e.g., Google's grounding API ) additionally return support scores and claim-to-source metadata.
-- Attribution (where, not whether). Anthropic's Citations API, OpenAI's response annotations, and Google's Vertex AI Grounding link generated text to source documents or passages.
-
-- [ ] checked
-
-## guardrails
-
-**Guardrails: Adding guardrails to large language models**  
-Guardrails AI · \urlhttps://github.com/guardrails-ai/guardrails 2024  
-<https://github.com/guardrails-ai/guardrails>
-
-What the paper claims (1 place):
-
-- Output validation (Guardrails AI, DSPy, NeMo Guardrails ): programmatic constraint enforcement that can operate at output or sentence level.
+- Semantic unit equivalence (e.g., mg/dL vs mmol/L) and standardized vocabularies (UCUM for units of measure~, ISO 4217 for currency codes~) are deferred to future work.
 
 - [ ] checked
 
@@ -323,9 +280,21 @@ XBRL International · \urlhttps://www.xbrl.org/specification/inlinexbrl-part1/re
 
 What the paper claims (3 places):
 
-- itemize The closest structural analog is iXBRL (Inline XBRL), which embeds machine-readable tags in human-readable financial reports, enabling automated audit of reported figures.
-- Design philosophy. ProveML is deliberately assembled from established patterns rather than invented from scratch: itemize[nosep] Host language: Markdown (natively produced by LLMs) Inline tagging model from iXBRL Operator vocabulary from FHIR clinical reference ranges and JSON Schema validation Fact store from the Entity-Attribute-Value (EAV) pattern; arrive at a comparable typed key-value state with a non-probabilistic admission check, in the agent/tool setting rather than in text Verify-then-render pipeline from standard compiler design itemize A skeptical reader should find each component familiar.
-- What ProveML adds to that lineage is not the binding but the verdict: RDFa says what a span refers to, and assumes the author meant it; ProveML asks whether the claim survives comparison with the record. iXBRL embeds machine-readable tags in human-readable financial reports, the closest structural analog among document standards.
+- In short, ProveML is iXBRL for AI-generated text. Financial reporting solved a version of this problem two decades ago by embedding machine-readable tags in human-readable filings, so a regulator can audit a number without reading the prose around it.
+- Related Work sec:related The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it; iXBRL embeds machine-readable tags in financial reports for automated audit.
+- FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
+
+- [ ] checked
+
+## jakesch2023
+
+**Human heuristics for AI-generated language are flawed**  
+Jakesch, Maurice and Hancock, Jeffrey T. and Naaman, Mor · Proceedings of the National Academy of Sciences 2023  
+<https://doi.org/10.1073/pnas.2208839120>
+
+What the paper claims (1 place):
+
+- Introduction Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content; readers who write with these models daily still can.
 
 - [ ] checked
 
@@ -337,7 +306,31 @@ Ji, Z. and Lee, N. and Frieske, R. and Yu, T. and Su, D. and Xu, Y. and Ishii, E
 
 What the paper claims (1 place):
 
-- More broadly, hallucination is a well-documented reliability problem across deep-learning-based natural language generation systems.
+- And the fluency coexists with a fundamental reliability problem: LLMs hallucinate.
+
+- [ ] checked
+
+## jones2026
+
+**Large language models pass a standard three-party Turing test**  
+Jones, Cameron R. and Bergen, Benjamin K. · Proceedings of the National Academy of Sciences 2026  
+<https://doi.org/10.1073/pnas.2524472123>
+
+What the paper claims (1 place):
+
+- Introduction Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content; readers who write with these models daily still can.
+
+- [ ] checked
+
+## jsonschema2022
+
+**JSON Schema Validation: A Vocabulary for Structural Validation of JSON**  
+Wright, Austin and Andrews, Henry and Hutton, Ben · Internet-Draft draft-bhutton-json-schema-validation-01, \urlhttps://json-schema.org/draft/2020-12/json-schema-validation 2022  
+<https://json-schema.org/draft/2020-12/json-schema-validation>
+
+What the paper claims (1 place):
+
+- The model never rounds, so it can never round wrong. fig:display figure The threshold registry follows a pattern shared by clinical reference intervals, JSON Schema validation and monitoring alert rules: a bounded condition on a single field is given a name and a human-readable label, so the judgment can be invoked and audited by that name rather than restated as an expression wherever it is used.
 
 - [ ] checked
 
@@ -349,7 +342,7 @@ Kalai, A. T. and Vempala, S. S. · Proc. STOC 2024
 
 What the paper claims (1 place):
 
-- prove formally that any language model satisfying natural calibration conditions must hallucinate, at a rate approaching the fraction of facts that appear exactly once in the training data; subsequent work by shows that standard training and evaluation pipelines actively reward guessing over acknowledging uncertainty.
+- Hallucination is structural, not incidental: calibrated language models must hallucinate at a rate approaching the fraction of facts appearing exactly once in training, and standard training pipelines reward guessing over acknowledging uncertainty.
 
 - [ ] checked
 
@@ -359,33 +352,35 @@ What the paper claims (1 place):
 Kalai, A. T. and Nachum, O. and Vempala, S. S. and Zhang, E. · OpenAI, arXiv:2509.04664 2025  
 <https://arxiv.org/abs/2509.04664>
 
-What the paper claims (1 place):
+What the paper claims (2 places):
 
-- prove formally that any language model satisfying natural calibration conditions must hallucinate, at a rate approaching the fraction of facts that appear exactly once in the training data; subsequent work by shows that standard training and evaluation pipelines actively reward guessing over acknowledging uncertainty.
-
-- [ ] checked
-
-## leesee2004
-
-**Trust in automation: Designing for appropriate reliance**  
-Lee, J. D. and See, K. A. · Human Factors 2004  
-<https://doi.org/10.1518/hfes.46.1.50_30392>
-
-What the paper claims (1 place):
-
-- This creates precisely the conditions described in Bainbridge's classic analysis of the ironies of automation and well-documented in the trust-in-automation literature: as automated systems become more reliable, human operators trust them more and monitor them less.
+- The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance.
+- Hallucination is structural, not incidental: calibrated language models must hallucinate at a rate approaching the fraction of facts appearing exactly once in training, and standard training pipelines reward guessing over acknowledging uncertainty.
 
 - [ ] checked
 
-## llmon
+## liu2023verifiability
 
-**LLMON: An LLM-native Markup Language to Leverage Structure and Semantics at the LLM Interface**  
-Hind, M. and Shbita, B. and Wu, B. and Ahmed, F. and DeLuca, C. and Fulton, N. and Cox, D. and Gutfreund, D. · arXiv:2603.22519 2026  
-<https://arxiv.org/abs/2603.22519>
+**Evaluating Verifiability in Generative Search Engines**  
+Liu, Nelson F. and Zhang, Tianyi and Liang, Percy · Findings of the Association for Computational Linguistics: EMNLP 2023 2023  
+<https://doi.org/10.18653/v1/2023.findings-emnlp.467>
+
+What the paper claims (2 places):
+
+- They generate text that is plausible but factually incorrect: fabricated citations, 55\% of those produced by GPT-3.5 and 18\% of those by GPT-4 in one study; numbers with no basis in the source; and statements whose citations do not support them.
+- Even systems built to cite leave about half of their sentences without full citation support, and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+
+- [ ] checked
+
+## liu2026citations
+
+**Who Checks the Citations? Benchmarking Legal Hallucination Detection**  
+Liu, Patty and Stammbach, Dominik and Henderson, Peter · arXiv:2606.21155 2026  
+<https://arxiv.org/abs/2606.21155>
 
 What the paper claims (1 place):
 
-- LLMON carries structure and semantic metadata across the LLM interface, primarily to separate instructions from data; it structures the interface, whereas ProveML makes the output checkable.
+- And the problem has not gone away with better models: the leading legal research tools hallucinated on 17--33\% of queries when tested in 2024, despite vendor claims of near-elimination, and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year.
 
 - [ ] checked
 
@@ -395,153 +390,46 @@ What the paper claims (1 place):
 Magesh, V. and Surani, F. and Dahl, M. and Suzgun, M. and Manning, C. D. and Ho, D. E. · Journal of Empirical Legal Studies 2025  
 <https://doi.org/10.1111/jels.12413>
 
-What the paper claims (1 place):
+What the paper claims (2 places):
 
-- RAG grounds responses in documents but models can still misrepresent retrieved context; found that the leading legal research tools --- Lexis+ AI and Thomson Reuters' Westlaw AI-Assisted Research and Ask Practical Law AI --- each hallucinate between 17\% and 33\% of the time, despite vendor claims of near-elimination.
-
-- [ ] checked
-
-## mata2023
-
-**\textitMata v. Avianca, Inc.**  
-U.S. District Court, S.D.N.Y. · 678 F.Supp.3d 443 2023  
-<(no link in the entry)>
-
-What the paper claims (1 place):
-
-- Earlier, fabricated ChatGPT citations were submitted to a U.S.\ federal court, and a factual error in the launch demo materials for Google's Bard contributed to a \$100 billion market-cap drop.
+- And the problem has not gone away with better models: the leading legal research tools hallucinated on 17--33\% of queries when tested in 2024, despite vendor claims of near-elimination, and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year.
+- Generative AI is used in at least one business function at 70\% of surveyed organizations, in legal research and in clinical documentation.
 
 - [ ] checked
 
-## mccain2026
+## nadkarni1999
 
-**Measuring AI Agent Autonomy in Practice**  
-McCain, M. and Millar, T. and Huang, S. and Eaton, J. and Handa, K. and Stern, M. and others · Anthropic Research, \urlhttps://www.anthropic.com/research/measuring-agent-autonomy 2026  
-<https://www.anthropic.com/research/measuring-agent-autonomy>
-
-What the paper claims (1 place):
-
-- report that roughly 73\% of agent tool calls on a major API still appear to retain a human in the loop.
-
-- [ ] checked
-
-## mckinsey2025
-
-**The state of AI**  
-McKinsey \& Company · \urlhttps://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai 2025  
-<https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai>
+**Organization of Heterogeneous Scientific Data Using the EAV/CR Representation**  
+Nadkarni, Prakash M. and Marenco, Luis and Chen, Roland and Skoufos, Emmanouil and Shepherd, Gordon and Miller, Perry · Journal of the American Medical Informatics Association 1999  
+<https://doi.org/10.1136/jamia.1999.0060478>
 
 What the paper claims (1 place):
 
-- Yet the majority of organizations now use AI in at least one function, and Gartner projected that over 80\% of enterprises would have used generative AI APIs or deployed generative AI-enabled applications by 2026.
-
-- [ ] checked
-
-## narrativelicense
-
-**Narrative License and Model Sycophancy in LLM Summaries of Scientific Work**  
-Isch, C. and Jennings, G. · Proc. ACL 2026  
-<https://doi.org/10.18653/v1/2026.acl-long.746>
-
-What the paper claims (1 place):
-
-- Registry as vocabulary constraint. Qualitative wording is where overreach actually happens: measure causal overreach and rhetorical confidence in LLM summaries relative to their sources, finding the drift is rhetorical rather than factual --- exactly the surface a value-only verifier leaves unguarded.
-
-- [ ] checked
-
-## naviskore
-
-**Designing curriculum-aligned digital assessment infrastructures: a design-based case study of Naviskore in Flemish secondary education**  
-Moortgat, Rony and Deconinck, Shane · Frontiers in Education 2026  
-<https://doi.org/10.3389/feduc.2026.1856724>
-
-What the paper claims (1 place):
-
-- The first is generated, in the shape of a curriculum-aligned assessment platform in Flemish secondary education: 741 pupils across 95 class offerings, each pupil carrying a mastery level per curriculum goal, plus the aggregates such a platform reports.
-
-- [ ] checked
-
-## nemo
-
-**NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails**  
-Rebedea, T. and Dinu, R. and Sreedhar, M. and Parisien, C. and Cohen, J. · Proc. EMNLP System Demonstrations 2023  
-<https://doi.org/10.18653/v1/2023.emnlp-demo.40>
-
-What the paper claims (1 place):
-
-- Output validation (Guardrails AI, DSPy, NeMo Guardrails ): programmatic constraint enforcement that can operate at output or sentence level.
+- Conditions compose with AND, OR, NOT and can reference earlier labels: The fact store is a flat key-value index in the Entity-Attribute-Value pattern; any source with records and fields flattens into it as type:id.field $$ value, with optional companion keys for units and nested sub-paths for hierarchical data: The store is the single point of trust and the canonicalization point: the guarantee is "consistent with the fact store", not "true", and verification is always relative to an immutable store state (deployments can bind a snapshot identifier to each result).
 
 - [ ] checked
 
 ## omnibus2026
 
-**Regulation (EU) 2026/1744 of 8 July 2026 amending Regulations (EU) 2024/1689, (EU) 2018/1139 and (EU) 2023/1230 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI)**  
+**Regulation (EU) 2026/1744 of the European Parliament and of the Council of 8 July 2026 amending Regulations (EU) 2024/1689, (EU) 2018/1139 and (EU) 2023/1230 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI)**  
 European Parliament and Council of the European Union · Official Journal of the European Union, \urlhttps://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng 2026  
 <https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng>
 
 What the paper claims (1 place):
 
-- The 2026 Digital Omnibus deferred those stand-alone high-risk obligations to 2 December 2027 (and to 2 August 2028 for AI embedded in regulated products) while leaving the Article 50 transparency duties in force from 2 August 2026 --- a deferral that buys providers and deployers time to build verifiable-claim infrastructure rather than removing the need for it.
+- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026.
 
 - [ ] checked
 
-## oraclegen
+## ozarda2016
 
-**Oracle-Augmented Generation: Connecting AI to Real-Time Verifiable Data**  
-Kamu Data · \urlhttps://www.kamu.dev/blog/2025-01-08-oracle-augmented-generation/ 2025  
-<https://www.kamu.dev/blog/2025-01-08-oracle-augmented-generation/>
-
-What the paper claims (1 place):
-
-- Kamu Data's Oracle-Augmented Generation delegates computation to a deterministic query engine with cryptographic provenance.
-
-- [ ] checked
-
-## orgad2025
-
-**LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations**  
-Orgad, H. and Toker, M. and Gekhman, Z. and Reichart, R. and Szpektor, I. and Kotek, H. and Belinkov, Y. · Proc. ICLR 2025  
-<https://arxiv.org/abs/2410.02707>
+**Reference intervals: current status, recent developments and future considerations**  
+Ozarda, Yesim · Biochemia Medica 2016  
+<https://doi.org/10.11613/BM.2016.001>
 
 What the paper claims (1 place):
 
-- Emerging interpretability research can detect some internal uncertainty signals, but probes do not generalize across tasks, entropy methods fail on confident errors, and probing methods require white-box access.
-
-- [ ] checked
-
-## ouyang2022
-
-**Training language models to follow instructions with human feedback**  
-Ouyang, L. and others · Proc. NeurIPS 2022  
-<https://arxiv.org/abs/2203.02155>
-
-What the paper claims (1 place):
-
-- Current mitigations reduce hallucination rates but cannot eliminate them. RLHF improves instruction-following and truthfulness.
-
-- [ ] checked
-
-## parasuraman1997
-
-**Humans and automation: Use, misuse, disuse, abuse**  
-Parasuraman, R. and Riley, V. · Human Factors 1997  
-<https://doi.org/10.1518/001872097778543886>
-
-What the paper claims (1 place):
-
-- This creates precisely the conditions described in Bainbridge's classic analysis of the ironies of automation and well-documented in the trust-in-automation literature: as automated systems become more reliable, human operators trust them more and monitor them less.
-
-- [ ] checked
-
-## pcc
-
-**Proof-Carrying Code**  
-Necula, G. C. · Proc. POPL 1997  
-<https://doi.org/10.1145/263699.263712>
-
-What the paper claims (1 place):
-
-- Proof-Carrying Code embeds machine-checkable safety proofs in executable code.
+- The model never rounds, so it can never round wrong. fig:display figure The threshold registry follows a pattern shared by clinical reference intervals, JSON Schema validation and monitoring alert rules: a bounded condition on a single field is given a name and a human-readable label, so the judgment can be invoked and audited by that name rather than restated as an expression wherever it is used.
 
 - [ ] checked
 
@@ -551,47 +439,21 @@ What the paper claims (1 place):
 Solatorio, Aivin V. · arXiv:2509.06902 2025  
 <https://arxiv.org/abs/2509.06902>
 
-What the paper claims (2 places):
+What the paper claims (1 place):
 
-- We baseline against SymGen rather than the nearer neighbour, Proof-Carrying Numbers, for a specific reason: SymGen's mechanism is fully specified in its paper down to the delimiter, so a faithful reimplementation is possible from the published description alone.
-- Proof-Carrying Numbers is the closest recent neighbour: the LLM emits claim-bound tokens tying numeric spans to structured claims, verified deterministically in the renderer with explicit status marks and tolerance policies; it lacks entity scoping and a composable threshold registry.
+- Among recent systems, Proof-Carrying Numbers is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs.
 
 - [ ] checked
 
-## pml
+## prometheusalerting
 
-**A proof markup language for Semantic Web services**  
-Pinheiro da Silva, Paulo and McGuinness, Deborah L. and Fikes, Richard · Information Systems 2006  
-<https://doi.org/10.1016/j.is.2005.02.003>
+**Alerting rules**  
+Prometheus Authors · Prometheus documentation, \urlhttps://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/ 2026  
+<https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/>
 
 What the paper claims (1 place):
 
-- We present ProveML (Provable Markup Language), a system that fills this gap. (The name is distinct from the earlier DARPA-era Proof/Provenance Markup Language, PML, an interlingua for representing proof and provenance metadata; ProveML shares neither its lineage nor its mechanism.) ProveML is an inline claim markup language embedded in AI-generated text where: itemize Every entity reference is verified against a structured data store (name match).
-
-- [ ] checked
-
-## prov
-
-**PROV-O: The PROV Ontology**  
-Lebo, T. and Sahoo, S. and McGuinness, D. and others · W3C Recommendation, \urlhttps://www.w3.org/TR/prov-o/ 2013  
-<https://www.w3.org/TR/prov-o/>
-
-What the paper claims (1 place):
-
-- Provenance standards. W3C PROV-O and C2PA provide document-level provenance metadata.
-
-- [ ] checked
-
-## rarr
-
-**RARR: Researching and Revising What Language Models Say, Using Language Models**  
-Gao, L. and Dai, Z. and Pasupat, P. and Chen, A. and Chaganty, A. T. and Fan, Y. and Zhao, V. and Lao, N. and Lee, H. and Juan, D. and Guu, K. · Proc. ACL 2023  
-<https://doi.org/10.18653/v1/2023.acl-long.910>
-
-What the paper claims (2 places):
-
-- Attribution (RARR, WebGPT, OpenAI response annotations): link claims to source documents or passages.
-- RARR and WebGPT attach URLs.
+- The model never rounds, so it can never round wrong. fig:display figure The threshold registry follows a pattern shared by clinical reference intervals, JSON Schema validation and monitoring alert rules: a bounded condition on a single field is given a name and a human-readable label, so the judgment can be invoked and audited by that name rather than restated as an expression wherever it is used.
 
 - [ ] checked
 
@@ -603,58 +465,31 @@ W3C · W3C Working Group Note, \urlhttps://www.w3.org/TR/rdfa-primer/ 2015
 
 What the paper claims (1 place):
 
-- RDFa adds attributes to HTML that bind spans of prose to entities and properties in a structured vocabulary, resolvable without reading the prose --- the same shape of idea, developed for documents people wrote themselves.
+- Related Work sec:related The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it; iXBRL embeds machine-readable tags in financial reports for automated audit.
 
 - [ ] checked
 
-## refchecker
+## russell2025
 
-**Knowledge-Centric Hallucination Detection**  
-Hu, Xiangkun and Ru, Dongyu and Qiu, Lin and Guo, Qipeng and Zhang, Tianhang and Xu, Yang and Luo, Yun and Liu, Pengfei and Zhang, Yue and Zhang, Zheng · Proc. EMNLP 2024  
-<https://doi.org/10.18653/v1/2024.emnlp-main.395>
-
-What the paper claims (2 places):
-
-- Current approaches to the AI reliability problem include several strategies, none of which addresses the structural verification gap: enumerate Post-hoc fact-checking (FActScore, SAFE, FacTool, SelfCheckGPT, RefChecker ): decompose, sample, or re-check generated text after the fact against external sources or model-generated consistency signals.
-- RefChecker extracts claim triplets for reference-based checking.
-
-- [ ] checked
-
-## safe
-
-**Long-form factuality in large language models**  
-Wei, J. and Yang, C. and Song, X. and Lu, Y. and Hu, N. and Huang, J. and Tran, D. and Peng, D. and Liu, R. and Huang, D. and Du, C. and Le, Q. V. · Proc. NeurIPS 2024  
-<https://arxiv.org/abs/2403.18802>
-
-What the paper claims (2 places):
-
-- Current approaches to the AI reliability problem include several strategies, none of which addresses the structural verification gap: enumerate Post-hoc fact-checking (FActScore, SAFE, FacTool, SelfCheckGPT, RefChecker ): decompose, sample, or re-check generated text after the fact against external sources or model-generated consistency signals.
-- Post-hoc fact-checking (AI in the loop). FActScore, SAFE, FacTool, and OpenFactCheck (COLING 2025) decompose generated text into atomic claims and verify each using LLMs or web search.
-
-- [ ] checked
-
-## santillana2026
-
-**Precision Is Not Faithfulness: Coverage-Aware Evaluation of Grounded Generation with a Complete Oracle**  
-Santillana, J. S. · arXiv:2606.09376 2026  
-<https://arxiv.org/abs/2606.09376>
+**People who frequently use ChatGPT for writing tasks are accurate and robust detectors of AI-generated text**  
+Russell, Jenna and Karpinska, Marzena and Iyyer, Mohit · Proc. ACL (Volume 1: Long Papers) 2025  
+<https://doi.org/10.18653/v1/2025.acl-long.267>
 
 What the paper claims (1 place):
 
-- reach the same conclusion from the evaluation side, showing that reference-free faithfulness metrics measure only precision over stated claims and therefore reward abstention; they pair precision with recall against a completely derived oracle.
+- Introduction Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content; readers who write with these models daily still can.
 
 - [ ] checked
 
-## selfcheckgpt
+## sun2025idiosyncrasies
 
-**SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models**  
-Manakul, P. and Liusie, A. and Gales, M. J. F. · Proc. EMNLP 2023  
-<https://doi.org/10.18653/v1/2023.emnlp-main.557>
+**Idiosyncrasies in Large Language Models**  
+Sun, Mingjie and Yin, Yida and Xu, Zhiqiu and Kolter, J. Zico and Liu, Zhuang · Proc. ICML 2025  
+<https://arxiv.org/abs/2502.12150>
 
-What the paper claims (2 places):
+What the paper claims (1 place):
 
-- Current approaches to the AI reliability problem include several strategies, none of which addresses the structural verification gap: enumerate Post-hoc fact-checking (FActScore, SAFE, FacTool, SelfCheckGPT, RefChecker ): decompose, sample, or re-check generated text after the fact against external sources or model-generated consistency signals.
-- SelfCheckGPT detects hallucinations via sampling consistency without external knowledge.
+- Instruction-tuned models routinely answer in Markdown, and a CommonMark-conformant renderer passes the constructs through unchanged, because characters not given an interpretation by any Markdown rule are parsed as plain textual content; in our runs every model produced the markup on every query.
 
 - [ ] checked
 
@@ -664,10 +499,9 @@ What the paper claims (2 places):
 Torroba Hennigen, L. and Shen, S. Z. and Nrusimha, A. and Gapp, B. and Sontag, D. and Kim, Y. · Proc. COLM 2024  
 <https://arxiv.org/abs/2311.09188>
 
-What the paper claims (3 places):
+What the paper claims (2 places):
 
-- Baseline: Substitution versus Verification sec:symgen Setup. SymGen is the closest published mechanism, and it takes the opposite strategy: the model emits Jinja-like \\ field \\ references into the conditioning data and a parser substitutes each one, so the model never states a value itself.
-- SymGen embeds symbolic references in AI-generated text that are resolved against table data.
+- Among recent systems, Proof-Carrying Numbers is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs.
 - We have not measured whether this reduces human verification effort, and the evidence from adjacent systems is mixed: report their user study reduced average verification time by 20\%, while report a 21-participant study in which verification and correction effort did not differ significantly from their baseline, even though their system reduced hallucination.
 
 - [ ] checked
@@ -680,7 +514,7 @@ Chen, W. and Wang, H. and Chen, J. and Zhang, Y. and Wang, H. and Li, S. and Zho
 
 What the paper claims (1 place):
 
-- Data-grounded generation. Fact verification against evidence has a canonical benchmark lineage --- FEVER for textual sources, TabFact for tables, FEVEROUS for both at once --- in which a trained model judges whether evidence supports a claim; ProveML sits outside that lineage by making the judgment a lookup rather than a model.
+- Fact verification against evidence has a canonical benchmark lineage --- FEVER, TabFact, FEVEROUS --- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup.
 
 - [ ] checked
 
@@ -696,65 +530,123 @@ What the paper claims (1 place):
 
 - [ ] checked
 
-## toolgate
+## transparencycode2026
 
-**ToolGate: Contract-Grounded and Verified Tool Execution for LLMs**  
-Liu, Y. and Peng, X. and Cao, J. and Wang, X. and Deng, S. and Chen, J. and Yin, J. and Zhang, X. · Findings of ACL 2026  
-<https://doi.org/10.18653/v1/2026.findings-acl.470>
-
-What the paper claims (2 places):
-
-- That sweep found systems that bind claims to evidence contracts, emit provenance triples, or maintain typed key-value state with non-probabilistic admission, but none that extends an authoring format with inline claim markup, and none that constrains qualitative wording through a declared threshold vocabulary.
-- Design philosophy. ProveML is deliberately assembled from established patterns rather than invented from scratch: itemize[nosep] Host language: Markdown (natively produced by LLMs) Inline tagging model from iXBRL Operator vocabulary from FHIR clinical reference ranges and JSON Schema validation Fact store from the Entity-Attribute-Value (EAV) pattern; arrive at a comparable typed key-value state with a non-probabilistic admission check, in the agent/tool setting rather than in text Verify-then-render pipeline from standard compiler design itemize A skeptical reader should find each component familiar.
-
-- [ ] checked
-
-## totto
-
-**ToTTo: A Controlled Table-To-Text Generation Dataset**  
-Parikh, A. and Wang, X. and Gehrmann, S. and Faruqui, M. and Dhingra, B. and Yang, D. and Das, D. · Proc. EMNLP 2020  
-<https://doi.org/10.18653/v1/2020.emnlp-main.89>
+**Code of Practice on Transparency of AI-generated Content**  
+European AI Office · June 2026, \urlhttps://digital-strategy.ec.europa.eu/en/faqs/signing-code-practice-transparency-ai-generated-content 2026  
+<https://digital-strategy.ec.europa.eu/en/faqs/signing-code-practice-transparency-ai-generated-content>
 
 What the paper claims (1 place):
 
-- The data-to-text community and StructFact (ACL 2025 Findings) benchmark faithful generation from structured data.
+- But the Code of Practice that operationalises these duties concerns marking the origin of content and says nothing about its accuracy: a text can be fully compliant and wrong.
 
 - [ ] checked
 
-## verifiableprm
+## ucum
 
-**Beyond Outcome Verification: Verifiable Process Reward Models for Structured Reasoning**  
-Pronesti, M. and Belz, A. and Hou, Y. · Findings of ACL 2026  
-<https://doi.org/10.18653/v1/2026.findings-acl.1611>
+**The Unified Code for Units of Measure**  
+Schadow, Gunther and McDonald, Clement J. · Version 2.2, Regenstrief Institute and the UCUM Organization, \urlhttps://ucum.org/ucum 2024  
+<https://ucum.org/ucum>
 
 What the paper claims (1 place):
 
-- make the same architectural argument we do, in the reasoning-step setting: they replace neural judges over chain-of-thought with rule-based verifiers precisely because model judges are opaque and reward-hackable.
+- Semantic unit equivalence (e.g., mg/dL vs mmol/L) and standardized vocabularies (UCUM for units of measure~, ISO 4217 for currency codes~) are deferred to future work.
 
 - [ ] checked
 
-## webgpt
+## vectarahhem2026
 
-**WebGPT: Browser-assisted question-answering with human feedback**  
-Nakano, R. and others · arXiv:2112.09332 2021  
-<https://arxiv.org/abs/2112.09332>
-
-What the paper claims (2 places):
-
-- Attribution (RARR, WebGPT, OpenAI response annotations): link claims to source documents or passages.
-- RARR and WebGPT attach URLs.
-
-- [ ] checked
-
-## xu2024
-
-**Hallucination is Inevitable: An Innate Limitation of Large Language Models**  
-Xu, Z. and Jain, S. and Kankanhalli, M. · arXiv:2401.11817 2024  
-<https://arxiv.org/abs/2401.11817>
+**HHEM-2.1-Open**  
+Vectara · Hugging Face, \urlhttps://huggingface.co/vectara/hallucination_evaluation_model 2026  
+<https://huggingface.co/vectara/hallucination_evaluation_model>
 
 What the paper claims (1 place):
 
-- use computability theory to show that LLMs cannot learn all computable functions and will therefore inevitably produce confabulations when used as general-purpose reasoners.
+- The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check, Azure AI Content Safety groundedness detection, Vectara's HHEM and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text.
+
+- [ ] checked
+
+## verifin2026
+
+**VeriFin: A Neurosymbolic Framework for Verifying LLM-Generated Financial Claims**  
+Hall, Bethel and Shome, Sachi and Eiers, William · arXiv:2608.10213 2026  
+<https://arxiv.org/abs/2608.10213>
+
+What the paper claims (1 place):
+
+- VeriFin checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer.
+
+- [ ] checked
+
+## walters2023
+
+**Fabrication and errors in the bibliographic citations generated by ChatGPT**  
+Walters, William H. and Wilder, Esther Isabelle · Scientific Reports 2023  
+<https://doi.org/10.1038/s41598-023-41032-5>
+
+What the paper claims (1 place):
+
+- They generate text that is plausible but factually incorrect: fabricated citations, 55\% of those produced by GPT-3.5 and 18\% of those by GPT-4 in one study; numbers with no basis in the source; and statements whose citations do not support them.
+
+- [ ] checked
+
+## wright2026
+
+**Enterprise-wide simultaneous deployment of ambient scribe technology: lessons learned from an academic health system**  
+Wright, Aileen P. and Nall, Carolynn K. and Franklin, Jacob J. H. and Horst, Sara N. and Kumah-Crystal, Yaa A. and Wright, Adam T. and Mize, Dara E. · Journal of the American Medical Informatics Association 2026  
+<https://doi.org/10.1093/jamia/ocaf186>
+
+What the paper claims (1 place):
+
+- Generative AI is used in at least one business function at 70\% of surveyed organizations, in legal research and in clinical documentation.
+
+- [ ] checked
+
+## xbrlvalidation2009
+
+**Validation 1.0**  
+XBRL International · Recommendation 22 June 2009, \urlhttps://www.xbrl.org/specification/validation/rec-2009-06-22/validation-rec-2009-06-22.html 2009  
+<https://www.xbrl.org/specification/validation/rec-2009-06-22/validation-rec-2009-06-22.html>
+
+What the paper claims (1 place):
+
+- FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
+
+- [ ] checked
+
+## xbrlvalueassertions2009
+
+**Value Assertions 1.0**  
+XBRL International · Recommendation 22 June 2009, \urlhttps://www.xbrl.org/specification/valueassertions/rec-2009-06-22/valueassertions-rec-2009-06-22.html 2009  
+<https://www.xbrl.org/specification/valueassertions/rec-2009-06-22/valueassertions-rec-2009-06-22.html>
+
+What the paper claims (1 place):
+
+- FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
+
+- [ ] checked
+
+## xiong2024
+
+**Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs**  
+Xiong, Miao and Hu, Zhiyuan and Lu, Xinyang and Li, Yifei and Fu, Jie and He, Junxian and Hooi, Bryan · Proc. ICLR 2024  
+<https://arxiv.org/abs/2306.13063>
+
+What the paper claims (1 place):
+
+- The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance.
+
+- [ ] checked
+
+## zhou2024
+
+**Relying on the Unreliable: The Impact of Language Models' Reluctance to Express Uncertainty**  
+Zhou, Kaitlyn and Hwang, Jena D. and Ren, Xiang and Sap, Maarten · Proc. ACL (Volume 1: Long Papers) 2024  
+<https://doi.org/10.18653/v1/2024.acl-long.198>
+
+What the paper claims (1 place):
+
+- The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance.
 
 - [ ] checked
 
@@ -764,8 +656,53 @@ What the paper claims (1 place):
 
 These appear only in the bibliography — either cite them or drop them:
 
+- `alignmentbottleneck` — The Alignment Bottleneck in Decomposition-Based Claim Verification
 - `alignscore` — AlignScore: Evaluating Factual Consistency with A Unified Alignment Function
+- `bainbridge1983` — Ironies of automation
+- `c2pa` — C2PA Technical Specification
+- `claimdb` — ClaimDB: A Fact Verification Benchmark over Large Structured Data
+- `deloitte2025` — Deloitte was caught using AI in \$290,000 report to help the Australian government crack down on welfare after a researcher flagged hallucinations
+- `dspy` — DSPy: Compiling Declarative Language Model Calls into State-of-the-Art Pipelines
+- `evidencesurvey` — Attribution, Citation, and Quotation: A Survey of Evidence-based Text Generation with Large Language Models
+- `factool` — FacTool: Factuality Detection in Generative AI -- A Tool Augmented Framework for Multi-Task and Multi-Domain Scenarios
+- `factscore` — FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation
+- `farquhar2024` — Detecting hallucinations in large language models using semantic entropy
+- `fhir` — FHIR (Fast Healthcare Interoperability Resources), Release 5
+- `finground` — FinGround: Detecting and Grounding Financial Hallucinations via Atomic Claim Verification
+- `finverbench` — FinVerBench: Benchmark Validity and Calibration in Large Language Model Financial Statement Verification
+- `gartner2023` — More Than 80\% of Enterprises Will Have Used Generative AI APIs or Deployed Generative AI-Enabled Applications by 2026
+- `gavel` — GAVEL: Evidence-Contract Debate with Mechanized Scrutiny for Provenance-Grounded Fact-Checking
+- `genprove` — GenProve: Learning to Generate Text with Fine-Grained Provenance
+- `googlebard2023` — Google AI chatbot Bard offers inaccurate information in company ad
+- `googleground` — Grounding with Google Search
+- `guardrails` — Guardrails: Adding guardrails to large language models
+- `halldetect2026` — HallDetect: Decomposed Entailment for Factuality Checking
+- `leesee2004` — Trust in automation: Designing for appropriate reliance
+- `llmon` — LLMON: An LLM-native Markup Language to Leverage Structure and Semantics at the LLM Interface
+- `mata2023` — \textitMata v. Avianca, Inc.
+- `mccain2026` — Measuring AI Agent Autonomy in Practice
+- `mckinsey2025` — The state of AI
 - `minicheck` — MiniCheck: Efficient Fact-Checking of LLMs on Grounding Documents
+- `narrativelicense` — Narrative License and Model Sycophancy in LLM Summaries of Scientific Work
+- `naviskore` — Designing curriculum-aligned digital assessment infrastructures: a design-based case study of Naviskore in Flemish secondary education
+- `nemo` — NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails
+- `oraclegen` — Oracle-Augmented Generation: Connecting AI to Real-Time Verifiable Data
+- `orgad2025` — LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations
+- `ouyang2022` — Training language models to follow instructions with human feedback
+- `parasuraman1997` — Humans and automation: Use, misuse, disuse, abuse
+- `pcc` — Proof-Carrying Code
 - `picard` — PICARD: Parsing Incrementally for Constrained Auto-Regressive Decoding from Language Models
+- `pml` — A proof markup language for Semantic Web services
+- `prov` — PROV-O: The PROV Ontology
+- `rarr` — RARR: Researching and Revising What Language Models Say, Using Language Models
+- `refchecker` — Knowledge-Centric Hallucination Detection
+- `safe` — Long-form factuality in large language models
+- `santillana2026` — Precision Is Not Faithfulness: Coverage-Aware Evaluation of Grounded Generation with a Complete Oracle
+- `selfcheckgpt` — SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models
 - `summac` — SummaC: Re-Visiting NLI-based Models for Inconsistency Detection in Summarization
 - `synchromesh` — Synchromesh: Reliable code generation from pre-trained language models
+- `toolgate` — ToolGate: Contract-Grounded and Verified Tool Execution for LLMs
+- `totto` — ToTTo: A Controlled Table-To-Text Generation Dataset
+- `verifiableprm` — Beyond Outcome Verification: Verifiable Process Reward Models for Structured Reasoning
+- `webgpt` — WebGPT: Browser-assisted question-answering with human feedback
+- `xu2024` — Hallucination is Inevitable: An Innate Limitation of Large Language Models

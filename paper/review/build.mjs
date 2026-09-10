@@ -96,7 +96,7 @@ const citify = (text, blockId, evidence) => {
     const quotes = a ? a.evidence.filter((e) => e.basis === 'quote' && e.sourceQuote) : [];
     const absences = a ? a.evidence.filter((e) => e.basis === 'absence' && e.note).map((e) => e.note) : [];
     if (quotes.length) {
-      evidence.push({ field, claimValue: label, basis: 'quote', source: 'cite-' + key,
+      evidence.push({ field, claimValue: label, basis: 'quote', source: 'cite-' + (quotes[0].source || key),
         ...(quotes.length === 1 ? { sourceQuote: quotes[0].sourceQuote, sourceLocator: quotes[0].sourceLocator || 'archived copy of the cited work' } : { sourceQuotes: quotes.map((e) => ({ sourceQuote: e.sourceQuote, sourceLocator: e.sourceLocator || 'archived copy of the cited work' })) }),
         note: 'The paper uses this work for: "' + sent + '" Does the cited work support that?' + (absences.length ? ' ' + absences.join(' ') : '') });
     } else if (snapshots['cite-' + key]) {
@@ -118,7 +118,7 @@ const bound = [
       ['on 17–33% of queries', 'on %[study:magesh.hallucinationRange]{17–33}% of queries'],
       ['found more than a thousand containing', 'found %[study:liu.filings]{more than a thousand} containing'],
     ], evidence: [
-      q('reg:euaiact.appliedFrom', '2 August 2026', 'cite-euaiact', 'From 2 August 2026', 'Commission press release of 31 July 2026, archived in the paper audit', 'The archived page is the Commission press release announcing the duties, not the Regulation text itself.'),
+      q('reg:euaiact.appliedFrom', '2 August 2026', 'cite-euaiact', 'shall apply from 2 August 2026', 'Regulation (EU) 2024/1689, EUR-Lex, Article 113', 'The Regulation text itself; the Commission announcement of the same date is archived next to it as cite-euaiact-news.'),
       q('reg:omnibus.deferredTo', '2 December 2026', 'omnibus2026', 'comply with Article 50(2) by 2 December 2026', 'Regulation (EU) 2026/1744, EUR-Lex, amended Article 113'),
       q('study:magesh.hallucinationRange', '17–33', 'magesh2025', 'each hallucinate between 17% and 33% of the time', 'arXiv 2405.20362 abstract', 'The abstract says "between 17% and 33% of the time"; the paper writes "17–33% of queries". Fair reading?'),
       q('study:liu.filings', 'more than a thousand', 'liu2026citations', 'we found over 1,000 filings containing fabricated citations', 'arXiv 2606.21155 abstract', 'The abstract says "over 1,000 filings"; the paper writes "more than a thousand". Fair?'),
