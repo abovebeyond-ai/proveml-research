@@ -28,10 +28,15 @@ export function houseCss() {
   const j = raw.indexOf('.pml-oordeel', i);
   const states = i >= 0 && j > i ? stripComments(raw.slice(i, j)).trim() : '';
   const sha = createHash('sha256').update(raw).digest('hex');
+  // The instrument layer: the house's moves and measures, once, between two markers.
+  // A page reads them here and never redraws them (huisstijl.md, 2026-09-10).
+  const a = raw.indexOf('/* @huis-instrumenten:begin */'), b = raw.indexOf('/* @huis-instrumenten:einde */');
+  const instruments = a >= 0 && b > a ? stripComments(raw.slice(a, b)).trim() : '';
   const out = [
     root ? `:root{${declarations(root)}}` : '',
     night ? `body[data-theme=night]{${declarations(night)}background:var(--night);color:var(--sky)}` : '',
     states,
+    instruments,
   ].filter(Boolean).join('\n');
-  return { css: out, source: { file: FILE.replace(homedir(), '~'), sha256: sha, root: !!root, night: !!night, states: !!states } };
+  return { css: out, source: { file: FILE.replace(homedir(), '~'), sha256: sha, root: !!root, night: !!night, states: !!states, instruments: !!instruments } };
 }
