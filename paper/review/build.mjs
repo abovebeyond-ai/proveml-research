@@ -449,7 +449,7 @@ const adapters = {
     ...(pdppReview ? [{ role: 'as a PDPP source', name: 'pdpp-out', plug: 'PDPP 0.1 source, two streams', what: 'the review served as a PDPP source: streams judgements and signoffs under a purpose-bound grant, so an editor reads the approvals on the reviewer\'s terms; fetched once as client editor for editorial review, with the credential itself withheld by the field projection', note: 'pdpp-review-server.mjs; ' + pdppReview.signoffs.length + ' sign-off record(s) and ' + pdppReview.judgements + ' judgement record(s) served under grant ' + pdppReview.grant.grant_id, fits: 'any PDPP client', options: [{ name: 'local source, Core 4/5/7/8', state: 'plugged' }, { name: 'a hosted PDPP source', state: 'known' }] }] : []),
   ],
 };
-const { html, verified, total, proofs, roots } = reviewPage({
+const pageOptions = {
   store, subjects, snapshots, manifests, sourceTitles, adapters,
   allowMismatch: true,
   brandCss: houseCss().css, brandCssSource: houseCss().source,
@@ -468,13 +468,14 @@ const { html, verified, total, proofs, roots } = reviewPage({
   storeName: 'ProveML: Inline Claim Markup for Deterministic Verification of AI-Generated Text', subjectsWord: 'sources',
   brand: { mark: '(ˆ◡ˆ)⌕', name: 'vera' },
   leftLabel: 'the paper says', rightLabel: 'the source',
-});
+};
+const { html, verified, total, proofs, roots } = reviewPage(pageOptions);
 writeFileSync('report/review-page.html', html);
 // The index of the sources, for the push to Vera: titles, groups, and the effective
 // signatures (a PDPP grant counts as a rung), so the hosted record can name them.
 {
-  const groups = {}; for (const g of adapters.sourceGroups || []) for (const sid of g.ids) groups[sid] = g.title;
-  writeFileSync('report/sources/index.json', JSON.stringify({ titles: sourceTitles, groups, signatures: adapters.signatures || {} }, null, 1) + '\n');
+  const groups = {}; for (const g of pageOptions.sourceGroups || []) for (const sid of g.ids) groups[sid] = g.title;
+  writeFileSync('report/sources/index.json', JSON.stringify({ titles: sourceTitles, groups, signatures: pageOptions.signatures || {} }, null, 1) + '\n');
 }
 mkdirSync('report/manifests', { recursive: true });
 for (const [id, m] of Object.entries(manifests)) writeFileSync('report/manifests/' + id + '.json', JSON.stringify(m, null, 1) + '\n');

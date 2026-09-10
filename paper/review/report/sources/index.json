@@ -68,6 +68,204 @@
   "cite-xbrl": "xbrl",
   "cite-xu2024": "xu2024"
  },
- "groups": {},
- "signatures": {}
+ "groups": {
+  "summary": "the paper’s own data",
+  "summary2": "the paper’s own data",
+  "residuals": "the paper’s own data",
+  "deployment": "the paper’s own data",
+  "benchmarks": "the paper’s own data",
+  "dataset": "the paper’s own data",
+  "finance": "the paper’s own data",
+  "package": "the paper’s own data",
+  "magesh2025": "works it cites",
+  "liu2026citations": "works it cites",
+  "cite-alignscore": "works it cites",
+  "cite-anthropicinterp": "works it cites",
+  "cite-c2pa": "works it cites",
+  "cite-chan2026soundness": "works it cites",
+  "cite-claimlocked2026": "works it cites",
+  "cite-datareferencing2026": "works it cites",
+  "cite-deloitte2025": "works it cites",
+  "cite-dspy-assertions": "works it cites",
+  "cite-dtg2026": "works it cites",
+  "cite-euaiact": "works it cites",
+  "cite-evergreen2026": "works it cites",
+  "cite-factool": "works it cites",
+  "cite-factscore": "works it cites",
+  "cite-farquhar2024": "works it cites",
+  "cite-fever": "works it cites",
+  "cite-feverous": "works it cites",
+  "cite-fhir-observation": "works it cites",
+  "cite-fhir": "works it cites",
+  "cite-fullcite2026": "works it cites",
+  "cite-gemini-double-check": "works it cites",
+  "cite-googleground": "works it cites",
+  "cite-guardrails-ai": "works it cites",
+  "cite-guardrails": "works it cites",
+  "cite-halldetect2026": "works it cites",
+  "cite-ixbrl": "works it cites",
+  "cite-ji2023": "works it cites",
+  "cite-kalai2024": "works it cites",
+  "cite-kalai2025": "works it cites",
+  "cite-leesee2004": "works it cites",
+  "cite-magesh2025": "works it cites",
+  "cite-mccain2026": "works it cites",
+  "cite-minicheck": "works it cites",
+  "cite-nemo-guardrails": "works it cites",
+  "cite-nemo": "works it cites",
+  "cite-oraclegen": "works it cites",
+  "cite-orgad2025": "works it cites",
+  "cite-ouyang2022": "works it cites",
+  "cite-pcn2025": "works it cites",
+  "cite-picard": "works it cites",
+  "cite-prov": "works it cites",
+  "cite-rarr": "works it cites",
+  "cite-rdfa": "works it cites",
+  "cite-refchecker": "works it cites",
+  "cite-safe": "works it cites",
+  "cite-selfcheckgpt": "works it cites",
+  "cite-summac": "works it cites",
+  "cite-symgen": "works it cites",
+  "cite-synchromesh": "works it cites",
+  "cite-tabfact": "works it cites",
+  "cite-totto": "works it cites",
+  "cite-verifin2026": "works it cites",
+  "cite-webgpt": "works it cites",
+  "cite-xbrl": "works it cites",
+  "cite-xu2024": "works it cites",
+  "omnibus2026": "regulation and official pages",
+  "art50guidelines2026": "regulation and official pages",
+  "pdpp-students": "personal data under a grant"
+ },
+ "signatures": {
+  "magesh2025": {
+   "level": "witnessed",
+   "issuer": "arxiv.org",
+   "method": "tls-transport+rfc3161",
+   "verifiedAt": "2026-09-02",
+   "transport": {
+    "host": "arxiv.org",
+    "certSha256": "74:9D:90:F5:22:6E:08:50:B2:91:9F:1E:61:9E:6A:86:86:4B:8B:20:6E:F9:B1:63:B5:31:5B:11:01:A9:AF:32",
+    "issuer": "/C=US/O=Certainly/CN=Certainly Intermediate R1",
+    "notAfter": "Sep 25 02:42:20 2026 GMT",
+    "fetchedAt": "2026-09-02T22:16:26.686Z",
+    "sameAsArchived": true,
+    "quotesInRefetch": {
+     "present": 1,
+     "of": 1
+    }
+   },
+   "timestamp": {
+    "tsa": "freetsa.org",
+    "at": "Sep  2 22:16:27 2026 GMT"
+   },
+   "witness": {
+    "archive": "web.archive.org",
+    "url": "https://web.archive.org/web/20260902221731/https://arxiv.org/abs/2405.20362",
+    "at": "2026-09-02T22:17:31Z"
+   }
+  },
+  "liu2026citations": {
+   "level": "witnessed",
+   "issuer": "arxiv.org",
+   "method": "tls-transport+rfc3161",
+   "verifiedAt": "2026-09-02",
+   "transport": {
+    "host": "arxiv.org",
+    "certSha256": "74:9D:90:F5:22:6E:08:50:B2:91:9F:1E:61:9E:6A:86:86:4B:8B:20:6E:F9:B1:63:B5:31:5B:11:01:A9:AF:32",
+    "issuer": "/C=US/O=Certainly/CN=Certainly Intermediate R1",
+    "notAfter": "Sep 25 02:42:20 2026 GMT",
+    "fetchedAt": "2026-09-02T22:16:27.376Z",
+    "sameAsArchived": true,
+    "quotesInRefetch": {
+     "present": 1,
+     "of": 1
+    }
+   },
+   "timestamp": {
+    "tsa": "freetsa.org",
+    "at": "Sep  2 22:16:27 2026 GMT"
+   },
+   "witness": {
+    "archive": "web.archive.org",
+    "url": "https://web.archive.org/web/20260902221830/https://arxiv.org/abs/2606.21155",
+    "at": "2026-09-02T22:18:30Z"
+   }
+  },
+  "omnibus2026": {
+   "level": "timestamped",
+   "issuer": "eur-lex.europa.eu",
+   "method": "tls-transport+rfc3161",
+   "verifiedAt": "2026-09-02",
+   "transport": {
+    "host": "eur-lex.europa.eu",
+    "certSha256": "4A:FE:0F:9E:67:CD:6F:95:55:2F:B6:37:F0:6A:2E:51:06:2A:40:09:A4:92:25:B2:F9:4F:DC:73:70:52:4C:E8",
+    "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M04",
+    "notAfter": "Dec 15 23:59:59 2026 GMT",
+    "fetchedAt": "2026-09-02T22:16:28.850Z",
+    "sameAsArchived": false,
+    "quotesInRefetch": {
+     "present": 1,
+     "of": 1
+    }
+   },
+   "timestamp": {
+    "tsa": "freetsa.org",
+    "at": "Sep  2 22:16:29 2026 GMT"
+   }
+  },
+  "pdpp-students": {
+   "level": "granted",
+   "issuer": "http://127.0.0.1:8790",
+   "method": "pdpp-0.1 client fetch",
+   "verifiedAt": "2026-09-03",
+   "grant": {
+    "version": "0.1.0",
+    "grant_id": "grt_7ab57693",
+    "issued_at": "2026-09-03T21:37:15.638Z",
+    "subject": {
+     "id": "school:sint-amandus"
+    },
+    "client": {
+     "client_id": "vera"
+    },
+    "source": {
+     "kind": "provider_native",
+     "id": "http://127.0.0.1:8790"
+    },
+    "source_declaration": {
+     "version": "2026-09-03"
+    },
+    "purpose_code": "https://pdpp.dev/purpose/research",
+    "access_mode": "single_use",
+    "streams": [
+     {
+      "name": "students",
+      "instance_ids": [
+       "sint-amandus-2025-2026"
+      ],
+      "fields": [
+       "id",
+       "offering",
+       "grade",
+       "ev",
+       "pass",
+       "source_updated_at"
+      ]
+     }
+    ],
+    "expires_at": "2026-09-03T22:37:15.638Z",
+    "acceptance": "explicit local provisioning"
+   },
+   "records": 741,
+   "pages": 8,
+   "fetchedAt": "2026-09-03T21:37:15.689Z",
+   "withheld": [
+    "name",
+    "class",
+    "school",
+    "stream_track"
+   ]
+  }
+ }
 }
