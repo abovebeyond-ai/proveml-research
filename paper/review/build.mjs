@@ -1,6 +1,8 @@
 import { reviewPage, evidenceReviewId } from 'proveml/review-page';
 import { buildManifest } from 'proveml/manifest';
-import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'node:fs';
+import { writeFileSync, readFileSync, existsSync, mkdirSync, readdirSync, unlinkSync } from 'node:fs';
+import { join } from 'node:path';
+import { homedir } from 'node:os';
 import { createHash } from 'node:crypto';
 // A paragraph is addressed by what it says, not where it sits: its checks follow it
 // through renumbering and rebuilds, and expire only when its text changes.
@@ -449,7 +451,27 @@ const adapters = {
     ...(pdppReview ? [{ role: 'as a PDPP source', name: 'pdpp-out', plug: 'PDPP 0.1 source, two streams', what: 'the review served as a PDPP source: streams judgements and signoffs under a purpose-bound grant, so an editor reads the approvals on the reviewer\'s terms; fetched once as client editor for editorial review, with the credential itself withheld by the field projection', note: 'pdpp-review-server.mjs; ' + pdppReview.signoffs.length + ' sign-off record(s) and ' + pdppReview.judgements + ' judgement record(s) served under grant ' + pdppReview.grant.grant_id, fits: 'any PDPP client', options: [{ name: 'local source, Core 4/5/7/8', state: 'plugged' }, { name: 'a hosted PDPP source', state: 'known' }] }] : []),
   ],
 };
+// Visibility per source, chosen here by the owner: the paper's own data and anything fetched
+// under a grant travel withheld (ciphertext under a content key the reader's device unwraps);
+// cited public works travel open; the pupil data is sealed, the demonstration of that state.
+// Content keys live outside the repository, one file per source, and are made on first use.
+import { randomBytes } from 'node:crypto';
+const KEYS_DIR = join(homedir(), '.config', 'vera', 'keys', 'paper1');
+const visibility = {}; const contentKeys = {};
+{
+  const own = new Set(['summary', 'summary2', 'residuals', 'deployment', 'benchmarks', 'dataset', 'finance', 'package']);
+  for (const sid of Object.keys(manifests)) visibility[sid] = sid === 'pdpp-students' ? 'sealed' : own.has(sid) ? 'withheld' : 'open';
+  if (process.env.VERA_VISIBILITY) for (const kv of process.env.VERA_VISIBILITY.split(',')) { const [sid, v] = kv.split('='); if (sid && v) visibility[sid.trim()] = v.trim(); }
+  mkdirSync(KEYS_DIR, { recursive: true });
+  for (const [sid, v] of Object.entries(visibility)) {
+    if (v !== 'withheld') continue;
+    const kf = join(KEYS_DIR, sid + '.json');
+    if (!existsSync(kf)) { const raw = randomBytes(32); writeFileSync(kf, JSON.stringify({ kid: 'ck_' + createHash('sha256').update(raw).digest('hex').slice(0, 16), raw: raw.toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '') }) + '\n', { mode: 0o600 }); }
+    contentKeys[sid] = JSON.parse(readFileSync(kf, 'utf8')).raw;
+  }
+}
 const pageOptions = {
+  visibility, contentKeys,
   store, subjects, snapshots, manifests, sourceTitles, adapters,
   allowMismatch: true,
   brandCss: houseCss().css, brandCssSource: houseCss().source,
@@ -475,10 +497,22 @@ writeFileSync('report/review-page.html', html);
 // signatures (a PDPP grant counts as a rung), so the hosted record can name them.
 {
   const groups = {}; for (const g of pageOptions.sourceGroups || []) for (const sid of g.ids) groups[sid] = g.title;
-  writeFileSync('report/sources/index.json', JSON.stringify({ titles: sourceTitles, groups, signatures: pageOptions.signatures || {} }, null, 1) + '\n');
+  writeFileSync('report/sources/index.json', JSON.stringify({ titles: sourceTitles, groups, signatures: pageOptions.signatures || {}, visibility }, null, 1) + '\n');
 }
 mkdirSync('report/manifests', { recursive: true });
 for (const [id, m] of Object.entries(manifests)) writeFileSync('report/manifests/' + id + '.json', JSON.stringify(m, null, 1) + '\n');
+// What the push sends for a withheld or sealed source: the same manifest without its text.
+{
+  const { encryptManifest, sealManifest, importContentKey } = await import(process.env.VERA_HOME ? process.env.VERA_HOME + '/skill/lib/crypto.mjs' : homedir() + '/Projects/vera/skill/lib/crypto.mjs');
+  mkdirSync('report/manifests-enc', { recursive: true });
+  for (const f of (existsSync('report/manifests-enc') ? readdirSync('report/manifests-enc') : [])) unlinkSync('report/manifests-enc/' + f);
+  for (const [id, m] of Object.entries(manifests)) {
+    if (visibility[id] === 'withheld') { const k = JSON.parse(readFileSync(join(KEYS_DIR, id + '.json'), 'utf8')); writeFileSync('report/manifests-enc/' + id + '.json', JSON.stringify(await encryptManifest(m, await importContentKey(k.raw), k.kid)) + '\n'); }
+    else if (visibility[id] === 'sealed') writeFileSync('report/manifests-enc/' + id + '.json', JSON.stringify(sealManifest(m)) + '\n');
+  }
+  const counts = Object.values(visibility).reduce((a, v) => ((a[v] = (a[v] || 0) + 1), a), {});
+  console.log('visibility:', Object.entries(counts).map(([k, n]) => n + ' ' + k).join(', '));
+}
 writeFileSync('report/review-page-proofs.json', JSON.stringify({ built: new Date().toISOString(), proofs }, null, 1) + '\n');
 writeFileSync('report/roots.json', JSON.stringify(roots, null, 1) + '\n');
 const ac = auditCheck(); console.log('audit quotes', ac.ok + ' ok', ac.bad.length ? 'BAD ' + ac.bad.join(',') : '');
