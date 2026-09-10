@@ -145,7 +145,7 @@
   "claims": [
    {
     "kind": "citation",
-    "span": "The July study's full-context ablation shows what happens without slicing for small models \u2014 zero constructs on every query",
+    "span": "The July study's full-context ablation shows what happens without slicing for small models — zero constructs on every query",
     "why": "The specific findings attributed to 'the July study' need to be properly cited and verifiable."
    },
    {
@@ -203,7 +203,7 @@
    },
    {
     "kind": "causal",
-    "span": "the threshold registry \u2014 the part of the design that constrains qualitative language \u2014 is exercised by the specification, the test suite and the worked examples, but not by the study",
+    "span": "the threshold registry — the part of the design that constrains qualitative language — is exercised by the specification, the test suite and the worked examples, but not by the study",
     "why": "The claim that the threshold registry is 'not exercised by the study' needs clarification about what constitutes exercise and why the study's approach differs"
    }
   ],
@@ -224,7 +224,7 @@
    },
    {
     "kind": "other",
-    "span": "RDFa 1.1 Primer \u2014 Third Edition",
+    "span": "RDFa 1.1 Primer — Third Edition",
     "why": "The exact title and edition number should be confirmed against the W3C document."
    },
    {
@@ -350,7 +350,7 @@
    {
     "kind": "causal",
     "span": "is ?[r: IS_AT_RISK]{at risk}",
-    "why": "The basis for the at-risk classification should be confirmed\u2014what criteria or thresholds determine this status?"
+    "why": "The basis for the at-risk classification should be confirmed—what criteria or thresholds determine this status?"
    }
   ],
   "state": "checked"
@@ -505,7 +505,7 @@
    },
    {
     "kind": "causal",
-    "span": "a reader \u2014 or an auditor months later \u2014 can ask of any number where it came from and get an answer that does not depend on a model",
+    "span": "a reader — or an auditor months later — can ask of any number where it came from and get an answer that does not depend on a model",
     "why": "Requires demonstration or evidence that this functionality works as claimed"
    },
    {
@@ -832,7 +832,7 @@
    },
    {
     "kind": "other",
-    "span": "mean \u00b1 sample sd over runs",
+    "span": "mean ± sample sd over runs",
     "why": "Should clarify whether this is sample standard deviation or standard error, as sample sd may not be appropriate for reporting across runs"
    },
    {
@@ -1099,10 +1099,278 @@
    },
    {
     "kind": "comparison",
-    "span": "Everything else \u2014 models, benchmarks, slices, runs, correction budget \u2014 is identical to Table 2",
+    "span": "Everything else — models, benchmarks, slices, runs, correction budget — is identical to Table 2",
     "why": "This broad equivalence claim requires confirmation that all these dimensions are genuinely identical between tables"
    }
   ],
   "state": "checked"
+ },
+ "pe5c423056024": {
+  "at": "2026-09-10T21:14:45.621Z",
+  "claims": [
+   {
+    "span": "regulation now reaches generated text",
+    "kind": "citation",
+    "why": "asserts a legal/regulatory fact that needs a specific source (which regulation, jurisdiction, scope)"
+   },
+   {
+    "span": "the text seldom carries a link between an individual claim and the data behind it that a machine can check",
+    "kind": "absence",
+    "why": "a sweeping absence claim about current practice that needs support rather than assertion"
+   },
+   {
+    "span": "Each generation of models is harder to tell from human writing",
+    "kind": "comparison",
+    "why": "implies a trend/comparison across model generations that should be backed by a study or benchmark"
+   },
+   {
+    "span": "the fluency carries no reliable signal of the model's own uncertainty",
+    "kind": "causal",
+    "why": "causal/correlational claim about fluency vs. calibration that needs citation or evidence"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p49d8a03a3aef": {
+  "at": "2026-09-10T21:14:54.041Z",
+  "claims": [
+   {
+    "span": "Claude Opus 5, Claude Sonnet 5 and DeepSeek V4 Pro",
+    "kind": "citation",
+    "why": "model identities and versions should be confirmed as accurate and correctly named/attributed"
+   },
+   {
+    "span": "three frontier models",
+    "kind": "number",
+    "why": "count of models tested should match what's actually reported in the results"
+   },
+   {
+    "span": "three constructs",
+    "kind": "number",
+    "why": "count should be verified against what the paper actually defines"
+   },
+   {
+    "span": "an earlier study (July 2026) of four small local models",
+    "kind": "date",
+    "why": "date is in the future relative to typical writing and should be confirmed as intentional/correct, and the count of four models verified"
+   },
+   {
+    "span": "a substitution baseline and two ablations",
+    "kind": "number",
+    "why": "number and nature of ablations should be confirmed against the technical report's actual content"
+   },
+   {
+    "span": "which this paper does not repeat",
+    "kind": "absence",
+    "why": "claim that this paper omits content covered elsewhere should be verified as true (not partially repeated)"
+   },
+   {
+    "span": "Both documents are published in the artifact repository alongside every benchmark, run artifact, and the scripts that regenerate every table",
+    "kind": "absence",
+    "why": "strong completeness claim ('every' benchmark/artifact/script) should be verified against actual repository contents"
+   },
+   {
+    "span": "https://github.com/abovebeyond-ai/proveml-research",
+    "kind": "citation",
+    "why": "URL should be confirmed as live, correct, and pointing to the claimed artifact repository"
+   },
+   {
+    "span": "https://github.com/abovebeyond-ai/proveml",
+    "kind": "citation",
+    "why": "URL should be confirmed as live, correct, and matching the npm package described"
+   },
+   {
+    "span": "npm: `proveml`",
+    "kind": "citation",
+    "why": "package name/registry listing should be confirmed to exist and correspond to the referenced repository"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p842dd3c27452": {
+  "at": "2026-09-10T21:15:01.457Z",
+  "claims": [
+   {
+    "span": "UCUM for units of measure",
+    "kind": "citation",
+    "why": "should confirm UCUM is correctly characterized as the standard for units of measure and that the acronym/name is accurate"
+   },
+   {
+    "span": "ISO 4217 for currency codes",
+    "kind": "citation",
+    "why": "should confirm ISO 4217 is correctly cited as the currency code standard"
+   },
+   {
+    "span": "mg/dL vs mmol/L",
+    "kind": "other",
+    "why": "should verify this is a valid and accurate example of semantically equivalent units requiring conversion"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pd62c66ca9574": {
+  "at": "2026-09-10T21:15:08.374Z",
+  "claims": [
+   {
+    "span": "Clark, August, Serrano, Haduong, Gururangan and Smith (2021)",
+    "kind": "citation",
+    "why": "Author list, order, and year should be verified against the actual publication record"
+   },
+   {
+    "span": "All That's `Human' Is Not Gold: Evaluating Human Evaluation of Generated Text",
+    "kind": "citation",
+    "why": "Exact title wording and quotation-mark styling should be checked against the source"
+   },
+   {
+    "span": "Proc. ACL-IJCNLP (Volume 1: Long Papers)",
+    "kind": "citation",
+    "why": "Venue name and volume designation should be confirmed as correct for this paper"
+   },
+   {
+    "span": "doi:10.18653/v1/2021.acl-long.565",
+    "kind": "citation",
+    "why": "DOI should be verified to resolve to this exact paper and not a different one"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "paa0e93d9c74b": {
+  "at": "2026-09-10T21:15:14.905Z",
+  "claims": [
+   {
+    "span": "Dinu and Nadkarni (2007)",
+    "kind": "citation",
+    "why": "Author order and year should be verified against the actual publication record."
+   },
+   {
+    "span": "Guidelines for the effective use of entity-attribute-value modeling for biomedical databases",
+    "kind": "citation",
+    "why": "Exact title wording should be checked against the source for accuracy."
+   },
+   {
+    "span": "International Journal of Medical Informatics",
+    "kind": "citation",
+    "why": "Journal name should be confirmed as the correct venue for this article."
+   },
+   {
+    "span": "doi:10.1016/j.ijmedinf.2006.09.023",
+    "kind": "citation",
+    "why": "DOI should be resolved to confirm it points to the correct paper and matches the cited title/authors/year."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p10fba03e6ffa": {
+  "at": "2026-09-10T21:15:22.722Z",
+  "claims": [
+   {
+    "span": "Gao, Yen, Yu and Chen (2023)",
+    "kind": "citation",
+    "why": "Author list and count should be verified against the actual paper; EMNLP papers can have more authors than listed."
+   },
+   {
+    "span": "Enabling Large Language Models to Generate Text with Citations",
+    "kind": "citation",
+    "why": "Exact title wording should be checked against the published paper for accuracy."
+   },
+   {
+    "span": "Proc. EMNLP",
+    "kind": "citation",
+    "why": "Venue should be confirmed as EMNLP main conference (vs. findings or a workshop)."
+   },
+   {
+    "span": "2023",
+    "kind": "date",
+    "why": "Publication year should match the actual proceedings year, not just the preprint year."
+   },
+   {
+    "span": "doi:10.18653/v1/2023.emnlp-main.398",
+    "kind": "citation",
+    "why": "DOI should be verified to resolve to this exact paper and not a mistyped or mismatched entry."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p057ce25be522": {
+  "at": "2026-09-10T21:15:27.029Z",
+  "claims": [
+   {
+    "span": "MacFarlane (2024)",
+    "kind": "citation",
+    "why": "Author attribution and year should be verified against the actual CommonMark spec authorship/publication metadata."
+   },
+   {
+    "span": "Version 0.31.2",
+    "kind": "number",
+    "why": "Version number should be checked against the current or cited version of the CommonMark spec actually referenced."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p9955f16d0e8e": {
+  "at": "2026-09-10T21:15:35.309Z",
+  "claims": [
+   {
+    "span": "Onweller, Lumer, Huber, Ramchandani, Subbiah and Feld (2026)",
+    "kind": "citation",
+    "why": "Author list, order, and publication year should be verified against the actual paper/arXiv listing."
+   },
+   {
+    "span": "Cited but Not Verified: Parsing and Evaluating Source Attribution in LLM Deep Research Agents",
+    "kind": "citation",
+    "why": "Exact title wording should be confirmed against the source to avoid transcription errors."
+   },
+   {
+    "span": "arXiv:2605.06635",
+    "kind": "citation",
+    "why": "arXiv identifier should be checked for correctness; note '2605' would imply May 2026, which should be confirmed as a valid/existing arXiv id."
+   },
+   {
+    "span": "2026",
+    "kind": "date",
+    "why": "Publication year should be confirmed, especially since it is in the future relative to typical citation practice and must match the arXiv submission date."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p041f148ffa6f": {
+  "at": "2026-09-10T21:15:40.636Z",
+  "claims": [
+   {
+    "span": "Rashkin, Nikolaev, Lamm, Aroyo, Collins, Das, Petrov, Tomar, Turc and Reitter (2023)",
+    "kind": "citation",
+    "why": "Author list, order, and completeness should be verified against the actual publication."
+   },
+   {
+    "span": "Measuring Attribution in Natural Language Generation Models",
+    "kind": "citation",
+    "why": "Exact title wording should be checked against the source."
+   },
+   {
+    "span": "Computational Linguistics",
+    "kind": "citation",
+    "why": "Venue/journal name should be confirmed as correct for this publication."
+   },
+   {
+    "span": "2023",
+    "kind": "date",
+    "why": "Publication year should be verified against the journal record."
+   },
+   {
+    "span": "doi:10.1162/coli_a_00486",
+    "kind": "citation",
+    "why": "DOI should be checked to ensure it resolves to this exact paper and not a different one."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }

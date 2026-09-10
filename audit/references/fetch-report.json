@@ -1,11 +1,12 @@
 {
-  "generatedAt": "2026-03-31T08:19:43.443Z",
+  "generatedAt": "2026-09-10T21:26:27.672Z",
   "results": [
     {
       "id": "ixbrl",
-      "status": "skipped",
-      "sourceUrl": "https://www.xbrl.org/ixbrl",
-      "localPath": "references/raw/ixbrl.html"
+      "status": "fetched",
+      "sourceUrl": "https://www.xbrl.org/specification/inlinexbrl-part1/rec-2013-11-18/inlinexbrl-part1-rec-2013-11-18.html",
+      "localPath": "references/raw/ixbrl.html",
+      "bytes": 223034
     },
     {
       "id": "factscore",
@@ -62,134 +63,220 @@
       "localPath": "references/raw/gemini-double-check.html"
     },
     {
-      "id": "fhir",
+      "id": "clark2021",
       "status": "skipped",
-      "sourceUrl": "https://hl7.org/fhir/R5/",
-      "localPath": "references/raw/fhir.html"
+      "sourceUrl": "https://aclanthology.org/2021.acl-long.565/",
+      "localPath": "references/raw/clark2021.html"
     },
     {
-      "id": "selfcheckgpt",
-      "status": "failed",
-      "sourceUrl": "https://openreview.net/forum?id=RwzFNbJ3Ez",
-      "localPath": "references/raw/selfcheckgpt.html",
-      "error": "403 Forbidden"
-    },
-    {
-      "id": "refchecker",
-      "status": "fetched",
-      "sourceUrl": "https://aclanthology.org/2024.emnlp-main.395/",
-      "localPath": "references/raw/refchecker.html",
-      "bytes": 41345
-    },
-    {
-      "id": "dspy",
-      "status": "failed",
-      "sourceUrl": "https://openreview.net/forum?id=PFS4ffN9Yx",
-      "localPath": "references/raw/dspy.html",
-      "error": "403 Forbidden"
-    },
-    {
-      "id": "guardrails",
+      "id": "jakesch2023",
       "status": "skipped",
-      "sourceUrl": "https://github.com/guardrails-ai/guardrails",
-      "localPath": "references/raw/guardrails.html"
+      "sourceUrl": "https://arxiv.org/abs/2206.07271",
+      "localPath": "references/raw/jakesch2023.html"
     },
     {
-      "id": "nemo",
+      "id": "jones2026",
       "status": "skipped",
-      "sourceUrl": "https://arxiv.org/abs/2310.10501",
-      "localPath": "references/raw/nemo.html"
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13214042/",
+      "localPath": "references/raw/jones2026.html"
     },
     {
-      "id": "totto",
-      "status": "fetched",
-      "sourceUrl": "https://aclanthology.org/2020.emnlp-main.89/",
-      "localPath": "references/raw/totto.html",
-      "bytes": 39861
-    },
-    {
-      "id": "xbrl",
+      "id": "russell2025",
       "status": "skipped",
-      "sourceUrl": "https://www.xbrl.org/",
-      "localPath": "references/raw/xbrl.html"
+      "sourceUrl": "https://aclanthology.org/2025.acl-long.267/",
+      "localPath": "references/raw/russell2025.html"
     },
     {
-      "id": "prov",
-      "status": "fetched",
-      "sourceUrl": "https://www.w3.org/TR/prov-o/",
-      "localPath": "references/raw/prov.html",
-      "bytes": 464179
+      "id": "zhou2024",
+      "status": "skipped",
+      "sourceUrl": "https://aclanthology.org/2024.acl-long.198/",
+      "localPath": "references/raw/zhou2024.html"
     },
     {
-      "id": "c2pa",
-      "status": "failed",
-      "sourceUrl": "https://c2pa.org/specifications/",
-      "localPath": "references/raw/c2pa.html",
-      "error": "404 Not Found"
+      "id": "xiong2024",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/2306.13063",
+      "localPath": "references/raw/xiong2024.html"
+    },
+    {
+      "id": "walters2023",
+      "status": "skipped",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10484980/",
+      "localPath": "references/raw/walters2023.html"
+    },
+    {
+      "id": "cao2024",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/html/2404.06162v2",
+      "localPath": "references/raw/cao2024.html"
+    },
+    {
+      "id": "liu2023verifiability",
+      "status": "skipped",
+      "sourceUrl": "https://aclanthology.org/2023.findings-emnlp.467/",
+      "localPath": "references/raw/liu2023verifiability.html"
+    },
+    {
+      "id": "aiindex2026",
+      "status": "skipped",
+      "sourceUrl": "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy",
+      "localPath": "references/raw/aiindex2026.html"
+    },
+    {
+      "id": "wright2026",
+      "status": "skipped",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12844588/",
+      "localPath": "references/raw/wright2026.html"
+    },
+    {
+      "id": "nadkarni1999",
+      "status": "skipped",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC61391/",
+      "localPath": "references/raw/nadkarni1999.html"
+    },
+    {
+      "id": "dinu2007",
+      "status": "skipped",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2110957/",
+      "localPath": "references/raw/dinu2007.html"
+    },
+    {
+      "id": "ozarda2016",
+      "status": "skipped",
+      "sourceUrl": "https://biochemia-medica.com/en/journal/26/1/10.11613/BM.2016.001/fullArticle",
+      "localPath": "references/raw/ozarda2016.html"
+    },
+    {
+      "id": "jsonschema2022",
+      "status": "skipped",
+      "sourceUrl": "https://json-schema.org/draft/2020-12/json-schema-validation",
+      "localPath": "references/raw/jsonschema2022.html"
+    },
+    {
+      "id": "prometheusalerting",
+      "status": "skipped",
+      "sourceUrl": "https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/",
+      "localPath": "references/raw/prometheusalerting.html"
+    },
+    {
+      "id": "bedrockgrounding2026",
+      "status": "skipped",
+      "sourceUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-contextual-grounding-check.html",
+      "localPath": "references/raw/bedrockgrounding2026.html"
+    },
+    {
+      "id": "bedrockautoreasoning2026",
+      "status": "skipped",
+      "sourceUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html",
+      "localPath": "references/raw/bedrockautoreasoning2026.html"
+    },
+    {
+      "id": "azuregroundedness2026",
+      "status": "skipped",
+      "sourceUrl": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/groundedness",
+      "localPath": "references/raw/azuregroundedness2026.html"
+    },
+    {
+      "id": "vectarahhem2026",
+      "status": "skipped",
+      "sourceUrl": "https://huggingface.co/vectara/hallucination_evaluation_model/raw/main/README.md",
+      "localPath": "references/raw/vectarahhem2026.html"
+    },
+    {
+      "id": "xbrlvalidation2009",
+      "status": "skipped",
+      "sourceUrl": "https://www.xbrl.org/specification/validation/rec-2009-06-22/validation-rec-2009-06-22.html",
+      "localPath": "references/raw/xbrlvalidation2009.html"
+    },
+    {
+      "id": "xbrlvalueassertions2009",
+      "status": "skipped",
+      "sourceUrl": "https://www.xbrl.org/specification/valueassertions/rec-2009-06-22/valueassertions-rec-2009-06-22.html",
+      "localPath": "references/raw/xbrlvalueassertions2009.html"
+    },
+    {
+      "id": "commonmark",
+      "status": "skipped",
+      "sourceUrl": "https://spec.commonmark.org/0.31.2/",
+      "localPath": "references/raw/commonmark.html"
+    },
+    {
+      "id": "sun2025idiosyncrasies",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/html/2502.12150v2",
+      "localPath": "references/raw/sun2025idiosyncrasies.html"
+    },
+    {
+      "id": "ais",
+      "status": "skipped",
+      "sourceUrl": "https://aclanthology.org/2023.cl-4.2/",
+      "localPath": "references/raw/ais.html"
+    },
+    {
+      "id": "alce",
+      "status": "skipped",
+      "sourceUrl": "https://aclanthology.org/2023.emnlp-main.398/",
+      "localPath": "references/raw/alce.html"
+    },
+    {
+      "id": "citednotverified",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/2605.06635",
+      "localPath": "references/raw/citednotverified.html"
+    },
+    {
+      "id": "liu2026citations",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/2606.21155",
+      "localPath": "references/raw/liu2026citations.html"
+    },
+    {
+      "id": "ten2026",
+      "status": "skipped",
+      "sourceUrl": "https://aclanthology.org/2026.acl-industry.138/",
+      "localPath": "references/raw/ten2026.html"
+    },
+    {
+      "id": "art50guidelines2026",
+      "status": "skipped",
+      "sourceUrl": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+      "localPath": "references/raw/art50guidelines2026.html"
+    },
+    {
+      "id": "omnibus2026",
+      "status": "skipped",
+      "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng",
+      "localPath": "references/raw/omnibus2026.html"
+    },
+    {
+      "id": "transparencycode2026",
+      "status": "skipped",
+      "sourceUrl": "https://digital-strategy.ec.europa.eu/en/faqs/signing-code-practice-transparency-ai-generated-content",
+      "localPath": "references/raw/transparencycode2026.html"
+    },
+    {
+      "id": "ucum",
+      "status": "skipped",
+      "sourceUrl": "https://ucum.org/ucum",
+      "localPath": "references/raw/ucum.html"
+    },
+    {
+      "id": "iso4217",
+      "status": "skipped",
+      "sourceUrl": "https://www.six-group.com/en/products-services/financial-information/data-standards.html",
+      "localPath": "references/raw/iso4217.html"
     },
     {
       "id": "euaiact",
-      "status": "fetched",
-      "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/",
-      "localPath": "references/raw/euaiact.html",
-      "bytes": 2035
-    },
-    {
-      "id": "oraclegen",
       "status": "skipped",
-      "sourceUrl": "https://www.kamu.dev/blog/2025-01-08-oracle-augmented-generation/",
-      "localPath": "references/raw/oraclegen.html"
+      "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/",
+      "localPath": "references/raw/euaiact.html"
     },
     {
       "id": "symgen",
       "status": "skipped",
       "sourceUrl": "https://arxiv.org/abs/2311.09188",
       "localPath": "references/raw/symgen.html"
-    },
-    {
-      "id": "googleground",
-      "status": "skipped",
-      "sourceUrl": "https://ai.google.dev/gemini-api/docs/grounding",
-      "localPath": "references/raw/googleground.html"
-    },
-    {
-      "id": "leesee2004",
-      "status": "failed",
-      "sourceUrl": "https://doi.org/10.1518/hfes.46.1.50_30392",
-      "localPath": "references/raw/leesee2004.html",
-      "error": "fetch failed"
-    },
-    {
-      "id": "parasuraman1997",
-      "status": "failed",
-      "sourceUrl": "https://doi.org/10.1518/001872097778543886",
-      "localPath": "references/raw/parasuraman1997.html",
-      "error": "403 Forbidden"
-    },
-    {
-      "id": "anthropicinterp",
-      "status": "skipped",
-      "sourceUrl": "https://transformer-circuits.pub/2024/scaling-monosemanticity/",
-      "localPath": "references/raw/anthropicinterp.html"
-    },
-    {
-      "id": "orgad2025",
-      "status": "skipped",
-      "sourceUrl": "https://arxiv.org/abs/2410.02707",
-      "localPath": "references/raw/orgad2025.html"
-    },
-    {
-      "id": "farquhar2024",
-      "status": "fetched",
-      "sourceUrl": "https://doi.org/10.1038/s41586-024-07421-0",
-      "localPath": "references/raw/farquhar2024.html",
-      "bytes": 403664
-    },
-    {
-      "id": "mccain2026",
-      "status": "skipped",
-      "sourceUrl": "https://www.anthropic.com/research/measuring-agent-autonomy",
-      "localPath": "references/raw/mccain2026.html"
     },
     {
       "id": "kalai2024",
@@ -204,51 +291,124 @@
       "localPath": "references/raw/kalai2025.html"
     },
     {
-      "id": "xu2024",
-      "status": "skipped",
-      "sourceUrl": "https://arxiv.org/abs/2401.11817",
-      "localPath": "references/raw/xu2024.html"
-    },
-    {
       "id": "ji2023",
-      "status": "failed",
-      "sourceUrl": "https://doi.org/10.1145/3571730",
-      "localPath": "references/raw/ji2023.html",
-      "error": "403 Forbidden"
-    },
-    {
-      "id": "ouyang2022",
       "status": "skipped",
-      "sourceUrl": "https://arxiv.org/abs/2203.02155",
-      "localPath": "references/raw/ouyang2022.html"
+      "sourceUrl": "https://doi.org/10.1145/3571730",
+      "localPath": "references/raw/ji2023.html"
     },
     {
       "id": "magesh2025",
-      "status": "failed",
+      "status": "skipped",
       "sourceUrl": "https://doi.org/10.1111/jels.12413",
-      "localPath": "references/raw/magesh2025.html",
-      "error": "403 Forbidden"
+      "localPath": "references/raw/magesh2025.html"
     },
     {
-      "id": "deloitte2025",
-      "status": "fetched",
-      "sourceUrl": "https://fortune.com/2025/10/07/deloitte-ai-australia-government-report-hallucinations-technology-290000-refund/",
-      "localPath": "references/raw/deloitte2025.html",
-      "bytes": 467831
+      "id": "pcn2025",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/2509.06902",
+      "localPath": "references/raw/pcn2025.html"
     },
     {
-      "id": "mckinsey2025",
-      "status": "failed",
-      "sourceUrl": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
-      "localPath": "references/raw/mckinsey2025.html",
-      "error": "The operation was aborted due to timeout"
+      "id": "rdfa",
+      "status": "skipped",
+      "sourceUrl": "https://www.w3.org/TR/rdfa-primer/",
+      "localPath": "references/raw/rdfa.html"
     },
     {
-      "id": "gartner2023",
-      "status": "failed",
-      "sourceUrl": "https://www.gartner.com/en/newsroom/press-releases/2023-10-11-gartner-says-more-than-80-percent-of-enterprises-will-have-used-generative-ai-apis-or-deployed-generative-ai-enabled-applications-by-2026?src_trk=em6750807b0c4706.147509061378393647",
-      "localPath": "references/raw/gartner2023.html",
-      "error": "403 Forbidden"
+      "id": "fever",
+      "status": "skipped",
+      "sourceUrl": "https://doi.org/10.18653/v1/N18-1074",
+      "localPath": "references/raw/fever.html"
+    },
+    {
+      "id": "tabfact",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/1909.02164",
+      "localPath": "references/raw/tabfact.html"
+    },
+    {
+      "id": "feverous",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/2106.05707",
+      "localPath": "references/raw/feverous.html"
+    },
+    {
+      "id": "summac",
+      "status": "skipped",
+      "sourceUrl": "https://doi.org/10.1162/tacl_a_00453",
+      "localPath": "references/raw/summac.html"
+    },
+    {
+      "id": "alignscore",
+      "status": "skipped",
+      "sourceUrl": "https://doi.org/10.18653/v1/2023.acl-long.634",
+      "localPath": "references/raw/alignscore.html"
+    },
+    {
+      "id": "minicheck",
+      "status": "skipped",
+      "sourceUrl": "https://doi.org/10.18653/v1/2024.emnlp-main.499",
+      "localPath": "references/raw/minicheck.html"
+    },
+    {
+      "id": "picard",
+      "status": "skipped",
+      "sourceUrl": "https://doi.org/10.18653/v1/2021.emnlp-main.779",
+      "localPath": "references/raw/picard.html"
+    },
+    {
+      "id": "synchromesh",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/2201.11227",
+      "localPath": "references/raw/synchromesh.html"
+    },
+    {
+      "id": "claimlocked2026",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/2608.25336",
+      "localPath": "references/raw/claimlocked2026.html"
+    },
+    {
+      "id": "verifin2026",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/2608.10213",
+      "localPath": "references/raw/verifin2026.html"
+    },
+    {
+      "id": "datareferencing2026",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/2606.32029",
+      "localPath": "references/raw/datareferencing2026.html"
+    },
+    {
+      "id": "fullcite2026",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/2606.07130",
+      "localPath": "references/raw/fullcite2026.html"
+    },
+    {
+      "id": "dtg2026",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/2607.18357",
+      "localPath": "references/raw/dtg2026.html"
+    },
+    {
+      "id": "chan2026soundness",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/2604.04177",
+      "localPath": "references/raw/chan2026soundness.html"
+    },
+    {
+      "id": "halldetect2026",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/2608.05823",
+      "localPath": "references/raw/halldetect2026.html"
+    },
+    {
+      "id": "evergreen2026",
+      "status": "skipped",
+      "sourceUrl": "https://arxiv.org/abs/2604.26180",
+      "localPath": "references/raw/evergreen2026.html"
     }
   ]
 }

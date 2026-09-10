@@ -30,7 +30,8 @@
       "sourceQuote": "The use of iXBRL is not limited to company financial reports.",
       "sourceLocator": "Beyond financial reports"
      }
-    ]
+    ],
+    "source": "ixbrl-overview"
    },
    {
     "field": "verificationMode",
@@ -38,7 +39,8 @@
     "basis": "quote",
     "sourceQuote": "Exploring the tags in the sample above will reveal the names of the “concepts” against which the figures are tagged (e.g. “ifrs:Revenue”). These are drawn from a dictionary of concepts, known as a taxonomy.",
     "sourceLocator": "What is iXBRL? sample discussion",
-    "note": "Tags reference taxonomy concepts; validating against a taxonomy is rule evaluation, and “deterministic” is our word for that."
+    "note": "Tags reference taxonomy concepts; validating against a taxonomy is rule evaluation, and “deterministic” is our word for that.",
+    "source": "ixbrl-overview"
    },
    {
     "field": "verificationClass",
@@ -52,7 +54,8 @@
     "basis": "quote",
     "sourceQuote": "These are drawn from a dictionary of concepts, known as a taxonomy.",
     "sourceLocator": "What is iXBRL? sample discussion",
-    "note": "“These” are the concepts figures are tagged against; the taxonomy is the source's own name for that structured dictionary. The source's context is financial reporting throughout, but no single sentence marries “financial” to the taxonomy definition, so the value claims only what the quote carries."
+    "note": "“These” are the concepts figures are tagged against; the taxonomy is the source's own name for that structured dictionary. The source's context is financial reporting throughout, but no single sentence marries “financial” to the taxonomy definition, so the value claims only what the quote carries.",
+    "source": "ixbrl-overview"
    },
    {
     "field": "inlineSupport",
@@ -61,7 +64,8 @@
     "sourceLocator": "What is iXBRL? paragraph 1",
     "equality": "normalized",
     "note": "The source describes inline human-readable plus machine-readable structure; the fact store normalizes that to inlineSupport = yes.",
-    "basis": "quote"
+    "basis": "quote",
+    "source": "ixbrl-overview"
    },
    {
     "field": "structuredRecordBinding",
@@ -69,7 +73,8 @@
     "basis": "quote",
     "sourceQuote": "iXBRL is used by millions of companies around the world to prepare financial statements in a format that provides the structured data that regulators and analysts require",
     "sourceLocator": "What is iXBRL? paragraph 2",
-    "note": "Each figure is bound to a taxonomy concept such as ifrs:Revenue."
+    "note": "Each figure is bound to a taxonomy concept such as ifrs:Revenue.",
+    "source": "ixbrl-overview"
    },
    {
     "field": "inferenceLayer",
@@ -77,7 +82,8 @@
     "basis": "absence",
     "note": "No construct for qualitative or threshold judgements appears in the source; absence cannot be quoted."
    }
-  ]
+  ],
+  "note": "The characterisation quotes the xbrl.org overview page (archived as ixbrl-overview); the bibliography entry and the paper cite the Inline XBRL 1.1 specification, archived as ixbrl."
  },
  {
   "id": "factscore",

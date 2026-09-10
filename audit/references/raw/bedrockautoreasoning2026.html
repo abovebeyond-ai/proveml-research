@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>What are Automated Reasoning checks in Amazon Bedrock Guardrails? - Amazon Bedrock</title><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="assets_root" content="/assets" /><meta name="target_state" content="guardrails-automated-reasoning-checks" /><meta name="default_state" content="guardrails-automated-reasoning-checks" /><link rel="icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="canonical" href="https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" /><meta name="description" content="Learn how Automated Reasoning checks in Amazon Bedrock Guardrails use mathematical verification to detect hallucinations, highlight unstated assumptions, and provide explanations for why accurate statements are correct." /><meta name="deployment_region" content="IAD" /><meta name="product" content="Amazon Bedrock" /><meta name="guide" content="User Guide" /><meta name="abstract" content="User Guide for the Amazon Bedrock service." /><meta name="guide-locale" content="en_us" /><meta name="tocs" content="toc-contents.json" /><link rel="canonical" href="https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="id-id" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="id" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="de-de" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="de" /><link rel="alternate" href="https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="en-us" /><link rel="alternate" href="https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="en" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="es-es" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="es" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="fr-fr" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="fr" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="it-it" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="it" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="ja-jp" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="ja" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="ko-kr" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="ko" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="pt-br" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="pt" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_cn/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="zh-cn" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_tw/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="zh-tw" /><link rel="alternate" href="https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" hreflang="x-default" /><meta name="feedback-folder" content="2d8c2a09-1dac-41bf-9893-c0333d272b2c" /><meta name="feedback-item" content="Bedrock" /><meta name="this_doc_product" content="Amazon Bedrock" /><meta name="this_doc_guide" content="User Guide" /><head xmlns="http://www.w3.org/1999/xhtml"> <script defer="" src="/assets/r/awsdocs-doc-page.2.0.0.js"></script><link href="/assets/r/awsdocs-doc-page.2.0.0.css" rel="stylesheet"/></head>
+<script defer="" id="awsc-panorama-bundle" type="text/javascript" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'bedrock'}"></script><meta id="panorama-serviceSubSection" value="User Guide" /><meta id="panorama-serviceConsolePage" value="What are Automated Reasoning checks in Amazon Bedrock Guardrails?" /></head><body class="awsdocs awsui"><div class="awsdocs-container"><p><a href="guardrails-automated-reasoning-checks.md">View a markdown version of this page</a></p><awsdocs-header></awsdocs-header><awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)"><div id="guide-toc" dom-region="navigation"><awsdocs-toc></awsdocs-toc></div><div id="main-column" dom-region="content" tabindex="-1"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><head><title>What are Automated Reasoning checks in Amazon Bedrock Guardrails? - Amazon Bedrock</title><meta name="pdf" content="/pdfs/bedrock/latest/userguide/bedrock-ug.pdf#guardrails-automated-reasoning-checks" /><meta name="rss" content="bedrock-ug.rss" /><meta name="forums" content="https://repost.aws/tags/TAQeKlaPaNRQ2tWB6P7KrMag" /><meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?feedback_destination_id=2d8c2a09-1dac-41bf-9893-c0333d272b2c&amp;topic_url=https://docs.aws.amazon.com/en_us/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" /><meta name="feedback-yes" content="feedbackyes.html?topic_url=https://docs.aws.amazon.com/en_us/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" /><meta name="feedback-no" content="feedbackno.html?topic_url=https://docs.aws.amazon.com/en_us/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html" /><meta name="keywords" content="Amazon Bedrock,bedrock,content blocking,privacy controls,harmful content,guardrails,denied topics,word filters,make a Amazon Bedrock Guardrails,create Amazon Bedrock Guardrails,assign Amazon Bedrock Guardrails,AWS Console Amazon Bedrock Guardrails,word filters Amazon Bedrock Guardrails,sensitive topic Amazon Bedrock Guardrails,content blocker Amazon Bedrock Guardrails,contextual grounding check Amazon Bedrock Guardrails,Amazon Bedrock Guardrails API,Automated Reasoning,Guardrails,Hallucinations,LLM accuracy,Formal logic" /><link rel="alternate" type="text/markdown" href="guardrails-automated-reasoning-checks.md" title="Markdown version" /><script type="application/ld+json">
+{
+    "@context" : "https://schema.org",
+    "@type" : "BreadcrumbList",
+    "itemListElement" : [
+      {
+        "@type" : "ListItem",
+        "position" : 1,
+        "name" : "AWS",
+        "item" : "https://aws.amazon.com"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 2,
+        "name" : "Amazon Bedrock",
+        "item" : "https://docs.aws.amazon.com/bedrock/index.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 3,
+        "name" : "User Guide",
+        "item" : "https://docs.aws.amazon.com/bedrock/latest/userguide"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 4,
+        "name" : "Security, Guardrails, and Observability in Amazon Bedrock",
+        "item" : "https://docs.aws.amazon.com/bedrock/latest/userguide/security.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 5,
+        "name" : "Detect and filter harmful content by using Amazon Bedrock Guardrails",
+        "item" : "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 6,
+        "name" : "Create your guardrail",
+        "item" : "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-components.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 7,
+        "name" : "What are Automated Reasoning checks in Amazon Bedrock Guardrails?",
+        "item" : "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-components.html"
+      }
+    ]
+}
+</script></head><body><div id="main"><div style="display: none"><a href="/pdfs/bedrock/latest/userguide/bedrock-ug.pdf#guardrails-automated-reasoning-checks" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div><div id="breadcrumbs" class="breadcrumb"><a href="/index.html">Documentation</a><a href="/bedrock/index.html">Amazon Bedrock</a><a href="what-is-bedrock.html">User Guide</a></div><div id="page-toc-src"><a href="#automated-reasoning-what-it-does">What Automated Reasoning checks do</a><a href="#automated-reasoning-when-to-use">When to use Automated Reasoning checks</a><a href="#automated-reasoning-what-it-doesnt-do">What Automated Reasoning checks don't do</a><a href="#automated-reasoning-workflow-overview">End-to-end workflow overview</a><a href="#automated-reasoning-availability">Availability and language support</a><a href="#automated-reasoning-limitations">Limitations and considerations</a><a href="#automated-reasoning-pricing">Pricing</a><a href="#automated-reasoning-cross-region-inference">Cross-region inference for policy operations</a></div><div id="main-content" class="awsui-util-container"><div id="main-col-body"><awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner><h1 class="topictitle" id="guardrails-automated-reasoning-checks">What are Automated Reasoning checks in Amazon Bedrock Guardrails?</h1><div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div>
+    <h2 id="automated-reasoning-what-it-does">What Automated Reasoning checks do</h2>
+
+    <p>A key challenge with large language models (LLMs) is ensuring the accuracy of their
+      responses. Without validation, LLMs can produce hallucinations or inaccurate information
+      that undermines trust. Automated Reasoning checks in Amazon Bedrock Guardrails help solve this problem by using
+      mathematical techniques to validate natural language content against policies you define.</p>
+
+    <p>Unlike traditional guardrail components that block or filter content based on pattern
+      matching, Automated Reasoning checks uses formal logic to provide structured feedback 
+      about <em>why</em> a response is correct or incorrect. This feedback can be 
+      used to steer an LLM towards generating content that is provably consistent with your policy. 
+      Specifically, Automated Reasoning checks can:</p>
+
+    <div class="itemizedlist">
+       
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+        <p><b>Detect factually incorrect statements</b> in LLM responses by
+          mathematically proving that generated content contradicts your policy rules.</p>
+      </li><li class="listitem">
+        <p><b>Highlight unstated assumptions</b> where a response is
+          consistent with your policy but doesn't address all relevant rules, indicating the
+          response may be incomplete.</p>
+      </li><li class="listitem">
+        <p><b>Provide mathematically verifiable explanations</b> for why 
+        accurate statements are correct, citing the specific policy rules and variable assignments that 
+        support the conclusion.</p>
+      </li></ul></div>
+
+    <p>These capabilities make Automated Reasoning checks different from other Amazon Bedrock Guardrails components.
+      Content filters and topic policies act as binary gates — they block or allow content.
+      Automated Reasoning checks act as a verification layer that provides detailed, actionable
+      feedback you can use to improve responses programmatically.</p>
+   
+    <h2 id="automated-reasoning-when-to-use">When to use Automated Reasoning checks</h2>
+
+    <p>Automated Reasoning checks are most valuable when you need to demonstrate the factual
+      basis for an LLM's response. Consider using them when your application involves:</p>
+
+    <div class="itemizedlist">
+       
+       
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+        <p><b>Regulated industries</b> such as healthcare, human
+          resources, and financial services, where incorrect information can have legal or
+          compliance consequences.</p>
+      </li><li class="listitem">
+        <p><b>Complex rule sets</b> such as mortgage approvals, zoning
+          laws, insurance eligibility, or employee benefits, where multiple conditions interact to
+          determine an outcome.</p>
+      </li><li class="listitem">
+        <p><b>Compliance scenarios</b> that require auditable AI
+          responses with mathematically verifiable proof that the response is consistent with your
+          policies.</p>
+      </li><li class="listitem">
+        <p><b>Customer-facing applications</b> where incorrect
+          guidance could erode trust, such as chatbots that answer questions about company policies,
+          product eligibility, or service terms.</p>
+      </li></ul></div>
+   
+    <h2 id="automated-reasoning-what-it-doesnt-do">What Automated Reasoning checks don't do</h2>
+
+    <p>To set the right expectations, be aware of the following limitations:</p>
+
+    <div class="itemizedlist">
+       
+       
+       
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+        <p><b>No prompt injection protection.</b> Automated Reasoning
+          checks validate exactly what you send them. If malicious or manipulated content is
+          provided as input, the validation is performed on that content as-is. To detect and block
+          prompt injection attacks, use <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-components.html#guardrails-content-filters">Content filters</a> in combination with Automated Reasoning checks.</p>
+      </li><li class="listitem">
+        <p><b>No off-topic detection.</b> Automated Reasoning only
+          analyzes text that is relevant to the policy. It ignores unrelated content and cannot
+          tell you whether a response is off-topic. To detect off-topic responses, use <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-components.html#guardrails-topic-policies">topic policies</a>.</p>
+      </li><li class="listitem">
+        <p><b>No streaming support.</b> Automated Reasoning checks
+          do not support streaming APIs. You must validate complete responses.</p>
+      </li><li class="listitem">
+        <p><b>English only.</b> Automated Reasoning checks currently
+          support English (US) only.</p>
+      </li><li class="listitem">
+        <p><b>Scope limited to your policy.</b> A <code class="code">VALID</code>
+          result guarantees validity only for the parts of the input captured through policy
+          variables. Statements that fall outside the scope of your policy's variables are not
+          validated. For example, "I can submit my homework late because I have a fake doctor's
+          note" might be deemed valid if the policy has no variable to capture whether the doctor's
+          note is fake.</p>
+      </li></ul></div>
+
+    <p>Automated Reasoning checks complement other Amazon Bedrock Guardrails features like content filters and topic
+      policies. For the best protection, use them together. For more information, see <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-components.html">Guardrail
+        components</a>.</p>
+   
+    <h2 id="automated-reasoning-workflow-overview">End-to-end workflow overview</h2>
+
+    <p>Using Automated Reasoning checks involves four phases: creating a policy, testing it,
+      deploying it in a guardrail, and integrating it into your application.</p>
+
+    <pre class="programlisting"><div class="code-btn-container"><div class="btn-copy-code" title="Copy"><awsui-icon name="copy"></awsui-icon></div></div><!--DEBUG: cli ()--><code class="">
+Source Document ──► Extracted Policy ──► Testing ──► Deployment ──► Integration
+    (rules)          (formal logic)      (verify)    (guardrail)    (validate responses
+                                                                     and act on feedback)
+    </code></pre>
+
+    <div class="orderedlist">
+       
+       
+       
+       
+    <ol><li>
+        <p><b>Create a policy.</b> Upload a source document that
+          contains the rules you want to enforce. Automated Reasoning extracts formal logic rules
+          and a schema of variables from your document. A fidelity report is automatically generated
+          that measures how accurately the extracted policy represents your source documents, with
+          coverage and accuracy scores and detailed grounding that links each rule and variable back
+          to the specific statements in your source content. Review the extracted policy and fidelity
+          report to ensure the policy captures your rules correctly. For more information, see <a href="./create-automated-reasoning-policy.html">Create your Automated Reasoning policy</a>.</p>
+      </li><li>
+        <p><b>Test and refine.</b> Tests helps ensure that your policy
+          can accurately validate generated content even while you make changes to the policy itself. 
+          Create tests that mimic the questions your users will ask and the responses your LLM might 
+          generate. Automated Reasoning checks uses foundational models to translation natural language 
+          to logic. Use generated scenarios to validate rule correctness and QnA tests to validate the
+          natural language to logic translation accuracy. Refine your policy based on test results. 
+          For more information, see <a href="./test-automated-reasoning-policy.html">Test an Automated Reasoning policy</a>.</p>
+      </li><li>
+        <p><b>Deploy.</b> Save an immutable version of your tested
+          policy and attach it to a guardrail. You can automate deployment using CloudFormation or CI/CD
+          pipelines. For more information, see <a href="./deploy-automated-reasoning-policy.html">Deploy your Automated Reasoning policy in your application</a>.</p>
+      </li><li>
+        <p><b>Integrate.</b> At runtime, Automated Reasoning findings 
+          are returned through APIs that supports a Amazon Bedrock Guardrails configuration: <code class="code">Converse</code>, 
+          <code class="code">InvokeModel</code>, as well as the standalone <code class="code">ApplyGuardrail</code> API. Inspect the
+          findings to decide whether to serve the response, rewrite it using the feedback, or ask the user
+          for clarification. Automated Reasoning checks operate in <em>detect mode</em> only—they return
+          findings and feedback rather than blocking content. For more information on how to integrate
+          Automated Reasoning checks in your application, see <a href="./integrate-automated-reasoning-checks.html">Integrate Automated Reasoning checks in your application</a>. For more information on the permissions
+          required to enable Automated Reasoning checks, see <a href="./guardrail-automated-reasoning-permissions.html">Permissions for Automated Reasoning policies with ApplyGuardrail</a>.</p>
+      </li></ol></div>
+   
+    <h2 id="automated-reasoning-availability">Availability and language support</h2>
+
+    <p>Automated Reasoning checks in Amazon Bedrock Guardrails is generally available in the following Regions:</p>
+
+    <div class="itemizedlist">
+       
+       
+       
+       
+       
+       
+    <ul class="itemizedlist"><li class="listitem"><p>US East (N. Virginia)</p></li><li class="listitem"><p>US West (Oregon)</p></li><li class="listitem"><p>US East (Ohio)</p></li><li class="listitem"><p>EU (Frankfurt)</p></li><li class="listitem"><p>EU (Paris)</p></li><li class="listitem"><p>EU (Ireland)</p></li></ul></div>
+
+    <p>Automated Reasoning checks currently support English (US) only.</p>
+   
+    <h2 id="automated-reasoning-limitations">Limitations and considerations</h2>
+
+    <p>Before implementing Automated Reasoning checks, be aware of these technical
+      limitations:</p>
+
+    <div class="itemizedlist">
+       
+       
+       
+       
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+        <p><b>Document complexity.</b> Source documents should be
+          well-structured with clear, unambiguous rules. Highly complex documents with nested
+          conditions or contradictory statements may not extract cleanly into formal logic.
+          Input documents are limited to 5 MB in size and 50,000 characters. You can split larger
+          documents and merge each section into your policy. Images and tables in documents also
+          impact the number of input characters.</p>
+      </li><li class="listitem">
+        <p><b>Processing time.</b> Automated Reasoning checks validation adds
+          latency to your application responses. Plan for additional processing time, especially
+          for complex policies with many variables. The number of variables in a policy directly 
+          contributes to increases in validation latency.</p>
+      </li><li class="listitem">
+        <p><b>Policy scope.</b> To create policies that are easier to maintain,
+          each policy should focus on a specific domain (for example, HR, finance, legal) rather than trying 
+          to cover multiple unrelated areas in a single policy.</p>
+      </li><li class="listitem">
+        <p><b>Variable and rules limits.</b> Policies with excessive 
+          numbers of variables or overly complex rule interactions may hit processing limits or return
+          TOO_COMPLEX results. See <a href="https://docs.aws.amazon.com/general/latest/gr/bedrock.html#limits_bedrock">Amazon Bedrock
+          limits documentation</a> and <a href="./automated-reasoning-checks-concepts.html#ar-concept-validation-results">Validation results reference</a>.</p> 
+      </li><li class="listitem">
+        <p><b>Natural language dependency.</b> The accuracy of
+          validation depends on how well natural language in user prompts and model
+          responses can be translated to your policy's formal logic variables. Automated
+          Reasoning checks use foundational models to translate natural language into logic 
+          representations. Variable descriptions influence the quality of this translation.</p>
+      </li><li class="listitem">
+        <p><b>Non-linear arithmetic.</b> Automated Reasoning checks
+          might timeout or return TOO_COMPLEX if constraints involve reasoning with non-linear
+          arithmetic (for example, irrational numbers or exponents).</p>
+      </li></ul></div>
+   
+    <h2 id="automated-reasoning-pricing">Pricing</h2>
+
+    <p>Automated Reasoning checks in Amazon Bedrock Guardrails are charged based on the number of validation requests
+      processed. For current pricing information, see the <a href="https://aws.amazon.com/bedrock/pricing/" rel="noopener noreferrer" target="_blank"><span>Amazon Bedrock pricing page</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>.</p>
+
+    <p>Charges are incurred for each validation request, regardless of the result (for example,
+      VALID, INVALID, TRANSLATION_AMBIGUOUS). To optimize costs:</p>
+
+    <div class="itemizedlist">
+       
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+        <p>Use appropriate confidence thresholds to balance accuracy with processing
+          requirements.</p>
+      </li><li class="listitem">
+        <p>Consider caching validation results for identical or similar queries when appropriate
+          for your use case.</p>
+      </li><li class="listitem">
+        <p>Monitor usage patterns and adjust policies to reduce unnecessary validation
+          requests.</p>
+      </li></ul></div>
+   
+    <h2 id="automated-reasoning-cross-region-inference">Cross-region inference for policy operations</h2>
+
+    <p>Automated Reasoning uses cross-region inference to optimize the performance and
+      availability of policy creation and testing operations. Specific API operations automatically
+      distribute processing across AWS Regions within your geographic boundary to ensure reliable
+      service delivery.</p>
+
+    <p>The following Automated Reasoning API operations employ cross-region inference:</p>
+
+    <div class="itemizedlist">
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+        <p><code class="code">StartAutomatedReasoningPolicyBuildWorkflow</code> — Invoked during policy
+          creation and compilation from source documents.</p>
+      </li><li class="listitem">
+        <p><code class="code">StartAutomatedReasoningPolicyTestWorkflow</code> — Invoked during policy
+          validation and testing procedures.</p>
+      </li></ul></div>
+
+    <p>These operations invoke large language models to extract formal logic rules from source
+      documents and translate natural language constructs into structured logical representations.
+      To ensure optimal performance and availability, request processing is distributed according
+      to the following geographic routing:</p>
+
+    <div class="itemizedlist">
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+        <p><b>United States Regions:</b> API requests originating from
+          US East (N. Virginia), US West (Oregon), or US East (Ohio) may be processed in any
+          supported US Region.</p>
+      </li><li class="listitem">
+        <p><b>European Union Regions:</b> API requests originating
+          from EU (Frankfurt), EU (Paris), or EU (Ireland) may be processed in any supported EU
+          Region.</p>
+      </li></ul></div>
+
+    <div class="awsdocs-note awsdocs-important"><div class="awsdocs-note-title"><awsui-icon name="status-warning" variant="error"></awsui-icon><h6>Important</h6></div><div class="awsdocs-note-text"><p>Customer data remains within the originating geographic boundary (United States or
+        European Union) and is processed in accordance with AWS data residency commitments.
+        Cross-region inference routes requests exclusively within the same geographic Region to
+        optimize performance and service availability.</p></div></div>
+
+    <p>Cross-region inference operates transparently without requiring customer configuration.
+      API functionality remains consistent regardless of the specific Region that processes the
+      request.</p>
+  <div class="highlights"><h6>Topics</h6><ul><li><p><a href="./automated-reasoning-checks-concepts.html">Automated Reasoning checks concepts</a></p></li><li><p><a href="./create-automated-reasoning-policy.html">Create your Automated Reasoning policy</a></p></li><li><p><a href="./automated-reasoning-policy-best-practices.html">Automated Reasoning policy best practices</a></p></li><li><p><a href="./test-automated-reasoning-policy.html">Test an Automated Reasoning policy</a></p></li><li><p><a href="./address-failed-automated-reasoning-tests.html">Troubleshoot and refine your Automated Reasoning policy</a></p></li><li><p><a href="./kiro-cli-automated-reasoning-policy.html">Use Kiro CLI with an Automated Reasoning policy</a></p></li><li><p><a href="./deploy-automated-reasoning-policy.html">Deploy your Automated Reasoning policy in your application</a></p></li><li><p><a href="./integrate-automated-reasoning-checks.html">Integrate Automated Reasoning checks in your application</a></p></li></ul></div><awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="previous" class="prev-link" accesskey="p" href="./guardrails-harmful-content-handling-options.html">Options for handling harmful content</div><div id="next" class="next-link" accesskey="n" href="./automated-reasoning-checks-concepts.html">Automated Reasoning checks concepts</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?feedback_destination_id=2d8c2a09-1dac-41bf-9893-c0333d272b2c&amp;topic_url=https://docs.aws.amazon.com/en_us/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?feedback_destination_id=2d8c2a09-1dac-41bf-9893-c0333d272b2c&amp;topic_url=https://docs.aws.amazon.com/en_us/bedrock/latest/userguide/guardrails-automated-reasoning-checks.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>
