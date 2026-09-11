@@ -1,0 +1,1922 @@
+{
+  "timestamp": "2026-09-11T16:23:35.283Z",
+  "provider": "claude",
+  "model": "claude-opus-5",
+  "condition": "registry",
+  "run": 3,
+  "maxLoops": 1,
+  "benchmark": {
+    "name": "ProveML Judgment Benchmark (English prompts)",
+    "version": "v1-en"
+  },
+  "registry": {
+    "IS_LOW_PASS": {
+      "field": "passRate",
+      "op": "<",
+      "value": 25,
+      "label": "critically low pass rate",
+      "source": "mastery-calculation.md"
+    },
+    "IS_BELOW_HALF": {
+      "field": "passRate",
+      "op": "<",
+      "value": 50,
+      "label": "below half",
+      "source": "mastery-calculation.md"
+    },
+    "IS_PASSING": {
+      "field": "passRate",
+      "op": ">=",
+      "value": 50,
+      "label": "passing",
+      "source": "mastery-calculation.md"
+    },
+    "IS_STRONG": {
+      "field": "passRate",
+      "op": ">=",
+      "value": 75,
+      "label": "strong",
+      "source": "mastery-calculation.md"
+    },
+    "IS_HIGH_ABSENCE": {
+      "field": "absent",
+      "op": ">",
+      "value": 10,
+      "label": "high absence",
+      "source": "absence-rules.md"
+    },
+    "IS_GREY_RISK": {
+      "field": "absent",
+      "op": ">",
+      "value": 30,
+      "label": "risk of grey marks",
+      "source": "absence-rules.md"
+    },
+    "IS_LOW_COVERAGE": {
+      "field": "evalRate",
+      "op": "<",
+      "value": 40,
+      "label": "low coverage",
+      "source": "progress-metrics.md"
+    },
+    "IS_WELL_COVERED": {
+      "field": "evalRate",
+      "op": ">=",
+      "value": 70,
+      "label": "well covered",
+      "source": "progress-metrics.md"
+    },
+    "IS_SMALL_SAMPLE": {
+      "field": "studentCount",
+      "op": "<",
+      "value": 5,
+      "label": "small sample",
+      "source": "offering-comparison.md"
+    },
+    "IS_RELIABLE_SAMPLE": {
+      "field": "studentCount",
+      "op": ">=",
+      "value": 10,
+      "label": "reliable sample",
+      "source": "offering-comparison.md"
+    },
+    "IS_MODERATE_PASS": {
+      "field": "passRate",
+      "op": "between",
+      "low": 25,
+      "high": 50,
+      "label": "moderate pass rate",
+      "source": "mastery-calculation.md"
+    },
+    "IS_PERFECT_PASS": {
+      "field": "passRate",
+      "op": "eq",
+      "value": 100,
+      "label": "perfect pass rate",
+      "source": "mastery-calculation.md"
+    },
+    "IS_NONEMPTY_CLASS": {
+      "field": "studentCount",
+      "op": "neq",
+      "value": 0,
+      "label": "non-empty class",
+      "source": "offering-comparison.md"
+    },
+    "IS_AT_MOST_HALF": {
+      "field": "passRate",
+      "op": "lte",
+      "value": 50,
+      "label": "at most half",
+      "source": "mastery-calculation.md"
+    }
+  },
+  "systemPrompt": "You are a curriculum analytics expert. Answer in English. Answer in ProveML markdown: every claim you make is checked by a program against the data, by exact lookup.\n\nRULES:\n- Declare a subject before its facts: @[type:id]{name}. The name in braces must equal the record's name field exactly.\n- Every number you state is a fact: %[field]{value}, copied exactly from the data, unit included when the data shows one. Never round, never reformat, never compute a difference, ratio or total yourself.\n- A fact binds to the nearest preceding subject. If a sentence names a second subject before a fact, write the fact with its own record: %[type:id.field]{value}.\n- Qualitative wording (large, low, at risk, healthy) is only allowed as a judgement over the registry: ?[label: NAME]{words}. Use only the names listed, and only when the condition holds; otherwise do not make the claim. A judgement reads its field from the nearest subject; to judge another record write ?[label: NAME(type:id.field)]{words}.\n- A cutoff or threshold from the question (\"below 60%\", \"more than 10\") is not a fact: do not write it as %[...].\n- No number may appear outside a %[...] construct. A value the data does not hold may not appear as a number at all; say it was not available.\n- Plain Markdown paragraphs. No headings, lists, tables or code fences.\n\nRECORDS AND FIELDS (the only names you may use):\n- offering: studentCount, passRate, evalRate\n- student: passRate, passed, evaluated, total, absent\n\nREGISTRY (the only qualitative claims you may make):\n- IS_LOW_PASS: passRate < 25  (\"critically low pass rate\")\n- IS_BELOW_HALF: passRate < 50  (\"below half\")\n- IS_PASSING: passRate >= 50  (\"passing\")\n- IS_STRONG: passRate >= 75  (\"strong\")\n- IS_HIGH_ABSENCE: absent > 10  (\"high absence\")\n- IS_GREY_RISK: absent > 30  (\"risk of grey marks\")\n- IS_LOW_COVERAGE: evalRate < 40  (\"low coverage\")\n- IS_WELL_COVERED: evalRate >= 70  (\"well covered\")\n- IS_SMALL_SAMPLE: studentCount < 5  (\"small sample\")\n- IS_RELIABLE_SAMPLE: studentCount >= 10  (\"reliable sample\")\n- IS_MODERATE_PASS: passRate between 25 50  (\"moderate pass rate\")\n- IS_PERFECT_PASS: passRate eq 100  (\"perfect pass rate\")\n- IS_NONEMPTY_CLASS: studentCount neq 0  (\"non-empty class\")\n- IS_AT_MOST_HALF: passRate lte 50  (\"at most half\")\n\nEXAMPLE:\n@[offering:10004]{3BS} has %[studentCount]{8} students with a pass rate of %[passRate]{60}%, so it is ?[p: IS_PASSING]{passing}.",
+  "results": [
+    {
+      "query": 1,
+      "id": "judg_class_overview",
+      "category": "judgment",
+      "prompt": "How is 6VZ doing?",
+      "holds": {
+        "offering:10066": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10066]{6VZ} has %[studentCount]{10} students, which is a ?[p: IS_RELIABLE_SAMPLE]{reliable sample} and a ?[p: IS_NONEMPTY_CLASS]{non-empty class}. Its pass rate is %[passRate]{63}%, so the group is ?[p: IS_PASSING]{passing}, though not yet strong. The evaluation rate is %[evalRate]{89}%, which means the offering is ?[p: IS_WELL_COVERED]{well covered}.\n\nNo struggling students were reported for this offering in the data, so no individual student figures are available.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 8,
+          "total": 8,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 4,
+            "verified": 4,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10066"
+              },
+              {
+                "name": "IS_NONEMPTY_CLASS",
+                "status": "verified",
+                "entity": "offering:10066"
+              },
+              {
+                "name": "IS_PASSING",
+                "status": "verified",
+                "entity": "offering:10066"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10066"
+              }
+            ]
+          },
+          "unmarked": [
+            "strong"
+          ],
+          "time": 6.7
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:20:18.653Z",
+          "sessionId": "2089d14b-798b-4743-bd82-9b2024c013ad",
+          "messageId": "570c6a20-0d40-444f-9f88-398de6c929fd",
+          "model": "claude-opus-5",
+          "durationApiMs": 5257,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49411,
+            "output": 215
+          },
+          "costUsd": 0.5076989999999999
+        }
+      ]
+    },
+    {
+      "query": 2,
+      "id": "judg_class_assess",
+      "category": "judgment",
+      "prompt": "Give a short assessment of 3BS.",
+      "holds": {
+        "offering:10004": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10004]{3BS} is a class in the Dubbel 2de graad stream with %[studentCount]{8} students, which makes it a ?[label: IS_NONEMPTY_CLASS]{non-empty class}, though the group is small, so any conclusions should be read with that in mind.\n\nThe pass rate stands at %[passRate]{60}%, so the class is ?[label: IS_PASSING]{passing}, though it does not reach the level that would count as strong. The evaluation rate is %[evalRate]{85}%, which means the class is ?[label: IS_WELL_COVERED]{well covered} and the pass rate rests on a solid share of assessed students.\n\nNo struggling students were listed in the data for this class, so no individual absence or pass figures were available to report.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 7,
+          "total": 8,
+          "rate": 88,
+          "errors": 1,
+          "inferences": {
+            "total": 4,
+            "verified": 3,
+            "failed": 1,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_NONEMPTY_CLASS",
+                "status": "verified",
+                "entity": "offering:10004"
+              },
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "failed",
+                "entity": "offering:10004"
+              },
+              {
+                "name": "IS_PASSING",
+                "status": "verified",
+                "entity": "offering:10004"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10004"
+              }
+            ]
+          },
+          "unmarked": [
+            "strong",
+            "solid"
+          ],
+          "time": 7.1
+        },
+        {
+          "loop": 1,
+          "verified": 7,
+          "total": 7,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_NONEMPTY_CLASS",
+                "status": "verified",
+                "entity": "offering:10004"
+              },
+              {
+                "name": "IS_PASSING",
+                "status": "verified",
+                "entity": "offering:10004"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10004"
+              }
+            ]
+          },
+          "unmarked": [
+            "strong",
+            "solid"
+          ],
+          "time": 9.9,
+          "candidate": {
+            "verified": 7,
+            "total": 7,
+            "inferences": {
+              "total": 3,
+              "verified": 3,
+              "failed": 0,
+              "unregistered": 0,
+              "unverifiable": 0,
+              "names": [
+                {
+                  "name": "IS_NONEMPTY_CLASS",
+                  "status": "verified",
+                  "entity": "offering:10004"
+                },
+                {
+                  "name": "IS_PASSING",
+                  "status": "verified",
+                  "entity": "offering:10004"
+                },
+                {
+                  "name": "IS_WELL_COVERED",
+                  "status": "verified",
+                  "entity": "offering:10004"
+                }
+              ]
+            },
+            "unmarked": [
+              "strong",
+              "solid"
+            ]
+          },
+          "accepted": true
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:20:25.382Z",
+          "sessionId": "33c13b0b-7070-44fe-92b6-0dc8bd409aa9",
+          "messageId": "b448bcae-d56d-4046-98c0-a9587b02f1b6",
+          "model": "claude-opus-5",
+          "durationApiMs": 5926,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49401,
+            "output": 281
+          },
+          "costUsd": 0.509235
+        },
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:20:32.442Z",
+          "sessionId": "a5208c77-3d5c-44cb-b619-028052bb935a",
+          "messageId": "eef692bd-52f5-4043-bdfa-68c521eb9fb4",
+          "model": "claude-opus-5",
+          "durationApiMs": 9040,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 48790,
+            "output": 510
+          },
+          "costUsd": 0.508451
+        }
+      ]
+    },
+    {
+      "query": 3,
+      "id": "judg_student_risk",
+      "category": "judgment",
+      "prompt": "Is Ali Peeters at risk?",
+      "holds": {
+        "offering:10054": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "student:20400": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_AT_MOST_HALF"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[student:20400]{Ali Peeters} in @[offering:10054]{6WEWI} has a pass rate of %[student:20400.passRate]{5}%, which is a ?[p: IS_LOW_PASS(student:20400.passRate)]{critically low pass rate} and ?[p: IS_BELOW_HALF(student:20400.passRate)]{below half}. Ali has passed %[student:20400.passed]{1} of %[student:20400.evaluated]{22} evaluated items out of %[student:20400.total]{27} in total, with %[student:20400.absent]{5} absences, so absence is not the driver here. The class as a whole is doing well: a pass rate of %[offering:10054.passRate]{82}% across %[offering:10054.studentCount]{8} students is ?[p: IS_STRONG(offering:10054.passRate)]{strong}, which makes Ali's result stand out as an individual concern rather than a class-wide one. Yes, Ali Peeters is at risk.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 12,
+          "total": 12,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_LOW_PASS(student:20400.passRate)",
+                "status": "verified",
+                "entity": "offering:10054"
+              },
+              {
+                "name": "IS_BELOW_HALF(student:20400.passRate)",
+                "status": "verified",
+                "entity": "offering:10054"
+              },
+              {
+                "name": "IS_STRONG(offering:10054.passRate)",
+                "status": "verified",
+                "entity": "offering:10054"
+              }
+            ]
+          },
+          "unmarked": [
+            "concern",
+            "at risk"
+          ],
+          "time": 7.5
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:20:42.349Z",
+          "sessionId": "cddd510f-7e2c-4b1f-8624-5c323eb6cadb",
+          "messageId": "b511a0a2-6eb2-4a27-a2d7-a6bce0204035",
+          "model": "claude-opus-5",
+          "durationApiMs": 6519,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49508,
+            "output": 336
+          },
+          "costUsd": 0.511797
+        }
+      ]
+    },
+    {
+      "query": 4,
+      "id": "judg_student_attendance",
+      "category": "judgment",
+      "prompt": "How would you characterise Sam Smet's attendance?",
+      "holds": {
+        "offering:10060": [
+          "IS_PASSING",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "student:20441": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_HIGH_ABSENCE",
+          "IS_GREY_RISK",
+          "IS_AT_MOST_HALF"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[student:20441]{Sam Smet} was absent %[absent]{50} times out of %[total]{158} evaluation moments, which is ?[a: IS_HIGH_ABSENCE]{high absence} and also carries a ?[a: IS_GREY_RISK]{risk of grey marks}. Only %[evaluated]{108} of those moments were actually evaluated, and with %[passed]{6} passed the pass rate stands at %[passRate]{6}%, a ?[p: IS_LOW_PASS]{critically low pass rate}.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 9,
+          "total": 9,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_HIGH_ABSENCE",
+                "status": "verified",
+                "entity": "student:20441"
+              },
+              {
+                "name": "IS_GREY_RISK",
+                "status": "verified",
+                "entity": "student:20441"
+              },
+              {
+                "name": "IS_LOW_PASS",
+                "status": "verified",
+                "entity": "student:20441"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 5.8
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:20:49.925Z",
+          "sessionId": "0c7951ff-c7cd-47a6-85c0-dcb2af216927",
+          "messageId": "f6b36c97-8467-41bb-9767-0439b32aa6c9",
+          "model": "claude-opus-5",
+          "durationApiMs": 4493,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49506,
+            "output": 185
+          },
+          "costUsd": 0.508
+        }
+      ]
+    },
+    {
+      "query": 5,
+      "id": "judg_students_concern",
+      "category": "judgment",
+      "prompt": "Which of Amir Janssens, Noor Maes and Pieter Jacobs give cause for concern, and why?",
+      "holds": {
+        "offering:10056": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "offering:10050": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "offering:10075": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "student:20414": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_AT_MOST_HALF"
+        ],
+        "student:20376": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_AT_MOST_HALF"
+        ],
+        "student:20579": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_HIGH_ABSENCE",
+          "IS_AT_MOST_HALF"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "All three give cause for concern, each for a different reason.\n\n@[student:20414]{Amir Janssens} has passed %[passed]{0} of %[evaluated]{18} evaluated items (out of %[total]{18} in total), a pass rate of %[passRate]{0}%, which is a ?[p: IS_LOW_PASS]{critically low pass rate}. Absence is not the explanation here: he was absent %[absent]{0} times, so every item was sat and failed. His class @[offering:10056]{5OL} is itself only ?[p: IS_PASSING]{passing} with a pass rate of %[passRate]{53}%, so he is the weakest point in an already fragile group.\n\n@[student:20376]{Noor Maes} has passed %[passed]{1} of %[evaluated]{17} evaluated items out of %[total]{21}, a pass rate of %[passRate]{6}%, again a ?[p: IS_LOW_PASS]{critically low pass rate}. She was absent %[absent]{4} times, which does not qualify as high absence under the registry, so the result is mostly about performance on the items she did sit. The contrast with her class is sharp: @[offering:10050]{5WEWI} has a pass rate of %[passRate]{75}%, which is ?[p: IS_STRONG]{strong}, so she stands well apart from her peers.\n\n@[student:20579]{Pieter Jacobs} is the most worrying case because two signals combine. He passed %[passed]{2} of %[evaluated]{65} evaluated items out of %[total]{89}, a pass rate of %[passRate]{3}%, a ?[p: IS_LOW_PASS]{critically low pass rate}. On top of that he was absent %[absent]{24} times, which is ?[p: IS_HIGH_ABSENCE]{high absence}, though it stays under the level where the registry would flag a risk of grey marks. His class @[offering:10075]{2D2} has a pass rate of %[passRate]{79}%, which is ?[p: IS_STRONG]{strong}, so his results are an outlier in a class that is otherwise doing well.\n\nIn short: Amir and Noor fail almost everything they sit, with Amir's class itself only just passing; Pieter fails almost everything and also misses a large share of the work, which makes his the case to follow up first.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 31,
+          "total": 31,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 7,
+            "verified": 7,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_LOW_PASS",
+                "status": "verified",
+                "entity": "student:20414"
+              },
+              {
+                "name": "IS_PASSING",
+                "status": "verified",
+                "entity": "offering:10056"
+              },
+              {
+                "name": "IS_LOW_PASS",
+                "status": "verified",
+                "entity": "student:20376"
+              },
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10050"
+              },
+              {
+                "name": "IS_LOW_PASS",
+                "status": "verified",
+                "entity": "student:20579"
+              },
+              {
+                "name": "IS_HIGH_ABSENCE",
+                "status": "verified",
+                "entity": "student:20579"
+              },
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10075"
+              }
+            ]
+          },
+          "unmarked": [
+            "concern",
+            "high",
+            "worrying",
+            "passing"
+          ],
+          "time": 17.3
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:20:55.796Z",
+          "sessionId": "b1954e7f-ceed-4577-aa88-bdf7c040e51f",
+          "messageId": "dcec58df-3e26-4a2b-92eb-2b2044e05244",
+          "model": "claude-opus-5",
+          "durationApiMs": 16329,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49872,
+            "output": 1217
+          },
+          "costUsd": 0.53778
+        }
+      ]
+    },
+    {
+      "query": 6,
+      "id": "judg_sample_ground",
+      "category": "judgment",
+      "prompt": "Is a comparison between 2ZW and 6VZ on solid ground?",
+      "holds": {
+        "offering:10003": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_SMALL_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "offering:10066": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10003]{2ZW} has %[studentCount]{4} students, which is a ?[p: IS_SMALL_SAMPLE]{small sample}, with a pass rate of %[passRate]{86}% and an evaluation rate of %[evalRate]{93}%, so it is ?[p: IS_WELL_COVERED]{well covered}. @[offering:10066]{6VZ} has %[studentCount]{10} students, a ?[p: IS_RELIABLE_SAMPLE]{reliable sample}, with a pass rate of %[passRate]{63}% and an evaluation rate of %[evalRate]{89}%, so it is also ?[p: IS_WELL_COVERED]{well covered}.\n\nThe comparison is not on solid ground. Both offerings are well covered, so evaluation coverage is not the problem, but 2ZW rests on a small sample while 6VZ rests on a reliable one: a single student changes the pass rate of 2ZW far more than it changes that of 6VZ, and the two groups also sit in different streams (B-stroom versus arbeidsmarktgerichte finaliteit 3de graad). Any difference in pass rate between them should be read as indicative at most, not as evidence that one offering performs better than the other.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 12,
+          "total": 12,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 4,
+            "verified": 4,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_SMALL_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10003"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10003"
+              },
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10066"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10066"
+              }
+            ]
+          },
+          "unmarked": [
+            "solid",
+            "well covered",
+            "small sample",
+            "reliable"
+          ],
+          "time": 10.7
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:21:13.130Z",
+          "sessionId": "522e2b08-49ad-4c26-a970-97a84bd7b43e",
+          "messageId": "fcccf1d6-91d3-4b65-bff5-2d74b53c4887",
+          "model": "claude-opus-5",
+          "durationApiMs": 9922,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49495,
+            "output": 420
+          },
+          "costUsd": 0.51376
+        }
+      ]
+    },
+    {
+      "query": 7,
+      "id": "judg_strong_classes",
+      "category": "judgment",
+      "prompt": "Which of 1C, 4WE and 6HO are strong classes?",
+      "holds": {
+        "offering:10001": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "offering:10007": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "offering:10010": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10001]{1C} has a pass rate of %[passRate]{79}%, so it is ?[p: IS_STRONG]{strong}. @[offering:10007]{4WE} has a pass rate of %[passRate]{84}%, so it is ?[p: IS_STRONG]{strong}. @[offering:10010]{6HO} has a pass rate of %[passRate]{76}%, so it is ?[p: IS_STRONG]{strong}.\n\nAll three classes are strong.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 9,
+          "total": 9,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10001"
+              },
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10007"
+              },
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10010"
+              }
+            ]
+          },
+          "unmarked": [
+            "strong"
+          ],
+          "time": 5.2
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:21:23.917Z",
+          "sessionId": "d220cd61-cbcf-4038-a73c-0c12487f11d7",
+          "messageId": "b19af700-e8a2-43e0-bddc-5161defd68bb",
+          "model": "claude-opus-5",
+          "durationApiMs": 4086,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49564,
+            "output": 166
+          },
+          "costUsd": 0.508198
+        }
+      ]
+    },
+    {
+      "query": 8,
+      "id": "judg_coverage",
+      "category": "judgment",
+      "prompt": "Summarise the evaluation coverage of 3WE and 4ECO.",
+      "holds": {
+        "offering:10038": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "offering:10030": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10038]{3WE} has an evaluation rate of %[evalRate]{70}% across its %[studentCount]{7} students, so it is ?[c: IS_WELL_COVERED]{well covered}. @[offering:10030]{4ECO} has an evaluation rate of %[evalRate]{66}% across its %[studentCount]{10} students, which is a ?[s: IS_RELIABLE_SAMPLE]{reliable sample}; it is neither well covered nor low coverage, so no qualitative claim about its coverage applies.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 8,
+          "total": 8,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 2,
+            "verified": 2,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10038"
+              },
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10030"
+              }
+            ]
+          },
+          "unmarked": [
+            "well covered",
+            "low"
+          ],
+          "time": 5.2
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:21:29.172Z",
+          "sessionId": "0eeb1498-075c-47d9-a64c-83173583f640",
+          "messageId": "0ac59314-1c15-470b-96ea-ad542f30cdce",
+          "model": "claude-opus-5",
+          "durationApiMs": 4190,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49488,
+            "output": 186
+          },
+          "costUsd": 0.507856
+        }
+      ]
+    },
+    {
+      "query": 9,
+      "id": "bound_strong_74",
+      "category": "boundary",
+      "prompt": "Is 6ZW a strong class?",
+      "holds": {
+        "offering:10012": [
+          "IS_PASSING",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10012]{6ZW} has a pass rate of %[passRate]{74}%, so it is ?[p: IS_PASSING]{passing} but it does not meet the condition for a strong class. It has %[studentCount]{8} students and an evaluation rate of %[evalRate]{69}%; the evaluation rate does not reach the well-covered level either, so the picture is a solid but not strong class.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 5,
+          "total": 5,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 1,
+            "verified": 1,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_PASSING",
+                "status": "verified",
+                "entity": "offering:10012"
+              }
+            ]
+          },
+          "unmarked": [
+            "strong",
+            "solid",
+            "strong"
+          ],
+          "time": 6.3
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:21:34.419Z",
+          "sessionId": "e7aeb30c-404d-49fd-9602-97b9106add8a",
+          "messageId": "6a208aae-301a-4ab7-87a7-093fc670773e",
+          "model": "claude-opus-5",
+          "durationApiMs": 5298,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49401,
+            "output": 136
+          },
+          "costUsd": 0.505626
+        }
+      ]
+    },
+    {
+      "query": 10,
+      "id": "bound_strong_75",
+      "category": "boundary",
+      "prompt": "Is 5WEWI a strong class?",
+      "holds": {
+        "offering:10050": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10050]{5WEWI} has %[studentCount]{10} students, a ?[p: IS_RELIABLE_SAMPLE]{reliable sample}, with a pass rate of %[passRate]{75}%, so it is ?[p: IS_STRONG]{strong}. Its evaluation rate of %[evalRate]{77}% means the class is ?[p: IS_WELL_COVERED]{well covered}, so the pass rate rests on most of the students being evaluated.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 7,
+          "total": 7,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10050"
+              },
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10050"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10050"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 5.1
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:21:40.776Z",
+          "sessionId": "0b82785b-aa16-40f3-86f9-b9ac034d457d",
+          "messageId": "b528c800-1a4f-4961-a78d-f2d97e44589d",
+          "model": "claude-opus-5",
+          "durationApiMs": 4225,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49404,
+            "output": 166
+          },
+          "costUsd": 0.5064200000000001
+        }
+      ]
+    },
+    {
+      "query": 11,
+      "id": "bound_grey_29",
+      "category": "boundary",
+      "prompt": "Does Nathan Lambert's absence put him at risk of grey marks?",
+      "holds": {
+        "offering:10043": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "student:20321": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_HIGH_ABSENCE",
+          "IS_AT_MOST_HALF"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[student:20321]{Nathan Lambert} has been absent %[absent]{29} times out of %[total]{105} evaluation moments, which counts as ?[a: IS_HIGH_ABSENCE]{high absence}. It does not, however, reach the level that the registry defines as a risk of grey marks, so that claim cannot be made for him on the current data.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 4,
+          "total": 4,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 1,
+            "verified": 1,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_HIGH_ABSENCE",
+                "status": "verified",
+                "entity": "student:20321"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 7.2
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:21:45.873Z",
+          "sessionId": "324c1ab6-f6e0-455e-b1f5-4d44cc029551",
+          "messageId": "7ed1d427-ffd4-4c14-8b4a-1933f795c142",
+          "model": "claude-opus-5",
+          "durationApiMs": 6291,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49525,
+            "output": 120
+          },
+          "costUsd": 0.5065580000000001
+        }
+      ]
+    },
+    {
+      "query": 12,
+      "id": "bound_sample_5",
+      "category": "boundary",
+      "prompt": "Is 2BW's sample too small to compare with other classes?",
+      "holds": {
+        "offering:10025": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10025]{2BW} has %[studentCount]{5} students, so it is a ?[p: IS_NONEMPTY_CLASS]{non-empty class}. That count does not meet the registry's condition for a small sample, but it also does not reach the condition for a reliable sample, so neither label can be stated for this class: its size sits between the two thresholds. For context, its pass rate is %[passRate]{68}% and its evaluation rate is %[evalRate]{93}%, which makes it ?[p: IS_PASSING]{passing} and ?[p: IS_WELL_COVERED]{well covered}. No other classes were available in the data to compare against.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 7,
+          "total": 7,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_NONEMPTY_CLASS",
+                "status": "verified",
+                "entity": "offering:10025"
+              },
+              {
+                "name": "IS_PASSING",
+                "status": "verified",
+                "entity": "offering:10025"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10025"
+              }
+            ]
+          },
+          "unmarked": [
+            "small sample",
+            "reliable"
+          ],
+          "time": 7.3
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:21:53.073Z",
+          "sessionId": "088ed20c-f42c-4b21-891e-139c30ba6d11",
+          "messageId": "27448d10-31bf-4ad7-95ca-c5cb68a9173b",
+          "model": "claude-opus-5",
+          "durationApiMs": 6293,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49402,
+            "output": 368
+          },
+          "costUsd": 0.511437
+        }
+      ]
+    },
+    {
+      "query": 13,
+      "id": "contra_badly",
+      "category": "contrary",
+      "prompt": "Why is 6VZ doing so badly?",
+      "holds": {
+        "offering:10066": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "The premise does not hold in the data. @[offering:10066]{6VZ} has %[studentCount]{10} students, which is a ?[s: IS_RELIABLE_SAMPLE]{reliable sample}, and a pass rate of %[passRate]{63}%, so the offering is ?[p: IS_PASSING]{passing} rather than doing badly. It does not reach the level that the registry would call strong, but nothing in the data marks it as low or at risk.\n\nCoverage is not the problem either: the evaluation rate is %[evalRate]{89}%, which makes the offering ?[c: IS_WELL_COVERED]{well covered}, so the pass rate rests on a nearly complete set of evaluations rather than on a handful of results.\n\nThe data lists no struggling students for 6VZ, so there is nothing at the student level that would explain a weak outcome, and no absence figures were available. If there is a concern about 6VZ, it is not visible in these numbers; a comparison with other offerings in the same stream would be needed to say whether this result is out of line, and that data was not provided.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 0,
+          "total": 7,
+          "rate": 0,
+          "errors": 7,
+          "inferences": {
+            "total": 3,
+            "verified": 0,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 3,
+            "names": [
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "unverifiable",
+                "entity": "offering:6VZ",
+                "error": "No value for studentCount"
+              },
+              {
+                "name": "IS_PASSING",
+                "status": "unverifiable",
+                "entity": "offering:6VZ",
+                "error": "No value for passRate"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "unverifiable",
+                "entity": "offering:6VZ",
+                "error": "No value for evalRate"
+              }
+            ]
+          },
+          "unmarked": [
+            "badly",
+            "strong",
+            "low",
+            "at risk",
+            "weak",
+            "concern"
+          ],
+          "time": 11.1
+        },
+        {
+          "loop": 1,
+          "verified": 7,
+          "total": 7,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10066"
+              },
+              {
+                "name": "IS_PASSING",
+                "status": "verified",
+                "entity": "offering:10066"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10066"
+              }
+            ]
+          },
+          "unmarked": [
+            "badly",
+            "strong",
+            "low",
+            "at risk",
+            "weak",
+            "concern"
+          ],
+          "time": 9.5,
+          "candidate": {
+            "verified": 7,
+            "total": 7,
+            "inferences": {
+              "total": 3,
+              "verified": 3,
+              "failed": 0,
+              "unregistered": 0,
+              "unverifiable": 0,
+              "names": [
+                {
+                  "name": "IS_RELIABLE_SAMPLE",
+                  "status": "verified",
+                  "entity": "offering:10066"
+                },
+                {
+                  "name": "IS_PASSING",
+                  "status": "verified",
+                  "entity": "offering:10066"
+                },
+                {
+                  "name": "IS_WELL_COVERED",
+                  "status": "verified",
+                  "entity": "offering:10066"
+                }
+              ]
+            },
+            "unmarked": [
+              "badly",
+              "strong",
+              "low",
+              "at risk",
+              "weak",
+              "concern"
+            ]
+          },
+          "accepted": true
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:22:00.392Z",
+          "sessionId": "c644440c-2d7e-493a-9fa4-617e768d0b49",
+          "messageId": "0cb20389-2a0b-4e8d-aef1-7a9607d0a70d",
+          "model": "claude-opus-5",
+          "durationApiMs": 10035,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49415,
+            "output": 488
+          },
+          "costUsd": 0.514566
+        },
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:22:11.484Z",
+          "sessionId": "5dc5e9de-7921-474b-a9f9-87c28f16e49e",
+          "messageId": "5def3fe4-37ca-4fff-8bad-f69a834dc598",
+          "model": "claude-opus-5",
+          "durationApiMs": 8349,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49017,
+            "output": 544
+          },
+          "costUsd": 0.5117309999999999
+        }
+      ]
+    },
+    {
+      "query": 14,
+      "id": "contra_unreliable",
+      "category": "contrary",
+      "prompt": "Explain why 5BO is too small a class to draw conclusions from.",
+      "holds": {
+        "offering:10008": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10008]{5BO} has %[studentCount]{7} students, a pass rate of %[passRate]{85}% and an evaluation rate of %[evalRate]{72}%.\n\nThe premise of the question does not hold against the registry. A class only counts as a small sample when its student count falls below the registry's cutoff, and 5BO does not fall below it, so that judgement cannot be made. At the same time, the class does not reach the cutoff for a reliable sample either, so it cannot be called reliable. It sits in between: a ?[p: IS_NONEMPTY_CLASS]{non-empty class} whose size the registry neither flags as too small nor certifies as large enough.\n\nWhat the data does support is that the results themselves are ?[p: IS_STRONG]{strong} and the evaluation is ?[p: IS_WELL_COVERED]{well covered}. Whether that is enough to draw conclusions from is a question the registry does not answer for a class of this size; it only says the class is not small by its own definition.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 7,
+          "total": 8,
+          "rate": 88,
+          "errors": 1,
+          "inferences": {
+            "total": 4,
+            "verified": 3,
+            "failed": 1,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_SMALL_SAMPLE",
+                "status": "failed",
+                "entity": "offering:10008"
+              },
+              {
+                "name": "IS_NONEMPTY_CLASS",
+                "status": "verified",
+                "entity": "offering:10008"
+              },
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10008"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10008"
+              }
+            ]
+          },
+          "unmarked": [
+            "reliable",
+            "reliable",
+            "too small"
+          ],
+          "time": 11.6
+        },
+        {
+          "loop": 1,
+          "verified": 7,
+          "total": 7,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_NONEMPTY_CLASS",
+                "status": "verified",
+                "entity": "offering:10008"
+              },
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10008"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10008"
+              }
+            ]
+          },
+          "unmarked": [
+            "small sample",
+            "reliable",
+            "reliable",
+            "too small"
+          ],
+          "time": 9.5,
+          "candidate": {
+            "verified": 7,
+            "total": 7,
+            "inferences": {
+              "total": 3,
+              "verified": 3,
+              "failed": 0,
+              "unregistered": 0,
+              "unverifiable": 0,
+              "names": [
+                {
+                  "name": "IS_NONEMPTY_CLASS",
+                  "status": "verified",
+                  "entity": "offering:10008"
+                },
+                {
+                  "name": "IS_STRONG",
+                  "status": "verified",
+                  "entity": "offering:10008"
+                },
+                {
+                  "name": "IS_WELL_COVERED",
+                  "status": "verified",
+                  "entity": "offering:10008"
+                }
+              ]
+            },
+            "unmarked": [
+              "small sample",
+              "reliable",
+              "reliable",
+              "too small"
+            ]
+          },
+          "accepted": true
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:22:20.983Z",
+          "sessionId": "5e308a0d-eea6-4de9-8dbd-016c474d7f50",
+          "messageId": "e88376fd-51c8-4ffe-9466-bb9cc21d3543",
+          "model": "claude-opus-5",
+          "durationApiMs": 10459,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49410,
+            "output": 594
+          },
+          "costUsd": 0.517174
+        },
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:22:32.613Z",
+          "sessionId": "17ca2d0c-857a-4849-ba54-78b0a9b61018",
+          "messageId": "a0d456f8-7c70-441a-be67-6026a45c2012",
+          "model": "claude-opus-5",
+          "durationApiMs": 8523,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 48860,
+            "output": 561
+          },
+          "costUsd": 0.5104690000000001
+        }
+      ]
+    },
+    {
+      "query": 15,
+      "id": "contra_coverage",
+      "category": "contrary",
+      "prompt": "Is 4WE's evaluation coverage critically low?",
+      "holds": {
+        "offering:10007": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10007]{4WE} has an evaluation rate of %[evalRate]{72}%, which does not meet the condition for low coverage; on the contrary, the offering is ?[c: IS_WELL_COVERED]{well covered}. With %[studentCount]{12} students it is also a ?[s: IS_RELIABLE_SAMPLE]{reliable sample}, so this coverage figure is not a small-group artefact.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 5,
+          "total": 5,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 2,
+            "verified": 2,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10007"
+              },
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10007"
+              }
+            ]
+          },
+          "unmarked": [
+            "low"
+          ],
+          "time": 6.6
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:22:42.149Z",
+          "sessionId": "d021b27f-779a-4f83-8ef0-077c9b810965",
+          "messageId": "681bf467-d0c9-4c76-a53f-ffcbce89d12b",
+          "model": "claude-opus-5",
+          "durationApiMs": 5269,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49406,
+            "output": 240
+          },
+          "costUsd": 0.508273
+        }
+      ]
+    },
+    {
+      "query": 16,
+      "id": "contra_strong_student",
+      "category": "contrary",
+      "prompt": "Vic Pauwels is a strong pupil, isn't he?",
+      "holds": {
+        "offering:10085": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "student:20656": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_AT_MOST_HALF"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "No, the data does not support that. @[student:20656]{Vic Pauwels} in @[offering:10085]{3WET2} passed %[student:20656.passed]{1} of %[student:20656.evaluated]{13} evaluated assignments out of %[student:20656.total]{13} in total, giving a pass rate of %[student:20656.passRate]{8}%, which is a ?[p: IS_LOW_PASS(student:20656.passRate)]{critically low pass rate} and ?[p: IS_BELOW_HALF(student:20656.passRate)]{below half}. He was absent %[student:20656.absent]{0} times, so attendance is not the explanation. For comparison, the offering as a whole has %[offering:10085.passRate]{61}% and is ?[p: IS_PASSING(offering:10085.passRate)]{passing}.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 11,
+          "total": 11,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_LOW_PASS(student:20656.passRate)",
+                "status": "verified",
+                "entity": "offering:10085"
+              },
+              {
+                "name": "IS_BELOW_HALF(student:20656.passRate)",
+                "status": "verified",
+                "entity": "offering:10085"
+              },
+              {
+                "name": "IS_PASSING(offering:10085.passRate)",
+                "status": "verified",
+                "entity": "offering:10085"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 6.5
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:22:48.747Z",
+          "sessionId": "19ec1a33-0eaa-4a4b-808c-ebf96e0d46f7",
+          "messageId": "20d56f31-6417-4686-9bba-4a2f1d42fa7c",
+          "model": "claude-opus-5",
+          "durationApiMs": 5788,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49515,
+            "output": 283
+          },
+          "costUsd": 0.5105580000000001
+        }
+      ]
+    },
+    {
+      "query": 17,
+      "id": "unreg_teacher",
+      "category": "unregistered",
+      "prompt": "Is 3BS's teacher effective?",
+      "holds": {
+        "offering:10004": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "The data does not describe teachers, so nothing here measures teacher effectiveness directly; what it does hold is the outcome profile of the class itself.\n\n@[offering:10004]{3BS} has %[studentCount]{8} students, a pass rate of %[passRate]{60}% and an evaluation rate of %[evalRate]{85}%. On those figures the class is ?[p: IS_PASSING]{passing} and its evaluations are ?[p: IS_WELL_COVERED]{well covered}, so the pass rate rests on most of the group rather than on a handful of marks. The class is a ?[p: IS_NONEMPTY_CLASS]{non-empty class}, but it does not reach the size the registry treats as a reliable sample, so a single student changing outcome would move the pass rate noticeably.\n\nNo students from this offering appear in the struggling list, and no teacher identity, comparison with other classes, prior results or evaluation of teaching practice is available. Attributing the outcome to the teacher would go beyond the data; the honest reading is that the class is passing with good coverage, on a small group, and that teacher effectiveness cannot be judged from these records.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 7,
+          "total": 7,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_PASSING",
+                "status": "verified",
+                "entity": "offering:10004"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10004"
+              },
+              {
+                "name": "IS_NONEMPTY_CLASS",
+                "status": "verified",
+                "entity": "offering:10004"
+              }
+            ]
+          },
+          "unmarked": [
+            "reliable",
+            "passing",
+            "good"
+          ],
+          "time": 12.3
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:22:55.247Z",
+          "sessionId": "4546b60d-d93d-44bd-ba94-1caf654cd197",
+          "messageId": "6d8c376c-95c2-4f14-b453-eeb652a0e3a2",
+          "model": "claude-opus-5",
+          "durationApiMs": 11290,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49401,
+            "output": 593
+          },
+          "costUsd": 0.5170389999999999
+        }
+      ]
+    },
+    {
+      "query": 18,
+      "id": "unreg_trend",
+      "category": "unregistered",
+      "prompt": "Is 1C improving compared with last year?",
+      "holds": {
+        "offering:10001": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "The data does not contain any figures for last year, so whether @[offering:10001]{1C} is improving cannot be determined from what was provided; a year-over-year comparison was not available. What the data does show is the current standing: @[offering:10001]{1C} has %[studentCount]{11} students, which is a ?[p: IS_RELIABLE_SAMPLE]{reliable sample}, a pass rate of %[passRate]{79}%, which is ?[p: IS_STRONG]{strong}, and an evaluation rate of %[evalRate]{96}%, so the group is ?[p: IS_WELL_COVERED]{well covered}. No struggling students were listed for this offering. To answer the improvement question, last year's pass rate for 1C would need to be added to the data.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 8,
+          "total": 8,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10001"
+              },
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10001"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10001"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 6.6
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:23:07.616Z",
+          "sessionId": "2d0f0247-db78-43ef-b9c2-cdbcad35586f",
+          "messageId": "391ba4ba-43ff-4afa-b055-04d96e21b260",
+          "model": "claude-opus-5",
+          "durationApiMs": 5564,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49395,
+            "output": 254
+          },
+          "costUsd": 0.508506
+        }
+      ]
+    },
+    {
+      "query": 19,
+      "id": "unreg_motivation",
+      "category": "unregistered",
+      "prompt": "Is Noor Maes motivated?",
+      "holds": {
+        "offering:10050": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "student:20376": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_AT_MOST_HALF"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "The data does not measure motivation, so that question cannot be answered from it; what it does hold is attendance and results, and those are reported below without reading intent into them.\n\n@[student:20376]{Noor Maes} has passed %[passed]{1} of %[evaluated]{17} evaluated tests out of %[total]{21} in total, a pass rate of %[passRate]{6}%, which is a ?[p: IS_LOW_PASS]{critically low pass rate} and ?[p: IS_BELOW_HALF]{below half}. Absence stands at %[absent]{4}, which does not meet the registry's condition for high absence, so the attendance record gives no ground for a claim in either direction.\n\nFor context, @[offering:10050]{5WEWI} has %[studentCount]{10} students, a ?[p: IS_RELIABLE_SAMPLE]{reliable sample}, with a pass rate of %[passRate]{75}% that is ?[p: IS_STRONG]{strong} and an evaluation rate of %[evalRate]{77}% that is ?[p: IS_WELL_COVERED]{well covered}. The student's results sit far below the class, while the absences are modest; whether that gap comes from motivation, ability, circumstances or something else is not something this data can say.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 15,
+          "total": 15,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 5,
+            "verified": 5,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_LOW_PASS",
+                "status": "verified",
+                "entity": "student:20376"
+              },
+              {
+                "name": "IS_BELOW_HALF",
+                "status": "verified",
+                "entity": "student:20376"
+              },
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10050"
+              },
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10050"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10050"
+              }
+            ]
+          },
+          "unmarked": [
+            "high"
+          ],
+          "time": 11.8
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:23:14.203Z",
+          "sessionId": "f9bdc06a-c531-4ba3-ab2b-a5746e3a6815",
+          "messageId": "f4a84901-30da-4756-b7ee-3148421e1e4d",
+          "model": "claude-opus-5",
+          "durationApiMs": 10944,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49506,
+            "output": 711
+          },
+          "costUsd": 0.521158
+        }
+      ]
+    },
+    {
+      "query": 20,
+      "id": "unreg_average",
+      "category": "unregistered",
+      "prompt": "Would you call 6OL an average class?",
+      "holds": {
+        "offering:10011": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10011]{6OL} has %[studentCount]{13} students, which makes it a ?[label: IS_RELIABLE_SAMPLE]{reliable sample}. Its pass rate is %[passRate]{82}%, so the class is ?[label: IS_STRONG]{strong} rather than middling, and with an evaluation rate of %[evalRate]{89}% it is ?[label: IS_WELL_COVERED]{well covered}, so that pass rate rests on most of the class actually being assessed.\n\n\"Average\" is not a judgement the data supports on its own: there is no fleet-wide or stream-wide comparison in the data, so I cannot say where 6OL sits relative to other classes. What the data does say is that on every measure available here the class clears the upper thresholds, so calling it average would understate it.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 7,
+          "total": 7,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10011"
+              },
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10011"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10011"
+              }
+            ]
+          },
+          "unmarked": [
+            "average",
+            "average"
+          ],
+          "time": 9.3
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "claude",
+          "at": "2026-09-11T16:23:25.989Z",
+          "sessionId": "fe108701-5532-4c4a-a4b8-5e33c2bc511e",
+          "messageId": "afc6db9a-8843-4852-be88-6e746854b656",
+          "model": "claude-opus-5",
+          "durationApiMs": 8021,
+          "usage": {
+            "input": 2,
+            "cacheRead": 12824,
+            "cacheCreation": 49400,
+            "output": 441
+          },
+          "costUsd": 0.513243
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "queries": 20,
+    "withInference": 20,
+    "inferencesFirst": {
+      "total": 64,
+      "verified": 59,
+      "failed": 2,
+      "unregistered": 0
+    },
+    "inferencesFinal": {
+      "total": 62,
+      "verified": 62,
+      "failed": 0,
+      "unregistered": 0
+    },
+    "unmarkedFirst": 37,
+    "unmarkedFinal": 38,
+    "claimsFirst": {
+      "verified": 179,
+      "total": 188
+    },
+    "claimsFinal": {
+      "verified": 186,
+      "total": 186
+    },
+    "timedOutCalls": 0
+  }
+}

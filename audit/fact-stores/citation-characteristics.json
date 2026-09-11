@@ -222,5 +222,13 @@
  "citation:ten2026.name": "TEN",
  "citation:ten2026.hallucination": "lower hallucination rates",
  "citation:ten2026.study": "21-participant user study",
- "citation:ten2026.effort": "verification and correction effort did not differ significantly between conditions"
+ "citation:ten2026.effort": "verification and correction effort did not differ significantly between conditions",
+ "citation:magesh2025.adoption": "a sharp rise in products incorporating artificial intelligence",
+ "citation:magesh2025.stakes": "risky in high-stakes domains",
+ "citation:citednotverified.factualAccuracy": "achieve only 39-77% factual accuracy",
+ "citation:rao2026.name": "The citation-URL study",
+ "citation:rao2026.share": "3–13% of citation URLs are hallucinated",
+ "citation:rao2026.meaning": "have no record in the Wayback Machine and likely never existed",
+ "citation:rao2026.deepResearchRate": "the hallucination rate is 10.7%",
+ "citation:rao2026.searchRate": "4.8% [4.3, 5.2] for the eight search-augmented models"
 }

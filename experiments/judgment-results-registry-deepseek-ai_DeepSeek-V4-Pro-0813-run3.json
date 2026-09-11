@@ -1,0 +1,1581 @@
+{
+  "timestamp": "2026-09-11T16:18:11.406Z",
+  "provider": "together",
+  "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "condition": "registry",
+  "run": 3,
+  "maxLoops": 1,
+  "benchmark": {
+    "name": "ProveML Judgment Benchmark (English prompts)",
+    "version": "v1-en"
+  },
+  "registry": {
+    "IS_LOW_PASS": {
+      "field": "passRate",
+      "op": "<",
+      "value": 25,
+      "label": "critically low pass rate",
+      "source": "mastery-calculation.md"
+    },
+    "IS_BELOW_HALF": {
+      "field": "passRate",
+      "op": "<",
+      "value": 50,
+      "label": "below half",
+      "source": "mastery-calculation.md"
+    },
+    "IS_PASSING": {
+      "field": "passRate",
+      "op": ">=",
+      "value": 50,
+      "label": "passing",
+      "source": "mastery-calculation.md"
+    },
+    "IS_STRONG": {
+      "field": "passRate",
+      "op": ">=",
+      "value": 75,
+      "label": "strong",
+      "source": "mastery-calculation.md"
+    },
+    "IS_HIGH_ABSENCE": {
+      "field": "absent",
+      "op": ">",
+      "value": 10,
+      "label": "high absence",
+      "source": "absence-rules.md"
+    },
+    "IS_GREY_RISK": {
+      "field": "absent",
+      "op": ">",
+      "value": 30,
+      "label": "risk of grey marks",
+      "source": "absence-rules.md"
+    },
+    "IS_LOW_COVERAGE": {
+      "field": "evalRate",
+      "op": "<",
+      "value": 40,
+      "label": "low coverage",
+      "source": "progress-metrics.md"
+    },
+    "IS_WELL_COVERED": {
+      "field": "evalRate",
+      "op": ">=",
+      "value": 70,
+      "label": "well covered",
+      "source": "progress-metrics.md"
+    },
+    "IS_SMALL_SAMPLE": {
+      "field": "studentCount",
+      "op": "<",
+      "value": 5,
+      "label": "small sample",
+      "source": "offering-comparison.md"
+    },
+    "IS_RELIABLE_SAMPLE": {
+      "field": "studentCount",
+      "op": ">=",
+      "value": 10,
+      "label": "reliable sample",
+      "source": "offering-comparison.md"
+    },
+    "IS_MODERATE_PASS": {
+      "field": "passRate",
+      "op": "between",
+      "low": 25,
+      "high": 50,
+      "label": "moderate pass rate",
+      "source": "mastery-calculation.md"
+    },
+    "IS_PERFECT_PASS": {
+      "field": "passRate",
+      "op": "eq",
+      "value": 100,
+      "label": "perfect pass rate",
+      "source": "mastery-calculation.md"
+    },
+    "IS_NONEMPTY_CLASS": {
+      "field": "studentCount",
+      "op": "neq",
+      "value": 0,
+      "label": "non-empty class",
+      "source": "offering-comparison.md"
+    },
+    "IS_AT_MOST_HALF": {
+      "field": "passRate",
+      "op": "lte",
+      "value": 50,
+      "label": "at most half",
+      "source": "mastery-calculation.md"
+    }
+  },
+  "systemPrompt": "You are a curriculum analytics expert. Answer in English. Answer in ProveML markdown: every claim you make is checked by a program against the data, by exact lookup.\n\nRULES:\n- Declare a subject before its facts: @[type:id]{name}. The name in braces must equal the record's name field exactly.\n- Every number you state is a fact: %[field]{value}, copied exactly from the data, unit included when the data shows one. Never round, never reformat, never compute a difference, ratio or total yourself.\n- A fact binds to the nearest preceding subject. If a sentence names a second subject before a fact, write the fact with its own record: %[type:id.field]{value}.\n- Qualitative wording (large, low, at risk, healthy) is only allowed as a judgement over the registry: ?[label: NAME]{words}. Use only the names listed, and only when the condition holds; otherwise do not make the claim. A judgement reads its field from the nearest subject; to judge another record write ?[label: NAME(type:id.field)]{words}.\n- A cutoff or threshold from the question (\"below 60%\", \"more than 10\") is not a fact: do not write it as %[...].\n- No number may appear outside a %[...] construct. A value the data does not hold may not appear as a number at all; say it was not available.\n- Plain Markdown paragraphs. No headings, lists, tables or code fences.\n\nRECORDS AND FIELDS (the only names you may use):\n- offering: studentCount, passRate, evalRate\n- student: passRate, passed, evaluated, total, absent\n\nREGISTRY (the only qualitative claims you may make):\n- IS_LOW_PASS: passRate < 25  (\"critically low pass rate\")\n- IS_BELOW_HALF: passRate < 50  (\"below half\")\n- IS_PASSING: passRate >= 50  (\"passing\")\n- IS_STRONG: passRate >= 75  (\"strong\")\n- IS_HIGH_ABSENCE: absent > 10  (\"high absence\")\n- IS_GREY_RISK: absent > 30  (\"risk of grey marks\")\n- IS_LOW_COVERAGE: evalRate < 40  (\"low coverage\")\n- IS_WELL_COVERED: evalRate >= 70  (\"well covered\")\n- IS_SMALL_SAMPLE: studentCount < 5  (\"small sample\")\n- IS_RELIABLE_SAMPLE: studentCount >= 10  (\"reliable sample\")\n- IS_MODERATE_PASS: passRate between 25 50  (\"moderate pass rate\")\n- IS_PERFECT_PASS: passRate eq 100  (\"perfect pass rate\")\n- IS_NONEMPTY_CLASS: studentCount neq 0  (\"non-empty class\")\n- IS_AT_MOST_HALF: passRate lte 50  (\"at most half\")\n\nEXAMPLE:\n@[offering:10004]{3BS} has %[studentCount]{8} students with a pass rate of %[passRate]{60}%, so it is ?[p: IS_PASSING]{passing}.",
+  "results": [
+    {
+      "query": 1,
+      "id": "judg_class_overview",
+      "category": "judgment",
+      "prompt": "How is 6VZ doing?",
+      "holds": {
+        "offering:10066": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10066]{6VZ} has %[studentCount]{10} students, a pass rate of %[passRate]{63}%, and an evaluation rate of %[evalRate]{89}%. It is ?[p: IS_PASSING]{passing}, ?[p: IS_WELL_COVERED]{well covered}, ?[p: IS_RELIABLE_SAMPLE]{reliable sample}, and ?[p: IS_NONEMPTY_CLASS]{non-empty class}.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 8,
+          "total": 8,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 4,
+            "verified": 4,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_PASSING",
+                "status": "verified",
+                "entity": "offering:10066"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10066"
+              },
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10066"
+              },
+              {
+                "name": "IS_NONEMPTY_CLASS",
+                "status": "verified",
+                "entity": "offering:10066"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 11.5
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:12:56.524Z",
+          "id": "6ba652ec-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143176,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 777,
+            "completion_tokens": 1287,
+            "total_tokens": 2064,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1176
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 2,
+      "id": "judg_class_assess",
+      "category": "judgment",
+      "prompt": "Give a short assessment of 3BS.",
+      "holds": {
+        "offering:10004": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10004]{3BS} has %[studentCount]{8} students with a pass rate of %[passRate]{60}% and an evaluation rate of %[evalRate]{85}%. It is ?[p: IS_PASSING]{passing} and ?[p: IS_WELL_COVERED]{well covered}, and it is a ?[p: IS_NONEMPTY_CLASS]{non-empty class}.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 7,
+          "total": 7,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_PASSING",
+                "status": "verified",
+                "entity": "offering:10004"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10004"
+              },
+              {
+                "name": "IS_NONEMPTY_CLASS",
+                "status": "verified",
+                "entity": "offering:10004"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 10.1
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:13:08.091Z",
+          "id": "88be629f-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143188,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 773,
+            "completion_tokens": 892,
+            "total_tokens": 1665,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 793
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 3,
+      "id": "judg_student_risk",
+      "category": "judgment",
+      "prompt": "Is Ali Peeters at risk?",
+      "holds": {
+        "offering:10054": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "student:20400": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_AT_MOST_HALF"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "No. @[student:20400]{Ali Peeters} has %[absent]{5} absences and a pass rate of %[passRate]{5}%, which is ?[j: IS_LOW_PASS]{critically low pass rate} and ?[j: IS_BELOW_HALF]{below half}.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 5,
+          "total": 5,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 2,
+            "verified": 2,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_LOW_PASS",
+                "status": "verified",
+                "entity": "student:20400"
+              },
+              {
+                "name": "IS_BELOW_HALF",
+                "status": "verified",
+                "entity": "student:20400"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 22.9
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:13:18.266Z",
+          "id": "fae0e967-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143198,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 855,
+            "completion_tokens": 2677,
+            "total_tokens": 3532,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2606
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 4,
+      "id": "judg_student_attendance",
+      "category": "judgment",
+      "prompt": "How would you characterise Sam Smet's attendance?",
+      "holds": {
+        "offering:10060": [
+          "IS_PASSING",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "student:20441": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_HIGH_ABSENCE",
+          "IS_GREY_RISK",
+          "IS_AT_MOST_HALF"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[student:20441]{Sam Smet} has %[absent]{50} absences, which is ?[label: IS_HIGH_ABSENCE]{high absence} and ?[label: IS_GREY_RISK]{risk of grey marks}.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 4,
+          "total": 4,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 2,
+            "verified": 2,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_HIGH_ABSENCE",
+                "status": "verified",
+                "entity": "student:20441"
+              },
+              {
+                "name": "IS_GREY_RISK",
+                "status": "verified",
+                "entity": "student:20441"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 5.9
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:13:41.183Z",
+          "id": "becc0ab5-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143221,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 855,
+            "completion_tokens": 565,
+            "total_tokens": 1420,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 508
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 5,
+      "id": "judg_students_concern",
+      "category": "judgment",
+      "prompt": "Which of Amir Janssens, Noor Maes and Pieter Jacobs give cause for concern, and why?",
+      "holds": {
+        "offering:10056": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "offering:10050": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "offering:10075": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "student:20414": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_AT_MOST_HALF"
+        ],
+        "student:20376": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_AT_MOST_HALF"
+        ],
+        "student:20579": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_HIGH_ABSENCE",
+          "IS_AT_MOST_HALF"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[student:20414]{Amir Janssens} has a pass rate of %[student:20414.passRate]{0}% and %[student:20414.absent]{0} absences, so he is ?[p: IS_LOW_PASS]{critically low pass rate}.\n\n@[student:20376]{Noor Maes} has a pass rate of %[student:20376.passRate]{6}% and %[student:20376.absent]{4} absences, so she is ?[p: IS_LOW_PASS]{critically low pass rate}.\n\n@[student:20579]{Pieter Jacobs} has a pass rate of %[student:20579.passRate]{3}% and %[student:20579.absent]{24} absences, so he is ?[p: IS_LOW_PASS]{critically low pass rate} and ?[p: IS_HIGH_ABSENCE]{high absence}.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 13,
+          "total": 13,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 4,
+            "verified": 4,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_LOW_PASS",
+                "status": "verified",
+                "entity": "student:20414"
+              },
+              {
+                "name": "IS_LOW_PASS",
+                "status": "verified",
+                "entity": "student:20376"
+              },
+              {
+                "name": "IS_LOW_PASS",
+                "status": "verified",
+                "entity": "student:20579"
+              },
+              {
+                "name": "IS_HIGH_ABSENCE",
+                "status": "verified",
+                "entity": "student:20579"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 29.4
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:13:47.125Z",
+          "id": "7e9cc3bb-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143227,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 1141,
+            "completion_tokens": 3223,
+            "total_tokens": 4364,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3015
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 6,
+      "id": "judg_sample_ground",
+      "category": "judgment",
+      "prompt": "Is a comparison between 2ZW and 6VZ on solid ground?",
+      "holds": {
+        "offering:10003": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_SMALL_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "offering:10066": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10003]{2ZW} has %[studentCount]{4} students, a pass rate of %[passRate]{86}%, and an evaluation rate of %[evalRate]{93}%, so it is ?[p: IS_SMALL_SAMPLE]{small sample} and ?[p: IS_STRONG]{strong}. @[offering:10066]{6VZ} has %[studentCount]{10} students, a pass rate of %[passRate]{63}%, and an evaluation rate of %[evalRate]{89}%, so it is ?[p: IS_RELIABLE_SAMPLE]{reliable sample} and ?[p: IS_PASSING]{passing}. No, because the first offering is ?[p: IS_SMALL_SAMPLE(offering:10003.studentCount)]{small sample} and the second is ?[p: IS_RELIABLE_SAMPLE(offering:10066.studentCount)]{reliable sample}.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 14,
+          "total": 14,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 6,
+            "verified": 6,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_SMALL_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10003"
+              },
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10003"
+              },
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10066"
+              },
+              {
+                "name": "IS_PASSING",
+                "status": "verified",
+                "entity": "offering:10066"
+              },
+              {
+                "name": "IS_SMALL_SAMPLE(offering:10003.studentCount)",
+                "status": "verified",
+                "entity": "offering:10066"
+              },
+              {
+                "name": "IS_RELIABLE_SAMPLE(offering:10066.studentCount)",
+                "status": "verified",
+                "entity": "offering:10066"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 26.7
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:14:16.578Z",
+          "id": "a99c80f9-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143256,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 838,
+            "completion_tokens": 3308,
+            "total_tokens": 4146,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3093
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 7,
+      "id": "judg_strong_classes",
+      "category": "judgment",
+      "prompt": "Which of 1C, 4WE and 6HO are strong classes?",
+      "holds": {
+        "offering:10001": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "offering:10007": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "offering:10010": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10001]{1C} has a pass rate of %[passRate]{79}%, so it is ?[p: IS_STRONG]{strong}.  \n@[offering:10007]{4WE} has a pass rate of %[passRate]{84}%, so it is ?[p: IS_STRONG]{strong}.  \n@[offering:10010]{6HO} has a pass rate of %[passRate]{76}%, so it is ?[p: IS_STRONG]{strong}.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 9,
+          "total": 9,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10001"
+              },
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10007"
+              },
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10010"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 7
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:14:43.324Z",
+          "id": "fdc5b89e-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143283,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 896,
+            "completion_tokens": 688,
+            "total_tokens": 1584,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 570
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 8,
+      "id": "judg_coverage",
+      "category": "judgment",
+      "prompt": "Summarise the evaluation coverage of 3WE and 4ECO.",
+      "holds": {
+        "offering:10038": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "offering:10030": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10038]{3WE} has an evaluation coverage of %[evalRate]{70}%, which is ?[label: IS_WELL_COVERED]{well covered}. @[offering:10030]{4ECO} has an evaluation coverage of %[evalRate]{66}%.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 5,
+          "total": 5,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 1,
+            "verified": 1,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10038"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 5.2
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:14:50.373Z",
+          "id": "fbc69390-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143290,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 836,
+            "completion_tokens": 632,
+            "total_tokens": 1468,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 565
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 9,
+      "id": "bound_strong_74",
+      "category": "boundary",
+      "prompt": "Is 6ZW a strong class?",
+      "holds": {
+        "offering:10012": [
+          "IS_PASSING",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "No. @[offering:10012]{6ZW} has a pass rate of %[passRate]{74}%.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 2,
+          "total": 2,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 0,
+            "verified": 0,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": []
+          },
+          "unmarked": [],
+          "time": 8.5
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:14:55.560Z",
+          "id": "8379e689-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143295,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 772,
+            "completion_tokens": 676,
+            "total_tokens": 1448,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 648
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 10,
+      "id": "bound_strong_75",
+      "category": "boundary",
+      "prompt": "Is 5WEWI a strong class?",
+      "holds": {
+        "offering:10050": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10050]{5WEWI} has a pass rate of %[passRate]{75}%, so it is ?[p: IS_STRONG]{strong}.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 3,
+          "total": 3,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 1,
+            "verified": 1,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10050"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 3.8
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:15:04.108Z",
+          "id": "148d69c3-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143304,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 776,
+            "completion_tokens": 308,
+            "total_tokens": 1084,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 266
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 11,
+      "id": "bound_grey_29",
+      "category": "boundary",
+      "prompt": "Does Nathan Lambert's absence put him at risk of grey marks?",
+      "holds": {
+        "offering:10043": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "student:20321": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_HIGH_ABSENCE",
+          "IS_AT_MOST_HALF"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "No. @[student:20321]{Nathan Lambert} has %[absent]{29} absences, so he is ?[label: IS_HIGH_ABSENCE]{high absence}, but this does not meet the grey-mark risk condition.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 3,
+          "total": 3,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 1,
+            "verified": 1,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_HIGH_ABSENCE",
+                "status": "verified",
+                "entity": "student:20321"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 19.4
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:15:07.933Z",
+          "id": "f65b7388-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143308,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 859,
+            "completion_tokens": 1478,
+            "total_tokens": 2337,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1426
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 12,
+      "id": "bound_sample_5",
+      "category": "boundary",
+      "prompt": "Is 2BW's sample too small to compare with other classes?",
+      "holds": {
+        "offering:10025": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10025]{2BW} has %[studentCount]{5} students. The class is ?[label: IS_NONEMPTY_CLASS]{non-empty class}. The small sample label does not apply to this count, so the sample is not classified as small.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 3,
+          "total": 3,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 1,
+            "verified": 1,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_NONEMPTY_CLASS",
+                "status": "verified",
+                "entity": "offering:10025"
+              }
+            ]
+          },
+          "unmarked": [
+            "small sample"
+          ],
+          "time": 22.5
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:15:27.357Z",
+          "id": "f2201cb9-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143327,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 773,
+            "completion_tokens": 1766,
+            "total_tokens": 2539,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1703
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 13,
+      "id": "contra_badly",
+      "category": "contrary",
+      "prompt": "Why is 6VZ doing so badly?",
+      "holds": {
+        "offering:10066": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10066]{6VZ} has %[studentCount]{10} students, a pass rate of %[passRate]{63}% and an evaluation rate of %[evalRate]{89}%. The offering is ?[p: IS_PASSING]{passing}, ?[p: IS_WELL_COVERED]{well covered} and ?[p: IS_RELIABLE_SAMPLE]{reliable sample}. The available data therefore do not support the premise that 6VZ is doing badly.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 7,
+          "total": 7,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 3,
+            "verified": 3,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_PASSING",
+                "status": "verified",
+                "entity": "offering:10066"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10066"
+              },
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10066"
+              }
+            ]
+          },
+          "unmarked": [
+            "badly"
+          ],
+          "time": 21.1
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:15:49.844Z",
+          "id": "299a10ac-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143350,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 779,
+            "completion_tokens": 1677,
+            "total_tokens": 2456,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1564
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 14,
+      "id": "contra_unreliable",
+      "category": "contrary",
+      "prompt": "Explain why 5BO is too small a class to draw conclusions from.",
+      "holds": {
+        "offering:10008": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10008]{5BO} has %[studentCount]{7} students. The registry's small sample condition is not met, and the reliable sample condition is not met. Therefore, the class size does not qualify for either available sample-size judgement, so the data do not support drawing conclusions from the pass rate using the available sample-size labels.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 2,
+          "total": 2,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 0,
+            "verified": 0,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": []
+          },
+          "unmarked": [
+            "small sample",
+            "reliable"
+          ],
+          "time": 34.5
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:16:11.017Z",
+          "id": "c9e31961-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143371,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 779,
+            "completion_tokens": 2330,
+            "total_tokens": 3109,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2254
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 15,
+      "id": "contra_coverage",
+      "category": "contrary",
+      "prompt": "Is 4WE's evaluation coverage critically low?",
+      "holds": {
+        "offering:10007": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "No. @[offering:10007]{4WE} has an evaluation coverage of %[evalRate]{72}%, so it is ?[label: IS_WELL_COVERED]{well covered}.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 3,
+          "total": 3,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 1,
+            "verified": 1,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10007"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 15.7
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:16:45.572Z",
+          "id": "48053817-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143407,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 774,
+            "completion_tokens": 1246,
+            "total_tokens": 2020,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1200
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 16,
+      "id": "contra_strong_student",
+      "category": "contrary",
+      "prompt": "Vic Pauwels is a strong pupil, isn't he?",
+      "holds": {
+        "offering:10085": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "student:20656": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_AT_MOST_HALF"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "No. @[student:20656]{Vic Pauwels} has a pass rate of %[passRate]{8}%, which is ?[p: IS_LOW_PASS]{critically low pass rate} and ?[q: IS_BELOW_HALF]{below half}. He passed %[passed]{1} of %[evaluated]{13} evaluated assessments out of %[total]{13} total, with %[absent]{0} absences.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 8,
+          "total": 8,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 2,
+            "verified": 2,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_LOW_PASS",
+                "status": "verified",
+                "entity": "student:20656"
+              },
+              {
+                "name": "IS_BELOW_HALF",
+                "status": "verified",
+                "entity": "student:20656"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 16.6
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:17:01.322Z",
+          "id": "446e25d2-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143421,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 863,
+            "completion_tokens": 1511,
+            "total_tokens": 2374,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1408
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 17,
+      "id": "unreg_teacher",
+      "category": "unregistered",
+      "prompt": "Is 3BS's teacher effective?",
+      "holds": {
+        "offering:10004": [
+          "IS_PASSING",
+          "IS_WELL_COVERED",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10004]{3BS} has %[studentCount]{8} students, a pass rate of %[passRate]{60}%, and an evaluation rate of %[evalRate]{85}%. It is ?[p: IS_PASSING]{passing} and ?[p: IS_WELL_COVERED]{well covered}. The data does not include a direct measure of teacher effectiveness, so effectiveness cannot be determined from these fields alone.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 6,
+          "total": 6,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 2,
+            "verified": 2,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_PASSING",
+                "status": "verified",
+                "entity": "offering:10004"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10004"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 19.7
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:17:17.952Z",
+          "id": "aeeb8a46-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143438,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 772,
+            "completion_tokens": 1854,
+            "total_tokens": 2626,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1754
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 18,
+      "id": "unreg_trend",
+      "category": "unregistered",
+      "prompt": "Is 1C improving compared with last year?",
+      "holds": {
+        "offering:10001": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10001]{1C} has %[studentCount]{11} students, a pass rate of %[passRate]{79}%, and an evaluation rate of %[evalRate]{96}%, which is ?[p: IS_STRONG]{strong}. The data contains no prior-year offering for 1C, so improvement compared with last year cannot be assessed.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 5,
+          "total": 5,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 1,
+            "verified": 1,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10001"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 11.7
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:17:37.719Z",
+          "id": "45b6ab10-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143457,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 769,
+            "completion_tokens": 986,
+            "total_tokens": 1755,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 903
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 19,
+      "id": "unreg_motivation",
+      "category": "unregistered",
+      "prompt": "Is Noor Maes motivated?",
+      "holds": {
+        "offering:10050": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ],
+        "student:20376": [
+          "IS_LOW_PASS",
+          "IS_BELOW_HALF",
+          "IS_AT_MOST_HALF"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[student:20376]{Noor Maes} has a pass rate of %[passRate]{6}% and %[absent]{4} absences. This is ?[p: IS_LOW_PASS]{critically low pass rate}. The data does not include a motivation measure, so motivation cannot be determined from the available records.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 4,
+          "total": 4,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 1,
+            "verified": 1,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_LOW_PASS",
+                "status": "verified",
+                "entity": "student:20376"
+              }
+            ]
+          },
+          "unmarked": [],
+          "time": 10.3
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:17:49.434Z",
+          "id": "f8fd308e-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143469,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 856,
+            "completion_tokens": 1056,
+            "total_tokens": 1912,
+            "prompt_tokens_details": {
+              "cached_tokens": 760
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 982
+            }
+          }
+        }
+      ]
+    },
+    {
+      "query": 20,
+      "id": "unreg_average",
+      "category": "unregistered",
+      "prompt": "Would you call 6OL an average class?",
+      "holds": {
+        "offering:10011": [
+          "IS_PASSING",
+          "IS_STRONG",
+          "IS_WELL_COVERED",
+          "IS_RELIABLE_SAMPLE",
+          "IS_NONEMPTY_CLASS"
+        ]
+      },
+      "converged": true,
+      "finalResponse": "@[offering:10011]{6OL} has %[studentCount]{13} students, a pass rate of %[passRate]{82}% and an evaluation rate of %[evalRate]{89}%. It is ?[p: IS_STRONG]{strong}, ?[p: IS_PASSING]{passing}, ?[p: IS_WELL_COVERED]{well covered}, and ?[p: IS_RELIABLE_SAMPLE]{reliable sample}. The registry has no average label, so I cannot call it average.",
+      "steps": [
+        {
+          "loop": 0,
+          "verified": 8,
+          "total": 8,
+          "rate": 100,
+          "errors": 0,
+          "inferences": {
+            "total": 4,
+            "verified": 4,
+            "failed": 0,
+            "unregistered": 0,
+            "unverifiable": 0,
+            "names": [
+              {
+                "name": "IS_STRONG",
+                "status": "verified",
+                "entity": "offering:10011"
+              },
+              {
+                "name": "IS_PASSING",
+                "status": "verified",
+                "entity": "offering:10011"
+              },
+              {
+                "name": "IS_WELL_COVERED",
+                "status": "verified",
+                "entity": "offering:10011"
+              },
+              {
+                "name": "IS_RELIABLE_SAMPLE",
+                "status": "verified",
+                "entity": "offering:10011"
+              }
+            ]
+          },
+          "unmarked": [
+            "average",
+            "average"
+          ],
+          "time": 11.6
+        }
+      ],
+      "receipts": [
+        {
+          "provider": "together",
+          "at": "2026-09-11T16:17:59.743Z",
+          "id": "3531c6ce-aws_ec1",
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "created": 1789143479,
+          "finishReason": "stop",
+          "usage": {
+            "prompt_tokens": 774,
+            "completion_tokens": 1065,
+            "total_tokens": 1839,
+            "prompt_tokens_details": {
+              "cached_tokens": 699
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 947
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "queries": 20,
+    "withInference": 18,
+    "inferencesFirst": {
+      "total": 42,
+      "verified": 42,
+      "failed": 0,
+      "unregistered": 0
+    },
+    "inferencesFinal": {
+      "total": 42,
+      "verified": 42,
+      "failed": 0,
+      "unregistered": 0
+    },
+    "unmarkedFirst": 6,
+    "unmarkedFinal": 6,
+    "claimsFirst": {
+      "verified": 119,
+      "total": 119
+    },
+    "claimsFinal": {
+      "verified": 119,
+      "total": 119
+    },
+    "timedOutCalls": 0
+  }
+}

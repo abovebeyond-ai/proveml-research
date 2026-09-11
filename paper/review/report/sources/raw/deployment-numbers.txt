@@ -1,6 +1,6 @@
 fact store: 4826 keys (95 offerings, 741 students)
 verification: 2185 claims in 252 responses (9 runs x 28 queries, tag frontier)
-  7527.2 ms per pass over all responses (mean of 20), 29.870 ms per response, 3.4449 ms per claim
+  655.6 ms per pass over all responses (mean of 20), 2.602 ms per response, 0.3001 ms per claim
 generation latency (s per query, mean over queries and runs; sum of all loop steps, max 1 correction pass):
   claude-opus-5: 11.8
   claude-sonnet-5: 7.9

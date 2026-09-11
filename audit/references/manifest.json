@@ -366,5 +366,13 @@
     "sourceLabel": "Official iXBRL overview",
     "fetchFormat": "html",
     "localPath": "references/raw/ixbrl-overview.html"
+  },
+  {
+    "id": "rao2026",
+    "name": "Rao, Wong and Callison-Burch 2026, arXiv",
+    "sourceUrl": "https://arxiv.org/html/2604.03173v1",
+    "sourceLabel": "Rao, Wong and Callison-Burch 2026, arXiv (full text)",
+    "fetchFormat": "html",
+    "localPath": "references/raw/rao2026.html"
   }
 ]

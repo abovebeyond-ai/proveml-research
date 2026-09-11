@@ -1,12 +1,11 @@
 {
-  "generatedAt": "2026-09-10T21:26:27.672Z",
+  "generatedAt": "2026-09-11T11:24:25.752Z",
   "results": [
     {
       "id": "ixbrl",
-      "status": "fetched",
+      "status": "skipped",
       "sourceUrl": "https://www.xbrl.org/specification/inlinexbrl-part1/rec-2013-11-18/inlinexbrl-part1-rec-2013-11-18.html",
-      "localPath": "references/raw/ixbrl.html",
-      "bytes": 223034
+      "localPath": "references/raw/ixbrl.html"
     },
     {
       "id": "factscore",
@@ -265,6 +264,25 @@
       "status": "skipped",
       "sourceUrl": "https://www.six-group.com/en/products-services/financial-information/data-standards.html",
       "localPath": "references/raw/iso4217.html"
+    },
+    {
+      "id": "euaiact-news",
+      "status": "skipped",
+      "sourceUrl": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+      "localPath": "references/raw/euaiact-news.html"
+    },
+    {
+      "id": "ixbrl-overview",
+      "status": "skipped",
+      "sourceUrl": "https://www.xbrl.org/ixbrl",
+      "localPath": "references/raw/ixbrl-overview.html"
+    },
+    {
+      "id": "rao2026",
+      "status": "fetched",
+      "sourceUrl": "https://arxiv.org/html/2604.03173v1",
+      "localPath": "references/raw/rao2026.html",
+      "bytes": 304766
     },
     {
       "id": "euaiact",

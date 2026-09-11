@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-10T21:46:13.072Z",
+  "generatedAt": "2026-09-11T11:25:12.326Z",
   "totals": {
-    "totalReferences": 103,
+    "totalReferences": 104,
     "citedReferences": 59,
     "sourcePassagesCurated": 0,
     "summaryReviewed": 0,
     "autoSummaryCandidates": 54,
-    "exactRenderedBlocks": 129
+    "exactRenderedBlocks": 126
   },
   "reviewAttention": [],
   "records": [
@@ -28,14 +28,14 @@
       "paperExcerpts": [
         {
           "line": 110,
-          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [liu2023verifiability,alce]. Each generation of models is harder to tell from human writing [clark2021,jones2026], and the fluency carries no reliable signal of the model's own uncertainty [zhou2024,xiong2024].",
+          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [citednotverified,rao2026]. We present ProveML, a Markdown extension of three inline constructs that places AI-generated claims inside a verifiable boundary: the constructs declare entities, link facts to a data source, and check qualitative judgments against pre-declared thresholds. Verification is deterministic, string equality and numeric comparison against a flat key-value store with no model in the loop, so it is explainable, costs milliseconds per response, can sit inside a generation loop that feeds each error back to the model, and can audit text it did not generate. The verifier also reports coverage: the share of the numbers in a text that sit inside a claim at all. We evaluate three frontier models of August 2026 (Claude Opus 5, Claude Sonnet 5 and DeepSeek V4 Pro) on a generated educational benchmark and real SEC EDGAR filings, three runs each with one correction pass. All three produce the markup on every query, put 90–96% of their numbers inside a claim, and verify 87–100% of those claims on the first pass and 92–100% after one correction. Most residual errors come from one binding rule, a fact attaching to the nearest entity; making the remedy part of the specification, a fact may name its own record, lifts first-pass verification to 95–100%. The specification, verifier, benchmarks and all run artifacts are published. end(abstract)",
           "field": "paperUse110",
           "verified": true
         },
         {
-          "line": 135,
+          "line": 120,
           "text": "Hallucination is structural, not incidental: calibrated language models must hallucinate at a rate approaching the fraction of facts appearing exactly once in training [kalai2024], and standard training pipelines reward guessing over acknowledging uncertainty [kalai2025]. Regulation no longer adds urgency; it adds exposure. The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article 50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026 [euaiact,art50guidelines2026,omnibus2026]. But the Code of Practice that operationalises these duties concerns marking the origin of content and says nothing about its accuracy [transparencycode2026]: a text can be fully compliant and wrong. And the problem has not gone away with better models: the leading legal research tools hallucinated on 17–33% of queries when tested in 2024, despite vendor claims of near-elimination [magesh2025], and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year [liu2026citations].",
-          "field": "paperUse135",
+          "field": "paperUse120",
           "verified": true
         }
       ],
@@ -71,20 +71,20 @@
       "paperExcerpts": [
         {
           "line": 110,
-          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [liu2023verifiability,alce]. Each generation of models is harder to tell from human writing [clark2021,jones2026], and the fluency carries no reliable signal of the model's own uncertainty [zhou2024,xiong2024].",
+          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [citednotverified,rao2026]. We present ProveML, a Markdown extension of three inline constructs that places AI-generated claims inside a verifiable boundary: the constructs declare entities, link facts to a data source, and check qualitative judgments against pre-declared thresholds. Verification is deterministic, string equality and numeric comparison against a flat key-value store with no model in the loop, so it is explainable, costs milliseconds per response, can sit inside a generation loop that feeds each error back to the model, and can audit text it did not generate. The verifier also reports coverage: the share of the numbers in a text that sit inside a claim at all. We evaluate three frontier models of August 2026 (Claude Opus 5, Claude Sonnet 5 and DeepSeek V4 Pro) on a generated educational benchmark and real SEC EDGAR filings, three runs each with one correction pass. All three produce the markup on every query, put 90–96% of their numbers inside a claim, and verify 87–100% of those claims on the first pass and 92–100% after one correction. Most residual errors come from one binding rule, a fact attaching to the nearest entity; making the remedy part of the specification, a fact may name its own record, lifts first-pass verification to 95–100%. The specification, verifier, benchmarks and all run artifacts are published. end(abstract)",
           "field": "paperUse110",
           "verified": true
         },
         {
-          "line": 135,
+          "line": 120,
           "text": "Hallucination is structural, not incidental: calibrated language models must hallucinate at a rate approaching the fraction of facts appearing exactly once in training [kalai2024], and standard training pipelines reward guessing over acknowledging uncertainty [kalai2025]. Regulation no longer adds urgency; it adds exposure. The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article 50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026 [euaiact,art50guidelines2026,omnibus2026]. But the Code of Practice that operationalises these duties concerns marking the origin of content and says nothing about its accuracy [transparencycode2026]: a text can be fully compliant and wrong. And the problem has not gone away with better models: the leading legal research tools hallucinated on 17–33% of queries when tested in 2024, despite vendor claims of near-elimination [magesh2025], and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year [liu2026citations].",
-          "field": "paperUse135",
+          "field": "paperUse120",
           "verified": true
         },
         {
-          "line": 137,
-          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite leave about half of their sentences without full citation support [liu2023verifiability,alce], and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
-          "field": "paperUse137",
+          "line": 122,
+          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39–77% of claims, and 10.7% of the citation URLs of the two commercial deep research agents never existed, against 4.8% for search-augmented models [citednotverified,rao2026], three years after the first generative search engines fully supported about half of their sentences [liu2023verifiability,alce]; and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
+          "field": "paperUse122",
           "verified": true
         }
       ],
@@ -103,13 +103,13 @@
       ]
     },
     {
-      "key": "alce",
-      "title": "Enabling Large Language Models to Generate Text with Citations",
-      "authors": "Gao, T. and Yen, H. and Yu, J. and Chen, D.",
-      "year": "2023",
-      "venue": "Proc. EMNLP",
-      "url": "https://doi.org/10.18653/v1/2023.emnlp-main.398",
-      "sourceLabel": "references/raw/alce.html",
+      "key": "citednotverified",
+      "title": "Cited but Not Verified: Parsing and Evaluating Source Attribution in LLM Deep Research Agents",
+      "authors": "Onweller, H. and Lumer, E. and Huber, A. and Ramchandani, P. and Subbiah, V. K. and Feld, C.",
+      "year": "2026",
+      "venue": "",
+      "url": "https://arxiv.org/abs/2605.06635",
+      "sourceLabel": "references/raw/citednotverified.html",
       "snapshotStatus": "fetched",
       "snapshotError": "",
       "auditStatus": "bibliography-only",
@@ -120,14 +120,14 @@
       "paperExcerpts": [
         {
           "line": 110,
-          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [liu2023verifiability,alce]. Each generation of models is harder to tell from human writing [clark2021,jones2026], and the fluency carries no reliable signal of the model's own uncertainty [zhou2024,xiong2024].",
+          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [citednotverified,rao2026]. We present ProveML, a Markdown extension of three inline constructs that places AI-generated claims inside a verifiable boundary: the constructs declare entities, link facts to a data source, and check qualitative judgments against pre-declared thresholds. Verification is deterministic, string equality and numeric comparison against a flat key-value store with no model in the loop, so it is explainable, costs milliseconds per response, can sit inside a generation loop that feeds each error back to the model, and can audit text it did not generate. The verifier also reports coverage: the share of the numbers in a text that sit inside a claim at all. We evaluate three frontier models of August 2026 (Claude Opus 5, Claude Sonnet 5 and DeepSeek V4 Pro) on a generated educational benchmark and real SEC EDGAR filings, three runs each with one correction pass. All three produce the markup on every query, put 90–96% of their numbers inside a claim, and verify 87–100% of those claims on the first pass and 92–100% after one correction. Most residual errors come from one binding rule, a fact attaching to the nearest entity; making the remedy part of the specification, a fact may name its own record, lifts first-pass verification to 95–100%. The specification, verifier, benchmarks and all run artifacts are published. end(abstract)",
           "field": "paperUse110",
           "verified": true
         },
         {
-          "line": 137,
-          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite leave about half of their sentences without full citation support [liu2023verifiability,alce], and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
-          "field": "paperUse137",
+          "line": 122,
+          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39–77% of claims, and 10.7% of the citation URLs of the two commercial deep research agents never existed, against 4.8% for search-augmented models [citednotverified,rao2026], three years after the first generative search engines fully supported about half of their sentences [liu2023verifiability,alce]; and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
+          "field": "paperUse122",
           "verified": true
         }
       ],
@@ -138,8 +138,8 @@
           "field": "autoSummary",
           "claimValue": "auto-extracted broader source summary",
           "equality": "normalized",
-          "locator": "Open Graph description",
-          "text": "Tianyu Gao, Howard Yen, Jiatong Yu, Danqi Chen. Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing. 2023.",
+          "locator": "citation abstract",
+          "text": "Large language models (LLMs) power deep research agents that synthesize information from hundreds of web sources into cited reports, yet these citations cannot be reliably verified. Current approaches either trust models to self-cite accurately, risking bias, or employ retrieval-augmented generation (RAG) that does not validate source accessibility, relevance, or factual consistency.…",
           "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
           "verified": true
         }
@@ -163,14 +163,14 @@
       "paperExcerpts": [
         {
           "line": 110,
-          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [liu2023verifiability,alce]. Each generation of models is harder to tell from human writing [clark2021,jones2026], and the fluency carries no reliable signal of the model's own uncertainty [zhou2024,xiong2024].",
+          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [citednotverified,rao2026]. We present ProveML, a Markdown extension of three inline constructs that places AI-generated claims inside a verifiable boundary: the constructs declare entities, link facts to a data source, and check qualitative judgments against pre-declared thresholds. Verification is deterministic, string equality and numeric comparison against a flat key-value store with no model in the loop, so it is explainable, costs milliseconds per response, can sit inside a generation loop that feeds each error back to the model, and can audit text it did not generate. The verifier also reports coverage: the share of the numbers in a text that sit inside a claim at all. We evaluate three frontier models of August 2026 (Claude Opus 5, Claude Sonnet 5 and DeepSeek V4 Pro) on a generated educational benchmark and real SEC EDGAR filings, three runs each with one correction pass. All three produce the markup on every query, put 90–96% of their numbers inside a claim, and verify 87–100% of those claims on the first pass and 92–100% after one correction. Most residual errors come from one binding rule, a fact attaching to the nearest entity; making the remedy part of the specification, a fact may name its own record, lifts first-pass verification to 95–100%. The specification, verifier, benchmarks and all run artifacts are published. end(abstract)",
           "field": "paperUse110",
           "verified": true
         },
         {
-          "line": 135,
+          "line": 120,
           "text": "Hallucination is structural, not incidental: calibrated language models must hallucinate at a rate approaching the fraction of facts appearing exactly once in training [kalai2024], and standard training pipelines reward guessing over acknowledging uncertainty [kalai2025]. Regulation no longer adds urgency; it adds exposure. The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article 50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026 [euaiact,art50guidelines2026,omnibus2026]. But the Code of Practice that operationalises these duties concerns marking the origin of content and says nothing about its accuracy [transparencycode2026]: a text can be fully compliant and wrong. And the problem has not gone away with better models: the leading legal research tools hallucinated on 17–33% of queries when tested in 2024, despite vendor claims of near-elimination [magesh2025], and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year [liu2026citations].",
-          "field": "paperUse135",
+          "field": "paperUse120",
           "verified": true
         }
       ],
@@ -183,227 +183,6 @@
           "equality": "normalized",
           "locator": "Open Graph description",
           "text": "These guidelines define the scope of transparency obligations for providers and deployers of AI systems under Article 50 of the AI Act.",
-          "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
-          "verified": true
-        }
-      ]
-    },
-    {
-      "key": "clark2021",
-      "title": "All That's `Human' Is Not Gold: Evaluating Human Evaluation of Generated Text",
-      "authors": "Clark, Elizabeth and August, Tal and Serrano, Sofia and Haduong, Nikita and Gururangan, Suchin and Smith, Noah A.",
-      "year": "2021",
-      "venue": "Proc. ACL-IJCNLP (Volume 1: Long Papers)",
-      "url": "https://doi.org/10.18653/v1/2021.acl-long.565",
-      "sourceLabel": "references/raw/clark2021.html",
-      "snapshotStatus": "fetched",
-      "snapshotError": "",
-      "auditStatus": "bibliography-only",
-      "nextStep": "A local source snapshot is available; read the relevant sections and curate one or more exact supporting passages into the audit store.",
-      "summaryAlignment": "not-reviewed",
-      "selectionRisk": "not-reviewed",
-      "summaryNote": "",
-      "paperExcerpts": [
-        {
-          "line": 110,
-          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [liu2023verifiability,alce]. Each generation of models is harder to tell from human writing [clark2021,jones2026], and the fluency carries no reliable signal of the model's own uncertainty [zhou2024,xiong2024].",
-          "field": "paperUse110",
-          "verified": true
-        },
-        {
-          "line": 133,
-          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 55% of those produced by GPT-3.5 and 18% of those by GPT-4 in one study [walters2023]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
-          "field": "paperUse133",
-          "verified": true
-        }
-      ],
-      "sourcePassages": [],
-      "summaryPassages": [],
-      "autoSummaryPassages": [
-        {
-          "field": "autoSummary",
-          "claimValue": "auto-extracted broader source summary",
-          "equality": "normalized",
-          "locator": "Open Graph description",
-          "text": "Elizabeth Clark, Tal August, Sofia Serrano, Nikita Haduong, Suchin Gururangan, Noah A. Smith. Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers). 2021.",
-          "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
-          "verified": true
-        }
-      ]
-    },
-    {
-      "key": "jones2026",
-      "title": "Large language models pass a standard three-party Turing test",
-      "authors": "Jones, Cameron R. and Bergen, Benjamin K.",
-      "year": "2026",
-      "venue": "Proceedings of the National Academy of Sciences",
-      "url": "https://doi.org/10.1073/pnas.2524472123",
-      "sourceLabel": "references/raw/jones2026.html",
-      "snapshotStatus": "fetched",
-      "snapshotError": "",
-      "auditStatus": "bibliography-only",
-      "nextStep": "A local source snapshot is available; read the relevant sections and curate one or more exact supporting passages into the audit store.",
-      "summaryAlignment": "not-reviewed",
-      "selectionRisk": "not-reviewed",
-      "summaryNote": "",
-      "paperExcerpts": [
-        {
-          "line": 110,
-          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [liu2023verifiability,alce]. Each generation of models is harder to tell from human writing [clark2021,jones2026], and the fluency carries no reliable signal of the model's own uncertainty [zhou2024,xiong2024].",
-          "field": "paperUse110",
-          "verified": true
-        },
-        {
-          "line": 133,
-          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 55% of those produced by GPT-3.5 and 18% of those by GPT-4 in one study [walters2023]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
-          "field": "paperUse133",
-          "verified": true
-        }
-      ],
-      "sourcePassages": [],
-      "summaryPassages": [],
-      "autoSummaryPassages": [
-        {
-          "field": "autoSummary",
-          "claimValue": "auto-extracted broader source summary",
-          "equality": "normalized",
-          "locator": "meta description",
-          "text": "The Turing test asks whether a machine can imitate human behavior so well that another human cannot reliably tell the difference. It is not only the oldest and most discussed test of AI but can also provide insight into what cues people use to ...",
-          "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
-          "verified": true
-        }
-      ]
-    },
-    {
-      "key": "zhou2024",
-      "title": "Relying on the Unreliable: The Impact of Language Models' Reluctance to Express Uncertainty",
-      "authors": "Zhou, Kaitlyn and Hwang, Jena D. and Ren, Xiang and Sap, Maarten",
-      "year": "2024",
-      "venue": "Proc. ACL (Volume 1: Long Papers)",
-      "url": "https://doi.org/10.18653/v1/2024.acl-long.198",
-      "sourceLabel": "references/raw/zhou2024.html",
-      "snapshotStatus": "fetched",
-      "snapshotError": "",
-      "auditStatus": "bibliography-only",
-      "nextStep": "A local source snapshot is available; read the relevant sections and curate one or more exact supporting passages into the audit store.",
-      "summaryAlignment": "not-reviewed",
-      "selectionRisk": "not-reviewed",
-      "summaryNote": "",
-      "paperExcerpts": [
-        {
-          "line": 110,
-          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [liu2023verifiability,alce]. Each generation of models is harder to tell from human writing [clark2021,jones2026], and the fluency carries no reliable signal of the model's own uncertainty [zhou2024,xiong2024].",
-          "field": "paperUse110",
-          "verified": true
-        },
-        {
-          "line": 133,
-          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 55% of those produced by GPT-3.5 and 18% of those by GPT-4 in one study [walters2023]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
-          "field": "paperUse133",
-          "verified": true
-        }
-      ],
-      "sourcePassages": [],
-      "summaryPassages": [],
-      "autoSummaryPassages": [
-        {
-          "field": "autoSummary",
-          "claimValue": "auto-extracted broader source summary",
-          "equality": "normalized",
-          "locator": "Open Graph description",
-          "text": "Kaitlyn Zhou, Jena D. Hwang, Xiang Ren, Maarten Sap. Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2024.",
-          "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
-          "verified": true
-        }
-      ]
-    },
-    {
-      "key": "xiong2024",
-      "title": "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
-      "authors": "Xiong, Miao and Hu, Zhiyuan and Lu, Xinyang and Li, Yifei and Fu, Jie and He, Junxian and Hooi, Bryan",
-      "year": "2024",
-      "venue": "Proc. ICLR",
-      "url": "https://arxiv.org/abs/2306.13063",
-      "sourceLabel": "references/raw/xiong2024.html",
-      "snapshotStatus": "fetched",
-      "snapshotError": "",
-      "auditStatus": "bibliography-only",
-      "nextStep": "A local source snapshot is available; read the relevant sections and curate one or more exact supporting passages into the audit store.",
-      "summaryAlignment": "not-reviewed",
-      "selectionRisk": "not-reviewed",
-      "summaryNote": "",
-      "paperExcerpts": [
-        {
-          "line": 110,
-          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [liu2023verifiability,alce]. Each generation of models is harder to tell from human writing [clark2021,jones2026], and the fluency carries no reliable signal of the model's own uncertainty [zhou2024,xiong2024].",
-          "field": "paperUse110",
-          "verified": true
-        },
-        {
-          "line": 133,
-          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 55% of those produced by GPT-3.5 and 18% of those by GPT-4 in one study [walters2023]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
-          "field": "paperUse133",
-          "verified": true
-        }
-      ],
-      "sourcePassages": [],
-      "summaryPassages": [],
-      "autoSummaryPassages": [
-        {
-          "field": "autoSummary",
-          "claimValue": "auto-extracted broader source summary",
-          "equality": "normalized",
-          "locator": "citation abstract",
-          "text": "Empowering large language models to accurately express confidence in their answers is essential for trustworthy decision-making. Previous confidence elicitation methods, which primarily rely on white-box access to internal model information or model fine-tuning, have become less suitable for LLMs, especially closed-source commercial APIs. This leads to a growing need to explore the untapped area of black-box approaches for LLM uncertainty estimation.…",
-          "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
-          "verified": true
-        }
-      ]
-    },
-    {
-      "key": "liu2023verifiability",
-      "title": "Evaluating Verifiability in Generative Search Engines",
-      "authors": "Liu, Nelson F. and Zhang, Tianyi and Liang, Percy",
-      "year": "2023",
-      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2023",
-      "url": "https://doi.org/10.18653/v1/2023.findings-emnlp.467",
-      "sourceLabel": "references/raw/liu2023verifiability.html",
-      "snapshotStatus": "fetched",
-      "snapshotError": "",
-      "auditStatus": "bibliography-only",
-      "nextStep": "A local source snapshot is available; read the relevant sections and curate one or more exact supporting passages into the audit store.",
-      "summaryAlignment": "not-reviewed",
-      "selectionRisk": "not-reviewed",
-      "summaryNote": "",
-      "paperExcerpts": [
-        {
-          "line": 110,
-          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [liu2023verifiability,alce]. Each generation of models is harder to tell from human writing [clark2021,jones2026], and the fluency carries no reliable signal of the model's own uncertainty [zhou2024,xiong2024].",
-          "field": "paperUse110",
-          "verified": true
-        },
-        {
-          "line": 133,
-          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 55% of those produced by GPT-3.5 and 18% of those by GPT-4 in one study [walters2023]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
-          "field": "paperUse133",
-          "verified": true
-        },
-        {
-          "line": 137,
-          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite leave about half of their sentences without full citation support [liu2023verifiability,alce], and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
-          "field": "paperUse137",
-          "verified": true
-        }
-      ],
-      "sourcePassages": [],
-      "summaryPassages": [],
-      "autoSummaryPassages": [
-        {
-          "field": "autoSummary",
-          "claimValue": "auto-extracted broader source summary",
-          "equality": "normalized",
-          "locator": "Open Graph description",
-          "text": "Nelson Liu, Tianyi Zhang, Percy Liang. Findings of the Association for Computational Linguistics: EMNLP 2023. 2023.",
           "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
           "verified": true
         }
@@ -427,14 +206,14 @@
       "paperExcerpts": [
         {
           "line": 110,
-          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [liu2023verifiability,alce]. Each generation of models is harder to tell from human writing [clark2021,jones2026], and the fluency carries no reliable signal of the model's own uncertainty [zhou2024,xiong2024].",
+          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [citednotverified,rao2026]. We present ProveML, a Markdown extension of three inline constructs that places AI-generated claims inside a verifiable boundary: the constructs declare entities, link facts to a data source, and check qualitative judgments against pre-declared thresholds. Verification is deterministic, string equality and numeric comparison against a flat key-value store with no model in the loop, so it is explainable, costs milliseconds per response, can sit inside a generation loop that feeds each error back to the model, and can audit text it did not generate. The verifier also reports coverage: the share of the numbers in a text that sit inside a claim at all. We evaluate three frontier models of August 2026 (Claude Opus 5, Claude Sonnet 5 and DeepSeek V4 Pro) on a generated educational benchmark and real SEC EDGAR filings, three runs each with one correction pass. All three produce the markup on every query, put 90–96% of their numbers inside a claim, and verify 87–100% of those claims on the first pass and 92–100% after one correction. Most residual errors come from one binding rule, a fact attaching to the nearest entity; making the remedy part of the specification, a fact may name its own record, lifts first-pass verification to 95–100%. The specification, verifier, benchmarks and all run artifacts are published. end(abstract)",
           "field": "paperUse110",
           "verified": true
         },
         {
-          "line": 137,
-          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite leave about half of their sentences without full citation support [liu2023verifiability,alce], and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
-          "field": "paperUse137",
+          "line": 122,
+          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39–77% of claims, and 10.7% of the citation URLs of the two commercial deep research agents never existed, against 4.8% for search-augmented models [citednotverified,rao2026], three years after the first generative search engines fully supported about half of their sentences [liu2023verifiability,alce]; and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
+          "field": "paperUse122",
           "verified": true
         }
       ],
@@ -447,6 +226,55 @@
           "equality": "normalized",
           "locator": "Open Graph description",
           "text": "This chapter analyzes the economic footprint of AI across the private sector and its implications for labor markets, productivity, and the future of work.",
+          "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "key": "rao2026",
+      "title": "Detecting and Correcting Reference Hallucinations in Commercial LLMs and Deep Research Agents",
+      "authors": "Rao, Delip and Wong, Eric and Callison-Burch, Chris",
+      "year": "2026",
+      "venue": "",
+      "url": "https://arxiv.org/abs/2604.03173",
+      "sourceLabel": "references/raw/rao2026.html",
+      "snapshotStatus": "fetched",
+      "snapshotError": "",
+      "auditStatus": "bibliography-only",
+      "nextStep": "A local source snapshot is available; read the relevant sections and curate one or more exact supporting passages into the audit store.",
+      "summaryAlignment": "not-reviewed",
+      "selectionRisk": "not-reviewed",
+      "summaryNote": "",
+      "paperExcerpts": [
+        {
+          "line": 110,
+          "text": "begin(abstract) Organizations are deploying LLMs in consequential settings [aiindex2026,magesh2025], and regulation now reaches generated text [euaiact,art50guidelines2026], but the text seldom carries a link between an individual claim and the data behind it that a machine can check [citednotverified,rao2026]. We present ProveML, a Markdown extension of three inline constructs that places AI-generated claims inside a verifiable boundary: the constructs declare entities, link facts to a data source, and check qualitative judgments against pre-declared thresholds. Verification is deterministic, string equality and numeric comparison against a flat key-value store with no model in the loop, so it is explainable, costs milliseconds per response, can sit inside a generation loop that feeds each error back to the model, and can audit text it did not generate. The verifier also reports coverage: the share of the numbers in a text that sit inside a claim at all. We evaluate three frontier models of August 2026 (Claude Opus 5, Claude Sonnet 5 and DeepSeek V4 Pro) on a generated educational benchmark and real SEC EDGAR filings, three runs each with one correction pass. All three produce the markup on every query, put 90–96% of their numbers inside a claim, and verify 87–100% of those claims on the first pass and 92–100% after one correction. Most residual errors come from one binding rule, a fact attaching to the nearest entity; making the remedy part of the specification, a fact may name its own record, lifts first-pass verification to 95–100%. The specification, verifier, benchmarks and all run artifacts are published. end(abstract)",
+          "field": "paperUse110",
+          "verified": true
+        },
+        {
+          "line": 118,
+          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 3–13% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed [rao2026]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
+          "field": "paperUse118",
+          "verified": true
+        },
+        {
+          "line": 122,
+          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39–77% of claims, and 10.7% of the citation URLs of the two commercial deep research agents never existed, against 4.8% for search-augmented models [citednotverified,rao2026], three years after the first generative search engines fully supported about half of their sentences [liu2023verifiability,alce]; and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
+          "field": "paperUse122",
+          "verified": true
+        }
+      ],
+      "sourcePassages": [],
+      "summaryPassages": [],
+      "autoSummaryPassages": [
+        {
+          "field": "autoSummary",
+          "claimValue": "auto-extracted broader source summary",
+          "equality": "normalized",
+          "locator": "first paragraph",
+          "text": "We organize this study around six research questions: RQ1 (Prevalence) How prevalent are citation URL failures across commercial LLMs and deep research agents?",
           "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
           "verified": true
         }
@@ -469,15 +297,15 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 133,
-          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 55% of those produced by GPT-3.5 and 18% of those by GPT-4 in one study [walters2023]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
-          "field": "paperUse133",
+          "line": 118,
+          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 3–13% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed [rao2026]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
+          "field": "paperUse118",
           "verified": true
         },
         {
-          "line": 135,
+          "line": 120,
           "text": "Hallucination is structural, not incidental: calibrated language models must hallucinate at a rate approaching the fraction of facts appearing exactly once in training [kalai2024], and standard training pipelines reward guessing over acknowledging uncertainty [kalai2025]. Regulation no longer adds urgency; it adds exposure. The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article 50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026 [euaiact,art50guidelines2026,omnibus2026]. But the Code of Practice that operationalises these duties concerns marking the origin of content and says nothing about its accuracy [transparencycode2026]: a text can be fully compliant and wrong. And the problem has not gone away with better models: the leading legal research tools hallucinated on 17–33% of queries when tested in 2024, despite vendor claims of near-elimination [magesh2025], and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year [liu2026citations].",
-          "field": "paperUse135",
+          "field": "paperUse120",
           "verified": true
         }
       ],
@@ -512,9 +340,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 133,
-          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 55% of those produced by GPT-3.5 and 18% of those by GPT-4 in one study [walters2023]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
-          "field": "paperUse133",
+          "line": 118,
+          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 3–13% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed [rao2026]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
+          "field": "paperUse118",
           "verified": true
         }
       ],
@@ -527,6 +355,43 @@
           "equality": "normalized",
           "locator": "first paragraph",
           "text": "Research output : Contribution to journal › Review article › peer-review",
+          "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "key": "clark2021",
+      "title": "All That's `Human' Is Not Gold: Evaluating Human Evaluation of Generated Text",
+      "authors": "Clark, Elizabeth and August, Tal and Serrano, Sofia and Haduong, Nikita and Gururangan, Suchin and Smith, Noah A.",
+      "year": "2021",
+      "venue": "Proc. ACL-IJCNLP (Volume 1: Long Papers)",
+      "url": "https://doi.org/10.18653/v1/2021.acl-long.565",
+      "sourceLabel": "references/raw/clark2021.html",
+      "snapshotStatus": "fetched",
+      "snapshotError": "",
+      "auditStatus": "bibliography-only",
+      "nextStep": "A local source snapshot is available; read the relevant sections and curate one or more exact supporting passages into the audit store.",
+      "summaryAlignment": "not-reviewed",
+      "selectionRisk": "not-reviewed",
+      "summaryNote": "",
+      "paperExcerpts": [
+        {
+          "line": 118,
+          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 3–13% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed [rao2026]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
+          "field": "paperUse118",
+          "verified": true
+        }
+      ],
+      "sourcePassages": [],
+      "summaryPassages": [],
+      "autoSummaryPassages": [
+        {
+          "field": "autoSummary",
+          "claimValue": "auto-extracted broader source summary",
+          "equality": "normalized",
+          "locator": "Open Graph description",
+          "text": "Elizabeth Clark, Tal August, Sofia Serrano, Nikita Haduong, Suchin Gururangan, Noah A. Smith. Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers). 2021.",
           "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
           "verified": true
         }
@@ -549,9 +414,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 133,
-          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 55% of those produced by GPT-3.5 and 18% of those by GPT-4 in one study [walters2023]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
-          "field": "paperUse133",
+          "line": 118,
+          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 3–13% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed [rao2026]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
+          "field": "paperUse118",
           "verified": true
         }
       ],
@@ -564,6 +429,43 @@
           "equality": "normalized",
           "locator": "citation abstract",
           "text": "Human communication is increasingly intermixed with language generated by AI. Across chat, email, and social media, AI systems suggest words, complete sentences, or produce entire conversations. AI-generated language is often not identified as such but presented as language written by humans, raising concerns about novel forms of deception and manipulation. Here, we study how humans discern whether verbal self-presentations, one of the most personal and consequential forms of language, were generated by AI.…",
+          "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "key": "jones2026",
+      "title": "Large language models pass a standard three-party Turing test",
+      "authors": "Jones, Cameron R. and Bergen, Benjamin K.",
+      "year": "2026",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "url": "https://doi.org/10.1073/pnas.2524472123",
+      "sourceLabel": "references/raw/jones2026.html",
+      "snapshotStatus": "fetched",
+      "snapshotError": "",
+      "auditStatus": "bibliography-only",
+      "nextStep": "A local source snapshot is available; read the relevant sections and curate one or more exact supporting passages into the audit store.",
+      "summaryAlignment": "not-reviewed",
+      "selectionRisk": "not-reviewed",
+      "summaryNote": "",
+      "paperExcerpts": [
+        {
+          "line": 118,
+          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 3–13% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed [rao2026]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
+          "field": "paperUse118",
+          "verified": true
+        }
+      ],
+      "sourcePassages": [],
+      "summaryPassages": [],
+      "autoSummaryPassages": [
+        {
+          "field": "autoSummary",
+          "claimValue": "auto-extracted broader source summary",
+          "equality": "normalized",
+          "locator": "meta description",
+          "text": "The Turing test asks whether a machine can imitate human behavior so well that another human cannot reliably tell the difference. It is not only the oldest and most discussed test of AI but can also provide insight into what cues people use to ...",
           "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
           "verified": true
         }
@@ -586,9 +488,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 133,
-          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 55% of those produced by GPT-3.5 and 18% of those by GPT-4 in one study [walters2023]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
-          "field": "paperUse133",
+          "line": 118,
+          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 3–13% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed [rao2026]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
+          "field": "paperUse118",
           "verified": true
         }
       ],
@@ -607,13 +509,13 @@
       ]
     },
     {
-      "key": "walters2023",
-      "title": "Fabrication and errors in the bibliographic citations generated by ChatGPT",
-      "authors": "Walters, William H. and Wilder, Esther Isabelle",
-      "year": "2023",
-      "venue": "Scientific Reports",
-      "url": "https://doi.org/10.1038/s41598-023-41032-5",
-      "sourceLabel": "references/raw/walters2023.html",
+      "key": "zhou2024",
+      "title": "Relying on the Unreliable: The Impact of Language Models' Reluctance to Express Uncertainty",
+      "authors": "Zhou, Kaitlyn and Hwang, Jena D. and Ren, Xiang and Sap, Maarten",
+      "year": "2024",
+      "venue": "Proc. ACL (Volume 1: Long Papers)",
+      "url": "https://doi.org/10.18653/v1/2024.acl-long.198",
+      "sourceLabel": "references/raw/zhou2024.html",
       "snapshotStatus": "fetched",
       "snapshotError": "",
       "auditStatus": "bibliography-only",
@@ -623,9 +525,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 133,
-          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 55% of those produced by GPT-3.5 and 18% of those by GPT-4 in one study [walters2023]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
-          "field": "paperUse133",
+          "line": 118,
+          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 3–13% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed [rao2026]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
+          "field": "paperUse118",
           "verified": true
         }
       ],
@@ -636,8 +538,45 @@
           "field": "autoSummary",
           "claimValue": "auto-extracted broader source summary",
           "equality": "normalized",
-          "locator": "meta description",
-          "text": "Although chatbots such as ChatGPT can facilitate cost-effective text generation and editing, factually incorrect responses (hallucinations) limit their utility. This study evaluates one particular type of hallucination: fabricated bibliographic ...",
+          "locator": "Open Graph description",
+          "text": "Kaitlyn Zhou, Jena D. Hwang, Xiang Ren, Maarten Sap. Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2024.",
+          "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "key": "xiong2024",
+      "title": "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+      "authors": "Xiong, Miao and Hu, Zhiyuan and Lu, Xinyang and Li, Yifei and Fu, Jie and He, Junxian and Hooi, Bryan",
+      "year": "2024",
+      "venue": "Proc. ICLR",
+      "url": "https://arxiv.org/abs/2306.13063",
+      "sourceLabel": "references/raw/xiong2024.html",
+      "snapshotStatus": "fetched",
+      "snapshotError": "",
+      "auditStatus": "bibliography-only",
+      "nextStep": "A local source snapshot is available; read the relevant sections and curate one or more exact supporting passages into the audit store.",
+      "summaryAlignment": "not-reviewed",
+      "selectionRisk": "not-reviewed",
+      "summaryNote": "",
+      "paperExcerpts": [
+        {
+          "line": 118,
+          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 3–13% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed [rao2026]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
+          "field": "paperUse118",
+          "verified": true
+        }
+      ],
+      "sourcePassages": [],
+      "summaryPassages": [],
+      "autoSummaryPassages": [
+        {
+          "field": "autoSummary",
+          "claimValue": "auto-extracted broader source summary",
+          "equality": "normalized",
+          "locator": "citation abstract",
+          "text": "Empowering large language models to accurately express confidence in their answers is essential for trustworthy decision-making. Previous confidence elicitation methods, which primarily rely on white-box access to internal model information or model fine-tuning, have become less suitable for LLMs, especially closed-source commercial APIs. This leads to a growing need to explore the untapped area of black-box approaches for LLM uncertainty estimation.…",
           "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
           "verified": true
         }
@@ -660,9 +599,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 133,
-          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 55% of those produced by GPT-3.5 and 18% of those by GPT-4 in one study [walters2023]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
-          "field": "paperUse133",
+          "line": 118,
+          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 3–13% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed [rao2026]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
+          "field": "paperUse118",
           "verified": true
         }
       ],
@@ -675,6 +614,49 @@
           "equality": "normalized",
           "locator": "first paragraph",
           "text": "Summarization, the task of condensing the input text while preserving important information, is ubiquitous and has attracted a lot of interest in the AI community. Recent work demonstrates the strong capability of large language models (LLMs) in summarization. In fact, Pu et al. (2023) finds a clear preference for LLM-generated summaries over human-written ones and even declares the death of summarization.",
+          "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "key": "liu2023verifiability",
+      "title": "Evaluating Verifiability in Generative Search Engines",
+      "authors": "Liu, Nelson F. and Zhang, Tianyi and Liang, Percy",
+      "year": "2023",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+      "url": "https://doi.org/10.18653/v1/2023.findings-emnlp.467",
+      "sourceLabel": "references/raw/liu2023verifiability.html",
+      "snapshotStatus": "fetched",
+      "snapshotError": "",
+      "auditStatus": "bibliography-only",
+      "nextStep": "A local source snapshot is available; read the relevant sections and curate one or more exact supporting passages into the audit store.",
+      "summaryAlignment": "not-reviewed",
+      "selectionRisk": "not-reviewed",
+      "summaryNote": "",
+      "paperExcerpts": [
+        {
+          "line": 118,
+          "text": "Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content [clark2021,jakesch2023,jones2026]; readers who write with these models daily still can [russell2025]. The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance [zhou2024,xiong2024,kalai2025]. And the fluency coexists with a fundamental reliability problem: LLMs hallucinate [ji2023]. They generate text that is plausible but factually incorrect: fabricated citations, 3–13% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed [rao2026]; numbers with no basis in the source [cao2024]; and statements whose citations do not support them [liu2023verifiability].",
+          "field": "paperUse118",
+          "verified": true
+        },
+        {
+          "line": 122,
+          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39–77% of claims, and 10.7% of the citation URLs of the two commercial deep research agents never existed, against 4.8% for search-augmented models [citednotverified,rao2026], three years after the first generative search engines fully supported about half of their sentences [liu2023verifiability,alce]; and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
+          "field": "paperUse122",
+          "verified": true
+        }
+      ],
+      "sourcePassages": [],
+      "summaryPassages": [],
+      "autoSummaryPassages": [
+        {
+          "field": "autoSummary",
+          "claimValue": "auto-extracted broader source summary",
+          "equality": "normalized",
+          "locator": "Open Graph description",
+          "text": "Nelson Liu, Tianyi Zhang, Percy Liang. Findings of the Association for Computational Linguistics: EMNLP 2023. 2023.",
           "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
           "verified": true
         }
@@ -697,9 +679,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 135,
+          "line": 120,
           "text": "Hallucination is structural, not incidental: calibrated language models must hallucinate at a rate approaching the fraction of facts appearing exactly once in training [kalai2024], and standard training pipelines reward guessing over acknowledging uncertainty [kalai2025]. Regulation no longer adds urgency; it adds exposure. The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article 50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026 [euaiact,art50guidelines2026,omnibus2026]. But the Code of Practice that operationalises these duties concerns marking the origin of content and says nothing about its accuracy [transparencycode2026]: a text can be fully compliant and wrong. And the problem has not gone away with better models: the leading legal research tools hallucinated on 17–33% of queries when tested in 2024, despite vendor claims of near-elimination [magesh2025], and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year [liu2026citations].",
-          "field": "paperUse135",
+          "field": "paperUse120",
           "verified": true
         }
       ],
@@ -734,9 +716,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 135,
+          "line": 120,
           "text": "Hallucination is structural, not incidental: calibrated language models must hallucinate at a rate approaching the fraction of facts appearing exactly once in training [kalai2024], and standard training pipelines reward guessing over acknowledging uncertainty [kalai2025]. Regulation no longer adds urgency; it adds exposure. The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article 50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026 [euaiact,art50guidelines2026,omnibus2026]. But the Code of Practice that operationalises these duties concerns marking the origin of content and says nothing about its accuracy [transparencycode2026]: a text can be fully compliant and wrong. And the problem has not gone away with better models: the leading legal research tools hallucinated on 17–33% of queries when tested in 2024, despite vendor claims of near-elimination [magesh2025], and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year [liu2026citations].",
-          "field": "paperUse135",
+          "field": "paperUse120",
           "verified": true
         }
       ],
@@ -771,9 +753,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 135,
+          "line": 120,
           "text": "Hallucination is structural, not incidental: calibrated language models must hallucinate at a rate approaching the fraction of facts appearing exactly once in training [kalai2024], and standard training pipelines reward guessing over acknowledging uncertainty [kalai2025]. Regulation no longer adds urgency; it adds exposure. The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article 50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026 [euaiact,art50guidelines2026,omnibus2026]. But the Code of Practice that operationalises these duties concerns marking the origin of content and says nothing about its accuracy [transparencycode2026]: a text can be fully compliant and wrong. And the problem has not gone away with better models: the leading legal research tools hallucinated on 17–33% of queries when tested in 2024, despite vendor claims of near-elimination [magesh2025], and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year [liu2026citations].",
-          "field": "paperUse135",
+          "field": "paperUse120",
           "verified": true
         }
       ],
@@ -808,9 +790,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 135,
+          "line": 120,
           "text": "Hallucination is structural, not incidental: calibrated language models must hallucinate at a rate approaching the fraction of facts appearing exactly once in training [kalai2024], and standard training pipelines reward guessing over acknowledging uncertainty [kalai2025]. Regulation no longer adds urgency; it adds exposure. The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article 50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026 [euaiact,art50guidelines2026,omnibus2026]. But the Code of Practice that operationalises these duties concerns marking the origin of content and says nothing about its accuracy [transparencycode2026]: a text can be fully compliant and wrong. And the problem has not gone away with better models: the leading legal research tools hallucinated on 17–33% of queries when tested in 2024, despite vendor claims of near-elimination [magesh2025], and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year [liu2026citations].",
-          "field": "paperUse135",
+          "field": "paperUse120",
           "verified": true
         }
       ],
@@ -829,13 +811,13 @@
       ]
     },
     {
-      "key": "citednotverified",
-      "title": "Cited but Not Verified: Parsing and Evaluating Source Attribution in LLM Deep Research Agents",
-      "authors": "Onweller, H. and Lumer, E. and Huber, A. and Ramchandani, P. and Subbiah, V. K. and Feld, C.",
-      "year": "2026",
-      "venue": "",
-      "url": "https://arxiv.org/abs/2605.06635",
-      "sourceLabel": "references/raw/citednotverified.html",
+      "key": "alce",
+      "title": "Enabling Large Language Models to Generate Text with Citations",
+      "authors": "Gao, T. and Yen, H. and Yu, J. and Chen, D.",
+      "year": "2023",
+      "venue": "Proc. EMNLP",
+      "url": "https://doi.org/10.18653/v1/2023.emnlp-main.398",
+      "sourceLabel": "references/raw/alce.html",
       "snapshotStatus": "fetched",
       "snapshotError": "",
       "auditStatus": "bibliography-only",
@@ -845,9 +827,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 137,
-          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite leave about half of their sentences without full citation support [liu2023verifiability,alce], and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
-          "field": "paperUse137",
+          "line": 122,
+          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39–77% of claims, and 10.7% of the citation URLs of the two commercial deep research agents never existed, against 4.8% for search-augmented models [citednotverified,rao2026], three years after the first generative search engines fully supported about half of their sentences [liu2023verifiability,alce]; and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
+          "field": "paperUse122",
           "verified": true
         }
       ],
@@ -858,8 +840,8 @@
           "field": "autoSummary",
           "claimValue": "auto-extracted broader source summary",
           "equality": "normalized",
-          "locator": "citation abstract",
-          "text": "Large language models (LLMs) power deep research agents that synthesize information from hundreds of web sources into cited reports, yet these citations cannot be reliably verified. Current approaches either trust models to self-cite accurately, risking bias, or employ retrieval-augmented generation (RAG) that does not validate source accessibility, relevance, or factual consistency.…",
+          "locator": "Open Graph description",
+          "text": "Tianyu Gao, Howard Yen, Jiatong Yu, Danqi Chen. Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing. 2023.",
           "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
           "verified": true
         }
@@ -882,9 +864,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 137,
-          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite leave about half of their sentences without full citation support [liu2023verifiability,alce], and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
-          "field": "paperUse137",
+          "line": 122,
+          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39–77% of claims, and 10.7% of the citation URLs of the two commercial deep research agents never existed, against 4.8% for search-augmented models [citednotverified,rao2026], three years after the first generative search engines fully supported about half of their sentences [liu2023verifiability,alce]; and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
+          "field": "paperUse122",
           "verified": true
         }
       ],
@@ -919,9 +901,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 137,
-          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite leave about half of their sentences without full citation support [liu2023verifiability,alce], and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
-          "field": "paperUse137",
+          "line": 122,
+          "text": "The models are meanwhile in production. Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025] and in clinical documentation [wright2026]. Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39–77% of claims, and 10.7% of the citation URLs of the two commercial deep research agents never existed, against 4.8% for search-augmented models [citednotverified,rao2026], three years after the first generative search engines fully supported about half of their sentences [liu2023verifiability,alce]; and whether a citation holds is judged by a person or by another model rather than by a deterministic check [ais,citednotverified].",
+          "field": "paperUse122",
           "verified": true
         }
       ],
@@ -956,21 +938,21 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 139,
+          "line": 124,
           "text": "The response this paper takes is not to make the model more truthful but to make its claims checkable: every marked claim either matches an addressable record or is flagged, deterministically, before anyone reads it. In short, ProveML is iXBRL for AI-generated text. Financial reporting solved a version of this problem two decades ago by embedding machine-readable tags in human-readable filings, so a regulator can audit a number without reading the prose around it [ixbrl]. ProveML applies that idea where the author is a model rather than a person, and adds what that setting needs: entity scoping, so a value is bound to the record it describes, and a threshold registry, so a qualitative judgment is a declared predicate rather than a choice of adjective; Figure fig:render-errors shows what that buys the reader.",
-          "field": "paperUse139",
+          "field": "paperUse124",
           "verified": true
         },
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         },
         {
-          "line": 389,
+          "line": 374,
           "text": "begin(table)[h] centering small begin(tabular)(llcccc) toprule Approach & Category & Determ. & Structured & Inline & Inference midrule FActScore, SAFE, FacTool, HallDetect & Fact-checking & – & – & – & – Guardrail and grounding scorers & Guardrails & – & – & – & – Schema validators, decode-time grammars & Schema & checkmark & – & – & – ClaimDB, Evergreen, VeriFin & Data-grounded & checkmark & checkmark & – & – FullCite & Inline citation & – & – & checkmark & – iXBRL$^*$ & Inline tagging & checkmark & checkmark & checkmark & – SymGen & Inline tagging & checkmark & checkmark & checkmark & – PCN & Inline tagging & checkmark & checkmark & checkmark & – Claim-locked reporting & Inline tagging & checkmark & checkmark & checkmark & Partial FinGround & Hybrid post-hoc & Partial & checkmark & – & – ProveML & Inline tagging & checkmark & checkmark & checkmark & checkmark bottomrule end(tabular) caption(Comparison across representative verification approaches. Determ. = deterministic. Structured = against structured data. Inline = claim-level markup in text. Inference = composable threshold checks within natural language text. The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check [bedrockgrounding2026], Azure AI Content Safety groundedness detection [azuregroundedness2026], Vectara's HHEM [vectarahhem2026] and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text [bedrockautoreasoning2026]. Claim-locked reporting ties language strength to statistical thresholds but does not compose them. FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report [xbrlvalidation2009,xbrlvalueassertions2009]; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference [ixbrl].) label(tab:related) end(table)",
-          "field": "paperUse389",
+          "field": "paperUse374",
           "verified": true
         }
       ],
@@ -995,9 +977,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 155,
+          "line": 140,
           "text": "ProveML extends Markdown with three constructs, using characters ( texttt(@), texttt(%), texttt(?)) that do not conflict with standard Markdown syntax. Instruction-tuned models routinely answer in Markdown [sun2025idiosyncrasies], and a CommonMark-conformant renderer passes the constructs through unchanged, because characters not given an interpretation by any Markdown rule are parsed as plain textual content [commonmark]; in our runs every model produced the markup on every query.",
-          "field": "paperUse155",
+          "field": "paperUse140",
           "verified": true
         }
       ],
@@ -1032,9 +1014,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 155,
+          "line": 140,
           "text": "ProveML extends Markdown with three constructs, using characters ( texttt(@), texttt(%), texttt(?)) that do not conflict with standard Markdown syntax. Instruction-tuned models routinely answer in Markdown [sun2025idiosyncrasies], and a CommonMark-conformant renderer passes the constructs through unchanged, because characters not given an interpretation by any Markdown rule are parsed as plain textual content [commonmark]; in our runs every model produced the markup on every query.",
-          "field": "paperUse155",
+          "field": "paperUse140",
           "verified": true
         }
       ],
@@ -1069,9 +1051,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 183,
+          "line": 168,
           "text": "The fact store. is a flat key-value index in the Entity-Attribute-Value pattern [nadkarni1999,dinu2007]; any source with records and fields flattens into it as texttt(type:id.field $ rightarrow$ value), with optional companion keys for units and nested sub-paths for hierarchical data:",
-          "field": "paperUse183",
+          "field": "paperUse168",
           "verified": true
         }
       ],
@@ -1106,9 +1088,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 183,
+          "line": 168,
           "text": "The fact store. is a flat key-value index in the Entity-Attribute-Value pattern [nadkarni1999,dinu2007]; any source with records and fields flattens into it as texttt(type:id.field $ rightarrow$ value), with optional companion keys for units and nested sub-paths for hierarchical data:",
-          "field": "paperUse183",
+          "field": "paperUse168",
           "verified": true
         }
       ],
@@ -1143,9 +1125,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 203,
+          "line": 188,
           "text": "The threshold registry. follows a pattern shared by clinical reference intervals, JSON Schema validation and monitoring alert rules: a bounded condition on a single field is given a name and a human-readable label, so the judgment can be invoked and audited by that name rather than restated as an expression wherever it is used [ozarda2016,jsonschema2022,prometheusalerting]. Each definition has a name, a field, one predicate from a deliberately small vocabulary (Table tab:operators), an optional unit constraint, a label and a source for audit:",
-          "field": "paperUse203",
+          "field": "paperUse188",
           "verified": true
         }
       ],
@@ -1180,9 +1162,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 203,
+          "line": 188,
           "text": "The threshold registry. follows a pattern shared by clinical reference intervals, JSON Schema validation and monitoring alert rules: a bounded condition on a single field is given a name and a human-readable label, so the judgment can be invoked and audited by that name rather than restated as an expression wherever it is used [ozarda2016,jsonschema2022,prometheusalerting]. Each definition has a name, a field, one predicate from a deliberately small vocabulary (Table tab:operators), an optional unit constraint, a label and a source for audit:",
-          "field": "paperUse203",
+          "field": "paperUse188",
           "verified": true
         }
       ],
@@ -1217,9 +1199,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 203,
+          "line": 188,
           "text": "The threshold registry. follows a pattern shared by clinical reference intervals, JSON Schema validation and monitoring alert rules: a bounded condition on a single field is given a name and a human-readable label, so the judgment can be invoked and audited by that name rather than restated as an expression wherever it is used [ozarda2016,jsonschema2022,prometheusalerting]. Each definition has a name, a field, one predicate from a deliberately small vocabulary (Table tab:operators), an optional unit constraint, a label and a source for audit:",
-          "field": "paperUse203",
+          "field": "paperUse188",
           "verified": true
         }
       ],
@@ -1244,15 +1226,15 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         },
         {
-          "line": 419,
+          "line": 404,
           "text": "What LLMs provide is open-ended generation. What ProveML adds is a controllable, auditable boundary around that generation. For humans, the intended benefit is visual triage: verified claims carry a status, and attention shifts to what is unverified. We have not measured whether this reduces human verification effort, and the evidence from adjacent systems is mixed: [symgen] report their user study reduced average verification time by 20%, while [ten2026] report a 21-participant study in which verification and correction effort did not differ significantly from their baseline, even though their system reduced hallucination. Which of the two ProveML's rendering resembles in practice is an open empirical question. For agent loops the benefit is more direct and does not depend on human factors: specific error feedback (\" texttt(%[glucose] (143 mg/dL ) in patient:308: should be 142 mg/dL)\") enables targeted self-correction, which is what the verify-fix loop measures in Section sec:evaluation. The combination is what neither open-ended generation nor static verification offers alone: open-endedness with determinism.",
-          "field": "paperUse419",
+          "field": "paperUse404",
           "verified": true
         }
       ],
@@ -1287,9 +1269,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1324,9 +1306,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1351,9 +1333,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1388,9 +1370,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1425,9 +1407,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1462,9 +1444,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1499,9 +1481,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1536,9 +1518,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1573,9 +1555,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1610,9 +1592,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1647,9 +1629,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1684,9 +1666,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1721,9 +1703,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1758,9 +1740,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1795,9 +1777,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 367,
+          "line": 352,
           "text": "The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it [rdfa]; iXBRL embeds machine-readable tags in financial reports for automated audit [ixbrl]. ProveML adds the verdict to that lineage –- not what a span refers to, but whether the claim survives comparison with the record. Among recent systems, Proof-Carrying Numbers [pcn2025] is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen [symgen] takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs. Claim-locked reporting [claimlocked2026] is the 2026 form of that strategy –- the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose –- and shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce. VeriFin [verifin2026] checks financial claims against XBRL facts with an SMT solver, placing the arithmetic in the verifier where ProveML places it in the data layer. [datareferencing2026] measure the failure class our residual errors belong to –- values miscited from a table the model was shown –- and detect it with a trained critic; ProveML detects it with a lookup. Fact verification against evidence has a canonical benchmark lineage –- FEVER [fever], TabFact [tabfact], FEVEROUS [feverous] –- in which a trained model judges support; ProveML sits outside it by making the judgment a lookup. Probabilistic faithfulness checkers, academic (SummaC, [summac]; AlignScore, [alignscore]; MiniCheck, [minicheck]; HallDetect, [halldetect2026]) and industrial, score responses after generation; Evergreen [evergreen2026] verifies aggregate claims over relational data as queries, which ProveML can only bind once the aggregate is materialised as a fact; structured inline citation [fullcite2026] and decode-time grammars whose reference slots admit only declared names [dtg2026] are the constrained-generation route to the same end, and the natural next step for ProveML (Section sec:limitations). To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system. footnote(We screened the titles and abstracts of the 4(,)617 papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand. The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.) Table tab:related places the neighbours; the technical report discusses each in full.",
-          "field": "paperUse367",
+          "field": "paperUse352",
           "verified": true
         }
       ],
@@ -1832,9 +1814,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 389,
+          "line": 374,
           "text": "begin(table)[h] centering small begin(tabular)(llcccc) toprule Approach & Category & Determ. & Structured & Inline & Inference midrule FActScore, SAFE, FacTool, HallDetect & Fact-checking & – & – & – & – Guardrail and grounding scorers & Guardrails & – & – & – & – Schema validators, decode-time grammars & Schema & checkmark & – & – & – ClaimDB, Evergreen, VeriFin & Data-grounded & checkmark & checkmark & – & – FullCite & Inline citation & – & – & checkmark & – iXBRL$^*$ & Inline tagging & checkmark & checkmark & checkmark & – SymGen & Inline tagging & checkmark & checkmark & checkmark & – PCN & Inline tagging & checkmark & checkmark & checkmark & – Claim-locked reporting & Inline tagging & checkmark & checkmark & checkmark & Partial FinGround & Hybrid post-hoc & Partial & checkmark & – & – ProveML & Inline tagging & checkmark & checkmark & checkmark & checkmark bottomrule end(tabular) caption(Comparison across representative verification approaches. Determ. = deterministic. Structured = against structured data. Inline = claim-level markup in text. Inference = composable threshold checks within natural language text. The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check [bedrockgrounding2026], Azure AI Content Safety groundedness detection [azuregroundedness2026], Vectara's HHEM [vectarahhem2026] and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text [bedrockautoreasoning2026]. Claim-locked reporting ties language strength to statistical thresholds but does not compose them. FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report [xbrlvalidation2009,xbrlvalueassertions2009]; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference [ixbrl].) label(tab:related) end(table)",
-          "field": "paperUse389",
+          "field": "paperUse374",
           "verified": true
         }
       ],
@@ -1869,9 +1851,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 389,
+          "line": 374,
           "text": "begin(table)[h] centering small begin(tabular)(llcccc) toprule Approach & Category & Determ. & Structured & Inline & Inference midrule FActScore, SAFE, FacTool, HallDetect & Fact-checking & – & – & – & – Guardrail and grounding scorers & Guardrails & – & – & – & – Schema validators, decode-time grammars & Schema & checkmark & – & – & – ClaimDB, Evergreen, VeriFin & Data-grounded & checkmark & checkmark & – & – FullCite & Inline citation & – & – & checkmark & – iXBRL$^*$ & Inline tagging & checkmark & checkmark & checkmark & – SymGen & Inline tagging & checkmark & checkmark & checkmark & – PCN & Inline tagging & checkmark & checkmark & checkmark & – Claim-locked reporting & Inline tagging & checkmark & checkmark & checkmark & Partial FinGround & Hybrid post-hoc & Partial & checkmark & – & – ProveML & Inline tagging & checkmark & checkmark & checkmark & checkmark bottomrule end(tabular) caption(Comparison across representative verification approaches. Determ. = deterministic. Structured = against structured data. Inline = claim-level markup in text. Inference = composable threshold checks within natural language text. The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check [bedrockgrounding2026], Azure AI Content Safety groundedness detection [azuregroundedness2026], Vectara's HHEM [vectarahhem2026] and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text [bedrockautoreasoning2026]. Claim-locked reporting ties language strength to statistical thresholds but does not compose them. FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report [xbrlvalidation2009,xbrlvalueassertions2009]; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference [ixbrl].) label(tab:related) end(table)",
-          "field": "paperUse389",
+          "field": "paperUse374",
           "verified": true
         }
       ],
@@ -1906,9 +1888,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 389,
+          "line": 374,
           "text": "begin(table)[h] centering small begin(tabular)(llcccc) toprule Approach & Category & Determ. & Structured & Inline & Inference midrule FActScore, SAFE, FacTool, HallDetect & Fact-checking & – & – & – & – Guardrail and grounding scorers & Guardrails & – & – & – & – Schema validators, decode-time grammars & Schema & checkmark & – & – & – ClaimDB, Evergreen, VeriFin & Data-grounded & checkmark & checkmark & – & – FullCite & Inline citation & – & – & checkmark & – iXBRL$^*$ & Inline tagging & checkmark & checkmark & checkmark & – SymGen & Inline tagging & checkmark & checkmark & checkmark & – PCN & Inline tagging & checkmark & checkmark & checkmark & – Claim-locked reporting & Inline tagging & checkmark & checkmark & checkmark & Partial FinGround & Hybrid post-hoc & Partial & checkmark & – & – ProveML & Inline tagging & checkmark & checkmark & checkmark & checkmark bottomrule end(tabular) caption(Comparison across representative verification approaches. Determ. = deterministic. Structured = against structured data. Inline = claim-level markup in text. Inference = composable threshold checks within natural language text. The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check [bedrockgrounding2026], Azure AI Content Safety groundedness detection [azuregroundedness2026], Vectara's HHEM [vectarahhem2026] and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text [bedrockautoreasoning2026]. Claim-locked reporting ties language strength to statistical thresholds but does not compose them. FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report [xbrlvalidation2009,xbrlvalueassertions2009]; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference [ixbrl].) label(tab:related) end(table)",
-          "field": "paperUse389",
+          "field": "paperUse374",
           "verified": true
         }
       ],
@@ -1943,9 +1925,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 389,
+          "line": 374,
           "text": "begin(table)[h] centering small begin(tabular)(llcccc) toprule Approach & Category & Determ. & Structured & Inline & Inference midrule FActScore, SAFE, FacTool, HallDetect & Fact-checking & – & – & – & – Guardrail and grounding scorers & Guardrails & – & – & – & – Schema validators, decode-time grammars & Schema & checkmark & – & – & – ClaimDB, Evergreen, VeriFin & Data-grounded & checkmark & checkmark & – & – FullCite & Inline citation & – & – & checkmark & – iXBRL$^*$ & Inline tagging & checkmark & checkmark & checkmark & – SymGen & Inline tagging & checkmark & checkmark & checkmark & – PCN & Inline tagging & checkmark & checkmark & checkmark & – Claim-locked reporting & Inline tagging & checkmark & checkmark & checkmark & Partial FinGround & Hybrid post-hoc & Partial & checkmark & – & – ProveML & Inline tagging & checkmark & checkmark & checkmark & checkmark bottomrule end(tabular) caption(Comparison across representative verification approaches. Determ. = deterministic. Structured = against structured data. Inline = claim-level markup in text. Inference = composable threshold checks within natural language text. The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check [bedrockgrounding2026], Azure AI Content Safety groundedness detection [azuregroundedness2026], Vectara's HHEM [vectarahhem2026] and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text [bedrockautoreasoning2026]. Claim-locked reporting ties language strength to statistical thresholds but does not compose them. FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report [xbrlvalidation2009,xbrlvalueassertions2009]; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference [ixbrl].) label(tab:related) end(table)",
-          "field": "paperUse389",
+          "field": "paperUse374",
           "verified": true
         }
       ],
@@ -1970,9 +1952,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 389,
+          "line": 374,
           "text": "begin(table)[h] centering small begin(tabular)(llcccc) toprule Approach & Category & Determ. & Structured & Inline & Inference midrule FActScore, SAFE, FacTool, HallDetect & Fact-checking & – & – & – & – Guardrail and grounding scorers & Guardrails & – & – & – & – Schema validators, decode-time grammars & Schema & checkmark & – & – & – ClaimDB, Evergreen, VeriFin & Data-grounded & checkmark & checkmark & – & – FullCite & Inline citation & – & – & checkmark & – iXBRL$^*$ & Inline tagging & checkmark & checkmark & checkmark & – SymGen & Inline tagging & checkmark & checkmark & checkmark & – PCN & Inline tagging & checkmark & checkmark & checkmark & – Claim-locked reporting & Inline tagging & checkmark & checkmark & checkmark & Partial FinGround & Hybrid post-hoc & Partial & checkmark & – & – ProveML & Inline tagging & checkmark & checkmark & checkmark & checkmark bottomrule end(tabular) caption(Comparison across representative verification approaches. Determ. = deterministic. Structured = against structured data. Inline = claim-level markup in text. Inference = composable threshold checks within natural language text. The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check [bedrockgrounding2026], Azure AI Content Safety groundedness detection [azuregroundedness2026], Vectara's HHEM [vectarahhem2026] and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text [bedrockautoreasoning2026]. Claim-locked reporting ties language strength to statistical thresholds but does not compose them. FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report [xbrlvalidation2009,xbrlvalueassertions2009]; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference [ixbrl].) label(tab:related) end(table)",
-          "field": "paperUse389",
+          "field": "paperUse374",
           "verified": true
         }
       ],
@@ -2007,9 +1989,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 389,
+          "line": 374,
           "text": "begin(table)[h] centering small begin(tabular)(llcccc) toprule Approach & Category & Determ. & Structured & Inline & Inference midrule FActScore, SAFE, FacTool, HallDetect & Fact-checking & – & – & – & – Guardrail and grounding scorers & Guardrails & – & – & – & – Schema validators, decode-time grammars & Schema & checkmark & – & – & – ClaimDB, Evergreen, VeriFin & Data-grounded & checkmark & checkmark & – & – FullCite & Inline citation & – & – & checkmark & – iXBRL$^*$ & Inline tagging & checkmark & checkmark & checkmark & – SymGen & Inline tagging & checkmark & checkmark & checkmark & – PCN & Inline tagging & checkmark & checkmark & checkmark & – Claim-locked reporting & Inline tagging & checkmark & checkmark & checkmark & Partial FinGround & Hybrid post-hoc & Partial & checkmark & – & – ProveML & Inline tagging & checkmark & checkmark & checkmark & checkmark bottomrule end(tabular) caption(Comparison across representative verification approaches. Determ. = deterministic. Structured = against structured data. Inline = claim-level markup in text. Inference = composable threshold checks within natural language text. The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check [bedrockgrounding2026], Azure AI Content Safety groundedness detection [azuregroundedness2026], Vectara's HHEM [vectarahhem2026] and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text [bedrockautoreasoning2026]. Claim-locked reporting ties language strength to statistical thresholds but does not compose them. FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report [xbrlvalidation2009,xbrlvalueassertions2009]; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference [ixbrl].) label(tab:related) end(table)",
-          "field": "paperUse389",
+          "field": "paperUse374",
           "verified": true
         }
       ],
@@ -2044,9 +2026,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 401,
+          "line": 386,
           "text": "• Consistency, not truth. ProveML verifies that claims match the fact store, not that the fact store is correct. If the source data is wrong, verified claims will be wrong. The review layer described under Deployment gives that boundary a discipline –- evidence per store value, a human sign-off saved under a hash of exactly what it judged, expiring when the evidence changes –- but does not remove it: a fair reading is a judgement, not a proof. • The right name, not necessarily the right record. An entity verifies when the name the reader sees equals the name stored at the id the model chose; nothing checks that the model chose the right id. If two records of one type share a name, a wrong id renders identically to the right one and only the audit path tells them apart. The verifier therefore measures whether a rendered subject is unique in the store ( texttt(subjectUnique): true, false with the other paths, or unknown when the source cannot be enumerated), texttt(doctor) warns on duplicate names, strict mode makes an ambiguous subject a finding, and the render marks it. Where subjects are identifiers by construction, as on a ledger, the gap closes; where they are personal names, it does not, and the marker is what remains. • No unit conversion. Units are supported as nullable metadata with exact string matching. Semantic unit equivalence (e.g., mg/dL vs mmol/L) and standardized vocabularies (UCUM for units of measure [ucum], ISO 4217 for currency codes [iso4217]) are deferred to future work. • Evaluation scope. The evaluation covers two domains (generated education, real SEC finance) across 38 prompts, 3 models, and 3 repeats, with an oracle retriever and one correction pass. Larger schemas, more domains, and retrieval under realistic conditions are not covered. The explicit-record fact form was introduced after the first study and measured in the second (Finding 3); whether a model follows the rule on every run is not guaranteed, as one Opus 5 run shows. • Inference constructs are unmeasured. The system prompt used throughout the evaluation asks for entity and fact markup only. No run produced an inference construct, so every rate we report is a rate over entities and facts, and the threshold registry –- the part of the design that constrains qualitative language –- is exercised by the specification, the test suite and the worked examples, but not by the study. How reliably models emit texttt(?[label: THRESHOLD] (text )), and how often they reach for a threshold that fits the sentence rather than the data, is an open question this paper does not answer. • Canonical claims. The model may not round: a claim says texttt(391035000000), never \"$391 billion\". The reader can still see the rounded form, because the store may declare a display rule per field ( texttt(_display)) that the renderer applies to verified values; but a value the model itself rounded is a mismatch, and prose that quotes the rounded figure outside a claim is unverified prose. The rule is on the store's side of the boundary on purpose: a tolerance in the verifier would make \"about 18\" verify against 18.5 and turn the guarantee into an approximation. • Prose outside markup. ProveML verifies what is inside markup constructs. Text outside the markup is not checked. The verifier now measures the numeric part of this gap as coverage (90–96% in Section sec:evaluation) and can refuse a number outside any claim, but a qualitative sentence with no number in it remains invisible to it. And a set of verified claims does not verify the sentence around them: [chan2026soundness] argue that formally sound conclusions invite unsupported inferences by the reader, and nothing in ProveML's verdict speaks to what the prose between two verified claims implies. • Malformed input. The tokenizer silently skips constructs with unmatched brackets or braces. Robustness to diverse malformed markup deserves further stress-testing. • Adversarial generation. ProveML is designed against models that make mistakes, not against a model trying to mislead. A generator that wanted to could choose a threshold that holds and wrap misleading words around it, mark only the claims that verify and leave the damaging ones as prose, or select a true fact that misrepresents the record it came from. Each of these survives verification because the verifier reads paths and values, not intent. We neither measure nor defend against this. • Group claims. Inferences evaluate against a single entity context. A claim like \"5TW, 4B, and 6WE all have low coverage\" cannot be verified as one inference; it must be decomposed into one inference per entity.",
-          "field": "paperUse401",
+          "field": "paperUse386",
           "verified": true
         }
       ],
@@ -2071,9 +2053,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 401,
+          "line": 386,
           "text": "• Consistency, not truth. ProveML verifies that claims match the fact store, not that the fact store is correct. If the source data is wrong, verified claims will be wrong. The review layer described under Deployment gives that boundary a discipline –- evidence per store value, a human sign-off saved under a hash of exactly what it judged, expiring when the evidence changes –- but does not remove it: a fair reading is a judgement, not a proof. • The right name, not necessarily the right record. An entity verifies when the name the reader sees equals the name stored at the id the model chose; nothing checks that the model chose the right id. If two records of one type share a name, a wrong id renders identically to the right one and only the audit path tells them apart. The verifier therefore measures whether a rendered subject is unique in the store ( texttt(subjectUnique): true, false with the other paths, or unknown when the source cannot be enumerated), texttt(doctor) warns on duplicate names, strict mode makes an ambiguous subject a finding, and the render marks it. Where subjects are identifiers by construction, as on a ledger, the gap closes; where they are personal names, it does not, and the marker is what remains. • No unit conversion. Units are supported as nullable metadata with exact string matching. Semantic unit equivalence (e.g., mg/dL vs mmol/L) and standardized vocabularies (UCUM for units of measure [ucum], ISO 4217 for currency codes [iso4217]) are deferred to future work. • Evaluation scope. The evaluation covers two domains (generated education, real SEC finance) across 38 prompts, 3 models, and 3 repeats, with an oracle retriever and one correction pass. Larger schemas, more domains, and retrieval under realistic conditions are not covered. The explicit-record fact form was introduced after the first study and measured in the second (Finding 3); whether a model follows the rule on every run is not guaranteed, as one Opus 5 run shows. • Inference constructs are unmeasured. The system prompt used throughout the evaluation asks for entity and fact markup only. No run produced an inference construct, so every rate we report is a rate over entities and facts, and the threshold registry –- the part of the design that constrains qualitative language –- is exercised by the specification, the test suite and the worked examples, but not by the study. How reliably models emit texttt(?[label: THRESHOLD] (text )), and how often they reach for a threshold that fits the sentence rather than the data, is an open question this paper does not answer. • Canonical claims. The model may not round: a claim says texttt(391035000000), never \"$391 billion\". The reader can still see the rounded form, because the store may declare a display rule per field ( texttt(_display)) that the renderer applies to verified values; but a value the model itself rounded is a mismatch, and prose that quotes the rounded figure outside a claim is unverified prose. The rule is on the store's side of the boundary on purpose: a tolerance in the verifier would make \"about 18\" verify against 18.5 and turn the guarantee into an approximation. • Prose outside markup. ProveML verifies what is inside markup constructs. Text outside the markup is not checked. The verifier now measures the numeric part of this gap as coverage (90–96% in Section sec:evaluation) and can refuse a number outside any claim, but a qualitative sentence with no number in it remains invisible to it. And a set of verified claims does not verify the sentence around them: [chan2026soundness] argue that formally sound conclusions invite unsupported inferences by the reader, and nothing in ProveML's verdict speaks to what the prose between two verified claims implies. • Malformed input. The tokenizer silently skips constructs with unmatched brackets or braces. Robustness to diverse malformed markup deserves further stress-testing. • Adversarial generation. ProveML is designed against models that make mistakes, not against a model trying to mislead. A generator that wanted to could choose a threshold that holds and wrap misleading words around it, mark only the claims that verify and leave the damaging ones as prose, or select a true fact that misrepresents the record it came from. Each of these survives verification because the verifier reads paths and values, not intent. We neither measure nor defend against this. • Group claims. Inferences evaluate against a single entity context. A claim like \"5TW, 4B, and 6WE all have low coverage\" cannot be verified as one inference; it must be decomposed into one inference per entity.",
-          "field": "paperUse401",
+          "field": "paperUse386",
           "verified": true
         }
       ],
@@ -2108,9 +2090,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 405,
+          "line": 390,
           "text": "• Consistency, not truth. ProveML verifies that claims match the fact store, not that the fact store is correct. If the source data is wrong, verified claims will be wrong. The review layer described under Deployment gives that boundary a discipline –- evidence per store value, a human sign-off saved under a hash of exactly what it judged, expiring when the evidence changes –- but does not remove it: a fair reading is a judgement, not a proof. • The right name, not necessarily the right record. An entity verifies when the name the reader sees equals the name stored at the id the model chose; nothing checks that the model chose the right id. If two records of one type share a name, a wrong id renders identically to the right one and only the audit path tells them apart. The verifier therefore measures whether a rendered subject is unique in the store ( texttt(subjectUnique): true, false with the other paths, or unknown when the source cannot be enumerated), texttt(doctor) warns on duplicate names, strict mode makes an ambiguous subject a finding, and the render marks it. Where subjects are identifiers by construction, as on a ledger, the gap closes; where they are personal names, it does not, and the marker is what remains. • No unit conversion. Units are supported as nullable metadata with exact string matching. Semantic unit equivalence (e.g., mg/dL vs mmol/L) and standardized vocabularies (UCUM for units of measure [ucum], ISO 4217 for currency codes [iso4217]) are deferred to future work. • Evaluation scope. The evaluation covers two domains (generated education, real SEC finance) across 38 prompts, 3 models, and 3 repeats, with an oracle retriever and one correction pass. Larger schemas, more domains, and retrieval under realistic conditions are not covered. The explicit-record fact form was introduced after the first study and measured in the second (Finding 3); whether a model follows the rule on every run is not guaranteed, as one Opus 5 run shows. • Inference constructs are unmeasured. The system prompt used throughout the evaluation asks for entity and fact markup only. No run produced an inference construct, so every rate we report is a rate over entities and facts, and the threshold registry –- the part of the design that constrains qualitative language –- is exercised by the specification, the test suite and the worked examples, but not by the study. How reliably models emit texttt(?[label: THRESHOLD] (text )), and how often they reach for a threshold that fits the sentence rather than the data, is an open question this paper does not answer. • Canonical claims. The model may not round: a claim says texttt(391035000000), never \"$391 billion\". The reader can still see the rounded form, because the store may declare a display rule per field ( texttt(_display)) that the renderer applies to verified values; but a value the model itself rounded is a mismatch, and prose that quotes the rounded figure outside a claim is unverified prose. The rule is on the store's side of the boundary on purpose: a tolerance in the verifier would make \"about 18\" verify against 18.5 and turn the guarantee into an approximation. • Prose outside markup. ProveML verifies what is inside markup constructs. Text outside the markup is not checked. The verifier now measures the numeric part of this gap as coverage (90–96% in Section sec:evaluation) and can refuse a number outside any claim, but a qualitative sentence with no number in it remains invisible to it. And a set of verified claims does not verify the sentence around them: [chan2026soundness] argue that formally sound conclusions invite unsupported inferences by the reader, and nothing in ProveML's verdict speaks to what the prose between two verified claims implies. • Malformed input. The tokenizer silently skips constructs with unmatched brackets or braces. Robustness to diverse malformed markup deserves further stress-testing. • Adversarial generation. ProveML is designed against models that make mistakes, not against a model trying to mislead. A generator that wanted to could choose a threshold that holds and wrap misleading words around it, mark only the claims that verify and leave the damaging ones as prose, or select a true fact that misrepresents the record it came from. Each of these survives verification because the verifier reads paths and values, not intent. We neither measure nor defend against this. • Group claims. Inferences evaluate against a single entity context. A claim like \"5TW, 4B, and 6WE all have low coverage\" cannot be verified as one inference; it must be decomposed into one inference per entity.",
-          "field": "paperUse405",
+          "field": "paperUse390",
           "verified": true
         }
       ],
@@ -2145,9 +2127,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 411,
+          "line": 396,
           "text": "noindent Future work follows from the limits: derived-value claims, standardized unit vocabularies, an abstention metric for unsupported queries, and constraining decoding to well-formed ProveML with only existing paths –- grammar-constrained generation (PICARD, [picard]; Synchromesh, [synchromesh]) makes that an application of known technique rather than a research program, and it would remove much of what we measure as addressability error.",
-          "field": "paperUse411",
+          "field": "paperUse396",
           "verified": true
         }
       ],
@@ -2182,9 +2164,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 411,
+          "line": 396,
           "text": "noindent Future work follows from the limits: derived-value claims, standardized unit vocabularies, an abstention metric for unsupported queries, and constraining decoding to well-formed ProveML with only existing paths –- grammar-constrained generation (PICARD, [picard]; Synchromesh, [synchromesh]) makes that an application of known technique rather than a research program, and it would remove much of what we measure as addressability error.",
-          "field": "paperUse411",
+          "field": "paperUse396",
           "verified": true
         }
       ],
@@ -2219,9 +2201,9 @@
       "summaryNote": "",
       "paperExcerpts": [
         {
-          "line": 419,
+          "line": 404,
           "text": "What LLMs provide is open-ended generation. What ProveML adds is a controllable, auditable boundary around that generation. For humans, the intended benefit is visual triage: verified claims carry a status, and attention shifts to what is unverified. We have not measured whether this reduces human verification effort, and the evidence from adjacent systems is mixed: [symgen] report their user study reduced average verification time by 20%, while [ten2026] report a 21-participant study in which verification and correction effort did not differ significantly from their baseline, even though their system reduced hallucination. Which of the two ProveML's rendering resembles in practice is an open empirical question. For agent loops the benefit is more direct and does not depend on human factors: specific error feedback (\" texttt(%[glucose] (143 mg/dL ) in patient:308: should be 142 mg/dL)\") enables targeted self-correction, which is what the verify-fix loop measures in Section sec:evaluation. The combination is what neither open-ended generation nor static verification offers alone: open-endedness with determinism.",
-          "field": "paperUse419",
+          "field": "paperUse404",
           "verified": true
         }
       ],

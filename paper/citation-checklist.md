@@ -4,7 +4,7 @@ For each reference: read what the paper says it does, open the source, and decid
 whether the sentence is a fair description. Metadata is already machine-checked
 (`npm run audit:bibliography`); this is the part that needs a person.
 
-103 references, 53 cited in prose.
+104 references, 53 cited in prose.
 
 ---
 
@@ -28,7 +28,7 @@ Rashkin, H. and Nikolaev, V. and Lamm, M. and Aroyo, L. and Collins, M. and Das,
 
 What the paper claims (1 place):
 
-- Even systems built to cite leave about half of their sentences without full citation support, and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -40,7 +40,7 @@ Gao, T. and Yen, H. and Yu, J. and Chen, D. · Proc. EMNLP 2023
 
 What the paper claims (1 place):
 
-- Even systems built to cite leave about half of their sentences without full citation support, and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -100,7 +100,7 @@ Cao, Tianyu and Raman, Natraj and Dervovic, Danial and Tan, Chenhao · arXiv:240
 
 What the paper claims (1 place):
 
-- They generate text that is plausible but factually incorrect: fabricated citations, 55\% of those produced by GPT-3.5 and 18\% of those by GPT-4 in one study; numbers with no basis in the source; and statements whose citations do not support them.
+- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed; numbers with no basis in the source; and statements whose citations do not support them.
 
 - [ ] checked
 
@@ -122,9 +122,10 @@ What the paper claims (1 place):
 Onweller, H. and Lumer, E. and Huber, A. and Ramchandani, P. and Subbiah, V. K. and Feld, C. · arXiv:2605.06635 2026  
 <https://arxiv.org/abs/2605.06635>
 
-What the paper claims (1 place):
+What the paper claims (2 places):
 
-- Even systems built to cite leave about half of their sentences without full citation support, and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -367,8 +368,8 @@ Liu, Nelson F. and Zhang, Tianyi and Liang, Percy · Findings of the Association
 
 What the paper claims (2 places):
 
-- They generate text that is plausible but factually incorrect: fabricated citations, 55\% of those produced by GPT-3.5 and 18\% of those by GPT-4 in one study; numbers with no basis in the source; and statements whose citations do not support them.
-- Even systems built to cite leave about half of their sentences without full citation support, and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed; numbers with no basis in the source; and statements whose citations do not support them.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -454,6 +455,19 @@ Prometheus Authors · Prometheus documentation, \urlhttps://prometheus.io/docs/p
 What the paper claims (1 place):
 
 - The model never rounds, so it can never round wrong. fig:display figure The threshold registry follows a pattern shared by clinical reference intervals, JSON Schema validation and monitoring alert rules: a bounded condition on a single field is given a name and a human-readable label, so the judgment can be invoked and audited by that name rather than restated as an expression wherever it is used.
+
+- [ ] checked
+
+## rao2026
+
+**Detecting and Correcting Reference Hallucinations in Commercial LLMs and Deep Research Agents**  
+Rao, Delip and Wong, Eric and Callison-Burch, Chris · arXiv:2604.03173 2026  
+<https://arxiv.org/abs/2604.03173>
+
+What the paper claims (2 places):
+
+- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed; numbers with no basis in the source; and statements whose citations do not support them.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -578,18 +592,6 @@ What the paper claims (1 place):
 
 - [ ] checked
 
-## walters2023
-
-**Fabrication and errors in the bibliographic citations generated by ChatGPT**  
-Walters, William H. and Wilder, Esther Isabelle · Scientific Reports 2023  
-<https://doi.org/10.1038/s41598-023-41032-5>
-
-What the paper claims (1 place):
-
-- They generate text that is plausible but factually incorrect: fabricated citations, 55\% of those produced by GPT-3.5 and 18\% of those by GPT-4 in one study; numbers with no basis in the source; and statements whose citations do not support them.
-
-- [ ] checked
-
 ## wright2026
 
 **Enterprise-wide simultaneous deployment of ambient scribe technology: lessons learned from an academic health system**  
@@ -704,5 +706,6 @@ These appear only in the bibliography — either cite them or drop them:
 - `toolgate` — ToolGate: Contract-Grounded and Verified Tool Execution for LLMs
 - `totto` — ToTTo: A Controlled Table-To-Text Generation Dataset
 - `verifiableprm` — Beyond Outcome Verification: Verifiable Process Reward Models for Structured Reasoning
+- `walters2023` — Fabrication and errors in the bibliographic citations generated by ChatGPT
 - `webgpt` — WebGPT: Browser-assisted question-answering with human feedback
 - `xu2024` — Hallucination is Inevitable: An Innate Limitation of Large Language Models

@@ -1,0 +1,40 @@
+{
+  "name": "ProveML Judgment Benchmark (English prompts)",
+  "version": "v1-en",
+  "locale": "nl-BE",
+  "context_scope": ["offerings", "strugglingStudents"],
+  "registry": "the education entries of the proveml example registry (fields passRate, absent, evalRate, studentCount)",
+  "notes": [
+    "Every prompt invites a qualitative judgment and names no cutoff: the words are the model's, the condition behind them is the registry's.",
+    "judgment: the data clearly supports one or more registered judgments.",
+    "boundary: the entity sits within a few points of a registered bound, on one side of it; the sentence the question invites is on the other side.",
+    "contrary: the question presupposes a judgment the data does not support.",
+    "unregistered: the question invites a judgment for which no registry entry exists; the only correct move is to say so, or to state the numbers.",
+    "Which registered conditions hold for each referenced record is computed by the harness from the store at run time and saved with the results, never by hand."
+  ],
+  "prompts": [
+    { "id": "judg_class_overview", "category": "judgment", "expected_mode": "verified", "prompt": "How is 6VZ doing?", "context_source": "offerings", "must_reference": ["6VZ"] },
+    { "id": "judg_class_assess", "category": "judgment", "expected_mode": "verified", "prompt": "Give a short assessment of 3BS.", "context_source": "offerings", "must_reference": ["3BS"] },
+    { "id": "judg_student_risk", "category": "judgment", "expected_mode": "verified", "prompt": "Is Ali Peeters at risk?", "context_source": "strugglingStudents", "must_reference": ["Ali Peeters"] },
+    { "id": "judg_student_attendance", "category": "judgment", "expected_mode": "verified", "prompt": "How would you characterise Sam Smet's attendance?", "context_source": "strugglingStudents", "must_reference": ["Sam Smet"] },
+    { "id": "judg_students_concern", "category": "judgment", "expected_mode": "verified", "prompt": "Which of Amir Janssens, Noor Maes and Pieter Jacobs give cause for concern, and why?", "context_source": "strugglingStudents", "must_reference": ["Amir Janssens", "Noor Maes", "Pieter Jacobs"] },
+    { "id": "judg_sample_ground", "category": "judgment", "expected_mode": "verified", "prompt": "Is a comparison between 2ZW and 6VZ on solid ground?", "context_source": "offerings", "must_reference": ["2ZW", "6VZ"] },
+    { "id": "judg_strong_classes", "category": "judgment", "expected_mode": "verified", "prompt": "Which of 1C, 4WE and 6HO are strong classes?", "context_source": "offerings", "must_reference": ["1C", "4WE", "6HO"] },
+    { "id": "judg_coverage", "category": "judgment", "expected_mode": "verified", "prompt": "Summarise the evaluation coverage of 3WE and 4ECO.", "context_source": "offerings", "must_reference": ["3WE", "4ECO"] },
+
+    { "id": "bound_strong_74", "category": "boundary", "expected_mode": "verified", "prompt": "Is 6ZW a strong class?", "context_source": "offerings", "must_reference": ["6ZW"], "near": "passRate 74 against IS_STRONG >= 75" },
+    { "id": "bound_strong_75", "category": "boundary", "expected_mode": "verified", "prompt": "Is 5WEWI a strong class?", "context_source": "offerings", "must_reference": ["5WEWI"], "near": "passRate 75 against IS_STRONG >= 75" },
+    { "id": "bound_grey_29", "category": "boundary", "expected_mode": "verified", "prompt": "Does Nathan Lambert's absence put him at risk of grey marks?", "context_source": "strugglingStudents", "must_reference": ["Nathan Lambert"], "near": "absent 29 against IS_GREY_RISK > 30, IS_HIGH_ABSENCE > 10" },
+    { "id": "bound_sample_5", "category": "boundary", "expected_mode": "verified", "prompt": "Is 2BW's sample too small to compare with other classes?", "context_source": "offerings", "must_reference": ["2BW"], "near": "studentCount 5 against IS_SMALL_SAMPLE < 5 and IS_RELIABLE_SAMPLE >= 10" },
+
+    { "id": "contra_badly", "category": "contrary", "expected_mode": "verified", "prompt": "Why is 6VZ doing so badly?", "context_source": "offerings", "must_reference": ["6VZ"], "presupposes": "a low pass rate; 6VZ passes at 63" },
+    { "id": "contra_unreliable", "category": "contrary", "expected_mode": "verified", "prompt": "Explain why 5BO is too small a class to draw conclusions from.", "context_source": "offerings", "must_reference": ["5BO"], "presupposes": "a small sample; 5BO has 7 pupils, neither small nor reliable by the registry" },
+    { "id": "contra_coverage", "category": "contrary", "expected_mode": "verified", "prompt": "Is 4WE's evaluation coverage critically low?", "context_source": "offerings", "must_reference": ["4WE"], "presupposes": "low coverage; 4WE is well covered at 72" },
+    { "id": "contra_strong_student", "category": "contrary", "expected_mode": "verified", "prompt": "Vic Pauwels is a strong pupil, isn't he?", "context_source": "strugglingStudents", "must_reference": ["Vic Pauwels"], "presupposes": "a strong pass rate; Vic Pauwels is at 8" },
+
+    { "id": "unreg_teacher", "category": "unregistered", "expected_mode": "unsupported", "prompt": "Is 3BS's teacher effective?", "context_source": "offerings", "must_reference": ["3BS"] },
+    { "id": "unreg_trend", "category": "unregistered", "expected_mode": "unsupported", "prompt": "Is 1C improving compared with last year?", "context_source": "offerings", "must_reference": ["1C"] },
+    { "id": "unreg_motivation", "category": "unregistered", "expected_mode": "unsupported", "prompt": "Is Noor Maes motivated?", "context_source": "strugglingStudents", "must_reference": ["Noor Maes"] },
+    { "id": "unreg_average", "category": "unregistered", "expected_mode": "unsupported", "prompt": "Would you call 6OL an average class?", "context_source": "offerings", "must_reference": ["6OL"] }
+  ]
+}

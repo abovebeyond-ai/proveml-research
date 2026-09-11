@@ -1,0 +1,21 @@
+{
+ "id": "verifier",
+ "snapshot": "verifier-check.txt",
+ "command": "node verifier-check.mjs",
+ "cwd": "<repo>/paper/review",
+ "repo": {
+  "path": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research",
+  "commit": "4d1f22a",
+  "branch": "vera-round-2",
+  "uncommittedChanges": 43
+ },
+ "startedAt": "2026-09-11T15:03:37.686Z",
+ "durationMs": 71,
+ "exitCode": 0,
+ "stdoutSha256": "da3229bc8bf07123a4a99d6280a2705c7cd8fe78f6fad5254adb9e9f0534b876",
+ "stdoutBytes": 509,
+ "snapshotSha256": null,
+ "sameAsSnapshot": false,
+ "stderrTail": [],
+ "node": "v24.13.0"
+}

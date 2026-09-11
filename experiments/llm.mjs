@@ -71,3 +71,46 @@ export function callLLM(provider, model, prompt, { timeoutMs, tmpFile }) {
     // Claude Code CLI
     return exec(`cat "${tmpFile}" | claude -p${model ? ` --model ${model}` : ''}`).trim();
 }
+
+/**
+ * The same call, with the provider's receipt kept beside the text: the ids the provider
+ * echoes (a session and message id on the CLI, the completion id on Together), the model
+ * string it answered as, the token usage and the clock. A run file that carries these is
+ * its own evidence that the call happened, which a text on its own is not; and they can
+ * only be taken at call time. The older harnesses keep callLLM; new studies use this.
+ *
+ * @returns {{ text: string, receipt: object }}
+ */
+export function callLLMWithReceipt(provider, model, prompt, { timeoutMs, tmpFile }) {
+    writeFileSync(tmpFile, prompt);
+    const at = new Date().toISOString();
+    const exec = (cmd, extraEnv = {}) => execSync(cmd, {
+        encoding: 'utf-8', maxBuffer: 10 * 1024 * 1024, timeout: timeoutMs,
+        env: { ...process.env, ...extraEnv },
+    });
+    if (provider === 'together') {
+        if (!model) throw new Error('--model is required for provider together');
+        const body = `${tmpFile}.json`;
+        writeFileSync(body, JSON.stringify({ model, max_tokens: 16384, messages: [{ role: 'user', content: prompt }] }));
+        const raw = exec(
+            `curl -sS --fail-with-body -m ${Math.ceil(timeoutMs / 1000)} https://api.together.ai/v1/chat/completions`
+            + ` -H "Authorization: Bearer $TOGETHER_API_KEY" -H "Content-Type: application/json" -d @"${body}"`,
+            { TOGETHER_API_KEY: togetherKey() }
+        );
+        const json = JSON.parse(raw);
+        if (json.error) throw new Error(`Together: ${json.error.message || JSON.stringify(json.error)}`);
+        const choice = json.choices?.[0];
+        const text = choice?.message?.content;
+        if (typeof text !== 'string' || text.trim() === '') throw new Error(`Together: empty answer (finish_reason=${choice?.finish_reason})`);
+        return { text: text.trim(), receipt: { provider, at, id: json.id, model: json.model, created: json.created, finishReason: choice?.finish_reason, usage: json.usage } };
+    }
+    if (provider === 'ollama') {
+        return { text: exec(`ollama run ${model} --nowordwrap < "${tmpFile}" 2>/dev/null`).trim(), receipt: { provider, at, model } };
+    }
+    const raw = exec(`cat "${tmpFile}" | claude -p${model ? ` --model ${model}` : ''} --output-format json`);
+    const json = JSON.parse(raw);
+    if (json.subtype && json.subtype !== 'success') throw new Error(`claude: ${json.subtype}`);
+    const answered = json.modelUsage ? Object.keys(json.modelUsage).filter((m) => !/haiku/.test(m)) : [];
+    return { text: String(json.result || '').trim(), receipt: { provider, at, sessionId: json.session_id, messageId: json.uuid, model: answered[0] || model, durationApiMs: json.duration_api_ms, usage: json.usage && { input: json.usage.input_tokens, cacheRead: json.usage.cache_read_input_tokens, cacheCreation: json.usage.cache_creation_input_tokens, output: json.usage.output_tokens }, costUsd: json.total_cost_usd } };
+}
+
