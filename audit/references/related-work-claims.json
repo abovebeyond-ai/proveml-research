@@ -503,7 +503,7 @@
     "authors": "European Commission",
     "year": 2026,
     "name": "The EU AI Act",
-    "claim": "@[citation:euaiact]{The EU AI Act}: the Commission %[enforcement]{starts enforcing AI Act rules and new transparency requirements on 2 August}, %[transparencyScope]{requiring certain AI systems to tell users when they are interacting with AI and when content has been generated or altered by it}; the Regulation itself %[appliesFrom]{shall apply from 2 August 2026}.",
+    "claim": "@[citation:euaiact]{The EU AI Act}: the Commission %[enforcement]{starts enforcing AI Act rules and new transparency requirements on 2 August}, %[transparencyScope]{requiring certain AI systems to tell users when they are interacting with AI and when content has been generated or altered by it}; the Regulation itself %[appliesFrom]{shall apply from 2 August 2026}; Article 50(2) requires providers of systems %[generatedText]{generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated}.",
     "evidence": [
       {
         "field": "enforcement",
@@ -512,7 +512,10 @@
         "sourceQuote": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
         "sourceLocator": "European Commission news item, title",
         "note": "The Commission announcement of the 2 August 2026 start; captured 2026-09-01, after application, so the start it announces has occurred. An earlier policy-page sentence still said \"will come into effect\" and is not quoted for that reason.",
-        "source": "euaiact-news"
+        "source": "euaiact-news",
+        "paperUse": [
+          "applied since 2 August 2026"
+        ]
       },
       {
         "field": "transparencyScope",
@@ -520,7 +523,10 @@
         "basis": "quote",
         "sourceQuote": "new transparency rules will start to apply, requiring certain AI systems to tell users when they are interacting with AI and when content has been generated or altered by it",
         "sourceLocator": "European Commission news item, lead",
-        "source": "euaiact-news"
+        "source": "euaiact-news",
+        "paperUse": [
+          "applied since 2 August 2026"
+        ]
       },
       {
         "field": "appliesFrom",
@@ -529,8 +535,17 @@
         "sourceQuote": "It shall apply from 2 August 2026.",
         "sourceLocator": "Regulation (EU) 2024/1689, Article 113",
         "paperUse": [
-          "applied since 2 August 2026",
-          "regulation now reaches"
+          "applied since 2 August 2026"
+        ]
+      },
+      {
+        "field": "generatedText",
+        "claimValue": "generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated",
+        "basis": "quote",
+        "sourceQuote": "Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated.",
+        "sourceLocator": "Regulation (EU) 2024/1689, Article 50(2)",
+        "paperUse": [
+          "regulation now reaches generated text"
         ]
       }
     ]
