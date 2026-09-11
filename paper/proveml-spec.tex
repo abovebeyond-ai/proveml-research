@@ -463,6 +463,8 @@ This appendix states what the verifier computes, as definitions, and what the pa
     \item \textbf{The store may grow too, with one exception.} If $S \sqsubseteq S'$ then an atom under any operator but $\mathit{is\_null}$ is below its verdict under $S'$. The exception is stated, not hidden: an $\mathit{is\_null}$ threshold evaluates to $\mathbf{t}$ wherever the store is silent, which includes a field the record's type never carries. That is the vacuity the judgment study met (Finding~4), and the specification should close it by distinguishing a missing field from a null value. (\texttt{evalAtom\_store\_mono}, \texttt{isNull\_vacuous})
 \end{enumerate}
 
+\paragraph{What this establishes and what it does not.} The propositions are about the model. The reference implementation is checked against it on the paper's examples, not proven to refine it; a verified implementation, the verifier written in the proof assistant and extracted, would close that gap and is the natural next step, and the tokenizer would then need modelling too. Beyond the mechanism nothing here is provable: that a verified claim is true is a property of the store, and that the text around it does not mislead is a property of the model. Both stay with the limitations in Section~\ref{sec:limitations}.
+
 \section{ProveML Grammar (EBNF)}
 \label{app:grammar}
 

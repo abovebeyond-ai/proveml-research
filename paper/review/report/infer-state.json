@@ -2180,5 +2180,47 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "pc5a49bcfed11": {
+  "at": "2026-09-11T19:01:52.001Z",
+  "claims": [
+   {
+    "span": "The reference implementation is checked against it on the paper's examples, not proven to refine it",
+    "kind": "other",
+    "why": "Asserts a specific, limited scope of validation (examples only, no refinement proof) that should be verified against what was actually done in the paper."
+   },
+   {
+    "span": "a verified implementation, the verifier written in the proof assistant and extracted, would close that gap and is the natural next step",
+    "kind": "causal",
+    "why": "Claims this specific approach would resolve the stated gap, an untested causal/feasibility claim about future work presented as settled."
+   },
+   {
+    "span": "the tokenizer would then need modelling too",
+    "kind": "other",
+    "why": "Asserts an additional necessary step follows from the proposed verified implementation; should be justified rather than asserted."
+   },
+   {
+    "span": "Beyond the mechanism nothing here is provable",
+    "kind": "absence",
+    "why": "Strong absence/impossibility claim that should be justified, not just stated."
+   },
+   {
+    "span": "that a verified claim is true is a property of the store",
+    "kind": "other",
+    "why": "Definitional claim about what guarantees truth; should be checked for consistency with the model/store definitions used elsewhere in the paper."
+   },
+   {
+    "span": "that the text around it does not mislead is a property of the model",
+    "kind": "other",
+    "why": "Definitional claim attributing non-misleadingness to 'the model'; should be checked for consistency with earlier definitions and whether this is actually established or just asserted."
+   },
+   {
+    "span": "Both stay with the limitations in Section 6",
+    "kind": "other",
+    "why": "Cross-reference claim that should be verified to actually match the content of Section 6."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
