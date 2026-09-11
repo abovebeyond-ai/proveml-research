@@ -2331,5 +2331,47 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "p81f0c5acc99e": {
+  "at": "2026-09-11T19:40:46.553Z",
+  "claims": [
+   {
+    "span": "three models that were frontier in August 2026 (Claude Opus 5, Claude Sonnet 5 and DeepSeek V4 Pro)",
+    "kind": "citation",
+    "why": "should confirm these three specific model names/versions were actually the ones tested and were genuinely considered frontier at that date"
+   },
+   {
+    "span": "the July 2026 study of smaller models that preceded this one, whose results this paper does not reproduce",
+    "kind": "historical",
+    "why": "existence, date, and non-overlap of the earlier study's results should be verified against the technical report"
+   },
+   {
+    "span": "the three-valued condition semantics is stated in Appendix B",
+    "kind": "other",
+    "why": "should confirm Appendix B actually contains this content and the label is correct"
+   },
+   {
+    "span": "Both documents are published in the artifact repository alongside every benchmark, run artifact, and the scripts that regenerate every table",
+    "kind": "absence",
+    "why": "completeness claim ('every') should be checked—missing benchmarks, artifacts, or table-regeneration scripts would falsify it"
+   },
+   {
+    "span": "https://github.com/abovebeyond-ai/proveml-research",
+    "kind": "citation",
+    "why": "URL should be checked for correctness and that it resolves to the claimed artifact repository"
+   },
+   {
+    "span": "https://github.com/abovebeyond-ai/proveml",
+    "kind": "citation",
+    "why": "URL should be checked for correctness and that it resolves to the claimed reference implementation"
+   },
+   {
+    "span": "npm: `proveml`",
+    "kind": "other",
+    "why": "should confirm the npm package name and that it corresponds to the cited GitHub implementation"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
