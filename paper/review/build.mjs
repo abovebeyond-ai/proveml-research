@@ -23,6 +23,8 @@ const snapshots = {
   benchmarks: read('benchmarks.txt'), dataset: read('dataset-meta.txt'), finance: read('finance.txt'),
   summary: read('frontier-summary.txt'), residuals: read('frontier-residuals.txt'),
   deployment: read('deployment-numbers.txt'), package: read('package.txt'), summary2: read('frontier2-summary.txt'),
+  ...(existsSync('report/sources/raw/verifier-check.txt') ? { verifier: read('verifier-check.txt') } : {}),
+  ...(existsSync('report/sources/raw/judgment-summary.txt') ? { judgment: read('judgment-summary.txt') } : {}),
   ...(existsSync('report/sources/raw/pdpp-students.txt') ? { 'pdpp-students': read('pdpp-students.txt') } : {}),
   magesh2025: htmlToText(read('magesh2025-arxiv.html')), liu2026citations: htmlToText(read('liu2026citations.html')), omnibus2026: htmlToText(read('omnibus2026.html')),
   ...auditSnapshots,
@@ -42,15 +44,22 @@ const store = {
   'model:deepseek.name': 'DeepSeek V4 Pro', 'model:deepseek.eduFirst': 97.2, 'model:deepseek.eduFinal': 99.5, 'model:deepseek.eduCoverage': 94.2,
   'model:deepseek.finFirst': 100, 'model:deepseek.finFinal': 100, 'model:deepseek.finCoverage': 96.4, 'model:deepseek.latency': 3.4, 'model:deepseek.overhead': 79, 'model:deepseek.generations': 1.06,
   'deploy:frontier.name': 'the educational runs', 'deploy:frontier.claims': 2185, 'deploy:frontier.responses': 252, 'deploy:frontier.storeKeys': 4826,
-  'deploy:frontier.msTotalClaimed': 3.4, 'deploy:frontier.msPerResponseClaimed': 0.013, 'deploy:frontier.usPerClaimClaimed': 1.5,
   'deploy:frontier.noCorrectionPct': 77, 'deploy:frontier.generations': 1.23,
   'impl:proveml.name': 'The reference implementation', 'impl:proveml.runtimeDeps': 'no',
   'reg:euaiact.name': 'the EU AI Act', 'reg:euaiact.appliedFrom': '2 August 2026',
   'reg:omnibus.name': 'the Digital Omnibus', 'reg:omnibus.deferredTo': '2 December 2026',
   'study:magesh.name': 'Magesh et al.', 'study:magesh.hallucinationRange': '17–33',
+  'study:aiindex.name': 'the AI Index 2026', 'study:aiindex.adoption': '70',
+  'model:opus5.judgWith': '20', 'model:opus5.judgPerRun': '67.7', 'model:opus5.judgFirst': '92.6', 'model:opus5.judgFinal': '100', 'model:opus5.judgSound0': '7.3', 'model:opus5.judgSound1': '8.0',
+  'model:sonnet5.judgWith': '19.3', 'model:sonnet5.judgPerRun': '42.3', 'model:sonnet5.judgFirst': '77.8', 'model:sonnet5.judgFinal': '98.2', 'model:sonnet5.judgSound0': '3.7', 'model:sonnet5.judgSound1': '7.7',
+  'model:deepseek.judgWith': '18.0', 'model:deepseek.judgPerRun': '41.3', 'model:deepseek.judgFirst': '100', 'model:deepseek.judgFinal': '100', 'model:deepseek.judgSound0': '8.0', 'model:deepseek.judgSound1': '8.0',
+  'study:judgment.name': 'the judgment study', 'study:judgment.total': '454', 'study:judgment.verifiedFirst': '411', 'study:judgment.verifiedFinal': '425', 'study:judgment.totalFinal': '427', 'study:judgment.falseFirst': '33', 'study:judgment.wordsLow': '18', 'study:judgment.wordsHigh': '26',
+  'verifier:example.name': 'the verifier on the paper\'s example', 'verifier:example.canonical': '391035000000', 'verifier:example.rounded': 'fails', 'verifier:example.netIncome': '93736000000', 'verifier:example.shown': '$93.7 billion',
+  'study:onweller.name': 'Onweller et al.', 'study:onweller.factualAccuracy': '39–77',
+  'study:rao.name': 'Rao et al.', 'study:rao.deepResearchRate': '10.7', 'study:rao.searchRate': '4.8',
   'study:liu.name': 'Liu et al.', 'study:liu.filings': 'more than a thousand',
   'study:frontier.coverageRange': '90–96', 'study:frontier.firstPassRange': '87–100', 'study:frontier.correctedRange': '92–100',
-  'deploy:frontier.overheadRange': '49–79',
+  'deploy:frontier.overheadRange': '49–79', 'deploy:frontier.secTotal': '0.66', 'deploy:frontier.msPerResponse': '2.6', 'deploy:frontier.msPerClaim': '0.30', 
   'study:frontier2.name': 'the second study', 'study:frontier2.firstPassRange': '95–100', 'study:frontier2.bindingErrors': 16,
   'model:opus5.edu2First': 95.4, 'model:opus5.edu2Final': 97.1, 'model:opus5.edu2Coverage': 97.9, 'model:opus5.fin2First': 100, 'model:opus5.fin2Final': 100, 'model:opus5.fin2Coverage': 98.2,
   'model:sonnet5.edu2First': 99.4, 'model:sonnet5.edu2Final': 99.4, 'model:sonnet5.edu2Coverage': 91.1, 'model:sonnet5.fin2First': 100, 'model:sonnet5.fin2Final': 100, 'model:sonnet5.fin2Coverage': 94.4,
@@ -80,20 +89,38 @@ const mark = (t, pairs, id) => {
 // the reading still exists, as an inference the author must stand behind.
 const CITE = /\u27e6c:([^\u27e7]+)\u27e7([^\u27e6]*)\u27e6\/c\u27e7/g;
 const sentenceAround = (text, idx) => {
-  const a = Math.max(text.lastIndexOf('. ', idx), text.lastIndexOf('; ', idx), 0);
-  const bEnd = text.indexOf('. ', idx); return text.slice(a ? a + 2 : 0, bEnd < 0 ? text.length : bEnd + 1).replace(/\u27e6c:[^\u27e7]*\u27e7|\u27e6\/c\u27e7/g, '').trim();
+  // a semicolon inside a citation group "(A, 2026; B, 2025)" does not end the sentence
+  const dot = text.lastIndexOf('. ', idx);
+  const outsideParens = (p) => { const seg = text.slice(dot < 0 ? 0 : dot, p); return (seg.split('(').length - 1) <= (seg.split(')').length - 1); };
+  let semi = text.lastIndexOf('; ', idx);
+  while (semi > dot && !outsideParens(semi)) semi = text.lastIndexOf('; ', semi - 1);
+  const a = Math.max(dot, semi, 0);
+  const dotEnd = text.indexOf('. ', idx);
+  const afterParens = (p) => { const seg = text.slice(idx, p); return (seg.split('(').length - 1) <= (seg.split(')').length - 1); };
+  let semiEnd = text.indexOf('; ', idx);
+  while (semiEnd >= 0 && (dotEnd < 0 || semiEnd < dotEnd) && !afterParens(semiEnd)) semiEnd = text.indexOf('; ', semiEnd + 1);
+  const ends = [dotEnd, semiEnd].filter((x) => x >= 0);
+  const bEnd = ends.length ? Math.min(...ends) : -1;
+  return text.slice(a ? a + 2 : 0, bEnd < 0 ? text.length : bEnd + 1).replace(/\u27e6c:[^\u27e7]*\u27e7|\u27e6\/c\u27e7/g, '').trim();
 };
+const MENTIONS = {};   // key -> [{ id, sent }], in page order: a citation reading lists the work's other mentions
 const citify = (text, blockId, evidence) => {
-  const seen = new Set();
+  const seen = {};
   return text.replace(CITE, (whole, key, label, offset) => {
-    if (seen.has(key)) return label;
-    seen.add(key);
-    const field = 'citation:' + key + '.cited_' + String(blockId).replace(/[^A-Za-z0-9_]/g, '_');   // one reading per use of the work
+    seen[key] = (seen[key] || 0) + 1;
+    const field = 'citation:' + key + '.cited_' + String(blockId).replace(/[^A-Za-z0-9_]/g, '_') + (seen[key] > 1 ? '_' + seen[key] : '');   // one reading per mention of the work
     if (!store['citation:' + key + '.name']) store['citation:' + key + '.name'] = label;
     store[field] = label;
     const sent = sentenceAround(text, offset);
+    (MENTIONS[key] = MENTIONS[key] || []).push({ id: String(blockId), sent });
     const a = AUDIT_BY_KEY[key];
-    const quotes = a ? a.evidence.filter((e) => e.basis === 'quote' && e.sourceQuote) : [];
+    const all = a ? a.evidence.filter((e) => e.basis === 'quote' && e.sourceQuote) : [];
+    // A curated quote may say which words of the paper it backs (paperUse); then a citing
+    // sentence shows only the quotes for its own words, and every quote when none is tagged.
+    const low = sent.toLowerCase();
+    const tagged = all.filter((e) => Array.isArray(e.paperUse) && e.paperUse.some((w) => low.includes(String(w).toLowerCase())));
+    const chosen = tagged.length ? tagged : all.filter((e) => !e.paperUse).length ? all.filter((e) => !e.paperUse) : all;
+    const quotes = chosen.filter((e, i) => chosen.findIndex((x) => x.sourceQuote === e.sourceQuote) === i);   // two values from one passage: one passage shown
     const absences = a ? a.evidence.filter((e) => e.basis === 'absence' && e.note).map((e) => e.note) : [];
     if (quotes.length) {
       evidence.push({ field, claimValue: label, basis: 'quote', source: 'cite-' + (quotes[0].source || key),
@@ -107,6 +134,12 @@ const citify = (text, blockId, evidence) => {
     return '%[' + field + ']{' + label + '}';
   });
 };
+// The panel lists a paragraph's readings in the order the reader meets them in the text,
+// whatever order the builder collected them (bound marks first, citations after).
+const inTextOrder = (claim, evidence) => evidence
+  .map((e, i) => ({ e, i, at: claim.indexOf('%[' + e.field + ']') }))
+  .sort((a, b) => (a.at < 0 ? Infinity : a.at) - (b.at < 0 ? Infinity : b.at) || a.i - b.i)
+  .map((x) => x.e);
 const q = (field, claimValue, source, sourceQuote, sourceLocator, note) => ({ field, claimValue, basis: 'quote', source, sourceQuote, sourceLocator, ...(note ? { note } : {}) });
 const d = (field, claimValue, source, note) => ({ field, claimValue, basis: 'derived', source, note });
 
@@ -123,22 +156,31 @@ const bound = [
       q('study:magesh.hallucinationRange', '17–33', 'magesh2025', 'each hallucinate between 17% and 33% of the time', 'arXiv 2405.20362 abstract', 'The abstract says "between 17% and 33% of the time"; the paper writes "17–33% of queries". Fair reading?'),
       q('study:liu.filings', 'more than a thousand', 'liu2026citations', 'we found over 1,000 filings containing fabricated citations', 'arXiv 2606.21155 abstract', 'The abstract says "over 1,000 filings"; the paper writes "more than a thousand". Fair?'),
     ] },
+  { anchor: 'Two things decide whether ProveML fits a use', id: 'intro-limits', marks: [
+      ['the store holds it, `391035000000`, and "$391 billion" in its place fails', 'the store holds it, %[verifier:example.canonical]{391035000000}, and "$391 billion" in its place %[verifier:example.rounded]{fails}'],
+    ], evidence: [
+      q('verifier:example.canonical', '391035000000', 'verifier', 'claim %[revenue]{391035000000 USD} against company:aapl.revenue = 391035000000: verified, shown as $391.0 billion', 'verifier-check.mjs, canonical value'),
+      q('verifier:example.rounded', 'fails', 'verifier', 'claim %[revenue]{$391 billion} against company:aapl.revenue = 391035000000: value-mismatch', 'verifier-check.mjs, rounded value', 'The verifier reports value-mismatch; the paper says fails.'),
+    ] },
+  { anchor: 'The models are meanwhile in production', id: 'intro-production', marks: [
+      ['at 70% of surveyed organizations', 'at %[study:aiindex.adoption]{70}% of surveyed organizations'],
+      ['factually accurate for only 39–77% of claims', 'factually accurate for only %[study:onweller.factualAccuracy]{39–77}% of claims'],
+      ['10.7% of the citation URLs of the two commercial deep research agents never existed, against 4.8% for search-augmented models', '%[study:rao.deepResearchRate]{10.7}% of the citation URLs of the two commercial deep research agents never existed, against %[study:rao.searchRate]{4.8}% for search-augmented models'],
+    ], evidence: [
+      q('study:aiindex.adoption', '70', 'cite-aiindex2026', 'Generative AI is now used in at least one business function at 70% of organizations', 'AI Index 2026, Economy chapter, Finding 5'),
+      q('study:onweller.factualAccuracy', '39–77', 'cite-citednotverified', 'achieve only 39-77% factual accuracy', 'arXiv 2605.06635 abstract', 'The abstract writes "39-77% factual accuracy" of the citations of frontier models; the paper writes "factually accurate for only 39–77% of claims". Fair reading?'),
+      q('study:rao.deepResearchRate', '10.7', 'cite-rao2026', 'Pooling across the two deep research agents, the hallucination rate is 10.7% [10.2, 11.2]', 'arXiv 2604.03173, Section 4', 'The paper pools OpenAI Deep Research (3.5%) and Gemini 2.5 Pro Deep Research (13.3%).'),
+      q('study:rao.searchRate', '4.8', 'cite-rao2026', 'versus 4.8% [4.3, 5.2] for the eight search-augmented models', 'arXiv 2604.03173, Section 4'),
+    ] },
   { anchor: 'We evaluate three frontier models of August 2026', id: 'abstract-results', marks: [
       ['put 90–96% of their numbers inside a claim', 'put %[study:frontier.coverageRange]{90–96}% of their numbers inside a claim'],
       ['verify 87–100% of those claims on the first pass and 92–100% after one correction', 'verify %[study:frontier.firstPassRange]{87–100}% of those claims on the first pass and %[study:frontier.correctedRange]{92–100}% after one correction'],
-      ['69% of the residual errors', '%[study:frontier.bindingShare]{69}% of the residual errors'],
-      ['verify 95–100% of their claims on the first pass', 'verify %[study:frontier2.firstPassRange]{95–100}% of their claims on the first pass'],
+      ['lifts first-pass verification to 95–100%', 'lifts first-pass verification to %[study:frontier2.firstPassRange]{95–100}%'],
     ], evidence: [
       d('study:frontier.coverageRange', '90–96', 'summary', 'Coverage in Table 2 runs from 89.8 (Sonnet 5, finance) to 96.4 (DeepSeek, finance); the abstract rounds the endpoints to 90–96. Fair to round?'),
       d('study:frontier.firstPassRange', '87–100', 'summary', 'First pass in Table 2 runs from 86.5 (Opus 5, education) to 100.0 (DeepSeek, finance); the abstract rounds 86.5 up to 87. Fair to round?'),
       d('study:frontier.correctedRange', '92–100', 'summary', 'After one correction, Table 2 runs from 92.2 (Sonnet 5, education) to 100.0; rounded to 92–100.'),
-      d('study:frontier.bindingShare', '69', 'residuals', '108 of 157 residual errors are binding errors: 68.8%, written 69%.'),
       d('study:frontier2.firstPassRange', '95–100', 'summary2', 'Second study first pass runs from 95.4 (Opus 5, education) to 100.0 (all three on finance); rounded to 95–100.'),
-    ] },
-  { anchor: 'What it requires, costs and cannot do', id: 'abstract-costs', marks: [
-      ['ran 49–79% longer in characters', 'ran %[deploy:frontier.overheadRange]{49–79}% longer in characters'],
-    ], evidence: [
-      d('deploy:frontier.overheadRange', '49–79', 'deployment', 'Markup overhead per model: +49% (Opus 5), +66% (Sonnet 5), +79% (DeepSeek); the abstract states the range.'),
     ] },
   { anchor: 'says that the mechanism is within reach of current models', id: 'conclusion-results', marks: [
       ['cover 90–96% of their numbers with claims, and verify 92–100% of those claims after one correction', 'cover %[study:frontier.coverageRange]{90–96}% of their numbers with claims, and verify %[study:frontier.correctedRange]{92–100}% of those claims after one correction'],
@@ -215,6 +257,43 @@ const bound = [
       q('model:deepseek.fin2Final', '100', 'summary2', '100.0 ± 0.0', 'second study, finance, DeepSeek, final%', 'Printed 100.0, written 100.'),
       q('model:deepseek.fin2Coverage', '97.6', 'summary2', '97.6', 'second study, finance, DeepSeek, cover%'),
     ] },
+  { anchor: '67.7 ± 5.5', kind: 'table', id: 'table4', marks: [
+      ['Claude Opus 5 | 20/20 | 67.7 ± 5.5 | 92.6% ± 1.1 | 100% ± 0.0 | 7.3 → 8.0 of 8', '@[model:opus5]{Claude Opus 5} | %[model:opus5.judgWith]{20}/20 | %[model:opus5.judgPerRun]{67.7} ± 5.5 | %[model:opus5.judgFirst]{92.6}% ± 1.1 | %[model:opus5.judgFinal]{100}% ± 0.0 | %[model:opus5.judgSound0]{7.3} → %[model:opus5.judgSound1]{8.0} of 8'],
+      ['Claude Sonnet 5 | 19.3/20 | 42.3 ± 4.2 | 77.8% ± 3.3 | 98.2% ± 1.5 | 3.7 → 7.7 of 8', '@[model:sonnet5]{Claude Sonnet 5} | %[model:sonnet5.judgWith]{19.3}/20 | %[model:sonnet5.judgPerRun]{42.3} ± 4.2 | %[model:sonnet5.judgFirst]{77.8}% ± 3.3 | %[model:sonnet5.judgFinal]{98.2}% ± 1.5 | %[model:sonnet5.judgSound0]{3.7} → %[model:sonnet5.judgSound1]{7.7} of 8'],
+      ['DeepSeek V4 Pro | 18.0/20 | 41.3 ± 1.2 | 100% ± 0.0 | 100% ± 0.0 | 8.0 → 8.0 of 8', '@[model:deepseek]{DeepSeek V4 Pro} | %[model:deepseek.judgWith]{18.0}/20 | %[model:deepseek.judgPerRun]{41.3} ± 1.2 | %[model:deepseek.judgFirst]{100}% ± 0.0 | %[model:deepseek.judgFinal]{100}% ± 0.0 | %[model:deepseek.judgSound0]{8.0} → %[model:deepseek.judgSound1]{8.0} of 8'],
+    ], evidence: [
+      q('model:opus5.judgWith', '20', 'judgment', '20.0 ± 0.0 of 20', 'claude-opus-5, registry, responses with a judgment', 'Printed 20.0, written 20.'),
+      q('model:opus5.judgPerRun', '67.7', 'judgment', '67.7 ± 5.5', 'claude-opus-5, registry, judgments per run'),
+      q('model:opus5.judgFirst', '92.6', 'judgment', '92.6 ± 1.1%', 'claude-opus-5, registry, verified first pass'),
+      q('model:opus5.judgFinal', '100', 'judgment', '100.0 ± 0.0%', 'claude-opus-5, registry, verified after correction', 'Printed 100.0, written 100.'),
+      q('model:opus5.judgSound0', '7.3', 'judgment', '7.3 ± 0.6 → 8.0 ± 0.0 of 8', 'claude-opus-5, registry, boundary and contrary answered soundly'),
+      q('model:opus5.judgSound1', '8.0', 'judgment', '7.3 ± 0.6 → 8.0 ± 0.0 of 8', 'claude-opus-5, registry, boundary and contrary answered soundly'),
+      q('model:sonnet5.judgWith', '19.3', 'judgment', '19.3 ± 0.6 of 20', 'claude-sonnet-5, registry, responses with a judgment'),
+      q('model:sonnet5.judgPerRun', '42.3', 'judgment', '42.3 ± 4.2', 'claude-sonnet-5, registry, judgments per run'),
+      q('model:sonnet5.judgFirst', '77.8', 'judgment', '77.8 ± 3.3%', 'claude-sonnet-5, registry, verified first pass'),
+      q('model:sonnet5.judgFinal', '98.2', 'judgment', '98.2 ± 1.5%', 'claude-sonnet-5, registry, verified after correction'),
+      q('model:sonnet5.judgSound0', '3.7', 'judgment', '3.7 ± 1.5 → 7.7 ± 0.6 of 8', 'claude-sonnet-5, registry, boundary and contrary answered soundly'),
+      q('model:sonnet5.judgSound1', '7.7', 'judgment', '3.7 ± 1.5 → 7.7 ± 0.6 of 8', 'claude-sonnet-5, registry, boundary and contrary answered soundly'),
+      q('model:deepseek.judgWith', '18.0', 'judgment', '18.0 ± 1.0 of 20', 'DeepSeek-V4-Pro, registry, responses with a judgment'),
+      q('model:deepseek.judgPerRun', '41.3', 'judgment', '41.3 ± 1.2', 'DeepSeek-V4-Pro, registry, judgments per run'),
+      q('model:deepseek.judgFirst', '100', 'judgment', '100.0 ± 0.0% | 0.0 ± 0.0 | 0.0 ± 0.0 | 100.0 ± 0.0%', 'DeepSeek-V4-Pro, registry, verified first pass', 'Printed 100.0, written 100.'),
+      q('model:deepseek.judgFinal', '100', 'judgment', '100.0 ± 0.0% | 0.0 ± 0.0 | 0.0 ± 0.0 | 100.0 ± 0.0%', 'DeepSeek-V4-Pro, registry, verified after correction', 'Printed 100.0, written 100.'),
+      q('model:deepseek.judgSound0', '8.0', 'judgment', '8.0 ± 0.0 → 8.0 ± 0.0 of 8 | 0.0 ± 0.0 → 0.0 ± 0.0 of 4', 'DeepSeek-V4-Pro, registry, boundary and contrary answered soundly'),
+      q('model:deepseek.judgSound1', '8.0', 'judgment', '8.0 ± 0.0 → 8.0 ± 0.0 of 8 | 0.0 ± 0.0 → 0.0 ± 0.0 of 4', 'DeepSeek-V4-Pro, registry, boundary and contrary answered soundly'),
+    ] },
+  { anchor: 'models use the construct, never invent a name', id: 'finding4', marks: [
+      ['454 judgments over nine runs, 411 of them verified on the first pass and 425 of 427 after one correction', '%[study:judgment.total]{454} judgments over nine runs, %[study:judgment.verifiedFirst]{411} of them verified on the first pass and %[study:judgment.verifiedFinal]{425} of %[study:judgment.totalFinal]{427} after one correction'],
+      ['draw 18 to 26 qualitative words per run', 'draw %[study:judgment.wordsLow]{18} to %[study:judgment.wordsHigh]{26} qualitative words per run'],
+      ['The 33 first-pass failures', 'The %[study:judgment.falseFirst]{33} first-pass failures'],
+    ], evidence: [
+      q('study:judgment.total', '454', 'judgment', '454 judgments on the first pass, 411 verified, 33 false', 'totals line'),
+      q('study:judgment.verifiedFirst', '411', 'judgment', '454 judgments on the first pass, 411 verified, 33 false', 'totals line'),
+      q('study:judgment.verifiedFinal', '425', 'judgment', 'after one correction 427 judgments, 425 verified, 1 false', 'totals line'),
+      q('study:judgment.totalFinal', '427', 'judgment', 'after one correction 427 judgments, 425 verified, 1 false', 'totals line'),
+      q('study:judgment.falseFirst', '33', 'judgment', '454 judgments on the first pass, 411 verified, 33 false', 'totals line'),
+      q('study:judgment.wordsLow', '18', 'judgment', '18.0 ± 1.7 → 18.0 ± 1.7', 'DeepSeek-V4-Pro, none, qualitative words outside a construct', 'The lowest of the three baselines, 18.0 (DeepSeek); the highest 26.0 (Sonnet 5). The paper writes 18 to 26.'),
+      q('study:judgment.wordsHigh', '26', 'judgment', '26.0 ± 2.6 → 26.0 ± 2.6', 'claude-sonnet-5, none, qualitative words outside a construct', 'The highest of the three baselines.'),
+    ] },
   { anchor: 'told the rule, the models follow it', id: 'finding3', marks: [
       ['rises from 89.3% to 99.4%', 'rises from %[model:sonnet5.eduFirst]{89.3}% to %[model:sonnet5.edu2First]{99.4}%'],
       ['DeepSeek from 97.2% to 99.2% and to 100% after one correction', 'DeepSeek from %[model:deepseek.eduFirst]{97.2}% to %[model:deepseek.edu2First]{99.2}% and to %[model:deepseek.edu2Final]{100}% after one correction'],
@@ -263,17 +342,17 @@ const bound = [
       ['2,185 claims', '%[deploy:frontier.claims]{2185} claims'],
       ['252 stored', '%[deploy:frontier.responses]{252} stored'],
       ['4,826-key', '%[deploy:frontier.storeKeys]{4826}-key'],
-      ['takes 3.4 ms on a laptop — 0.013 ms per response, 1.5 µs per claim', 'takes %[deploy:frontier.msTotalClaimed]{3.4} ms on a laptop — %[deploy:frontier.msPerResponseClaimed]{0.013} ms per response, %[deploy:frontier.usPerClaimClaimed]{1.5} µs per claim'],
+      ['takes 0.66 s on a laptop, mean of 20 passes — 2.6 ms per response, 0.30 ms per claim', 'takes %[deploy:frontier.secTotal]{0.66} s on a laptop, mean of 20 passes — %[deploy:frontier.msPerResponse]{2.6} ms per response, %[deploy:frontier.msPerClaim]{0.30} ms per claim'],
       ['(3.4 to 11.8 s per query', '(%[model:deepseek.latency]{3.4} to %[model:opus5.latency]{11.8} s per query'],
     ], evidence: [
       q('deploy:frontier.claims', '2185', 'deployment', '2185 claims in 252 responses', 'verification line', 'The paper writes 2,185; the comma is typographic.'),
       q('deploy:frontier.responses', '252', 'deployment', '2185 claims in 252 responses', 'verification line'),
       q('deploy:frontier.storeKeys', '4826', 'deployment', '4826 keys', 'fact store line', 'The paper writes 4,826.'),
-      q('deploy:frontier.msTotalClaimed', '3.4', 'deployment', '7527.2 ms per pass over all responses', 'timing line',
-        'CATCH. The paper says verifying all 2,185 claims takes 3.4 ms. The regeneration measured 7527.2 ms per pass over all responses, and 3.4449 ms PER CLAIM. The regenerated per-claim figure is almost exactly the number the paper prints as the total, which suggests a per-claim time was mislabeled as the whole. The paper figure did not reproduce here. Flag it, or tell me how 3.4 ms was measured.'),
-      q('deploy:frontier.msPerResponseClaimed', '0.013', 'deployment', '29.870 ms per response', 'timing line', 'CATCH. Paper: 0.013 ms per response. Regeneration: 29.870 ms per response. Did not reproduce.'),
-      q('deploy:frontier.usPerClaimClaimed', '1.5', 'deployment', '3.4449 ms per claim', 'timing line', 'CATCH. Paper: 1.5 microseconds per claim. Regeneration: 3.4449 milliseconds per claim, about 2300 times slower. Did not reproduce.'),
-      q('model:deepseek.latency', '3.4', 'deployment', 'DeepSeek-V4-Pro-0813: 3.4', 'generation latency'),
+      q('deploy:frontier.secTotal', '0.66', 'deployment', '655.6 ms per pass over all responses (mean of 20)', 'timing line', 'The regeneration measured 655.6 ms; the paper writes 0.66 s. Timing moves between runs, so the paper carries what the last regeneration measured.'),
+      q('deploy:frontier.msPerResponse', '2.6', 'deployment', '2.602 ms per response', 'timing line', 'Rounded from 2.602.'),
+      q('deploy:frontier.msPerClaim', '0.30', 'deployment', '0.3001 ms per claim', 'timing line', 'Rounded from 0.3001. An earlier version printed 1.5 microseconds per claim, which the regeneration did not reproduce; the text now says why.'),
+      q('model:deepseek.latency', '3.4', 'deployment', 'DeepSeek-V4-Pro-0813: 3.4', 'generation latency, s per query'),
+      q('model:sonnet5.latency', '7.9', 'deployment', 'claude-sonnet-5: 7.9', 'generation latency'),
       q('model:opus5.latency', '11.8', 'deployment', 'claude-opus-5: 11.8', 'generation latency'),
     ] },
   { anchor: 'Two overheads are real', id: 'cost-gen', marks: [
@@ -335,7 +414,10 @@ const inferSubject = (pidv, text) => {
   for (const m of marks.slice().reverse()) claim = claim.slice(0, m.at) + '%[' + m.field + ']{' + m.c.span + '}' + claim.slice(m.end);
   for (const m of marks) {
     store['para:' + pidv + '.name'] = 'this paragraph'; store[m.field] = m.c.span;
-    const e = { field: m.field, claimValue: m.c.span, basis: 'derived', note: (m.c.why || '') + QUESTION };
+    // Not derived from anything: the paper's own words, picked out by the model pass. The
+    // basis line says so, and names what kind of claim the pass took it for.
+    const kind = m.c.kind && m.c.kind !== 'other' ? m.c.kind : 'claim';
+    const e = { field: m.field, claimValue: m.c.span, basis: 'derived', basisLabel: 'no source: the paper\'s own words, flagged as a ' + kind + ' by the model pass', note: (m.c.why || '') + QUESTION };
     evidence.push(e);
     const j = judgedByKey[pidv + '\u0001' + m.c.span];
     if (j && migrated) migrated.judgements[evidenceReviewId(pidv, e)] = { verdict: j.verdict, src: pidv, field: m.field, at: j.at, inference: true, span: m.c.span, kind: m.c.kind, why: m.c.why };
@@ -353,21 +435,21 @@ blocks.forEach((b, i) => {
     if (existsSync(file)) { const bytes = readFileSync(file); if (bytes.length < 4 * 1024 * 1024) { const ext = b.file.split('.').pop().toLowerCase(); image = { src: 'data:image/' + (ext === 'jpg' ? 'jpeg' : ext) + ';base64,' + bytes.toString('base64'), alt: b.text.slice(0, 120) }; } }
     const fm = b.text.match(/^(Figure \d+): ?/); const fbody = fm ? b.text.slice(fm[0].length) : b.text;
     const fid = 'f' + pid(b.text).slice(1);
-    const fev = []; let ftext = citify(neutralize(fbody), fid, fev);
+    let fev = []; let ftext = citify(neutralize(fbody), fid, fev); fev = inTextOrder(ftext, fev);
     // The caption is a claim about the figure: one reading, judged against the image.
     const first = ftext.match(/^[^%@?\[\]{}]+?[.:](?=\s|$)/);
     const capField = 'figure:' + fid + '.caption';
     store['figure:' + fid + '.name'] = 'this figure';
     if (first) { store[capField] = first[0]; ftext = '%[' + capField + ']{' + first[0] + '}' + ftext.slice(first[0].length); }
     else store[capField] = fbody;
-    fev.push({ field: capField, claimValue: first ? first[0] : fbody, basis: 'derived', note: 'Does the figure show what this caption says? Look at the image, not the text.' + QUESTION });
+    fev.push({ field: capField, claimValue: first ? first[0] : fbody, basis: 'derived', basisLabel: 'no source: a caption, read against its image', note: 'Does the figure show what this caption says? Look at the image, not the text.' + QUESTION });
     subjects.push({ id: fid, title: '', meta: '', image, capLead: fm ? fm[1] : 'Figure', scan: 'pending', claim: ftext, evidence: fev });
     return;
   }
   const hit = bound.find((x) => !used.has(x.id) && b.text.includes(x.anchor) && (!x.kind || x.kind === b.kind));
   if (hit) {
     used.add(hit.id);
-    const ev = [...hit.evidence]; const claim = citify(mark(neutralize(b.text), hit.marks, hit.id), hit.id, ev);
+    let ev = [...hit.evidence]; const claim = citify(mark(neutralize(b.text), hit.marks, hit.id), hit.id, ev); ev = inTextOrder(claim, ev);
     subjects.push({ id: hit.id, title: b.lead || hit.id, meta: '', pre: b.kind === 'table', claim, evidence: ev });
     return;
   }
@@ -383,7 +465,7 @@ blocks.forEach((b, i) => {
   const cm = b.kind === 'para' ? b.text.match(/^((?:Table|Figure) \d+): ?/) : null;
   if (cm) b.text = b.text.slice(cm[0].length);
   const id = pid(b.text);
-  const cev = []; const ctext = citify(neutralize(b.text), id, cev);
+  let cev = []; const ctext = citify(neutralize(b.text), id, cev); cev = inTextOrder(ctext, cev);
   if (cev.length) { subjects.push({ id, title: b.lead || '', meta: '', pre: b.kind === 'table', capLead: cm ? cm[1] : undefined, claim: ctext, evidence: cev }); return; }
   const inf = inferSubject(id, neutralize(b.text));
   if (inf) { subjects.push({ id, title: b.lead || '', meta: '', pre: b.kind === 'table', claim: inf.claim, evidence: inf.evidence }); return; }
@@ -393,6 +475,11 @@ blocks.forEach((b, i) => {
 });
 for (const x of bound) if (!used.has(x.id)) { console.error('ANCHOR not found:', x.id, x.anchor); process.exit(5); }
 
+for (const s of subjects)
+  for (const e of s.evidence) {
+    const m = /^citation:([^.]+)\.cited_/.exec(e.field || '');
+    if (m && MENTIONS[m[1]] && MENTIONS[m[1]].length > 1) e.mentions = MENTIONS[m[1]].filter((x) => x.id !== s.id);
+  }
 for (const s of subjects)
   for (const e of s.evidence)
     if (e.basis === 'quote') for (const qq of (e.sourceQuotes ? e.sourceQuotes.map((x) => x.sourceQuote) : [e.sourceQuote]))
@@ -416,7 +503,7 @@ for (const [id, text] of Object.entries(snapshots)) manifests[id] = buildManifes
 const committedReview = migrated;
 const sourceTitles = {
   benchmarks: 'benchmark files (regenerated)', dataset: 'dataset metadata', finance: 'finance benchmark', summary: 'frontier study summary (experiments/run-frontier.sh)',
-  residuals: 'frontier residual errors', deployment: 'deployment numbers (deployment-numbers.mjs)', package: 'the npm package (package.json)', summary2: 'second frontier study summary (--tag frontier2)',
+  residuals: 'frontier residual errors', deployment: 'deployment numbers (deployment-numbers.mjs)', verifier: 'the verifier on the paper\'s example (verifier-check.mjs)', judgment: 'judgment study summary (judgment-summary.mjs over judgment-results-*.json)', package: 'the npm package (package.json)', summary2: 'second frontier study summary (--tag frontier2)',
   magesh2025: 'Magesh et al. 2025, arXiv 2405.20362 (abstract page)', liu2026citations: 'Liu et al. 2026, arXiv 2606.21155 (abstract page)',
   omnibus2026: 'Regulation (EU) 2026/1744, EUR-Lex', art50guidelines2026: 'Article 50 guidelines, European Commission',
   'pdpp-students': 'pupil records, stream students, under a PDPP grant',

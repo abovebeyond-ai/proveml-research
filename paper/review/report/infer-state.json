@@ -1372,5 +1372,493 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "pfe90b78ca165": {
+  "at": "2026-09-11T13:57:07.142Z",
+  "claims": [
+   {
+    "span": "391035000000",
+    "kind": "number",
+    "why": "The exact canonical value should be verified against the underlying data/fact store."
+   },
+   {
+    "span": "the model may not round it",
+    "kind": "causal",
+    "why": "Asserts a behavioral consequence of exact string equality that should be confirmed against actual model outputs/eval results."
+   },
+   {
+    "span": "the rounded phrasing that financial and journalistic prose normally uses is a rendering the store declares (Section 2)",
+    "kind": "citation",
+    "why": "Points to Section 2 for the rendering mechanism; should be checked that Section 2 actually defines this."
+   },
+   {
+    "span": "it never enters the checked text",
+    "kind": "absence",
+    "why": "Absence claim about the verification pipeline that should be confirmed against the implementation."
+   },
+   {
+    "span": "the threshold construct is specified, tested and demonstrated below",
+    "kind": "other",
+    "why": "Forward reference claiming later sections cover this; should be checked that those sections actually do."
+   },
+   {
+    "span": "the evaluation prompt asked for entities and facts only",
+    "kind": "historical",
+    "why": "Factual claim about the exact wording/scope of the evaluation prompt used, should be verified against the actual prompt."
+   },
+   {
+    "span": "every rate we report measures those two constructs and says nothing about thresholds",
+    "kind": "comparison",
+    "why": "Strong claim about scope of all reported rates that should be checked against the actual metrics reported."
+   },
+   {
+    "span": "Section 6 gives the full list, these two included",
+    "kind": "other",
+    "why": "Forward reference claiming Section 6 contains a full list including these two limits; should be verified."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p1a6d8e86d730": {
+  "at": "2026-09-11T14:03:52.915Z",
+  "claims": [
+   {
+    "span": "the canonical value, `391035000000`",
+    "kind": "number",
+    "why": "the specific numeric value should be verified against the actual fact store / source data used in the example"
+   },
+   {
+    "span": "the rounded phrasing that financial and journalistic prose normally uses is a rendering the store declares (Section 2)",
+    "kind": "citation",
+    "why": "asserts a specific mechanism is described in Section 2; should confirm that section actually specifies this rendering/declaration behavior"
+   },
+   {
+    "span": "the threshold construct is specified, tested and demonstrated below",
+    "kind": "other",
+    "why": "claims specific later sections cover specification, testing, and demonstration of thresholds; should verify all three actually occur as stated"
+   },
+   {
+    "span": "the evaluation prompt asked for entities and facts only",
+    "kind": "other",
+    "why": "factual claim about the exact scope of the evaluation prompt used; should be verified against the actual prompt text/methodology"
+   },
+   {
+    "span": "Section 6 gives the full list",
+    "kind": "citation",
+    "why": "claims Section 6 contains the complete list of limits; should confirm Section 6 is exhaustive and matches this description"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p7d32be007abb": {
+  "at": "2026-09-11T14:03:59.391Z",
+  "claims": [
+   {
+    "span": "a claim says `391035000000`, never \"$391 billion\"",
+    "kind": "other",
+    "why": "specific example value should be verified as actually appearing in the referenced code/spec rather than illustrative fabrication"
+   },
+   {
+    "span": "the store may declare a display rule per field (`_display`) that the renderer applies to verified values",
+    "kind": "other",
+    "why": "mechanism name and behavior should be confirmed against actual implementation/spec rather than paraphrased from memory"
+   },
+   {
+    "span": "a value the model itself rounded is a mismatch",
+    "kind": "causal",
+    "why": "asserts a specific verifier behavior that should be confirmed against the actual verification logic"
+   },
+   {
+    "span": "prose that quotes the rounded figure outside a claim is unverified prose",
+    "kind": "other",
+    "why": "claims a specific classification outcome in the system that should be checked against actual verifier semantics"
+   },
+   {
+    "span": "a tolerance in the verifier would make \"about 18\" verify against 18.5 and turn the guarantee into an approximation",
+    "kind": "causal",
+    "why": "hypothetical causal claim about verifier design consequences; should be confirmed as an accurate characterization rather than an unverified illustrative argument"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p2ba43513a5bc": {
+  "at": "2026-09-11T14:27:13.074Z",
+  "claims": [
+   {
+    "span": "the claim states the canonical value, `391035000000`",
+    "kind": "number",
+    "why": "the specific numeric value should be confirmed against the actual example/fact store used in the paper rather than assumed correct"
+   },
+   {
+    "span": "the rounded phrasing that financial and journalistic prose normally uses is a rendering the store declares (Section 2)",
+    "kind": "citation",
+    "why": "the cross-reference to Section 2 should be verified to actually describe this rendering/declaration mechanism as characterized here"
+   },
+   {
+    "span": "the threshold construct is specified, tested and demonstrated below",
+    "kind": "citation",
+    "why": "the forward reference should be checked that threshold construct is indeed specified, tested, and demonstrated in the referenced later section, not just some of these"
+   },
+   {
+    "span": "the evaluation prompt asked for entities and facts only",
+    "kind": "other",
+    "why": "this factual claim about what the evaluation prompt actually requested should be verified against the actual prompt text used in the evaluation"
+   },
+   {
+    "span": "says nothing about thresholds",
+    "kind": "absence",
+    "why": "an absence claim that should be confirmed by checking the reported rates and prompt design to ensure no threshold-related evaluation leaked in"
+   },
+   {
+    "span": "Section 6 gives the full list, these two included",
+    "kind": "citation",
+    "why": "the reference to Section 6 should be checked to confirm it actually contains a full list of limits including these two"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pd41cca1244c4": {
+  "at": "2026-09-11T14:30:59.487Z",
+  "claims": [
+   {
+    "span": "verification is exact string equality",
+    "kind": "other",
+    "why": "Characterizes a core mechanism of the system; reviewer should confirm this is accurate and not an oversimplification of the actual verification logic."
+   },
+   {
+    "span": "391035000000",
+    "kind": "number",
+    "why": "Exact numeric literal used as the canonical example value; should be checked that it matches the store/example elsewhere in the paper and is internally consistent with the '$391 billion' rounding shown."
+   },
+   {
+    "span": "the store declares a display rule for the field and the renderer applies it after verification (Section 2)",
+    "kind": "citation",
+    "why": "Cross-reference to Section 2; reviewer should confirm Section 2 actually describes this display-rule mechanism as stated."
+   },
+   {
+    "span": "the threshold construct is specified, tested and demonstrated below",
+    "kind": "citation",
+    "why": "Forward reference claiming later sections cover specification, testing, and demonstration of thresholds; should be verified against those sections."
+   },
+   {
+    "span": "the evaluation prompt asked for entities and facts only",
+    "kind": "other",
+    "why": "Factual claim about the experimental setup/methodology that should be verified against the actual prompt used."
+   },
+   {
+    "span": "every rate we report measures those two constructs and says nothing about thresholds",
+    "kind": "absence",
+    "why": "Strong scope-limiting claim asserting no reported rate reflects threshold behavior; needs verification that no reported metric inadvertently involves thresholds."
+   },
+   {
+    "span": "Section 6 gives the full list, these two included",
+    "kind": "citation",
+    "why": "Cross-reference claiming Section 6 contains a complete list of limits including these two; should be checked against Section 6's actual contents."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pfddae3bf8755": {
+  "at": "2026-09-11T14:47:19.623Z",
+  "claims": [
+   {
+    "span": "verification is exact string equality",
+    "kind": "other",
+    "why": "characterizes the verification mechanism; should match what the spec/implementation actually does"
+   },
+   {
+    "span": "`391035000000`",
+    "kind": "number",
+    "why": "specific numeric literal presented as the store's exact value; should match the actual example/data used"
+   },
+   {
+    "span": "if it writes \"$391 billion\", the claim fails",
+    "kind": "other",
+    "why": "asserts a specific failure behavior for a specific alternate string; should be verified against actual verifier behavior"
+   },
+   {
+    "span": "the store declares a display rule for the field and the renderer applies it after verification (Section 2)",
+    "kind": "citation",
+    "why": "cross-reference to Section 2 should be checked to confirm it actually describes this display-rule mechanism"
+   },
+   {
+    "span": "the threshold construct is specified, tested and demonstrated below",
+    "kind": "citation",
+    "why": "forward-reference claim about later sections; should be confirmed those sections actually do this"
+   },
+   {
+    "span": "the study does not measure it",
+    "kind": "absence",
+    "why": "absence claim about the threshold construct not being measured; needs confirmation it's true across all reported benchmarks/results"
+   },
+   {
+    "span": "the benchmarks carry no threshold registry",
+    "kind": "absence",
+    "why": "absence claim about benchmark design; should be verified against the actual benchmark specifications"
+   },
+   {
+    "span": "their questions name their own cutoffs (\"below 60%\")",
+    "kind": "other",
+    "why": "specific example quoted as representative; should confirm this phrasing/cutoff actually appears in the benchmark questions"
+   },
+   {
+    "span": "the evaluation prompt asks for entities and facts only",
+    "kind": "other",
+    "why": "characterizes the exact scope of the evaluation prompt; should be checked against the actual prompt text"
+   },
+   {
+    "span": "Every rate we report therefore measures those two constructs and says nothing about thresholds",
+    "kind": "causal",
+    "why": "sweeping causal/logical conclusion ('every rate') that depends on the two preceding claims both holding without exception"
+   },
+   {
+    "span": "Section 6 gives the full list, these two included",
+    "kind": "citation",
+    "why": "cross-reference claim that should be confirmed Section 6 actually enumerates these two limits among a fuller list"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pf35058bc9597": {
+  "at": "2026-09-11T14:47:29.981Z",
+  "claims": [
+   {
+    "span": "The benchmarks were built to measure binding and exactness",
+    "kind": "characterization",
+    "why": "asserts design intent of the benchmarks, which should match how they were actually constructed and documented"
+   },
+   {
+    "span": "they carry no threshold registry",
+    "kind": "absence",
+    "why": "absence claim about benchmark contents that should be verifiable by inspecting the benchmark files"
+   },
+   {
+    "span": "their threshold questions name the cutoff themselves for the model to apply to facts",
+    "kind": "other",
+    "why": "specific characterization of question format that should be checked against actual benchmark items"
+   },
+   {
+    "span": "the system prompt asks for entity and fact markup only",
+    "kind": "other",
+    "why": "claim about system prompt content that should match the actual prompt used in the study"
+   },
+   {
+    "span": "No run produced an inference construct",
+    "kind": "number",
+    "why": "empirical result (zero occurrences) that should be confirmed against the actual run logs/outputs"
+   },
+   {
+    "span": "every rate we report is a rate over entities and facts",
+    "kind": "other",
+    "why": "claim about how reported rates were computed, should match the analysis code/methodology"
+   },
+   {
+    "span": "the threshold registry — the part of the design that constrains qualitative language — is exercised by the specification, the test suite and the worked examples, but not by the study",
+    "kind": "comparison",
+    "why": "contrasts what does and doesn't exercise the threshold registry; each of the three claimed exercising sources should be verifiable"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pe12f9220606b": {
+  "at": "2026-09-11T14:53:42.504Z",
+  "claims": [],
+  "state": "clean",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p333289231a9d": {
+  "at": "2026-09-11T14:55:19.119Z",
+  "claims": [
+   {
+    "span": "the model writes the value as the store holds it, `391035000000`, and \"$391 billion\" in its place fails",
+    "kind": "number",
+    "why": "the specific numeric value and the claimed pass/fail behavior should be checked against an actual example run or test case"
+   },
+   {
+    "span": "the store declares a display rule for the field and the renderer applies it after verification (Section 2)",
+    "kind": "citation",
+    "why": "cross-reference to Section 2 should be confirmed to actually describe this display-rule/renderer mechanism"
+   },
+   {
+    "span": "the threshold construct is specified, tested and demonstrated below",
+    "kind": "other",
+    "why": "self-referential claim about later sections; should be confirmed those sections actually specify, test, and demonstrate the threshold construct"
+   },
+   {
+    "span": "the study does not measure it",
+    "kind": "absence",
+    "why": "absence claim that the study never measures the threshold construct should be verified against the full methodology/results"
+   },
+   {
+    "span": "the benchmarks carry no threshold registry",
+    "kind": "absence",
+    "why": "claim that none of the benchmarks used include a threshold registry needs verification against the benchmark definitions"
+   },
+   {
+    "span": "their questions name their own cutoffs (\"below 60%\")",
+    "kind": "number",
+    "why": "specific example cutoff value should be confirmed as representative and accurate of the benchmark questions"
+   },
+   {
+    "span": "the evaluation prompt asks for entities and facts only",
+    "kind": "other",
+    "why": "characterization of the evaluation prompt's scope should be checked against the actual prompt text"
+   },
+   {
+    "span": "Section 6 gives the full list, these two included",
+    "kind": "citation",
+    "why": "cross-reference to Section 6 should be confirmed to actually list these two constructs among a fuller set"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pa2b49dc639d0": {
+  "at": "2026-09-11T16:35:28.161Z",
+  "claims": [
+   {
+    "span": "The two studies above asked for entities and facts.",
+    "kind": "historical",
+    "why": "Characterizes two prior studies not described here; the summary of what they asked for should match those studies' actual design."
+   },
+   {
+    "span": "run in September 2026",
+    "kind": "date",
+    "why": "The exact month/year the study was run should be verified against run logs or timestamps."
+   },
+   {
+    "span": "Twenty questions over the education store",
+    "kind": "number",
+    "why": "The count of questions (20) should match the actual question set used."
+   },
+   {
+    "span": "eight that the data supports",
+    "kind": "number",
+    "why": "Subcount should be verified and should sum correctly with the other three subcounts to twenty."
+   },
+   {
+    "span": "four at a registered bound",
+    "kind": "number",
+    "why": "Subcount should be verified against the actual question categorization."
+   },
+   {
+    "span": "four that presuppose a judgment the data refutes",
+    "kind": "number",
+    "why": "Subcount should be verified against the actual question categorization."
+   },
+   {
+    "span": "four that invite a judgment no registry entry covers",
+    "kind": "number",
+    "why": "Subcount should be verified against the actual question categorization."
+   },
+   {
+    "span": "6ZW at a pass rate of 74",
+    "kind": "number",
+    "why": "The specific pass-rate figure should be checked against the underlying data record."
+   },
+   {
+    "span": "`IS_STRONG` at 75 or more",
+    "kind": "number",
+    "why": "The registered threshold value should be checked against the registry definition."
+   },
+   {
+    "span": "a pupil with 29 absences",
+    "kind": "number",
+    "why": "The specific absence count should be checked against the underlying data record."
+   },
+   {
+    "span": "`IS_GREY_RISK` above 30",
+    "kind": "number",
+    "why": "The registered threshold value should be checked against the registry definition."
+   },
+   {
+    "span": "fourteen names selected by field",
+    "kind": "number",
+    "why": "The count of registry entries used should be verified against the actual registry subset."
+   },
+   {
+    "span": "the prompt is the one `proveml/prompt` generates from the store and that registry",
+    "kind": "other",
+    "why": "Claims a specific tool/function produced the prompt exactly as used; should be verified against actual generation code/output."
+   },
+   {
+    "span": "The same questions ran under the facts-only prompt of the studies above as the baseline.",
+    "kind": "comparison",
+    "why": "Asserts identical questions were reused as a baseline across studies; should be confirmed the question sets truly match."
+   },
+   {
+    "span": "Same three models, three runs each, one correction pass.",
+    "kind": "number",
+    "why": "Specific counts (3 models, 3 runs, 1 correction pass) should be verified against the experimental log, and consistency with prior studies' setup confirmed."
+   },
+   {
+    "span": "Which registered conditions hold for each record in a question's context is computed by the verifier and saved with the run, so the boundary and contrary questions score themselves.",
+    "kind": "causal",
+    "why": "Asserts a mechanism (verifier computes and saves conditions enabling self-scoring) that should be confirmed against the actual implementation."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pfcea852c3b7d": {
+  "at": "2026-09-11T16:35:41.505Z",
+  "claims": [
+   {
+    "span": "20 questions that invite a qualitative assessment",
+    "kind": "number",
+    "why": "Confirm the actual count of judgment-type questions in the study matches 20."
+   },
+   {
+    "span": "mean ± sample sd over three runs",
+    "kind": "number",
+    "why": "Confirm three runs were actually performed and that sample standard deviation (not population sd) is the correct statistic reported."
+   },
+   {
+    "span": "of the eight such questions",
+    "kind": "number",
+    "why": "Confirm exactly eight boundary/contrary questions exist among the 20 and that this subset is correctly identified."
+   },
+   {
+    "span": "those on which no judgment the data refutes survived, before and after the correction",
+    "kind": "comparison",
+    "why": "Confirm this before/after comparison was actually measured and not just asserted, since it implies a specific before-vs-after count or set."
+   },
+   {
+    "span": "No model in any run named a threshold the registry does not hold",
+    "kind": "absence",
+    "why": "Absence claims over all models and all runs require exhaustive verification; confirm no exceptions were found or excluded."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p4d9d3931d526": {
+  "at": "2026-09-11T16:35:46.817Z",
+  "claims": [
+   {
+    "span": "one store, one registry of fourteen names and twenty questions",
+    "kind": "number",
+    "why": "the counts (fourteen names, twenty questions, one store) need to match the actual study configuration described elsewhere in the paper."
+   },
+   {
+    "span": "its baseline is the facts-only prompt rather than free prose",
+    "kind": "comparison",
+    "why": "asserts a specific baseline choice that should be verified against the experimental setup/methods section."
+   },
+   {
+    "span": "How the construct behaves with a large registry, with judgments over derived values, or when the registry itself is contested, is not measured",
+    "kind": "absence",
+    "why": "an absence claim about scope limitations that should be checked for completeness — there could be other untested dimensions, or one of these might actually be partially measured elsewhere."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }

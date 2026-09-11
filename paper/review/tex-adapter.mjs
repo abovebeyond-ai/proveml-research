@@ -75,7 +75,7 @@ const inline = (t) => {
   s = s.replace(/\\(ref|autoref|eqref|pageref)\{([^}]*)\}/g, (m, c, k) => labels[k] || '?');
   s = s.replace(/\\label\{[^}]*\}/g, '');
   s = s.replace(/\\(vspace|hspace|needspace)\{[^}]*\}/g, '');
-  s = s.replace(/\\pm/g, '±').replace(/\\mu/g, 'µ').replace(/\\checkmark/g, '✓').replace(/\{,\}/g, ',');
+  s = s.replace(/\\pm/g, '±').replace(/\\to\b/g, '→').replace(/\\mu/g, 'µ').replace(/\\checkmark/g, '✓').replace(/\{,\}/g, ',');
   s = s.replace(/\\texteuro/g, '€').replace(/\\ldots/g, '…').replace(/\\,/g, ' ').replace(/~/g, ' ');
   s = s.replace(/\\%/g, '%').replace(/\\_/g, '_').replace(/\\&/g, '&').replace(/\\\$/g, '$').replace(/\\#/g, '#');
   s = s.replace(/---/g, '—').replace(/--/g, '–');

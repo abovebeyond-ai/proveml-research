@@ -31,6 +31,8 @@ const RUNS = [
   { id: 'dataset', out: 'dataset-meta.txt', cwd: process.cwd(), cmd: ['python3', 'meta-sources.py', REPO, 'dataset'] },
   { id: 'benchmarks', out: 'benchmarks.txt', cwd: process.cwd(), cmd: ['python3', 'meta-sources.py', REPO, 'benchmarks'] },
   { id: 'finance', out: 'finance.txt', cwd: process.cwd(), cmd: ['python3', 'meta-sources.py', REPO, 'finance'] },
+  { id: 'judgment', out: 'judgment-summary.txt', cwd: REPO + '/experiments', cmd: ['node', 'judgment-summary.mjs'] },
+  { id: 'verifier', out: 'verifier-check.txt', cwd: process.cwd(), cmd: ['node', 'verifier-check.mjs'] },
   { id: 'package', out: 'package.txt', cwd: process.cwd(), cmd: ['python3', '-c', "import json;d=json.load(open(new URL('../../node_modules/proveml/package.json', import.meta.url).pathname));print('name',d.get('name'));print('version',d.get('version'));print('dependencies',json.dumps(d.get('dependencies',{})))"] },
 ];
 

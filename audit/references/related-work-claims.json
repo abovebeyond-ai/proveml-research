@@ -429,21 +429,49 @@
     "authors": "Magesh et al.",
     "year": 2025,
     "name": "The legal-tools study",
-    "claim": "@[citation:magesh2025]{The legal-tools study} finds the leading tools %[rate]{hallucinate between 17% and 33% of the time}, against %[vendorClaims]{vendor claims of near-elimination}.",
+    "claim": "@[citation:magesh2025]{The legal-tools study} opens on %[adoption]{a sharp rise in products incorporating artificial intelligence} in legal practice, a setting where hallucination makes their use %[stakes]{risky in high-stakes domains}; it finds the leading tools %[rate]{hallucinate between 17% and 33% of the time}, against %[vendorClaims]{vendor claims of near-elimination}.",
     "evidence": [
+      {
+        "field": "adoption",
+        "claimValue": "a sharp rise in products incorporating artificial intelligence",
+        "basis": "quote",
+        "sourceQuote": "Legal practice has witnessed a sharp rise in products incorporating artificial intelligence (AI). Such tools are designed to assist with a wide range of core legal tasks, from search and summarization of caselaw to document drafting.",
+        "sourceLocator": "abstract, opening sentences",
+        "paperUse": [
+          "deploying LLMs in consequential settings",
+          "in legal research"
+        ]
+      },
+      {
+        "field": "stakes",
+        "claimValue": "risky in high-stakes domains",
+        "basis": "quote",
+        "sourceQuote": "However, the large language models used in these tools are prone to “hallucinate,” or make up false information, making their use risky in high-stakes domains.",
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "deploying LLMs in consequential settings"
+        ]
+      },
       {
         "field": "rate",
         "claimValue": "hallucinate between 17% and 33% of the time",
         "basis": "quote",
         "sourceQuote": "the AI research tools made by LexisNexis (Lexis+ AI) and Thomson Reuters (Westlaw AI-Assisted Research and Ask Practical Law AI) each hallucinate between 17% and 33% of the time",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "hallucinated on",
+          "17"
+        ]
       },
       {
         "field": "vendorClaims",
         "claimValue": "vendor claims of near-elimination",
         "basis": "quote",
         "sourceQuote": "certain legal research providers have touted methods such as retrieval-augmented generation (RAG) as “eliminating” or “avoid[ing]” hallucinations, or guaranteeing “hallucination-free” legal citations",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "vendor claims"
+        ]
       }
     ]
   },
@@ -1174,21 +1202,38 @@
     "authors": "Onweller, Lumer, Huber, Ramchandani, Subbiah and Feld",
     "year": 2026,
     "name": "Onweller et al.",
-    "claim": "@[citation:citednotverified]{Onweller et al.} evaluate the citations of deep research agents by %[judgment]{enabling human or model evaluators to judge each citation against its source}, scoring them with %[evaluators]{rubric-based LLM-as-a-judge evaluators calibrated through human review}.",
+    "claim": "@[citation:citednotverified]{Onweller et al.} evaluate the citations of deep research agents by %[judgment]{enabling human or model evaluators to judge each citation against its source}, scoring them with %[evaluators]{rubric-based LLM-as-a-judge evaluators calibrated through human review}, and finds that even the strongest frontier models %[factualAccuracy]{achieve only 39-77% factual accuracy}.",
     "evidence": [
       {
         "field": "judgment",
         "claimValue": "enabling human or model evaluators to judge each citation against its source",
         "basis": "quote",
         "sourceQuote": "Unlike methods that verify claims in isolation, our framework closes the loop by retrieving the actual cited content, enabling human or model evaluators to judge each citation against its source.",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "judged by a person"
+        ]
       },
       {
         "field": "evaluators",
         "claimValue": "rubric-based LLM-as-a-judge evaluators calibrated through human review",
         "basis": "quote",
         "sourceQuote": "We benchmark 14 closed-source and open-source LLMs across three evaluation dimensions using rubric-based LLM-as-a-judge evaluators calibrated through human review.",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "judged by a person"
+        ]
+      },
+      {
+        "field": "factualAccuracy",
+        "claimValue": "achieve only 39-77% factual accuracy",
+        "basis": "quote",
+        "sourceQuote": "Our results reveal that even the strongest frontier models maintain link validity above 94% and relevance above 80%, yet achieve only 39-77% factual accuracy, while fewer than half of open-source models successfully generate cited reports in a one-shot setting.",
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "39",
+          "machine can check"
+        ]
       }
     ],
     "note": "arXiv abstract page; cited only for the clause that a citation is judged by a person or a model. The 'about half' figure in the same sentence belongs to liu2023verifiability and alce."
@@ -1263,5 +1308,57 @@
       }
     ],
     "note": "ACL Anthology page, abstract only; the abstract's 'between conditions' is the paper's 'from their baseline', and its 'lower hallucination rates' the paper's 'reduced hallucination'."
+  },
+  {
+    "id": "rao2026",
+    "title": "Detecting and Correcting Reference Hallucinations in Commercial LLMs and Deep Research Agents",
+    "authors": "Rao, Wong and Callison-Burch",
+    "year": 2026,
+    "name": "The citation-URL study",
+    "claim": "@[citation:rao2026]{The citation-URL study} measures citation URLs from commercial models and deep research agents and finds that %[share]{3–13% of citation URLs are hallucinated}: they %[meaning]{have no record in the Wayback Machine and likely never existed}; pooled over the two deep research agents %[deepResearchRate]{the hallucination rate is 10.7%}, against %[searchRate]{4.8% [4.3, 5.2] for the eight search-augmented models}.",
+    "evidence": [
+      {
+        "field": "share",
+        "claimValue": "3–13% of citation URLs are hallucinated",
+        "basis": "quote",
+        "sourceQuote": "We find that 3–13% of citation URLs are hallucinated—they have no record in the Wayback Machine and likely never existed—while 5–18% are non-resolving overall.",
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "commercial models and deep research agents in 2026"
+        ]
+      },
+      {
+        "field": "meaning",
+        "claimValue": "have no record in the Wayback Machine and likely never existed",
+        "basis": "quote",
+        "sourceQuote": "We find that 3–13% of citation URLs are hallucinated—they have no record in the Wayback Machine and likely never existed—while 5–18% are non-resolving overall.",
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "commercial models and deep research agents in 2026"
+        ]
+      },
+      {
+        "field": "deepResearchRate",
+        "claimValue": "the hallucination rate is 10.7%",
+        "basis": "quote",
+        "sourceQuote": "Pooling across the two deep research agents, the hallucination rate is 10.7% [10.2, 11.2] versus 4.8% [4.3, 5.2] for the eight search-augmented models",
+        "sourceLocator": "Section 4, hallucination rates by model class",
+        "paperUse": [
+          "two commercial deep research agents",
+          "machine can check"
+        ]
+      },
+      {
+        "field": "searchRate",
+        "claimValue": "4.8% [4.3, 5.2] for the eight search-augmented models",
+        "basis": "quote",
+        "sourceQuote": "Pooling across the two deep research agents, the hallucination rate is 10.7% [10.2, 11.2] versus 4.8% [4.3, 5.2] for the eight search-augmented models",
+        "sourceLocator": "Section 4, hallucination rates by model class",
+        "paperUse": [
+          "two commercial deep research agents"
+        ]
+      }
+    ],
+    "note": "Archived copy is the arXiv full text (HTML). The two deep research agents are OpenAI Deep Research (3.5% hallucinated URLs) and Gemini 2.5 Pro Deep Research (13.3%); the pooled 10.7% is the paper's own figure for that class."
   }
 ]

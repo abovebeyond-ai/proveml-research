@@ -1,0 +1,13 @@
+model | condition | runs | responses with a judgment | judgments per run (first pass) | verified first pass | false first pass | unregistered first pass | verified after correction | false after correction | qualitative words outside a construct, first → after | boundary and contrary answered soundly, first → after | unregistered questions where a name was invented, first → after
+claude-opus-5 | none | 3 | 0.0 ± 0.0 of 20 | 0.0 ± 0.0 | n/a | 0.0 ± 0.0 | 0.0 ± 0.0 | n/a | 0.0 ± 0.0 | 25.7 ± 0.6 → 25.7 ± 0.6 | 8.0 ± 0.0 → 8.0 ± 0.0 of 8 | 0.0 ± 0.0 → 0.0 ± 0.0 of 4
+claude-opus-5 | registry | 3 | 20.0 ± 0.0 of 20 | 67.7 ± 5.5 | 92.6 ± 1.1% | 1.7 ± 0.6 | 0.0 ± 0.0 | 100.0 ± 0.0% | 0.0 ± 0.0 | 43.0 ± 5.2 → 43.0 ± 4.4 | 7.3 ± 0.6 → 8.0 ± 0.0 of 8 | 0.0 ± 0.0 → 0.0 ± 0.0 of 4
+claude-sonnet-5 | none | 3 | 0.0 ± 0.0 of 20 | 0.0 ± 0.0 | n/a | 0.0 ± 0.0 | 0.0 ± 0.0 | n/a | 0.0 ± 0.0 | 26.0 ± 2.6 → 26.0 ± 2.6 | 8.0 ± 0.0 → 8.0 ± 0.0 of 8 | 0.0 ± 0.0 → 0.0 ± 0.0 of 4
+claude-sonnet-5 | registry | 3 | 19.3 ± 0.6 of 20 | 42.3 ± 4.2 | 77.8 ± 3.3% | 9.3 ± 0.6 | 0.0 ± 0.0 | 98.2 ± 1.5% | 0.3 ± 0.6 | 21.0 ± 0.0 → 23.3 ± 0.6 | 3.7 ± 1.5 → 7.7 ± 0.6 of 8 | 0.0 ± 0.0 → 0.3 ± 0.6 of 4
+DeepSeek-V4-Pro | none | 3 | 0.0 ± 0.0 of 20 | 0.0 ± 0.0 | n/a | 0.0 ± 0.0 | 0.0 ± 0.0 | n/a | 0.0 ± 0.0 | 18.0 ± 1.7 → 18.0 ± 1.7 | 8.0 ± 0.0 → 8.0 ± 0.0 of 8 | 0.0 ± 0.0 → 0.0 ± 0.0 of 4
+DeepSeek-V4-Pro | registry | 3 | 18.0 ± 1.0 of 20 | 41.3 ± 1.2 | 100.0 ± 0.0% | 0.0 ± 0.0 | 0.0 ± 0.0 | 100.0 ± 0.0% | 0.0 ± 0.0 | 8.0 ± 1.7 → 8.0 ± 1.7 | 8.0 ± 0.0 → 8.0 ± 0.0 of 8 | 0.0 ± 0.0 → 0.0 ± 0.0 of 4
+
+all registry runs (9): 454 judgments on the first pass, 411 verified, 33 false; after one correction 427 judgments, 425 verified, 1 false
+
+false judgments on the first pass, by name (all registry runs): IS_SMALL_SAMPLE 10, IS_STRONG 8, IS_RELIABLE_SAMPLE 4, IS_GREY_RISK 3, IS_HIGH_ABSENCE 2, IS_LOW_PASS 2, IS_STRONG(offering:10066.passRate) 1, IS_GREY_RISK(student:20321.absent) 1, IS_HIGH_ABSENCE(student:20376.absent) 1, IS_GREY_RISK(student:20376.absent) 1
+judgments on an entity that did not resolve (registered name, no value): offering:1C 4, offering:6VZ 6
+invented names on the first pass: none

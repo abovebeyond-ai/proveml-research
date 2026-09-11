@@ -1,0 +1,21 @@
+{
+ "id": "judgment",
+ "snapshot": "judgment-summary.txt",
+ "command": "node judgment-summary.mjs",
+ "cwd": "<repo>/experiments",
+ "repo": {
+  "path": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research",
+  "commit": "4d1f22a",
+  "branch": "vera-round-2",
+  "uncommittedChanges": 70
+ },
+ "startedAt": "2026-09-11T16:32:37.970Z",
+ "durationMs": 77,
+ "exitCode": 0,
+ "stdoutSha256": "c464c50be9fb060c3b39f1856c9fc9340205f6dcb104f020a6cde520d404cb29",
+ "stdoutBytes": 2299,
+ "snapshotSha256": "cd790c646d1fd28f8ae36172e71283b731b52e19e7d02b4fca0c65920f120a54",
+ "sameAsSnapshot": false,
+ "stderrTail": [],
+ "node": "v24.13.0"
+}
