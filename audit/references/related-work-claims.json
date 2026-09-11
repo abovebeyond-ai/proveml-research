@@ -1033,35 +1033,52 @@
         "claimValue": "define the scope of transparency obligations for providers and deployers of AI systems under Article 50 of the AI Act",
         "basis": "quote",
         "sourceQuote": "These guidelines define the scope of transparency obligations for providers and deployers of AI systems under Article 50 of the AI Act.",
-        "sourceLocator": "library page, opening description paragraph under the heading"
+        "sourceLocator": "library page, opening description paragraph under the heading",
+        "paperUse": [
+          "regulation now reaches",
+          "two weeks before"
+        ]
       },
       {
         "field": "purpose",
         "claimValue": "offer practical guidance to competent authorities, as well as providers and deployers of AI systems",
         "basis": "quote",
         "sourceQuote": "The Commission adopted these guidelines to offer practical guidance to competent authorities, as well as providers and deployers of AI systems.",
-        "sourceLocator": "library page, third description paragraph"
+        "sourceLocator": "library page, third description paragraph",
+        "paperUse": [
+          "two weeks before"
+        ]
       },
       {
         "field": "relatedGuidance",
         "claimValue": "Guidelines on Transparency of AI-Generated Content",
         "basis": "quote",
         "sourceQuote": "Find further information: An overview - Guidelines on Transparency of AI-Generated Content",
-        "sourceLocator": "library page, \"Find further information\" link list"
+        "sourceLocator": "library page, \"Find further information\" link list",
+        "paperUse": [
+          "regulation now reaches"
+        ]
       },
       {
         "field": "publishedOn",
         "claimValue": "20 July 2026",
         "basis": "quote",
         "sourceQuote": "Publication 20 July 2026",
-        "sourceLocator": "library page, publication date line under the \"POLICY AND LEGISLATION\" label"
+        "sourceLocator": "library page, publication date line under the \"POLICY AND LEGISLATION\" label",
+        "paperUse": [
+          "two weeks before"
+        ]
       },
       {
         "field": "appliesFrom",
         "claimValue": "apply from 2 August 2026",
         "basis": "quote",
         "sourceQuote": "These transparency obligations apply from 2 August 2026.",
-        "sourceLocator": "library page, second description paragraph"
+        "sourceLocator": "library page, second description paragraph",
+        "paperUse": [
+          "regulation now reaches",
+          "two weeks before"
+        ]
       }
     ],
     "note": "Archived copy is the Commission library page; the guidelines PDF under Downloads is not archived. The page says the Commission adopted the guidelines and dates the item as published 20 July 2026, thirteen days before 2 August 2026 (the paper rounds to two weeks). Generated content appears on the page only as the title of a linked overview; the Digital Omnibus deferral in the same sentence rests on omnibus2026."
@@ -1410,5 +1427,85 @@
       }
     ],
     "note": "Archived copy is the arXiv full text (HTML). The two deep research agents are OpenAI Deep Research (3.5% hallucinated URLs) and Gemini 2.5 Pro Deep Research (13.3%); the pooled 10.7% is the paper's own figure for that class."
+  },
+  {
+    "id": "anthropicopus5",
+    "title": "Introducing Claude Opus 5",
+    "authors": "Anthropic",
+    "year": 2026,
+    "name": "the Opus 5 announcement",
+    "claim": "@[citation:anthropicopus5]{the Opus 5 announcement} is dated %[released]{Jul 24, 2026} and describes the model as one that %[standing]{comes close to the frontier intelligence of Claude Fable 5 at half the price}.",
+    "evidence": [
+      {
+        "field": "released",
+        "claimValue": "Jul 24, 2026",
+        "basis": "quote",
+        "sourceQuote": "Introducing Claude Opus 5 Jul 24, 2026 Claude Opus 5 is available today.",
+        "sourceLocator": "announcement, dateline",
+        "paperUse": [
+          "released 24 July 2026"
+        ]
+      },
+      {
+        "field": "standing",
+        "claimValue": "comes close to the frontier intelligence of Claude Fable 5 at half the price",
+        "basis": "quote",
+        "sourceQuote": "It’s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.",
+        "sourceLocator": "announcement, opening paragraph",
+        "paperUse": [
+          "close to the frontier intelligence"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "anthropicsonnet5",
+    "title": "Introducing Claude Sonnet 5",
+    "authors": "Anthropic",
+    "year": 2026,
+    "name": "the Sonnet 5 announcement",
+    "claim": "@[citation:anthropicsonnet5]{the Sonnet 5 announcement} is dated %[released]{Jun 30, 2026}.",
+    "evidence": [
+      {
+        "field": "released",
+        "claimValue": "Jun 30, 2026",
+        "basis": "quote",
+        "sourceQuote": "Introducing Claude Sonnet 5 Jun 30, 2026 Claude Sonnet 5 is built to be the most agentic Sonnet model yet.",
+        "sourceLocator": "announcement, dateline",
+        "paperUse": [
+          "released 30 June 2026"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "deepseekv4pro",
+    "title": "DeepSeek-V4-Pro",
+    "authors": "DeepSeek-AI",
+    "year": 2026,
+    "name": "the DeepSeek-V4-Pro model card",
+    "claim": "@[citation:deepseekv4pro]{the DeepSeek-V4-Pro model card} describes %[size]{DeepSeek-V4-Pro with 1.6T parameters (49B activated)} and states that %[license]{the model weights are licensed under the MIT License}.",
+    "evidence": [
+      {
+        "field": "size",
+        "claimValue": "DeepSeek-V4-Pro with 1.6T parameters (49B activated)",
+        "basis": "quote",
+        "sourceQuote": "two strong Mixture-of-Experts (MoE) language models — DeepSeek-V4-Pro with 1.6T parameters (49B activated) and DeepSeek-V4-Flash with 284B parameters (13B activated)",
+        "sourceLocator": "model card, Introduction",
+        "paperUse": [
+          "1.6T parameters"
+        ]
+      },
+      {
+        "field": "license",
+        "claimValue": "the model weights are licensed under the MIT License",
+        "basis": "quote",
+        "sourceQuote": "This repository and the model weights are licensed under the MIT License .",
+        "sourceLocator": "model card, License",
+        "paperUse": [
+          "MIT licence"
+        ]
+      }
+    ]
   }
 ]

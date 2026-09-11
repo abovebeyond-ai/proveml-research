@@ -4,7 +4,7 @@ For each reference: read what the paper says it does, open the source, and decid
 whether the sentence is a fair description. Metadata is already machine-checked
 (`npm run audit:bibliography`); this is the part that needs a person.
 
-104 references, 53 cited in prose.
+107 references, 56 cited in prose.
 
 ---
 
@@ -41,6 +41,30 @@ Gao, T. and Yen, H. and Yu, J. and Chen, D. · Proc. EMNLP 2023
 What the paper claims (1 place):
 
 - Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents checked out against their sources for only 39--77\% of citations, and 10.7\% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences, a rate the ALCE benchmark reproduced for the best models of the time; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+
+- [ ] checked
+
+## anthropicopus5
+
+**Introducing Claude Opus 5**  
+Anthropic · \urlhttps://www.anthropic.com/news/claude-opus-5, 24 July 2026 2026  
+<https://www.anthropic.com/news/claude-opus-5>
+
+What the paper claims (1 place):
+
+- A reader, or an auditor months later, can take any number back to its record without a model. fig:render-audit figure What We Measured sec:evaluation Setup. Three models current in August 2026: Claude Opus 5, released 24 July 2026 and described by its maker as coming "close to the frontier intelligence of Claude Fable 5 at half the price", and Claude Sonnet 5, released 30 June 2026, both through the Claude Code CLI with default settings; and DeepSeek V4 Pro (DeepSeek-V4-Pro-0813, 1.6T parameters with 49B active, open weights under the MIT licence ), served by Together AI.
+
+- [ ] checked
+
+## anthropicsonnet5
+
+**Introducing Claude Sonnet 5**  
+Anthropic · \urlhttps://www.anthropic.com/news/claude-sonnet-5, 30 June 2026 2026  
+<https://www.anthropic.com/news/claude-sonnet-5>
+
+What the paper claims (1 place):
+
+- A reader, or an auditor months later, can take any number back to its record without a model. fig:render-audit figure What We Measured sec:evaluation Setup. Three models current in August 2026: Claude Opus 5, released 24 July 2026 and described by its maker as coming "close to the frontier intelligence of Claude Fable 5 at half the price", and Claude Sonnet 5, released 30 June 2026, both through the Claude Code CLI with default settings; and DeepSeek V4 Pro (DeepSeek-V4-Pro-0813, 1.6T parameters with 49B active, open weights under the MIT licence ), served by Together AI.
 
 - [ ] checked
 
@@ -174,6 +198,18 @@ Yang, Yuqing and Zhu, Qi and Han, Zhen and Han, Boran and Shen, Zhengyuan and Wa
 What the paper claims (1 place):
 
 - measure the failure class our residual errors belong to --- values miscited from a table the model was shown --- and detect it with a trained critic; ProveML detects it with a lookup.
+
+- [ ] checked
+
+## deepseekv4pro
+
+**DeepSeek-V4-Pro**  
+DeepSeek-AI · Model card, \urlhttps://huggingface.co/deepseek-ai/DeepSeek-V4-Pro 2026  
+<https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro>
+
+What the paper claims (1 place):
+
+- A reader, or an auditor months later, can take any number back to its record without a model. fig:render-audit figure What We Measured sec:evaluation Setup. Three models current in August 2026: Claude Opus 5, released 24 July 2026 and described by its maker as coming "close to the frontier intelligence of Claude Fable 5 at half the price", and Claude Sonnet 5, released 30 June 2026, both through the Claude Code CLI with default settings; and DeepSeek V4 Pro (DeepSeek-V4-Pro-0813, 1.6T parameters with 49B active, open weights under the MIT licence ), served by Together AI.
 
 - [ ] checked
 

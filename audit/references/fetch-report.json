@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T19:55:17.455Z",
+  "generatedAt": "2026-09-11T21:17:29.906Z",
   "results": [
     {
       "id": "ixbrl",
@@ -285,17 +285,36 @@
     },
     {
       "id": "symgen",
-      "status": "fetched",
+      "status": "skipped",
       "sourceUrl": "https://arxiv.org/html/2311.09188",
-      "localPath": "references/raw/symgen.html",
-      "bytes": 2209768
+      "localPath": "references/raw/symgen.html"
     },
     {
       "id": "pcn2025",
-      "status": "fetched",
+      "status": "skipped",
       "sourceUrl": "https://arxiv.org/html/2509.06902",
-      "localPath": "references/raw/pcn2025.html",
-      "bytes": 287957
+      "localPath": "references/raw/pcn2025.html"
+    },
+    {
+      "id": "anthropicopus5",
+      "status": "fetched",
+      "sourceUrl": "https://www.anthropic.com/news/claude-opus-5",
+      "localPath": "references/raw/anthropicopus5.html",
+      "bytes": 355248
+    },
+    {
+      "id": "anthropicsonnet5",
+      "status": "fetched",
+      "sourceUrl": "https://www.anthropic.com/news/claude-sonnet-5",
+      "localPath": "references/raw/anthropicsonnet5.html",
+      "bytes": 264372
+    },
+    {
+      "id": "deepseekv4pro",
+      "status": "fetched",
+      "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "localPath": "references/raw/deepseekv4pro.html",
+      "bytes": 402572
     },
     {
       "id": "euaiact",

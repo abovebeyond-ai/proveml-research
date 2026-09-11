@@ -1,2 +1,5 @@
 2026-09-11T20:50:32Z push 54 | pass recorded 0 | verified 453/453 | blocks 157 | readings 436 | sources 106 | measure (own statements unanswered + judged no) 171+0
 2026-09-11T20:51:22Z push 55 | pass recorded 1 | verified 463/463 | blocks 157 | readings 446 | sources 106 | measure (own statements unanswered + judged no) 181+0
+2026-09-11T21:21:09Z push 56 | pass recorded 4 | verified 477/477 | blocks 160 | readings 460 | sources 109 | measure (own statements unanswered + judged no) 190+0
+caught by resolver (workflow smoke run, protocol 1.1): citation:art50guidelines2026 in the abstract quoted the purpose and the publication date, not the in-force sentence; retagged.
+caught by resolver (workflow smoke run, protocol 1.1): "frontier" had no source, and Anthropic itself places Opus 5 close to, not at, the frontier; the paper now says current, with the three announcements archived and quoted.

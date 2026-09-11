@@ -184,7 +184,7 @@ const bound = [
       q('study:rao.deepResearchRate', '10.7', 'cite-rao2026', 'Pooling across the two deep research agents, the hallucination rate is 10.7% [10.2, 11.2]', 'arXiv 2604.03173, Section 4', 'The paper pools OpenAI Deep Research (3.5%) and Gemini 2.5 Pro Deep Research (13.3%).'),
       q('study:rao.searchRate', '4.8', 'cite-rao2026', 'versus 4.8% [4.3, 5.2] for the eight search-augmented models', 'arXiv 2604.03173, Section 4'),
     ] },
-  { anchor: 'three frontier models of August 2026', id: 'abstract-results', marks: [
+  { anchor: 'three current models of August 2026', id: 'abstract-results', marks: [
       ['cover 90–96% of their numbers', 'cover %[study:frontier.coverageRange]{90–96}% of their numbers'],
       ['verify 87–100% of claims on the first pass and 92–100% after one correction', 'verify %[study:frontier.firstPassRange]{87–100}% of claims on the first pass and %[study:frontier.correctedRange]{92–100}% after one correction'],
       ['lifts the first pass to 95–100%', 'lifts the first pass to %[study:frontier2.firstPassRange]{95–100}%'],
@@ -205,8 +205,9 @@ const bound = [
       d('study:frontier.coverageRange', '90–96', 'summary', 'Coverage endpoints 89.8 and 96.4 in Table 2, rounded.'),
       d('study:frontier.correctedRange', '92–100', 'summary', 'After-correction endpoints 92.2 and 100.0 in Table 2, rounded.'),
     ] },
-  { anchor: 'Three models that were frontier', id: 'setup', marks: [
-      ['Claude Opus 5 and Claude Sonnet 5', '@[model:opus5]{Claude Opus 5} and @[model:sonnet5]{Claude Sonnet 5}'],
+  { anchor: 'Three models current in August 2026', id: 'setup', marks: [
+      ['Claude Opus 5, released 24 July 2026', '@[model:opus5]{Claude Opus 5}, released 24 July 2026'],
+      ['and Claude Sonnet 5, released', 'and @[model:sonnet5]{Claude Sonnet 5}, released'],
       ['and DeepSeek V4 Pro (', 'and @[model:deepseek]{DeepSeek V4 Pro} ('],
       ['28 English prompts over a generated educational dataset of 741 pupils in 95 class offerings', '%[bench:education.prompts]{28} English prompts over a %[bench:education.synthetic]{generated} educational dataset of %[bench:education.pupils]{741} pupils in %[bench:education.offerings]{95} class offerings'],
       ['10 English prompts over real SEC EDGAR FY2025 filings (2 entities, 11 fields)', '%[bench:finance.prompts]{10} English prompts over real SEC EDGAR FY2025 filings (%[bench:finance.entities]{2} entities, %[bench:finance.fields]{11} fields)'],

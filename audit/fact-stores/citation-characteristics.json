@@ -234,5 +234,13 @@
  "citation:symgen.verificationTime": "reducing the average verification time by 20%",
  "citation:symgen.substitution": "A parser then substitutes the symbolic references with their corresponding values in the structured data",
  "citation:euaiact.appliesFrom": "shall apply from 2 August 2026",
- "citation:euaiact.generatedText": "generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated"
+ "citation:euaiact.generatedText": "generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated",
+ "citation:anthropicopus5.name": "the Opus 5 announcement",
+ "citation:anthropicopus5.released": "Jul 24, 2026",
+ "citation:anthropicopus5.standing": "comes close to the frontier intelligence of Claude Fable 5 at half the price",
+ "citation:anthropicsonnet5.name": "the Sonnet 5 announcement",
+ "citation:anthropicsonnet5.released": "Jun 30, 2026",
+ "citation:deepseekv4pro.name": "the DeepSeek-V4-Pro model card",
+ "citation:deepseekv4pro.size": "DeepSeek-V4-Pro with 1.6T parameters (49B activated)",
+ "citation:deepseekv4pro.license": "the model weights are licensed under the MIT License"
 }

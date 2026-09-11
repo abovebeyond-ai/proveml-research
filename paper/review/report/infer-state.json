@@ -2863,5 +2863,163 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "p2bd9cc52803a": {
+  "at": "2026-09-11T21:20:40.237Z",
+  "claims": [
+   {
+    "span": "what we measured in August 2026 on three then-current models",
+    "kind": "date",
+    "why": "confirm the measurement actually took place in August 2026 and not another month"
+   },
+   {
+    "span": "Claude Opus 5, Claude Sonnet 5 and DeepSeek V4 Pro",
+    "kind": "citation",
+    "why": "confirm these are the exact model names/versions used and that no other model was included"
+   },
+   {
+    "span": "then-current models",
+    "kind": "historical",
+    "why": "confirm these were indeed the current/latest versions of these models at the time of measurement"
+   },
+   {
+    "span": "the July 2026 study of smaller models that preceded this one",
+    "kind": "historical",
+    "why": "confirm the July 2026 study actually occurred before this one and involved smaller models"
+   },
+   {
+    "span": "whose results this paper does not reproduce",
+    "kind": "absence",
+    "why": "verify the technical report truly omits reproducing those results rather than summarizing them"
+   },
+   {
+    "span": "the three-valued condition semantics is stated in Appendix B",
+    "kind": "citation",
+    "why": "confirm Appendix B actually contains this content and not a different appendix"
+   },
+   {
+    "span": "Both documents are published in the artifact repository alongside every benchmark, every run the results draw on, and the scripts that regenerate every results table",
+    "kind": "absence",
+    "why": "strong completeness claim ('every') that should be checked against the actual repository contents"
+   },
+   {
+    "span": "https://github.com/abovebeyond-ai/proveml-research",
+    "kind": "citation",
+    "why": "confirm the URL is correct, live, and points to the artifact repository described"
+   },
+   {
+    "span": "https://github.com/abovebeyond-ai/proveml",
+    "kind": "citation",
+    "why": "confirm the URL is correct and matches the described reference implementation"
+   },
+   {
+    "span": "npm: `proveml`",
+    "kind": "citation",
+    "why": "confirm the npm package name and that it is published/available under this exact name"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p18bd483b9956": {
+  "at": "2026-09-11T21:20:47.449Z",
+  "claims": [
+   {
+    "span": "Three current models of August 2026",
+    "kind": "date",
+    "why": "Which three models and why 'current' as of that date needs to be named/sourced."
+   },
+   {
+    "span": "three runs each",
+    "kind": "number",
+    "why": "Run count should be confirmed against the actual experiment configuration."
+   },
+   {
+    "span": "mean ± sample sd over runs",
+    "kind": "other",
+    "why": "Statistical method (sample sd, ddof) should be confirmed matches what's actually computed."
+   },
+   {
+    "span": "per-query verification rate",
+    "kind": "other",
+    "why": "Definition of this metric needs to be confirmed as accurately described."
+   },
+   {
+    "span": "queries on which every claim verified after at most one correction",
+    "kind": "other",
+    "why": "This definition of 'fully verified' should be checked against the actual scoring code/logic."
+   },
+   {
+    "span": "numbers inside a claim as a share of all standalone numbers in the delivered text",
+    "kind": "number",
+    "why": "Coverage metric definition needs verification against the verifier's actual implementation."
+   },
+   {
+    "span": "pooled over runs",
+    "kind": "other",
+    "why": "Should confirm coverage is indeed pooled rather than averaged per-run, since this affects the reported figure."
+   },
+   {
+    "span": "by the verifier's own definition",
+    "kind": "citation",
+    "why": "Vague attribution to 'the verifier' should specify which tool/version and be checked it matches the coverage definition used."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p4aa380ca5e34": {
+  "at": "2026-09-11T21:21:01.347Z",
+  "claims": [
+   {
+    "span": "context slices come from the benchmark's own entity lists, an oracle retriever",
+    "kind": "citation",
+    "why": "characterizes the benchmark's retrieval setup as an oracle; should confirm this matches the benchmark's actual entity-list mechanism"
+   },
+   {
+    "span": "The July study's full-context ablation shows what happens without slicing for small models",
+    "kind": "historical",
+    "why": "references a prior ('July') study's ablation; needs a citation/pointer confirming it exists and shows this"
+   },
+   {
+    "span": "zero constructs on every query",
+    "kind": "number",
+    "why": "specific quantitative outcome (zero) that should be traced to the cited ablation's actual results"
+   },
+   {
+    "span": "the numbers emitted as plain prose instead (technical report)",
+    "kind": "citation",
+    "why": "asserts the technical report presents numbers as prose rather than structured output; should verify against that report"
+   },
+   {
+    "span": "we did not repeat it on the current models",
+    "kind": "absence",
+    "why": "absence claim about not rerunning the ablation; should be confirmed as accurate and not contradicted elsewhere in the paper"
+   },
+   {
+    "span": "its quality in a real deployment is the largest variable this paper does not measure",
+    "kind": "comparison",
+    "why": "superlative claim ('largest variable') that is hard to substantiate without comparing against other unmeasured variables"
+   },
+   {
+    "span": "Treat the reported rates as an upper bound conditional on retrieval",
+    "kind": "other",
+    "why": "normative/causal framing asserting the rates are an upper bound; should be justified given oracle retrieval assumption"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pbf9b0908fdf7": {
+  "at": "2026-09-11T21:21:05.515Z",
+  "claims": [
+   {
+    "span": "DeepSeek-AI (2026). DeepSeek-V4-Pro. Model card, https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro.",
+    "kind": "citation",
+    "why": "The model card URL and 2026 publication date should be verified to confirm the page exists and attributes the model card to that year."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
