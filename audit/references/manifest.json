@@ -374,5 +374,21 @@
     "sourceLabel": "Rao, Wong and Callison-Burch 2026, arXiv (full text)",
     "fetchFormat": "html",
     "localPath": "references/raw/rao2026.html"
+  },
+  {
+    "id": "symgen",
+    "name": "Hennigen et al. 2024, arXiv (full text)",
+    "sourceUrl": "https://arxiv.org/html/2311.09188",
+    "sourceLabel": "Hennigen et al. 2024, arXiv (full text)",
+    "fetchFormat": "html",
+    "localPath": "references/raw/symgen.html"
+  },
+  {
+    "id": "pcn2025",
+    "name": "Solatorio 2025, arXiv (full text)",
+    "sourceUrl": "https://arxiv.org/html/2509.06902",
+    "sourceLabel": "Solatorio 2025, arXiv (full text)",
+    "fetchFormat": "html",
+    "localPath": "references/raw/pcn2025.html"
   }
 ]

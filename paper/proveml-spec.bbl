@@ -229,8 +229,9 @@ H.~Onweller, E.~Lumer, A.~Huber, P.~Ramchandani, V.~K. Subbiah, and C.~Feld.
 
 \bibitem[Oukelmoun et~al.(2026)Oukelmoun, Semmar, and
   De~Chalendar]{halldetect2026}
-Ismail Oukelmoun, Nasredine Semmar, and Ga{\"e}l De~Chalendar.
-\newblock {HallDetect}: Decomposed entailment for factuality checking.
+Achir Oukelmoun, Nasredine Semmar, and Ga{\"e}l De~Chalendar.
+\newblock Decomposed entailment for factuality checking and hallucination
+  detection.
 \newblock arXiv:2608.05823, 2026.
 
 \bibitem[Ozarda(2016)]{ozarda2016}

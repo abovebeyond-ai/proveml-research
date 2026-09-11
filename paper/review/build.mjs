@@ -172,11 +172,11 @@ const bound = [
     ] },
   { anchor: 'The models are meanwhile in production', id: 'intro-production', marks: [
       ['at 70% of surveyed organizations', 'at %[study:aiindex.adoption]{70}% of surveyed organizations'],
-      ['factually accurate for only 39–77% of claims', 'factually accurate for only %[study:onweller.factualAccuracy]{39–77}% of claims'],
-      ['10.7% of the citation URLs of the two commercial deep research agents never existed, against 4.8% for search-augmented models', '%[study:rao.deepResearchRate]{10.7}% of the citation URLs of the two commercial deep research agents never existed, against %[study:rao.searchRate]{4.8}% for search-augmented models'],
+      ['checked out against their sources for only 39–77% of citations', 'checked out against their sources for only %[study:onweller.factualAccuracy]{39–77}% of citations'],
+      ['10.7% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8% for search-augmented models', '%[study:rao.deepResearchRate]{10.7}% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against %[study:rao.searchRate]{4.8}% for search-augmented models'],
     ], evidence: [
       q('study:aiindex.adoption', '70', 'cite-aiindex2026', 'Generative AI is now used in at least one business function at 70% of organizations', 'AI Index 2026, Economy chapter, Finding 5'),
-      q('study:onweller.factualAccuracy', '39–77', 'cite-citednotverified', 'achieve only 39-77% factual accuracy', 'arXiv 2605.06635 abstract', 'The abstract writes "39-77% factual accuracy" of the citations of frontier models; the paper writes "factually accurate for only 39–77% of claims". Fair reading?'),
+      q('study:onweller.factualAccuracy', '39–77', 'cite-citednotverified', 'achieve only 39-77% factual accuracy', 'arXiv 2605.06635 abstract', 'The abstract writes "39-77% factual accuracy", measured per citation against its source; the paper writes "checked out against their sources for only 39–77% of citations".'),
       q('study:rao.deepResearchRate', '10.7', 'cite-rao2026', 'Pooling across the two deep research agents, the hallucination rate is 10.7% [10.2, 11.2]', 'arXiv 2604.03173, Section 4', 'The paper pools OpenAI Deep Research (3.5%) and Gemini 2.5 Pro Deep Research (13.3%).'),
       q('study:rao.searchRate', '4.8', 'cite-rao2026', 'versus 4.8% [4.3, 5.2] for the eight search-augmented models', 'arXiv 2604.03173, Section 4'),
     ] },

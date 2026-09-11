@@ -230,5 +230,8 @@
  "citation:rao2026.share": "3–13% of citation URLs are hallucinated",
  "citation:rao2026.meaning": "have no record in the Wayback Machine and likely never existed",
  "citation:rao2026.deepResearchRate": "the hallucination rate is 10.7%",
- "citation:rao2026.searchRate": "4.8% [4.3, 5.2] for the eight search-augmented models"
+ "citation:rao2026.searchRate": "4.8% [4.3, 5.2] for the eight search-augmented models",
+ "citation:symgen.verificationTime": "reducing the average verification time by 20%",
+ "citation:symgen.substitution": "A parser then substitutes the symbolic references with their corresponding values in the structured data",
+ "citation:euaiact.appliesFrom": "shall apply from 2 August 2026"
 }

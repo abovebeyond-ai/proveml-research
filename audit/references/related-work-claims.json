@@ -34,14 +34,14 @@
         "field": "tokens",
         "claimValue": "claim-bound tokens tied to structured claims",
         "basis": "quote",
-        "sourceQuote": "numeric spans are emitted as \\emph{claim-bound tokens} tied to structured claims",
+        "sourceQuote": "Under PCN, numeric spans are emitted as claim-bound tokens tied to structured claims, and a verifier checks each token under a declared policy",
         "sourceLocator": "abstract"
       },
       {
         "field": "verificationSite",
         "claimValue": "the renderer, not the model",
         "basis": "quote",
-        "sourceQuote": "PCN places verification in the \\emph{renderer}, not the model",
+        "sourceQuote": "Crucially, PCN places verification in the renderer , not the model: only claim-checked numbers are marked as verified",
         "sourceLocator": "abstract"
       },
       {
@@ -57,7 +57,8 @@
         "basis": "absence",
         "note": "The abstract is about numeric fidelity; neither entity scoping nor a judgement vocabulary appears in the published description."
       }
-    ]
+    ],
+    "note": "Archived copy is now the arXiv full text (HTML); the words qualitative and vocabulary do not occur in it, and entity occurs only as a field of the claim tuple, which is the absence the paper relies on."
   },
   {
     "id": "symgen",
@@ -65,7 +66,7 @@
     "authors": "Torroba Hennigen et al.",
     "year": 2024,
     "name": "SymGen",
-    "claim": "@[citation:symgen]{SymGen} has the model %[mechanism]{interleave its regular output text with explicit symbolic references to fields present in some conditioning data}, so a wrong number is impossible and so is reporting one.",
+    "claim": "@[citation:symgen]{SymGen} has the model %[mechanism]{interleave its regular output text with explicit symbolic references to fields present in some conditioning data}, so a wrong number is impossible and so is reporting one; in its human study the annotations were %[verificationTime]{reducing the average verification time by 20%}, and in its method %[substitution]{A parser then substitutes the symbolic references with their corresponding values in the structured data}.",
     "evidence": [
       {
         "field": "mechanism",
@@ -73,8 +74,29 @@
         "basis": "quote",
         "sourceQuote": "prompts an LLM to interleave its regular output text with explicit symbolic references to fields present in some conditioning data",
         "sourceLocator": "abstract"
+      },
+      {
+        "field": "verificationTime",
+        "claimValue": "reducing the average verification time by 20%",
+        "basis": "quote",
+        "sourceQuote": "as perceived by the user and by reducing the average verification time by 20%.",
+        "sourceLocator": "Section 1, Introduction (full text)",
+        "paperUse": [
+          "verification time by 20"
+        ]
+      },
+      {
+        "field": "substitution",
+        "claimValue": "A parser then substitutes the symbolic references with their corresponding values in the structured data",
+        "basis": "quote",
+        "sourceQuote": "A parser then substitutes the symbolic references with their corresponding values in the structured data (e.g., Portland for visitor .",
+        "sourceLocator": "Section 2, Figure 2 caption (full text)",
+        "paperUse": [
+          "a parser substitutes the values"
+        ]
       }
-    ]
+    ],
+    "note": "Archived copy is now the arXiv full text (HTML), so the human-study figure and the substitution step are quoted rather than inferred from the abstract."
   },
   {
     "id": "claimlocked2026",
@@ -481,7 +503,7 @@
     "authors": "European Commission",
     "year": 2026,
     "name": "The EU AI Act",
-    "claim": "@[citation:euaiact]{The EU AI Act}: the Commission %[enforcement]{starts enforcing AI Act rules and new transparency requirements on 2 August}, %[transparencyScope]{requiring certain AI systems to tell users when they are interacting with AI and when content has been generated or altered by it}.",
+    "claim": "@[citation:euaiact]{The EU AI Act}: the Commission %[enforcement]{starts enforcing AI Act rules and new transparency requirements on 2 August}, %[transparencyScope]{requiring certain AI systems to tell users when they are interacting with AI and when content has been generated or altered by it}; the Regulation itself %[appliesFrom]{shall apply from 2 August 2026}.",
     "evidence": [
       {
         "field": "enforcement",
@@ -499,6 +521,17 @@
         "sourceQuote": "new transparency rules will start to apply, requiring certain AI systems to tell users when they are interacting with AI and when content has been generated or altered by it",
         "sourceLocator": "European Commission news item, lead",
         "source": "euaiact-news"
+      },
+      {
+        "field": "appliesFrom",
+        "claimValue": "shall apply from 2 August 2026",
+        "basis": "quote",
+        "sourceQuote": "It shall apply from 2 August 2026.",
+        "sourceLocator": "Regulation (EU) 2024/1689, Article 113",
+        "paperUse": [
+          "applied since 2 August 2026",
+          "regulation now reaches"
+        ]
       }
     ]
   },
@@ -1211,7 +1244,8 @@
         "sourceQuote": "Unlike methods that verify claims in isolation, our framework closes the loop by retrieving the actual cited content, enabling human or model evaluators to judge each citation against its source.",
         "sourceLocator": "abstract",
         "paperUse": [
-          "judged by a person"
+          "judged by a person",
+          "machine can check"
         ]
       },
       {
@@ -1221,7 +1255,8 @@
         "sourceQuote": "We benchmark 14 closed-source and open-source LLMs across three evaluation dimensions using rubric-based LLM-as-a-judge evaluators calibrated through human review.",
         "sourceLocator": "abstract",
         "paperUse": [
-          "judged by a person"
+          "judged by a person",
+          "machine can check"
         ]
       },
       {

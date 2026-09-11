@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T11:24:25.752Z",
+  "generatedAt": "2026-09-11T19:55:17.455Z",
   "results": [
     {
       "id": "ixbrl",
@@ -279,22 +279,29 @@
     },
     {
       "id": "rao2026",
-      "status": "fetched",
+      "status": "skipped",
       "sourceUrl": "https://arxiv.org/html/2604.03173v1",
-      "localPath": "references/raw/rao2026.html",
-      "bytes": 304766
+      "localPath": "references/raw/rao2026.html"
+    },
+    {
+      "id": "symgen",
+      "status": "fetched",
+      "sourceUrl": "https://arxiv.org/html/2311.09188",
+      "localPath": "references/raw/symgen.html",
+      "bytes": 2209768
+    },
+    {
+      "id": "pcn2025",
+      "status": "fetched",
+      "sourceUrl": "https://arxiv.org/html/2509.06902",
+      "localPath": "references/raw/pcn2025.html",
+      "bytes": 287957
     },
     {
       "id": "euaiact",
       "status": "skipped",
       "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/",
       "localPath": "references/raw/euaiact.html"
-    },
-    {
-      "id": "symgen",
-      "status": "skipped",
-      "sourceUrl": "https://arxiv.org/abs/2311.09188",
-      "localPath": "references/raw/symgen.html"
     },
     {
       "id": "kalai2024",
@@ -319,12 +326,6 @@
       "status": "skipped",
       "sourceUrl": "https://doi.org/10.1111/jels.12413",
       "localPath": "references/raw/magesh2025.html"
-    },
-    {
-      "id": "pcn2025",
-      "status": "skipped",
-      "sourceUrl": "https://arxiv.org/abs/2509.06902",
-      "localPath": "references/raw/pcn2025.html"
     },
     {
       "id": "rdfa",

@@ -2373,5 +2373,418 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "pb72e1e6a7f13": {
+  "at": "2026-09-11T19:59:20.084Z",
+  "claims": [
+   {
+    "span": "three models that were frontier in August 2026",
+    "kind": "date",
+    "why": "Claim that these specific models were state-of-the-art/frontier as of that date needs sourcing or justification."
+   },
+   {
+    "span": "Claude Opus 5, Claude Sonnet 5 and DeepSeek V4 Pro",
+    "kind": "citation",
+    "why": "Model names/versions should be confirmed as the exact, correctly attributed model identifiers used in the study."
+   },
+   {
+    "span": "The complete specification (verification algorithm, comparison semantics, rendering) is in the accompanying technical report",
+    "kind": "other",
+    "why": "Claim about what content the technical report contains should be verified against the actual document."
+   },
+   {
+    "span": "the July 2026 study of smaller models that preceded this one",
+    "kind": "date",
+    "why": "Date and sequencing claim about an earlier study should be confirmed."
+   },
+   {
+    "span": "whose results this paper does not reproduce",
+    "kind": "absence",
+    "why": "Absence claim asserting no overlap/reproduction of prior results should be checked for accuracy."
+   },
+   {
+    "span": "the three-valued condition semantics is stated in Appendix B",
+    "kind": "other",
+    "why": "Claim about location of content within the paper's own appendix should be verified against the actual document structure."
+   },
+   {
+    "span": "Both documents are published in the artifact repository alongside every benchmark, every run the results draw on, and the scripts that regenerate every results table",
+    "kind": "other",
+    "why": "Strong completeness claim ('every benchmark', 'every run', 'every results table') should be verified against actual repository contents."
+   },
+   {
+    "span": "https://github.com/abovebeyond-ai/proveml-research",
+    "kind": "citation",
+    "why": "URL should be confirmed to resolve and contain the described artifacts."
+   },
+   {
+    "span": "https://github.com/abovebeyond-ai/proveml",
+    "kind": "citation",
+    "why": "URL should be confirmed to resolve and match the described reference implementation."
+   },
+   {
+    "span": "npm: `proveml`",
+    "kind": "citation",
+    "why": "Package name/registry link should be confirmed as correct and currently published."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p29a3a35b7ccd": {
+  "at": "2026-09-11T19:59:26.932Z",
+  "claims": [
+   {
+    "span": "The verifier checks the display name against the store (`sensor:42.name`)",
+    "kind": "other",
+    "why": "the mechanism claim ('checks the display name against the store') should be confirmed against the actual verifier implementation to ensure this describes current behavior accurately"
+   },
+   {
+    "span": "Binding is structural: which entity a fact binds to follows from the markup by fixed rules, not from a model's reading of the sentence",
+    "kind": "other",
+    "why": "this is a strong design characterization that should be verified against the actual binding implementation/spec to confirm no model-based or heuristic fallback exists"
+   },
+   {
+    "span": "a fact outside binds to the last simple-form entity at the current depth (linear carry-forward)",
+    "kind": "other",
+    "why": "the specific rule description ('last simple-form entity at the current depth') should be checked against the spec/implementation for exactness, since edge cases (e.g., no prior simple-form entity) aren't addressed"
+   },
+   {
+    "span": "closing a scope restores the context that was in force when it opened",
+    "kind": "other",
+    "why": "this restoration behavior is a precise implementation claim that should be verified against the actual scoping code, especially for nested or edge-case scopes"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p2dd3a6682374": {
+  "at": "2026-09-11T19:59:31.564Z",
+  "claims": [
+   {
+    "span": "Core operators cover ordering, equality and ranges.",
+    "kind": "other",
+    "why": "Asserts a specific categorization of operators that should match the actual implemented/documented vocabulary rather than being asserted without pointer to spec or table."
+   },
+   {
+    "span": "Extended operators handle set membership, missing values, and cross-entity comparison.",
+    "kind": "other",
+    "why": "Claims a specific set of extended operator capabilities that needs to be verified against the actual operator vocabulary defined elsewhere in the spec/implementation."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p27abddb45ad6": {
+  "at": "2026-09-11T19:59:41.264Z",
+  "claims": [
+   {
+    "span": "adds to the first the binding rule",
+    "kind": "comparison",
+    "why": "asserts the second prompt is a strict superset of the first; should confirm no other wording changed between prompts"
+   },
+   {
+    "span": "a fact may name its own record when the sentence names two subjects",
+    "kind": "other",
+    "why": "specific rule text should be checked against the actual prompt wording used in the experiment"
+   },
+   {
+    "span": "education: a cutoff from the question is not a fact; finance: no computed differences, ratios or totals",
+    "kind": "other",
+    "why": "specific domain-rule content should be verified against the prompt file rather than paraphrased from memory"
+   },
+   {
+    "span": "one example line showing the explicit-record form",
+    "kind": "other",
+    "why": "claims exactly one example line was added; should confirm the prompt diff matches this count"
+   },
+   {
+    "span": "models, benchmarks, slices, runs, correction budget — is identical to Table 2",
+    "kind": "comparison",
+    "why": "claims full identity of experimental setup with Table 2; should verify no parameter silently differs"
+   },
+   {
+    "span": "identical to Table 2",
+    "kind": "citation",
+    "why": "cross-reference to a specific table should be confirmed to point to the correct table with matching values"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pa0eed8ce7a7a": {
+  "at": "2026-09-11T20:00:11.673Z",
+  "claims": [],
+  "state": "clean",
+  "by": "claude sonnet, build-time pass"
+ },
+ "peb0ee6f7670b": {
+  "at": "2026-09-11T20:00:37.433Z",
+  "claims": [
+   {
+    "span": "FActScore, SAFE, FacTool, HallDetect",
+    "kind": "citation",
+    "why": "Groups four distinct cited systems under one row with identical (all-negative) checkmarks; verify each system truly lacks determinism, structure, inline placement, and inference support."
+   },
+   {
+    "span": "Guardrail and grounding scorers",
+    "kind": "citation",
+    "why": "Unnamed/uncited category with no example systems given; reviewer should confirm which specific tools this represents and that all-negative marks are accurate."
+   },
+   {
+    "span": "Schema validators, decode-time grammars",
+    "kind": "citation",
+    "why": "Claims these have Determ. but not Structured, Inline, or Inference; verify against actual capabilities of cited schema/grammar tools."
+   },
+   {
+    "span": "ClaimDB, Evergreen, VeriFin",
+    "kind": "citation",
+    "why": "Verify these three distinct systems are correctly characterized as 'Data-grounded' with only Partial determinism and Structured support."
+   },
+   {
+    "span": "FullCite",
+    "kind": "citation",
+    "why": "Verify FullCite is accurately reduced to a single ✓ on Inline citation with no determinism, structure, or inference support."
+   },
+   {
+    "span": "iXBRL^*",
+    "kind": "citation",
+    "why": "Asterisk suggests a caveat/footnote not shown in this excerpt; verify iXBRL (a financial tagging standard, not an LLM output method) is fairly compared on this table's axes."
+   },
+   {
+    "span": "SymGen",
+    "kind": "citation",
+    "why": "Verify SymGen's reported profile (✓ Determ., Structured, Inline; – Inference) matches the cited paper's actual claims."
+   },
+   {
+    "span": "PCN",
+    "kind": "citation",
+    "why": "Verify PCN's reported profile (✓ Determ., Structured, Inline; – Inference) matches the cited paper's actual claims."
+   },
+   {
+    "span": "Claim-locked reporting",
+    "kind": "citation",
+    "why": "Verify categorization and the 'Partial' Inference rating are supported by the cited source rather than the authors' own interpretation."
+   },
+   {
+    "span": "FinGround",
+    "kind": "citation",
+    "why": "Verify 'Hybrid post-hoc' categorization and 'Partial' determinism rating accurately reflect the cited system."
+   },
+   {
+    "span": "ProveML | Inline tagging | ✓ | ✓ | ✓ | ✓",
+    "kind": "comparison",
+    "why": "Self-comparison table positions the authors' own method as the only row with full marks on all four criteria; reviewer should check this isn't an overstated or cherry-picked comparison."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pbb0997b02ccc": {
+  "at": "2026-09-11T20:00:44.136Z",
+  "claims": [
+   {
+    "span": "every marked claim carries a verification status and an addressable path",
+    "kind": "other",
+    "why": "assumes the reader already accepts this as an established property of ProveML markup rather than something demonstrated in this paper"
+   },
+   {
+    "span": "a reader — or an auditor months later — can ask of any marked number where it came from and get an answer that does not depend on a model",
+    "kind": "causal",
+    "why": "claims a capability follows from the markup design without pointing to where this is shown or tested"
+   },
+   {
+    "span": "entity references are structural and display text is separate from the identifier the verifier resolves",
+    "kind": "other",
+    "why": "characterizes the syntax's design as fact; should be confirmed against the actual spec/implementation"
+   },
+   {
+    "span": "a deployment can hand the model pseudonymous identifiers and substitute names at display time",
+    "kind": "causal",
+    "why": "asserts a capability enabled by the design that was explicitly not evaluated, so the claim rests on unverified reasoning about the syntax rather than demonstrated behavior"
+   },
+   {
+    "span": "a property the syntax makes available, not one we evaluated",
+    "kind": "absence",
+    "why": "explicit absence claim (feature exists but untested) that a reviewer would want confirmed isn't overstated elsewhere in the paper"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pa5dc1d86d3a3": {
+  "at": "2026-09-11T20:00:59.301Z",
+  "claims": [
+   {
+    "span": "ProveML is designed against models that make mistakes, not against a model trying to mislead",
+    "kind": "other",
+    "why": "States the system's threat model as fact; should be checked against the paper's stated design goals/threat model elsewhere for consistency."
+   },
+   {
+    "span": "A generator that wanted to could choose a threshold that holds and wrap misleading words around it",
+    "kind": "causal",
+    "why": "Asserts a specific attack works against the verifier without demonstrating it; should be confirmed with a concrete example or test."
+   },
+   {
+    "span": "mark only the claims that verify and leave the damaging ones as prose",
+    "kind": "causal",
+    "why": "Claims this evasion strategy succeeds; needs a worked example or reference to confirm it actually bypasses verification."
+   },
+   {
+    "span": "select a true fact that misrepresents the record it came from",
+    "kind": "causal",
+    "why": "Asserts a specific manipulation is possible; should be substantiated with an example showing the record/claim mismatch survives verification."
+   },
+   {
+    "span": "Each of these survives verification",
+    "kind": "comparison",
+    "why": "Strong absolute claim that all three described attacks defeat the verifier; needs evidence or a citation to the verification algorithm's limits rather than assertion."
+   },
+   {
+    "span": "the second wholly only outside strict mode or when the unmarked prose carries no number",
+    "kind": "other",
+    "why": "Precise conditional claim about strict-mode semantics; should be checked against the actual verifier/strict-mode implementation for accuracy."
+   },
+   {
+    "span": "the verifier reads paths and values, not intent",
+    "kind": "causal",
+    "why": "Mechanistic claim about how the verifier operates, which should match the verifier's actual described behavior elsewhere in the paper."
+   },
+   {
+    "span": "We neither measure nor defend against this",
+    "kind": "absence",
+    "why": "Absence claim about the paper's scope; should be verified that no experiment or mitigation for this attack appears anywhere else in the paper."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p80aad11ff1a6": {
+  "at": "2026-09-11T20:01:04.517Z",
+  "claims": [
+   {
+    "span": "5TW, 4B, and 6WE all have low coverage",
+    "kind": "other",
+    "why": "This is presented as an illustrative example claim; confirm it is not meant to be attributed to or drawn from an actual record/dataset, and that the entity labels are consistent with the paper's notation elsewhere."
+   },
+   {
+    "span": "IS_LOW_COVERAGE(offering:a.evalRate)",
+    "kind": "other",
+    "why": "Verify this predicate/field name matches the actual schema/vocabulary used elsewhere in the paper (e.g. consistent field naming, existence of IS_LOW_COVERAGE as a defined predicate)."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p5e66321068b0": {
+  "at": "2026-09-11T20:01:10.440Z",
+  "claims": [
+   {
+    "span": "Three inline constructs",
+    "kind": "number",
+    "why": "the exact count of constructs should match what the spec/implementation actually defines"
+   },
+   {
+    "span": "link every marked claim to an addressable path in a data source",
+    "kind": "other",
+    "why": "the universal claim ('every') should be verified against the actual guarantee the system provides, not just the typical case"
+   },
+   {
+    "span": "Verification is deterministic, with no model in the loop",
+    "kind": "absence",
+    "why": "should be confirmed against the implementation that no model or stochastic component is ever invoked during verification"
+   },
+   {
+    "span": "composable primitives",
+    "kind": "other",
+    "why": "the claim that the threshold registry's primitives compose should be checked against the actual API/spec for compositionality guarantees"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pf38af30702d6": {
+  "at": "2026-09-11T20:01:28.973Z",
+  "claims": [
+   {
+    "span": "The 20 errors span six categories: wrong values (5), wrong entity (3), no context (2), wrong threshold (4), cross-entity swaps (2), and subtle errors including trailing spaces and swapped entity order (4)",
+    "kind": "number",
+    "why": "Category counts must be verified against the actual error set and confirmed to sum to 20."
+   },
+   {
+    "span": "ProveML detected all 20, yielding a 100% error detection rate",
+    "kind": "number",
+    "why": "The 100% detection figure should be checked against the raw experiment output, not just asserted."
+   },
+   {
+    "span": "This is a consequence of deterministic checking",
+    "kind": "causal",
+    "why": "Attributes the 100% result to a mechanism; should be substantiated rather than assumed self-evident."
+   },
+   {
+    "span": "a value that does not exactly match the store, a name the registry does not hold, or a fact with no entity in force is flagged regardless of plausibility",
+    "kind": "other",
+    "why": "Characterizes the verifier's internal logic; should match the actual implementation/spec."
+   },
+   {
+    "span": "it is a conformance test, not a detector benchmark",
+    "kind": "comparison",
+    "why": "Draws a categorical distinction about what the experiment shows that readers may dispute given the 100% claim above."
+   },
+   {
+    "span": "it is one-sided: it measures detection of planted errors, not false positives on correct-but-reformatted values",
+    "kind": "absence",
+    "why": "Claims the experiment does not test false positives; should be confirmed no such measurement was in fact taken."
+   },
+   {
+    "span": "a canonicalization difference such as `18.50` vs.\\ `18.5` is flagged despite numeric equality; see Section 6",
+    "kind": "citation",
+    "why": "Concrete example and cross-reference that should be verified to appear and be explained as stated in Section 6."
+   },
+   {
+    "span": "Robustness to malformed LLM markup is partially addressed by the correction-loop results in Section 3",
+    "kind": "citation",
+    "why": "Cross-reference to Section 3 should be checked for accuracy of what those results actually show."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p3334586eafae": {
+  "at": "2026-09-11T20:01:40.047Z",
+  "claims": [
+   {
+    "span": "The reference implementation is checked against it on the paper's examples, not proven to refine it",
+    "kind": "other",
+    "why": "States exactly what validation was performed (example-checking vs. formal refinement proof); should be confirmed against the actual verification methodology described elsewhere in the paper."
+   },
+   {
+    "span": "a verified implementation, the verifier written in the proof assistant and extracted, would close that gap and is the natural next step",
+    "kind": "causal",
+    "why": "Asserts that extraction from the proof assistant would close the verification gap; this causal claim about what 'closes the gap' should be checked for soundness (extraction typically only preserves correctness relative to the model, not full equivalence to the paper's examples)."
+   },
+   {
+    "span": "the tokenizer would then need modelling too",
+    "kind": "other",
+    "why": "Claims an additional necessary step (tokenizer modelling) for the verified-implementation route; should be confirmed that no other unmodelled components exist besides the tokenizer."
+   },
+   {
+    "span": "that a verified claim is true is a property of the store",
+    "kind": "other",
+    "why": "A characterization of what 'verified' means in this system; should be checked against the formal definitions in the paper (e.g., Section on the store/verifier) for consistency."
+   },
+   {
+    "span": "that the text around it does not mislead is a property of the generating model",
+    "kind": "other",
+    "why": "Attributes non-misleading surrounding text solely to the generating model, excluding the verifier/store; should be confirmed this matches the paper's stated scope of guarantees."
+   },
+   {
+    "span": "Both stay with the limitations in Section 6",
+    "kind": "other",
+    "why": "Cross-reference to Section 6 should be checked to confirm both properties (store truth, non-misleading text) are actually discussed there."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }

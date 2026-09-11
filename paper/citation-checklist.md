@@ -28,7 +28,7 @@ Rashkin, H. and Nikolaev, V. and Lamm, M. and Aroyo, L. and Collins, M. and Das,
 
 What the paper claims (1 place):
 
-- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents checked out against their sources for only 39--77\% of citations, and 10.7\% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences, a rate the ALCE benchmark reproduced for the best models of the time; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -40,7 +40,7 @@ Gao, T. and Yen, H. and Yu, J. and Chen, D. · Proc. EMNLP 2023
 
 What the paper claims (1 place):
 
-- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents checked out against their sources for only 39--77\% of citations, and 10.7\% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences, a rate the ALCE benchmark reproduced for the best models of the time; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -52,7 +52,7 @@ European Commission · Adopted 20 July 2026, \urlhttps://digital-strategy.ec.eur
 
 What the paper claims (1 place):
 
-- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026.
+- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only one of those duties, machine-readable marking by systems already on the market, to 2 December 2026.
 
 - [ ] checked
 
@@ -100,7 +100,7 @@ Cao, Tianyu and Raman, Natraj and Dervovic, Danial and Tan, Chenhao · arXiv:240
 
 What the paper claims (1 place):
 
-- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed; numbers with no basis in the source; and statements whose citations do not support them.
+- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents in 2026 having no archived record and likely never having existed; numbers with no basis in the source; and statements whose citations do not support them.
 
 - [ ] checked
 
@@ -124,8 +124,8 @@ Onweller, H. and Lumer, E. and Huber, A. and Ramchandani, P. and Subbiah, V. K. 
 
 What the paper claims (2 places):
 
-- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
-- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents checked out against their sources for only 39--77\% of citations, and 10.7\% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences, a rate the ALCE benchmark reproduced for the best models of the time; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents checked out against their sources for only 39--77\% of citations, and 10.7\% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences, a rate the ALCE benchmark reproduced for the best models of the time; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -209,7 +209,7 @@ European Parliament and Council of the European Union · Artificial Intelligence
 
 What the paper claims (1 place):
 
-- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026.
+- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only one of those duties, machine-readable marking by systems already on the market, to 2 December 2026.
 
 - [ ] checked
 
@@ -283,7 +283,7 @@ What the paper claims (3 places):
 
 - In short, ProveML is iXBRL for AI-generated text. Financial reporting solved a version of this problem two decades ago by embedding machine-readable tags in human-readable filings, so a regulator can audit a number without reading the prose around it.
 - Related Work sec:related The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it; iXBRL embeds machine-readable tags in financial reports for automated audit.
-- FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
+- FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial; the data-grounded row is Partial for the same reason, since Evergreen compiles claims to queries on an LLM query engine and VeriFin grounds and derives its operands with a model before the Z3 check. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
 
 - [ ] checked
 
@@ -368,8 +368,8 @@ Liu, Nelson F. and Zhang, Tianyi and Liang, Percy · Findings of the Association
 
 What the paper claims (2 places):
 
-- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed; numbers with no basis in the source; and statements whose citations do not support them.
-- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents in 2026 having no archived record and likely never having existed; numbers with no basis in the source; and statements whose citations do not support them.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents checked out against their sources for only 39--77\% of citations, and 10.7\% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences, a rate the ALCE benchmark reproduced for the best models of the time; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -418,7 +418,7 @@ European Parliament and Council of the European Union · Official Journal of the
 
 What the paper claims (1 place):
 
-- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026.
+- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only one of those duties, machine-readable marking by systems already on the market, to 2 December 2026.
 
 - [ ] checked
 
@@ -442,7 +442,7 @@ Solatorio, Aivin V. · arXiv:2509.06902 2025
 
 What the paper claims (1 place):
 
-- Among recent systems, Proof-Carrying Numbers is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs.
+- Among recent systems, Proof-Carrying Numbers is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its paper describes neither entity scoping in prose nor a named vocabulary for qualitative judgments), and SymGen takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs.
 
 - [ ] checked
 
@@ -466,8 +466,8 @@ Rao, Delip and Wong, Eric and Callison-Burch, Chris · arXiv:2604.03173 2026
 
 What the paper claims (2 places):
 
-- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed; numbers with no basis in the source; and statements whose citations do not support them.
-- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents in 2026 having no archived record and likely never having existed; numbers with no basis in the source; and statements whose citations do not support them.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents checked out against their sources for only 39--77\% of citations, and 10.7\% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences, a rate the ALCE benchmark reproduced for the best models of the time; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -515,7 +515,7 @@ Torroba Hennigen, L. and Shen, S. Z. and Nrusimha, A. and Gapp, B. and Sontag, D
 
 What the paper claims (2 places):
 
-- Among recent systems, Proof-Carrying Numbers is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs.
+- Among recent systems, Proof-Carrying Numbers is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its paper describes neither entity scoping in prose nor a named vocabulary for qualitative judgments), and SymGen takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs.
 - We have not measured whether this reduces human verification effort, and the evidence from adjacent systems is mixed: report their user study reduced average verification time by 20\%, while report a 21-participant study in which verification and correction effort did not differ significantly from their baseline, even though their system reduced hallucination.
 
 - [ ] checked
@@ -612,7 +612,7 @@ XBRL International · Recommendation 22 June 2009, \urlhttps://www.xbrl.org/spec
 
 What the paper claims (1 place):
 
-- FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
+- FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial; the data-grounded row is Partial for the same reason, since Evergreen compiles claims to queries on an LLM query engine and VeriFin grounds and derives its operands with a model before the Z3 check. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
 
 - [ ] checked
 
@@ -624,7 +624,7 @@ XBRL International · Recommendation 22 June 2009, \urlhttps://www.xbrl.org/spec
 
 What the paper claims (1 place):
 
-- FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
+- FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial; the data-grounded row is Partial for the same reason, since Evergreen compiles claims to queries on an LLM query engine and VeriFin grounds and derives its operands with a model before the Z3 check. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
 
 - [ ] checked
 
@@ -678,7 +678,7 @@ These appear only in the bibliography — either cite them or drop them:
 - `googlebard2023` — Google AI chatbot Bard offers inaccurate information in company ad
 - `googleground` — Grounding with Google Search
 - `guardrails` — Guardrails: Adding guardrails to large language models
-- `halldetect2026` — HallDetect: Decomposed Entailment for Factuality Checking
+- `halldetect2026` — Decomposed Entailment for Factuality Checking and Hallucination Detection
 - `leesee2004` — Trust in automation: Designing for appropriate reliance
 - `llmon` — LLMON: An LLM-native Markup Language to Leverage Structure and Semantics at the LLM Interface
 - `mata2023` — \textitMata v. Avianca, Inc.
