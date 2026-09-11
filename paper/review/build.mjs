@@ -25,6 +25,7 @@ const snapshots = {
   deployment: read('deployment-numbers.txt'), package: read('package.txt'), summary2: read('frontier2-summary.txt'),
   ...(existsSync('report/sources/raw/verifier-check.txt') ? { verifier: read('verifier-check.txt') } : {}),
   ...(existsSync('report/sources/raw/judgment-summary.txt') ? { judgment: read('judgment-summary.txt') } : {}),
+  ...(existsSync('report/sources/raw/formal-check.txt') ? { formal: read('formal-check.txt') } : {}),
   ...(existsSync('report/sources/raw/pdpp-students.txt') ? { 'pdpp-students': read('pdpp-students.txt') } : {}),
   magesh2025: htmlToText(read('magesh2025-arxiv.html')), liu2026citations: htmlToText(read('liu2026citations.html')), omnibus2026: htmlToText(read('omnibus2026.html')),
   ...auditSnapshots,
@@ -53,6 +54,7 @@ const store = {
   'model:opus5.judgWith': '20', 'model:opus5.judgPerRun': '67.7', 'model:opus5.judgFirst': '92.6', 'model:opus5.judgFinal': '100', 'model:opus5.judgSound0': '7.3', 'model:opus5.judgSound1': '8.0',
   'model:sonnet5.judgWith': '19.3', 'model:sonnet5.judgPerRun': '42.3', 'model:sonnet5.judgFirst': '77.8', 'model:sonnet5.judgFinal': '98.2', 'model:sonnet5.judgSound0': '3.7', 'model:sonnet5.judgSound1': '7.7',
   'model:deepseek.judgWith': '18.0', 'model:deepseek.judgPerRun': '41.3', 'model:deepseek.judgFirst': '100', 'model:deepseek.judgFinal': '100', 'model:deepseek.judgSound0': '8.0', 'model:deepseek.judgSound1': '8.0',
+  'formal:vectors.name': 'the model vectors', 'formal:vectors.agree': '11', 'formal:vectors.total': '11',
   'study:judgment.name': 'the judgment study', 'study:judgment.total': '454', 'study:judgment.verifiedFirst': '411', 'study:judgment.verifiedFinal': '425', 'study:judgment.totalFinal': '427', 'study:judgment.falseFirst': '33', 'study:judgment.wordsLow': '18', 'study:judgment.wordsHigh': '26',
   'verifier:example.name': 'the verifier on the paper\'s example', 'verifier:example.canonical': '391035000000', 'verifier:example.rounded': 'fails', 'verifier:example.netIncome': '93736000000', 'verifier:example.shown': '$93.7 billion',
   'study:onweller.name': 'Onweller et al.', 'study:onweller.factualAccuracy': '39–77',
@@ -161,6 +163,12 @@ const bound = [
     ], evidence: [
       q('verifier:example.canonical', '391035000000', 'verifier', 'claim %[revenue]{391035000000 USD} against company:aapl.revenue = 391035000000: verified, shown as $391.0 billion', 'verifier-check.mjs, canonical value'),
       q('verifier:example.rounded', 'fails', 'verifier', 'claim %[revenue]{$391 billion} against company:aapl.revenue = 391035000000: value-mismatch', 'verifier-check.mjs, rounded value', 'The verifier reports value-mismatch; the paper says fails.'),
+    ] },
+  { anchor: 'This appendix states what the verifier computes', id: 'formal-intro', marks: [
+      ['11 of 11 agree', '%[formal:vectors.agree]{11} of %[formal:vectors.total]{11} agree'],
+    ], evidence: [
+      q('formal:vectors.agree', '11', 'formal', '11 of 11 vectors agree', 'check-vectors.mjs, last line'),
+      q('formal:vectors.total', '11', 'formal', '11 of 11 vectors agree', 'check-vectors.mjs, last line'),
     ] },
   { anchor: 'The models are meanwhile in production', id: 'intro-production', marks: [
       ['at 70% of surveyed organizations', 'at %[study:aiindex.adoption]{70}% of surveyed organizations'],
@@ -503,7 +511,7 @@ for (const [id, text] of Object.entries(snapshots)) manifests[id] = buildManifes
 const committedReview = migrated;
 const sourceTitles = {
   benchmarks: 'benchmark files (regenerated)', dataset: 'dataset metadata', finance: 'finance benchmark', summary: 'frontier study summary (experiments/run-frontier.sh)',
-  residuals: 'frontier residual errors', deployment: 'deployment numbers (deployment-numbers.mjs)', verifier: 'the verifier on the paper\'s example (verifier-check.mjs)', judgment: 'judgment study summary (judgment-summary.mjs over judgment-results-*.json)', package: 'the npm package (package.json)', summary2: 'second frontier study summary (--tag frontier2)',
+  residuals: 'frontier residual errors', deployment: 'deployment numbers (deployment-numbers.mjs)', verifier: 'the verifier on the paper\'s example (verifier-check.mjs)', judgment: 'judgment study summary (judgment-summary.mjs over judgment-results-*.json)', formal: 'the package against the mechanised model (formal/check-vectors.mjs)', package: 'the npm package (package.json)', summary2: 'second frontier study summary (--tag frontier2)',
   magesh2025: 'Magesh et al. 2025, arXiv 2405.20362 (abstract page)', liu2026citations: 'Liu et al. 2026, arXiv 2606.21155 (abstract page)',
   omnibus2026: 'Regulation (EU) 2026/1744, EUR-Lex', art50guidelines2026: 'Article 50 guidelines, European Commission',
   'pdpp-students': 'pupil records, stream students, under a PDPP grant',

@@ -9,7 +9,8 @@
     "audit:references": "node audit/scripts/generate-reference-audit.js",
     "audit:bibliography": "node audit/scripts/verify-bibliography.mjs",
     "audit:checklist": "node audit/scripts/citation-checklist.mjs > paper/citation-checklist.md",
-    "experiment:agent-adoption": "node experiments/test-agent-adoption.js"
+    "experiment:agent-adoption": "node experiments/test-agent-adoption.js",
+    "formal:check": "node formal/check-vectors.mjs"
   },
   "dependencies": {
     "markdown-it": "^14.1.1",

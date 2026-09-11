@@ -1860,5 +1860,325 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "pd63886a132b4": {
+  "at": "2026-09-11T18:53:59.677Z",
+  "claims": [
+   {
+    "span": "(Section 4)",
+    "kind": "citation",
+    "why": "Confirm Section 4 actually contains the description of exact, model-free, cheap verification being referenced here."
+   },
+   {
+    "span": "exact, explainable and effectively free",
+    "kind": "other",
+    "why": "Strong characterization of the verifier's cost and properties; 'effectively free' needs a basis (e.g., complexity/runtime measurement)."
+   },
+   {
+    "span": "`NOT` of an unverifiable condition is still unverifiable",
+    "kind": "other",
+    "why": "Specific implementation behavior claim that should be checked against the actual verifier semantics/code, not just asserted."
+   },
+   {
+    "span": "Without that rule a model could get a claim past the verifier by negating a threshold that does not exist.",
+    "kind": "causal",
+    "why": "Hypothetical exploit claim; should be confirmed as an actual demonstrated failure mode rather than a plausible-sounding scenario."
+   },
+   {
+    "span": "%[passRate]{7} in student:42: should be 5",
+    "kind": "other",
+    "why": "Presented as a literal error message example; should match the verifier's real output format exactly."
+   },
+   {
+    "span": "a text that marks one number and leaves nine in prose would score 100%",
+    "kind": "number",
+    "why": "Specific numeric example (1 vs 9) used to justify the coverage metric; should be checked against the actual verification-rate formula."
+   },
+   {
+    "span": "years, list markers and code excluded",
+    "kind": "other",
+    "why": "Claims a specific set of exclusions in the coverage calculation; should be verified against the actual implementation/spec."
+   },
+   {
+    "span": "Figure 3 shows the pipeline",
+    "kind": "citation",
+    "why": "Figure number reference must match the actual figure in the paper."
+   },
+   {
+    "span": "Figure 4 the audit rendering",
+    "kind": "citation",
+    "why": "Figure number reference must match the actual figure in the paper."
+   },
+   {
+    "span": "The complete grammar is in Appendix C",
+    "kind": "citation",
+    "why": "Appendix letter reference must match the actual appendix location."
+   },
+   {
+    "span": "Appendix B states the semantics and the properties the mechanised model proves for it",
+    "kind": "citation",
+    "why": "Appendix letter and the claim that a mechanised model proves specific properties should be checked against the appendix content."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pad7d787eb943": {
+  "at": "2026-09-11T18:54:06.587Z",
+  "claims": [
+   {
+    "span": "The connectives are Kleene's strong three-valued logic",
+    "kind": "citation",
+    "why": "attribution to Kleene's system should be verified as an accurate characterization, not just a loose paraphrase"
+   },
+   {
+    "span": "f wins a conjunction and u otherwise wins it",
+    "kind": "other",
+    "why": "should be checked against the actual truth table definition for correctness, e.g. t∧u=u is consistent but the phrasing should be verified to match standard Kleene conjunction exactly"
+   },
+   {
+    "span": "t wins a disjunction and u otherwise wins it",
+    "kind": "other",
+    "why": "should be checked against the actual truth table definition for correctness in matching standard Kleene disjunction"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p9529b40a99de": {
+  "at": "2026-09-11T18:54:14.403Z",
+  "claims": [
+   {
+    "span": "the operators are those of Table 1",
+    "kind": "citation",
+    "why": "references an external table not shown in this excerpt; reviewer should confirm Table 1 actually enumerates exactly these operators consistently"
+   },
+   {
+    "span": "with between read as lo v < hi",
+    "kind": "other",
+    "why": "an inequality direction/inclusivity convention that should be confirmed as consistent with Table 1 and the rest of the paper (is it lo ≤ v < hi or strictly less on both sides?)"
+   },
+   {
+    "span": "eq, neq, in on the value's text",
+    "kind": "other",
+    "why": "claims these operators act on text rather than parsed value; should be confirmed this doesn't create inconsistencies with numeric comparison operators defined elsewhere"
+   },
+   {
+    "span": "the model does not choose between integers and decimals",
+    "kind": "other",
+    "why": "an assumption about the number model that should be justified or shown not to cause ambiguity in threshold comparisons"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p57befc480734": {
+  "at": "2026-09-11T18:54:27.270Z",
+  "claims": [],
+  "state": "clean",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pc9abca0637e8": {
+  "at": "2026-09-11T18:54:51.081Z",
+  "claims": [
+   {
+    "span": "The verifier folds over the sequence with the entity in force, a stack of contexts, and the judgments so far by label",
+    "kind": "other",
+    "why": "Asserts a specific algorithm state (fold with these three accumulators); should be checked against the actual verifier implementation."
+   },
+   {
+    "span": "An entity becomes the entity in force and, if scoped, pushes the previous context, none included",
+    "kind": "other",
+    "why": "Precise scoping/push semantics that need confirming against the implementation, including the 'none included' edge case."
+   },
+   {
+    "span": "a close pops it; a fact and a judgment leave the context as it is",
+    "kind": "other",
+    "why": "State-transition claim for each construct type that should match the code, not just the informal description."
+   },
+   {
+    "span": "an entity is verified iff the store's name at its id equals the rendered name",
+    "kind": "other",
+    "why": "Exact verification condition (iff) that must be checked against the verifier's actual logic."
+   },
+   {
+    "span": "a fact is verified iff its value equals the surface value at its path, no context if it is relative and no entity is in force",
+    "kind": "other",
+    "why": "Compound condition with an edge case (relative path, no entity in force) that needs confirming it matches implementation behavior."
+   },
+   {
+    "span": "a judgment is verified, failed or unverifiable as its condition is t, f or u",
+    "kind": "other",
+    "why": "Three-way verdict mapping from condition to outcome should be verified against the actual evaluator."
+   },
+   {
+    "span": "Verification is a function of the document, the store and the registry, and of nothing else",
+    "kind": "absence",
+    "why": "Strong absence claim (no other input affects verification) that needs justification or proof, e.g. ruling out ordering or hidden state effects."
+   },
+   {
+    "span": "determinism needs no proposition",
+    "kind": "causal",
+    "why": "Asserts that purity as a function implies determinism requires no separate proof, which is a logical leap a reviewer may want argued more explicitly."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p261abe1dd2d0": {
+  "at": "2026-09-11T18:54:55.525Z",
+  "claims": [],
+  "state": "clean",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p2bc3753480be": {
+  "at": "2026-09-11T18:55:03.767Z",
+  "claims": [
+   {
+    "span": "There is no tolerance anywhere.",
+    "kind": "absence",
+    "why": "Strong universal claim that should be checked against the actual verifier implementation for any epsilon/tolerance handling (e.g. floating-point comparisons)."
+   },
+   {
+    "span": "verify_fact_sound",
+    "kind": "citation",
+    "why": "Named lemma/function should be confirmed to exist under this name and to actually prove the stated soundness property."
+   },
+   {
+    "span": "verify_entity_sound",
+    "kind": "citation",
+    "why": "Named lemma/function should be confirmed to exist under this name and to actually prove the stated soundness property."
+   },
+   {
+    "span": "if it reports an entity at p with name n as verified, then S(p`.name`) is defined and reads n",
+    "kind": "other",
+    "why": "Formal soundness claim should be checked against the actual definition/proof of verify_entity_sound for accuracy of the stated condition."
+   },
+   {
+    "span": "If the verifier reports a fact at path q with value v as verified, then surf_S(q)=v",
+    "kind": "other",
+    "why": "Formal soundness claim should be checked against the actual definition/proof of verify_fact_sound for accuracy of the stated condition."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "pc22f3476a8ba": {
+  "at": "2026-09-11T18:55:20.870Z",
+  "claims": [
+   {
+    "span": "its name is registered",
+    "kind": "citation",
+    "why": "Asserts a specific formal property proved by evalAtom_tt_registered; should be checked that the lemma actually states this and matches the paper's informal wording."
+   },
+   {
+    "span": "for every operator but is_null, the store holds a value at the bound path",
+    "kind": "absence",
+    "why": "Claims is_null is the sole exception to the value-presence requirement; should confirm no other operators are exempted in evalAtom_tt_holds."
+   },
+   {
+    "span": "the unit the threshold asks for is present and equal",
+    "kind": "citation",
+    "why": "Specific sub-claim of evalAtom_tt_holds about unit matching; should be verified against the actual lemma statement, not just the summary."
+   },
+   {
+    "span": "the operator holds of that value",
+    "kind": "citation",
+    "why": "Asserts the operator's semantic predicate is established by the lemma; should confirm this is precisely what evalAtom_tt_holds proves (e.g., not holds of a derived/coerced value)."
+   },
+   {
+    "span": "`evalAtom_tt_registered`, `evalAtom_tt_holds`",
+    "kind": "citation",
+    "why": "Names of specific lemmas/theorems; reviewer should confirm these identifiers exist in the formalization and actually prove the stated claims."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p3f3c4b035549": {
+  "at": "2026-09-11T18:55:32.172Z",
+  "claims": [
+   {
+    "span": "If R R' then for every condition, its verdict under R is below its verdict under R' in the information order",
+    "kind": "other",
+    "why": "Formal monotonicity claim needs to match the actual theorem statement and proof, not just be asserted in prose."
+   },
+   {
+    "span": "registering more names can decide an unresolved judgment and can never flip a decided one",
+    "kind": "absence",
+    "why": "Claims an impossibility (flipping a decided verdict) that must be backed by the cited lemma, not just informal restatement."
+   },
+   {
+    "span": "a verified judgment stays verified and a failed one stays failed when the registry grows",
+    "kind": "other",
+    "why": "Stability claim should be checked against evalCond_tt_stable/evalCond_ff_stable to ensure it matches their exact preconditions."
+   },
+   {
+    "span": "against the empty registry every judgment is unresolved",
+    "kind": "other",
+    "why": "Boundary-case claim should be verified against evalCond_empty rather than assumed true by intuition."
+   },
+   {
+    "span": "Nothing unresolved contributes to a verdict.",
+    "kind": "other",
+    "why": "Opening assertion states a design property that should be traceable to a specific lemma or definition rather than taken as given."
+   },
+   {
+    "span": "This is the formal content of \"a model cannot make a claim checkable by naming a threshold the deployment never declared\"",
+    "kind": "other",
+    "why": "Interpretive claim that the informal slogan is exactly captured by the formal monotonicity results should be checked for overreach or gaps."
+   },
+   {
+    "span": "`evalCond_mono`, `evalCond_tt_stable`, `evalCond_ff_stable`, `evalCond_empty`",
+    "kind": "citation",
+    "why": "Named lemmas should be confirmed to exist in the formal development and to actually state what the paragraph attributes to them."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p5dfb30611409": {
+  "at": "2026-09-11T18:55:38.093Z",
+  "claims": [
+   {
+    "span": "For a scoped entity around a body that opens and closes no scope of its own, the context after the close equals the context before the entity.",
+    "kind": "other",
+    "why": "This is a specific formal claim about the scope_restores construct's behavior; a reviewer should verify it matches the actual implementation/proof and isn't just asserted without derivation."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p504b53b1082f": {
+  "at": "2026-09-11T18:55:49.450Z",
+  "claims": [
+   {
+    "span": "If S S' then an atom under any operator but is_null is below its verdict under S'",
+    "kind": "other",
+    "why": "States a formal monotonicity property (presumably `evalAtom_store_mono`); should be checked against the actual lemma statement and proof, not just described in prose."
+   },
+   {
+    "span": "an is_null threshold evaluates to t wherever the store is silent, which includes a field the record's type never carries",
+    "kind": "other",
+    "why": "Describes the behavior of `isNull_vacuous`; needs verification that the lemma actually covers fields never carried by the record's type, not just missing values generally."
+   },
+   {
+    "span": "That is the vacuity the judgment study met (Finding 4)",
+    "kind": "citation",
+    "why": "Attributes a specific finding to 'the judgment study' Finding 4; should be confirmed that Finding 4 actually describes this exact vacuity case."
+   },
+   {
+    "span": "`evalAtom_store_mono`, `isNull_vacuous`",
+    "kind": "citation",
+    "why": "Names specific lemma identifiers as evidence; should be confirmed these exist in the codebase/proof artifact and actually establish the claims made in the preceding sentences."
+   },
+   {
+    "span": "the specification should close it by distinguishing a missing field from a null value",
+    "kind": "causal",
+    "why": "Prescriptive claim that this specific distinction would resolve the vacuity; worth confirming it's sufficient and doesn't introduce other gaps."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
