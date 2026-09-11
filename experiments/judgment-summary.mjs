@@ -83,6 +83,12 @@ for (const model of order) for (const cond of ['none', 'registry']) {
     console.log(line.join(' | '));
 }
 
+// The registry every registry run used, by name count (identical across runs).
+{
+    const reg = runs.find((r) => r.condition === 'registry');
+    if (reg) console.log(`\nregistry: ${Object.keys(reg.registry).length} names (${Object.keys(reg.registry).join(', ')})`);
+}
+
 // Totals over every registry run, the figures the paper's finding quotes.
 {
     const reg = runs.filter((r) => r.condition === 'registry');

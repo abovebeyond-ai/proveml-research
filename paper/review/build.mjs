@@ -55,7 +55,7 @@ const store = {
   'model:sonnet5.judgWith': '19.3', 'model:sonnet5.judgPerRun': '42.3', 'model:sonnet5.judgFirst': '77.8', 'model:sonnet5.judgFinal': '98.2', 'model:sonnet5.judgSound0': '3.7', 'model:sonnet5.judgSound1': '7.7',
   'model:deepseek.judgWith': '18.0', 'model:deepseek.judgPerRun': '41.3', 'model:deepseek.judgFirst': '100', 'model:deepseek.judgFinal': '100', 'model:deepseek.judgSound0': '8.0', 'model:deepseek.judgSound1': '8.0',
   'formal:vectors.name': 'the model vectors', 'formal:vectors.agree': '11', 'formal:vectors.total': '11',
-  'study:judgment.name': 'the judgment study', 'study:judgment.total': '454', 'study:judgment.verifiedFirst': '411', 'study:judgment.verifiedFinal': '425', 'study:judgment.totalFinal': '427', 'study:judgment.falseFirst': '33', 'study:judgment.wordsLow': '18', 'study:judgment.wordsHigh': '26',
+  'study:judgment.name': 'the judgment study', 'study:judgment.registryNames': 'fourteen', 'study:judgment.firstRange': '78–100', 'study:judgment.finalRange': '98–100', 'study:judgment.total': '454', 'study:judgment.verifiedFirst': '411', 'study:judgment.verifiedFinal': '425', 'study:judgment.totalFinal': '427', 'study:judgment.falseFirst': '33', 'study:judgment.wordsLow': '18', 'study:judgment.wordsHigh': '26',
   'verifier:example.name': 'the verifier on the paper\'s example', 'verifier:example.canonical': '391035000000', 'verifier:example.rounded': 'fails', 'verifier:example.netIncome': '93736000000', 'verifier:example.shown': '$93.7 billion',
   'study:onweller.name': 'Onweller et al.', 'study:onweller.factualAccuracy': '39–77',
   'study:rao.name': 'Rao et al.', 'study:rao.deepResearchRate': '10.7', 'study:rao.searchRate': '4.8',
@@ -180,15 +180,20 @@ const bound = [
       q('study:rao.deepResearchRate', '10.7', 'cite-rao2026', 'Pooling across the two deep research agents, the hallucination rate is 10.7% [10.2, 11.2]', 'arXiv 2604.03173, Section 4', 'The paper pools OpenAI Deep Research (3.5%) and Gemini 2.5 Pro Deep Research (13.3%).'),
       q('study:rao.searchRate', '4.8', 'cite-rao2026', 'versus 4.8% [4.3, 5.2] for the eight search-augmented models', 'arXiv 2604.03173, Section 4'),
     ] },
-  { anchor: 'We evaluate three frontier models of August 2026', id: 'abstract-results', marks: [
-      ['put 90–96% of their numbers inside a claim', 'put %[study:frontier.coverageRange]{90–96}% of their numbers inside a claim'],
-      ['verify 87–100% of those claims on the first pass and 92–100% after one correction', 'verify %[study:frontier.firstPassRange]{87–100}% of those claims on the first pass and %[study:frontier.correctedRange]{92–100}% after one correction'],
-      ['lifts first-pass verification to 95–100%', 'lifts first-pass verification to %[study:frontier2.firstPassRange]{95–100}%'],
+  { anchor: 'three frontier models of August 2026', id: 'abstract-results', marks: [
+      ['cover 90–96% of their numbers', 'cover %[study:frontier.coverageRange]{90–96}% of their numbers'],
+      ['verify 87–100% of claims on the first pass and 92–100% after one correction', 'verify %[study:frontier.firstPassRange]{87–100}% of claims on the first pass and %[study:frontier.correctedRange]{92–100}% after one correction'],
+      ['lifts the first pass to 95–100%', 'lifts the first pass to %[study:frontier2.firstPassRange]{95–100}%'],
+      ['a registry of fourteen named conditions', 'a registry of %[study:judgment.registryNames]{fourteen} named conditions'],
+      ['verify 78–100% of those judgments on the first pass and 98–100% after one correction', 'verify %[study:judgment.firstRange]{78–100}% of those judgments on the first pass and %[study:judgment.finalRange]{98–100}% after one correction'],
     ], evidence: [
       d('study:frontier.coverageRange', '90–96', 'summary', 'Coverage in Table 2 runs from 89.8 (Sonnet 5, finance) to 96.4 (DeepSeek, finance); the abstract rounds the endpoints to 90–96. Fair to round?'),
       d('study:frontier.firstPassRange', '87–100', 'summary', 'First pass in Table 2 runs from 86.5 (Opus 5, education) to 100.0 (DeepSeek, finance); the abstract rounds 86.5 up to 87. Fair to round?'),
       d('study:frontier.correctedRange', '92–100', 'summary', 'After one correction, Table 2 runs from 92.2 (Sonnet 5, education) to 100.0; rounded to 92–100.'),
       d('study:frontier2.firstPassRange', '95–100', 'summary2', 'Second study first pass runs from 95.4 (Opus 5, education) to 100.0 (all three on finance); rounded to 95–100.'),
+      q('study:judgment.registryNames', 'fourteen', 'judgment', 'registry: 14 names', 'judgment-summary.mjs, registry line', 'Printed 14, written fourteen.'),
+      d('study:judgment.firstRange', '78–100', 'judgment', 'First-pass judgment verification runs from 77.8 (Sonnet 5) to 100.0 (DeepSeek) in Table 4; rounded to 78–100. Fair to round?'),
+      d('study:judgment.finalRange', '98–100', 'judgment', 'After one correction, Table 4 runs from 98.2 (Sonnet 5) to 100.0; rounded to 98–100.'),
     ] },
   { anchor: 'says that the mechanism is within reach of current models', id: 'conclusion-results', marks: [
       ['cover 90–96% of their numbers with claims, and verify 92–100% of those claims after one correction', 'cover %[study:frontier.coverageRange]{90–96}% of their numbers with claims, and verify %[study:frontier.correctedRange]{92–100}% of those claims after one correction'],
