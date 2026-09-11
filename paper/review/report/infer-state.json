@@ -2222,5 +2222,114 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "pa0af0fe11f58": {
+  "at": "2026-09-11T19:10:04.578Z",
+  "claims": [
+   {
+    "span": "three frontier models (Claude Opus 5, Claude Sonnet 5 and DeepSeek V4 Pro)",
+    "kind": "citation",
+    "why": "Model names/versions and the claim they are the three models measured should be checked against the actual experiments run."
+   },
+   {
+    "span": "The complete specification (verification algorithm, comparison semantics, rendering) is in the accompanying technical report",
+    "kind": "other",
+    "why": "Reviewer should confirm the technical report actually contains all three named components as described."
+   },
+   {
+    "span": "an earlier study (July 2026) of three small local models and Claude Haiku, a substitution baseline and two ablations",
+    "kind": "date",
+    "why": "Specific date and enumeration of models/baselines/ablations should be verified against the technical report's actual content."
+   },
+   {
+    "span": "which this paper does not repeat",
+    "kind": "absence",
+    "why": "Claim that the July study's results are absent from this paper should be checked for accuracy (no partial repetition)."
+   },
+   {
+    "span": "the three-valued condition semantics is stated in Appendix B",
+    "kind": "other",
+    "why": "Cross-reference to appendix location should be verified to ensure it matches the actual appendix content and labeling."
+   },
+   {
+    "span": "Both documents are published in the artifact repository alongside every benchmark, run artifact, and the scripts that regenerate every table",
+    "kind": "absence",
+    "why": "Strong completeness claim ('every benchmark', 'every table') should be verified against the actual repository contents."
+   },
+   {
+    "span": "https://github.com/abovebeyond-ai/proveml-research",
+    "kind": "citation",
+    "why": "URL should be checked for correctness and that it currently resolves to the stated artifact repository."
+   },
+   {
+    "span": "https://github.com/abovebeyond-ai/proveml",
+    "kind": "citation",
+    "why": "URL should be checked for correctness and that it currently resolves to the reference implementation repository."
+   },
+   {
+    "span": "npm: `proveml`",
+    "kind": "citation",
+    "why": "Package name/registry reference should be verified as the correct and currently published package."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p2c71412b29a5": {
+  "at": "2026-09-11T19:36:17.064Z",
+  "claims": [
+   {
+    "span": "Claude Opus 5, Claude Sonnet 5 and DeepSeek V4 Pro",
+    "kind": "citation",
+    "why": "Model names/versions should be confirmed as accurate and correctly identify the exact model variants tested"
+   },
+   {
+    "span": "three frontier models",
+    "kind": "other",
+    "why": "Characterizing these three specific models as \"frontier\" is a claim that could be contested or needs justification"
+   },
+   {
+    "span": "the July 2026 study of smaller models that preceded this one",
+    "kind": "date",
+    "why": "The date and the claim that this study preceded the current one should be verified against the technical report"
+   },
+   {
+    "span": "whose results this paper does not reproduce",
+    "kind": "absence",
+    "why": "Absence claim that should be checked against the actual paper contents to confirm no overlap in reported results"
+   },
+   {
+    "span": "the three-valued condition semantics is stated in Appendix B",
+    "kind": "other",
+    "why": "Specific location claim that should be verified to exist as described in the technical report"
+   },
+   {
+    "span": "The complete specification (verification algorithm, comparison semantics, rendering) is in the accompanying technical report",
+    "kind": "other",
+    "why": "Claim of completeness should be checked, i.e., that the technical report truly contains all three listed components in full"
+   },
+   {
+    "span": "Both documents are published in the artifact repository alongside every benchmark, run artifact, and the scripts that regenerate every table",
+    "kind": "absence",
+    "why": "Strong completeness claim (\"every benchmark\", \"every table\") should be verified against the actual repository contents"
+   },
+   {
+    "span": "https://github.com/abovebeyond-ai/proveml-research",
+    "kind": "citation",
+    "why": "URL should be confirmed to resolve and to actually contain the described artifacts"
+   },
+   {
+    "span": "https://github.com/abovebeyond-ai/proveml",
+    "kind": "citation",
+    "why": "URL should be confirmed to resolve and to be the correct reference implementation repository"
+   },
+   {
+    "span": "npm: `proveml`",
+    "kind": "citation",
+    "why": "Package name and its correspondence to the cited repository should be verified on the npm registry"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
