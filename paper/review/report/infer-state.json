@@ -2786,5 +2786,82 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "p9fb754593ebc": {
+  "at": "2026-09-11T20:51:18.275Z",
+  "claims": [
+   {
+    "span": "The first limitation in Section 6 — verified means consistent with the store, not true",
+    "kind": "citation",
+    "why": "Characterizes content of a specific section of the same paper; confirm Section 6 actually states this as its first limitation."
+   },
+   {
+    "span": "the implementation gives a deployment a discipline for it rather than leaving it to trust",
+    "kind": "other",
+    "why": "Characterizes what the implementation does; should be verified against actual system behavior/documentation."
+   },
+   {
+    "span": "In the review layer (`proveml/review`), every store value carries its evidence: a quote checked verbatim against an archived snapshot of its source, a declared derivation, or a declared absence",
+    "kind": "other",
+    "why": "Specific claim about module design and universal ('every') coverage that should be checked against the actual code."
+   },
+   {
+    "span": "one cannot quote a source not having something",
+    "kind": "causal",
+    "why": "General causal/logical assertion used to justify design choice; worth confirming it reflects actual reasoning/documentation rather than post-hoc rationalization."
+   },
+   {
+    "span": "The machine re-checks those links at build time and refuses to emit the review page when any fails",
+    "kind": "other",
+    "why": "Specific behavioral claim about the build system that should be verified against the actual implementation."
+   },
+   {
+    "span": "each judgement is saved under a hash of exactly what it judged, so it expires the moment the evidence changes and review shrinks to the diff",
+    "kind": "causal",
+    "why": "Mechanism and its causal consequence should be confirmed against actual hashing/expiry implementation."
+   },
+   {
+    "span": "The gate is awaitable in a pipeline (`proveml review –await` exits nonzero while readings are unjudged or flagged)",
+    "kind": "other",
+    "why": "Specific CLI command and exit-code behavior should be verified to exist and behave as described."
+   },
+   {
+    "span": "how a sign-off is attested is an adapter, so a deployment can bind it to a name, a key signature, or a ledger anchor",
+    "kind": "other",
+    "why": "Claim about adapter flexibility/architecture that should be checked against actual supported attestation methods."
+   },
+   {
+    "span": "Vera review protocol 1.0, https://github.com/abovebeyond-ai/vera/blob/main/docs/review-protocol.md",
+    "kind": "citation",
+    "why": "Cited external resource; URL and version number should be confirmed to exist and match content described."
+   },
+   {
+    "span": "bind, flag, resolve, read, judge, with a written rubric for the resolve step and a per-round measure that ends the loop at zero",
+    "kind": "citation",
+    "why": "Characterizes the contents of the cited protocol document; should be checked against the actual document."
+   },
+   {
+    "span": "every number is bound to the file that regenerates it, every citation to a verbatim passage in an archived copy, every unsourced statement is flagged by a model pass and resolved against the repository",
+    "kind": "other",
+    "why": "Strong universal ('every') claims about the paper's own self-application that should be verified as actually true for this document."
+   },
+   {
+    "span": "The round of 11 September 2026 went over 229 readings that asked for a judgment and left one false statement and twelve rewordings behind it",
+    "kind": "number",
+    "why": "Specific date and counts (229, one, twelve) should be verified against the actual review round's recorded results."
+   },
+   {
+    "span": "the next pass recorded nothing",
+    "kind": "other",
+    "why": "Claim about a subsequent review pass finding zero issues should be confirmed against logs/records."
+   },
+   {
+    "span": "this first round was resolved by the author and agents the author ran, and an independent reviewer has not yet judged a reading",
+    "kind": "historical",
+    "why": "Status/provenance claim about who performed the review that should be confirmed as accurate and current."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
