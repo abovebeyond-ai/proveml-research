@@ -122,7 +122,11 @@ const citify = (text, blockId, evidence) => {
     const low = sent.toLowerCase();
     const tagged = all.filter((e) => Array.isArray(e.paperUse) && e.paperUse.some((w) => low.includes(String(w).toLowerCase())));
     const chosen = tagged.length ? tagged : all.filter((e) => !e.paperUse).length ? all.filter((e) => !e.paperUse) : all;
-    const quotes = chosen.filter((e, i) => chosen.findIndex((x) => x.sourceQuote === e.sourceQuote) === i);   // two values from one passage: one passage shown
+    // One reading quotes one archive. Where the tagged quotes span the cited work and a companion
+    // document (the Regulation and the Commission's announcement of it), the cited work wins.
+    const own = chosen.filter((e) => !e.source || e.source === key);
+    const oneSource = own.length ? own : chosen.filter((e) => e.source === chosen[0].source);
+    const quotes = oneSource.filter((e, i) => oneSource.findIndex((x) => x.sourceQuote === e.sourceQuote) === i);   // two values from one passage: one passage shown
     const absences = a ? a.evidence.filter((e) => e.basis === 'absence' && e.note).map((e) => e.note) : [];
     if (quotes.length) {
       evidence.push({ field, claimValue: label, basis: 'quote', source: 'cite-' + (quotes[0].source || key),
