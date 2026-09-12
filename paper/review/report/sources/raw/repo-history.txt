@@ -1,4 +1,0 @@
-2026-07-31 cbed76e ProveML: onderzoeksartefacten
-2026-08-01 94e91f6 Onderwijsresultaten opnieuw gemeten op de gegenereerde dataset
-2026-08-29 6e06a1e Hygiëne: build-artefacten uit git, geen stille terugval op de ingetrokken dataset
-gitignore: # Runs against the withdrawn education dataset: kept locally for reference, / experiments/archive/
