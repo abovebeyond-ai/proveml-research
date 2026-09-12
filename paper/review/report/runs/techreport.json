@@ -1,0 +1,21 @@
+{
+ "id": "techreport",
+ "snapshot": "technical-report.txt",
+ "command": "node -e process.stdout.write(require('fs').readFileSync('paper/proveml-technical-report.tex','utf8'))",
+ "cwd": "<repo>",
+ "repo": {
+  "path": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research",
+  "commit": "b4be007",
+  "branch": "intro-registry-theorem",
+  "uncommittedChanges": 8
+ },
+ "startedAt": "2026-09-12T12:33:27.591Z",
+ "durationMs": 28,
+ "exitCode": 0,
+ "stdoutSha256": "60992d3be57a1195e140d67d3735dca1fec2d18f16e64863798099a733320bba",
+ "stdoutBytes": 122112,
+ "snapshotSha256": null,
+ "sameAsSnapshot": false,
+ "stderrTail": [],
+ "node": "v24.13.0"
+}
