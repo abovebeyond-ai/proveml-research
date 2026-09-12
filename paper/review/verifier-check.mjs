@@ -20,3 +20,10 @@ line('@[company:aapl]{Apple Inc.} reported revenue of %[revenue]{$391 billion}.'
 line('@[company:aapl]{Apple Inc.} reported net income of %[netIncome]{93736000000 USD}.', 'net income');
 const { html } = renderProveml('@[company:aapl]{Apple Inc.} reported revenue of %[revenue]{391035000000 USD}.', store);
 console.log(`render: the reader sees ${/>(\$[0-9.]+ billion)</.exec(html)?.[1] || 'no display form'}, the audit keeps 391035000000 USD`);
+// Coverage: which numbers count as inside a claim. Facts do; a number in an entity's display name
+// or in prose does not; years, list markers and code are left out of the denominator.
+{
+  const md = '@[company:aapl]{Apple Inc.} reported revenue of %[revenue]{391035000000 USD} across 2 segments in 2025.';
+  const r = verifyProveml(md, store);
+  console.log(`coverage: one fact claim with a digit and one prose number (2 segments; the year 2025 excluded): marked ${r.coverage.marked} (numbers inside a fact claim), unmarked ${r.coverage.unmarked} (numbers in prose), rate ${r.coverage.rate}`);
+}

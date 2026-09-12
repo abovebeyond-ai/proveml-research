@@ -7750,5 +7750,186 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "pf36b18196df2": {
+  "at": "2026-09-12T11:21:40.222Z",
+  "claims": [
+   {
+    "span": "Organizations deploy LLMs widely (Stanford HAI, 2026)",
+    "kind": "citation",
+    "why": "Need to confirm the Stanford HAI 2026 report actually supports 'widely' and check the exact publication/year."
+   },
+   {
+    "span": "in consequential settings (Magesh et al., 2025)",
+    "kind": "citation",
+    "why": "Should verify Magesh et al. 2025 actually characterizes LLM deployment as 'consequential settings' and that the citation year/venue is correct."
+   },
+   {
+    "span": "regulation now reaches AI-generated content (European Parliament and Council of the European Union, 2024; European Commission, 2026)",
+    "kind": "citation",
+    "why": "Should confirm these are the correct instruments (e.g. EU AI Act 2024) and that a 2026 European Commission document exists and says what's claimed."
+   },
+   {
+    "span": "the link generated text carries between a claim and the data behind it, a citation, is not one a machine can check against the claim (Onweller et al., 2026; Rao et al., 2026)",
+    "kind": "citation",
+    "why": "Need to confirm both cited works actually make this specific claim about machine-checkability of citations."
+   },
+   {
+    "span": "ProveML is a Markdown extension of three inline constructs",
+    "kind": "number",
+    "why": "Confirm the spec currently defines exactly three inline constructs, not more or fewer."
+   },
+   {
+    "span": "milliseconds per response",
+    "kind": "number",
+    "why": "Unsourced performance number; should be backed by a benchmark or measurement in the paper."
+   },
+   {
+    "span": "two guarantees are machine-checked",
+    "kind": "number",
+    "why": "Confirm exactly two guarantees are proven/machine-checked and not more, matching the formal results section."
+   },
+   {
+    "span": "a verified fact equals the store's value",
+    "kind": "other",
+    "why": "Characterization of the formal guarantee should match the actual theorem statement."
+   },
+   {
+    "span": "a judgment is verified only by a threshold the registry holds",
+    "kind": "other",
+    "why": "Characterization of the second guarantee should be checked against its formal statement for accuracy/completeness."
+   },
+   {
+    "span": "what the verifier cannot resolve, it neither verifies nor fails",
+    "kind": "absence",
+    "why": "Absence/behavioral claim about verifier semantics should be confirmed against the implementation or spec."
+   },
+   {
+    "span": "The verifier also reports coverage, the share of a text's numbers that sit inside a fact claim rather than in prose",
+    "kind": "other",
+    "why": "Definition of 'coverage' should match how it's actually computed/defined elsewhere in the paper."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p54100851544c": {
+  "at": "2026-09-12T11:22:03.933Z",
+  "claims": [
+   {
+    "span": "string equality for entities and facts, typed comparison for thresholds",
+    "kind": "other",
+    "why": "Characterizes the verification mechanism; confirm this matches the actual implementation described in Section 4."
+   },
+   {
+    "span": "with no model in the loop, so it is exact, explainable and effectively free",
+    "kind": "causal",
+    "why": "Causal chain from 'no model in the loop' to three properties; 'effectively free' is a cost claim that needs justification or a metric."
+   },
+   {
+    "span": "(Section 4)",
+    "kind": "citation",
+    "why": "Internal cross-reference; confirm Section 4 actually contains this mechanism and not a different section."
+   },
+   {
+    "span": "negating it does not make it verified: `NOT` of an unverifiable condition is still unverifiable",
+    "kind": "other",
+    "why": "States a specific semantic rule of the system; should be checked against the formal semantics in Appendix B."
+   },
+   {
+    "span": "Without that rule a model could get a claim past the verifier by negating a threshold that does not exist.",
+    "kind": "causal",
+    "why": "Hypothetical causal/adversarial claim about what would happen absent the rule; needs justification or example that this exploit is real."
+   },
+   {
+    "span": "`%[passRate]{7} in student:42: should be 5`",
+    "kind": "number",
+    "why": "Specific example error message with numeric values; verify it is an accurate, reproducible output of the system."
+   },
+   {
+    "span": "because the verifier only reads the text, it can equally audit text it did not generate",
+    "kind": "causal",
+    "why": "Causal claim that text-only reading implies generator-agnostic auditing; should be substantiated or demonstrated."
+   },
+   {
+    "span": "a text that marks one number and leaves nine in prose would score 100%",
+    "kind": "number",
+    "why": "Specific numeric example (one, nine, 100%) illustrating a scoring artifact; should be checked as a correct/representative example of the metric's behavior."
+   },
+   {
+    "span": "the share of standalone numbers that sit inside a fact claim (years, list markers and code excluded)",
+    "kind": "other",
+    "why": "Defines the coverage metric and its exclusions; confirm this matches the actual coverage computation in the implementation."
+   },
+   {
+    "span": "in strict mode treats each number outside one as a finding",
+    "kind": "other",
+    "why": "Characterizes strict-mode behavior; should be verified against the implementation/spec."
+   },
+   {
+    "span": "Figure 3 shows the pipeline; Figure 4 the audit rendering",
+    "kind": "citation",
+    "why": "Cross-reference to specific figure numbers; confirm these match the actual figure numbering in the final paper."
+   },
+   {
+    "span": "each claim carries its proof path",
+    "kind": "other",
+    "why": "Claim about what Figure 4 depicts; should be confirmed against the actual figure content."
+   },
+   {
+    "span": "The complete grammar is in Appendix C; Appendix B states the semantics and the properties the mechanised model proves for it",
+    "kind": "citation",
+    "why": "Cross-reference to appendix contents and ordering (C referenced before B); confirm appendix letters and contents match."
+   },
+   {
+    "span": "the properties the mechanised model proves for it",
+    "kind": "other",
+    "why": "Asserts existence of a mechanised (formal) model with proved properties; should be confirmed that such a mechanisation exists and what exactly is proved."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
+ },
+ "p8c45e34c00bd": {
+  "at": "2026-09-12T11:22:19.475Z",
+  "claims": [
+   {
+    "span": "Three current models of August 2026",
+    "kind": "date",
+    "why": "Reviewer needs the specific model names/versions confirmed and that 'current' accurately reflects availability at that date."
+   },
+   {
+    "span": "three runs each",
+    "kind": "number",
+    "why": "Sample size per model should be verified against the actual experiment logs/data."
+   },
+   {
+    "span": "mean ± sample sd over runs",
+    "kind": "number",
+    "why": "With only three runs per model, sample sd is a weak estimator; reviewer should confirm this statistic (vs. population sd or reporting individual runs) is appropriate and correctly computed."
+   },
+   {
+    "span": "First pass and after one correction",
+    "kind": "other",
+    "why": "The exact correction protocol (what counts as 'one correction', how it's triggered) needs to be specified and confirmed consistent with the method section."
+   },
+   {
+    "span": "queries on which every claim verified after at most one correction",
+    "kind": "other",
+    "why": "Definition of 'fully verified' should be checked against how it's actually computed in the underlying code/results."
+   },
+   {
+    "span": "by the verifier's own definition",
+    "kind": "other",
+    "why": "This phrase defers to an external/self-referential definition that the reader cannot check here; reviewer should confirm what that definition is and that it matches Coverage as computed."
+   },
+   {
+    "span": "numbers inside a fact claim as a share of all standalone numbers in the delivered text",
+    "kind": "number",
+    "why": "This is a specific metric definition whose numerator/denominator should be verified against the actual computation to ensure no double-counting or mismatched scope."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
