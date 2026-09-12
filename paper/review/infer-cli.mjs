@@ -4,7 +4,7 @@
  * viewer's Claude paragraph by paragraph; served by Vera there is no model in
  * the browser, so the pass runs here, before the push, with the same prompt
  * and the same rules: everything the model returns is untrusted, a span
- * counts only if it is a verbatim substring of the paragraph, at most twenty
+ * counts only if it is a verbatim substring of the paragraph, at most forty
  * per paragraph, and a paragraph with nothing to confirm is recorded as clean
  * so it is never asked again until its text changes.
  *
@@ -26,7 +26,10 @@ const pid = (t) => 'p' + createHash('sha256').update(String(t)).digest('hex').sl
 const CITE = /⟦c:([^⟧]+)⟧([^⟦]*)⟦\/c⟧/g;
 
 const page = readFileSync('report/review-page.html', 'utf8');
-const pending = new Set([...page.matchAll(/<section class="pair" id="([^"]+)"[^>]*data-scan="pending"/g)].map((m) => m[1]));
+// build.mjs lists the pending paragraphs by hash (a bound paragraph's section id is its anchor name, not its hash);
+// the page's data-scan attribute is the fallback for a build that predates the list
+const pending = existsSync('report/pending.json') ? new Set(JSON.parse(readFileSync('report/pending.json', 'utf8')))
+  : new Set([...page.matchAll(/<section class="pair" id="([^"]+)"[^>]*data-scan="pending"/g)].map((m) => m[1]));
 const blocks = JSON.parse(readFileSync('report/paper1-blocks.json', 'utf8'));
 const state = existsSync('report/infer-state.json') ? JSON.parse(readFileSync('report/infer-state.json', 'utf8')) : {};
 const todo = [];
@@ -53,13 +56,17 @@ for (const t of todo.slice(0, LIMIT)) {
     if (r.status !== 0) { console.error(' claude failed:', (r.stderr || '').slice(-200)); continue; }
     try {
       const out = JSON.parse(r.stdout); const text = String(out.result || '');
-      const m = text.match(/\[[\s\S]*\]/); const arr = m ? JSON.parse(m[0]) : [];
-      claims = Array.isArray(arr) ? arr : [];
+      // no array in the answer is a failed call, not a clean paragraph: the planted-error run of
+      // 2026-09-12 found Finding 4 recorded clean after one such answer, with 20 claims in it
+      const m = text.match(/\[[\s\S]*\]/); if (!m) throw new Error('no array');
+      const arr = JSON.parse(m[0]); if (!Array.isArray(arr)) throw new Error('not an array');
+      claims = arr;
     } catch (e) { console.error(' no JSON array in the answer; retrying'); }
   }
   if (claims === null) { console.error(' giving up on', t.id); continue; }
   const kept = claims.filter((c) => c && typeof c.span === 'string' && c.span.length >= 3 && t.text.includes(c.span))
-    .map((c) => ({ span: c.span, kind: String(c.kind || 'other').slice(0, 20), why: String(c.why || '').slice(0, 300) })).slice(0, 20);
+    .map((c) => ({ span: c.span, kind: String(c.kind || 'other').slice(0, 20), why: String(c.why || '').slice(0, 300) })).slice(0, 40);
+  if (kept.length === 40) console.log(` ${t.id}: the pass proposed more than 40 spans; the rest are dropped (a paragraph this long asks to be split)`);
   state[t.id] = { at: new Date().toISOString(), claims: kept, state: kept.length ? 'checked' : 'clean', by: 'claude ' + MODEL + ', build-time pass' };
   writeFileSync('report/infer-state.json', JSON.stringify(state, null, 1) + '\n');
   done++; console.log(` ${t.id}: ${kept.length} proposal(s)${claims.length !== kept.length ? ' (' + (claims.length - kept.length) + ' not verbatim, dropped)' : ''}`);

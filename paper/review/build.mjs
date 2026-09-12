@@ -25,6 +25,8 @@ const snapshots = {
   deployment: read('deployment-numbers.txt'), package: read('package.txt'), summary2: read('frontier2-summary.txt'),
   ...(existsSync('report/sources/raw/verifier-check.txt') ? { verifier: read('verifier-check.txt') } : {}),
   ...(existsSync('report/sources/raw/judgment-summary.txt') ? { judgment: read('judgment-summary.txt') } : {}),
+  ...(existsSync('report/sources/raw/formal-check.txt') ? { formal: read('formal-check.txt') } : {}),
+  ...(existsSync('report/sources/raw/plant-score.txt') ? { plant: read('plant-score.txt') } : {}),
   ...(existsSync('report/sources/raw/pdpp-students.txt') ? { 'pdpp-students': read('pdpp-students.txt') } : {}),
   magesh2025: htmlToText(read('magesh2025-arxiv.html')), liu2026citations: htmlToText(read('liu2026citations.html')), omnibus2026: htmlToText(read('omnibus2026.html')),
   ...auditSnapshots,
@@ -53,7 +55,9 @@ const store = {
   'model:opus5.judgWith': '20', 'model:opus5.judgPerRun': '67.7', 'model:opus5.judgFirst': '92.6', 'model:opus5.judgFinal': '100', 'model:opus5.judgSound0': '7.3', 'model:opus5.judgSound1': '8.0',
   'model:sonnet5.judgWith': '19.3', 'model:sonnet5.judgPerRun': '42.3', 'model:sonnet5.judgFirst': '77.8', 'model:sonnet5.judgFinal': '98.2', 'model:sonnet5.judgSound0': '3.7', 'model:sonnet5.judgSound1': '7.7',
   'model:deepseek.judgWith': '18.0', 'model:deepseek.judgPerRun': '41.3', 'model:deepseek.judgFirst': '100', 'model:deepseek.judgFinal': '100', 'model:deepseek.judgSound0': '8.0', 'model:deepseek.judgSound1': '8.0',
-  'study:judgment.name': 'the judgment study', 'study:judgment.total': '454', 'study:judgment.verifiedFirst': '411', 'study:judgment.verifiedFinal': '425', 'study:judgment.totalFinal': '427', 'study:judgment.falseFirst': '33', 'study:judgment.wordsLow': '18', 'study:judgment.wordsHigh': '26',
+  'formal:vectors.name': 'the model vectors', 'formal:vectors.agree': '11', 'formal:vectors.total': '11',
+  'loop:plant.name': 'the planted-error run', 'loop:plant.planted': '43', 'loop:plant.bound': '9', 'loop:plant.number': '9', 'loop:plant.statement': '14', 'loop:plant.citation': '11', 'loop:plant.buildCaught': '9', 'loop:plant.flagged': '33', 'loop:plant.prose': '34', 'loop:plant.caught': '42', 'loop:plant.unplanted': '242', 'loop:plant.changes': '56', 'loop:plant.collateral': '13', 'loop:plant.defects': '42', 'loop:plant.known': '18', 'loop:plant.pageFaults': 'one', 'loop:plant.refutable': 'none',
+  'study:judgment.name': 'the judgment study', 'study:judgment.registryNames': 'fourteen', 'study:judgment.firstRange': '78–100', 'study:judgment.finalRange': '98–100', 'study:judgment.total': '454', 'study:judgment.verifiedFirst': '411', 'study:judgment.verifiedFinal': '425', 'study:judgment.totalFinal': '427', 'study:judgment.falseFirst': '33', 'study:judgment.wordsLow': '18', 'study:judgment.wordsHigh': '26',
   'verifier:example.name': 'the verifier on the paper\'s example', 'verifier:example.canonical': '391035000000', 'verifier:example.rounded': 'fails', 'verifier:example.netIncome': '93736000000', 'verifier:example.shown': '$93.7 billion',
   'study:onweller.name': 'Onweller et al.', 'study:onweller.factualAccuracy': '39–77',
   'study:rao.name': 'Rao et al.', 'study:rao.deepResearchRate': '10.7', 'study:rao.searchRate': '4.8',
@@ -89,13 +93,18 @@ const mark = (t, pairs, id) => {
 // the reading still exists, as an inference the author must stand behind.
 const CITE = /\u27e6c:([^\u27e7]+)\u27e7([^\u27e6]*)\u27e6\/c\u27e7/g;
 const sentenceAround = (text, idx) => {
-  // a semicolon inside a citation group "(A, 2026; B, 2025)" does not end the sentence
-  const dot = text.lastIndexOf('. ', idx);
+  // a semicolon inside a citation group "(A, 2026; B, 2025)" does not end the sentence,
+  // and neither does the full stop of an abbreviation ("et al. ", "e.g. ", "vs. "): until
+  // 2026-09-12 "Torroba Hennigen et al. report" was cut there and the tagged quote never showed
+  const ABBR = /(?:\bet al|\be\.g|\bi\.e|\bvs|\bcf|\bFig|\bNo|\bSec|\bTab)$/;
+  const lastStop = (from) => { let p = text.lastIndexOf('. ', from); while (p >= 0 && ABBR.test(text.slice(Math.max(0, p - 8), p))) p = text.lastIndexOf('. ', p - 1); return p; };
+  const nextStop = (from) => { let p = text.indexOf('. ', from); while (p >= 0 && ABBR.test(text.slice(Math.max(0, p - 8), p))) p = text.indexOf('. ', p + 1); return p; };
+  const dot = lastStop(idx);
   const outsideParens = (p) => { const seg = text.slice(dot < 0 ? 0 : dot, p); return (seg.split('(').length - 1) <= (seg.split(')').length - 1); };
   let semi = text.lastIndexOf('; ', idx);
   while (semi > dot && !outsideParens(semi)) semi = text.lastIndexOf('; ', semi - 1);
   const a = Math.max(dot, semi, 0);
-  const dotEnd = text.indexOf('. ', idx);
+  const dotEnd = nextStop(idx);
   const afterParens = (p) => { const seg = text.slice(idx, p); return (seg.split('(').length - 1) <= (seg.split(')').length - 1); };
   let semiEnd = text.indexOf('; ', idx);
   while (semiEnd >= 0 && (dotEnd < 0 || semiEnd < dotEnd) && !afterParens(semiEnd)) semiEnd = text.indexOf('; ', semiEnd + 1);
@@ -120,7 +129,11 @@ const citify = (text, blockId, evidence) => {
     const low = sent.toLowerCase();
     const tagged = all.filter((e) => Array.isArray(e.paperUse) && e.paperUse.some((w) => low.includes(String(w).toLowerCase())));
     const chosen = tagged.length ? tagged : all.filter((e) => !e.paperUse).length ? all.filter((e) => !e.paperUse) : all;
-    const quotes = chosen.filter((e, i) => chosen.findIndex((x) => x.sourceQuote === e.sourceQuote) === i);   // two values from one passage: one passage shown
+    // One reading quotes one archive. Where the tagged quotes span the cited work and a companion
+    // document (the Regulation and the Commission's announcement of it), the cited work wins.
+    const own = chosen.filter((e) => !e.source || e.source === key);
+    const oneSource = own.length ? own : chosen.filter((e) => e.source === chosen[0].source);
+    const quotes = oneSource.filter((e, i) => oneSource.findIndex((x) => x.sourceQuote === e.sourceQuote) === i);   // two values from one passage: one passage shown
     const absences = a ? a.evidence.filter((e) => e.basis === 'absence' && e.note).map((e) => e.note) : [];
     if (quotes.length) {
       evidence.push({ field, claimValue: label, basis: 'quote', source: 'cite-' + (quotes[0].source || key),
@@ -162,25 +175,64 @@ const bound = [
       q('verifier:example.canonical', '391035000000', 'verifier', 'claim %[revenue]{391035000000 USD} against company:aapl.revenue = 391035000000: verified, shown as $391.0 billion', 'verifier-check.mjs, canonical value'),
       q('verifier:example.rounded', 'fails', 'verifier', 'claim %[revenue]{$391 billion} against company:aapl.revenue = 391035000000: value-mismatch', 'verifier-check.mjs, rounded value', 'The verifier reports value-mismatch; the paper says fails.'),
     ] },
+  { anchor: 'A planted-error run on 12 September 2026 measured the loop itself', id: 'provenance', marks: [
+      ['Of 43 errors planted', 'Of %[loop:plant.planted]{43} errors planted'],
+      ['(9 in bound numbers, 9 in unbound numbers, 14 in own statements, 11 in citations', '(%[loop:plant.bound]{9} in bound numbers, %[loop:plant.number]{9} in unbound numbers, %[loop:plant.statement]{14} in own statements, %[loop:plant.citation]{11} in citations'],
+      ['refused all 9 bound ones', 'refused all %[loop:plant.buildCaught]{9} bound ones'],
+      ['marked 33 of the other 34', 'marked %[loop:plant.flagged]{33} of the other %[loop:plant.prose]{34}'],
+      ['42 of 43 in all', '%[loop:plant.caught]{42} of 43 in all'],
+      ['On the 242 unplanted readings', 'On the %[loop:plant.unplanted]{242} unplanted readings'],
+      ['confirmed 56 changes: 13 were', 'confirmed %[loop:plant.changes]{56} changes: %[loop:plant.collateral]{13} were'],
+      ['42 were defects of the paper as it then stood (18 of them', '%[loop:plant.defects]{42} were defects of the paper as it then stood (%[loop:plant.known]{18} of them'],
+      ['one was a fault of the review page, and none could we refute', '%[loop:plant.pageFaults]{one} was a fault of the review page, and %[loop:plant.refutable]{none} could we refute'],
+    ], evidence: [
+      q('loop:plant.planted', '43', 'plant', 'planted: 43 (bound 9, number 9, statement 14, citation 11)', 'run.mjs score, summary'),
+      q('loop:plant.bound', '9', 'plant', 'planted: 43 (bound 9, number 9, statement 14, citation 11)', 'run.mjs score, summary'),
+      q('loop:plant.number', '9', 'plant', 'planted: 43 (bound 9, number 9, statement 14, citation 11)', 'run.mjs score, summary'),
+      q('loop:plant.statement', '14', 'plant', 'planted: 43 (bound 9, number 9, statement 14, citation 11)', 'run.mjs score, summary'),
+      q('loop:plant.citation', '11', 'plant', 'planted: 43 (bound 9, number 9, statement 14, citation 11)', 'run.mjs score, summary'),
+      q('loop:plant.buildCaught', '9', 'plant', 'build refused: 9 of 9 bound', 'run.mjs score, summary'),
+      q('loop:plant.flagged', '33', 'plant', 'flag pass marked: 33 of 34 prose plants', 'run.mjs score, summary'),
+      q('loop:plant.prose', '34', 'plant', 'flag pass marked: 33 of 34 prose plants', 'run.mjs score, summary'),
+      q('loop:plant.caught', '42', 'plant', 'caught in all: 42 of 43', 'run.mjs score, summary'),
+      q('loop:plant.unplanted', '242', 'plant', 'unplanted readings checked: 242', 'run.mjs score, summary'),
+      q('loop:plant.changes', '56', 'plant', 'confirmed changes among them: 56', 'run.mjs score, summary'),
+      q('loop:plant.collateral', '13', 'plant', 'collateral of a plant: 13', 'run.mjs score, summary', 'Classed by hand in plant/adjudication.json: the plant seen from a neighbouring reading.'),
+      q('loop:plant.defects', '42', 'plant', 'defects of the paper: 42 (18 already found by the previous round)', 'run.mjs score, summary', 'Classed by hand in plant/adjudication.json.'),
+      q('loop:plant.known', '18', 'plant', 'defects of the paper: 42 (18 already found by the previous round)', 'run.mjs score, summary'),
+      q('loop:plant.pageFaults', 'one', 'plant', 'faults of the page: 1', 'run.mjs score, summary', 'Printed 1, written one.'),
+      q('loop:plant.refutable', 'none', 'plant', 'refutable: 0', 'run.mjs score, summary', 'Printed 0, written none.'),
+    ] },
+  { anchor: 'This appendix states what the verifier computes', id: 'formal-intro', marks: [
+      ['11 of 11 agree', '%[formal:vectors.agree]{11} of %[formal:vectors.total]{11} agree'],
+    ], evidence: [
+      q('formal:vectors.agree', '11', 'formal', '11 of 11 vectors agree', 'check-vectors.mjs, last line'),
+      q('formal:vectors.total', '11', 'formal', '11 of 11 vectors agree', 'check-vectors.mjs, last line'),
+    ] },
   { anchor: 'The models are meanwhile in production', id: 'intro-production', marks: [
       ['at 70% of surveyed organizations', 'at %[study:aiindex.adoption]{70}% of surveyed organizations'],
-      ['factually accurate for only 39–77% of claims', 'factually accurate for only %[study:onweller.factualAccuracy]{39–77}% of claims'],
-      ['10.7% of the citation URLs of the two commercial deep research agents never existed, against 4.8% for search-augmented models', '%[study:rao.deepResearchRate]{10.7}% of the citation URLs of the two commercial deep research agents never existed, against %[study:rao.searchRate]{4.8}% for search-augmented models'],
+      ['checked out against their sources for only 39–77% of citations', 'checked out against their sources for only %[study:onweller.factualAccuracy]{39–77}% of citations'],
+      ['10.7% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8% for search-augmented models', '%[study:rao.deepResearchRate]{10.7}% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against %[study:rao.searchRate]{4.8}% for search-augmented models'],
     ], evidence: [
       q('study:aiindex.adoption', '70', 'cite-aiindex2026', 'Generative AI is now used in at least one business function at 70% of organizations', 'AI Index 2026, Economy chapter, Finding 5'),
-      q('study:onweller.factualAccuracy', '39–77', 'cite-citednotverified', 'achieve only 39-77% factual accuracy', 'arXiv 2605.06635 abstract', 'The abstract writes "39-77% factual accuracy" of the citations of frontier models; the paper writes "factually accurate for only 39–77% of claims". Fair reading?'),
+      q('study:onweller.factualAccuracy', '39–77', 'cite-citednotverified', 'achieve only 39-77% factual accuracy', 'arXiv 2605.06635 abstract', 'The abstract writes "39-77% factual accuracy", measured per citation against its source; the paper writes "checked out against their sources for only 39–77% of citations".'),
       q('study:rao.deepResearchRate', '10.7', 'cite-rao2026', 'Pooling across the two deep research agents, the hallucination rate is 10.7% [10.2, 11.2]', 'arXiv 2604.03173, Section 4', 'The paper pools OpenAI Deep Research (3.5%) and Gemini 2.5 Pro Deep Research (13.3%).'),
       q('study:rao.searchRate', '4.8', 'cite-rao2026', 'versus 4.8% [4.3, 5.2] for the eight search-augmented models', 'arXiv 2604.03173, Section 4'),
     ] },
-  { anchor: 'We evaluate three frontier models of August 2026', id: 'abstract-results', marks: [
-      ['put 90–96% of their numbers inside a claim', 'put %[study:frontier.coverageRange]{90–96}% of their numbers inside a claim'],
-      ['verify 87–100% of those claims on the first pass and 92–100% after one correction', 'verify %[study:frontier.firstPassRange]{87–100}% of those claims on the first pass and %[study:frontier.correctedRange]{92–100}% after one correction'],
-      ['lifts first-pass verification to 95–100%', 'lifts first-pass verification to %[study:frontier2.firstPassRange]{95–100}%'],
+  { anchor: 'three current models of August 2026', id: 'abstract-results', marks: [
+      ['cover 90–96% of their numbers', 'cover %[study:frontier.coverageRange]{90–96}% of their numbers'],
+      ['verify 87–100% of claims on the first pass and 92–100% after one correction', 'verify %[study:frontier.firstPassRange]{87–100}% of claims on the first pass and %[study:frontier.correctedRange]{92–100}% after one correction'],
+      ['lifts the first pass to 95–100%', 'lifts the first pass to %[study:frontier2.firstPassRange]{95–100}%'],
+      ['a registry of fourteen named conditions', 'a registry of %[study:judgment.registryNames]{fourteen} named conditions'],
+      ['verify 78–100% of those judgments on the first pass and 98–100% after one correction', 'verify %[study:judgment.firstRange]{78–100}% of those judgments on the first pass and %[study:judgment.finalRange]{98–100}% after one correction'],
     ], evidence: [
       d('study:frontier.coverageRange', '90–96', 'summary', 'Coverage in Table 2 runs from 89.8 (Sonnet 5, finance) to 96.4 (DeepSeek, finance); the abstract rounds the endpoints to 90–96. Fair to round?'),
       d('study:frontier.firstPassRange', '87–100', 'summary', 'First pass in Table 2 runs from 86.5 (Opus 5, education) to 100.0 (DeepSeek, finance); the abstract rounds 86.5 up to 87. Fair to round?'),
       d('study:frontier.correctedRange', '92–100', 'summary', 'After one correction, Table 2 runs from 92.2 (Sonnet 5, education) to 100.0; rounded to 92–100.'),
       d('study:frontier2.firstPassRange', '95–100', 'summary2', 'Second study first pass runs from 95.4 (Opus 5, education) to 100.0 (all three on finance); rounded to 95–100.'),
+      q('study:judgment.registryNames', 'fourteen', 'judgment', 'registry: 14 names', 'judgment-summary.mjs, registry line', 'Printed 14, written fourteen.'),
+      d('study:judgment.firstRange', '78–100', 'judgment', 'First-pass judgment verification runs from 77.8 (Sonnet 5) to 100.0 (DeepSeek) in Table 4; rounded to 78–100. Fair to round?'),
+      d('study:judgment.finalRange', '98–100', 'judgment', 'After one correction, Table 4 runs from 98.2 (Sonnet 5) to 100.0; rounded to 98–100.'),
     ] },
   { anchor: 'says that the mechanism is within reach of current models', id: 'conclusion-results', marks: [
       ['cover 90–96% of their numbers with claims, and verify 92–100% of those claims after one correction', 'cover %[study:frontier.coverageRange]{90–96}% of their numbers with claims, and verify %[study:frontier.correctedRange]{92–100}% of those claims after one correction'],
@@ -188,8 +240,9 @@ const bound = [
       d('study:frontier.coverageRange', '90–96', 'summary', 'Coverage endpoints 89.8 and 96.4 in Table 2, rounded.'),
       d('study:frontier.correctedRange', '92–100', 'summary', 'After-correction endpoints 92.2 and 100.0 in Table 2, rounded.'),
     ] },
-  { anchor: 'Three models that were frontier', id: 'setup', marks: [
-      ['Claude Opus 5 and Claude Sonnet 5', '@[model:opus5]{Claude Opus 5} and @[model:sonnet5]{Claude Sonnet 5}'],
+  { anchor: 'Three models current in August 2026', id: 'setup', marks: [
+      ['Claude Opus 5, released 24 July 2026', '@[model:opus5]{Claude Opus 5}, released 24 July 2026'],
+      ['and Claude Sonnet 5, released', 'and @[model:sonnet5]{Claude Sonnet 5}, released'],
       ['and DeepSeek V4 Pro (', 'and @[model:deepseek]{DeepSeek V4 Pro} ('],
       ['28 English prompts over a generated educational dataset of 741 pupils in 95 class offerings', '%[bench:education.prompts]{28} English prompts over a %[bench:education.synthetic]{generated} educational dataset of %[bench:education.pupils]{741} pupils in %[bench:education.offerings]{95} class offerings'],
       ['10 English prompts over real SEC EDGAR FY2025 filings (2 entities, 11 fields)', '%[bench:finance.prompts]{10} English prompts over real SEC EDGAR FY2025 filings (%[bench:finance.entities]{2} entities, %[bench:finance.fields]{11} fields)'],
@@ -398,11 +451,34 @@ const inferSubject = (pidv, text) => {
   // placed is skipped (the model proposed a span inside a span once), and the
   // wrapping runs from the end so earlier positions stay valid.
   const evidence = []; const placed = [];
-  for (const c of list) {
+  // constructs already in the text (bound marks, citations): a proposal that overlaps one is
+  // skipped, the mark covers it; this is what lets the pass run on bound and cited paragraphs
+  const taken = [...text.matchAll(/[%@?]\[[^\]]*\]\{[^}]*\}/g)].map((m) => ({ at: m.index, end: m.index + m[0].length }));
+  // The pass read the paragraph as prose; here the entities and numbers may already be marks. Search the
+  // prose view (each construct replaced by what it displays) and map the hit back to the marked text.
+  const view = (() => { const map = []; let out = ''; const re = /[%@?]\[[^\]]*\]\{([^}]*)\}/g; let last = 0, m;
+    while ((m = re.exec(text))) { for (let i = last; i < m.index; i++) { map.push(i); out += text[i]; } const v0 = m.index + m[0].length - 1 - m[1].length; for (let i = 0; i < m[1].length; i++) { map.push(v0 + i); out += m[1][i]; } last = m.index + m[0].length; }
+    for (let i = last; i < text.length; i++) { map.push(i); out += text[i]; } map.push(text.length); return { out, map }; })();
+  for (let c of list) {
     if (!c.span) continue;
-    const at = text.indexOf(c.span); if (at < 0) continue;
-    const end = at + c.span.length;
+    const pa = view.out.indexOf(c.span); if (pa < 0) continue;
+    let at = view.map[pa]; let end = view.map[pa + c.span.length];
     if (placed.some((p) => at < p.end && end > p.at)) continue;
+    if (taken.some((p) => at < p.end && end > p.at)) {
+      // the proposal reaches into a mark or a citation: keep the longest stretch outside them
+      // ("Claude Sonnet 5, released 30 May 2026" with the name already an entity mark becomes "released 30 May 2026")
+      const cuts = taken.filter((p) => at < p.end && end > p.at).sort((p, q) => p.at - q.at);
+      const segs = []; let from = at;
+      for (const p of cuts) { if (p.at > from) segs.push([from, p.at]); from = Math.max(from, p.end); }
+      if (from < end) segs.push([from, end]);
+      const best = segs.map(([a, b]) => { const raw = text.slice(a, b); const lead = raw.match(/^[\s,;:()]+/)?.[0].length || 0; const tail = raw.match(/[\s,;:(]+$/)?.[0].length || 0; return [a + lead, b - tail]; })
+        .filter(([a, b]) => b > a).sort((x, y) => (y[1] - y[0]) - (x[1] - x[0]))[0];
+      if (!best) continue;
+      const seg = text.slice(best[0], best[1]);
+      if (seg.length < 12 && !/\d/.test(seg)) continue;
+      if (!/\s/.test(seg.trim())) continue;   // one word is not a claim
+      at = best[0]; end = best[1]; c = { ...c, span: seg };
+    }
     if ((text.slice(0, at).match(/`/g) || []).length % 2 === 1) continue;   // inside a code span: the verifier skips it, the reader would see raw markup
     if (/[%@?]\[|\]\{/.test(c.span)) continue;   // the span itself quotes markup
     if (/[%@?]\[[^\]]*$/.test(text.slice(Math.max(0, at - 80), at)) && text.slice(end).match(/^[^{]*\]\{/)) continue; // inside another construct's head
@@ -426,6 +502,14 @@ const inferSubject = (pidv, text) => {
 };
 const subjects = [];
 const used = new Set();
+// The id the flag pass knows a paragraph by: a hash of its text, caption prefix stripped (infer-cli.mjs does the same)
+const infId = (b) => { const cm = b.kind === 'para' ? b.text.match(/^((?:Table|Figure) \d+): ?/) : null; return pid(cm ? b.text.slice(cm[0].length) : b.text); };
+// Until 2026-09-12 a paragraph with a bound number or a citation never met the flag pass: the
+// build returned before it. The planted-error run showed what that hid: every planted false
+// statement in a Setup or Finding paragraph went unflagged. Now every paragraph is scanned and
+// proposals that fall inside an existing mark are dropped by inferSubject.
+const pendingIds = [];
+const scanOf = (pidv, inf) => { const st = inferState[pidv]; if (inf) return undefined; if (st) return 'clean'; pendingIds.push(pidv); return 'pending'; };
 blocks.forEach((b, i) => {
   if (b.kind === 'heading') { subjects.push({ id: 'h' + i, heading: true, level: b.level || 1, title: b.text.replace(CITE, '$2'), claim: '', evidence: [] }); return; }
   if (b.kind === 'code' || b.kind === 'table') b.text = b.text.replace(CITE, '$2');
@@ -449,8 +533,11 @@ blocks.forEach((b, i) => {
   const hit = bound.find((x) => !used.has(x.id) && b.text.includes(x.anchor) && (!x.kind || x.kind === b.kind));
   if (hit) {
     used.add(hit.id);
-    let ev = [...hit.evidence]; const claim = citify(mark(neutralize(b.text), hit.marks, hit.id), hit.id, ev); ev = inTextOrder(claim, ev);
-    subjects.push({ id: hit.id, title: b.lead || hit.id, meta: '', pre: b.kind === 'table', claim, evidence: ev });
+    const pidv = infId(b);
+    let ev = [...hit.evidence]; let claim = citify(mark(neutralize(b.text), hit.marks, hit.id), hit.id, ev);
+    const inf = inferSubject(pidv, claim); if (inf) { claim = inf.claim; ev = [...ev, ...inf.evidence]; }
+    ev = inTextOrder(claim, ev);
+    subjects.push({ id: hit.id, title: b.lead || hit.id, meta: '', pre: b.kind === 'table', scan: b.kind === 'table' ? undefined : scanOf(pidv, inf), claim, evidence: ev });
     return;
   }
   if (b.ref && b.refTitle && b.text.split(b.refTitle).length === 2) {
@@ -465,15 +552,20 @@ blocks.forEach((b, i) => {
   const cm = b.kind === 'para' ? b.text.match(/^((?:Table|Figure) \d+): ?/) : null;
   if (cm) b.text = b.text.slice(cm[0].length);
   const id = pid(b.text);
-  let cev = []; const ctext = citify(neutralize(b.text), id, cev); cev = inTextOrder(ctext, cev);
-  if (cev.length) { subjects.push({ id, title: b.lead || '', meta: '', pre: b.kind === 'table', capLead: cm ? cm[1] : undefined, claim: ctext, evidence: cev }); return; }
+  let cev = []; let ctext = citify(neutralize(b.text), id, cev); cev = inTextOrder(ctext, cev);
+  if (cev.length) {
+    const inf = inferSubject(id, ctext); if (inf) { ctext = inf.claim; cev = inTextOrder(ctext, [...cev, ...inf.evidence]); }
+    subjects.push({ id, title: b.lead || '', meta: '', pre: b.kind === 'table', capLead: cm ? cm[1] : undefined, scan: scanOf(id, inf), claim: ctext, evidence: cev }); return;
+  }
   const inf = inferSubject(id, neutralize(b.text));
   if (inf) { subjects.push({ id, title: b.lead || '', meta: '', pre: b.kind === 'table', claim: inf.claim, evidence: inf.evidence }); return; }
   const st = inferState[id];
   const scan = b.kind === 'code' ? 'clean' : (st && st.state === 'clean' ? 'clean' : 'pending');
+  if (scan === 'pending') pendingIds.push(id);
   subjects.push({ id, title: b.lead || '', meta: '', pre: b.kind === 'table', capLead: cm ? cm[1] : undefined, scan, claim: neutralize(b.text), evidence: [] });
 });
 for (const x of bound) if (!used.has(x.id)) { console.error('ANCHOR not found:', x.id, x.anchor); process.exit(5); }
+writeFileSync('report/pending.json', JSON.stringify(pendingIds) + '\n');   // what the flag pass still has to read, by paragraph hash
 
 for (const s of subjects)
   for (const e of s.evidence) {
@@ -503,7 +595,7 @@ for (const [id, text] of Object.entries(snapshots)) manifests[id] = buildManifes
 const committedReview = migrated;
 const sourceTitles = {
   benchmarks: 'benchmark files (regenerated)', dataset: 'dataset metadata', finance: 'finance benchmark', summary: 'frontier study summary (experiments/run-frontier.sh)',
-  residuals: 'frontier residual errors', deployment: 'deployment numbers (deployment-numbers.mjs)', verifier: 'the verifier on the paper\'s example (verifier-check.mjs)', judgment: 'judgment study summary (judgment-summary.mjs over judgment-results-*.json)', package: 'the npm package (package.json)', summary2: 'second frontier study summary (--tag frontier2)',
+  residuals: 'frontier residual errors', deployment: 'deployment numbers (deployment-numbers.mjs)', verifier: 'the verifier on the paper\'s example (verifier-check.mjs)', judgment: 'judgment study summary (judgment-summary.mjs over judgment-results-*.json)', formal: 'the package against the mechanised model (formal/check-vectors.mjs)', plant: 'the planted-error run over the review loop (paper/review/plant/run.mjs score)', package: 'the npm package (package.json)', summary2: 'second frontier study summary (--tag frontier2)',
   magesh2025: 'Magesh et al. 2025, arXiv 2405.20362 (abstract page)', liu2026citations: 'Liu et al. 2026, arXiv 2606.21155 (abstract page)',
   omnibus2026: 'Regulation (EU) 2026/1744, EUR-Lex', art50guidelines2026: 'Article 50 guidelines, European Commission',
   'pdpp-students': 'pupil records, stream students, under a PDPP grant',
@@ -605,4 +697,5 @@ for (const [id, m] of Object.entries(manifests)) writeFileSync('report/manifests
 writeFileSync('report/review-page-proofs.json', JSON.stringify({ built: new Date().toISOString(), proofs }, null, 1) + '\n');
 writeFileSync('report/roots.json', JSON.stringify(roots, null, 1) + '\n');
 const ac = auditCheck(); console.log('audit quotes', ac.ok + ' ok', ac.bad.length ? 'BAD ' + ac.bad.join(',') : '');
-console.log('verified', verified + '/' + total, '| blocks', subjects.length, '| readings', subjects.reduce((n, s) => n + s.evidence.length, 0), '| sources', Object.keys(snapshots).length);
+// 'bound' counts the readings the build placed itself (marks and citations), not the flag pass's spans, which come and go with the prose
+console.log('verified', verified + '/' + total, '| blocks', subjects.length, '| readings', subjects.reduce((n, s) => n + s.evidence.length, 0), '| bound', subjects.reduce((n, s) => n + s.evidence.filter((e) => !/^para:.*\.inf\d+$/.test(e.field || '') && !/^figure:/.test(e.field || '')).length, 0), '| sources', Object.keys(snapshots).length);

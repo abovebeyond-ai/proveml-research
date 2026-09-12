@@ -1,0 +1,12 @@
+ok   canonical value verifies, display aside
+ok   the rounded form in the claim fails
+ok   a judgment at the bound: 74 is not strong, 75 is
+ok   NOT of an unregistered name is unresolved, not verified
+ok   false wins a conjunction even beside an unregistered name; NOT of that, by label, verifies
+ok   an explicit path picks the entity, never the field
+ok   a scope closes and the earlier context returns
+ok   no context: a fact before any entity
+ok   a unit the threshold asks for, present and matching
+ok   isNull holds where the record type never carries the field (the vacuity the study met)
+ok   a wrong name at a known id, and an unknown id
+11 of 11 vectors agree

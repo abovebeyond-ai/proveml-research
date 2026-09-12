@@ -374,5 +374,53 @@
     "sourceLabel": "Rao, Wong and Callison-Burch 2026, arXiv (full text)",
     "fetchFormat": "html",
     "localPath": "references/raw/rao2026.html"
+  },
+  {
+    "id": "symgen",
+    "name": "Hennigen et al. 2024, arXiv (full text)",
+    "sourceUrl": "https://arxiv.org/html/2311.09188",
+    "sourceLabel": "Hennigen et al. 2024, arXiv (full text)",
+    "fetchFormat": "html",
+    "localPath": "references/raw/symgen.html"
+  },
+  {
+    "id": "pcn2025",
+    "name": "Solatorio 2025, arXiv (full text)",
+    "sourceUrl": "https://arxiv.org/html/2509.06902",
+    "sourceLabel": "Solatorio 2025, arXiv (full text)",
+    "fetchFormat": "html",
+    "localPath": "references/raw/pcn2025.html"
+  },
+  {
+    "id": "anthropicopus5",
+    "name": "Introducing Claude Opus 5 (Anthropic, 24 July 2026)",
+    "sourceUrl": "https://www.anthropic.com/news/claude-opus-5",
+    "sourceLabel": "Introducing Claude Opus 5 (Anthropic, 24 July 2026)",
+    "fetchFormat": "html",
+    "localPath": "references/raw/anthropicopus5.html"
+  },
+  {
+    "id": "anthropicsonnet5",
+    "name": "Introducing Claude Sonnet 5 (Anthropic)",
+    "sourceUrl": "https://www.anthropic.com/news/claude-sonnet-5",
+    "sourceLabel": "Introducing Claude Sonnet 5 (Anthropic)",
+    "fetchFormat": "html",
+    "localPath": "references/raw/anthropicsonnet5.html"
+  },
+  {
+    "id": "deepseekv4pro",
+    "name": "DeepSeek-V4-Pro model card (Hugging Face)",
+    "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+    "sourceLabel": "DeepSeek-V4-Pro model card (Hugging Face)",
+    "fetchFormat": "html",
+    "localPath": "references/raw/deepseekv4pro.html"
+  },
+  {
+    "id": "finground",
+    "name": "FinGround (Guo, Wu and Yiu, 2026)",
+    "sourceUrl": "https://arxiv.org/abs/2604.23588",
+    "sourceLabel": "arXiv abstract page",
+    "fetchFormat": "html",
+    "localPath": "references/raw/finground.html"
   }
 ]

@@ -1,0 +1,10 @@
+name = "proveml-formal"
+version = "0.1.0"
+defaultTargets = ["ProveML"]
+
+[[lean_lib]]
+name = "ProveML"
+
+[[lean_exe]]
+name = "vectors"
+root = "Vectors"

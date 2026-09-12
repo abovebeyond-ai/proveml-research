@@ -1,0 +1,19 @@
+bound (build): 9/9
+number: reading exists 9/9 (100%), first checker 9/9, confirmed 9/9 (100%)
+statement: reading exists 13/14 (93%), first checker 13/14, confirmed 13/14 (93%)
+   missed S5 no reading
+citation: reading exists 11/11 (100%), first checker 11/11, confirmed 11/11 (100%)
+planted: 43 (bound 9, number 9, statement 14, citation 11)
+build refused: 9 of 9 bound
+flag pass marked: 33 of 34 prose plants
+resolver confirmed: 33 of 33 marked
+caught in all: 42 of 43
+missed: S5
+unplanted readings checked: 242
+confirmed changes among them: 56
+  collateral of a plant: 13
+  defects of the paper: 42 (18 already found by the previous round)
+  faults of the page: 1
+  refutable: 0
+  not adjudicated: 0
+second reader overruled the first: 0

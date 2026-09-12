@@ -2,15 +2,15 @@
  "id": "finance",
  "snapshot": "finance.txt",
  "command": "python3 meta-sources.py <repo> finance",
- "cwd": "/private/tmp/claude-501/-Volumes-shanedeconinck-be-Projects-proveml-all/aaffe3ee-a529-4c8f-bc96-24f5cec9bb0e/scratchpad/vera-paper1",
+ "cwd": "<repo>/paper/review",
  "repo": {
-  "path": "/private/tmp/claude-501/-Volumes-shanedeconinck-be-Projects-proveml-all/add0bb3a-68d2-4d84-8b06-a2b36cec76c9/scratchpad/repos/proveml-research",
-  "commit": "2be288a",
-  "branch": "main",
-  "uncommittedChanges": 0
+  "path": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research",
+  "commit": "d05cd75",
+  "branch": "judgment-study",
+  "uncommittedChanges": 38
  },
- "startedAt": "2026-09-03T10:21:00.879Z",
- "durationMs": 84,
+ "startedAt": "2026-09-12T07:13:08.294Z",
+ "durationMs": 29,
  "exitCode": 0,
  "stdoutSha256": "d0681edf7fb8d08d05ad4e01ea6dd93cb1e126e87803988687186bacbabe304c",
  "stdoutBytes": 358,

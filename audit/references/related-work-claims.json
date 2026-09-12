@@ -5,7 +5,7 @@
     "authors": "W3C",
     "year": 2015,
     "name": "RDFa",
-    "claim": "@[citation:rdfa]{RDFa} provides %[mechanism]{markup attributes to augment the visual information on the Web with machine-readable hints}, and carries %[verification]{no verification of what the attributes assert}.",
+    "claim": "@[citation:rdfa]{RDFa} provides %[mechanism]{markup attributes to augment the visual information on the Web with machine-readable hints}, and carries %[verification]{no verification of what the attributes assert}. The Primer shows %[markup]{how to mark up existing human-readable Web page content to express machine-readable data}, bound to a vocabulary: %[vocab]{The vocab attribute references structured data vocabularies, identified using URLs.}",
     "evidence": [
       {
         "field": "mechanism",
@@ -19,6 +19,20 @@
         "claimValue": "no verification of what the attributes assert",
         "basis": "absence",
         "note": "The Primer describes expressing data, never checking it; the paper’s phrase is that RDFa assumes the author meant it."
+      },
+      {
+        "field": "markup",
+        "claimValue": "how to mark up existing human-readable Web page content to express machine-readable data",
+        "basis": "quote",
+        "sourceQuote": "how to mark up existing human-readable Web page content to express machine-readable data",
+        "sourceLocator": "Primer abstract"
+      },
+      {
+        "field": "vocab",
+        "claimValue": "The vocab attribute references structured data vocabularies, identified using URLs.",
+        "basis": "quote",
+        "sourceQuote": "The vocab attribute references structured data vocabularies, identified using URLs.",
+        "sourceLocator": "Primer, section 2.1.1.3 note"
       }
     ]
   },
@@ -28,20 +42,20 @@
     "authors": "Solatorio",
     "year": 2025,
     "name": "Proof-Carrying Numbers",
-    "claim": "@[citation:pcn2025]{Proof-Carrying Numbers} emits %[tokens]{claim-bound tokens tied to structured claims}, places verification in %[verificationSite]{the renderer, not the model} under %[policies]{declared policies such as exact equality, rounding, aliases, or tolerance}, and its published description does not cover %[notCovered]{entity scoping or a named vocabulary for qualitative judgments}.",
+    "claim": "@[citation:pcn2025]{Proof-Carrying Numbers} emits %[tokens]{claim-bound tokens tied to structured claims}, places verification in %[verificationSite]{the renderer, not the model} under %[policies]{declared policies such as exact equality, rounding, aliases, or tolerance}, and its published description does not cover %[notCovered]{entity scoping or a named vocabulary for qualitative judgments}. The checks are deterministic: %[deterministic]{Under PCN, a number is marked as “verified” only if it is bound to an authoritative claim and passes deterministic checks at the presentation layer.} Its own scope statement: %[scope]{PCN secures numeric fidelity only.}",
     "evidence": [
       {
         "field": "tokens",
         "claimValue": "claim-bound tokens tied to structured claims",
         "basis": "quote",
-        "sourceQuote": "numeric spans are emitted as \\emph{claim-bound tokens} tied to structured claims",
+        "sourceQuote": "Under PCN, numeric spans are emitted as claim-bound tokens tied to structured claims, and a verifier checks each token under a declared policy",
         "sourceLocator": "abstract"
       },
       {
         "field": "verificationSite",
         "claimValue": "the renderer, not the model",
         "basis": "quote",
-        "sourceQuote": "PCN places verification in the \\emph{renderer}, not the model",
+        "sourceQuote": "Crucially, PCN places verification in the renderer , not the model: only claim-checked numbers are marked as verified",
         "sourceLocator": "abstract"
       },
       {
@@ -56,8 +70,23 @@
         "claimValue": "entity scoping or a named vocabulary for qualitative judgments",
         "basis": "absence",
         "note": "The abstract is about numeric fidelity; neither entity scoping nor a judgement vocabulary appears in the published description."
+      },
+      {
+        "field": "deterministic",
+        "claimValue": "Under PCN, a number is marked as “verified” only if it is bound to an authoritative claim and passes deterministic checks at the presentation layer.",
+        "basis": "quote",
+        "sourceQuote": "Under PCN, a number is marked as “verified” only if it is bound to an authoritative claim and passes deterministic checks at the presentation layer.",
+        "sourceLocator": "Section 2"
+      },
+      {
+        "field": "scope",
+        "claimValue": "PCN secures numeric fidelity only.",
+        "basis": "quote",
+        "sourceQuote": "PCN secures numeric fidelity only.",
+        "sourceLocator": "Section 6.1"
       }
-    ]
+    ],
+    "note": "Archived copy is now the arXiv full text (HTML); the words qualitative and vocabulary do not occur in it, and entity occurs only as a field of the claim tuple, which is the absence the paper relies on."
   },
   {
     "id": "symgen",
@@ -65,16 +94,100 @@
     "authors": "Torroba Hennigen et al.",
     "year": 2024,
     "name": "SymGen",
-    "claim": "@[citation:symgen]{SymGen} has the model %[mechanism]{interleave its regular output text with explicit symbolic references to fields present in some conditioning data}, so a wrong number is impossible and so is reporting one.",
+    "claim": "@[citation:symgen]{SymGen} has the model %[mechanism]{interleave its regular output text with explicit symbolic references to fields present in some conditioning data}, so a wrong number is impossible and so is reporting one; in its human study the annotations were %[verificationTime]{reducing the average verification time by 20%}, and in its method %[substitution]{A parser then substitutes the symbolic references with their corresponding values in the structured data (e.g., Portland for visitor . city ) to obtain the final rendered text (3).}. Its limitations section concedes: %[limits]{Although it is capable of generating accurate symbolic references, the surrounding context text may still be incorrect, thus leading to verifiable but incorrect generations.} And %[wrongField]{symbolic references may be incorrect even when the final text is accurate; for example if two fields in our data have the same value, but a symbolic reference is made to the wrong field, then the rendered text would be correct but not the reference}. The check it offers is a person's: %[manual]{The references can be used to display the provenance of different spans of text in the generation, reducing the effort required for manual verification.} And %[prose]{Our SymGen pipeline can implicitly leverage the input data to generate prose without any symbolic references}. It is offered as %[purpose]{a simple approach for enabling easier manual validation of an LLM’s output}. Automatic verification it places outside itself: %[orthogonal]{LLM verification is an orthogonal improvement to the reliability of LLMs, where the output of an LLM is automatically verified.}",
     "evidence": [
       {
         "field": "mechanism",
         "claimValue": "interleave its regular output text with explicit symbolic references to fields present in some conditioning data",
         "basis": "quote",
         "sourceQuote": "prompts an LLM to interleave its regular output text with explicit symbolic references to fields present in some conditioning data",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "the model emits references"
+        ]
+      },
+      {
+        "field": "verificationTime",
+        "claimValue": "reducing the average verification time by 20%",
+        "basis": "quote",
+        "sourceQuote": "as perceived by the user and by reducing the average verification time by 20%.",
+        "sourceLocator": "Section 1, Introduction (full text)",
+        "paperUse": [
+          "verification time by 20"
+        ]
+      },
+      {
+        "field": "substitution",
+        "claimValue": "A parser then substitutes the symbolic references with their corresponding values in the structured data (e.g., Portland for visitor . city ) to obtain the final rendered text (3).",
+        "basis": "quote",
+        "sourceQuote": "A parser then substitutes the symbolic references with their corresponding values in the structured data (e.g., Portland for visitor . city ) to obtain the final rendered text (3).",
+        "sourceLocator": "Section 2, Figure 2 caption (full text)",
+        "paperUse": [
+          "a parser substitutes the values"
+        ]
+      },
+      {
+        "field": "limits",
+        "claimValue": "Although it is capable of generating accurate symbolic references, the surrounding context text may still be incorrect, thus leading to verifiable but incorrect generations.",
+        "basis": "quote",
+        "sourceQuote": "Although it is capable of generating accurate symbolic references, the surrounding context text may still be incorrect, thus leading to verifiable but incorrect generations.",
+        "sourceLocator": "Section 6, limitations (full text)",
+        "paperUse": [
+          "surrounding prose"
+        ]
+      },
+      {
+        "field": "wrongField",
+        "claimValue": "symbolic references may be incorrect even when the final text is accurate; for example if two fields in our data have the same value, but a symbolic reference is made to the wrong field, then the rendered text would be correct but not the reference",
+        "basis": "quote",
+        "sourceQuote": "symbolic references may be incorrect even when the final text is accurate; for example if two fields in our data have the same value, but a symbolic reference is made to the wrong field, then the rendered text would be correct but not the reference",
+        "sourceLocator": "Section 4.1 (full text)",
+        "paperUse": [
+          "reference to the wrong field"
+        ]
+      },
+      {
+        "field": "manual",
+        "claimValue": "The references can be used to display the provenance of different spans of text in the generation, reducing the effort required for manual verification.",
+        "basis": "quote",
+        "sourceQuote": "The references can be used to display the provenance of different spans of text in the generation, reducing the effort required for manual verification.",
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "left to the reader"
+        ]
+      },
+      {
+        "field": "prose",
+        "claimValue": "Our SymGen pipeline can implicitly leverage the input data to generate prose without any symbolic references",
+        "basis": "quote",
+        "sourceQuote": "Our SymGen pipeline can implicitly leverage the input data to generate prose without any symbolic references",
+        "sourceLocator": "Section 2, Figure 2 caption (full text)",
+        "paperUse": [
+          "surrounding prose"
+        ]
+      },
+      {
+        "field": "purpose",
+        "claimValue": "a simple approach for enabling easier manual validation of an LLM’s output",
+        "basis": "quote",
+        "sourceQuote": "a simple approach for enabling easier manual validation of an LLM’s output",
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "left to the reader"
+        ]
+      },
+      {
+        "field": "orthogonal",
+        "claimValue": "LLM verification is an orthogonal improvement to the reliability of LLMs, where the output of an LLM is automatically verified.",
+        "basis": "quote",
+        "sourceQuote": "LLM verification is an orthogonal improvement to the reliability of LLMs, where the output of an LLM is automatically verified.",
+        "sourceLocator": "Section 7, related work (full text)",
+        "paperUse": [
+          "nothing in the pipeline reports"
+        ]
       }
-    ]
+    ],
+    "note": "Archived copy is now the arXiv full text (HTML), so the human-study figure and the substitution step are quoted rather than inferred from the abstract."
   },
   {
     "id": "claimlocked2026",
@@ -82,7 +195,7 @@
     "authors": "Fan et al.",
     "year": 2026,
     "name": "Claim-locked reporting",
-    "claim": "@[citation:claimlocked2026]{Claim-locked reporting} fixes %[locks]{the evidence source, numbers, direction, and allowed language strength of each reportable claim before the LLM writes only connective prose}, and %[foreignText]{cannot audit text it did not produce}.",
+    "claim": "@[citation:claimlocked2026]{Claim-locked reporting} fixes %[locks]{the evidence source, numbers, direction, and allowed language strength of each reportable claim before the LLM writes only connective prose}, and %[foreignText]{cannot audit text it did not produce}. The failure it names includes reports that %[premise]{restate thresholded contrasts as categorical effects}.",
     "evidence": [
       {
         "field": "locks",
@@ -96,6 +209,13 @@
         "claimValue": "cannot audit text it did not produce",
         "basis": "derived",
         "note": "A provenance-before-prose protocol governs generation; text produced outside it has nothing locked, so there is nothing to audit. Follows from the mechanism, not from a sentence."
+      },
+      {
+        "field": "premise",
+        "claimValue": "restate thresholded contrasts as categorical effects",
+        "basis": "quote",
+        "sourceQuote": "restate thresholded contrasts as categorical effects",
+        "sourceLocator": "abstract"
       }
     ]
   },
@@ -105,7 +225,7 @@
     "authors": "Anonymous et al.",
     "year": 2026,
     "name": "VeriFin",
-    "claim": "@[citation:verifin2026]{VeriFin} grounds %[grounds]{operands in filed XBRL facts} and checks claims with an SMT solver (%[solver]{Z3}), placing the arithmetic in the verifier where ProveML places it in the data layer.",
+    "claim": "@[citation:verifin2026]{VeriFin} grounds %[grounds]{operands in filed XBRL facts} and checks claims with an SMT solver (%[solver]{Z3}), placing the arithmetic in the verifier where ProveML places it in the data layer. It %[derives]{derives calculations from the question, filing linkbases, or documented metric definitions}, and when a claim is inconsistent %[cores]{solver-derived unsatisfiable cores identify the conflicting facts, formula, and candidate value}.",
     "evidence": [
       {
         "field": "grounds",
@@ -120,6 +240,20 @@
         "basis": "quote",
         "sourceQuote": "checks claims using Z3",
         "sourceLocator": "abstract"
+      },
+      {
+        "field": "derives",
+        "claimValue": "derives calculations from the question, filing linkbases, or documented metric definitions",
+        "basis": "quote",
+        "sourceQuote": "derives calculations from the question, filing linkbases, or documented metric definitions",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "cores",
+        "claimValue": "solver-derived unsatisfiable cores identify the conflicting facts, formula, and candidate value",
+        "basis": "quote",
+        "sourceQuote": "solver-derived unsatisfiable cores identify the conflicting facts, formula, and candidate value",
+        "sourceLocator": "abstract"
       }
     ]
   },
@@ -129,7 +263,7 @@
     "authors": "Yang et al.",
     "year": 2026,
     "name": "The data-referencing study",
-    "claim": "@[citation:datareferencing2026]{The data-referencing study} measures %[measures]{incorrectly citing or omitting table values} and detects them with %[detector]{a lightweight 4B-parameter critic model}; ProveML detects the same class with a lookup.",
+    "claim": "@[citation:datareferencing2026]{The data-referencing study} measures %[measures]{incorrectly citing or omitting table values} and detects them with %[detector]{trained a lightweight 4B-parameter critic model that achieves an average F1 score of 78.2% in detecting both in-distribution and out-of-distribution DREs}; ProveML detects the same class with a lookup. It measures the class: %[evaluation]{we present the first systematic evaluation of tabular data referencing errors across different models and tasks}.",
     "evidence": [
       {
         "field": "measures",
@@ -140,9 +274,16 @@
       },
       {
         "field": "detector",
-        "claimValue": "a lightweight 4B-parameter critic model",
+        "claimValue": "trained a lightweight 4B-parameter critic model that achieves an average F1 score of 78.2% in detecting both in-distribution and out-of-distribution DREs",
         "basis": "quote",
-        "sourceQuote": "trained a lightweight 4B-parameter critic model",
+        "sourceQuote": "trained a lightweight 4B-parameter critic model that achieves an average F1 score of 78.2% in detecting both in-distribution and out-of-distribution DREs",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "evaluation",
+        "claimValue": "we present the first systematic evaluation of tabular data referencing errors across different models and tasks",
+        "basis": "quote",
+        "sourceQuote": "we present the first systematic evaluation of tabular data referencing errors across different models and tasks",
         "sourceLocator": "abstract"
       }
     ]
@@ -153,7 +294,7 @@
     "authors": "Thorne et al.",
     "year": 2018,
     "name": "FEVER",
-    "claim": "@[citation:fever]{FEVER} verifies claims against textual sources with labels %[labels]{Supported, Refuted or NotEnoughInfo}, assigned by %[judge]{annotators}; systems built on it learn that judgement.",
+    "claim": "@[citation:fever]{FEVER} verifies claims against textual sources with labels %[labels]{Supported, Refuted or NotEnoughInfo}, assigned by annotators; systems built on it learn that judgement. It introduces %[dataset]{a new publicly available dataset for verification against textual sources} and a trained system judges support: %[pipeline]{we develop a pipeline approach and compare it to suitably designed oracles. The best accuracy we achieve on labeling a claim accompanied by the correct evidence is 31.87%}.",
     "evidence": [
       {
         "field": "labels",
@@ -163,10 +304,17 @@
         "sourceLocator": "abstract"
       },
       {
-        "field": "judge",
-        "claimValue": "annotators",
+        "field": "dataset",
+        "claimValue": "a new publicly available dataset for verification against textual sources",
         "basis": "quote",
-        "sourceQuote": "by annotators achieving 0.6841 in Fleiss",
+        "sourceQuote": "a new publicly available dataset for verification against textual sources",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "pipeline",
+        "claimValue": "we develop a pipeline approach and compare it to suitably designed oracles. The best accuracy we achieve on labeling a claim accompanied by the correct evidence is 31.87%",
+        "basis": "quote",
+        "sourceQuote": "we develop a pipeline approach and compare it to suitably designed oracles. The best accuracy we achieve on labeling a claim accompanied by the correct evidence is 31.87%",
         "sourceLocator": "abstract"
       }
     ]
@@ -177,7 +325,7 @@
     "authors": "Chen et al.",
     "year": 2020,
     "name": "TabFact",
-    "claim": "@[citation:tabfact]{TabFact} verifies statements against %[evidence]{16k Wikipedia tables as the evidence for 118k human-annotated natural language statements}, labelled %[labels]{ENTAILED or REFUTED}.",
+    "claim": "@[citation:tabfact]{TabFact} verifies statements against %[evidence]{16k Wikipedia tables as the evidence for 118k human-annotated natural language statements}, labelled %[labels]{ENTAILED or REFUTED}. A trained model judges: %[model]{Table-BERT leverages the state-of-the-art pre-trained language model to encode the linearized tables and statements into continuous vectors for verification.}",
     "evidence": [
       {
         "field": "evidence",
@@ -192,6 +340,13 @@
         "basis": "quote",
         "sourceQuote": "labeled as either ENTAILED or REFUTED",
         "sourceLocator": "abstract"
+      },
+      {
+        "field": "model",
+        "claimValue": "Table-BERT leverages the state-of-the-art pre-trained language model to encode the linearized tables and statements into continuous vectors for verification.",
+        "basis": "quote",
+        "sourceQuote": "Table-BERT leverages the state-of-the-art pre-trained language model to encode the linearized tables and statements into continuous vectors for verification.",
+        "sourceLocator": "abstract"
       }
     ]
   },
@@ -201,7 +356,7 @@
     "authors": "Aly et al.",
     "year": 2021,
     "name": "FEVEROUS",
-    "claim": "@[citation:feverous]{FEVEROUS} carries %[claims]{87,026 verified claims} with evidence as %[evidence]{sentences and/or cells from tables}.",
+    "claim": "@[citation:feverous]{FEVEROUS} carries %[claims]{87,026 verified claims} with evidence as %[evidence]{sentences and/or cells from tables}. Each claim carries %[label]{a label indicating whether this evidence supports, refutes, or does not provide enough information to reach a verdict}; and %[baseline]{we develop a baseline for verifying claims against text and tables which predicts both the correct evidence and verdict for 18% of the claims}.",
     "evidence": [
       {
         "field": "claims",
@@ -215,6 +370,20 @@
         "claimValue": "sentences and/or cells from tables",
         "basis": "quote",
         "sourceQuote": "evidence in the form of sentences and/or cells from tables",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "label",
+        "claimValue": "a label indicating whether this evidence supports, refutes, or does not provide enough information to reach a verdict",
+        "basis": "quote",
+        "sourceQuote": "a label indicating whether this evidence supports, refutes, or does not provide enough information to reach a verdict",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "baseline",
+        "claimValue": "we develop a baseline for verifying claims against text and tables which predicts both the correct evidence and verdict for 18% of the claims",
+        "basis": "quote",
+        "sourceQuote": "we develop a baseline for verifying claims against text and tables which predicts both the correct evidence and verdict for 18% of the claims",
         "sourceLocator": "abstract"
       }
     ]
@@ -242,13 +411,13 @@
     "authors": "Zha et al.",
     "year": 2023,
     "name": "AlignScore",
-    "claim": "@[citation:alignscore]{AlignScore} scores factual consistency through %[basisFn]{a general function of information alignment}: a probabilistic judge, after generation.",
+    "claim": "@[citation:alignscore]{AlignScore} scores factual consistency through %[basisFn]{AlignScore is based on a general function of information alignment between two arbitrary text pieces. Crucially, we develop a unified training framework of the alignment function by integrating a large diversity of data sources, resulting in 4.7M training examples}: a probabilistic judge, after generation.",
     "evidence": [
       {
         "field": "basisFn",
-        "claimValue": "a general function of information alignment",
+        "claimValue": "AlignScore is based on a general function of information alignment between two arbitrary text pieces. Crucially, we develop a unified training framework of the alignment function by integrating a large diversity of data sources, resulting in 4.7M training examples",
         "basis": "quote",
-        "sourceQuote": "AlignScore is based on a general function of information alignment",
+        "sourceQuote": "AlignScore is based on a general function of information alignment between two arbitrary text pieces. Crucially, we develop a unified training framework of the alignment function by integrating a large diversity of data sources, resulting in 4.7M training examples",
         "sourceLocator": "abstract"
       }
     ]
@@ -259,13 +428,27 @@
     "authors": "Tang et al.",
     "year": 2024,
     "name": "MiniCheck",
-    "claim": "@[citation:minicheck]{MiniCheck} builds %[approach]{small fact-checking models with GPT-4-level performance at 400x lower cost}: a trained judge, after generation.",
+    "claim": "@[citation:minicheck]{MiniCheck} builds %[approach]{small fact-checking models with GPT-4-level performance at 400x lower cost}: a trained judge, after generation. The task is grounding: %[grounding]{Recognizing if LLM output can be grounded in evidence is central to many tasks in NLP}; %[current]{Current approaches to this kind of fact-checking are based on verifying each piece of a model generation against potential evidence using an LLM}.",
     "evidence": [
       {
         "field": "approach",
         "claimValue": "small fact-checking models with GPT-4-level performance at 400x lower cost",
         "basis": "quote",
         "sourceQuote": "small fact-checking models that have GPT-4-level performance but for 400x lower cost",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "grounding",
+        "claimValue": "Recognizing if LLM output can be grounded in evidence is central to many tasks in NLP",
+        "basis": "quote",
+        "sourceQuote": "Recognizing if LLM output can be grounded in evidence is central to many tasks in NLP",
+        "sourceLocator": "abstract, opening sentence"
+      },
+      {
+        "field": "current",
+        "claimValue": "Current approaches to this kind of fact-checking are based on verifying each piece of a model generation against potential evidence using an LLM",
+        "basis": "quote",
+        "sourceQuote": "Current approaches to this kind of fact-checking are based on verifying each piece of a model generation against potential evidence using an LLM",
         "sourceLocator": "abstract"
       }
     ]
@@ -293,13 +476,27 @@
     "authors": "Lee et al.",
     "year": 2026,
     "name": "Evergreen",
-    "claim": "@[citation:evergreen2026]{Evergreen} %[mechanism]{recasts claim verification as a semantic query processing task}; ProveML can bind an aggregate only once it is materialised as a fact.",
+    "claim": "@[citation:evergreen2026]{Evergreen} %[mechanism]{recasts claim verification as a semantic query processing task}; ProveML can bind an aggregate only once it is materialised as a fact. The claims are about aggregates over relations: %[aggregate]{the resulting semantic aggregate may contain claims that are not grounded in the underlying relation}; %[compiles]{Evergreen compiles each claim into a declarative semantic verification query that can execute on the same query engine used to produce the aggregate}.",
     "evidence": [
       {
         "field": "mechanism",
         "claimValue": "recasts claim verification as a semantic query processing task",
         "basis": "quote",
         "sourceQuote": "recasts claim verification as a semantic query processing task",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "aggregate",
+        "claimValue": "the resulting semantic aggregate may contain claims that are not grounded in the underlying relation",
+        "basis": "quote",
+        "sourceQuote": "the resulting semantic aggregate may contain claims that are not grounded in the underlying relation",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "compiles",
+        "claimValue": "Evergreen compiles each claim into a declarative semantic verification query that can execute on the same query engine used to produce the aggregate",
+        "basis": "quote",
+        "sourceQuote": "Evergreen compiles each claim into a declarative semantic verification query that can execute on the same query engine used to produce the aggregate",
         "sourceLocator": "abstract"
       }
     ]
@@ -310,13 +507,20 @@
     "authors": "Yeginbergen et al.",
     "year": 2026,
     "name": "FullCite",
-    "claim": "@[citation:fullcite2026]{FullCite} generates %[mechanism]{structured inline citations linking each claim to both its source document and supporting evidence}.",
+    "claim": "@[citation:fullcite2026]{FullCite} generates %[mechanism]{structured inline citations linking each claim to both its source document and supporting evidence}. One of its three strategies is constrained decoding: %[strategies]{FullCite proposes three strategies to inline citation generation: prompt-based generation, constrained decoding over a citation grammar, and posthoc span alignment.}",
     "evidence": [
       {
         "field": "mechanism",
         "claimValue": "structured inline citations linking each claim to both its source document and supporting evidence",
         "basis": "quote",
         "sourceQuote": "generates structured inline citations linking each claim to both its source document and supporting evidence",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "strategies",
+        "claimValue": "FullCite proposes three strategies to inline citation generation: prompt-based generation, constrained decoding over a citation grammar, and posthoc span alignment.",
+        "basis": "quote",
+        "sourceQuote": "FullCite proposes three strategies to inline citation generation: prompt-based generation, constrained decoding over a citation grammar, and posthoc span alignment.",
         "sourceLocator": "abstract"
       }
     ]
@@ -327,13 +531,13 @@
     "authors": "Zhang et al.",
     "year": 2026,
     "name": "Decode-time grammars",
-    "claim": "@[citation:dtg2026]{Decode-time grammars} constrain reference slots to %[slots]{exactly the names, fields, APIs, or options available at that point}, the decoding route to the same end.",
+    "claim": "@[citation:dtg2026]{Decode-time grammars} constrain reference slots to %[slots]{a tightening operator replaces open reference positions with Gamma-typed slots whose candidates are exactly the names, fields, APIs, or options available at that point}, the decoding route to the same end.",
     "evidence": [
       {
         "field": "slots",
-        "claimValue": "exactly the names, fields, APIs, or options available at that point",
+        "claimValue": "a tightening operator replaces open reference positions with Gamma-typed slots whose candidates are exactly the names, fields, APIs, or options available at that point",
         "basis": "quote",
-        "sourceQuote": "candidates are exactly the names, fields, APIs, or options available at that point",
+        "sourceQuote": "a tightening operator replaces open reference positions with Gamma-typed slots whose candidates are exactly the names, fields, APIs, or options available at that point",
         "sourceLocator": "abstract"
       }
     ]
@@ -344,13 +548,13 @@
     "authors": "Scholak et al.",
     "year": 2021,
     "name": "PICARD",
-    "claim": "@[citation:picard]{PICARD} constrains decoders by %[mechanism]{rejecting inadmissible tokens at each decoding step}.",
+    "claim": "@[citation:picard]{PICARD} constrains decoders by %[mechanism]{a method for constraining auto-regressive decoders of language models through incremental parsing. PICARD helps to find valid output sequences by rejecting inadmissible tokens at each decoding step.}.",
     "evidence": [
       {
         "field": "mechanism",
-        "claimValue": "rejecting inadmissible tokens at each decoding step",
+        "claimValue": "a method for constraining auto-regressive decoders of language models through incremental parsing. PICARD helps to find valid output sequences by rejecting inadmissible tokens at each decoding step.",
         "basis": "quote",
-        "sourceQuote": "rejecting inadmissible tokens at each decoding step",
+        "sourceQuote": "a method for constraining auto-regressive decoders of language models through incremental parsing. PICARD helps to find valid output sequences by rejecting inadmissible tokens at each decoding step.",
         "sourceLocator": "abstract"
       }
     ]
@@ -361,13 +565,27 @@
     "authors": "Poesia et al.",
     "year": 2022,
     "name": "Synchromesh",
-    "claim": "@[citation:synchromesh]{Synchromesh} samples programs under %[mechanism]{constraining the output to a set of valid programs in the target language}.",
+    "claim": "@[citation:synchromesh]{Synchromesh} samples programs under %[mechanism]{constraining the output to a set of valid programs in the target language}. %[noRetraining]{CSD leverages constraints on partial outputs to sample complete correct programs, and needs neither re-training nor fine-tuning of the language model.} %[constraints]{These domains showcase rich constraints that CSD is able to enforce, including syntax, scope, typing rules, and contextual logic.}",
     "evidence": [
       {
         "field": "mechanism",
         "claimValue": "constraining the output to a set of valid programs in the target language",
         "basis": "quote",
         "sourceQuote": "constraining the output to a set of valid programs in the target language",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "noRetraining",
+        "claimValue": "CSD leverages constraints on partial outputs to sample complete correct programs, and needs neither re-training nor fine-tuning of the language model.",
+        "basis": "quote",
+        "sourceQuote": "CSD leverages constraints on partial outputs to sample complete correct programs, and needs neither re-training nor fine-tuning of the language model.",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "constraints",
+        "claimValue": "These domains showcase rich constraints that CSD is able to enforce, including syntax, scope, typing rules, and contextual logic.",
+        "basis": "quote",
+        "sourceQuote": "These domains showcase rich constraints that CSD is able to enforce, including syntax, scope, typing rules, and contextual logic.",
         "sourceLocator": "abstract"
       }
     ]
@@ -395,13 +613,20 @@
     "authors": "Kalai and Vempala",
     "year": 2024,
     "name": "Calibrated language models",
-    "claim": "@[citation:kalai2024]{Calibrated language models} must hallucinate: %[rate]{the probability of generating a hallucination is close to the fraction of facts that occur exactly once in the training data}.",
+    "claim": "@[citation:kalai2024]{Calibrated language models} must hallucinate: %[rate]{the probability of generating a hallucination is close to the fraction of facts that occur exactly once in the training data}. The bound is scoped: %[scope]{For \"arbitrary\" facts whose veracity cannot be determined from the training data, we show that hallucinations must occur at a certain rate for language models that satisfy a statistical calibration condition appropriate for generative language models.}",
     "evidence": [
       {
         "field": "rate",
         "claimValue": "the probability of generating a hallucination is close to the fraction of facts that occur exactly once in the training data",
         "basis": "quote",
         "sourceQuote": "the probability of generating a hallucination is close to the fraction of facts that occur exactly once in the training data",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "scope",
+        "claimValue": "For \"arbitrary\" facts whose veracity cannot be determined from the training data, we show that hallucinations must occur at a certain rate for language models that satisfy a statistical calibration condition appropriate for generative language models.",
+        "basis": "quote",
+        "sourceQuote": "For \"arbitrary\" facts whose veracity cannot be determined from the training data, we show that hallucinations must occur at a certain rate for language models that satisfy a statistical calibration condition appropriate for generative language models.",
         "sourceLocator": "abstract"
       }
     ]
@@ -412,13 +637,20 @@
     "authors": "Kalai, Nachum, Vempala and Zhang",
     "year": 2025,
     "name": "Why Language Models Hallucinate",
-    "claim": "@[citation:kalai2025]{Why Language Models Hallucinate} shows models %[behaviour]{guess when uncertain, producing plausible yet incorrect statements instead of admitting uncertainty}.",
+    "claim": "@[citation:kalai2025]{Why Language Models Hallucinate} shows models %[behaviour]{guess when uncertain, producing plausible yet incorrect statements instead of admitting uncertainty}. The cause it argues: %[cause]{We argue that language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty, and we analyze the statistical causes of hallucinations in the modern training pipeline.}",
     "evidence": [
       {
         "field": "behaviour",
         "claimValue": "guess when uncertain, producing plausible yet incorrect statements instead of admitting uncertainty",
         "basis": "quote",
         "sourceQuote": "guess when uncertain, producing plausible yet incorrect statements instead of admitting uncertainty",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "cause",
+        "claimValue": "We argue that language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty, and we analyze the statistical causes of hallucinations in the modern training pipeline.",
+        "basis": "quote",
+        "sourceQuote": "We argue that language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty, and we analyze the statistical causes of hallucinations in the modern training pipeline.",
         "sourceLocator": "abstract"
       }
     ]
@@ -438,7 +670,7 @@
         "sourceQuote": "Legal practice has witnessed a sharp rise in products incorporating artificial intelligence (AI). Such tools are designed to assist with a wide range of core legal tasks, from search and summarization of caselaw to document drafting.",
         "sourceLocator": "abstract, opening sentences",
         "paperUse": [
-          "deploying LLMs in consequential settings",
+          "in consequential settings",
           "in legal research"
         ]
       },
@@ -449,7 +681,7 @@
         "sourceQuote": "However, the large language models used in these tools are prone to “hallucinate,” or make up false information, making their use risky in high-stakes domains.",
         "sourceLocator": "abstract",
         "paperUse": [
-          "deploying LLMs in consequential settings"
+          "in consequential settings"
         ]
       },
       {
@@ -481,7 +713,7 @@
     "authors": "European Commission",
     "year": 2026,
     "name": "The EU AI Act",
-    "claim": "@[citation:euaiact]{The EU AI Act}: the Commission %[enforcement]{starts enforcing AI Act rules and new transparency requirements on 2 August}, %[transparencyScope]{requiring certain AI systems to tell users when they are interacting with AI and when content has been generated or altered by it}.",
+    "claim": "@[citation:euaiact]{The EU AI Act}: the Commission %[enforcement]{starts enforcing AI Act rules and new transparency requirements on 2 August}, %[transparencyScope]{requiring certain AI systems to tell users when they are interacting with AI and when content has been generated or altered by it}; the Regulation itself %[appliesFrom]{shall apply from 2 August 2026}; Article 50(2) requires providers of systems %[generatedText]{generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated}.",
     "evidence": [
       {
         "field": "enforcement",
@@ -490,7 +722,10 @@
         "sourceQuote": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
         "sourceLocator": "European Commission news item, title",
         "note": "The Commission announcement of the 2 August 2026 start; captured 2026-09-01, after application, so the start it announces has occurred. An earlier policy-page sentence still said \"will come into effect\" and is not quoted for that reason.",
-        "source": "euaiact-news"
+        "source": "euaiact-news",
+        "paperUse": [
+          "applied since 2 August 2026"
+        ]
       },
       {
         "field": "transparencyScope",
@@ -498,7 +733,30 @@
         "basis": "quote",
         "sourceQuote": "new transparency rules will start to apply, requiring certain AI systems to tell users when they are interacting with AI and when content has been generated or altered by it",
         "sourceLocator": "European Commission news item, lead",
-        "source": "euaiact-news"
+        "source": "euaiact-news",
+        "paperUse": [
+          "applied since 2 August 2026"
+        ]
+      },
+      {
+        "field": "appliesFrom",
+        "claimValue": "shall apply from 2 August 2026",
+        "basis": "quote",
+        "sourceQuote": "It shall apply from 2 August 2026.",
+        "sourceLocator": "Regulation (EU) 2024/1689, Article 113",
+        "paperUse": [
+          "applied since 2 August 2026"
+        ]
+      },
+      {
+        "field": "generatedText",
+        "claimValue": "generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated",
+        "basis": "quote",
+        "sourceQuote": "Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated.",
+        "sourceLocator": "Regulation (EU) 2024/1689, Article 50(2)",
+        "paperUse": [
+          "regulation now reaches generated text"
+        ]
       }
     ]
   },
@@ -750,7 +1008,7 @@
     "authors": "Ozarda",
     "year": 2016,
     "name": "Ozarda",
-    "claim": "@[citation:ozarda2016]{Ozarda} describes reference intervals as %[definition]{derived from reference distribution, usually of 95% interval}, bounded by lower and upper reference limits.",
+    "claim": "@[citation:ozarda2016]{Ozarda} describes reference intervals as %[definition]{derived from reference distribution, usually of 95% interval}, bounded by lower and upper reference limits. A result outside the interval is flagged: %[flag]{5% of all results from healthy people will fall outside of the reported RI and as such will be flagged as being ‘abnormal’}; and %[cdl]{CDLs are thresholds above or below which a specific medical decision is recommended}.",
     "evidence": [
       {
         "field": "definition",
@@ -758,6 +1016,20 @@
         "basis": "quote",
         "sourceQuote": "RIs are derived from reference distribution, usually of 95% interval, and describe a specific population.",
         "sourceLocator": "Reference intervals; the theory and the practice"
+      },
+      {
+        "field": "flag",
+        "claimValue": "5% of all results from healthy people will fall outside of the reported RI and as such will be flagged as being ‘abnormal’",
+        "basis": "quote",
+        "sourceQuote": "5% of all results from healthy people will fall outside of the reported RI and as such will be flagged as being ‘abnormal’",
+        "sourceLocator": "section Reference intervals and clinical decision limits"
+      },
+      {
+        "field": "cdl",
+        "claimValue": "CDLs are thresholds above or below which a specific medical decision is recommended",
+        "basis": "quote",
+        "sourceQuote": "CDLs are thresholds above or below which a specific medical decision is recommended",
+        "sourceLocator": "section Reference intervals and clinical decision limits"
       }
     ]
   },
@@ -767,7 +1039,7 @@
     "authors": "Wright, Andrews and Hutton",
     "year": 2022,
     "name": "JSON Schema Validation",
-    "claim": "@[citation:jsonschema2022]{JSON Schema Validation} declares a bound as a named keyword: the value of \"minimum\" is %[minimum]{an inclusive lower limit for a numeric instance}.",
+    "claim": "@[citation:jsonschema2022]{JSON Schema Validation} declares a bound as a named keyword: the value of \"minimum\" is %[minimum]{an inclusive lower limit for a numeric instance}. A human-readable label goes with it: %[label]{A title will preferably be short, whereas a description will provide explanation about the purpose of the instance described by this schema.}",
     "evidence": [
       {
         "field": "minimum",
@@ -775,6 +1047,13 @@
         "basis": "quote",
         "sourceQuote": "The value of \"minimum\" MUST be a number, representing an inclusive lower limit for a numeric instance.",
         "sourceLocator": "Section 6.2.4"
+      },
+      {
+        "field": "label",
+        "claimValue": "A title will preferably be short, whereas a description will provide explanation about the purpose of the instance described by this schema.",
+        "basis": "quote",
+        "sourceQuote": "A title will preferably be short, whereas a description will provide explanation about the purpose of the instance described by this schema.",
+        "sourceLocator": "Section 9.1, title and description"
       }
     ]
   },
@@ -784,7 +1063,7 @@
     "authors": "Prometheus Authors",
     "year": 2026,
     "name": "Prometheus alerting rules",
-    "claim": "@[citation:prometheusalerting]{Prometheus alerting rules} let an operator %[define]{define alert conditions based on Prometheus expression language expressions} and attach labels and annotations to the alert.",
+    "claim": "@[citation:prometheusalerting]{Prometheus alerting rules} let an operator %[define]{define alert conditions based on Prometheus expression language expressions} and attach labels and annotations to the alert. A rule carries a name, a bound and a label: %[rule]{- alert : HighRequestLatency}; %[annotations]{The annotations clause specifies a set of informational labels that can be used to store longer additional information such as alert descriptions or runbook links.} and %[label]{annotations : summary : High request latency}.",
     "evidence": [
       {
         "field": "define",
@@ -792,6 +1071,27 @@
         "basis": "quote",
         "sourceQuote": "Alerting rules allow you to define alert conditions based on Prometheus expression language expressions and to send notifications about firing alerts to an external service.",
         "sourceLocator": "opening paragraph"
+      },
+      {
+        "field": "rule",
+        "claimValue": "- alert : HighRequestLatency",
+        "basis": "quote",
+        "sourceQuote": "- alert : HighRequestLatency",
+        "sourceLocator": "Defining alerting rules, example rule (the alert's name)"
+      },
+      {
+        "field": "annotations",
+        "claimValue": "The annotations clause specifies a set of informational labels that can be used to store longer additional information such as alert descriptions or runbook links.",
+        "basis": "quote",
+        "sourceQuote": "The annotations clause specifies a set of informational labels that can be used to store longer additional information such as alert descriptions or runbook links.",
+        "sourceLocator": "Defining alerting rules"
+      },
+      {
+        "field": "label",
+        "claimValue": "annotations : summary : High request latency",
+        "basis": "quote",
+        "sourceQuote": "annotations : summary : High request latency",
+        "sourceLocator": "Defining alerting rules, example rule (the alert's label)"
       }
     ]
   },
@@ -801,7 +1101,7 @@
     "authors": "Amazon Web Services",
     "year": 2026,
     "name": "Bedrock contextual grounding",
-    "claim": "@[citation:bedrockgrounding2026]{Bedrock contextual grounding} checks %[scores]{generate confidence scores corresponding to grounding and relevance for each model response} and thresholds filter responses by those scores.",
+    "claim": "@[citation:bedrockgrounding2026]{Bedrock contextual grounding} checks %[scores]{generate confidence scores corresponding to grounding and relevance for each model response} and thresholds filter responses by those scores. A threshold decides: %[threshold]{The filtering threshold determines the minimum allowable confidence score for the model response to be considered as grounded and relevant in your generative AI application.}",
     "evidence": [
       {
         "field": "scores",
@@ -809,6 +1109,13 @@
         "basis": "quote",
         "sourceQuote": "Contextual grounding checks generate confidence scores corresponding to grounding and relevance for each model response processed based on the source and user query provided.",
         "sourceLocator": "Confidence scores and thresholds"
+      },
+      {
+        "field": "threshold",
+        "claimValue": "The filtering threshold determines the minimum allowable confidence score for the model response to be considered as grounded and relevant in your generative AI application.",
+        "basis": "quote",
+        "sourceQuote": "The filtering threshold determines the minimum allowable confidence score for the model response to be considered as grounded and relevant in your generative AI application.",
+        "sourceLocator": "Confidence scores and thresholds section"
       }
     ]
   },
@@ -842,7 +1149,7 @@
     "authors": "Microsoft",
     "year": 2026,
     "name": "Azure groundedness detection",
-    "claim": "@[citation:azuregroundedness2026]{Azure groundedness detection} %[purpose]{helps you ensure that large language model (LLM) responses are based on your provided source material}, with a detection model whose sensitivity is tuned per domain.",
+    "claim": "@[citation:azuregroundedness2026]{Azure groundedness detection} %[purpose]{helps you ensure that large language model (LLM) responses are based on your provided source material}, with a detection model whose sensitivity is tuned per domain. A detection model does the scoring: %[model]{Domain selection tunes the detection model's sensitivity and correction behavior for domain-specific terminology and patterns.} The outcome is decided: %[outcome]{Returns binary grounded/ungrounded results without detailed explanations.}",
     "evidence": [
       {
         "field": "purpose",
@@ -850,6 +1157,20 @@
         "basis": "quote",
         "sourceQuote": "Groundedness detection in Azure AI Content Safety helps you ensure that large language model (LLM) responses are based on your provided source material, reducing the risk of non-factual or fabricated outputs.",
         "sourceLocator": "lead paragraph"
+      },
+      {
+        "field": "model",
+        "claimValue": "Domain selection tunes the detection model's sensitivity and correction behavior for domain-specific terminology and patterns.",
+        "basis": "quote",
+        "sourceQuote": "Domain selection tunes the detection model's sensitivity and correction behavior for domain-specific terminology and patterns.",
+        "sourceLocator": "Domain specification section"
+      },
+      {
+        "field": "outcome",
+        "claimValue": "Returns binary grounded/ungrounded results without detailed explanations.",
+        "basis": "quote",
+        "sourceQuote": "Returns binary grounded/ungrounded results without detailed explanations.",
+        "sourceLocator": "Detection modes section, Non-Reasoning mode"
       }
     ]
   },
@@ -859,7 +1180,7 @@
     "authors": "Vectara",
     "year": 2026,
     "name": "HHEM",
-    "claim": "@[citation:vectarahhem2026]{HHEM} takes premise and hypothesis pairs and %[output]{returns a score between 0 and 1 for each pair}.",
+    "claim": "@[citation:vectarahhem2026]{HHEM} takes premise and hypothesis pairs and %[output]{returns a score between 0 and 1 for each pair}. %[series]{HHEM series models for detecting hallucinations in LLMs}; the card names %[trained]{the prompt template in which we trained the model}.",
     "evidence": [
       {
         "field": "output",
@@ -867,6 +1188,20 @@
         "basis": "quote",
         "sourceQuote": "It takes a list of pairs of (premise, hypothesis) as the input and returns a score between 0 and 1 for each pair where 0 means that the hypothesis is not evidenced at all by the premise and 1 means the hypothesis is fully supported by the premise.",
         "sourceLocator": "Using HHEM-2.1-Open"
+      },
+      {
+        "field": "series",
+        "claimValue": "HHEM series models for detecting hallucinations in LLMs",
+        "basis": "quote",
+        "sourceQuote": "HHEM series models for detecting hallucinations in LLMs",
+        "sourceLocator": "model card, opening"
+      },
+      {
+        "field": "trained",
+        "claimValue": "the prompt template in which we trained the model",
+        "basis": "quote",
+        "sourceQuote": "the prompt template in which we trained the model",
+        "sourceLocator": "model card, usage"
       }
     ]
   },
@@ -927,7 +1262,7 @@
     "authors": "Sun et al.",
     "year": 2025,
     "name": "Sun et al.",
-    "claim": "@[citation:sun2025idiosyncrasies]{Sun et al.} find that %[finding]{using markdown elements can achieve high accuracies for chat APIs and instruct LLMs} in identifying which model wrote a response.",
+    "claim": "@[citation:sun2025idiosyncrasies]{Sun et al.} find that %[finding]{using markdown elements can achieve high accuracies for chat APIs and instruct LLMs} in identifying which model wrote a response. The contrast is with base models: %[plainText]{the classification accuracies with base LLMs’ responses are near chance-level guess (25%). This is likely because base LLMs tend to generate responses in plain text.} The elements are Markdown: %[elements]{we focus on common markdown elements used by LLMs: (1) bold text, (2) italic text, (3) header, (4) enumeration, (5) bullet point, (6) code block.}",
     "evidence": [
       {
         "field": "finding",
@@ -935,6 +1270,20 @@
         "basis": "quote",
         "sourceQuote": "Using markdown elements can achieve high accuracies for chat APIs and instruct LLMs, but marginally better results for base LLMs.",
         "sourceLocator": "Table 9 caption"
+      },
+      {
+        "field": "plainText",
+        "claimValue": "the classification accuracies with base LLMs’ responses are near chance-level guess (25%). This is likely because base LLMs tend to generate responses in plain text.",
+        "basis": "quote",
+        "sourceQuote": "the classification accuracies with base LLMs’ responses are near chance-level guess (25%). This is likely because base LLMs tend to generate responses in plain text.",
+        "sourceLocator": "Section 3.2"
+      },
+      {
+        "field": "elements",
+        "claimValue": "we focus on common markdown elements used by LLMs: (1) bold text, (2) italic text, (3) header, (4) enumeration, (5) bullet point, (6) code block.",
+        "basis": "quote",
+        "sourceQuote": "we focus on common markdown elements used by LLMs: (1) bold text, (2) italic text, (3) header, (4) enumeration, (5) bullet point, (6) code block.",
+        "sourceLocator": "Section 3.2"
       }
     ]
   },
@@ -985,35 +1334,52 @@
         "claimValue": "define the scope of transparency obligations for providers and deployers of AI systems under Article 50 of the AI Act",
         "basis": "quote",
         "sourceQuote": "These guidelines define the scope of transparency obligations for providers and deployers of AI systems under Article 50 of the AI Act.",
-        "sourceLocator": "library page, opening description paragraph under the heading"
+        "sourceLocator": "library page, opening description paragraph under the heading",
+        "paperUse": [
+          "regulation now reaches",
+          "two weeks before"
+        ]
       },
       {
         "field": "purpose",
         "claimValue": "offer practical guidance to competent authorities, as well as providers and deployers of AI systems",
         "basis": "quote",
         "sourceQuote": "The Commission adopted these guidelines to offer practical guidance to competent authorities, as well as providers and deployers of AI systems.",
-        "sourceLocator": "library page, third description paragraph"
+        "sourceLocator": "library page, third description paragraph",
+        "paperUse": [
+          "two weeks before"
+        ]
       },
       {
         "field": "relatedGuidance",
         "claimValue": "Guidelines on Transparency of AI-Generated Content",
         "basis": "quote",
         "sourceQuote": "Find further information: An overview - Guidelines on Transparency of AI-Generated Content",
-        "sourceLocator": "library page, \"Find further information\" link list"
+        "sourceLocator": "library page, \"Find further information\" link list",
+        "paperUse": [
+          "regulation now reaches"
+        ]
       },
       {
         "field": "publishedOn",
         "claimValue": "20 July 2026",
         "basis": "quote",
         "sourceQuote": "Publication 20 July 2026",
-        "sourceLocator": "library page, publication date line under the \"POLICY AND LEGISLATION\" label"
+        "sourceLocator": "library page, publication date line under the \"POLICY AND LEGISLATION\" label",
+        "paperUse": [
+          "two weeks before"
+        ]
       },
       {
         "field": "appliesFrom",
         "claimValue": "apply from 2 August 2026",
         "basis": "quote",
         "sourceQuote": "These transparency obligations apply from 2 August 2026.",
-        "sourceLocator": "library page, second description paragraph"
+        "sourceLocator": "library page, second description paragraph",
+        "paperUse": [
+          "regulation now reaches",
+          "two weeks before"
+        ]
       }
     ],
     "note": "Archived copy is the Commission library page; the guidelines PDF under Downloads is not archived. The page says the Commission adopted the guidelines and dates the item as published 20 July 2026, thirteen days before 2 August 2026 (the paper rounds to two weeks). Generated content appears on the page only as the title of a linked overview; the Digital Omnibus deferral in the same sentence rests on omnibus2026."
@@ -1202,7 +1568,7 @@
     "authors": "Onweller, Lumer, Huber, Ramchandani, Subbiah and Feld",
     "year": 2026,
     "name": "Onweller et al.",
-    "claim": "@[citation:citednotverified]{Onweller et al.} evaluate the citations of deep research agents by %[judgment]{enabling human or model evaluators to judge each citation against its source}, scoring them with %[evaluators]{rubric-based LLM-as-a-judge evaluators calibrated through human review}, and finds that even the strongest frontier models %[factualAccuracy]{achieve only 39-77% factual accuracy}.",
+    "claim": "@[citation:citednotverified]{Onweller et al.} evaluate the citations of deep research agents by %[judgment]{enabling human or model evaluators to judge each citation against its source}, scoring them with rubric-based LLM-as-a-judge evaluators calibrated through human review, and finds that even the strongest frontier models %[factualAccuracy]{achieve only 39-77% factual accuracy}. The abstract opens with the gap: %[unverifiable]{yet these citations cannot be reliably verified}, and closes with %[disconnect]{These findings reveal a critical disconnect between surface-level citation quality and factual reliability}.",
     "evidence": [
       {
         "field": "judgment",
@@ -1211,17 +1577,8 @@
         "sourceQuote": "Unlike methods that verify claims in isolation, our framework closes the loop by retrieving the actual cited content, enabling human or model evaluators to judge each citation against its source.",
         "sourceLocator": "abstract",
         "paperUse": [
-          "judged by a person"
-        ]
-      },
-      {
-        "field": "evaluators",
-        "claimValue": "rubric-based LLM-as-a-judge evaluators calibrated through human review",
-        "basis": "quote",
-        "sourceQuote": "We benchmark 14 closed-source and open-source LLMs across three evaluation dimensions using rubric-based LLM-as-a-judge evaluators calibrated through human review.",
-        "sourceLocator": "abstract",
-        "paperUse": [
-          "judged by a person"
+          "judged by a person",
+          "machine can check"
         ]
       },
       {
@@ -1232,6 +1589,26 @@
         "sourceLocator": "abstract",
         "paperUse": [
           "39",
+          "machine can check"
+        ]
+      },
+      {
+        "field": "unverifiable",
+        "claimValue": "yet these citations cannot be reliably verified",
+        "basis": "quote",
+        "sourceQuote": "yet these citations cannot be reliably verified",
+        "sourceLocator": "abstract, opening sentence",
+        "paperUse": [
+          "machine can check"
+        ]
+      },
+      {
+        "field": "disconnect",
+        "claimValue": "These findings reveal a critical disconnect between surface-level citation quality and factual reliability",
+        "basis": "quote",
+        "sourceQuote": "These findings reveal a critical disconnect between surface-level citation quality and factual reliability",
+        "sourceLocator": "abstract, closing sentence",
+        "paperUse": [
           "machine can check"
         ]
       }
@@ -1315,7 +1692,7 @@
     "authors": "Rao, Wong and Callison-Burch",
     "year": 2026,
     "name": "The citation-URL study",
-    "claim": "@[citation:rao2026]{The citation-URL study} measures citation URLs from commercial models and deep research agents and finds that %[share]{3–13% of citation URLs are hallucinated}: they %[meaning]{have no record in the Wayback Machine and likely never existed}; pooled over the two deep research agents %[deepResearchRate]{the hallucination rate is 10.7%}, against %[searchRate]{4.8% [4.3, 5.2] for the eight search-augmented models}.",
+    "claim": "@[citation:rao2026]{The citation-URL study} measures citation URLs from commercial models and deep research agents and finds that %[share]{3–13% of citation URLs are hallucinated}: they %[meaning]{have no record in the Wayback Machine and likely never existed}; pooled over the two deep research agents %[deepResearchRate]{the hallucination rate is 10.7%}, against %[searchRate]{4.8% [4.3, 5.2] for the eight search-augmented models}.; its opening sentence states the population: %[population]{RQ1 (Prevalence) How prevalent are citation URL failures across commercial LLMs and deep research agents?} Its related work names why URLs are the checkable part: %[automated]{URL existence is binary and externally verifiable, making it amenable to automated evaluation in a way that free-text factual claims are not.} The two agents are named: %[commercial]{are among the primary commercial systems whose outputs we evaluate}",
     "evidence": [
       {
         "field": "share",
@@ -1324,7 +1701,8 @@
         "sourceQuote": "We find that 3–13% of citation URLs are hallucinated—they have no record in the Wayback Machine and likely never existed—while 5–18% are non-resolving overall.",
         "sourceLocator": "abstract",
         "paperUse": [
-          "commercial models and deep research agents in 2026"
+          "commercial models and deep research agents",
+          "two commercial deep research agents"
         ]
       },
       {
@@ -1334,7 +1712,7 @@
         "sourceQuote": "We find that 3–13% of citation URLs are hallucinated—they have no record in the Wayback Machine and likely never existed—while 5–18% are non-resolving overall.",
         "sourceLocator": "abstract",
         "paperUse": [
-          "commercial models and deep research agents in 2026"
+          "commercial models and deep research agents"
         ]
       },
       {
@@ -1344,8 +1722,7 @@
         "sourceQuote": "Pooling across the two deep research agents, the hallucination rate is 10.7% [10.2, 11.2] versus 4.8% [4.3, 5.2] for the eight search-augmented models",
         "sourceLocator": "Section 4, hallucination rates by model class",
         "paperUse": [
-          "two commercial deep research agents",
-          "machine can check"
+          "two commercial deep research agents"
         ]
       },
       {
@@ -1357,8 +1734,160 @@
         "paperUse": [
           "two commercial deep research agents"
         ]
+      },
+      {
+        "field": "population",
+        "claimValue": "RQ1 (Prevalence) How prevalent are citation URL failures across commercial LLMs and deep research agents?",
+        "basis": "quote",
+        "sourceQuote": "RQ1 (Prevalence) How prevalent are citation URL failures across commercial LLMs and deep research agents?",
+        "sourceLocator": "abstract, opening sentence",
+        "paperUse": [
+          "commercial models and deep research agents"
+        ]
+      },
+      {
+        "field": "automated",
+        "claimValue": "URL existence is binary and externally verifiable, making it amenable to automated evaluation in a way that free-text factual claims are not.",
+        "basis": "quote",
+        "sourceQuote": "URL existence is binary and externally verifiable, making it amenable to automated evaluation in a way that free-text factual claims are not.",
+        "sourceLocator": "Appendix B.1, extended related work",
+        "paperUse": [
+          "machine can check"
+        ]
+      },
+      {
+        "field": "commercial",
+        "claimValue": "are among the primary commercial systems whose outputs we evaluate",
+        "basis": "quote",
+        "sourceQuote": "are among the primary commercial systems whose outputs we evaluate",
+        "sourceLocator": "Appendix B.4, deep research agents",
+        "paperUse": [
+          "two commercial deep research agents"
+        ]
       }
     ],
     "note": "Archived copy is the arXiv full text (HTML). The two deep research agents are OpenAI Deep Research (3.5% hallucinated URLs) and Gemini 2.5 Pro Deep Research (13.3%); the pooled 10.7% is the paper's own figure for that class."
+  },
+  {
+    "id": "anthropicopus5",
+    "title": "Introducing Claude Opus 5",
+    "authors": "Anthropic",
+    "year": 2026,
+    "name": "the Opus 5 announcement",
+    "claim": "@[citation:anthropicopus5]{the Opus 5 announcement} is dated %[released]{Jul 24, 2026} and describes the model as one that %[standing]{comes close to the frontier intelligence of Claude Fable 5 at half the price}.",
+    "evidence": [
+      {
+        "field": "released",
+        "claimValue": "Jul 24, 2026",
+        "basis": "quote",
+        "sourceQuote": "Introducing Claude Opus 5 Jul 24, 2026 Claude Opus 5 is available today.",
+        "sourceLocator": "announcement, dateline",
+        "paperUse": [
+          "released 24 July 2026"
+        ]
+      },
+      {
+        "field": "standing",
+        "claimValue": "comes close to the frontier intelligence of Claude Fable 5 at half the price",
+        "basis": "quote",
+        "sourceQuote": "It’s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.",
+        "sourceLocator": "announcement, opening paragraph",
+        "paperUse": [
+          "close to the frontier intelligence"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "anthropicsonnet5",
+    "title": "Introducing Claude Sonnet 5",
+    "authors": "Anthropic",
+    "year": 2026,
+    "name": "the Sonnet 5 announcement",
+    "claim": "@[citation:anthropicsonnet5]{the Sonnet 5 announcement} is dated %[released]{Jun 30, 2026}. It shipped that day: %[available]{From today, Claude Sonnet 5 is available across all plans}.",
+    "evidence": [
+      {
+        "field": "released",
+        "claimValue": "Jun 30, 2026",
+        "basis": "quote",
+        "sourceQuote": "Introducing Claude Sonnet 5 Jun 30, 2026 Claude Sonnet 5 is built to be the most agentic Sonnet model yet.",
+        "sourceLocator": "announcement, dateline",
+        "paperUse": [
+          "released 30 June 2026"
+        ]
+      },
+      {
+        "field": "available",
+        "claimValue": "From today, Claude Sonnet 5 is available across all plans",
+        "basis": "quote",
+        "sourceQuote": "From today, Claude Sonnet 5 is available across all plans",
+        "sourceLocator": "announcement body",
+        "paperUse": [
+          "released 30 June 2026"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "deepseekv4pro",
+    "title": "DeepSeek-V4-Pro",
+    "authors": "DeepSeek-AI",
+    "year": 2026,
+    "name": "the DeepSeek-V4-Pro model card",
+    "claim": "@[citation:deepseekv4pro]{the DeepSeek-V4-Pro model card} describes %[size]{DeepSeek-V4-Pro with 1.6T parameters (49B activated)} and states that %[license]{the model weights are licensed under the MIT License}.",
+    "evidence": [
+      {
+        "field": "size",
+        "claimValue": "DeepSeek-V4-Pro with 1.6T parameters (49B activated)",
+        "basis": "quote",
+        "sourceQuote": "two strong Mixture-of-Experts (MoE) language models — DeepSeek-V4-Pro with 1.6T parameters (49B activated) and DeepSeek-V4-Flash with 284B parameters (13B activated)",
+        "sourceLocator": "model card, Introduction",
+        "paperUse": [
+          "1.6T parameters"
+        ]
+      },
+      {
+        "field": "license",
+        "claimValue": "the model weights are licensed under the MIT License",
+        "basis": "quote",
+        "sourceQuote": "This repository and the model weights are licensed under the MIT License .",
+        "sourceLocator": "model card, License",
+        "paperUse": [
+          "MIT licence"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "finground",
+    "title": "FinGround: Detecting and Grounding Financial Hallucinations via Atomic Claim Verification",
+    "authors": "Guo, Wu and Yiu",
+    "year": 2026,
+    "name": "FinGround",
+    "claim": "@[citation:finground]{FinGround} is a verify-then-ground pipeline for financial document QA whose second stage %[decomposition]{decomposes answers into atomic claims classified by a six-type financial taxonomy and verified with type-routed strategies including formula reconstruction}; its detector is a model: %[detector]{An 8B distilled detector retains 91.4% F1 at 18x lower per-claim latency}. %[stage3]{Stage 3 rewrites unsupported claims with paragraph- and table-cell-level citations.}",
+    "evidence": [
+      {
+        "field": "decomposition",
+        "claimValue": "decomposes answers into atomic claims classified by a six-type financial taxonomy and verified with type-routed strategies including formula reconstruction",
+        "basis": "quote",
+        "sourceQuote": "decomposes answers into atomic claims classified by a six-type financial taxonomy and verified with type-routed strategies including formula reconstruction",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "detector",
+        "claimValue": "An 8B distilled detector retains 91.4% F1 at 18x lower per-claim latency",
+        "basis": "quote",
+        "sourceQuote": "An 8B distilled detector retains 91.4% F1 at 18x lower per-claim latency",
+        "sourceLocator": "abstract"
+      },
+      {
+        "field": "stage3",
+        "claimValue": "Stage 3 rewrites unsupported claims with paragraph- and table-cell-level citations.",
+        "basis": "quote",
+        "sourceQuote": "Stage 3 rewrites unsupported claims with paragraph- and table-cell-level citations.",
+        "sourceLocator": "abstract"
+      }
+    ],
+    "note": "Archived 2026-09-12 (arXiv abstract page) after the review round found the Table 5 row characterised without a citation or an archive."
   }
 ]

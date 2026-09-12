@@ -1,0 +1,13 @@
+[
+  {"name": "canonical value verifies, display aside", "text": "@[company:aapl]{Apple Inc.} reported revenue of %[revenue]{391035000000 USD}.", "expected": ["verified","verified"]},
+  {"name": "the rounded form in the claim fails", "text": "@[company:aapl]{Apple Inc.} reported revenue of %[revenue]{$391 billion}.", "expected": ["verified","value-mismatch"]},
+  {"name": "a judgment at the bound: 74 is not strong, 75 is", "text": "@[offering:10012]{6ZW} is ?[a: IS_STRONG]{strong} and ?[b: IS_PASSING]{passing}. @[offering:10050]{5WEWI} is ?[c: IS_STRONG]{strong}.", "expected": ["verified","failed","verified","verified","verified"]},
+  {"name": "NOT of an unregistered name is unresolved, not verified", "text": "@[offering:10012]{6ZW} is ?[a: NOT IS_MOTIVATED]{unmotivated} and ?[b: NOT IS_STRONG]{not strong}.", "expected": ["verified","unverifiable","verified"]},
+  {"name": "false wins a conjunction even beside an unregistered name; NOT of that, by label, verifies", "text": "@[offering:10012]{6ZW} ?[a: IS_STRONG AND IS_MOTIVATED]{x} ?[b: NOT @a]{y}", "expected": ["verified","failed","verified"]},
+  {"name": "an explicit path picks the entity, never the field", "text": "@[offering:10012]{6ZW} has a pupil @[student:20321]{Nathan Lambert} with ?[a: IS_HIGH_ABSENCE]{high absence}, ?[b: IS_GREY_RISK]{grey risk}, and the class is ?[c: IS_STRONG(offering:10012.passRate)]{strong} and ?[d: IS_STRONG(student:20321.absent)]{strong}.", "expected": ["verified","verified","verified","failed","failed","unverifiable"]},
+  {"name": "a scope closes and the earlier context returns", "text": "@[offering:10012 \"6ZW\"]{ has %[passRate]{74}% } and @[student:20321 \"Nathan Lambert\"]{ has %[absent]{29} absences } while %[studentCount]{8} pupils.", "expected": ["verified","verified","verified","verified","no-context"]},
+  {"name": "no context: a fact before any entity", "text": "The pass rate is %[passRate]{74}%.", "expected": ["no-context"]},
+  {"name": "a unit the threshold asks for, present and matching", "text": "@[account:901]{Acme Corp} has %[balance]{12400 EUR} and is ?[n: IS_NEGATIVE_BALANCE]{in the red}.", "expected": ["verified","verified","failed"]},
+  {"name": "isNull holds where the record type never carries the field (the vacuity the study met)", "text": "@[offering:10012]{6ZW} has ?[m: IS_MISSING]{no data}.", "expected": ["verified","verified"]},
+  {"name": "a wrong name at a known id, and an unknown id", "text": "@[offering:10012]{6ZX} and @[offering:99999]{Nowhere} with %[passRate]{74}%.", "expected": ["name-mismatch","entity-not-found","field-not-found"]}
+]

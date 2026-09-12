@@ -1,0 +1,7076 @@
+{
+ "p1176f149722b|citation:art50guidelines2026.cited_p1176f149722b": {
+  "para": "63fa1d812802",
+  "vk": "3f6635613b451a2d",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p24c89ead91ea|citation:rao2026.cited_p24c89ead91ea": {
+  "para": "39b3a2d12ec5",
+  "vk": "0bda5c8d203183d4",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p29a3a35b7ccd|para:p29a3a35b7ccd.inf3": {
+  "para": "f00c33046ef2",
+  "vk": "5448fcb5f337416a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pd63886a132b4|para:pd63886a132b4.inf5": {
+  "para": "6defed0267a5",
+  "vk": "6e91e6a511b640fe",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p18bd483b9956|para:p18bd483b9956.inf3": {
+  "para": "cdd65fc71f85",
+  "vk": "e346dccf0d28c4f9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p27abddb45ad6|para:p27abddb45ad6.inf1": {
+  "para": "273a07946d04",
+  "vk": "adb09976fb0230c1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pbce67713462b|para:pbce67713462b.inf2": {
+  "para": "2f877e1c7357",
+  "vk": "da2118326ee8b9ac",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p9fb754593ebc|para:p9fb754593ebc.inf5": {
+  "para": "4bb7107c32d8",
+  "vk": "3f156e7b53e7f248",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:symgen.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "eeb6a36e3672e996",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:fullcite2026.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "da7db11c3848eda3",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pba6642c2ad0d|citation:azuregroundedness2026.cited_pba6642c2ad0d": {
+  "para": "d20e694e1cfb",
+  "vk": "6b38bf0e9ebb9031",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p56eb97e863e4|para:p56eb97e863e4.inf1": {
+  "para": "15ad5967a37a",
+  "vk": "5e850fce8b77ee3b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pa5dc1d86d3a3|para:pa5dc1d86d3a3.inf1": {
+  "para": "417a7b8d3af2",
+  "vk": "1bece058b4bb3516",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p5c01d6d44bcc|citation:symgen.cited_p5c01d6d44bcc": {
+  "para": "5fb433a5df30",
+  "vk": "0895e504ac0dd4e3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p9529b40a99de|para:p9529b40a99de.inf1": {
+  "para": "9661edcc8ecb",
+  "vk": "77c63b053da9168a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pc22f3476a8ba|para:pc22f3476a8ba.inf1": {
+  "para": "4f0d5bbcc9d5",
+  "vk": "c594a492b07cd02e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p504b53b1082f|para:p504b53b1082f.inf3": {
+  "para": "e0e1b4dba0b3",
+  "vk": "915564446e14c994",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p1176f149722b|citation:citednotverified.cited_p1176f149722b": {
+  "para": "63fa1d812802",
+  "vk": "3a2a2187e4b916ae",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p24c89ead91ea|citation:cao2024.cited_p24c89ead91ea": {
+  "para": "39b3a2d12ec5",
+  "vk": "bcde9dacb3a09d9d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pe4169ec07994|para:pe4169ec07994.inf1": {
+  "para": "ce14160afb0c",
+  "vk": "e01d22909212f7d2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pd63886a132b4|para:pd63886a132b4.inf6": {
+  "para": "6defed0267a5",
+  "vk": "096096b31d244225",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p18bd483b9956|para:p18bd483b9956.inf4": {
+  "para": "cdd65fc71f85",
+  "vk": "625d2d76e0ec5ad9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p27abddb45ad6|para:p27abddb45ad6.inf2": {
+  "para": "273a07946d04",
+  "vk": "21cad20a14899034",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4aa380ca5e34|para:p4aa380ca5e34.inf1": {
+  "para": "515353204142",
+  "vk": "8226fb31e0d6f480",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p9fb754593ebc|para:p9fb754593ebc.inf6": {
+  "para": "4bb7107c32d8",
+  "vk": "293a9377e7aebd0f",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:claimlocked2026.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "d725f5622e6075de",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "peb0ee6f7670b|para:peb0ee6f7670b.inf1": {
+  "para": "779fc95cbd08",
+  "vk": "e0f76836b4bc23d5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pba6642c2ad0d|citation:vectarahhem2026.cited_pba6642c2ad0d": {
+  "para": "d20e694e1cfb",
+  "vk": "4d8fa6d83215d9f6",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p56eb97e863e4|para:p56eb97e863e4.inf2": {
+  "para": "15ad5967a37a",
+  "vk": "862a66b050917987",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pa5dc1d86d3a3|para:pa5dc1d86d3a3.inf2": {
+  "para": "417a7b8d3af2",
+  "vk": "9bd5ed191b474d7b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p3311d00707a1|para:p3311d00707a1.inf1": {
+  "para": "b13ada672050",
+  "vk": "c7506e42fa285662",
+  "verdict": "cannot-check",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p9529b40a99de|para:p9529b40a99de.inf2": {
+  "para": "9661edcc8ecb",
+  "vk": "9eedfc1406ae9cce",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pc22f3476a8ba|para:pc22f3476a8ba.inf2": {
+  "para": "4f0d5bbcc9d5",
+  "vk": "69f3c381a6a93194",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p504b53b1082f|para:p504b53b1082f.inf4": {
+  "para": "e0e1b4dba0b3",
+  "vk": "3e5a89120e6a9cad",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "abstract-results|study:judgment.registryNames": {
+  "para": "fce359f1385d",
+  "vk": "1e2545586309d3ec",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2bd9cc52803a|para:p2bd9cc52803a.inf1": {
+  "para": "0cc9647ffe24",
+  "vk": "b1651d5442f9509c",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pe4169ec07994|para:pe4169ec07994.inf2": {
+  "para": "ce14160afb0c",
+  "vk": "4fb1ffa4e561257e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pd63886a132b4|para:pd63886a132b4.inf7": {
+  "para": "6defed0267a5",
+  "vk": "2c2c05ccee7c3211",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p18bd483b9956|para:p18bd483b9956.inf5": {
+  "para": "cdd65fc71f85",
+  "vk": "1c723fdfe0a3c4f3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p27abddb45ad6|para:p27abddb45ad6.inf3": {
+  "para": "273a07946d04",
+  "vk": "0591302baf831ec2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4aa380ca5e34|para:p4aa380ca5e34.inf2": {
+  "para": "515353204142",
+  "vk": "c617d85c124ed1ab",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p9fb754593ebc|para:p9fb754593ebc.inf7": {
+  "para": "4bb7107c32d8",
+  "vk": "f0e09f79c88d5533",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:verifin2026.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "1964e964de3eff5e",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "peb0ee6f7670b|para:peb0ee6f7670b.inf2": {
+  "para": "779fc95cbd08",
+  "vk": "36aa16c43bbb5125",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pba6642c2ad0d|citation:bedrockautoreasoning2026.cited_pba6642c2ad0d": {
+  "para": "d20e694e1cfb",
+  "vk": "11ca5ffdf0debcab",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p56eb97e863e4|para:p56eb97e863e4.inf3": {
+  "para": "15ad5967a37a",
+  "vk": "0f94ffb34a19b08d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pa5dc1d86d3a3|para:pa5dc1d86d3a3.inf3": {
+  "para": "417a7b8d3af2",
+  "vk": "5f5e6d1481535172",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p244eeb17f122|para:p244eeb17f122.inf1": {
+  "para": "0c01216ac562",
+  "vk": "c3a2aac1450d2619",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p9529b40a99de|para:p9529b40a99de.inf3": {
+  "para": "9661edcc8ecb",
+  "vk": "88ac46bb0c192ea7",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pc22f3476a8ba|para:pc22f3476a8ba.inf3": {
+  "para": "4f0d5bbcc9d5",
+  "vk": "ec8a39f19b1c3b6a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p3334586eafae|para:p3334586eafae.inf1": {
+  "para": "8955d6ae86a7",
+  "vk": "0515a0a47de69780",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "abstract-results|study:judgment.firstRange": {
+  "para": "fce359f1385d",
+  "vk": "5ef1069462363c6b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2bd9cc52803a|para:p2bd9cc52803a.inf2": {
+  "para": "0cc9647ffe24",
+  "vk": "db7ce240551b1f58",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p6320b4e303bc|citation:nadkarni1999.cited_p6320b4e303bc": {
+  "para": "d8f7cda1caa5",
+  "vk": "5a2b60c432ce09d3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pd63886a132b4|para:pd63886a132b4.inf8": {
+  "para": "6defed0267a5",
+  "vk": "d35b686666a5376b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p18bd483b9956|para:p18bd483b9956.inf6": {
+  "para": "cdd65fc71f85",
+  "vk": "b8f026e5ede6a79d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p27abddb45ad6|para:p27abddb45ad6.inf4": {
+  "para": "273a07946d04",
+  "vk": "296bd60dcdd223ba",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4aa380ca5e34|para:p4aa380ca5e34.inf3": {
+  "para": "515353204142",
+  "vk": "f3458c17d11ae7d4",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p9fb754593ebc|para:p9fb754593ebc.inf8": {
+  "para": "4bb7107c32d8",
+  "vk": "0056a83f64b36b72",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:datareferencing2026.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "120a5977962932ac",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "peb0ee6f7670b|para:peb0ee6f7670b.inf3": {
+  "para": "779fc95cbd08",
+  "vk": "478ac91a2942f2db",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pba6642c2ad0d|citation:xbrlvalidation2009.cited_pba6642c2ad0d": {
+  "para": "d20e694e1cfb",
+  "vk": "cf1c3f76825a016a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p56eb97e863e4|para:p56eb97e863e4.inf4": {
+  "para": "15ad5967a37a",
+  "vk": "00352242a7e1dd4a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pa5dc1d86d3a3|para:pa5dc1d86d3a3.inf4": {
+  "para": "417a7b8d3af2",
+  "vk": "d000509c52997b5e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pf38af30702d6|para:pf38af30702d6.inf1": {
+  "para": "65a7f6c0656c",
+  "vk": "2ad531140726cfda",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pc9abca0637e8|para:pc9abca0637e8.inf1": {
+  "para": "48c04379e183",
+  "vk": "4d75a685a88181c9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pc22f3476a8ba|para:pc22f3476a8ba.inf4": {
+  "para": "4f0d5bbcc9d5",
+  "vk": "fecba0511cfd9ea2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p3334586eafae|para:p3334586eafae.inf2": {
+  "para": "8955d6ae86a7",
+  "vk": "642df863f512e746",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p24c89ead91ea|citation:clark2021.cited_p24c89ead91ea": {
+  "para": "39b3a2d12ec5",
+  "vk": "597b00fa539ad09e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p2bd9cc52803a|para:p2bd9cc52803a.inf3": {
+  "para": "0cc9647ffe24",
+  "vk": "312f5b439584a120",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pa85e4264d83d|para:pa85e4264d83d.inf1": {
+  "para": "93976163de31",
+  "vk": "0c2f9706fc4c6c6b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pd63886a132b4|para:pd63886a132b4.inf9": {
+  "para": "6defed0267a5",
+  "vk": "ef2af97a723aa409",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p18bd483b9956|para:p18bd483b9956.inf7": {
+  "para": "cdd65fc71f85",
+  "vk": "ba5a5e5ac37a2258",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pbfbfdd6cf5f7|para:pbfbfdd6cf5f7.inf1": {
+  "para": "9acb43f6eac9",
+  "vk": "dd5b33cb4ec0a58c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4aa380ca5e34|para:p4aa380ca5e34.inf4": {
+  "para": "515353204142",
+  "vk": "d52ff970a55228c8",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p9fb754593ebc|para:p9fb754593ebc.inf9": {
+  "para": "4bb7107c32d8",
+  "vk": "e6dfb12fab7982c6",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:fever.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "9069fab1b6a0c406",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "peb0ee6f7670b|para:peb0ee6f7670b.inf4": {
+  "para": "779fc95cbd08",
+  "vk": "85ad250b6470d7a4",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pba6642c2ad0d|citation:xbrlvalueassertions2009.cited_pba6642c2ad0d": {
+  "para": "d20e694e1cfb",
+  "vk": "0c7cb262d448dfc2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p56eb97e863e4|para:p56eb97e863e4.inf5": {
+  "para": "15ad5967a37a",
+  "vk": "235093660656d202",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pa5dc1d86d3a3|para:pa5dc1d86d3a3.inf5": {
+  "para": "417a7b8d3af2",
+  "vk": "aa4c6a37b809af0d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pf38af30702d6|para:pf38af30702d6.inf2": {
+  "para": "65a7f6c0656c",
+  "vk": "b5170dae78c9c088",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pc9abca0637e8|para:pc9abca0637e8.inf2": {
+  "para": "48c04379e183",
+  "vk": "5a6a9792b1f23103",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p3f3c4b035549|para:p3f3c4b035549.inf1": {
+  "para": "b16e8e39634a",
+  "vk": "f81eac80103f210a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p3334586eafae|para:p3334586eafae.inf3": {
+  "para": "8955d6ae86a7",
+  "vk": "4cb68ebab368e409",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p24c89ead91ea|citation:jakesch2023.cited_p24c89ead91ea": {
+  "para": "39b3a2d12ec5",
+  "vk": "ae9140d8d99f73d8",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p2bd9cc52803a|para:p2bd9cc52803a.inf4": {
+  "para": "0cc9647ffe24",
+  "vk": "924918a1046373d0",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pa17cc377c097|citation:ozarda2016.cited_pa17cc377c097": {
+  "para": "7405b09ad874",
+  "vk": "6013d6fae519cc9b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p50e21027e8c4|para:p50e21027e8c4.inf1": {
+  "para": "e51e3fa69dec",
+  "vk": "f8e76208a17dc99d",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "finding1|study:frontier.queryRuns": {
+  "para": "c93d3d0f2105",
+  "vk": "c2250df2c69c4607",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pfcea852c3b7d|para:pfcea852c3b7d.inf1": {
+  "para": "58acbbb6c81c",
+  "vk": "75ae8f98c7ead96f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4aa380ca5e34|para:p4aa380ca5e34.inf5": {
+  "para": "515353204142",
+  "vk": "93334d9f717772f6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p9fb754593ebc|para:p9fb754593ebc.inf10": {
+  "para": "4bb7107c32d8",
+  "vk": "3b55a18ea4fffa11",
+  "verdict": "reword",
+  "second": "stands",
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:tabfact.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "1b5703f7c5374ce9",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "peb0ee6f7670b|para:peb0ee6f7670b.inf5": {
+  "para": "779fc95cbd08",
+  "vk": "eeb22e9e833d553e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pbb0997b02ccc|para:pbb0997b02ccc.inf1": {
+  "para": "c909ceff2bab",
+  "vk": "509def3716fbecdf",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4d9d3931d526|para:p4d9d3931d526.inf1": {
+  "para": "9966781d64b3",
+  "vk": "b25c0249ec1e27dc",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pa5dc1d86d3a3|para:pa5dc1d86d3a3.inf6": {
+  "para": "417a7b8d3af2",
+  "vk": "f730d3cf7bc8914a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pf38af30702d6|para:pf38af30702d6.inf3": {
+  "para": "65a7f6c0656c",
+  "vk": "315b6fb7e69c0abd",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pc9abca0637e8|para:pc9abca0637e8.inf3": {
+  "para": "48c04379e183",
+  "vk": "2f46e4ccd3619011",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p3f3c4b035549|para:p3f3c4b035549.inf2": {
+  "para": "b16e8e39634a",
+  "vk": "a054f38586b1b025",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p3334586eafae|para:p3334586eafae.inf4": {
+  "para": "8955d6ae86a7",
+  "vk": "b4089d0dd5432c56",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p24c89ead91ea|citation:jones2026.cited_p24c89ead91ea": {
+  "para": "39b3a2d12ec5",
+  "vk": "19074e7ce499d9df",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p2bd9cc52803a|para:p2bd9cc52803a.inf5": {
+  "para": "0cc9647ffe24",
+  "vk": "2d551cf7be6760c9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pa17cc377c097|citation:jsonschema2022.cited_pa17cc377c097": {
+  "para": "7405b09ad874",
+  "vk": "788cc3964984b5eb",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|citation:anthropicopus5.cited_setup": {
+  "para": "732b5abcd642",
+  "vk": "228455914c17f7b8",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|study:frontier.residualErrors": {
+  "para": "59a6a2f90a32",
+  "vk": "1eff1912de80ca0a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pfcea852c3b7d|para:pfcea852c3b7d.inf2": {
+  "para": "58acbbb6c81c",
+  "vk": "2eeef2a3df296ad1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4aa380ca5e34|para:p4aa380ca5e34.inf6": {
+  "para": "515353204142",
+  "vk": "c221dedc8c5d2916",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p9fb754593ebc|para:p9fb754593ebc.inf11": {
+  "para": "4bb7107c32d8",
+  "vk": "3927dbef47b52ab6",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:feverous.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "c7b3a46496fe0a93",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "peb0ee6f7670b|para:peb0ee6f7670b.inf6": {
+  "para": "779fc95cbd08",
+  "vk": "4bcb760e308f4eed",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pbb0997b02ccc|para:pbb0997b02ccc.inf2": {
+  "para": "c909ceff2bab",
+  "vk": "c68d11e4cf642dc3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4d9d3931d526|para:p4d9d3931d526.inf2": {
+  "para": "9966781d64b3",
+  "vk": "709a1db016834b8a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pa5dc1d86d3a3|para:pa5dc1d86d3a3.inf7": {
+  "para": "417a7b8d3af2",
+  "vk": "a232808caeb67369",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pf38af30702d6|para:pf38af30702d6.inf4": {
+  "para": "65a7f6c0656c",
+  "vk": "b6871eaf6172c4fd",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pc9abca0637e8|para:pc9abca0637e8.inf4": {
+  "para": "48c04379e183",
+  "vk": "c530f3f11743cf47",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p3f3c4b035549|para:p3f3c4b035549.inf3": {
+  "para": "b16e8e39634a",
+  "vk": "a094a50fbad882f3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p3334586eafae|para:p3334586eafae.inf5": {
+  "para": "8955d6ae86a7",
+  "vk": "d00b2c4ff5eac579",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p24c89ead91ea|citation:russell2025.cited_p24c89ead91ea": {
+  "para": "39b3a2d12ec5",
+  "vk": "8cc4b0dbdb1dad8e",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p2bd9cc52803a|para:p2bd9cc52803a.inf6": {
+  "para": "0cc9647ffe24",
+  "vk": "7be3a81603245948",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p2dd3a6682374|para:p2dd3a6682374.inf1": {
+  "para": "2dd3a6682374",
+  "vk": "7db95ec68a8e0043",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "setup|citation:anthropicsonnet5.cited_setup": {
+  "para": "59c0624864a7",
+  "vk": "1ab964455853f067",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding2|study:frontier.bindingErrors": {
+  "para": "59a6a2f90a32",
+  "vk": "b0b92cca189bb7f4",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pfcea852c3b7d|para:pfcea852c3b7d.inf3": {
+  "para": "58acbbb6c81c",
+  "vk": "ae4324a6004a104b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p3135fb71ae89|para:p3135fb71ae89.inf1": {
+  "para": "3135fb71ae89",
+  "vk": "b031f665740f0f1b",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p9fb754593ebc|para:p9fb754593ebc.inf12": {
+  "para": "4bb7107c32d8",
+  "vk": "35e6d4164e2b3f5b",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:summac.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "906ce8627f2ea97b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "peb0ee6f7670b|para:peb0ee6f7670b.inf7": {
+  "para": "779fc95cbd08",
+  "vk": "14a2db0eafe84d0c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pbb0997b02ccc|para:pbb0997b02ccc.inf3": {
+  "para": "c909ceff2bab",
+  "vk": "a8eb8171965d0612",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p7d32be007abb|para:p7d32be007abb.inf1": {
+  "para": "0b7c433679b9",
+  "vk": "15b170adeb4e028e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p655b87342f85|citation:picard.cited_p655b87342f85": {
+  "para": "270a0c59db4a",
+  "vk": "a7538d82a923e6f3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pf38af30702d6|para:pf38af30702d6.inf5": {
+  "para": "65a7f6c0656c",
+  "vk": "259d7c4ab5b30099",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pc9abca0637e8|para:pc9abca0637e8.inf5": {
+  "para": "48c04379e183",
+  "vk": "1648a0f569a77e23",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p3f3c4b035549|para:p3f3c4b035549.inf4": {
+  "para": "b16e8e39634a",
+  "vk": "6d2a6d2eba572716",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p2f52ccd96cbe|para:p2f52ccd96cbe.inf1": {
+  "para": "a07e52b8138a",
+  "vk": "04dd7d11610d2eed",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p24c89ead91ea|citation:zhou2024.cited_p24c89ead91ea": {
+  "para": "39b3a2d12ec5",
+  "vk": "e9df191bf49fd850",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p2bd9cc52803a|para:p2bd9cc52803a.inf7": {
+  "para": "0cc9647ffe24",
+  "vk": "02a4f57832b79817",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pd63886a132b4|para:pd63886a132b4.inf1": {
+  "para": "6defed0267a5",
+  "vk": "600928f5f95599ab",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "setup|citation:deepseekv4pro.cited_setup": {
+  "para": "732b5abcd642",
+  "vk": "d5038eee749883b1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|study:frontier.bindingShare": {
+  "para": "59a6a2f90a32",
+  "vk": "94bb4ed64e2e1a34",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pfcea852c3b7d|para:pfcea852c3b7d.inf4": {
+  "para": "58acbbb6c81c",
+  "vk": "bf68899604665b32",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p9fb754593ebc|para:p9fb754593ebc.inf1": {
+  "para": "4bb7107c32d8",
+  "vk": "7c6d36e8987f7ac3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p9fb754593ebc|para:p9fb754593ebc.inf13": {
+  "para": "4bb7107c32d8",
+  "vk": "4a666df350cbeb34",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:alignscore.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "4619bcb65c87c7c7",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "peb0ee6f7670b|para:peb0ee6f7670b.inf8": {
+  "para": "779fc95cbd08",
+  "vk": "cfd98622ef7ea34c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pbb0997b02ccc|para:pbb0997b02ccc.inf4": {
+  "para": "c909ceff2bab",
+  "vk": "e2bba8b84a9a43a7",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p7d32be007abb|para:p7d32be007abb.inf2": {
+  "para": "0b7c433679b9",
+  "vk": "7b44a61ea885846d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p5e66321068b0|para:p5e66321068b0.inf1": {
+  "para": "255ca8e25950",
+  "vk": "c3a06656bac9b863",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pf38af30702d6|para:pf38af30702d6.inf6": {
+  "para": "65a7f6c0656c",
+  "vk": "c2183961d95d628a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pc9abca0637e8|para:pc9abca0637e8.inf6": {
+  "para": "48c04379e183",
+  "vk": "71ac364c912a7854",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p3f3c4b035549|para:p3f3c4b035549.inf5": {
+  "para": "b16e8e39634a",
+  "vk": "1f14ad92540ef938",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p2f52ccd96cbe|para:p2f52ccd96cbe.inf2": {
+  "para": "a07e52b8138a",
+  "vk": "bbd9b65798a7d4af",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p24c89ead91ea|citation:xiong2024.cited_p24c89ead91ea": {
+  "para": "39b3a2d12ec5",
+  "vk": "db29fdfe271880fc",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pb5afb57f7649|citation:sun2025idiosyncrasies.cited_pb5afb57f7649": {
+  "para": "c5fdea7c0c56",
+  "vk": "f40e366d3b2dcdc9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pd63886a132b4|para:pd63886a132b4.inf2": {
+  "para": "6defed0267a5",
+  "vk": "73c54b2c19ce9e61",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "setup|bench:education.synthetic": {
+  "para": "732b5abcd642",
+  "vk": "668f59c580665990",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|study:frontier.bindingQueryRuns": {
+  "para": "59a6a2f90a32",
+  "vk": "7aec460976b96828",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pc20aaeee25c4|para:pc20aaeee25c4.inf1": {
+  "para": "bbe5cafc40e5",
+  "vk": "dff8bf850135147e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p9fb754593ebc|para:p9fb754593ebc.inf2": {
+  "para": "4bb7107c32d8",
+  "vk": "34ad41098c06d149",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:rdfa.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "5b82aa1c30ebaa1d",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:minicheck.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "d7c9891a76b33763",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "peb0ee6f7670b|para:peb0ee6f7670b.inf9": {
+  "para": "779fc95cbd08",
+  "vk": "142638f7850af600",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p896a976f5e63|para:p896a976f5e63.inf1": {
+  "para": "896a976f5e63",
+  "vk": "63f9b53dcce4a0e0",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p7d32be007abb|para:p7d32be007abb.inf3": {
+  "para": "0b7c433679b9",
+  "vk": "21d0b5e80cb7f4f2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p5e66321068b0|para:p5e66321068b0.inf2": {
+  "para": "255ca8e25950",
+  "vk": "8111d9342b78e293",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pf38af30702d6|para:pf38af30702d6.inf7": {
+  "para": "65a7f6c0656c",
+  "vk": "d3da47e30f8a7f92",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pc9abca0637e8|para:pc9abca0637e8.inf7": {
+  "para": "48c04379e183",
+  "vk": "e02740480e99c308",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p3f3c4b035549|para:p3f3c4b035549.inf6": {
+  "para": "b16e8e39634a",
+  "vk": "591be62f87757599",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p2f52ccd96cbe|para:p2f52ccd96cbe.inf3": {
+  "para": "a07e52b8138a",
+  "vk": "50a95c6e6eab97d4",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p24c89ead91ea|citation:kalai2025.cited_p24c89ead91ea": {
+  "para": "39b3a2d12ec5",
+  "vk": "e5d8fb90f05a1cd2",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p29a3a35b7ccd|para:p29a3a35b7ccd.inf1": {
+  "para": "f00c33046ef2",
+  "vk": "8be025af2cf9a4e2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pd63886a132b4|para:pd63886a132b4.inf3": {
+  "para": "6defed0267a5",
+  "vk": "c325102566e5a70a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p18bd483b9956|para:p18bd483b9956.inf1": {
+  "para": "cdd65fc71f85",
+  "vk": "931da80670276e1b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "finding2|study:frontier.nonConverged": {
+  "para": "59a6a2f90a32",
+  "vk": "80fa5909f5213c91",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-verify|deploy:frontier.secTotal": {
+  "para": "476f91711236",
+  "vk": "56d0c75f6f411587",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p9fb754593ebc|para:p9fb754593ebc.inf3": {
+  "para": "4bb7107c32d8",
+  "vk": "d392550a5650c6e6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:ixbrl.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "a6a334f491147d0e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:halldetect2026.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "743e5ce9e6e8f07d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "peb0ee6f7670b|para:peb0ee6f7670b.inf10": {
+  "para": "779fc95cbd08",
+  "vk": "118a2651b3b82c31",
+  "verdict": "cannot-check",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pe7c544e96763|para:pe7c544e96763.inf1": {
+  "para": "893a7f0f4bd2",
+  "vk": "c126ac54aa1f9c52",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p7d32be007abb|para:p7d32be007abb.inf4": {
+  "para": "0b7c433679b9",
+  "vk": "0500e63729507ff5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p5e66321068b0|para:p5e66321068b0.inf3": {
+  "para": "255ca8e25950",
+  "vk": "693caeb33aea73ff",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pad7d787eb943|para:pad7d787eb943.inf1": {
+  "para": "5777c26380c6",
+  "vk": "5cc3b449c476f52f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p2bc3753480be|para:p2bc3753480be.inf1": {
+  "para": "740d19cfa42a",
+  "vk": "cf0aa52af2565c2b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p504b53b1082f|para:p504b53b1082f.inf1": {
+  "para": "e0e1b4dba0b3",
+  "vk": "f25cccb4014a93d3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p2f52ccd96cbe|para:p2f52ccd96cbe.inf4": {
+  "para": "a07e52b8138a",
+  "vk": "911e75d023558506",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p24c89ead91ea|citation:ji2023.cited_p24c89ead91ea": {
+  "para": "39b3a2d12ec5",
+  "vk": "b396fa9d1336a3a6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p29a3a35b7ccd|para:p29a3a35b7ccd.inf2": {
+  "para": "f00c33046ef2",
+  "vk": "6d0824160d3bee15",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pd63886a132b4|para:pd63886a132b4.inf4": {
+  "para": "6defed0267a5",
+  "vk": "549ea4e05f3b01a7",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p18bd483b9956|para:p18bd483b9956.inf2": {
+  "para": "cdd65fc71f85",
+  "vk": "ab43eaf4e40c715e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "finding2|study:frontier.wrongValues": {
+  "para": "59a6a2f90a32",
+  "vk": "c1c50516f5debdd8",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pbce67713462b|para:pbce67713462b.inf1": {
+  "para": "2f877e1c7357",
+  "vk": "af5153630bc308ad",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p9fb754593ebc|para:p9fb754593ebc.inf4": {
+  "para": "4bb7107c32d8",
+  "vk": "21d2382a6cd3df88",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:pcn2025.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "e47f52cd1b6e7fa8",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p4891d9442b2f|citation:evergreen2026.cited_p4891d9442b2f": {
+  "para": "cd60264f138e",
+  "vk": "afdef838c4d980f1",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "pba6642c2ad0d|citation:bedrockgrounding2026.cited_pba6642c2ad0d": {
+  "para": "d20e694e1cfb",
+  "vk": "4bbe60456af5afe5",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p23b5ff0c0b87|citation:ucum.cited_p23b5ff0c0b87": {
+  "para": "90ec13068368",
+  "vk": "3b0f756bd5924f61",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p35b279685cf4|para:p35b279685cf4.inf1": {
+  "para": "a11db3e9ddec",
+  "vk": "ca1ee132a4291cfc",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "conclusion-results|study:frontier.coverageRange": {
+  "para": "5bda5de38fba",
+  "vk": "550d2df447557ff0",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pad7d787eb943|para:pad7d787eb943.inf2": {
+  "para": "5777c26380c6",
+  "vk": "98ecc17ee6d17468",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p2bc3753480be|para:p2bc3753480be.inf2": {
+  "para": "740d19cfa42a",
+  "vk": "d925138e06c4b3ca",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p504b53b1082f|para:p504b53b1082f.inf2": {
+  "para": "e0e1b4dba0b3",
+  "vk": "9a3953b80f0c95a1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p2f52ccd96cbe|para:p2f52ccd96cbe.inf5": {
+  "para": "a07e52b8138a",
+  "vk": "5851eae88e69f431",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round2",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|para:p2d3870042079.inf1": {
+  "para": "0a85133b006c",
+  "vk": "338d24ca2fb4fa02",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|citation:aiindex2026.cited_p2d3870042079": {
+  "para": "0a85133b006c",
+  "vk": "7703f018c8aeac0b",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|citation:magesh2025.cited_p2d3870042079": {
+  "para": "0a85133b006c",
+  "vk": "5a2b272f89b04588",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|para:p2d3870042079.inf2": {
+  "para": "0a85133b006c",
+  "vk": "10ad1b3c4e3e545b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|citation:euaiact.cited_p2d3870042079": {
+  "para": "0a85133b006c",
+  "vk": "15efac81aec11055",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|citation:art50guidelines2026.cited_p2d3870042079": {
+  "para": "0a85133b006c",
+  "vk": "f16fceb0747b07ed",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|para:p2d3870042079.inf3": {
+  "para": "0a85133b006c",
+  "vk": "ac69f8072643468f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|citation:citednotverified.cited_p2d3870042079": {
+  "para": "0a85133b006c",
+  "vk": "9c66c06b2286e04c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|citation:rao2026.cited_p2d3870042079": {
+  "para": "0a85133b006c",
+  "vk": "e30772138653b0d7",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|para:p2d3870042079.inf4": {
+  "para": "0a85133b006c",
+  "vk": "7482e672384bba06",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|para:p2d3870042079.inf5": {
+  "para": "0a85133b006c",
+  "vk": "5187ee870754ce42",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|para:p2d3870042079.inf6": {
+  "para": "0a85133b006c",
+  "vk": "78e54eef0f4b494f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|para:p2d3870042079.inf7": {
+  "para": "0a85133b006c",
+  "vk": "ec0ecccc523b6804",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|para:p2d3870042079.inf8": {
+  "para": "0a85133b006c",
+  "vk": "e80541b52ec690a4",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|para:p2d3870042079.inf9": {
+  "para": "0a85133b006c",
+  "vk": "4f38c6f456f777dc",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2d3870042079|para:p2d3870042079.inf10": {
+  "para": "0a85133b006c",
+  "vk": "6e82d9a55d584511",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:pf4fb7c50d8b2.inf1": {
+  "para": "fce359f1385d",
+  "vk": "f3be757ca3eadce0",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:pf4fb7c50d8b2.inf3": {
+  "para": "fce359f1385d",
+  "vk": "79071c0e99e3de51",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:pf4fb7c50d8b2.inf4": {
+  "para": "fce359f1385d",
+  "vk": "a5cf8e9e74bf2d3a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:pf4fb7c50d8b2.inf5": {
+  "para": "fce359f1385d",
+  "vk": "fb03256680264f83",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:pf4fb7c50d8b2.inf6": {
+  "para": "fce359f1385d",
+  "vk": "1507d73c2d0981f3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:pf4fb7c50d8b2.inf7": {
+  "para": "fce359f1385d",
+  "vk": "f88d065f99c63082",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:pf4fb7c50d8b2.inf8": {
+  "para": "fce359f1385d",
+  "vk": "0b61728c95be3abe",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:pf4fb7c50d8b2.inf9": {
+  "para": "fce359f1385d",
+  "vk": "8ea863ef93d59533",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:pf4fb7c50d8b2.inf10": {
+  "para": "fce359f1385d",
+  "vk": "25e5dd42a926bcf9",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:pf4fb7c50d8b2.inf11": {
+  "para": "fce359f1385d",
+  "vk": "43988a8eb5b5836a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "abstract-results|study:judgment.finalRange": {
+  "para": "fce359f1385d",
+  "vk": "06ed4fdd8babd8ae",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:pf4fb7c50d8b2.inf12": {
+  "para": "fce359f1385d",
+  "vk": "1507d73c2d0981f3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:pf4fb7c50d8b2.inf13": {
+  "para": "fce359f1385d",
+  "vk": "1be31d88f30eee3a",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:pf4fb7c50d8b2.inf14": {
+  "para": "fce359f1385d",
+  "vk": "6e995092b7d7ba4a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|para:p8b62726ff207.inf1": {
+  "para": "3321f14f3f40",
+  "vk": "3252f0607ce7c19e",
+  "verdict": "partial",
+  "second": "stands",
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|citation:clark2021.cited_p8b62726ff207": {
+  "para": "3321f14f3f40",
+  "vk": "597b00fa539ad09e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|citation:jakesch2023.cited_p8b62726ff207": {
+  "para": "3321f14f3f40",
+  "vk": "ae9140d8d99f73d8",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|citation:jones2026.cited_p8b62726ff207": {
+  "para": "3321f14f3f40",
+  "vk": "19074e7ce499d9df",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|para:p8b62726ff207.inf2": {
+  "para": "3321f14f3f40",
+  "vk": "fe562c894f66df84",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|citation:russell2025.cited_p8b62726ff207": {
+  "para": "3321f14f3f40",
+  "vk": "fbfdc797a86a1758",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|para:p8b62726ff207.inf3": {
+  "para": "3321f14f3f40",
+  "vk": "3c6597440e7d1ccb",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|para:p8b62726ff207.inf4": {
+  "para": "3321f14f3f40",
+  "vk": "7d72d4fbc8568c42",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|para:p8b62726ff207.inf5": {
+  "para": "3321f14f3f40",
+  "vk": "63aa13e30bd0e5f5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|citation:zhou2024.cited_p8b62726ff207": {
+  "para": "3321f14f3f40",
+  "vk": "e9df191bf49fd850",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|citation:xiong2024.cited_p8b62726ff207": {
+  "para": "3321f14f3f40",
+  "vk": "db29fdfe271880fc",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|citation:kalai2025.cited_p8b62726ff207": {
+  "para": "3321f14f3f40",
+  "vk": "7cf821a2b94c7f4a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|citation:ji2023.cited_p8b62726ff207": {
+  "para": "3321f14f3f40",
+  "vk": "b396fa9d1336a3a6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|para:p8b62726ff207.inf6": {
+  "para": "3321f14f3f40",
+  "vk": "0d81de940f96f026",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|para:p8b62726ff207.inf7": {
+  "para": "3321f14f3f40",
+  "vk": "0e11aab3549a7fa6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|citation:rao2026.cited_p8b62726ff207": {
+  "para": "3321f14f3f40",
+  "vk": "19d4c7de1f948ae5",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|para:p8b62726ff207.inf8": {
+  "para": "3321f14f3f40",
+  "vk": "9d856d138fb96d5b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|citation:cao2024.cited_p8b62726ff207": {
+  "para": "3321f14f3f40",
+  "vk": "bcde9dacb3a09d9d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|para:p8b62726ff207.inf9": {
+  "para": "3321f14f3f40",
+  "vk": "70334261deb5721e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8b62726ff207|citation:liu2023verifiability.cited_p8b62726ff207": {
+  "para": "3321f14f3f40",
+  "vk": "acc587b4560469d1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:p4a9d03080429.inf1": {
+  "para": "1eb8839b571e",
+  "vk": "bc694a73b37b884a",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:p4a9d03080429.inf2": {
+  "para": "1eb8839b571e",
+  "vk": "4ec51206990f5af6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|citation:kalai2025.cited_intro_regulation": {
+  "para": "39db8957350f",
+  "vk": "91c398a2287a1e43",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:p4a9d03080429.inf3": {
+  "para": "1eb8839b571e",
+  "vk": "8c422c29cac610b1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:p4a9d03080429.inf4": {
+  "para": "1eb8839b571e",
+  "vk": "33a95ef06dd47afe",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:p4a9d03080429.inf5": {
+  "para": "1eb8839b571e",
+  "vk": "6a2b7c45bb9c7ac1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:p4a9d03080429.inf6": {
+  "para": "1eb8839b571e",
+  "vk": "92eef4acd44e667d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:p4a9d03080429.inf7": {
+  "para": "1eb8839b571e",
+  "vk": "c1491c41f59d8114",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:p4a9d03080429.inf8": {
+  "para": "1eb8839b571e",
+  "vk": "71d10583c3a29db4",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:p4a9d03080429.inf9": {
+  "para": "1eb8839b571e",
+  "vk": "90e2ad810d56e39c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:p4a9d03080429.inf10": {
+  "para": "1eb8839b571e",
+  "vk": "5192e364b9f3c6b1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:p4a9d03080429.inf11": {
+  "para": "1eb8839b571e",
+  "vk": "0ba2cc1e51f24cd2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-production|para:p834f9d5e8da1.inf1": {
+  "para": "9fac19108ce1",
+  "vk": "754caaed59933d84",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-production|para:p834f9d5e8da1.inf2": {
+  "para": "9fac19108ce1",
+  "vk": "ea4b25c51e8f5748",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-production|para:p834f9d5e8da1.inf3": {
+  "para": "9fac19108ce1",
+  "vk": "d4f50293a03537d8",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-production|para:p834f9d5e8da1.inf4": {
+  "para": "9fac19108ce1",
+  "vk": "838d98c3102c58af",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-production|para:p834f9d5e8da1.inf5": {
+  "para": "9fac19108ce1",
+  "vk": "01211e212e7c2c75",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-production|para:p834f9d5e8da1.inf6": {
+  "para": "9fac19108ce1",
+  "vk": "44ada15c71f25c2f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-production|para:p834f9d5e8da1.inf7": {
+  "para": "9fac19108ce1",
+  "vk": "9d01590d0b6b3cc5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-production|para:p834f9d5e8da1.inf8": {
+  "para": "9fac19108ce1",
+  "vk": "0c31b9f7306b974c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-production|para:p834f9d5e8da1.inf9": {
+  "para": "9fac19108ce1",
+  "vk": "755595b622e965de",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-production|para:p834f9d5e8da1.inf10": {
+  "para": "9fac19108ce1",
+  "vk": "d82d59f9fa54d086",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-production|citation:citednotverified.cited_intro_production_2": {
+  "para": "9fac19108ce1",
+  "vk": "87c5827671b0439c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8725480a44d1|para:p8725480a44d1.inf1": {
+  "para": "fbf18cd521f2",
+  "vk": "952f05385f759421",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8725480a44d1|para:p8725480a44d1.inf2": {
+  "para": "fbf18cd521f2",
+  "vk": "e5210ad905c722ee",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8725480a44d1|para:p8725480a44d1.inf3": {
+  "para": "fbf18cd521f2",
+  "vk": "629e50b52e767caf",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p8725480a44d1|para:p8725480a44d1.inf4": {
+  "para": "fbf18cd521f2",
+  "vk": "d699121b3775cb4a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-limits|para:p7d263abbe6fa.inf1": {
+  "para": "4c1612ab5ed0",
+  "vk": "b6c160623a135823",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-limits|para:p7d263abbe6fa.inf2": {
+  "para": "4c1612ab5ed0",
+  "vk": "72335f53252e576c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-limits|para:p7d263abbe6fa.inf3": {
+  "para": "4c1612ab5ed0",
+  "vk": "82bde5e312ad216e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-limits|para:p7d263abbe6fa.inf4": {
+  "para": "4c1612ab5ed0",
+  "vk": "09a10477c6475fdc",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-limits|para:p7d263abbe6fa.inf5": {
+  "para": "4c1612ab5ed0",
+  "vk": "28b98ce3d6edb07b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-limits|para:p7d263abbe6fa.inf6": {
+  "para": "4c1612ab5ed0",
+  "vk": "07795a145a67a0b5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "intro-limits|para:p7d263abbe6fa.inf7": {
+  "para": "4c1612ab5ed0",
+  "vk": "80076ac93df909d8",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p97e9f7c5dc34|para:p97e9f7c5dc34.inf1": {
+  "para": "704d2b3384d7",
+  "vk": "1a9fdc2d2ba16206",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p97e9f7c5dc34|para:p97e9f7c5dc34.inf2": {
+  "para": "704d2b3384d7",
+  "vk": "30293cbc39395046",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p97e9f7c5dc34|para:p97e9f7c5dc34.inf3": {
+  "para": "704d2b3384d7",
+  "vk": "defaf1be13c3633a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p97e9f7c5dc34|para:p97e9f7c5dc34.inf4": {
+  "para": "704d2b3384d7",
+  "vk": "312f5b439584a120",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p97e9f7c5dc34|para:p97e9f7c5dc34.inf5": {
+  "para": "704d2b3384d7",
+  "vk": "924918a1046373d0",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p97e9f7c5dc34|para:p97e9f7c5dc34.inf6": {
+  "para": "704d2b3384d7",
+  "vk": "2d551cf7be6760c9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p97e9f7c5dc34|para:p97e9f7c5dc34.inf7": {
+  "para": "704d2b3384d7",
+  "vk": "40965ab91c306d5a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p97e9f7c5dc34|para:p97e9f7c5dc34.inf8": {
+  "para": "704d2b3384d7",
+  "vk": "6e6477692d79c808",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p97e9f7c5dc34|para:p97e9f7c5dc34.inf9": {
+  "para": "704d2b3384d7",
+  "vk": "02a4f57832b79817",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p97e9f7c5dc34|para:p97e9f7c5dc34.inf10": {
+  "para": "704d2b3384d7",
+  "vk": "a950ffb82b6aceca",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pb5afb57f7649|para:pb5afb57f7649.inf1": {
+  "para": "c5fdea7c0c56",
+  "vk": "ffa70f66aa647bf3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pb5afb57f7649|para:pb5afb57f7649.inf2": {
+  "para": "c5fdea7c0c56",
+  "vk": "983ae5bf90e43093",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pb5afb57f7649|para:pb5afb57f7649.inf3": {
+  "para": "c5fdea7c0c56",
+  "vk": "615fb44d6d68824a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pb5afb57f7649|para:pb5afb57f7649.inf4": {
+  "para": "c5fdea7c0c56",
+  "vk": "b1a5a4dc2a71afbe",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pb5afb57f7649|citation:commonmark.cited_pb5afb57f7649": {
+  "para": "c5fdea7c0c56",
+  "vk": "969067538b0eba29",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pb5afb57f7649|para:pb5afb57f7649.inf5": {
+  "para": "c5fdea7c0c56",
+  "vk": "b99362a7a923471d",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p29a3a35b7ccd|para:p29a3a35b7ccd.inf4": {
+  "para": "f00c33046ef2",
+  "vk": "182f864871ec8357",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p9168529aa4b9|para:p9168529aa4b9.inf1": {
+  "para": "a4841102f5d8",
+  "vk": "b685831ef5d616ac",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pe4169ec07994|para:pe4169ec07994.inf3": {
+  "para": "ce14160afb0c",
+  "vk": "0baf32af2eca1e23",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pc9a64af13ef0|para:pc9a64af13ef0.inf1": {
+  "para": "35caee9e542b",
+  "vk": "6340c32355f80595",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pc9a64af13ef0|citation:dinu2007.cited_pc9a64af13ef0": {
+  "para": "35caee9e542b",
+  "vk": "3adf75a67a1e14cc",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pa85e4264d83d|para:pa85e4264d83d.inf2": {
+  "para": "93976163de31",
+  "vk": "a0f0908bae6640cc",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "ff989bf8fed76|figure:ff989bf8fed76.caption": {
+  "para": "47cbbf798c31",
+  "vk": "e920f8d957f7365c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pa17cc377c097|para:pa17cc377c097.inf1": {
+  "para": "7405b09ad874",
+  "vk": "d870c77f293adbca",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pa17cc377c097|citation:prometheusalerting.cited_pa17cc377c097": {
+  "para": "7405b09ad874",
+  "vk": "bebd1771a4e75bc5",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pa17cc377c097|para:pa17cc377c097.inf2": {
+  "para": "7405b09ad874",
+  "vk": "f24f85722aecf83a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2dd3a6682374|para:p2dd3a6682374.inf2": {
+  "para": "2dd3a6682374",
+  "vk": "44843830083b3b12",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pd63886a132b4|para:pd63886a132b4.inf10": {
+  "para": "6defed0267a5",
+  "vk": "faa89b780938ed8f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p083257c2b905|para:p083257c2b905.inf1": {
+  "para": "83c354b3671c",
+  "vk": "35f4b81b939eec6b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p083257c2b905|para:p083257c2b905.inf2": {
+  "para": "83c354b3671c",
+  "vk": "9fd67e873db98497",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p083257c2b905|para:p083257c2b905.inf3": {
+  "para": "83c354b3671c",
+  "vk": "30750026e191987c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "fa8e567c4a713|figure:fa8e567c4a713.caption": {
+  "para": "ce71ca0e15e3",
+  "vk": "050f6ae99d171640",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|para:pc687c0368f5b.inf1": {
+  "para": "732b5abcd642",
+  "vk": "daaeb58998bebee9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|para:pc687c0368f5b.inf2": {
+  "para": "732b5abcd642",
+  "vk": "81fbe88be65d99fd",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|para:pc687c0368f5b.inf3": {
+  "para": "732b5abcd642",
+  "vk": "6b94ccc3509f2aaa",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|para:pc687c0368f5b.inf4": {
+  "para": "732b5abcd642",
+  "vk": "b9adc2a1c43870ce",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|para:pc687c0368f5b.inf5": {
+  "para": "732b5abcd642",
+  "vk": "b50ed6a109f7c873",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|para:pc687c0368f5b.inf6": {
+  "para": "732b5abcd642",
+  "vk": "f02205c363b7914d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|para:pc687c0368f5b.inf7": {
+  "para": "732b5abcd642",
+  "vk": "e5de520d1aff30be",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|para:pc687c0368f5b.inf8": {
+  "para": "732b5abcd642",
+  "vk": "6cca109019714ccb",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|para:pc687c0368f5b.inf9": {
+  "para": "732b5abcd642",
+  "vk": "2c07c61f623d33aa",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|para:pc687c0368f5b.inf10": {
+  "para": "732b5abcd642",
+  "vk": "2454a4dfdf2c4ed3",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|para:pc687c0368f5b.inf11": {
+  "para": "732b5abcd642",
+  "vk": "da4768796f14f08b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|para:pc687c0368f5b.inf12": {
+  "para": "732b5abcd642",
+  "vk": "6cd7f064f9d36ced",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|para:pc687c0368f5b.inf13": {
+  "para": "732b5abcd642",
+  "vk": "676c35e0523d6627",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "setup|para:pc687c0368f5b.inf14": {
+  "para": "732b5abcd642",
+  "vk": "44107fdd6451503e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p18bd483b9956|para:p18bd483b9956.inf8": {
+  "para": "cdd65fc71f85",
+  "vk": "39d9a4a8f8a62a00",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding1|para:p13294344033c.inf1": {
+  "para": "c93d3d0f2105",
+  "vk": "9a94c38ca1276d03",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding1|para:p13294344033c.inf2": {
+  "para": "c93d3d0f2105",
+  "vk": "1be3857ee38266bf",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding1|para:p13294344033c.inf3": {
+  "para": "c93d3d0f2105",
+  "vk": "6c482fb5afba8e9b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding1|para:p13294344033c.inf4": {
+  "para": "c93d3d0f2105",
+  "vk": "07ea08ea0a35e3bf",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding1|para:p13294344033c.inf5": {
+  "para": "c93d3d0f2105",
+  "vk": "daed482a610025ad",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding1|para:p13294344033c.inf6": {
+  "para": "c93d3d0f2105",
+  "vk": "6b2e5027db40e350",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding1|para:p13294344033c.inf7": {
+  "para": "c93d3d0f2105",
+  "vk": "50be77fb991c280c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding1|para:p13294344033c.inf8": {
+  "para": "c93d3d0f2105",
+  "vk": "154dd096f08bdd25",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding1|para:p13294344033c.inf9": {
+  "para": "c93d3d0f2105",
+  "vk": "554cfbb92c1b6cc8",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding1|para:p13294344033c.inf10": {
+  "para": "c93d3d0f2105",
+  "vk": "bee2c8e4be0d09bd",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding1|para:p13294344033c.inf11": {
+  "para": "c93d3d0f2105",
+  "vk": "5a1158e056f567d7",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding1|para:p13294344033c.inf12": {
+  "para": "c93d3d0f2105",
+  "vk": "4ad90addcaecab8b",
+  "verdict": "reword",
+  "second": "stands",
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding1|para:p13294344033c.inf13": {
+  "para": "c93d3d0f2105",
+  "vk": "7162d43481585a4d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pee73adb0593b.inf1": {
+  "para": "59a6a2f90a32",
+  "vk": "b685a159f32d1a4c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pee73adb0593b.inf2": {
+  "para": "59a6a2f90a32",
+  "vk": "df60c9ce2add3d94",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pee73adb0593b.inf3": {
+  "para": "59a6a2f90a32",
+  "vk": "4f1c1678df4af352",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pee73adb0593b.inf4": {
+  "para": "59a6a2f90a32",
+  "vk": "c09e7ea3367eae3d",
+  "verdict": "false",
+  "second": "false",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pee73adb0593b.inf5": {
+  "para": "59a6a2f90a32",
+  "vk": "969185968c7ecda6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pee73adb0593b.inf6": {
+  "para": "59a6a2f90a32",
+  "vk": "d371b00aee193175",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pee73adb0593b.inf7": {
+  "para": "59a6a2f90a32",
+  "vk": "a5902ae3d4502f82",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pee73adb0593b.inf8": {
+  "para": "59a6a2f90a32",
+  "vk": "8b5fea42d950c4df",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pee73adb0593b.inf9": {
+  "para": "59a6a2f90a32",
+  "vk": "720fc50216e183c8",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|study:frontier.wrongShare": {
+  "para": "59a6a2f90a32",
+  "vk": "243de5346fc62354",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pee73adb0593b.inf10": {
+  "para": "59a6a2f90a32",
+  "vk": "c40c82972d8c9eef",
+  "verdict": "false",
+  "second": "false",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pee73adb0593b.inf11": {
+  "para": "59a6a2f90a32",
+  "vk": "2e004a223247a564",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p27abddb45ad6|para:p27abddb45ad6.inf5": {
+  "para": "273a07946d04",
+  "vk": "3155d635bfbf9daa",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p44dae585c161.inf1": {
+  "para": "7f31e830bc9f",
+  "vk": "3b1fb868a5aa3c85",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p44dae585c161.inf2": {
+  "para": "7f31e830bc9f",
+  "vk": "addf2968418af383",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p44dae585c161.inf3": {
+  "para": "7f31e830bc9f",
+  "vk": "63028384f945c679",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p44dae585c161.inf4": {
+  "para": "7f31e830bc9f",
+  "vk": "1507d73c2d0981f3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p44dae585c161.inf5": {
+  "para": "7f31e830bc9f",
+  "vk": "14b091089429eff7",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p44dae585c161.inf6": {
+  "para": "7f31e830bc9f",
+  "vk": "020abf8ea8b160fb",
+  "verdict": "false",
+  "second": "false",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p44dae585c161.inf7": {
+  "para": "7f31e830bc9f",
+  "vk": "f732f5633eb7c274",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p44dae585c161.inf8": {
+  "para": "7f31e830bc9f",
+  "vk": "f58d20e9f71b2c44",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p44dae585c161.inf9": {
+  "para": "7f31e830bc9f",
+  "vk": "5acab3908e27c8d7",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p44dae585c161.inf10": {
+  "para": "7f31e830bc9f",
+  "vk": "fd5e6be48162376e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|study:frontier2.bindingErrors": {
+  "para": "7f31e830bc9f",
+  "vk": "75c62ff6a8a287f2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p44dae585c161.inf11": {
+  "para": "7f31e830bc9f",
+  "vk": "4df0e989c42ae3a1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p44dae585c161.inf12": {
+  "para": "7f31e830bc9f",
+  "vk": "ddaf77b4a41d542a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p44dae585c161.inf13": {
+  "para": "7f31e830bc9f",
+  "vk": "1262cca487c8aac4",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p44dae585c161.inf14": {
+  "para": "7f31e830bc9f",
+  "vk": "961a7a7877b8435e",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pbfbfdd6cf5f7|para:pbfbfdd6cf5f7.inf2": {
+  "para": "9acb43f6eac9",
+  "vk": "59f91cc29df96e33",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pfcea852c3b7d|para:pfcea852c3b7d.inf5": {
+  "para": "58acbbb6c81c",
+  "vk": "bf05e7031b979a17",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf1": {
+  "para": "3b8439d2898a",
+  "vk": "6446e4d7f6854591",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf2": {
+  "para": "3b8439d2898a",
+  "vk": "4f7f69b528ea5ab8",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf3": {
+  "para": "3b8439d2898a",
+  "vk": "9f6def13392b909d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf4": {
+  "para": "3b8439d2898a",
+  "vk": "bf9b5eac5b68119d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf5": {
+  "para": "3b8439d2898a",
+  "vk": "d372acb1c37a6528",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf6": {
+  "para": "3b8439d2898a",
+  "vk": "792587c887457cef",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf7": {
+  "para": "3b8439d2898a",
+  "vk": "7d6394ececef5a54",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf8": {
+  "para": "3b8439d2898a",
+  "vk": "a736b78975e2474c",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf9": {
+  "para": "3b8439d2898a",
+  "vk": "a36dd4b0a21424ea",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf10": {
+  "para": "3b8439d2898a",
+  "vk": "59a59c1458082d0d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf11": {
+  "para": "3b8439d2898a",
+  "vk": "adf450e62305e021",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf12": {
+  "para": "3b8439d2898a",
+  "vk": "ad921a1e7e22f87e",
+  "verdict": "false",
+  "second": "false",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf13": {
+  "para": "3b8439d2898a",
+  "vk": "f648b0eae60db40f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf14": {
+  "para": "3b8439d2898a",
+  "vk": "de14a6e6995ac922",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf15": {
+  "para": "3b8439d2898a",
+  "vk": "5c9bd41bbe7fe20b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf16": {
+  "para": "3b8439d2898a",
+  "vk": "d3c5cf0904a0d3d8",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf17": {
+  "para": "3b8439d2898a",
+  "vk": "843d272ba46518ce",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p30943be81d57.inf18": {
+  "para": "3b8439d2898a",
+  "vk": "018dc4939bc3c0f4",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pc20aaeee25c4|para:pc20aaeee25c4.inf2": {
+  "para": "bbe5cafc40e5",
+  "vk": "f2fea139d3373db9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p4515f3279d4d.inf1": {
+  "para": "476f91711236",
+  "vk": "12a9eda9b0cab8fb",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p4515f3279d4d.inf2": {
+  "para": "476f91711236",
+  "vk": "4ae961f33a636648",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p4515f3279d4d.inf3": {
+  "para": "476f91711236",
+  "vk": "ff32c1ab994c1eac",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p4515f3279d4d.inf4": {
+  "para": "476f91711236",
+  "vk": "5004ac9d040f4094",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p4515f3279d4d.inf5": {
+  "para": "476f91711236",
+  "vk": "9e2ce9f69129ae43",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p4515f3279d4d.inf6": {
+  "para": "476f91711236",
+  "vk": "a8379b31b7f47aaa",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p4515f3279d4d.inf7": {
+  "para": "476f91711236",
+  "vk": "e9f46e8b14ec4afb",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p4515f3279d4d.inf8": {
+  "para": "476f91711236",
+  "vk": "a5ab1d87a307a5b2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p4515f3279d4d.inf9": {
+  "para": "476f91711236",
+  "vk": "d07ff871a448450d",
+  "verdict": "false",
+  "second": "false",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p4515f3279d4d.inf10": {
+  "para": "476f91711236",
+  "vk": "aca9b69de1b1e2de",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p4515f3279d4d.inf11": {
+  "para": "476f91711236",
+  "vk": "b5a76f53241616ff",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-gen|para:pd2df682f924d.inf1": {
+  "para": "88376e018c57",
+  "vk": "faac87712aae6aa5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-gen|para:pd2df682f924d.inf2": {
+  "para": "88376e018c57",
+  "vk": "5ee28a5c5d84f111",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-gen|para:pd2df682f924d.inf3": {
+  "para": "88376e018c57",
+  "vk": "e40022d3f96306f2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-gen|para:pd2df682f924d.inf4": {
+  "para": "88376e018c57",
+  "vk": "8a51a7c47d082523",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-gen|para:pd2df682f924d.inf5": {
+  "para": "88376e018c57",
+  "vk": "01a7b9412de5765c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-gen|para:pd2df682f924d.inf6": {
+  "para": "88376e018c57",
+  "vk": "bad779d625f71754",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-gen|para:pd2df682f924d.inf7": {
+  "para": "88376e018c57",
+  "vk": "54d1e16c646f13d9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "cost-gen|para:pd2df682f924d.inf8": {
+  "para": "88376e018c57",
+  "vk": "21f73d2e0549bc79",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p238a1c258839|para:p238a1c258839.inf1": {
+  "para": "992f098c9a58",
+  "vk": "36d885672a9cc88c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p238a1c258839|para:p238a1c258839.inf2": {
+  "para": "992f098c9a58",
+  "vk": "a0f4874fb42aefa2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p238a1c258839|para:p238a1c258839.inf3": {
+  "para": "992f098c9a58",
+  "vk": "af5153630bc308ad",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p238a1c258839|para:p238a1c258839.inf4": {
+  "para": "992f098c9a58",
+  "vk": "1db269e788934374",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p238a1c258839|para:p238a1c258839.inf5": {
+  "para": "992f098c9a58",
+  "vk": "29b7876cb15a5865",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p238a1c258839|para:p238a1c258839.inf6": {
+  "para": "992f098c9a58",
+  "vk": "7ecc5de2f34cd4d8",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4aa380ca5e34|para:p4aa380ca5e34.inf7": {
+  "para": "515353204142",
+  "vk": "1bed89f6d45c53f3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "integration|para:pa0c07465fc20.inf1": {
+  "para": "59738affbc31",
+  "vk": "dc801e98d4c34a89",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "integration|impl:proveml.runtimeDeps": {
+  "para": "59738affbc31",
+  "vk": "bc010783980a020f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "integration|para:pa0c07465fc20.inf2": {
+  "para": "59738affbc31",
+  "vk": "627dc7230c4c93f5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "integration|para:pa0c07465fc20.inf3": {
+  "para": "59738affbc31",
+  "vk": "d4229a3a4705ba4e",
+  "verdict": "false",
+  "second": "false",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pf90048c00219|para:pf90048c00219.inf1": {
+  "para": "46e0dae512b6",
+  "vk": "0c9318d35b22c449",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pf90048c00219|para:pf90048c00219.inf2": {
+  "para": "46e0dae512b6",
+  "vk": "ea12864f7a14e858",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pf90048c00219|para:pf90048c00219.inf3": {
+  "para": "46e0dae512b6",
+  "vk": "fe107bbe54277eca",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p15e60b1c89aa|para:p15e60b1c89aa.inf1": {
+  "para": "e6dccd28894f",
+  "vk": "7c6d36e8987f7ac3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p15e60b1c89aa|para:p15e60b1c89aa.inf2": {
+  "para": "e6dccd28894f",
+  "vk": "02b550f9b15abf45",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p15e60b1c89aa|para:p15e60b1c89aa.inf3": {
+  "para": "e6dccd28894f",
+  "vk": "96769877ca72d753",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p15e60b1c89aa|para:p15e60b1c89aa.inf4": {
+  "para": "e6dccd28894f",
+  "vk": "317d181b3edd0e9c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p15e60b1c89aa|para:p15e60b1c89aa.inf5": {
+  "para": "e6dccd28894f",
+  "vk": "92569cf022c39035",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p15e60b1c89aa|para:p15e60b1c89aa.inf6": {
+  "para": "e6dccd28894f",
+  "vk": "a18e8c8536555362",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p15e60b1c89aa|para:p15e60b1c89aa.inf7": {
+  "para": "e6dccd28894f",
+  "vk": "2251581c1b435ebc",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p15e60b1c89aa|para:p15e60b1c89aa.inf8": {
+  "para": "e6dccd28894f",
+  "vk": "c35ac8976951a21e",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p15e60b1c89aa|para:p15e60b1c89aa.inf9": {
+  "para": "e6dccd28894f",
+  "vk": "1fcfba37f62bba8c",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p15e60b1c89aa|para:p15e60b1c89aa.inf10": {
+  "para": "e6dccd28894f",
+  "vk": "e9c322c3bb874ff6",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p15e60b1c89aa|para:p15e60b1c89aa.inf11": {
+  "para": "e6dccd28894f",
+  "vk": "e2a0a820a8e9909a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p15e60b1c89aa|para:p15e60b1c89aa.inf12": {
+  "para": "e6dccd28894f",
+  "vk": "4a666df350cbeb34",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p15e60b1c89aa|para:p15e60b1c89aa.inf13": {
+  "para": "e6dccd28894f",
+  "vk": "bae3c3b5c428bba3",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf1": {
+  "para": "7b4dd0612522",
+  "vk": "fb8ffc4a016db3cb",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:rdfa.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "6972387172628a0b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf2": {
+  "para": "7b4dd0612522",
+  "vk": "13f7ad9833c900e2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:ixbrl.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "a6a334f491147d0e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:pcn2025.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "a9a9f4e1f7f3eb25",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf3": {
+  "para": "7b4dd0612522",
+  "vk": "474259ff6958e8c4",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf4": {
+  "para": "7b4dd0612522",
+  "vk": "ff7bd113a467e4f0",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf5": {
+  "para": "7b4dd0612522",
+  "vk": "79b48d38617183d4",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:symgen.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "ab1c4692ae27a01c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf6": {
+  "para": "7b4dd0612522",
+  "vk": "a84dc63b80a33628",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf7": {
+  "para": "7b4dd0612522",
+  "vk": "ea9dae89ca840be5",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf8": {
+  "para": "7b4dd0612522",
+  "vk": "b038d7d129f52310",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:claimlocked2026.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "01a46456bb0f943b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf9": {
+  "para": "7b4dd0612522",
+  "vk": "97df3cd0712b3f8a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf10": {
+  "para": "7b4dd0612522",
+  "vk": "1e16107049db4242",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf11": {
+  "para": "7b4dd0612522",
+  "vk": "43ec043ab34b5ade",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:verifin2026.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "9c4adec192857239",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf12": {
+  "para": "7b4dd0612522",
+  "vk": "603f4924134b2d68",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf13": {
+  "para": "7b4dd0612522",
+  "vk": "f64b26eb44b17494",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:datareferencing2026.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "acdd2f4519b72a5f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf14": {
+  "para": "7b4dd0612522",
+  "vk": "e69c124c5b800fdb",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf15": {
+  "para": "7b4dd0612522",
+  "vk": "0c92135364bfb4ae",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:fever.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "8dd51e025536eb3c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:tabfact.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "b192643ba0e3224a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:feverous.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "f3c0fdf7110f55a9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf16": {
+  "para": "7b4dd0612522",
+  "vk": "3099bdc738a7fc67",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:summac.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "906ce8627f2ea97b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:alignscore.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "ebcbc4c026094bb7",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:minicheck.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "79dc81b5b8fd8111",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:halldetect2026.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "743e5ce9e6e8f07d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:evergreen2026.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "85922105f35c8e23",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf17": {
+  "para": "7b4dd0612522",
+  "vk": "49712a79c87fec92",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf18": {
+  "para": "7b4dd0612522",
+  "vk": "b8760514b4578b1b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf19": {
+  "para": "7b4dd0612522",
+  "vk": "e0dff140a6b13ffa",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:fullcite2026.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "3bb5901a10a12383",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf20": {
+  "para": "7b4dd0612522",
+  "vk": "26f7a34b110c4479",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|citation:dtg2026.cited_p5a9f91a606a9": {
+  "para": "7b4dd0612522",
+  "vk": "d50db936b687b1cd",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf21": {
+  "para": "7b4dd0612522",
+  "vk": "048cb2007b10d9e0",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf22": {
+  "para": "7b4dd0612522",
+  "vk": "4cb5a753ae7c3b58",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf23": {
+  "para": "7b4dd0612522",
+  "vk": "17d01e389e86b6ad",
+  "verdict": "cannot-check",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf24": {
+  "para": "7b4dd0612522",
+  "vk": "aff90fc3878bf355",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5a9f91a606a9|para:p5a9f91a606a9.inf25": {
+  "para": "7b4dd0612522",
+  "vk": "b68a4bdcf0efee8b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5ffec074fcc8|para:p5ffec074fcc8.inf1": {
+  "para": "cdc519aa8d30",
+  "vk": "738efa542ebfd85f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5ffec074fcc8|para:p5ffec074fcc8.inf2": {
+  "para": "cdc519aa8d30",
+  "vk": "0d98c5f922ad8d78",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5ffec074fcc8|para:p5ffec074fcc8.inf3": {
+  "para": "cdc519aa8d30",
+  "vk": "80aff36a7b8824f3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5ffec074fcc8|para:p5ffec074fcc8.inf4": {
+  "para": "cdc519aa8d30",
+  "vk": "384fdeb4c8261fcd",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5ffec074fcc8|para:p5ffec074fcc8.inf5": {
+  "para": "cdc519aa8d30",
+  "vk": "90d65c6771a3bb14",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5ffec074fcc8|para:p5ffec074fcc8.inf6": {
+  "para": "cdc519aa8d30",
+  "vk": "4772247ede72b433",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5ffec074fcc8|para:p5ffec074fcc8.inf7": {
+  "para": "cdc519aa8d30",
+  "vk": "76b7db8be0926f4e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5ffec074fcc8|para:p5ffec074fcc8.inf8": {
+  "para": "cdc519aa8d30",
+  "vk": "66f99ed1da679a62",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5ffec074fcc8|para:p5ffec074fcc8.inf9": {
+  "para": "cdc519aa8d30",
+  "vk": "906d18ee9a901e2a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5ffec074fcc8|para:p5ffec074fcc8.inf10": {
+  "para": "cdc519aa8d30",
+  "vk": "f1832ad53fd984c8",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5ffec074fcc8|para:p5ffec074fcc8.inf11": {
+  "para": "cdc519aa8d30",
+  "vk": "749718420d044e56",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4fb08b743839|citation:bedrockgrounding2026.cited_p4fb08b743839": {
+  "para": "ee98579314e6",
+  "vk": "af6d2c42cbbe1ee2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4fb08b743839|citation:azuregroundedness2026.cited_p4fb08b743839": {
+  "para": "ee98579314e6",
+  "vk": "136eb05965ceade1",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4fb08b743839|citation:vectarahhem2026.cited_p4fb08b743839": {
+  "para": "ee98579314e6",
+  "vk": "70efdd0cc3c23159",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4fb08b743839|citation:bedrockautoreasoning2026.cited_p4fb08b743839": {
+  "para": "ee98579314e6",
+  "vk": "11ca5ffdf0debcab",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4fb08b743839|citation:finground.cited_p4fb08b743839": {
+  "para": "ee98579314e6",
+  "vk": "aa0321b0672e2c85",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4fb08b743839|citation:xbrlvalidation2009.cited_p4fb08b743839": {
+  "para": "ee98579314e6",
+  "vk": "cf1c3f76825a016a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4fb08b743839|citation:xbrlvalueassertions2009.cited_p4fb08b743839": {
+  "para": "ee98579314e6",
+  "vk": "0c7cb262d448dfc2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4fb08b743839|citation:ixbrl.cited_p4fb08b743839": {
+  "para": "ee98579314e6",
+  "vk": "e8da0901491a1d1b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pbb0997b02ccc|para:pbb0997b02ccc.inf5": {
+  "para": "c909ceff2bab",
+  "vk": "69ac30710697c276",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pb8bbbe45e0f5|para:pb8bbbe45e0f5.inf1": {
+  "para": "432311376847",
+  "vk": "5cf39b4ac5fd3a25",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pb8bbbe45e0f5|para:pb8bbbe45e0f5.inf2": {
+  "para": "432311376847",
+  "vk": "afa27f978647d755",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pb8bbbe45e0f5|para:pb8bbbe45e0f5.inf3": {
+  "para": "432311376847",
+  "vk": "5f341e5c5ed1f868",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pe7c544e96763|para:pe7c544e96763.inf2": {
+  "para": "893a7f0f4bd2",
+  "vk": "bd16b63cf89bef87",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p23b5ff0c0b87|para:p23b5ff0c0b87.inf1": {
+  "para": "90ec13068368",
+  "vk": "a44048e69592f2d3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p23b5ff0c0b87|para:p23b5ff0c0b87.inf2": {
+  "para": "90ec13068368",
+  "vk": "2545acb31b260659",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p23b5ff0c0b87|para:p23b5ff0c0b87.inf3": {
+  "para": "90ec13068368",
+  "vk": "d13d306befc1a94b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p23b5ff0c0b87|para:p23b5ff0c0b87.inf4": {
+  "para": "90ec13068368",
+  "vk": "15d3a5ab1c786b97",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p23b5ff0c0b87|para:p23b5ff0c0b87.inf5": {
+  "para": "90ec13068368",
+  "vk": "17d58c35dc44bbf5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p23b5ff0c0b87|citation:iso4217.cited_p23b5ff0c0b87": {
+  "para": "90ec13068368",
+  "vk": "e67da60581a1525c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p56eb97e863e4|para:p56eb97e863e4.inf6": {
+  "para": "15ad5967a37a",
+  "vk": "16e943ef3b63f37d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4d9d3931d526|para:p4d9d3931d526.inf3": {
+  "para": "9966781d64b3",
+  "vk": "28670f5d020daad6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p7d32be007abb|para:p7d32be007abb.inf5": {
+  "para": "0b7c433679b9",
+  "vk": "ca855765af554e53",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pa034b3870865|para:pa034b3870865.inf1": {
+  "para": "6b524d8f7bb6",
+  "vk": "a65bb9ff4f1752c2",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pa034b3870865|para:pa034b3870865.inf2": {
+  "para": "6b524d8f7bb6",
+  "vk": "a306e91eb8f36132",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pa034b3870865|para:pa034b3870865.inf3": {
+  "para": "6b524d8f7bb6",
+  "vk": "f569e08537fecb37",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pa034b3870865|citation:chan2026soundness.cited_pa034b3870865": {
+  "para": "6b524d8f7bb6",
+  "vk": "36316fb51f9af18b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pa034b3870865|para:pa034b3870865.inf4": {
+  "para": "6b524d8f7bb6",
+  "vk": "09ed33a40e7119a6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pa034b3870865|para:pa034b3870865.inf5": {
+  "para": "6b524d8f7bb6",
+  "vk": "7b57e468e6a1667f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p35b279685cf4|para:p35b279685cf4.inf2": {
+  "para": "a11db3e9ddec",
+  "vk": "87346b65b05a4dec",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pa5dc1d86d3a3|para:pa5dc1d86d3a3.inf8": {
+  "para": "417a7b8d3af2",
+  "vk": "bf9c607508020e88",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p80aad11ff1a6|para:p80aad11ff1a6.inf1": {
+  "para": "d055fa161ce6",
+  "vk": "48ddcf2d61c0103a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p655b87342f85|citation:synchromesh.cited_p655b87342f85": {
+  "para": "270a0c59db4a",
+  "vk": "bcbfe8e823a8006c",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p655b87342f85|para:p655b87342f85.inf1": {
+  "para": "270a0c59db4a",
+  "vk": "d19b8e122c904e1e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p655b87342f85|para:p655b87342f85.inf2": {
+  "para": "270a0c59db4a",
+  "vk": "ec6422e0468a8b51",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5e66321068b0|para:p5e66321068b0.inf4": {
+  "para": "255ca8e25950",
+  "vk": "d096ff7ce334bf40",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "conclusion-results|para:p08bd529086ec.inf1": {
+  "para": "5bda5de38fba",
+  "vk": "3991614377eb2ebe",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "conclusion-results|para:p08bd529086ec.inf2": {
+  "para": "5bda5de38fba",
+  "vk": "85dd1c713f35a71d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "conclusion-results|study:frontier.correctedRange": {
+  "para": "5bda5de38fba",
+  "vk": "1d412b68df02d09d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "conclusion-results|para:p08bd529086ec.inf3": {
+  "para": "5bda5de38fba",
+  "vk": "34bc3648a72ffad1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "conclusion-results|para:p08bd529086ec.inf4": {
+  "para": "5bda5de38fba",
+  "vk": "f0a5e226840d7963",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "conclusion-results|para:p08bd529086ec.inf5": {
+  "para": "5bda5de38fba",
+  "vk": "b0b3094b93368b15",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "conclusion-results|para:p08bd529086ec.inf6": {
+  "para": "5bda5de38fba",
+  "vk": "32b70516a36e406f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "conclusion-results|para:p08bd529086ec.inf7": {
+  "para": "5bda5de38fba",
+  "vk": "535908925a405c4c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5c01d6d44bcc|para:p5c01d6d44bcc.inf1": {
+  "para": "5fb433a5df30",
+  "vk": "474f500bf1efe040",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5c01d6d44bcc|para:p5c01d6d44bcc.inf2": {
+  "para": "5fb433a5df30",
+  "vk": "500122bcdb34dcef",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5c01d6d44bcc|citation:ten2026.cited_p5c01d6d44bcc": {
+  "para": "5fb433a5df30",
+  "vk": "ca7578120ea4d7bc",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5c01d6d44bcc|para:p5c01d6d44bcc.inf3": {
+  "para": "5fb433a5df30",
+  "vk": "db3fdf0be7418133",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5c01d6d44bcc|para:p5c01d6d44bcc.inf4": {
+  "para": "5fb433a5df30",
+  "vk": "166d4bcda2925fc4",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5c01d6d44bcc|para:p5c01d6d44bcc.inf5": {
+  "para": "5fb433a5df30",
+  "vk": "e0cca9e1fd0f90a1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p3311d00707a1|para:p3311d00707a1.inf2": {
+  "para": "b13ada672050",
+  "vk": "72d88f9653df1795",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p244eeb17f122|para:p244eeb17f122.inf2": {
+  "para": "0c01216ac562",
+  "vk": "60502d5fe60b7f74",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pf38af30702d6|para:pf38af30702d6.inf8": {
+  "para": "65a7f6c0656c",
+  "vk": "b4c0190833b812f9",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "formal-intro|para:pcebced1060d6.inf1": {
+  "para": "187eb949bb76",
+  "vk": "2e944db06f21aeba",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "formal-intro|para:pcebced1060d6.inf2": {
+  "para": "187eb949bb76",
+  "vk": "b0a8455889d40824",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "formal-intro|para:pcebced1060d6.inf3": {
+  "para": "187eb949bb76",
+  "vk": "45000d122ab2174a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "formal-intro|para:pcebced1060d6.inf4": {
+  "para": "187eb949bb76",
+  "vk": "d904a9085b28aa80",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p260440270c51|para:p260440270c51.inf1": {
+  "para": "89e4b896d639",
+  "vk": "5cc3b449c476f52f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p260440270c51|para:p260440270c51.inf2": {
+  "para": "89e4b896d639",
+  "vk": "fd2604f355730ac0",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p260440270c51|para:p260440270c51.inf3": {
+  "para": "89e4b896d639",
+  "vk": "2e4b4ecb19a51285",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p260440270c51|para:p260440270c51.inf4": {
+  "para": "89e4b896d639",
+  "vk": "7e03d5f0e1e80a2a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pda3259927db0|para:pda3259927db0.inf1": {
+  "para": "2f47267283c0",
+  "vk": "77c63b053da9168a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pda3259927db0|para:pda3259927db0.inf2": {
+  "para": "2f47267283c0",
+  "vk": "e7db31cbb27bf439",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pda3259927db0|para:pda3259927db0.inf3": {
+  "para": "2f47267283c0",
+  "vk": "88ac46bb0c192ea7",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pda3259927db0|para:pda3259927db0.inf4": {
+  "para": "2f47267283c0",
+  "vk": "4fb3e91e59419c72",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pda3259927db0|para:pda3259927db0.inf5": {
+  "para": "2f47267283c0",
+  "vk": "ebcc1e355ea44978",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pc9abca0637e8|para:pc9abca0637e8.inf8": {
+  "para": "48c04379e183",
+  "vk": "7bc2a1e7b506d309",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2bc3753480be|para:p2bc3753480be.inf3": {
+  "para": "740d19cfa42a",
+  "vk": "7f06f3aad1e5208e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pc22f3476a8ba|para:pc22f3476a8ba.inf5": {
+  "para": "4f0d5bbcc9d5",
+  "vk": "cb24bbbdf1becd06",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pc64e83ea2537|para:pc64e83ea2537.inf1": {
+  "para": "982624529641",
+  "vk": "f81eac80103f210a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pc64e83ea2537|para:pc64e83ea2537.inf2": {
+  "para": "982624529641",
+  "vk": "7677bbf31020fcba",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pc64e83ea2537|para:pc64e83ea2537.inf3": {
+  "para": "982624529641",
+  "vk": "a094a50fbad882f3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pc64e83ea2537|para:pc64e83ea2537.inf4": {
+  "para": "982624529641",
+  "vk": "6d2a6d2eba572716",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pc64e83ea2537|para:pc64e83ea2537.inf5": {
+  "para": "982624529641",
+  "vk": "1f14ad92540ef938",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pc64e83ea2537|para:pc64e83ea2537.inf6": {
+  "para": "982624529641",
+  "vk": "812f8eb1f8bb35ea",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pc64e83ea2537|para:pc64e83ea2537.inf7": {
+  "para": "982624529641",
+  "vk": "def994e74d1845f5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p5dfb30611409|para:p5dfb30611409.inf1": {
+  "para": "351df08cb739",
+  "vk": "593dfdf9c2619217",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4ba75a623d61|para:p4ba75a623d61.inf1": {
+  "para": "612455d92817",
+  "vk": "f561a69290062bf0",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4ba75a623d61|para:p4ba75a623d61.inf2": {
+  "para": "612455d92817",
+  "vk": "9a3953b80f0c95a1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4ba75a623d61|para:p4ba75a623d61.inf3": {
+  "para": "612455d92817",
+  "vk": "915564446e14c994",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4ba75a623d61|para:p4ba75a623d61.inf4": {
+  "para": "612455d92817",
+  "vk": "d47fc36c0c0fbc8e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p4ba75a623d61|para:p4ba75a623d61.inf5": {
+  "para": "612455d92817",
+  "vk": "12c214f6b1d9f07a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p3334586eafae|para:p3334586eafae.inf6": {
+  "para": "8955d6ae86a7",
+  "vk": "b8d87eed36c84d53",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "p2f52ccd96cbe|para:p2f52ccd96cbe.inf6": {
+  "para": "a07e52b8138a",
+  "vk": "7b48f0f894f9ee73",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pbf9b0908fdf7|para:pbf9b0908fdf7.inf1": {
+  "para": "bf9b0908fdf7",
+  "vk": "c3264a7deeb53174",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round3",
+  "at": "2026-09-12"
+ },
+ "pf16ec38665fa|para:pf16ec38665fa.inf1": {
+  "para": "4a0ab88f3945",
+  "vk": "be999dd7ced49c62",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pf16ec38665fa|citation:aiindex2026.cited_pf16ec38665fa": {
+  "para": "4a0ab88f3945",
+  "vk": "67ae586e28e276af",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pf16ec38665fa|para:pf16ec38665fa.inf2": {
+  "para": "4a0ab88f3945",
+  "vk": "6337e9de52c42891",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pf16ec38665fa|citation:magesh2025.cited_pf16ec38665fa": {
+  "para": "4a0ab88f3945",
+  "vk": "5a2d8ca2d4d3b30a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pf16ec38665fa|citation:euaiact.cited_pf16ec38665fa": {
+  "para": "4a0ab88f3945",
+  "vk": "94b5505b13387def",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pf16ec38665fa|citation:art50guidelines2026.cited_pf16ec38665fa": {
+  "para": "4a0ab88f3945",
+  "vk": "41bd364e9a41272e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pf16ec38665fa|citation:citednotverified.cited_pf16ec38665fa": {
+  "para": "4a0ab88f3945",
+  "vk": "b7ba890f276f2e87",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pf16ec38665fa|citation:rao2026.cited_pf16ec38665fa": {
+  "para": "4a0ab88f3945",
+  "vk": "aa94fbab03a005f5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pf16ec38665fa|para:pf16ec38665fa.inf5": {
+  "para": "4a0ab88f3945",
+  "vk": "ec05e5697747ac9d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pf16ec38665fa|para:pf16ec38665fa.inf7": {
+  "para": "4a0ab88f3945",
+  "vk": "701bd7dbfc01ddd6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pf16ec38665fa|para:pf16ec38665fa.inf8": {
+  "para": "4a0ab88f3945",
+  "vk": "39a8d4b146cc40f4",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:p9cc44fb8fd4a.inf1": {
+  "para": "6b1b90c3de62",
+  "vk": "47e013e713c95d72",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:p9cc44fb8fd4a.inf7": {
+  "para": "6b1b90c3de62",
+  "vk": "e900e1cad3153c9a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:p9cc44fb8fd4a.inf9": {
+  "para": "6b1b90c3de62",
+  "vk": "c6953e324cf34d31",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:p9cc44fb8fd4a.inf10": {
+  "para": "6b1b90c3de62",
+  "vk": "0f966cd8d1999e77",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "abstract-results|para:p9cc44fb8fd4a.inf13": {
+  "para": "6b1b90c3de62",
+  "vk": "59a9eeb73434de1a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p4f3571394fd0|para:p4f3571394fd0.inf6": {
+  "para": "32bca117d322",
+  "vk": "ef8394dd00f837a0",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p4f3571394fd0|para:p4f3571394fd0.inf7": {
+  "para": "32bca117d322",
+  "vk": "e9e601af7203203f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p4f3571394fd0|citation:rao2026.cited_p4f3571394fd0": {
+  "para": "32bca117d322",
+  "vk": "92c0478c1cf195ed",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:pf2a0a6f2f50f.inf1": {
+  "para": "39db8957350f",
+  "vk": "1697175936456728",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|citation:kalai2024.cited_intro_regulation": {
+  "para": "39db8957350f",
+  "vk": "8bb59f72fc30b6cf",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:pf2a0a6f2f50f.inf8": {
+  "para": "39db8957350f",
+  "vk": "7fc0687547b67b83",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:pf2a0a6f2f50f.inf9": {
+  "para": "39db8957350f",
+  "vk": "cd7bb70127049b6c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "intro-production|citation:rao2026.cited_intro_production": {
+  "para": "9fac19108ce1",
+  "vk": "c87b4d2a8e31b145",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pa4cefe3aeff2|para:pa4cefe3aeff2.inf1": {
+  "para": "17264aba47c1",
+  "vk": "25503fd65e9690fa",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pa4cefe3aeff2|para:pa4cefe3aeff2.inf3": {
+  "para": "17264aba47c1",
+  "vk": "2aa042af5ef99ca2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pa4cefe3aeff2|para:pa4cefe3aeff2.inf5": {
+  "para": "17264aba47c1",
+  "vk": "d2d1890eaf57f4b9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pa4cefe3aeff2|citation:ixbrl.cited_pa4cefe3aeff2": {
+  "para": "17264aba47c1",
+  "vk": "d13d5fcf7b90d5d1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pa4cefe3aeff2|para:pa4cefe3aeff2.inf6": {
+  "para": "17264aba47c1",
+  "vk": "f29e344766c300f9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pa4cefe3aeff2|para:pa4cefe3aeff2.inf7": {
+  "para": "17264aba47c1",
+  "vk": "abbdc8dcd44db657",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pa4cefe3aeff2|para:pa4cefe3aeff2.inf8": {
+  "para": "17264aba47c1",
+  "vk": "c46cc268e25034d3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p24c4841dbcc0|para:p24c4841dbcc0.inf4": {
+  "para": "43d6672f9e27",
+  "vk": "90cb53b75d552015",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p24c4841dbcc0|para:p24c4841dbcc0.inf5": {
+  "para": "43d6672f9e27",
+  "vk": "941f4a09d5741da6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p24c4841dbcc0|para:p24c4841dbcc0.inf6": {
+  "para": "43d6672f9e27",
+  "vk": "eb07d9336b0de1f5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p61e74796743b|para:p61e74796743b.inf1": {
+  "para": "63675ad01d73",
+  "vk": "5b9165e7d66c725e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p61e74796743b|para:p61e74796743b.inf3": {
+  "para": "63675ad01d73",
+  "vk": "5cf172b10b826889",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p61e74796743b|para:p61e74796743b.inf4": {
+  "para": "63675ad01d73",
+  "vk": "9e73f6f3458cf982",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "setup|para:p383bf1abc359.inf2": {
+  "para": "59c0624864a7",
+  "vk": "44d8479c8e68a391",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "setup|para:p383bf1abc359.inf4": {
+  "para": "59c0624864a7",
+  "vk": "93da634958b8948f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "setup|para:p383bf1abc359.inf5": {
+  "para": "59c0624864a7",
+  "vk": "6c9b9910186c06ca",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "setup|para:p383bf1abc359.inf6": {
+  "para": "59c0624864a7",
+  "vk": "7cef1874d0e0cef9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "setup|para:p383bf1abc359.inf7": {
+  "para": "59c0624864a7",
+  "vk": "5abbf814772c1b7e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "setup|para:p383bf1abc359.inf8": {
+  "para": "59c0624864a7",
+  "vk": "053432a1452b036b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "setup|para:p383bf1abc359.inf13": {
+  "para": "59c0624864a7",
+  "vk": "cdca444f25470e2b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "setup|para:p383bf1abc359.inf14": {
+  "para": "59c0624864a7",
+  "vk": "383a4dac3c6a7565",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "setup|para:p383bf1abc359.inf15": {
+  "para": "59c0624864a7",
+  "vk": "3e0536636d17401e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "setup|para:p383bf1abc359.inf16": {
+  "para": "59c0624864a7",
+  "vk": "c873ee3c787d664d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "setup|para:p383bf1abc359.inf17": {
+  "para": "59c0624864a7",
+  "vk": "8cf888bdba57ab9c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "setup|para:p383bf1abc359.inf19": {
+  "para": "59c0624864a7",
+  "vk": "f9307334c139a906",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "setup|para:p383bf1abc359.inf20": {
+  "para": "59c0624864a7",
+  "vk": "ed488e07548e3099",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding1|para:pcedc139dc8b7.inf1": {
+  "para": "9f9ddff3b79a",
+  "vk": "a6e61f0cae6257de",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding1|para:pcedc139dc8b7.inf3": {
+  "para": "9f9ddff3b79a",
+  "vk": "2d44b488e6086ff5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding1|para:pcedc139dc8b7.inf10": {
+  "para": "9f9ddff3b79a",
+  "vk": "c39c958780ac3c29",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pf3595994615d.inf1": {
+  "para": "4507a1fa2f37",
+  "vk": "0398ce30e4143889",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pf3595994615d.inf2": {
+  "para": "4507a1fa2f37",
+  "vk": "f7bef3afae919023",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pf3595994615d.inf3": {
+  "para": "4507a1fa2f37",
+  "vk": "faa8d82264ce6cae",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pf3595994615d.inf5": {
+  "para": "4507a1fa2f37",
+  "vk": "9b73fec05ccef45a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pf3595994615d.inf8": {
+  "para": "4507a1fa2f37",
+  "vk": "369cdd2a342943c8",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pf3595994615d.inf10": {
+  "para": "4507a1fa2f37",
+  "vk": "a361906d11ab4daf",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pf3595994615d.inf11": {
+  "para": "4507a1fa2f37",
+  "vk": "c4e8ed83046ffb3a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pf3595994615d.inf12": {
+  "para": "4507a1fa2f37",
+  "vk": "ec257548ca5aa87b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding2|para:pf3595994615d.inf13": {
+  "para": "4507a1fa2f37",
+  "vk": "4728e2923bb008e8",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p025c1e780897.inf1": {
+  "para": "b172e29a7167",
+  "vk": "da11a6ed52713bf3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p025c1e780897.inf2": {
+  "para": "b172e29a7167",
+  "vk": "9f1bec8892ac731b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p025c1e780897.inf7": {
+  "para": "b172e29a7167",
+  "vk": "08c3ce11ba3312be",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p025c1e780897.inf8": {
+  "para": "b172e29a7167",
+  "vk": "8c330baf8df81d2a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p025c1e780897.inf9": {
+  "para": "b172e29a7167",
+  "vk": "fe31298e19eb4326",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p025c1e780897.inf10": {
+  "para": "b172e29a7167",
+  "vk": "7da573b4500a6a02",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p025c1e780897.inf12": {
+  "para": "b172e29a7167",
+  "vk": "59a3e07c6f9fba10",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p025c1e780897.inf13": {
+  "para": "b172e29a7167",
+  "vk": "8ff682404a2a7671",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p025c1e780897.inf14": {
+  "para": "b172e29a7167",
+  "vk": "625826a216ea30c7",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p0c7aae692aa4|para:p0c7aae692aa4.inf4": {
+  "para": "badd6776ddd6",
+  "vk": "ba6725c6f3dc01ca",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p0c7aae692aa4|para:p0c7aae692aa4.inf5": {
+  "para": "badd6776ddd6",
+  "vk": "5b0c53307826e6ee",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p05cbc2f1a7d8.inf1": {
+  "para": "9f3d556a5929",
+  "vk": "9a93ae815fb77aa1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p05cbc2f1a7d8.inf6": {
+  "para": "9f3d556a5929",
+  "vk": "d44b82f4e9683749",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p05cbc2f1a7d8.inf7": {
+  "para": "9f3d556a5929",
+  "vk": "f10d1b6028564818",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p05cbc2f1a7d8.inf9": {
+  "para": "9f3d556a5929",
+  "vk": "56b1aebef7b39bdf",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p05cbc2f1a7d8.inf10": {
+  "para": "9f3d556a5929",
+  "vk": "83952ac1925a5a7a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p05cbc2f1a7d8.inf11": {
+  "para": "9f3d556a5929",
+  "vk": "e5e19598cbbabf3f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p05cbc2f1a7d8.inf12": {
+  "para": "9f3d556a5929",
+  "vk": "99431a66e606763e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p05cbc2f1a7d8.inf13": {
+  "para": "9f3d556a5929",
+  "vk": "31dcef27a7893b53",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p05cbc2f1a7d8.inf14": {
+  "para": "9f3d556a5929",
+  "vk": "75fb08256e564b87",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "finding4|para:p05cbc2f1a7d8.inf17": {
+  "para": "9f3d556a5929",
+  "vk": "dbc22992b727e4f6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p5ef145e17dc5.inf1": {
+  "para": "a0f8ef75d464",
+  "vk": "6c2934ac478c1fd2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p5ef145e17dc5.inf4": {
+  "para": "a0f8ef75d464",
+  "vk": "7daced8eb2aeee28",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p5ef145e17dc5.inf5": {
+  "para": "a0f8ef75d464",
+  "vk": "50324560b78a55cf",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p5ef145e17dc5.inf7": {
+  "para": "a0f8ef75d464",
+  "vk": "8656b0e3da6b52fe",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "cost-verify|para:p5ef145e17dc5.inf9": {
+  "para": "a0f8ef75d464",
+  "vk": "9634a1eb32c750ab",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "integration|para:pea1c6faf7fb5.inf3": {
+  "para": "cbba0e482952",
+  "vk": "fb325cfaddb04a71",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "integration|para:pea1c6faf7fb5.inf4": {
+  "para": "cbba0e482952",
+  "vk": "6009642883f713ae",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "integration|para:pea1c6faf7fb5.inf5": {
+  "para": "cbba0e482952",
+  "vk": "f64e8bc18ec1ee37",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "integration|para:pea1c6faf7fb5.inf6": {
+  "para": "cbba0e482952",
+  "vk": "9df8efb75aac5f4d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "integration|para:pea1c6faf7fb5.inf7": {
+  "para": "cbba0e482952",
+  "vk": "cd050a46766e4c12",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf1": {
+  "para": "d3735b62853a",
+  "vk": "84676bf4b422623d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf3": {
+  "para": "d3735b62853a",
+  "vk": "ff9a6c38f3ad6c5c",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf4": {
+  "para": "d3735b62853a",
+  "vk": "0162c6bc48c77998",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf5": {
+  "para": "d3735b62853a",
+  "vk": "180da92ab06163d2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf6": {
+  "para": "d3735b62853a",
+  "vk": "5a82380982658676",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf7": {
+  "para": "d3735b62853a",
+  "vk": "dfc526c43bd11cff",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf8": {
+  "para": "d3735b62853a",
+  "vk": "6603ff5f3f6370b3",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf9": {
+  "para": "d3735b62853a",
+  "vk": "b16ddadbe4d3c34a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf11": {
+  "para": "d3735b62853a",
+  "vk": "b1cd4080c434d9ce",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf12": {
+  "para": "d3735b62853a",
+  "vk": "55910adcb69de17c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf13": {
+  "para": "d3735b62853a",
+  "vk": "1537e3cc1bb945d7",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf14": {
+  "para": "d3735b62853a",
+  "vk": "94f55bb5583a6034",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf15": {
+  "para": "d3735b62853a",
+  "vk": "72a773239282b44a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf16": {
+  "para": "d3735b62853a",
+  "vk": "97c5359826f37466",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf17": {
+  "para": "d3735b62853a",
+  "vk": "334196f3aabf8368",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf18": {
+  "para": "d3735b62853a",
+  "vk": "42ae0a35e51cee48",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|loop:plant.pageFaults": {
+  "para": "d3735b62853a",
+  "vk": "01262d1fdf826ce4",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf19": {
+  "para": "d3735b62853a",
+  "vk": "c55d5ec3cd169da1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|loop:plant.refutable": {
+  "para": "d3735b62853a",
+  "vk": "7812fe2e7e697f0f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf20": {
+  "para": "d3735b62853a",
+  "vk": "085871a302d0b64c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf21": {
+  "para": "d3735b62853a",
+  "vk": "0cf469d3a56f496c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pd22a8c283bda.inf22": {
+  "para": "d3735b62853a",
+  "vk": "0917b3be5b9ab2a5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pb73470a87ffe|citation:symgen.cited_pb73470a87ffe": {
+  "para": "4aeb95867748",
+  "vk": "96157c00394d2acd",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pb73470a87ffe|para:pb73470a87ffe.inf6": {
+  "para": "4aeb95867748",
+  "vk": "1254f13154d4169b",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pb73470a87ffe|para:pb73470a87ffe.inf7": {
+  "para": "4aeb95867748",
+  "vk": "bde8f491fc89727b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pb73470a87ffe|para:pb73470a87ffe.inf11": {
+  "para": "4aeb95867748",
+  "vk": "b9bee138bdc8eff6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pb73470a87ffe|citation:datareferencing2026.cited_pb73470a87ffe": {
+  "para": "4aeb95867748",
+  "vk": "a20de945758a3352",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pb73470a87ffe|para:pb73470a87ffe.inf12": {
+  "para": "4aeb95867748",
+  "vk": "944d05e933f58a79",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pb73470a87ffe|para:pb73470a87ffe.inf13": {
+  "para": "4aeb95867748",
+  "vk": "e50ef64ad388c2d6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pb73470a87ffe|para:pb73470a87ffe.inf14": {
+  "para": "4aeb95867748",
+  "vk": "b2cbd59cc86a5e0c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pb73470a87ffe|para:pb73470a87ffe.inf15": {
+  "para": "4aeb95867748",
+  "vk": "737715aaa0d1e082",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pb73470a87ffe|para:pb73470a87ffe.inf16": {
+  "para": "4aeb95867748",
+  "vk": "cbcb2cbb9963bb7d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pb73470a87ffe|para:pb73470a87ffe.inf17": {
+  "para": "4aeb95867748",
+  "vk": "e1832324ef2dbfa5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pb73470a87ffe|citation:dtg2026.cited_pb73470a87ffe": {
+  "para": "4aeb95867748",
+  "vk": "1292c9dd1011b08c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pb73470a87ffe|para:pb73470a87ffe.inf19": {
+  "para": "4aeb95867748",
+  "vk": "9b72e170b961eb8e",
+  "verdict": "cannot-check",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pb73470a87ffe|para:pb73470a87ffe.inf20": {
+  "para": "4aeb95867748",
+  "vk": "d762bba632fbfc27",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|para:pe19537459490.inf1": {
+  "para": "38b5f5361988",
+  "vk": "fe67c10550d2c445",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|citation:bedrockgrounding2026.cited_pe19537459490": {
+  "para": "38b5f5361988",
+  "vk": "b20ad383902c966c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|para:pe19537459490.inf2": {
+  "para": "38b5f5361988",
+  "vk": "97055b97b18a6e99",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|citation:vectarahhem2026.cited_pe19537459490": {
+  "para": "38b5f5361988",
+  "vk": "58f0e0231985639a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|para:pe19537459490.inf3": {
+  "para": "38b5f5361988",
+  "vk": "e757afa746bec454",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|citation:azuregroundedness2026.cited_pe19537459490": {
+  "para": "38b5f5361988",
+  "vk": "241cb9be3443e9e0",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|para:pe19537459490.inf4": {
+  "para": "38b5f5361988",
+  "vk": "20e05781a948fbf2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|para:pe19537459490.inf5": {
+  "para": "38b5f5361988",
+  "vk": "3fcce4ff3ece032e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|citation:finground.cited_pe19537459490": {
+  "para": "38b5f5361988",
+  "vk": "19ba45f95e3ed83d",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|para:pe19537459490.inf6": {
+  "para": "38b5f5361988",
+  "vk": "79444c24474cb3f6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|para:pe19537459490.inf7": {
+  "para": "38b5f5361988",
+  "vk": "0ba257dc43dcb2d0",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|para:pe19537459490.inf8": {
+  "para": "38b5f5361988",
+  "vk": "9f78efcb09cc6f31",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|para:pe19537459490.inf9": {
+  "para": "38b5f5361988",
+  "vk": "7c57616a1c227a9d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|para:pe19537459490.inf10": {
+  "para": "38b5f5361988",
+  "vk": "e14a836d08de5c83",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|para:pe19537459490.inf11": {
+  "para": "38b5f5361988",
+  "vk": "2d0849f224a91cb7",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pe19537459490|para:pe19537459490.inf12": {
+  "para": "38b5f5361988",
+  "vk": "0855f5d67cd782e9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p98440f8667b2|para:p98440f8667b2.inf1": {
+  "para": "aadf79aae2e7",
+  "vk": "278607560fa978ba",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p98440f8667b2|para:p98440f8667b2.inf2": {
+  "para": "aadf79aae2e7",
+  "vk": "f3897fdaeb29e8f6",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p2321955ab0a8|para:p2321955ab0a8.inf1": {
+  "para": "6ae27bd3d8a9",
+  "vk": "b27248d843ee0d87",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p2321955ab0a8|para:p2321955ab0a8.inf2": {
+  "para": "6ae27bd3d8a9",
+  "vk": "879817bb07b6850a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p2321955ab0a8|para:p2321955ab0a8.inf6": {
+  "para": "6ae27bd3d8a9",
+  "vk": "31e427f74a73f451",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p2321955ab0a8|para:p2321955ab0a8.inf7": {
+  "para": "6ae27bd3d8a9",
+  "vk": "232f48f3a52d99dd",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "p2321955ab0a8|para:p2321955ab0a8.inf8": {
+  "para": "6ae27bd3d8a9",
+  "vk": "379813e1319226e4",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pd068dc0d0d74|para:pd068dc0d0d74.inf1": {
+  "para": "ef28b25f264a",
+  "vk": "f6d5ca4ca2ad9d32",
+  "verdict": "reword",
+  "second": "stands",
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pd068dc0d0d74|para:pd068dc0d0d74.inf2": {
+  "para": "ef28b25f264a",
+  "vk": "85ca4cbfac7eb55f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pd068dc0d0d74|para:pd068dc0d0d74.inf6": {
+  "para": "ef28b25f264a",
+  "vk": "7a2caa58a0702fd9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pd068dc0d0d74|para:pd068dc0d0d74.inf7": {
+  "para": "ef28b25f264a",
+  "vk": "cb0fb77d7bf97a64",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pde508ff454f4|para:pde508ff454f4.inf5": {
+  "para": "ee2c63448181",
+  "vk": "0eabbef465933589",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pde508ff454f4|para:pde508ff454f4.inf6": {
+  "para": "ee2c63448181",
+  "vk": "2d4348470b33eac9",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "pde508ff454f4|para:pde508ff454f4.inf9": {
+  "para": "ee2c63448181",
+  "vk": "e439b72f03178ef4",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round4",
+  "at": "2026-09-12"
+ },
+ "intro-regulation|para:p4000bc94451e.inf8": {
+  "para": "4e4638132039",
+  "vk": "0bfe31402dc05e2a",
+  "verdict": "partial",
+  "second": "stands",
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p3a50575877c2.inf1": {
+  "para": "90feb53ecd02",
+  "vk": "20916075facd5c84",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p3a50575877c2.inf3": {
+  "para": "90feb53ecd02",
+  "vk": "70749e85e0436325",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p3a50575877c2.inf4": {
+  "para": "90feb53ecd02",
+  "vk": "66445f103462da46",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p3a50575877c2.inf8": {
+  "para": "90feb53ecd02",
+  "vk": "272c436e13adb9d7",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p3a50575877c2.inf9": {
+  "para": "90feb53ecd02",
+  "vk": "c303124b975df80a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p3a50575877c2.inf10": {
+  "para": "90feb53ecd02",
+  "vk": "8a51fa0e61c63113",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p3a50575877c2.inf12": {
+  "para": "90feb53ecd02",
+  "vk": "4484abd36e2973dd",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "finding3|para:p3a50575877c2.inf14": {
+  "para": "90feb53ecd02",
+  "vk": "934a644fc4a3479c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pa97e0672ef8d.inf1": {
+  "para": "c8c8e4d96cee",
+  "vk": "abac849cc97cb39f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pa97e0672ef8d.inf2": {
+  "para": "c8c8e4d96cee",
+  "vk": "8ac5234aa4c46a7b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pa97e0672ef8d.inf3": {
+  "para": "c8c8e4d96cee",
+  "vk": "4fc83b6b3a204bb5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pa97e0672ef8d.inf4": {
+  "para": "c8c8e4d96cee",
+  "vk": "6184e64def418aae",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pa97e0672ef8d.inf6": {
+  "para": "c8c8e4d96cee",
+  "vk": "2c9ccee98ea6a66c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pa97e0672ef8d.inf7": {
+  "para": "c8c8e4d96cee",
+  "vk": "ae130bd88de2a5e2",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pa97e0672ef8d.inf8": {
+  "para": "c8c8e4d96cee",
+  "vk": "f94b5384d803bd5e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pa97e0672ef8d.inf9": {
+  "para": "c8c8e4d96cee",
+  "vk": "eb79a36054385f8a",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pa97e0672ef8d.inf13": {
+  "para": "c8c8e4d96cee",
+  "vk": "4b004f29465a1e4e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pa97e0672ef8d.inf14": {
+  "para": "c8c8e4d96cee",
+  "vk": "180cd9107743b2b1",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pa97e0672ef8d.inf15": {
+  "para": "c8c8e4d96cee",
+  "vk": "142854d1626fca85",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pa97e0672ef8d.inf21": {
+  "para": "c8c8e4d96cee",
+  "vk": "c7ad0aadc9228db8",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "provenance|para:pa97e0672ef8d.inf25": {
+  "para": "c8c8e4d96cee",
+  "vk": "5a7d81a4df15dd93",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "p2250806a7a70|citation:symgen.cited_p2250806a7a70": {
+  "para": "98968540ec5d",
+  "vk": "f1fd726df48307c9",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "p2250806a7a70|para:p2250806a7a70.inf6": {
+  "para": "98968540ec5d",
+  "vk": "4611b25f742ad0ca",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "p2250806a7a70|para:p2250806a7a70.inf7": {
+  "para": "98968540ec5d",
+  "vk": "7b8af7815eb59b7d",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "p2250806a7a70|para:p2250806a7a70.inf17": {
+  "para": "98968540ec5d",
+  "vk": "0fca5fb53c32688f",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "pa362babb53ff|citation:finground.cited_pa362babb53ff": {
+  "para": "7753c55e65ba",
+  "vk": "c73878634e541cca",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "pa362babb53ff|para:pa362babb53ff.inf9": {
+  "para": "7753c55e65ba",
+  "vk": "80ee3d2ea5455311",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "pba2b72616522|para:pba2b72616522.inf1": {
+  "para": "1c10091b3b73",
+  "vk": "11844b861cd523ed",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "pba2b72616522|para:pba2b72616522.inf4": {
+  "para": "1c10091b3b73",
+  "vk": "7bea36c7c8d77734",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "p8ee0cf086846|para:p8ee0cf086846.inf5": {
+  "para": "3fa6982d5f0e",
+  "vk": "90ddf822d1b25c65",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round5",
+  "at": "2026-09-12"
+ },
+ "pdaeb007b0bee|citation:symgen.cited_pdaeb007b0bee": {
+  "para": "51bf5bc04e75",
+  "vk": "d0d1ebbb0e7e0de4",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round6",
+  "at": "2026-09-12"
+ },
+ "pdaeb007b0bee|para:pdaeb007b0bee.inf6": {
+  "para": "51bf5bc04e75",
+  "vk": "948d97854da3e3b4",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round6",
+  "at": "2026-09-12"
+ },
+ "pdaeb007b0bee|para:pdaeb007b0bee.inf7": {
+  "para": "51bf5bc04e75",
+  "vk": "8212048d0ef40128",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round6",
+  "at": "2026-09-12"
+ },
+ "pdaeb007b0bee|para:pdaeb007b0bee.inf8": {
+  "para": "51bf5bc04e75",
+  "vk": "9113d142d5d6fe4c",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round6",
+  "at": "2026-09-12"
+ },
+ "pdaeb007b0bee|para:pdaeb007b0bee.inf9": {
+  "para": "51bf5bc04e75",
+  "vk": "9a20f9770c40df14",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round6",
+  "at": "2026-09-12"
+ },
+ "pdaeb007b0bee|para:pdaeb007b0bee.inf13": {
+  "para": "51bf5bc04e75",
+  "vk": "7d202684df029c48",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round6",
+  "at": "2026-09-12"
+ },
+ "pdaeb007b0bee|para:pdaeb007b0bee.inf14": {
+  "para": "51bf5bc04e75",
+  "vk": "922e8fcc7772cc6b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round6",
+  "at": "2026-09-12"
+ },
+ "pdaeb007b0bee|para:pdaeb007b0bee.inf18": {
+  "para": "51bf5bc04e75",
+  "vk": "d2ea7f3308c77251",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round6",
+  "at": "2026-09-12"
+ },
+ "pdaeb007b0bee|para:pdaeb007b0bee.inf22": {
+  "para": "51bf5bc04e75",
+  "vk": "925f035921559d9b",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round6",
+  "at": "2026-09-12"
+ },
+ "pe2710077ee46|para:pe2710077ee46.inf1": {
+  "para": "1d24f1ec8434",
+  "vk": "d348926e8bec4df5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round6",
+  "at": "2026-09-12"
+ },
+ "pce48431a6841|citation:symgen.cited_pce48431a6841": {
+  "para": "3dd63accd9ed",
+  "vk": "22cecc6b8e5b5b65",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round7",
+  "at": "2026-09-12"
+ },
+ "pce48431a6841|para:pce48431a6841.inf7": {
+  "para": "3dd63accd9ed",
+  "vk": "9536528711eaebd4",
+  "verdict": "reword",
+  "second": "reword",
+  "confirmed": true,
+  "round": "round7",
+  "at": "2026-09-12"
+ },
+ "pce48431a6841|para:pce48431a6841.inf8": {
+  "para": "3dd63accd9ed",
+  "vk": "b45be840ebd7942e",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round7",
+  "at": "2026-09-12"
+ },
+ "pf585fd50a778|citation:symgen.cited_pf585fd50a778": {
+  "para": "e83abf726664",
+  "vk": "ee62ee8bd3e778fe",
+  "verdict": "partial",
+  "second": "partial",
+  "confirmed": true,
+  "round": "round8",
+  "at": "2026-09-12"
+ },
+ "pf585fd50a778|para:pf585fd50a778.inf7": {
+  "para": "e83abf726664",
+  "vk": "29d4ee2beab8e8d5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round8",
+  "at": "2026-09-12"
+ },
+ "pf585fd50a778|citation:pcn2025.cited_pf585fd50a778": {
+  "para": "e83abf726664",
+  "vk": "6618f57f580789d5",
+  "verdict": "stands",
+  "second": null,
+  "confirmed": false,
+  "round": "round9",
+  "at": "2026-09-12"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "id": "formal",
+ "snapshot": "formal-check.txt",
+ "command": "node formal/check-vectors.mjs",
+ "cwd": "<repo>",
+ "repo": {
+  "path": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research",
+  "commit": "d05cd75",
+  "branch": "judgment-study",
+  "uncommittedChanges": 38
+ },
+ "startedAt": "2026-09-12T07:13:08.415Z",
+ "durationMs": 37,
+ "exitCode": 0,
+ "stdoutSha256": "d0d89ef0b597bcec157dd7031193b2e300c86ef0c4fdc1f5307f673de6c68623",
+ "stdoutBytes": 670,
+ "snapshotSha256": "d0d89ef0b597bcec157dd7031193b2e300c86ef0c4fdc1f5307f673de6c68623",
+ "sameAsSnapshot": true,
+ "stderrTail": [],
+ "node": "v24.13.0"
+}

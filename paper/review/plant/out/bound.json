@@ -1,0 +1,56 @@
+[
+ {
+  "id": "A1",
+  "caught": true,
+  "stage": "build",
+  "message": "MARK in abstract-results not unique (0): \"cover 90–96% of their numbers\""
+ },
+ {
+  "id": "A2",
+  "caught": true,
+  "stage": "build",
+  "message": "MARK in finding2 not unique (0): \"108 (69%)\""
+ },
+ {
+  "id": "A3",
+  "caught": true,
+  "stage": "build",
+  "message": "MARK in cost-verify not unique (0): \"takes 0.66 s on a laptop, mean of 20 passes — 2.6 ms per response, 0.30 ms per claim\""
+ },
+ {
+  "id": "A4",
+  "caught": true,
+  "stage": "build",
+  "message": "MARK in setup not unique (0): \"28 English prompts over a generated educational dataset of 741 pupils in 95 class offerings\""
+ },
+ {
+  "id": "A5",
+  "caught": true,
+  "stage": "build",
+  "message": "MARK in finding4 not unique (0): \"454 judgments over nine runs, 411 of them verified on the first pass and 425 of 427 after one correction\""
+ },
+ {
+  "id": "N3",
+  "caught": true,
+  "stage": "build",
+  "message": "MARK in finding3 not unique (0): \"are 16 in the second\""
+ },
+ {
+  "id": "N5",
+  "caught": true,
+  "stage": "build",
+  "message": "MARK in finding4 not unique (0): \"The 33 first-pass failures\""
+ },
+ {
+  "id": "N6",
+  "caught": true,
+  "stage": "build",
+  "message": "MARK in cost-gen not unique (0): \"1.23 generations per query (1.06 for DeepSeek, 1.33 for Opus 5)\""
+ },
+ {
+  "id": "S9",
+  "caught": true,
+  "stage": "build",
+  "message": "MARK in integration not unique (0): \"The reference implementation is an npm package whose verifier has no runtime dependencies\""
+ }
+]

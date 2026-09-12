@@ -1,0 +1,226 @@
+{
+ "para:p95f3b5cd45d0.inf2": {
+  "class": "collateral",
+  "plant": "C11"
+ },
+ "citation:kalai2025.cited_p95f3b5cd45d0": {
+  "class": "defect",
+  "known": true
+ },
+ "para:p95f3b5cd45d0.inf6": {
+  "class": "collateral",
+  "plant": "C1"
+ },
+ "citation:rao2026.cited_p95f3b5cd45d0": {
+  "class": "collateral",
+  "plant": "N1"
+ },
+ "citation:cao2024.cited_p95f3b5cd45d0": {
+  "class": "defect",
+  "known": false
+ },
+ "para:pd6333da154b4.inf1": {
+  "class": "defect",
+  "known": false
+ },
+ "citation:kalai2024.cited_intro_regulation": {
+  "class": "defect",
+  "known": false
+ },
+ "citation:kalai2025.cited_intro_regulation": {
+  "class": "defect",
+  "known": true
+ },
+ "citation:transparencycode2026.cited_intro_regulation": {
+  "class": "defect",
+  "known": false
+ },
+ "para:pd6333da154b4.inf9": {
+  "class": "collateral",
+  "plant": "C2"
+ },
+ "para:pd6333da154b4.inf10": {
+  "class": "collateral",
+  "plant": "C2"
+ },
+ "para:p15e662b154ec.inf2": {
+  "class": "collateral",
+  "plant": "C3"
+ },
+ "citation:jsonschema2022.cited_p821389586347": {
+  "class": "defect",
+  "known": true
+ },
+ "citation:prometheusalerting.cited_p821389586347": {
+  "class": "defect",
+  "known": false
+ },
+ "citation:anthropicsonnet5.cited_setup": {
+  "class": "collateral",
+  "plant": "N12"
+ },
+ "citation:deepseekv4pro.cited_setup": {
+  "class": "collateral",
+  "plant": "N11"
+ },
+ "bench:education.synthetic": {
+  "class": "page",
+  "note": "the reading declares a quote basis and shows no quote"
+ },
+ "para:p0b8bb08e8841.inf7": {
+  "class": "defect",
+  "known": false
+ },
+ "para:pf7c476db3e18.inf10": {
+  "class": "defect",
+  "known": false
+ },
+ "para:pbc1fd5408435.inf8": {
+  "class": "defect",
+  "known": false
+ },
+ "para:pbc1fd5408435.inf10": {
+  "class": "defect",
+  "known": false
+ },
+ "para:pe68a07c66657.inf6": {
+  "class": "defect",
+  "known": false
+ },
+ "para:pe68a07c66657.inf9": {
+  "class": "defect",
+  "known": false
+ },
+ "para:pe68a07c66657.inf10": {
+  "class": "defect",
+  "known": false
+ },
+ "para:pe68a07c66657.inf11": {
+  "class": "defect",
+  "known": false
+ },
+ "para:pe68a07c66657.inf12": {
+  "class": "defect",
+  "known": false
+ },
+ "para:pe68a07c66657.inf13": {
+  "class": "defect",
+  "known": false
+ },
+ "para:pe68a07c66657.inf14": {
+  "class": "defect",
+  "known": false
+ },
+ "para:p7859efac67e0.inf4": {
+  "class": "defect",
+  "known": true
+ },
+ "para:p2ad866091584.inf3": {
+  "class": "defect",
+  "known": true
+ },
+ "para:p2ad866091584.inf5": {
+  "class": "defect",
+  "known": true
+ },
+ "para:p2ad866091584.inf6": {
+  "class": "defect",
+  "known": true
+ },
+ "citation:rdfa.cited_p73da2bde21ab": {
+  "class": "defect",
+  "known": true
+ },
+ "para:p73da2bde21ab.inf2": {
+  "class": "collateral",
+  "plant": "C6"
+ },
+ "para:p73da2bde21ab.inf6": {
+  "class": "defect",
+  "known": false
+ },
+ "para:p73da2bde21ab.inf7": {
+  "class": "defect",
+  "known": false
+ },
+ "citation:claimlocked2026.cited_p73da2bde21ab": {
+  "class": "defect",
+  "known": true
+ },
+ "citation:verifin2026.cited_p73da2bde21ab": {
+  "class": "defect",
+  "known": true
+ },
+ "para:p73da2bde21ab.inf13": {
+  "class": "defect",
+  "known": false
+ },
+ "citation:fever.cited_p73da2bde21ab": {
+  "class": "defect",
+  "known": true
+ },
+ "citation:tabfact.cited_p73da2bde21ab": {
+  "class": "defect",
+  "known": true
+ },
+ "citation:feverous.cited_p73da2bde21ab": {
+  "class": "defect",
+  "known": true
+ },
+ "citation:alignscore.cited_p73da2bde21ab": {
+  "class": "defect",
+  "known": true
+ },
+ "citation:evergreen2026.cited_p73da2bde21ab": {
+  "class": "defect",
+  "known": true
+ },
+ "citation:fullcite2026.cited_p73da2bde21ab": {
+  "class": "defect",
+  "known": true
+ },
+ "para:p73da2bde21ab.inf24": {
+  "class": "defect",
+  "known": true
+ },
+ "para:p8a3191557346.inf3": {
+  "class": "collateral",
+  "plant": "C8"
+ },
+ "para:p8a3191557346.inf4": {
+  "class": "collateral",
+  "plant": "C8"
+ },
+ "para:p295d6d4cb14c.inf2": {
+  "class": "collateral",
+  "plant": "C10"
+ },
+ "para:p295d6d4cb14c.inf3": {
+  "class": "collateral",
+  "plant": "C10"
+ },
+ "citation:aiindex2026.cited_p1176f149722b": {
+  "class": "defect",
+  "known": false
+ },
+ "citation:citednotverified.cited_p1176f149722b": {
+  "class": "defect",
+  "known": true
+ },
+ "para:p1176f149722b.inf7": {
+  "class": "defect",
+  "known": false
+ },
+ "citation:magesh2025.cited_intro_production": {
+  "class": "defect",
+  "known": false
+ },
+ "para:p8725480a44d1.inf3": {
+  "class": "defect",
+  "known": false
+ },
+ "para:p4515f3279d4d.inf7": {
+  "class": "defect",
+  "known": false
+ }
+}

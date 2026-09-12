@@ -107,7 +107,7 @@
 
 
 \begin{abstract}
-Organizations are deploying LLMs in consequential settings~\citep{aiindex2026,magesh2025}, and regulation now reaches generated text~\citep{euaiact,art50guidelines2026}, but the text seldom carries a link between an individual claim and the data behind it that a machine can check~\citep{citednotverified,rao2026}. Each generation of models is harder to tell from human writing~\citep{clark2021,jones2026}, and the fluency carries no reliable signal of the model's own uncertainty~\citep{zhou2024,xiong2024}.
+Organizations are deploying LLMs widely~\citep{aiindex2026} and in consequential settings~\citep{magesh2025}, and regulation now reaches generated text~\citep{euaiact,art50guidelines2026}, but the text seldom carries a link between an individual claim and the data behind it that a machine can check~\citep{citednotverified,rao2026}. Each generation of models is harder to tell from human writing~\citep{clark2021,jones2026}, and the fluency carries no reliable signal of the model's own uncertainty~\citep{zhou2024,xiong2024}.
 
 \vspace{0.4em}
 We present ProveML, a Markdown extension of three inline constructs that places AI-generated claims inside a verifiable boundary. The constructs declare entities, link facts to a data source, and check qualitative judgments against composable, pre-declared thresholds:
@@ -230,7 +230,7 @@ Figure~\ref{fig:comparison} contrasts the standard approach (data in, text out, 
 \draw[diag feedback] (ver2.south west) -- ++(0,-0.28) -| (llm2.south) node[diag label, pos=0.24, below] {optional correction loop};
 \node[diag note, below=0.25cm of ren2, text width=3.5cm] {Claims are checked against the fact store and threshold registry before release.};
 \end{tikzpicture}
-\caption{Without ProveML (left): data goes in, text comes out, no verification. With ProveML (right): every claim is checked against the fact store and threshold registry, with an optional correction loop. Rounded boxes denote generative components; squared boxes denote data stores and deterministic processing.}
+\caption{Without ProveML (left): data goes in, text comes out, no verification. With ProveML (right): every marked claim is checked against the fact store and threshold registry, with an optional correction loop. Rounded boxes denote generative components; squared boxes denote data stores and deterministic processing.}
 \label{fig:comparison}
 \end{figure}
 

@@ -20,3 +20,11 @@ experiments/.tmp-*
 # Runs against the withdrawn education dataset: kept locally for reference,
 # never published — the responses quote figures derived from real pupil records.
 experiments/archive/
+
+# Lean build output
+formal/.lake/
+
+# Planted-error measurement of the review loop: a copy of paper/review with a planted paper
+paper/review-planted/
+paper/review/plant/out/all.log
+paper/review/report/pending.json

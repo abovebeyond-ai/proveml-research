@@ -4,7 +4,7 @@ For each reference: read what the paper says it does, open the source, and decid
 whether the sentence is a fair description. Metadata is already machine-checked
 (`npm run audit:bibliography`); this is the part that needs a person.
 
-104 references, 53 cited in prose.
+107 references, 57 cited in prose.
 
 ---
 
@@ -28,7 +28,7 @@ Rashkin, H. and Nikolaev, V. and Lamm, M. and Aroyo, L. and Collins, M. and Das,
 
 What the paper claims (1 place):
 
-- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents checked out against their sources for only 39--77\% of citations, and 10.7\% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences, a rate the ALCE benchmark reproduced for the best models of the time; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -40,7 +40,31 @@ Gao, T. and Yen, H. and Yu, J. and Chen, D. · Proc. EMNLP 2023
 
 What the paper claims (1 place):
 
-- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents checked out against their sources for only 39--77\% of citations, and 10.7\% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences, a rate the ALCE benchmark reproduced for the best models of the time; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+
+- [ ] checked
+
+## anthropicopus5
+
+**Introducing Claude Opus 5**  
+Anthropic · \urlhttps://www.anthropic.com/news/claude-opus-5, 24 July 2026 2026  
+<https://www.anthropic.com/news/claude-opus-5>
+
+What the paper claims (1 place):
+
+- A reader, or an auditor months later, can take any number back to its record without a model. fig:render-audit figure What We Measured sec:evaluation Setup. Three models current in August 2026: Claude Opus 5, released 24 July 2026 and described by its maker as coming "close to the frontier intelligence of Claude Fable 5 at half the price", and Claude Sonnet 5, released 30 June 2026, both through the Claude Code CLI with default settings; and DeepSeek V4 Pro (DeepSeek-V4-Pro-0813, 1.6T parameters with 49B active, open weights under the MIT licence ), served by Together AI.
+
+- [ ] checked
+
+## anthropicsonnet5
+
+**Introducing Claude Sonnet 5**  
+Anthropic · \urlhttps://www.anthropic.com/news/claude-sonnet-5, 30 June 2026 2026  
+<https://www.anthropic.com/news/claude-sonnet-5>
+
+What the paper claims (1 place):
+
+- A reader, or an auditor months later, can take any number back to its record without a model. fig:render-audit figure What We Measured sec:evaluation Setup. Three models current in August 2026: Claude Opus 5, released 24 July 2026 and described by its maker as coming "close to the frontier intelligence of Claude Fable 5 at half the price", and Claude Sonnet 5, released 30 June 2026, both through the Claude Code CLI with default settings; and DeepSeek V4 Pro (DeepSeek-V4-Pro-0813, 1.6T parameters with 49B active, open weights under the MIT licence ), served by Together AI.
 
 - [ ] checked
 
@@ -52,7 +76,7 @@ European Commission · Adopted 20 July 2026, \urlhttps://digital-strategy.ec.eur
 
 What the paper claims (1 place):
 
-- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026.
+- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only one of those duties, machine-readable marking by systems already on the market, to 2 December 2026.
 
 - [ ] checked
 
@@ -64,7 +88,7 @@ Microsoft · Azure AI Content Safety documentation, \urlhttps://learn.microsoft.
 
 What the paper claims (1 place):
 
-- The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check, Azure AI Content Safety groundedness detection, Vectara's HHEM and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text.
+- The guardrails row reflects the predominant model-based grounding mode, in which a trained model judges a response against its source, whether by a score against a threshold (Amazon Bedrock Guardrails contextual grounding check, Vectara's HHEM ) or a binary grounded/ungrounded verdict (Azure AI Content Safety groundedness detection ), and similar; Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text.
 
 - [ ] checked
 
@@ -76,7 +100,7 @@ Amazon Web Services · Amazon Bedrock User Guide, \urlhttps://docs.aws.amazon.co
 
 What the paper claims (1 place):
 
-- The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check, Azure AI Content Safety groundedness detection, Vectara's HHEM and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text.
+- The guardrails row reflects the predominant model-based grounding mode, in which a trained model judges a response against its source, whether by a score against a threshold (Amazon Bedrock Guardrails contextual grounding check, Vectara's HHEM ) or a binary grounded/ungrounded verdict (Azure AI Content Safety groundedness detection ), and similar; Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text.
 
 - [ ] checked
 
@@ -88,7 +112,7 @@ Amazon Web Services · Amazon Bedrock User Guide, \urlhttps://docs.aws.amazon.co
 
 What the paper claims (1 place):
 
-- The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check, Azure AI Content Safety groundedness detection, Vectara's HHEM and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text.
+- The guardrails row reflects the predominant model-based grounding mode, in which a trained model judges a response against its source, whether by a score against a threshold (Amazon Bedrock Guardrails contextual grounding check, Vectara's HHEM ) or a binary grounded/ungrounded verdict (Azure AI Content Safety groundedness detection ), and similar; Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text.
 
 - [ ] checked
 
@@ -100,7 +124,7 @@ Cao, Tianyu and Raman, Natraj and Dervovic, Danial and Tan, Chenhao · arXiv:240
 
 What the paper claims (1 place):
 
-- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed; numbers with no basis in the source; and statements whose citations do not support them.
+- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents having no archived record and likely never having existed; numbers with no basis in the source; and statements whose citations do not support them.
 
 - [ ] checked
 
@@ -124,8 +148,8 @@ Onweller, H. and Lumer, E. and Huber, A. and Ramchandani, P. and Subbiah, V. K. 
 
 What the paper claims (2 places):
 
-- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
-- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents checked out against their sources for only 39--77\% of citations, and 10.7\% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences, a rate the ALCE benchmark reproduced for the best models of the time; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents checked out against their sources for only 39--77\% of citations, and 10.7\% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences, a rate the ALCE benchmark reproduced for the best models of the time; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -149,7 +173,7 @@ Clark, Elizabeth and August, Tal and Serrano, Sofia and Haduong, Nikita and Guru
 
 What the paper claims (1 place):
 
-- Introduction Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content; readers who write with these models daily still can.
+- Introduction Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content; readers who write with these models frequently still can.
 
 - [ ] checked
 
@@ -161,7 +185,7 @@ MacFarlane, John · Version 0.31.2, \urlhttps://spec.commonmark.org/0.31.2/ 2024
 
 What the paper claims (1 place):
 
-- Instruction-tuned models routinely answer in Markdown, and a CommonMark-conformant renderer passes the constructs through unchanged, because characters not given an interpretation by any Markdown rule are parsed as plain textual content; in our runs every model produced the markup on every query.
+- Instruction-tuned models routinely answer in Markdown, and a CommonMark-conformant renderer passes the constructs through unchanged, because characters not given an interpretation by any Markdown rule are parsed as plain textual content; in the runs of Section~sec:evaluation all three current models produced the markup on every query.
 
 - [ ] checked
 
@@ -173,7 +197,19 @@ Yang, Yuqing and Zhu, Qi and Han, Zhen and Han, Boran and Shen, Zhengyuan and Wa
 
 What the paper claims (1 place):
 
-- measure the failure class our residual errors belong to --- values miscited from a table the model was shown --- and detect it with a trained critic; ProveML detects it with a lookup.
+- measure a neighbouring failure class --- values miscited from a table the model was shown --- and detect it with a trained critic; ProveML detects such a miscitation with a lookup, though most of our own residue was a binding error, not a wrong value (Section~sec:evaluation).
+
+- [ ] checked
+
+## deepseekv4pro
+
+**DeepSeek-V4-Pro**  
+DeepSeek-AI · Model card, \urlhttps://huggingface.co/deepseek-ai/DeepSeek-V4-Pro 2026  
+<https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro>
+
+What the paper claims (1 place):
+
+- A reader, or an auditor months later, can take any number back to its record without a model. fig:render-audit figure What We Measured sec:evaluation Setup. Three models current in August 2026: Claude Opus 5, released 24 July 2026 and described by its maker as coming "close to the frontier intelligence of Claude Fable 5 at half the price", and Claude Sonnet 5, released 30 June 2026, both through the Claude Code CLI with default settings; and DeepSeek V4 Pro (DeepSeek-V4-Pro-0813, 1.6T parameters with 49B active, open weights under the MIT licence ), served by Together AI.
 
 - [ ] checked
 
@@ -209,7 +245,7 @@ European Parliament and Council of the European Union · Artificial Intelligence
 
 What the paper claims (1 place):
 
-- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026.
+- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only one of those duties, machine-readable marking by systems already on the market, to 2 December 2026.
 
 - [ ] checked
 
@@ -249,6 +285,18 @@ What the paper claims (1 place):
 
 - [ ] checked
 
+## finground
+
+**FinGround: Detecting and Grounding Financial Hallucinations via Atomic Claim Verification**  
+Guo, D. and Wu, J. and Yiu, S. M. · Proc. ACL Industry Track 2026  
+<https://arxiv.org/abs/2604.23588>
+
+What the paper claims (1 place):
+
+- FinGround re-verifies computational claims by formula reconstruction but decomposes and types them in a pipeline whose detector is a model, hence Partial, and its third stage attaches table-cell citations only to the claims it rewrites, after the fact, whereas Inline here means markup carried by every claim in the text, so that cell stays empty; the data-grounded row is Partial for the same reason, since Evergreen compiles claims to queries on an LLM query engine and VeriFin is neurosymbolic: it grounds its operands in XBRL facts and derives the calculation before the Z3 check. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
+
+- [ ] checked
+
 ## fullcite2026
 
 **Explicit Evidence Grounding via Structured Inline Citation Generation**  
@@ -281,9 +329,9 @@ XBRL International · \urlhttps://www.xbrl.org/specification/inlinexbrl-part1/re
 
 What the paper claims (3 places):
 
-- In short, ProveML is iXBRL for AI-generated text. Financial reporting solved a version of this problem two decades ago by embedding machine-readable tags in human-readable filings, so a regulator can audit a number without reading the prose around it.
+- In short, ProveML is iXBRL for AI-generated text. Financial reporting solved a version of this problem more than a decade ago by embedding machine-readable tags in human-readable filings, so a regulator can audit a number without reading the prose around it.
 - Related Work sec:related The idea of tagging human-readable text for machine resolution is old: RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it; iXBRL embeds machine-readable tags in financial reports for automated audit.
-- FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
+- FinGround re-verifies computational claims by formula reconstruction but decomposes and types them in a pipeline whose detector is a model, hence Partial, and its third stage attaches table-cell citations only to the claims it rewrites, after the fact, whereas Inline here means markup carried by every claim in the text, so that cell stays empty; the data-grounded row is Partial for the same reason, since Evergreen compiles claims to queries on an LLM query engine and VeriFin is neurosymbolic: it grounds its operands in XBRL facts and derives the calculation before the Z3 check. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
 
 - [ ] checked
 
@@ -295,7 +343,7 @@ Jakesch, Maurice and Hancock, Jeffrey T. and Naaman, Mor · Proceedings of the N
 
 What the paper claims (1 place):
 
-- Introduction Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content; readers who write with these models daily still can.
+- Introduction Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content; readers who write with these models frequently still can.
 
 - [ ] checked
 
@@ -319,7 +367,7 @@ Jones, Cameron R. and Bergen, Benjamin K. · Proceedings of the National Academy
 
 What the paper claims (1 place):
 
-- Introduction Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content; readers who write with these models daily still can.
+- Introduction Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content; readers who write with these models frequently still can.
 
 - [ ] checked
 
@@ -343,7 +391,7 @@ Kalai, A. T. and Vempala, S. S. · Proc. STOC 2024
 
 What the paper claims (1 place):
 
-- Hallucination is structural, not incidental: calibrated language models must hallucinate at a rate approaching the fraction of facts appearing exactly once in training, and standard training pipelines reward guessing over acknowledging uncertainty.
+- Hallucination is structural, not incidental: calibrated language models must hallucinate, on facts whose truth the training data cannot settle, at a rate close to the fraction of such facts appearing exactly once in training, and standard training pipelines reward guessing over acknowledging uncertainty.
 
 - [ ] checked
 
@@ -356,7 +404,7 @@ Kalai, A. T. and Nachum, O. and Vempala, S. S. and Zhang, E. · OpenAI, arXiv:25
 What the paper claims (2 places):
 
 - The fluency carries no reliable signal of the model's own uncertainty: deployed models rarely volunteer uncertainty even when they are wrong, verbalised confidence is systematically overconfident, and the training pipeline rewards a confident guess over an admission of ignorance.
-- Hallucination is structural, not incidental: calibrated language models must hallucinate at a rate approaching the fraction of facts appearing exactly once in training, and standard training pipelines reward guessing over acknowledging uncertainty.
+- Hallucination is structural, not incidental: calibrated language models must hallucinate, on facts whose truth the training data cannot settle, at a rate close to the fraction of such facts appearing exactly once in training, and standard training pipelines reward guessing over acknowledging uncertainty.
 
 - [ ] checked
 
@@ -368,8 +416,8 @@ Liu, Nelson F. and Zhang, Tianyi and Liang, Percy · Findings of the Association
 
 What the paper claims (2 places):
 
-- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed; numbers with no basis in the source; and statements whose citations do not support them.
-- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents having no archived record and likely never having existed; numbers with no basis in the source; and statements whose citations do not support them.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents checked out against their sources for only 39--77\% of citations, and 10.7\% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences, a rate the ALCE benchmark reproduced for the best models of the time; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -381,7 +429,7 @@ Liu, Patty and Stammbach, Dominik and Henderson, Peter · arXiv:2606.21155 2026
 
 What the paper claims (1 place):
 
-- And the problem has not gone away with better models: the leading legal research tools hallucinated on 17--33\% of queries when tested in 2024, despite vendor claims of near-elimination, and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year.
+- And the problem has not gone away with better models: the leading legal research tools hallucinated on 17--33\% of queries when tested in 2024, despite vendor claims of having eliminated them, and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year.
 
 - [ ] checked
 
@@ -393,7 +441,7 @@ Magesh, V. and Surani, F. and Dahl, M. and Suzgun, M. and Manning, C. D. and Ho,
 
 What the paper claims (2 places):
 
-- And the problem has not gone away with better models: the leading legal research tools hallucinated on 17--33\% of queries when tested in 2024, despite vendor claims of near-elimination, and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year.
+- And the problem has not gone away with better models: the leading legal research tools hallucinated on 17--33\% of queries when tested in 2024, despite vendor claims of having eliminated them, and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year.
 - Generative AI is used in at least one business function at 70\% of surveyed organizations, in legal research and in clinical documentation.
 
 - [ ] checked
@@ -418,7 +466,7 @@ European Parliament and Council of the European Union · Official Journal of the
 
 What the paper claims (1 place):
 
-- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only the machine-readable marking duty for systems already on the market, to 2 December 2026.
+- The EU AI Act's transparency duties have applied since 2 August 2026, with the Commission's Article~50 guidelines adopted two weeks before; the Digital Omnibus deferred only one of those duties, machine-readable marking by systems already on the market, to 2 December 2026.
 
 - [ ] checked
 
@@ -442,7 +490,7 @@ Solatorio, Aivin V. · arXiv:2509.06902 2025
 
 What the paper claims (1 place):
 
-- Among recent systems, Proof-Carrying Numbers is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs.
+- Among recent systems, Proof-Carrying Numbers is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its paper describes neither entity scoping in prose nor a named vocabulary for qualitative judgments), and SymGen takes the opposite strategy: the model emits references and a parser substitutes the values, so a value that arrives through a plain field reference is copied from the data rather than written by the model, though a reference to the wrong field still renders a wrong one and nothing in the pipeline reports it, since verification is left to the reader, and a number the model writes in the surrounding prose can be wrong too, as its own limitations section says; the technical report compares SymGen's substitution with ProveML on identical models, prompts and data.
 
 - [ ] checked
 
@@ -466,8 +514,8 @@ Rao, Delip and Wong, Eric and Callison-Burch, Chris · arXiv:2604.03173 2026
 
 What the paper claims (2 places):
 
-- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents in 2026 having never existed; numbers with no basis in the source; and statements whose citations do not support them.
-- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents were factually accurate for only 39--77\% of claims, and 10.7\% of the citation URLs of the two commercial deep research agents never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
+- They generate text that is plausible but factually incorrect: fabricated citations, 3--13\% of the citation URLs supplied by commercial models and deep research agents having no archived record and likely never having existed; numbers with no basis in the source; and statements whose citations do not support them.
+- Even systems built to cite fall short: in 2026 the citations of frontier deep-research agents checked out against their sources for only 39--77\% of citations, and 10.7\% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed, against 4.8\% for search-augmented models, three years after the first generative search engines fully supported about half of their sentences, a rate the ALCE benchmark reproduced for the best models of the time; and whether a citation holds is judged by a person or by another model rather than by a deterministic check.
 
 - [ ] checked
 
@@ -491,7 +539,7 @@ Russell, Jenna and Karpinska, Marzena and Iyyer, Mohit · Proc. ACL (Volume 1: L
 
 What the paper claims (1 place):
 
-- Introduction Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content; readers who write with these models daily still can.
+- Introduction Large Language Models (LLMs) produce fluent, contextually appropriate text that untrained readers can no longer reliably distinguish from human-authored content; readers who write with these models frequently still can.
 
 - [ ] checked
 
@@ -503,7 +551,7 @@ Sun, Mingjie and Yin, Yida and Xu, Zhiqiu and Kolter, J. Zico and Liu, Zhuang ·
 
 What the paper claims (1 place):
 
-- Instruction-tuned models routinely answer in Markdown, and a CommonMark-conformant renderer passes the constructs through unchanged, because characters not given an interpretation by any Markdown rule are parsed as plain textual content; in our runs every model produced the markup on every query.
+- Instruction-tuned models routinely answer in Markdown, and a CommonMark-conformant renderer passes the constructs through unchanged, because characters not given an interpretation by any Markdown rule are parsed as plain textual content; in the runs of Section~sec:evaluation all three current models produced the markup on every query.
 
 - [ ] checked
 
@@ -515,7 +563,7 @@ Torroba Hennigen, L. and Shen, S. Z. and Nrusimha, A. and Gapp, B. and Sontag, D
 
 What the paper claims (2 places):
 
-- Among recent systems, Proof-Carrying Numbers is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its published description does not cover entity scoping or a named vocabulary for qualitative judgments), and SymGen takes the opposite strategy: the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one; the technical report compares the two on identical runs.
+- Among recent systems, Proof-Carrying Numbers is the nearest neighbor (claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies; its paper describes neither entity scoping in prose nor a named vocabulary for qualitative judgments), and SymGen takes the opposite strategy: the model emits references and a parser substitutes the values, so a value that arrives through a plain field reference is copied from the data rather than written by the model, though a reference to the wrong field still renders a wrong one and nothing in the pipeline reports it, since verification is left to the reader, and a number the model writes in the surrounding prose can be wrong too, as its own limitations section says; the technical report compares SymGen's substitution with ProveML on identical models, prompts and data.
 - We have not measured whether this reduces human verification effort, and the evidence from adjacent systems is mixed: report their user study reduced average verification time by 20\%, while report a 21-participant study in which verification and correction effort did not differ significantly from their baseline, even though their system reduced hallucination.
 
 - [ ] checked
@@ -576,7 +624,7 @@ Vectara · Hugging Face, \urlhttps://huggingface.co/vectara/hallucination_evalua
 
 What the paper claims (1 place):
 
-- The guardrails row reflects the predominant model-based grounding mode, in which a trained model scores a response against its source and a threshold decides the outcome (Amazon Bedrock Guardrails contextual grounding check, Azure AI Content Safety groundedness detection, Vectara's HHEM and similar); Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text.
+- The guardrails row reflects the predominant model-based grounding mode, in which a trained model judges a response against its source, whether by a score against a threshold (Amazon Bedrock Guardrails contextual grounding check, Vectara's HHEM ) or a binary grounded/ungrounded verdict (Azure AI Content Safety groundedness detection ), and similar; Amazon Bedrock's separate Automated Reasoning checks add formal logic checks against a declared policy and validate only what the policy's variables capture, not author-marked claims in the text.
 
 - [ ] checked
 
@@ -612,7 +660,7 @@ XBRL International · Recommendation 22 June 2009, \urlhttps://www.xbrl.org/spec
 
 What the paper claims (1 place):
 
-- FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
+- FinGround re-verifies computational claims by formula reconstruction but decomposes and types them in a pipeline whose detector is a model, hence Partial, and its third stage attaches table-cell citations only to the claims it rewrites, after the fact, whereas Inline here means markup carried by every claim in the text, so that cell stays empty; the data-grounded row is Partial for the same reason, since Evergreen compiles claims to queries on an LLM query engine and VeriFin is neurosymbolic: it grounds its operands in XBRL facts and derives the calculation before the Z3 check. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
 
 - [ ] checked
 
@@ -624,7 +672,7 @@ XBRL International · Recommendation 22 June 2009, \urlhttps://www.xbrl.org/spec
 
 What the paper claims (1 place):
 
-- FinGround recomputes arithmetic claims deterministically but decomposes and types them with a model, hence Partial. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
+- FinGround re-verifies computational claims by formula reconstruction but decomposes and types them in a pipeline whose detector is a model, hence Partial, and its third stage attaches table-cell citations only to the claims it rewrites, after the fact, whereas Inline here means markup carried by every claim in the text, so that cell stays empty; the data-grounded row is Partial for the same reason, since Evergreen compiles claims to queries on an LLM query engine and VeriFin is neurosymbolic: it grounds its operands in XBRL facts and derives the calculation before the Z3 check. $^*$The XBRL formula family provides document-level computation and assertion checks over the facts in a report; the Inline XBRL specification is scoped to syntax and to mapping it into an XBRL instance, and defines no claim-scoped inference. tab:related table Discussion and Limitations sec:limitations The deeper value is not the correction loop but the boundary itself.
 
 - [ ] checked
 
@@ -670,7 +718,6 @@ These appear only in the bibliography — either cite them or drop them:
 - `factscore` — FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation
 - `farquhar2024` — Detecting hallucinations in large language models using semantic entropy
 - `fhir` — FHIR (Fast Healthcare Interoperability Resources), Release 5
-- `finground` — FinGround: Detecting and Grounding Financial Hallucinations via Atomic Claim Verification
 - `finverbench` — FinVerBench: Benchmark Validity and Calibration in Large Language Model Financial Statement Verification
 - `gartner2023` — More Than 80\% of Enterprises Will Have Used Generative AI APIs or Deployed Generative AI-Enabled Applications by 2026
 - `gavel` — GAVEL: Evidence-Contract Debate with Mechanized Scrutiny for Provenance-Grounded Fact-Checking
@@ -678,7 +725,7 @@ These appear only in the bibliography — either cite them or drop them:
 - `googlebard2023` — Google AI chatbot Bard offers inaccurate information in company ad
 - `googleground` — Grounding with Google Search
 - `guardrails` — Guardrails: Adding guardrails to large language models
-- `halldetect2026` — HallDetect: Decomposed Entailment for Factuality Checking
+- `halldetect2026` — Decomposed Entailment for Factuality Checking and Hallucination Detection
 - `leesee2004` — Trust in automation: Designing for appropriate reliance
 - `llmon` — LLMON: An LLM-native Markup Language to Leverage Structure and Semantics at the LLM Interface
 - `mata2023` — \textitMata v. Avianca, Inc.
