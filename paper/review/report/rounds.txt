@@ -96,3 +96,5 @@ caught by reader (2026-09-12, Shane): "whose results this paper does not reprodu
 caught by reader (2026-09-12, Shane): "do not conflict with standard Markdown syntax" was a flagged span; bound to CommonMark 6.9 with the bracket caveat in the note (push 91).
 2026-09-12T17:09:19Z push 92 | pass recorded 0 | verified 688/688 | blocks 161 | readings 671 | bound 303 | sources 114 | measure (own statements unanswered + judged no) 340+0
 caught by reader (2026-09-12, Shane): "produced the markup on every query" had no printed count; both summary scripts now print query-runs whose first pass carried no construct (0 of 342, 0 of 342, 0 of 360) and the clause binds to it (push 92).
+2026-09-12T17:13:37Z push 93 | pass recorded 0 | verified 689/689 | blocks 161 | readings 672 | bound 304 | sources 114 | measure (own statements unanswered + judged no) 339+0
+caught by reader (2026-09-12, Shane): the entity name check was a flagged span; verifier-check.mjs now prints an entity line and the sentence binds to it (push 93).
