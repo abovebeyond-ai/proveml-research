@@ -61,3 +61,6 @@ caught by reader (2026-09-12, Shane): the abstract's guarantee sentence packed t
 2026-09-12T11:20:43Z push 72 | pass recorded 0 | verified 719/719 | blocks 161 | readings 702 | bound 290 | sources 112 | measure (own statements unanswered + judged no) 400+0
 2026-09-12T11:22:23Z push 73 | pass recorded 3 | verified 720/720 | blocks 161 | readings 703 | bound 291 | sources 112 | measure (own statements unanswered + judged no) 403+0
 caught by reader (2026-09-12, Shane): coverage "inside any claim" overstated the numerator (fact claims only; the planted run had found it and round 3 did not carry it); abstract, Section 2 and Table 2 caption now say a fact claim, bound to a coverage line the verifier prints (push 73).
+2026-09-12T11:32:59Z push 74 | pass recorded 0 | verified 709/709 | blocks 161 | readings 692 | bound 291 | sources 112 | measure (own statements unanswered + judged no) 395+0
+2026-09-12T11:33:20Z push 75 | pass recorded 0 | verified 701/701 | blocks 161 | readings 684 | bound 291 | sources 112 | measure (own statements unanswered + judged no) 387+0
+caught by reader (2026-09-12, Shane): "% after one correction" and "lifts the first pass to" were scraps the trimmer left beside bound numbers; a residue that starts on a unit sign or ends on a preposition is now dropped (19 readings, pushes 74 and 75).
