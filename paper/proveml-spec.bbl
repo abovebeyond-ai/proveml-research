@@ -1,4 +1,4 @@
-\begin{thebibliography}{62}
+\begin{thebibliography}{63}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -131,6 +131,13 @@ T.~Gao, H.~Yen, J.~Yu, and D.~Chen.
 \newblock Enabling large language models to generate text with citations.
 \newblock In \emph{Proc. EMNLP}, pages 6465--6488, 2023.
 \newblock \doi{10.18653/v1/2023.emnlp-main.398}.
+
+\bibitem[Guo et~al.(2026)Guo, Wu, and Yiu]{finground}
+D.~Guo, J.~Wu, and S.~M. Yiu.
+\newblock {FinGround}: Detecting and grounding financial hallucinations via
+  atomic claim verification.
+\newblock In \emph{Proc. ACL Industry Track}, 2026.
+\newblock arXiv:2604.23588.
 
 \bibitem[Hall et~al.(2026)Hall, Shome, and Eiers]{verifin2026}
 Bethel Hall, Sachi Shome, and William Eiers.

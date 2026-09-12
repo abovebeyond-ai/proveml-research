@@ -1,21 +1,21 @@
 {
  "id": "package",
  "snapshot": "package.txt",
- "command": "python3 -c import json;d=json.load(open('/private/tmp/claude-501/-Volumes-shanedeconinck-be-Projects-proveml-all/aaffe3ee-a529-4c8f-bc96-24f5cec9bb0e/scratchpad/proveml-pkg/package.json'));print('name',d.get('name'));print('version',d.get('version'));print('dependencies',json.dumps(d.get('dependencies',{})))",
- "cwd": "/private/tmp/claude-501/-Volumes-shanedeconinck-be-Projects-proveml-all/aaffe3ee-a529-4c8f-bc96-24f5cec9bb0e/scratchpad/vera-paper1",
+ "command": "node -e const d=require(process.cwd()+'/../../node_modules/proveml/package.json');console.log('name',d.name);console.log('version',d.version);console.log('dependencies',JSON.stringify(d.dependencies||{}))",
+ "cwd": "<repo>/paper/review",
  "repo": {
-  "path": "/private/tmp/claude-501/-Volumes-shanedeconinck-be-Projects-proveml-all/add0bb3a-68d2-4d84-8b06-a2b36cec76c9/scratchpad/repos/proveml-research",
-  "commit": "2be288a",
-  "branch": "main",
-  "uncommittedChanges": 0
+  "path": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research",
+  "commit": "d05cd75",
+  "branch": "judgment-study",
+  "uncommittedChanges": 39
  },
- "startedAt": "2026-09-03T10:19:15.308Z",
- "durationMs": 77,
+ "startedAt": "2026-09-12T07:14:08.847Z",
+ "durationMs": 25,
  "exitCode": 0,
- "stdoutSha256": "342bb5e3dd041b5ed25bc89f3e707fd27847eb7a3e7c82ab74f50b391555993d",
+ "stdoutSha256": "7213aedbb15a7d4a9d6015d677530726437d36f7e5c8486edec3d3fd4c3c2299",
  "stdoutBytes": 43,
  "snapshotSha256": "342bb5e3dd041b5ed25bc89f3e707fd27847eb7a3e7c82ab74f50b391555993d",
- "sameAsSnapshot": true,
+ "sameAsSnapshot": false,
  "stderrTail": [],
  "node": "v24.13.0"
 }

@@ -61,8 +61,9 @@ taught what each step is for and where it goes wrong.
    number or quote the build cannot find refuses the build; nothing is pushed past a refusal
    (`round.sh` stops there).
 3. **Flag.** The model pass (`infer`) marks what has no source: the paper's own statements,
-   with the question it would ask a reviewer. A paragraph it found clean is not asked again
-   until its text changes.
+   with the question it would ask a reviewer, in every paragraph, bound and cited ones
+   included (since 2026-09-12; before that the build skipped them, see below). A paragraph
+   it found clean is not asked again until its text changes.
 4. **Resolve.** For each flag: find a source, check the statement against the repository, or
    propose the sentence that would be true. On 2026-09-11 this was six agents over 229
    readings (60 citations, 127 own statements, 42 roundings): one false statement, twelve
@@ -99,6 +100,47 @@ author's, in the editor, not in the loop.
 **What automates next.** Step 4, as the agent Vera's look-further already reaches for: one
 agent per flagged reading, with the repository and the archives as its world, returning
 evidence or an edit, wired into `infer` so a round prints its measure and stops at zero.
+
+## Measuring the loop (2026-09-12)
+
+A loop that "found two things" is an anecdote. The question a product built on it has to
+answer is how much it misses and how often it changes what was right, and the only way to
+know is to plant errors and count. `plant/` does that:
+
+- `plant/plants.json`: the planted errors, each with the tex string it replaces, the
+  replacement, the truth and where it lives. Four classes: a bound number, an unbound number
+  in prose, an own statement, a citation moved to a sentence its work does not support.
+- `plant/run.mjs prepare | classify | bound | all | map | score`: copies this directory to
+  `../review-planted/` (gitignored; `../../` from there is still the repository, which the
+  build needs), plants, adapts, builds, runs the flag pass, lists the readings for the
+  resolver, and joins the resolver's verdicts back to the plants. A plant the build refuses
+  is reclassed as bound by `classify`; the resolver runs as the round's workflow with one
+  extra rule, that the paper's own source is out of bounds as evidence.
+- `plant/adjudication.json`: every confirmed change on unplanted text, classed by hand
+  (collateral of a plant, defect of the paper, fault of the page, refutable). Precision needs
+  a person; the classing is recorded so it can be disputed.
+- `plant/out/`: the verdicts, the map from plants to readings, the score, and the summary the
+  paper binds to (`regenerate.mjs` run `plant`, snapshot `plant-score.txt`).
+
+First run, 2026-09-12: 43 plants, 42 caught (build 9 of 9 bound, flag pass 33 of 34 prose
+plants, resolver 33 of 33 it was shown); the miss was a wrong API name in the setup
+paragraph that the flag pass never proposed. Of 56 confirmed changes on 242 unplanted
+readings, 13 were a plant seen from a neighbouring reading, 42 defects of the paper (18
+already known from the previous round), one a fault of the page, none refutable.
+
+What the run caught in the loop itself, all fixed the same day: paragraphs with a bound
+number or a citation had never met the flag pass (`build.mjs` returned before it, so every
+Setup and Finding paragraph was unflagged); `readings.mjs` dropped the last reading of every
+section (a lookahead for the closing tag that the section body never contains); an answer
+of the flag model with no list in it was recorded as a clean paragraph; a proposal that
+reached into an existing mark was dropped whole instead of trimmed; a cap of twenty spans
+cut the related-work paragraph short. The build's own ledger also surfaced: the `package`
+regenerate run had handed python a JavaScript expression and exited 1 since it was written,
+with the page reading a stale snapshot.
+
+The protocol carries the method as its "Measuring the loop" section (version 1.2). The
+plants are the author's, so their classes are the author's; an adversary's errors may fall
+elsewhere.
 
 ## Sources on the way in
 

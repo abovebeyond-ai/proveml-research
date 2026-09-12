@@ -414,5 +414,13 @@
     "sourceLabel": "DeepSeek-V4-Pro model card (Hugging Face)",
     "fetchFormat": "html",
     "localPath": "references/raw/deepseekv4pro.html"
+  },
+  {
+    "id": "finground",
+    "name": "FinGround (Guo, Wu and Yiu, 2026)",
+    "sourceUrl": "https://arxiv.org/abs/2604.23588",
+    "sourceLabel": "arXiv abstract page",
+    "fetchFormat": "html",
+    "localPath": "references/raw/finground.html"
   }
 ]

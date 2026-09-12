@@ -1626,17 +1626,36 @@
     "url": "https://arxiv.org/abs/2604.23588",
     "venue": "Proc. ACL Industry Track",
     "auditStatus": "bibliography-only",
-    "nextStep": "A source URL is available; fetch or read it and curate one or more exact supporting passages into the audit store.",
+    "nextStep": "A local source snapshot is available; read the relevant sections and curate one or more exact supporting passages into the audit store.",
     "paperPassages": [],
     "sourcePassages": [],
     "summaryPassages": [],
-    "autoSummaryPassages": [],
+    "autoSummaryPassages": [
+      {
+        "line": null,
+        "field": "autoSummary",
+        "claimValue": "auto-extracted broader source summary",
+        "equality": "normalized",
+        "note": "Automatically extracted from the local snapshot; useful for triage, but not yet manually reviewed for representativeness.",
+        "locator": "citation abstract",
+        "text": "Financial AI systems must produce answers grounded in specific regulatory filings, yet current LLMs fabricate metrics, invent citations, and miscalculate derived quantities. These errors carry direct regulatory consequences as the EU AI Act's high-risk enforcement deadline approaches (August 2026). Existing hallucination detectors treat all claims uniformly, missing 43% of computational errors that require arithmetic re-verification against structured tables. We present FinGround, a three-stage verify-then-ground pipeline for financial document QA.…",
+        "render": {
+          "field": "autoSummaryQuote1",
+          "value": "Financial AI systems must produce answers grounded in specific regulatory filings, yet current LLMs fabricate metrics, invent citations, and miscalculate derived quantities. These errors carry direct regulatory consequences as the EU AI Act's high-risk enforcement deadline approaches (August 2026). Existing hallucination detectors treat all claims uniformly, missing 43% of computational errors that require arithmetic re-verification against structured tables. We present FinGround, a three-stage verify-then-ground pipeline for financial document QA.…",
+          "markup": "@[paperref:finground \"FinGround: Detecting and Grounding Financial Hallucinations via Atomic Claim Verification\"]{%[autoSummaryQuote1]{Financial AI systems must produce answers grounded in specific regulatory filings, yet current LLMs fabricate metrics, invent citations, and miscalculate derived quantities. These errors carry direct regulatory consequences as the EU AI Act's high-risk enforcement deadline approaches (August 2026). Existing hallucination detectors treat all claims uniformly, missing 43% of computational errors that require arithmetic re-verification against structured tables. We present FinGround, a three-stage verify-then-ground pipeline for financial document QA.…}}",
+          "html": "<p><span class=\"proveml-entity proveml-verified proveml-trust-unverified\" data-entity-type=\"paperref\" data-entity-id=\"finground\" data-entity-path=\"paperref:finground\" data-verified=\"true\" data-status=\"verified\" data-store-name=\"FinGround: Detecting and Grounding Financial Hallucinations via Atomic Claim Verification\" style=\"--entity-color: #6b7280\" data-trust-status=\"unverified\" data-trust-backend=\"plain\"><span class=\"proveml-fact proveml-verified proveml-trust-unverified\" data-field=\"autoSummaryQuote1\" data-value=\"Financial AI systems must produce answers grounded in specific regulatory filings, yet current LLMs fabricate metrics, invent citations, and miscalculate derived quantities. These errors carry direct regulatory consequences as the EU AI Act's high-risk enforcement deadline approaches (August 2026). Existing hallucination detectors treat all claims uniformly, missing 43% of computational errors that require arithmetic re-verification against structured tables. We present FinGround, a three-stage verify-then-ground pipeline for financial document QA.…\" data-path=\"paperref:finground.autoSummaryQuote1\" data-verified=\"verified\" data-actual=\"\" data-entity=\"paperref:finground\" style=\"--entity-color: #0d9488\" data-trust-status=\"unverified\" data-trust-backend=\"plain\">Financial AI systems must produce answers grounded in specific regulatory filings, yet current LLMs fabricate metrics, invent citations, and miscalculate derived quantities. These errors carry direct regulatory consequences as the EU AI Act's high-risk enforcement deadline approaches (August 2026). Existing hallucination detectors treat all claims uniformly, missing 43% of computational errors that require arithmetic re-verification against structured tables. We present FinGround, a three-stage verify-then-ground pipeline for financial document QA.…</span></span></p>",
+          "allVerified": true,
+          "total": 2,
+          "verified": 2
+        }
+      }
+    ],
     "summaryAlignment": "not-reviewed",
     "selectionRisk": "not-reviewed",
     "summaryNote": "",
     "usageCount": 0,
-    "sourceLabel": "https://arxiv.org/abs/2604.23588",
-    "snapshotStatus": "",
+    "sourceLabel": "references/raw/finground.html",
+    "snapshotStatus": "fetched",
     "snapshotError": ""
   },
   {

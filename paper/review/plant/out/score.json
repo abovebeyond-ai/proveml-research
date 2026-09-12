@@ -1,0 +1,1589 @@
+{
+ "bound": [
+  {
+   "id": "A1",
+   "caught": true,
+   "stage": "build",
+   "message": "MARK in abstract-results not unique (0): \"cover 90–96% of their numbers\""
+  },
+  {
+   "id": "A2",
+   "caught": true,
+   "stage": "build",
+   "message": "MARK in finding2 not unique (0): \"108 (69%)\""
+  },
+  {
+   "id": "A3",
+   "caught": true,
+   "stage": "build",
+   "message": "MARK in cost-verify not unique (0): \"takes 0.66 s on a laptop, mean of 20 passes — 2.6 ms per response, 0.30 ms per claim\""
+  },
+  {
+   "id": "A4",
+   "caught": true,
+   "stage": "build",
+   "message": "MARK in setup not unique (0): \"28 English prompts over a generated educational dataset of 741 pupils in 95 class offerings\""
+  },
+  {
+   "id": "A5",
+   "caught": true,
+   "stage": "build",
+   "message": "MARK in finding4 not unique (0): \"454 judgments over nine runs, 411 of them verified on the first pass and 425 of 427 after one correction\""
+  },
+  {
+   "id": "N3",
+   "caught": true,
+   "stage": "build",
+   "message": "MARK in finding3 not unique (0): \"are 16 in the second\""
+  },
+  {
+   "id": "N5",
+   "caught": true,
+   "stage": "build",
+   "message": "MARK in finding4 not unique (0): \"The 33 first-pass failures\""
+  },
+  {
+   "id": "N6",
+   "caught": true,
+   "stage": "build",
+   "message": "MARK in cost-gen not unique (0): \"1.23 generations per query (1.06 for DeepSeek, 1.33 for Opus 5)\""
+  },
+  {
+   "id": "S9",
+   "caught": true,
+   "stage": "build",
+   "message": "MARK in integration not unique (0): \"The reference implementation is an npm package whose verifier has no runtime dependencies\""
+  }
+ ],
+ "rows": [
+  {
+   "id": "N1",
+   "class": "number",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:p95f3b5cd45d0.inf7",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "N2",
+   "class": "number",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:p0b8bb08e8841.inf4",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "N4",
+   "class": "number",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:pe68a07c66657.inf1",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "N7",
+   "class": "number",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:p7859efac67e0.inf3",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "N8",
+   "class": "number",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:p73da2bde21ab.inf22",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "N9",
+   "class": "number",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:pbc1fd5408435.inf4",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "N10",
+   "class": "number",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:p6efdb3471828.inf1",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "N11",
+   "class": "number",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:p3bf2581395c5.inf4",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "N12",
+   "class": "number",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:p3bf2581395c5.inf3",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "S1",
+   "class": "statement",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:p15e662b154ec.inf1",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "S2",
+   "class": "statement",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:pdbaff9720d57.inf2",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "S3",
+   "class": "statement",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:p4da7fb8f6742.inf1",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "S4",
+   "class": "statement",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:pd80657093a7e.inf4",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "S5",
+   "class": "statement",
+   "flagged": false,
+   "firstCaught": false,
+   "caught": false,
+   "verdicts": []
+  },
+  {
+   "id": "S6",
+   "class": "statement",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:p3bf2581395c5.inf6",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "S7",
+   "class": "statement",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:pf7c476db3e18.inf6",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "S8",
+   "class": "statement",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:pf7c476db3e18.inf7",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "S10",
+   "class": "statement",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:p2ad866091584.inf4",
+     "first": "reword",
+     "second": "reword"
+    }
+   ]
+  },
+  {
+   "id": "S11",
+   "class": "statement",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:pb9c4d1bdf34f.inf2",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "S12",
+   "class": "statement",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:pf6e97a4b5081.inf1",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "S13",
+   "class": "statement",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:p4f4431a82e47.inf1",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "S14",
+   "class": "statement",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:p892b8e1e3744.inf1",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "S15",
+   "class": "statement",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "para:p0b8bb08e8841.inf6",
+     "first": "false",
+     "second": "false"
+    }
+   ]
+  },
+  {
+   "id": "C1",
+   "class": "citation",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "citation:nadkarni1999.cited_p95f3b5cd45d0",
+     "first": "no",
+     "second": "no"
+    }
+   ]
+  },
+  {
+   "id": "C2",
+   "class": "citation",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "citation:magesh2025.cited_intro_regulation",
+     "first": "stands"
+    },
+    {
+     "reading": "citation:magesh2025.cited_intro_regulation_2",
+     "first": "no",
+     "second": "no"
+    }
+   ]
+  },
+  {
+   "id": "C3",
+   "class": "citation",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "citation:commonmark.cited_p15e662b154ec",
+     "first": "no",
+     "second": "partial"
+    },
+    {
+     "reading": "citation:commonmark.cited_p15e662b154ec_2",
+     "first": "stands"
+    }
+   ]
+  },
+  {
+   "id": "C4",
+   "class": "citation",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "citation:jsonschema2022.cited_pc4e85cf21a38",
+     "first": "no",
+     "second": "no"
+    }
+   ]
+  },
+  {
+   "id": "C5",
+   "class": "citation",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "citation:ucum.cited_p821389586347",
+     "first": "no",
+     "second": "no"
+    }
+   ]
+  },
+  {
+   "id": "C6",
+   "class": "citation",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "citation:xbrlvalidation2009.cited_p73da2bde21ab",
+     "first": "partial",
+     "second": "partial"
+    }
+   ]
+  },
+  {
+   "id": "C7",
+   "class": "citation",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "citation:pcn2025.cited_p73da2bde21ab",
+     "first": "partial",
+     "second": "partial"
+    },
+    {
+     "reading": "citation:pcn2025.cited_p73da2bde21ab_2",
+     "first": "no",
+     "second": "no"
+    }
+   ]
+  },
+  {
+   "id": "C8",
+   "class": "citation",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "citation:iso4217.cited_p8a3191557346",
+     "first": "partial",
+     "second": "partial"
+    },
+    {
+     "reading": "citation:ucum.cited_p8a3191557346",
+     "first": "partial",
+     "second": "partial"
+    }
+   ]
+  },
+  {
+   "id": "C9",
+   "class": "citation",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "citation:synchromesh.cited_pee8a9b854451",
+     "first": "partial",
+     "second": "partial"
+    },
+    {
+     "reading": "citation:picard.cited_pee8a9b854451",
+     "first": "partial",
+     "second": "partial"
+    }
+   ]
+  },
+  {
+   "id": "C10",
+   "class": "citation",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "citation:ten2026.cited_p295d6d4cb14c",
+     "first": "partial",
+     "second": "partial"
+    },
+    {
+     "reading": "citation:ten2026.cited_p295d6d4cb14c_2",
+     "first": "no",
+     "second": "no"
+    }
+   ]
+  },
+  {
+   "id": "C11",
+   "class": "citation",
+   "flagged": true,
+   "firstCaught": true,
+   "caught": true,
+   "verdicts": [
+    {
+     "reading": "citation:jones2026.cited_p95f3b5cd45d0",
+     "first": "stands"
+    },
+    {
+     "reading": "citation:jones2026.cited_p95f3b5cd45d0_2",
+     "first": "no",
+     "second": "no"
+    }
+   ]
+  }
+ ],
+ "falseChanges": [
+  {
+   "reading": "para:p95f3b5cd45d0.inf2",
+   "first": {
+    "field": "para:p95f3b5cd45d0.inf2",
+    "verdict": "reword",
+    "reason": "The statement itself is true of what the repository holds, but only via Russell et al. 2025, which the technical report cites for this exact clause. As displayed the clause is attributed to Jones and Bergen 2026, whose own discussion finds the opposite: frequent chatbot use did not predict accuracy. The finding is the misattribution, not the words.",
+    "evidence": "paper/proveml-technical-report.tex line 132: \"readers who write with these models daily still can \\citep{russell2025}\"; audit/references/raw/russell2025.html abstract: \"annotators who frequently use LLMs for writing tasks excel at detecting AI-generated text, even without any specialized training or feedback\"; audit/references/raw/jones2026.html, Discussion: \"Knowledge of LLMs or frequent chatbot use did not predict interrogator accuracy, nor did any other demographic variable we measured.\"",
+    "suggest": "readers who write with these models daily still can (Russell et al., 2025)."
+   },
+   "second": {
+    "field": "para:p95f3b5cd45d0.inf2",
+    "verdict": "reword",
+    "reason": "Confirmed. The clause itself is true of what the repository holds, but only through Russell et al. 2025 (archived, and cited for this exact clause in the technical report). As displayed the paragraph attributes it to Jones and Bergen 2026, and the archived Jones 2026 text says the opposite: frequent chatbot use did not predict interrogator accuracy, and the Discussion leaves open whether any participants exist who can reliably distinguish. With the archive out of reach the reader is handed a citation that contradicts the sentence. The fix is the attribution, not the words.",
+    "evidence": "paper/proveml-technical-report.tex line 132: \"readers who write with these models daily still can \\citep{russell2025}\". paper/proveml.bib line 645: russell2025 = Russell, Karpinska, Iyyer, \"People who frequently use ChatGPT for writing tasks are accurate and robust detectors of AI-generated text\", ACL 2025. audit/references/raw/russell2025.html abstract: \"annotators who frequently use LLMs for writing tasks excel at detecting AI-generated text, even without any specialized training or feedback ... the majority vote among five such 'expert' annotators misclassifies only 1 of 300 articles\". audit/references/raw/jones2026.html Discussion: \"Knowledge of LLMs or frequent chatbot use did not predict interrogator accuracy, nor did any other demographic variable we measured (Fig. 3)\" and \"specifically recruiting experts in AI or psychology could reveal whether any participants exist who can reliably distinguish people from AI.\"",
+    "suggest": "readers who write with these models daily still can (Russell et al., 2025)."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:kalai2025.cited_p95f3b5cd45d0",
+   "first": {
+    "field": "citation:kalai2025.cited_p95f3b5cd45d0",
+    "verdict": "partial",
+    "reason": "The displayed fragment describes the outcome (models guess when uncertain instead of admitting it), not the mechanism the sentence cites Kalai for: that the training pipeline rewards the confident guess. The archive carries that mechanism one sentence later in the same abstract; the reading should quote that sentence.",
+    "evidence": "audit/references/raw/kalai2025.html, abstract: \"We argue that language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty, and we analyze the statistical causes of hallucinations in the modern training pipeline.\"",
+    "suggest": "Quote instead: \"We argue that language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty, and we analyze the statistical causes of hallucinations in the modern training pipeline.\""
+   },
+   "second": {
+    "field": "citation:kalai2025.cited_p95f3b5cd45d0",
+    "verdict": "partial",
+    "reason": "Confirmed. The Kalai citation is the third of three works behind a three-part clause, and the part it is positioned to carry is \"the training pipeline rewards a confident guess over an admission of ignorance\". The displayed quote (\"guess when uncertain, producing plausible yet incorrect statements instead of admitting uncertainty\") describes the behaviour, not what rewards it: the words \"training\", \"pipeline\", \"reward\" appear nowhere in what the reader sees. Judged with the archive out of reach, the quote supports only the weaker point that models guess instead of admitting uncertainty. The archive does carry the mechanism, two sentences later in the same abstract block, so the fix is to quote that sentence (or add it to the displayed passage), not to change the paper's text.",
+    "evidence": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research/audit/references/raw/kalai2025.html, abstract: \"Like students facing hard exam questions, large language models sometimes guess when uncertain, producing plausible yet incorrect statements instead of admitting uncertainty. Such \"hallucinations\" persist even in state-of-the-art systems and undermine trust. We argue that language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty, and we analyze the statistical causes of hallucinations in the modern training pipeline.\" The displayed fragment is the first sentence; the mechanism the paper's clause uses is the third.",
+    "suggest": "Quote instead (or in addition): \"We argue that language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty, and we analyze the statistical causes of hallucinations in the modern training pipeline.\""
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p95f3b5cd45d0.inf6",
+   "first": {
+    "field": "para:p95f3b5cd45d0.inf6",
+    "verdict": "reword",
+    "reason": "The statement \"LLMs hallucinate\" is true and well supported in the repository (Ji et al. 2023 survey and Kalai et al. 2025 are both archived; the technical report states it at line 132 without a citation and cites ji2023 for it at line 145). What must change is the attached citation: Nadkarni et al. 1999 is a medical-informatics paper on the EAV/CR data model and predates LLMs; it cannot carry this sentence.",
+    "evidence": "audit/references/raw/nadkarni1999.html: \"Organization of Heterogeneous Scientific Data Using the EAV/CR Representation\" (JAMIA, 1999; paper/proveml.bib line 715); paper/proveml-technical-report.tex line 132 (\"\\textbf{LLMs hallucinate}\" with no citation) and line 145 (\"hallucination is a well-documented reliability problem across deep-learning-based natural language generation systems \\citep{ji2023}\"); audit/references/raw/ji2023.html abstract: \"deep learning based generation is prone to hallucinate unintended text\".",
+    "suggest": "LLMs hallucinate (Ji et al., 2023; Kalai et al., 2025). Or drop the citation here, as the technical report does, and keep Nadkarni et al. 1999 for the EAV data model where it belongs."
+   },
+   "second": {
+    "field": "para:p95f3b5cd45d0.inf6",
+    "verdict": "reword",
+    "reason": "Confirmed. The statement \"LLMs hallucinate\" is true of what the repository holds: the technical report states it bare at line 132 and grounds the general claim in Ji et al. 2023 at line 145; ji2023.html (\"Survey of Hallucination in Natural Language Generation\") and kalai2025.html (\"Why Language Models Hallucinate\") are both in the archive. What the paragraph attaches to it cannot carry it: nadkarni1999 is the 1999 JAMIA paper on the EAV/CR data model, the archived text contains no occurrence of \"hallucinat\", and paper/citation-checklist.md records its only intended use as the fact store's Entity-Attribute-Value pattern. As displayed (quotes empty, a 1999 medical-informatics citation on a claim about LLMs) the sentence misattributes; the fix is to move the citation, not to soften the claim.",
+    "evidence": "paper/proveml.bib lines 715-724: @article{nadkarni1999, title \"Organization of Heterogeneous Scientific Data Using the EAV/CR Representation\", JAMIA 1999. audit/references/raw/nadkarni1999.html: title \"Organization of Heterogeneous Scientific Data Using the EAV/CR Representation - PMC\"; zero matches for \"hallucinat\". paper/citation-checklist.md line 437-446: nadkarni1999 claimed in 1 place, for \"The fact store is a flat key-value index in the Entity-Attribute-Value pattern\". paper/proveml-technical-report.tex line 132: \"\\textbf{LLMs hallucinate}.\" with no citation; line 145: \"hallucination is a well-documented reliability problem across deep-learning-based natural language generation systems \\citep{ji2023}\"; nadkarni1999 is not cited anywhere in the technical report. audit/references/raw/ji2023.html title \"Survey of Hallucination in Natural Language Generation\"; audit/references/raw/kalai2025.html title \"[2509.04664] Why Language Models Hallucinate\".",
+    "suggest": "LLMs hallucinate (Ji et al., 2023; Kalai et al., 2025). Alternatively leave the sentence uncited as the technical report does at line 132, and keep Nadkarni et al. 1999 on the fact store's Entity-Attribute-Value sentence where the citation checklist places it."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:rao2026.cited_p95f3b5cd45d0",
+   "first": {
+    "field": "citation:rao2026.cited_p95f3b5cd45d0",
+    "verdict": "partial",
+    "reason": "The displayed quote carries the qualitative use (citation URLs with no Wayback record that likely never existed) but contradicts the paper's number: the source gives 3–13% for that category and 5–18% for non-resolving URLs overall. The paper's 3–18% takes the floor of one range and the ceiling of the other.",
+    "evidence": "audit/references/raw/rao2026.html, abstract: \"We find that 3–13% of citation URLs are hallucinated—they have no record in the Wayback Machine and likely never existed—while 5–18% are non-resolving overall.\" (verbatim)",
+    "suggest": "Keep the quote; change the paper's figure to 3–13% (or state both: 3–13% hallucinated, 5–18% non-resolving overall)."
+   },
+   "second": {
+    "field": "citation:rao2026.cited_p95f3b5cd45d0",
+    "verdict": "partial",
+    "reason": "Confirmed. The displayed quote is verbatim in the archive and carries the qualitative use (citation URLs with no Wayback record that likely never existed), but the paper's figure 3–18% is not what the source says for that category: the source gives 3–13% for hallucinated URLs and 5–18% for non-resolving URLs overall (a broader class that includes once-real links that have since died). The paper attaches the ceiling of the non-resolving range to the hallucinated category. The archive is consistent throughout (abstract, RQ1 findings, Section 5, Section 6, Conclusion, Appendix B all say 3–13% fabricated); no passage gives 3–18% for URLs that never existed, so there is nothing else the reading could quote to rescue the number.",
+    "evidence": "audit/references/raw/rao2026.html, abstract: \"We find that 3–13% of citation URLs are hallucinated—they have no record in the Wayback Machine and likely never existed—while 5–18% are non-resolving overall.\" Same file, Conclusion: \"RQ1: 3–13% of citation URLs are hallucinated and 5–18% are non-resolving across 10 models on DRBench and 3 on ExpertQA.\" Same file, Section 5: \"Section 4 finds URL-level citation failures at rates of 5–18% non-resolving and 3–13% hallucinated.\" A regex sweep of every N–M% range in the archive returns no 3–18% anywhere.",
+    "suggest": "Keep the quote; change the paper's figure to 3–13% (or state both: 3–13% of citation URLs with no archived record and likely never existed, 5–18% non-resolving overall)."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:cao2024.cited_p95f3b5cd45d0",
+   "first": {
+    "field": "citation:cao2024.cited_p95f3b5cd45d0",
+    "verdict": "partial",
+    "reason": "The displayed quote is a taxonomy definition (what a fabricated number is), not evidence that models produce them. The sentence uses Cao et al. for the occurrence of numbers with no basis in the source; a reader who sees only the definition cannot tell whether any were found. The archive does carry the use two blocks later.",
+    "evidence": "audit/references/raw/cao2024.html, Section 4 after Table 4: \"LLMs hallucinate in only about 5% of numerical values ... total hallucination rates of 6.48%, 3.97%, and 5.74% observed for Claude 2.0, Claude 2.1, and GPT-4\"; Table 4 row Fabricated number \"0.81/0.79/0\" (percent of annotated numbers per model); \"fabricated number hallucinations occurred at relatively low percentages ... GPT-4 ... generating zero instances of fabricated numbers\".",
+    "suggest": "Add a second quote that shows occurrence, e.g. \"Overall, LLMs hallucinate at a low percentage when using numeric values, with total hallucination rates of 6.48%, 3.97%, and 5.74% observed for Claude 2.0, Claude 2.1, and GPT-4\" or the Table 4 fabricated-number row \"0.81/0.79/0\". Keep the definition as the first quote."
+   },
+   "second": {
+    "field": "citation:cao2024.cited_p95f3b5cd45d0",
+    "verdict": "partial",
+    "reason": "Confirmed. The paper's sentence uses Cao et al. as evidence that LLMs generate \"numbers with no basis in the source\", i.e. that fabricated numbers occur. The displayed quote is the definition of the category in the authors' taxonomy (introduced with \"We identify and categorize four types of numeric hallucinations\"); a reader seeing only this cannot tell whether any instance was found, and the definition on its own would carry the sentence equally well if the study had found none. The archive does carry the use, in the same section a few blocks later: fabricated numbers occurred for Claude 2.0 and 2.1 (0.81% and 0.79% of annotated numbers) and not for GPT-4. That last detail is also why the definition alone is thin support: the source says the phenomenon is real but rare, and one of the three models produced zero. Quoting the occurrence passage lets the reader see both.",
+    "evidence": "audit/references/raw/cao2024.html, Section 4. Definition block (the one displayed): \"A taxonomy of numeric hallucination. We identify and categorize four types of numeric hallucinations, collectively forming the first taxonomy for this phenomenon: • Fabricated Number: The presence of a specific numeric value in a generated text that lacks any corresponding references.\" Table 4 row: \"Fabricated number ... Report: No exact source. 0.81/0.79/0\" (percent of annotated numbers, Claude 2.0 / Claude 2.1 / GPT-4). Text after Table 4: \"In contrast, fabricated number hallucinations occurred at relatively low percentages, indicating that most models demonstrated reasonable performance in avoiding blatantly unsupported numeric claims in their outputs. However, even low rates of such hallucinations can undermine the trustworthiness of the summaries.\" and \"GPT-4 showcased impressive performance by generating zero instances of fabricated numbers and arithmetic errors.\"",
+    "suggest": "Keep the definition as the first quote and add the passage that names the category and states it occurred: \"In contrast, fabricated number hallucinations occurred at relatively low percentages, indicating that most models demonstrated reasonable performance in avoiding blatantly unsupported numeric claims in their outputs. However, even low rates of such hallucinations can undermine the trustworthiness of the summaries.\" This is preferable to the first checker's \"total hallucination rates of 6.48%, 3.97%, and 5.74%\" quote, which aggregates all four hallucination types (including rounding and context mismatch) and so does not isolate the fabricated-number claim the sentence makes. Optionally also the Table 4 row \"0.81/0.79/0\" for the per-model rates. No change to the paper's sentence is needed."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:pd6333da154b4.inf1",
+   "first": {
+    "field": "para:pd6333da154b4.inf1",
+    "verdict": "reword",
+    "reason": "The source restricts the result to \"arbitrary\" facts whose veracity cannot be determined from the training data, under a calibration condition and a bounded maximum fact probability, and explicitly says there is no statistical reason for hallucination on facts that appear more than once (it names references to publications as the example). The paper drops the scope and states it for facts in general, in a paragraph about fabricated citations, which the source excludes from the bound.",
+    "evidence": "audit/references/raw/kalai2024.html, abstract: \"For 'arbitrary' facts whose veracity cannot be determined from the training data, we show that hallucinations must occur at a certain rate for language models that satisfy a statistical calibration condition ... the probability of generating a hallucination is close to the fraction of facts that occur exactly once in the training data ... there is no statistical reason that pretraining will lead to hallucination on facts that tend to appear more than once in the training data (like references to publications such as articles and books ...)\".",
+    "suggest": "\"calibrated language models must hallucinate arbitrary facts (those whose truth cannot be determined from the training data) at a rate approaching the fraction of such facts appearing exactly once in training\"."
+   },
+   "second": {
+    "field": "para:pd6333da154b4.inf1",
+    "verdict": "reword",
+    "reason": "Reproduced. The archived abstract states the lower bound only for \"arbitrary\" facts whose veracity cannot be determined from the training data, under a calibration condition and a bounded maximum fact probability, and in the same breath says there is no statistical reason for pretraining to hallucinate facts that appear more than once, naming references to publications as the example. The paper's sentence drops that scope and reads as a bound on hallucination in general, then the paragraph uses it to lead into fabricated citations, which the source explicitly places outside the bound. That is a scope error, not style; the fix is small (restore \"arbitrary facts\" and what that means). The rest of the sentence (calibrated, rate close to the fraction of facts occurring exactly once) matches the source. The reading shows no quotes; it should carry the abstract passage below.",
+    "evidence": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research/audit/references/raw/kalai2024.html, abstract: \"For 'arbitrary' facts whose veracity cannot be determined from the training data, we show that hallucinations must occur at a certain rate for language models that satisfy a statistical calibration condition ... Specifically, if the maximum probability of any fact is bounded, we show that the probability of generating a hallucination is close to the fraction of facts that occur exactly once in the training data (a 'Good-Turing' estimate) ... there is no statistical reason that pretraining will lead to hallucination on facts that tend to appear more than once in the training data (like references to publications such as articles and books ...)\".",
+    "suggest": "\"calibrated language models must hallucinate arbitrary facts (those whose truth the training data cannot settle) at a rate close to the fraction of such facts that appear exactly once in training\""
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:kalai2024.cited_intro_regulation",
+   "first": {
+    "field": "citation:kalai2024.cited_intro_regulation",
+    "verdict": "partial",
+    "reason": "The quote carries the rate (close to the fraction of facts occurring exactly once) but not \"calibrated\" nor \"must\", and it hides the scope condition (arbitrary facts, bounded maximum fact probability) that the source attaches to the result. The reader cannot see the calibration premise the sentence leans on.",
+    "evidence": "audit/references/raw/kalai2024.html, abstract: \"For 'arbitrary' facts whose veracity cannot be determined from the training data, we show that hallucinations must occur at a certain rate for language models that satisfy a statistical calibration condition appropriate for generative language models. Specifically, if the maximum probability of any fact is bounded, we show that the probability of generating a hallucination is close to the fraction of facts that occur exactly once in the training data\".",
+    "suggest": "Quote the two abstract sentences together, from \"For 'arbitrary' facts whose veracity cannot be determined from the training data\" through \"occur exactly once in the training data (a 'Good-Turing' estimate)\", so that calibration, necessity and scope are all on the page."
+   },
+   "second": {
+    "field": "citation:kalai2024.cited_intro_regulation",
+    "verdict": "partial",
+    "reason": "Confirmed. The paper's sentence uses the work for three things: that hallucination is structural (a lower bound, not an artefact), that it holds for calibrated models, and that it must occur at the stated rate. The single displayed clause carries only the rate (\"close to the fraction of facts that occur exactly once\"); neither \"calibrated\" nor \"must\" nor any lower-bound language is on the page, and the scope condition (arbitrary facts, bounded maximum fact probability) is hidden. The archive supports all three one sentence earlier, but as displayed the reader cannot see the premise the sentence rests on.",
+    "evidence": "audit/references/raw/kalai2024.html, abstract (block 40): \"This work shows that there is an inherent statistical lower-bound on the rate that pretrained language models hallucinate certain types of facts, having nothing to do with the transformer LM architecture or data quality. For 'arbitrary' facts whose veracity cannot be determined from the training data, we show that hallucinations must occur at a certain rate for language models that satisfy a statistical calibration condition appropriate for generative language models. Specifically, if the maximum probability of any fact is bounded, we show that the probability of generating a hallucination is close to the fraction of facts that occur exactly once in the training data (a 'Good-Turing' estimate)\". Reproduced by stripping the archived HTML and locating \"occur exactly once\".",
+    "suggest": "Replace the single clause with the abstract passage from \"For 'arbitrary' facts whose veracity cannot be determined from the training data\" through \"occur exactly once in the training data (a 'Good-Turing' estimate)\", so that calibration, necessity and scope are displayed. If the reading should also carry \"structural, not incidental\", prepend the preceding sentence: \"there is an inherent statistical lower-bound on the rate that pretrained language models hallucinate certain types of facts, having nothing to do with the transformer LM architecture or data quality.\""
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:kalai2025.cited_intro_regulation",
+   "first": {
+    "field": "citation:kalai2025.cited_intro_regulation",
+    "verdict": "partial",
+    "reason": "The displayed quote describes the behaviour (models guess when uncertain) but not the mechanism the sentence attributes to the work: that the training pipeline rewards guessing. The abstract states the mechanism in the next sentence, which is the one to show.",
+    "evidence": "audit/references/raw/kalai2025.html, abstract: \"We argue that language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty, and we analyze the statistical causes of hallucinations in the modern training pipeline.\"",
+    "suggest": "Replace or supplement the quote with \"language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty\"."
+   },
+   "second": {
+    "field": "citation:kalai2025.cited_intro_regulation",
+    "verdict": "partial",
+    "reason": "Confirmed. The sentence uses Kalai et al. (2025) for a mechanism: \"standard training pipelines reward guessing over acknowledging uncertainty\". The single quote displayed (\"guess when uncertain, producing plausible yet incorrect statements instead of admitting uncertainty\") describes the behaviour of models, not what rewards it; the content words \"training\", \"pipeline\" and \"reward\" do not appear in it. As displayed, the passage carries only half the use. The archive's abstract states the mechanism two sentences later, so the fix is a quote swap or supplement, not a change to the paper's text.",
+    "evidence": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research/audit/references/raw/kalai2025.html, abstract: \"We argue that language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty, and we analyze the statistical causes of hallucinations in the modern training pipeline.\" Reproduced by stripping the archived HTML and searching for \"reward guessing\" and \"training pipeline\".",
+    "suggest": "Show the abstract sentence \"language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty\" (optionally with \"...the statistical causes of hallucinations in the modern training pipeline\") as the passage for this sentence, alongside or instead of the current quote."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:transparencycode2026.cited_intro_regulation",
+   "first": {
+    "field": "citation:transparencycode2026.cited_intro_regulation",
+    "verdict": "partial",
+    "reason": "The quotes carry the positive half (the Code concerns marking, detection and labelling of the origin of content, in two sections) and, by listing both sections, make the negative half plausible. But the cited source is the AI Office's FAQ on signing the Code, not the Code, so \"says nothing about its accuracy\" is asserted about a document the reader is not shown and the repository does not hold.",
+    "evidence": "audit/references/raw/transparencycode2026.html, FAQ blocks 69, 70, 74 as quoted; page title \"Signing the Code of Practice on Transparency of AI-generated Content\"; the Code itself is not among the files in audit/references/raw/.",
+    "suggest": "Cite and archive the Code of Practice itself (June 2026) for the absence claim, keeping the FAQ quotes for what the Code covers; or reword the sentence to attribute the description to the AI Office (see para:pd6333da154b4.inf6)."
+   },
+   "second": {
+    "field": "citation:transparencycode2026.cited_intro_regulation",
+    "verdict": "partial",
+    "reason": "Confirmed. The three quotes carry the positive half of the sentence (the Code sets out practices for marking, detection and labelling of AI-generated content; its two sections concern machine-readable marking and the labelling of deepfakes and public-interest text). They do not carry the negative half. \"Says nothing about its accuracy\" is an absence claim about the Code of Practice, but the archived document is the AI Office's FAQ on signing the Code, not the Code; the bib entry titles it as the Code itself while its URL and archive are the FAQ page. As displayed, the reader is asked to accept that a document says nothing about accuracy on the strength of three descriptive quotes from a different document. The FAQ does contain the line that would make the inference explicit (\"The code is structured in two separate sections ... Each section of the code should be signed as a whole, since they contain all the commitments with which the respective provider or deployer needs to comply\"), but the reading does not quote it, and even with it the claim is about the AI Office's description of the Code, not the Code. The first checker's suggestion follows from the evidence, so this is not a stand.",
+    "evidence": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research/audit/references/raw/transparencycode2026.html: page title \"Signing the Code of Practice on Transparency of AI-generated Content | Shaping Europe's digital future\"; the three quotes are verbatim in the FAQ answers \"Can an organisation choose which commitments they would like to sign up to?\" and \"What are the benefits of signing up to the code?\". No occurrence of \"accura\", \"truth\", \"correct\", \"factual\", \"veracity\" or \"reliab\" anywhere in the archived page. The Code itself is not in audit/references/raw/ (only transparencycode2026.html matches). paper/proveml.bib lines 586-591: title \"Code of Practice on Transparency of AI-generated Content\", howpublished URL .../faqs/signing-code-practice-transparency-ai-generated-content (the FAQ). audit/references/manifest.json: id transparencycode2026, sourceUrl the same FAQ URL, localPath references/raw/transparencycode2026.html.",
+    "suggest": "Either archive the Code of Practice itself (June 2026) as the source for the absence claim and keep the FAQ quotes for what the Code covers; or reword the sentence to attribute the description to the AI Office (\"the AI Office describes the Code ... as concerning marking, detection and labelling; accuracy of content is not among its commitments\") and add to the reading the FAQ blocks immediately preceding block 69 (67 and 68 in the reading's numbering): \"The code is structured in two separate sections, reflecting the respective transparency obligations of providers and deployers ...\" and \"Each section of the code should be signed as a whole, since they contain all the commitments with which the respective provider or deployer needs to comply.\" Those two lines are what makes the two quoted section descriptions exhaustive. Correct the bib entry so its title matches the archived document (the FAQ on signing the Code), or point it at the Code."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:pd6333da154b4.inf9",
+   "first": {
+    "field": "para:pd6333da154b4.inf9",
+    "verdict": "reword",
+    "reason": "The statement is true of the repository: Liu, Stammbach and Henderson, arXiv 2606.21155 (submitted 19 Jun 2026, v2 6 Aug 2026), report finding over 1,000 court filings with fabricated citations. But as displayed, the sentence attributes this to (Magesh et al., 2025), a May 2024 study of legal research tools that says nothing about court filings. The technical report cites liu2026citations for this same sentence; the displayed paragraph lost that citation.",
+    "evidence": "paper/review/report/sources/raw/liu2026citations.html, abstract (block 18): \"we found over 1,000 filings containing fabricated citations---with this number growing year-over-year\", submitted 19 Jun 2026. paper/proveml-technical-report.tex line 147 cites \\citep{liu2026citations} for the filings sentence and \\citep{magesh2025} only for the 17–33% clause. paper/proveml.bib line 593 has the liu2026citations entry.",
+    "suggest": "Change the second citation in the sentence from \"(Magesh et al., 2025)\" to \"(Liu et al., 2026)\", bound to arXiv 2606.21155, which already appears in the study:liu.filings locator."
+   },
+   "second": {
+    "field": "para:pd6333da154b4.inf9",
+    "verdict": "reword",
+    "reason": "Confirmed, could not refute. The statement itself is true of what the repository holds: the archived abstract of Liu, Stammbach and Henderson, arXiv 2606.21155 (submitted 19 Jun 2026, v2 6 Aug 2026), says \"we found over 1,000 filings containing fabricated citations---with this number growing year-over-year\", which carries \"a 2026 survey of court filings found more than a thousand ... growing year over year\". But the paragraph as displayed closes that clause with \"(Magesh et al., 2025)\", and the Magesh archive (arXiv 2405.20362, submitted 30 May 2024) contains no occurrence of \"filings\", \"1,000\" or \"year-over-year\"; it supports only the 17–33% clause. The repository's own binding (build.mjs line 168) ties study:liu.filings to liu2026citations, and the technical report cites liu2026citations for this sentence, so the displayed paragraph has lost the correct citation. A true statement with the wrong attribution is a reword, not a stand.",
+    "evidence": "paper/review/report/sources/raw/liu2026citations.html (arXiv 2606.21155, \"[Submitted on 19 Jun 2026 (v1), last revised 6 Aug 2026 (this version, v2)]\", abstract: \"we found over 1,000 filings containing fabricated citations---with this number growing year-over-year\"); paper/review/report/sources/raw/magesh2025-arxiv.html (arXiv 2405.20362, submitted 30 May 2024; only match is \"each hallucinate between 17% and 33% of the time\", zero matches for \"filings\", \"1,000\", \"year-over-year\"; paper/review/report/sources/raw/magesh2025.html is a 60-character Cloudflare \"Just a moment...\" stub); paper/proveml-technical-report.tex line 147 (\"...despite vendor claims of near-elimination \\citep{magesh2025}, and a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year \\citep{liu2026citations}\"); paper/proveml.bib line 593 (@misc{liu2026citations, Liu/Stammbach/Henderson, arXiv:2606.21155, 2026); paper/review/build.mjs lines 163 and 168 (study:liu.filings bound to liu2026citations, 'arXiv 2606.21155 abstract').",
+    "suggest": "Change the second \"(Magesh et al., 2025)\" at the end of the sentence to \"(Liu et al., 2026)\", bound to liu2026citations / arXiv 2606.21155, quoting the abstract line \"we found over 1,000 filings containing fabricated citations---with this number growing year-over-year\". Leave the first \"(Magesh et al., 2025)\" on the 17–33% clause as is."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:pd6333da154b4.inf10",
+   "first": {
+    "field": "para:pd6333da154b4.inf10",
+    "verdict": "reword",
+    "reason": "The trend claim is carried word for word by the Liu 2026 abstract (\"with this number growing year-over-year\"). It is not carried by the work the displayed sentence cites for it: the Magesh 2025 abstract contains no count of filings and no trend. Same miscitation as inf9; the content stands once the citation is corrected.",
+    "evidence": "paper/review/report/sources/raw/liu2026citations.html abstract: \"Despite predictions that newer models would hallucinate less or that court sanctions would deter negligent filers, we found over 1,000 filings containing fabricated citations---with this number growing year-over-year.\" paper/review/report/sources/raw/magesh2025-arxiv.html: no mention of filings or a yearly trend. paper/proveml-technical-report.tex line 147 attributes this to liu2026citations.",
+    "suggest": "Cite Liu et al., 2026 (arXiv 2606.21155) at the end of the sentence instead of Magesh et al., 2025; the quote to show is the abstract sentence \"we found over 1,000 filings containing fabricated citations---with this number growing year-over-year\"."
+   },
+   "second": {
+    "field": "para:pd6333da154b4.inf10",
+    "verdict": "reword",
+    "reason": "Confirmed. The trend claim is not the paper's own inference but a finding of Liu, Stammbach and Henderson (2026), whose archived abstract says it verbatim; as displayed, the sentence attributes it to Magesh et al. (2025), whose archived abstract is a 2024 evaluation of legal research tools with no count of court filings and no year-over-year trend. The repository's own technical report attributes the same sentence to liu2026citations, so the displayed paragraph has the wrong citation, not a wrong fact. The content stands once the citation is corrected and the Liu abstract sentence is shown as the quote.",
+    "evidence": "paper/review/report/sources/raw/liu2026citations.html, abstract: \"Despite predictions that newer models would hallucinate less or that court sanctions would deter negligent filers, we found over 1,000 filings containing fabricated citations---with this number growing year-over-year.\" paper/review/report/sources/raw/magesh2025-arxiv.html (arXiv:2405.20362, submitted 30 May 2024): abstract mentions only \"hallucinate between 17% and 33% of the time\"; the words \"filings\", \"growing\" and \"year\" do not occur. paper/proveml-technical-report.tex line 147: \"...a 2026 survey of court filings found more than a thousand containing fabricated citations, a number growing year over year \\citep{liu2026citations}\". paper/proveml.bib line 593: @misc{liu2026citations, Liu, Stammbach, Henderson, \"Who Checks the Citations? Benchmarking Legal Hallucination Detection\", arXiv:2606.21155, 2026; paper/review/report/sources/raw/liu-arxiv-query.xml resolves to arxiv.org/abs/2606.21155v2.",
+    "suggest": "Change the closing citation of the sentence from \"(Magesh et al., 2025)\" to \"(Liu et al., 2026)\" (liu2026citations, arXiv 2606.21155), keeping Magesh et al. (2025) only for the 17–33% clause; show as the quote the Liu abstract sentence \"we found over 1,000 filings containing fabricated citations---with this number growing year-over-year\"."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p15e662b154ec.inf2",
+   "first": {
+    "field": "para:p15e662b154ec.inf2",
+    "verdict": "reword",
+    "reason": "The claim itself is true of what the repository archives: Sun et al. 2025 (ICML, Idiosyncrasies in Large Language Models) section 3.2 shows chat and instruct models format responses in Markdown while base models tend to plain text (classifiers on markdown elements alone reach 73.1% for chat APIs and 77.7% for instruct LLMs, near chance for base). But the citation attached in the displayed sentence is MacFarlane 2024, the CommonMark specification, which says nothing about language models. The archive already holds the right source.",
+    "evidence": "audit/references/raw/sun2025idiosyncrasies.html, section 3.2 Markdown Formatting: \"we observe our classifiers achieve high accuracies of 73.1% for chat APIs and 77.7% for instruct LLMs. However, the classification accuracies with base LLMs' responses are near chance-level guess (25%). This is likely because base LLMs tend to generate responses in plain text.\" audit/references/manifest.json id sun2025idiosyncrasies; audit/references/paper-bibliography.bib line 816. audit/references/raw/commonmark.html contains no statement about models.",
+    "suggest": "Cite Sun et al., 2025 for this clause (\"Instruction-tuned models routinely answer in Markdown (Sun et al., 2025)\") and keep MacFarlane, 2024 only for the pass-through clause."
+   },
+   "second": {
+    "field": "para:p15e662b154ec.inf2",
+    "verdict": "reword",
+    "reason": "Confirmed. The statement is true of what the repository archives, but the source attached to it in the displayed sentence cannot carry it. audit/references/raw/commonmark.html (MacFarlane, CommonMark 0.31.2) contains no statement about language models: the only hits for \"instruction\" are HTML processing instructions and Gruber's \"formatting instructions\"; it carries only the pass-through clause (section 6.9, \"Any characters not given an interpretation by the above rules will be parsed as plain textual content\"). The archive holds a source that does carry the clause: Sun et al. 2025 (ICML), section 3.2 Markdown Formatting, showing chat and instruct models format in Markdown while base models tend to plain text. The reading shows no quotes at all, so as displayed the clause is unsupported and mis-attributed. The fix is a citation swap, not a softening of the claim.",
+    "evidence": "audit/references/raw/sun2025idiosyncrasies.html, section 3.2: \"we observe our classifiers achieve high accuracies of 73.1% for chat APIs and 77.7% for instruct LLMs. However, the classification accuracies with base LLMs' responses are near chance-level guess (25%). This is likely because base LLMs tend to generate responses in plain text.\" Registered in audit/references/manifest.json (id sun2025idiosyncrasies, arXiv 2502.12150v2) and audit/references/paper-bibliography.bib lines 816-823. audit/references/raw/commonmark.html: no occurrence of \"language model\" or \"LLM\"; section 6.9 carries only the plain-textual-content rule used by the second clause.",
+    "suggest": "\"Instruction-tuned models routinely answer in Markdown (Sun et al., 2025), and a CommonMark-conformant renderer passes the constructs through unchanged, because characters not given an interpretation by any Markdown rule are parsed as plain textual content (MacFarlane, 2024)\". Quote for the first clause: Sun et al. 2025, section 3.2, the sentences on 73.1% / 77.7% accuracy for chat and instruct LLMs and base LLMs tending to plain text. Keep the MacFarlane quote (section 6.9) on the pass-through clause only."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:jsonschema2022.cited_p821389586347",
+   "first": {
+    "field": "citation:jsonschema2022.cited_p821389586347",
+    "verdict": "partial",
+    "reason": "The quote carries the first half of the use, a bounded condition on a single field (\"minimum\" as an inclusive lower limit for a numeric instance). It does not carry the second half, that the condition is given a name and a human-readable label and invoked by name: nothing in the displayed passage mentions naming, labels or reuse. The archived draft has the label half in Section 9.1 (title and description); the naming half ($defs/$ref) lives in the core specification, which the draft only points to in Appendix A.",
+    "evidence": "audit/references/raw/jsonschema2022.html Section 6.2.4 (quote shown); Section 9.1: \"The value of both of these keywords MUST be a string ... A title will preferably be short, whereas a description will provide explanation about the purpose of the instance\"; Appendix A: \"'definitions' Renamed to '$defs' to match '$ref' and be shorter to type\".",
+    "suggest": "Add the Section 9.1 passage on \"title\" and \"description\" as a second quote so the label half is carried; for the naming half either quote Appendix A on $defs/$ref or narrow the sentence so JSON Schema is cited for the bound and label only."
+   },
+   "second": {
+    "field": "citation:jsonschema2022.cited_p821389586347",
+    "verdict": "partial",
+    "reason": "Reproduced. The displayed quote (Section 6.2.4, \"minimum\" as an inclusive lower limit) carries only the \"bounded condition on a single field\" half of what the sentence uses JSON Schema for. The sentence's point is that such a condition is given a name and a human-readable label so it can be invoked by name instead of restated; none of the content words \"name\", \"label\", \"invoked\", \"audited\" appear in the quote, and a reader with the archive out of reach cannot see that JSON Schema does this. The archive does contain both halves: Section 9.1 (\"title\" and \"description\") for the label, and Appendix A (definitions renamed to $defs to match $ref) for named, reusable subschemas, though the latter is only a pointer to the core spec. The first checker's verdict and suggestion hold; no refutation found.",
+    "evidence": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research/audit/references/raw/jsonschema2022.html: Section 6.2.4 \"The value of \"minimum\" MUST be a number, representing an inclusive lower limit for a numeric instance.\" (the quote shown); Section 9.1 \"The value of both of these keywords MUST be a string. Both of these keywords can be used to decorate a user interface with information about the data produced by this user interface. A title will preferably be short, whereas a description will provide explanation about the purpose of the instance described by this schema.\"; Appendix A \"definitions\" Renamed to \"$defs\" to match \"$ref\" and be shorter to type.\"",
+    "suggest": "Add the Section 9.1 passage on \"title\" and \"description\" as a second quote so the human-readable-label half is carried by the displayed passage. For the \"given a name and invoked by that name\" half, either add the Appendix A sentence on \"definitions\" renamed to \"$defs\" to match \"$ref\" (noting it points to the core specification), or narrow the sentence so JSON Schema is cited for the bounded condition and label only."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:prometheusalerting.cited_p821389586347",
+   "first": {
+    "field": "citation:prometheusalerting.cited_p821389586347",
+    "verdict": "partial",
+    "reason": "The displayed quote says alerting rules define alert conditions from expressions and send notifications. It carries \"a bounded condition\" only loosely (an expression, not necessarily a single-field bound) and does not show the name or the human-readable label at all. The archived page carries both in the example rule and in the labels/annotations clauses, which is what the sentence needs.",
+    "evidence": "audit/references/raw/prometheusalerting.html, opening paragraph (quote shown); the example block: \"- alert : HighRequestLatency expr : job:request_latency_seconds:mean5m{job=\\\"myjob\\\"} > 0.5 for : 10m ... annotations : summary : High request latency\"; and \"The annotations clause specifies a set of informational labels that can be used to store longer additional information such as alert descriptions or runbook links.\"",
+    "suggest": "Quote the example alerting rule (alert name, expr with the bound, summary annotation) in place of, or next to, the opening sentence, so name, bound and label are all visible to the reader."
+   },
+   "second": {
+    "field": "citation:prometheusalerting.cited_p821389586347",
+    "verdict": "partial",
+    "reason": "Confirmed. As displayed, the single quote says alerting rules define alert conditions from expression-language expressions and send notifications. That carries \"a bounded condition\" only loosely (an expression, not a bound on one field) and shows neither the name nor the human-readable label the paper's sentence attributes to monitoring alert rules. The archived page does carry all three in the example rule and the annotations clause, so the sentence stands but the reading should quote that passage.",
+    "evidence": "audit/references/raw/prometheusalerting.html: opening paragraph is the quote shown; the example block reads \"- alert : HighRequestLatency expr : job:request_latency_seconds:mean5m{job=\\\"myjob\\\"} > 0.5 for : 10m keep_firing_for : 5m labels : severity : page annotations : summary : High request latency\"; and \"The annotations clause specifies a set of informational labels that can be used to store longer additional information such as alert descriptions or runbook links.\" Also \"ALERTS{alertname=\\\"<alert name>\\\", ...}\" shows the rule is addressed by its name at runtime.",
+    "suggest": "Add or substitute the example alerting rule from \"Defining alerting rules\" (alert name HighRequestLatency, expr with the \"> 0.5\" bound, annotations summary \"High request latency\") plus the annotations-clause sentence, so name, bound and label are all visible in the displayed quote."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:anthropicsonnet5.cited_setup",
+   "first": {
+    "field": "citation:anthropicsonnet5.cited_setup",
+    "verdict": "partial",
+    "reason": "The displayed quote identifies the work and the model, but its dateline 'Jun 30, 2026' contradicts the date the sentence attributes to it (30 May 2026). The source supports the citation; the sentence's date is what must change.",
+    "evidence": "audit/references/raw/anthropicsonnet5.html, dateline 'Jun 30, 2026'; paper/proveml.bib line 856",
+    "suggest": "Correct the sentence to 'released 30 June 2026'; the quote as shown then carries it."
+   },
+   "second": {
+    "field": "citation:anthropicsonnet5.cited_setup",
+    "verdict": "partial",
+    "reason": "Confirmed. The quote as displayed supports that Anthropic announced Claude Sonnet 5, so the citation stands as identification, but its dateline \"Jun 30, 2026\" directly contradicts the sentence's \"released 30 May 2026\". The archive body repeats \"June 30, 2026\" and the paper's own bib entry gives 30 June 2026; nothing in the archive supports 30 May. The sentence's date is wrong; the quote is the right one to show once the date is corrected.",
+    "evidence": "audit/references/raw/anthropicsonnet5.html: dateline \"Jun 30, 2026\" and body \"June 30, 2026\"; paper/proveml.bib lines 855-860 (@misc{anthropicsonnet5, howpublished = {..., 30 June 2026}).",
+    "suggest": "Change the sentence to \"Claude Sonnet 5, released 30 June 2026 (Anthropic, 2026)\"; keep the displayed quote, which then carries the use."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:deepseekv4pro.cited_setup",
+   "first": {
+    "field": "citation:deepseekv4pro.cited_setup",
+    "verdict": "partial",
+    "reason": "The displayed quotes carry the total parameter count (1.6T) and the MIT licence, but the first quote reads '49B activated' where the sentence says '37B active'; the quote contradicts that part of the use. The '-0813' suffix is the Together AI model id and is not in the card, which is fine since the citation is for parameters and licence.",
+    "evidence": "audit/references/raw/deepseekv4pro.html, Introduction ('1.6T parameters (49B activated)') and License; experiments/run-frontier.sh model id 'deepseek-ai/DeepSeek-V4-Pro-0813'",
+    "suggest": "Change the sentence to '1.6T parameters with 49B active'; the quotes as shown then carry it in full."
+   },
+   "second": {
+    "field": "citation:deepseekv4pro.cited_setup",
+    "verdict": "partial",
+    "reason": "Confirmed. As displayed, the two quotes carry the total count (1.6T), open weights and the MIT licence, but the first quote reads \"1.6T parameters (49B activated)\" while the sentence says \"37B active\". That is a contradiction, not a gap: the archived card gives 49B for DeepSeek-V4-Pro in the Introduction and in the model table, and the only 37B in the card is the activated-parameter count of DeepSeek-V3.2-Base in the base-model benchmark table. Nothing else in the repository states 37B. The \"-0813\" model id is a Together AI identifier (experiments/run-frontier.sh line 8) and is outside what the citation is used for, so its absence from the quotes is no defect of the citation.",
+    "evidence": "audit/references/raw/deepseekv4pro.html: Introduction \"DeepSeek-V4-Pro with 1.6T parameters (49B activated)\"; model table \"DeepSeek-V4-Pro 1.6T 49B 1M FP4 + FP8 Mixed\"; base-model benchmark table \"# Activated Params - 37B 13B 49B\" for V3.2-Base, V4-Flash-Base, V4-Pro-Base respectively; License \"This repository and the model weights are licensed under the MIT License.\" experiments/run-frontier.sh line 8: \"together:deepseek-ai/DeepSeek-V4-Pro-0813\".",
+    "suggest": "Change \"1.6T parameters with 37B active\" to \"1.6T parameters with 49B active\"; the quotes as shown then carry the sentence in full."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "bench:education.synthetic",
+   "first": {
+    "field": "bench:education.synthetic",
+    "verdict": "reword",
+    "reason": "Reading the flag 'synthetic: true' together with the meta note 'Generated, not de-identified' as 'generated' is fair and matches the data file and the generator. But as displayed the reading shows no quote at all (quotes: [], only a locator), so the reader cannot see what was read; the note paraphrases it.",
+    "evidence": "data/mastery-layers-demo.json meta: 'synthetic': true, 'seed': 20260731, 'note': 'Generated, not de-identified. Every record is drawn from a latent-ability model; no field is copied or derived from any real pupil...'; data/generate-education-benchmark.mjs line 284",
+    "suggest": "Display the quote the locator points at: 'synthetic: true' and the note 'Generated, not de-identified. Every record is drawn from a latent-ability model; no field is copied or derived from any real pupil. School and pupil names are fictional.'"
+   },
+   "second": {
+    "field": "bench:education.synthetic",
+    "verdict": "reword",
+    "reason": "Confirmed. The value \"generated\" is a fair reading of the archive: data/mastery-layers-demo.json meta carries synthetic: true, seed: 20260731 and the note \"Generated, not de-identified...\", and the generator writes exactly those fields. But the reading declares basis \"quote\" while showing quotes: [] and only the locator \"meta.synthetic, block 5 of 8\"; as displayed the reader sees nothing that was read, only the note's paraphrase. A quote that is absent cannot carry the use, so the reading needs the quoted passage, not a different value. One addition to the first checker's suggestion: the paragraph also states \"the seeded generator ships with the artifacts\", so the quote should include the seed field and the note's last sentence naming the generator, which the first suggestion trimmed.",
+    "evidence": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research/data/mastery-layers-demo.json, meta: \"synthetic\": true, \"seed\": 20260731, \"note\": \"Generated, not de-identified. Every record is drawn from a latent-ability model; no field is copied or derived from any real pupil. School and pupil names are fictional. Regenerate with data/generate-education-benchmark.mjs.\" Written by /Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research/data/generate-education-benchmark.mjs lines 282-287 (synthetic: true, seed: seedArg, note: 'Generated, not de-identified. ...'). Reading in batch04.json: \"basis\": \"quote\", \"quotes\": [], \"locators\": [\"meta.synthetic , block 5 of 8\"].",
+    "suggest": "Show the passage the locator points at as the quote: \"synthetic\": true, \"seed\": 20260731, \"note\": \"Generated, not de-identified. Every record is drawn from a latent-ability model; no field is copied or derived from any real pupil. School and pupil names are fictional. Regenerate with data/generate-education-benchmark.mjs.\" Keep the value \"generated\"; the paper's sentence needs no change."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p0b8bb08e8841.inf7",
+   "first": {
+    "field": "para:p0b8bb08e8841.inf7",
+    "verdict": "reword",
+    "reason": "3.4 s is 29% of 11.8 s (a third) but 43% of 7.9 s (closer to half), so 'a third of the latency' holds against Opus 5 only; against Sonnet 5 it overstates the gap.",
+    "evidence": "node experiments/deployment-numbers.mjs --tag frontier: generation latency 11.8 / 7.9 / 3.4 s per query; 3.4/7.9 = 0.43, 3.4/11.8 = 0.29.",
+    "suggest": "at a third to under half of the latency (3.4 s per query against 7.9 and 11.8 s, Section 4)"
+   },
+   "second": {
+    "field": "para:p0b8bb08e8841.inf7",
+    "verdict": "reword",
+    "reason": "Confirmed. The sentence sets 3.4 s against both 7.9 and 11.8 s and calls it \"a third of the latency\". Against Opus 5 that holds (3.4/11.8 = 0.29); against Sonnet 5 it does not (3.4/7.9 = 0.43, nearer a half than a third). The first checker's arithmetic reproduces, and no other run scope rescues the wording: on the finance runs the ratio to Sonnet is 4.1/8.4 = 0.49. The \"a third\" claim is true of one comparison and overstated for the other, so the phrase should be widened to cover both.",
+    "evidence": "node experiments/deployment-numbers.mjs --tag frontier (in /Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research): generation latency, s per query, mean over queries and runs, 3 runs x 28 education queries per model: claude-opus-5 11.8, claude-sonnet-5 7.9, deepseek-ai/DeepSeek-V4-Pro-0813 3.4. Ratios: 3.4/11.8 = 0.288, 3.4/7.9 = 0.430. Cross-check --tag finance-frontier: 12.7 / 8.4 / 4.1 (ratio to Sonnet 0.49), so no scope in the repository makes DeepSeek a third of Sonnet's latency. Computation in experiments/deployment-numbers.mjs lines 77-82 (sum of step times per query).",
+    "suggest": "at a third to under half of the latency (3.4 s per query against 11.8 and 7.9 s, Section 4)"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:pf7c476db3e18.inf10",
+   "first": {
+    "field": "para:pf7c476db3e18.inf10",
+    "verdict": "false",
+    "reason": "Only 1 of the 40 wrong-value errors sits on an aggregation prompt (aggregate_count_small_classes, Sonnet run 3). The rest are on comparison (12), student (12), unsupported (9), overview (3) and threshold (3) prompts. Reading the answers, they are mostly two other things: computed differences written as facts ('outperforms 3BS by %[passRate]{14} percentage points'), and the same binding slip landing on a field the class also has, so it surfaces as a wrong value instead of field-not-found (Ali's 5% written where offering:10054.passRate is 82; Noor's rate bound to Ali). 'Almost all on aggregation prompts' is not what the error set shows.",
+    "evidence": "Recount over experiments/convergence-results-frontier-*-run[1-3].json, value-mismatch errors in the last step of non-converged queries, by benchmark category: comparison 12, student 12, unsupported 9, overview 3, threshold 3, aggregation 1. Examples: convergence-results-frontier-claude-sonnet-5-run1.json, compare_pass_6zw_3bs ('%[passRate]{14} percentage points', expected 60) and unsupported_cause_ali (offering:10054.passRate expected 82, model wrote the pupil's 5).",
+    "suggest": "Wrong values are 40 of the 157 (25%), mostly differences the model computed and wrote as facts, and the same binding slip landing on a field the class also has (a pupil's pass rate under the offering's passRate), so that it surfaces as a wrong value instead of a missing field."
+   },
+   "second": {
+    "field": "para:pf7c476db3e18.inf10",
+    "verdict": "false",
+    "reason": "Reproduced the first checker's count independently: over the nine frontier run files, the last step of the 35 non-converged query-runs holds 157 errors, of which 40 are value-mismatch. By benchmark category those 40 fall on comparison 12, student 12, unsupported 9, overview 3, threshold 3, aggregation 1. Exactly one sits on an aggregation prompt (aggregate_count_small_classes, Sonnet run 3, and even there the wrong value is 5BS's studentCount, not a count the store lacks). The prompts behind the other 39 are \"Compare the pass rates of 6ZW and 3BS\", \"Who scores lower: Ali Peeters or Noor Maes?\", \"Why is Ali Peeters performing poorly?\", \"Give an overview of Amir Janssens, ...\": not rank-or-count questions. Reading the answers, the wrong values are of two kinds: differences the model computed and wrote as facts (%[passRate]{14} percentage points, %[evalRate]{17} percentage points; 8 errors across Sonnet's comparison runs), and the same carry-forward binding slip as Finding 2's main shape landing on a field the class also has (a pupil's 5% or 0% written where offering:10054.passRate is 82, offering:10056.passRate is 53), so it surfaces as value-mismatch instead of field-not-found (roughly 25 errors); the rest are values bound to the neighbouring offering in comparison and threshold answers. \"Almost all on aggregation prompts that ask for a rank or a count the store does not hold\" is not what the error set shows, so the sentence is false as written and the first checker's rewording is warranted.",
+    "evidence": "experiments/convergence-results-frontier-{claude-opus-5,claude-sonnet-5,deepseek-ai_DeepSeek-V4-Pro-0813}-run[1-3].json: results[].converged == false, steps[-1].errorDetails[].status == \"value-mismatch\", joined to results[].category; totals 157 errors, 40 value-mismatch, aggregation 1. Prompts in benchmarks/proveml-pilot-en.v1.json (prompts[].id, category, prompt). Examples: convergence-results-frontier-claude-sonnet-5-run1.json compare_pass_6zw_3bs (\"outperforms @[offering:10004]{3BS} by %[passRate]{14} percentage points\", expected 60) and unsupported_cause_ali (offering:10054.passRate expected 82, model wrote the pupil's 5); convergence-results-frontier-claude-opus-5-run2.json overview_student_risk_top_set (offering:10056.passRate expected 53, written 0); convergence-results-frontier-claude-sonnet-5-run3.json aggregate_count_small_classes (offering:10009.studentCount expected 10), the only aggregation case.",
+    "suggest": "Wrong values are 40 of the 157 (25%), mostly two things: differences the model computed and wrote as facts (\"outperforms 3BS by %[passRate]{14} percentage points\"), and the same binding slip landing on a field the class also has (a pupil's 5% under the offering's passRate), so that it surfaces as a wrong value instead of a missing field; only one sits on an aggregation prompt."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:pbc1fd5408435.inf8",
+   "first": {
+    "field": "para:pbc1fd5408435.inf8",
+    "verdict": "reword",
+    "reason": "Fourteen is right, but selection by field alone yields fifteen names; the harness also drops the one is_null entry (IS_MISSING on evaluated) because it verifies vacuously on every class. As written the sentence implies field selection produces fourteen.",
+    "evidence": "experiments/test-judgment.js: registry = entries where storeFields.has(t.field) && t.op !== 'is_null', with the comment explaining the is_null exclusion. proveml/thresholds example registry: 21 entries, 15 with a store field (incl. IS_MISSING:evaluated:is_null). experiments/judgment-runs.log: 'registry 14 names'; judgment-summary.mjs lists the 14.",
+    "suggest": "fourteen names: the fifteen whose field the store holds, minus the one is_null entry (IS_MISSING), which would verify vacuously on every class"
+   },
+   "second": {
+    "field": "para:pbc1fd5408435.inf8",
+    "verdict": "reword",
+    "reason": "Reproduced independently. The shipped example registry (proveml/thresholds) has 21 entries; 15 name a field the education store holds (name, studentCount, passRate, evalRate, passed, evaluated, total, absent), and the harness then drops the one is_null entry (IS_MISSING on evaluated) because it verifies vacuously on every class. Fourteen is the number that ran, but \"selected by field\" is not the rule that produces it: selection by field alone yields fifteen. The code comment on the exclusion even says \"Noted for the spec\", so the omission is the harness author's own open item. The count stands; the description of the selection needs the second step.",
+    "evidence": "experiments/test-judgment.js lines 73-79: registry = entries of exampleRegistry where storeFields.has(t.field) && t.op !== 'is_null', with the comment \"an is_null judgment is vacuously true on a record type that never carries the field (IS_MISSING on evaluated verifies for every class ...) so it would hand every model a free verified judgment. Noted for the spec.\" Recount against the installed package: 21 entries total, 15 by field (IS_LOW_PASS, IS_BELOW_HALF, IS_PASSING, IS_STRONG, IS_HIGH_ABSENCE, IS_GREY_RISK, IS_LOW_COVERAGE, IS_WELL_COVERED, IS_SMALL_SAMPLE, IS_RELIABLE_SAMPLE, IS_MISSING, IS_MODERATE_PASS, IS_PERFECT_PASS, IS_NONEMPTY_CLASS, IS_AT_MOST_HALF), 14 after removing IS_MISSING. experiments/judgment-results-registry-claude-opus-5-run1.json stores exactly those 14 names in its registry field; experiments/judgment-runs.log lines 3, 99, 192: \"registry 14 names\".",
+    "suggest": "fourteen names: the fifteen whose field the store holds, minus the one is_null entry (IS_MISSING), which would verify vacuously on every class"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:pbc1fd5408435.inf10",
+   "first": {
+    "field": "para:pbc1fd5408435.inf10",
+    "verdict": "reword",
+    "reason": "The same twenty questions ran under both conditions, and the baseline prompt is the second study's facts-only prompt (the frontier2 SYSTEM in test-convergence.js, with the own-record binding rule and the cutoff rule) except for one change: 'Answer in English,' was added to the first line. The harness comment calls it verbatim; it is not quite.",
+    "evidence": "experiments/test-judgment.js SYSTEM_NONE line 1: 'You are a curriculum analytics expert. Answer in English, in ProveML markdown.' vs experiments/test-convergence.js SYSTEM line 1: 'You are a curriculum analytics expert. Answer in ProveML markdown.'; the remaining 14 lines are identical. experiments/run-judgment.sh runs cond in registry none over benchmarks/proveml-judgment-en.v1.json.",
+    "suggest": "The same questions ran under the facts-only prompt of the second study (with 'Answer in English' added to its first line) as the baseline"
+   },
+   "second": {
+    "field": "para:pbc1fd5408435.inf10",
+    "verdict": "reword",
+    "reason": "Reproduced. The baseline condition (\"none\") ran the same twenty questions of benchmarks/proveml-judgment-en.v1.json as the registry condition (run-judgment.sh loops both conditions over the same benchmark; every saved run file has 20 results). Its prompt SYSTEM_NONE in test-judgment.js is the second study's SYSTEM from test-convergence.js (the frontier2 prompt, committed with the frontier2 run files in ee090c2 and unchanged since) in every line but the first, where \"Answer in English,\" was inserted. The harness comment calls it \"Verbatim\"; a diff shows it is not. The addition is symmetric (the registry condition's role also says \"Answer in English.\") and does not weaken the baseline comparison, but \"the facts-only prompt of the second study\" overstates identity by that one clause, so the sentence should say so.",
+    "evidence": "diff of experiments/test-judgment.js lines 114-129 against experiments/test-convergence.js lines 162-177: only line 1 differs, \"You are a curriculum analytics expert. Answer in English, in ProveML markdown.\" vs \"You are a curriculum analytics expert. Answer in ProveML markdown.\"; the other 14 lines (own-record binding rule, cutoff rule, three example lines) are identical. experiments/judgment-results-none-*-run1.json store systemPrompt beginning \"Answer in English, in ProveML markdown.\" with benchmark v1-en and 20 results; experiments/run-judgment.sh runs conditions registry and none on the same benchmark. git: test-convergence.js last changed in ee090c2 (2026-08-29), the commit that added the frontier2 rules and run files; test-judgment.js added in cb66c2b (2026-09-11).",
+    "suggest": "The same questions ran under the facts-only prompt of the second study, with \"Answer in English\" added to its first line, as the baseline"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:pe68a07c66657.inf6",
+   "first": {
+    "field": "para:pe68a07c66657.inf6",
+    "verdict": "reword",
+    "reason": "18 to 26 is the range of per-model means under the no-registry condition (DeepSeek 18.0, Opus 25.7, Sonnet 26.0); individual runs span 16 to 29. 'Per run' invites reading it as the run range.",
+    "evidence": "Per-run steps[0].unmarked counts, condition none: opus 25, 26, 26; sonnet 29, 24, 25; DeepSeek 19, 16, 19 (experiments/judgment-results-none-*.json). experiments/judgment-summary.mjs: 25.7 ± 0.6, 26.0 ± 2.6, 18.0 ± 1.7.",
+    "suggest": "18 to 26 qualitative words per run on average (16 to 29 across individual runs)"
+   },
+   "second": {
+    "field": "para:pe68a07c66657.inf6",
+    "verdict": "reword",
+    "reason": "Reproduced from the run files: the nine no-registry runs carry 25, 26, 26 (Opus 5), 29, 24, 25 (Sonnet 5) and 19, 16, 19 (DeepSeek) qualitative words outside any construct; per-model means 25.7, 26.0, 18.0. \"18 to 26\" is the span of the per-model means, but \"per run\" reads as the span of individual runs, which is 16 to 29; two of nine runs (Sonnet 5 run 1 at 29, DeepSeek run 2 at 16) fall outside the stated range on that reading. The five example words do occur among the unmarked words (average 28, strong 27, low 25, concern 21, at risk 12), so only the range phrasing needs fixing.",
+    "evidence": "experiments/judgment-results-none-{claude-opus-5,claude-sonnet-5,deepseek-ai_DeepSeek-V4-Pro-0813}-run{1,2,3}.json, sum of steps[0].unmarked.length over the 20 non-empty results per file: opus 25/26/26, sonnet 29/24/25, deepseek 19/16/19. `node experiments/judgment-summary.mjs`, column \"qualitative words outside a construct\" for condition none: 25.7 ± 0.6, 26.0 ± 2.6, 18.0 ± 1.7.",
+    "suggest": "18 to 26 qualitative words per run on average (16 to 29 across the nine individual runs)"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:pe68a07c66657.inf9",
+   "first": {
+    "field": "para:pe68a07c66657.inf9",
+    "verdict": "reword",
+    "reason": "After one correction there are 427 judgments, 425 verified, so two are left. One is the malformed label (Sonnet 5 run 1, unreg_motivation: the correction wrote `?[student:20376.passRate: IS_LOW_PASS]`, stored as name '20376.passRate: IS_LOW_PASS', unverifiable). The other is still false, not malformed: Sonnet 5 run 2, bound_grey_29, `IS_GREY_RISK(student:20321.absent)` at 29 kept inside 'but not ?[...]{risk of grey marks}', which the verifier reads as an assertion. 'The single judgment left unverified' is only true if 'unverified' means 'unverifiable'; a reader who just subtracted 425 from 427 sees two.",
+    "evidence": "experiments/judgment-results-registry-claude-sonnet-5-run1.json (unreg_motivation, steps[1].inferences.names: status unverifiable) and experiments/judgment-results-registry-claude-sonnet-5-run2.json (bound_grey_29, steps[1]: IS_GREY_RISK(student:20321.absent) failed; finalResponse 'but not ?[p: IS_GREY_RISK(student:20321.absent)]{risk of grey marks}'); judgment-summary.mjs: 'after one correction 427 judgments, 425 verified, 1 false'.",
+    "suggest": "one correction on Sonnet 5 produced a malformed label, the one judgment left unverifiable; the other of the two was 'risk of grey marks' at 29 that Sonnet 5 kept inside a negation, and a construct asserts its condition whatever the prose around it says"
+   },
+   "second": {
+    "field": "para:pe68a07c66657.inf9",
+    "verdict": "reword",
+    "reason": "Reproduced. `node experiments/judgment-summary.mjs` prints \"after one correction 427 judgments, 425 verified, 1 false\", so two of 427 are not verified, and the same paragraph says \"425 of 427 after one correction\". Walking the last step of every registry run confirms exactly two: (1) Sonnet 5 run 1, question unreg_motivation, the correction wrote `?[student:20376.passRate: IS_LOW_PASS]{critically low}`, stored as name '20376.passRate: IS_LOW_PASS' with status unverifiable (the malformed label the sentence describes); (2) Sonnet 5 run 2, question bound_grey_29, `?[p: IS_GREY_RISK(student:20321.absent)]{risk of grey marks}` kept after the correction, status failed, because student 20321 has 29 absences and IS_GREY_RISK is absent > 30; the construct sits inside \"but not ...\", which the verifier does not read as a negation. So \"the single judgment left unverified\" is false as displayed: the malformed label is the single UNVERIFIABLE judgment, but a second one is left FALSE, and a reader subtracting 425 from 427 sees two. The first checker's finding stands and the change is warranted on evidence, not style.",
+    "evidence": "experiments/judgment-summary.mjs output: \"all registry runs (9): 454 judgments on the first pass, 411 verified, 33 false; after one correction 427 judgments, 425 verified, 1 false\". experiments/judgment-results-registry-claude-sonnet-5-run1.json, result unreg_motivation, steps[1].inferences.names: {name: '20376.passRate: IS_LOW_PASS', status: 'unverifiable'}; finalResponse contains \"?[student:20376.passRate: IS_LOW_PASS]{critically low}\". experiments/judgment-results-registry-claude-sonnet-5-run2.json, result bound_grey_29, steps[1].inferences: total 2, verified 1, failed 1, names[1] = {name: 'IS_GREY_RISK(student:20321.absent)', status: 'failed', entity: 'student:20321'}; finalResponse \"...?[p: IS_HIGH_ABSENCE]{high absence}, but not ?[p: IS_GREY_RISK(student:20321.absent)]{risk of grey marks}...\"; registry IS_GREY_RISK = {field: 'absent', op: '>', value: 30}; student 20321 absent = 29 (e.g. judgment-results-none-claude-opus-5-run1.json, %[student:20321.absent]{29}).",
+    "suggest": "one correction on Sonnet 5 produced a malformed label, the one judgment left unverifiable; the other of the two was \"risk of grey marks\" at 29 absences that Sonnet 5 kept inside a negation (\"but not ...\"), and a construct asserts its condition whatever the prose around it says"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:pe68a07c66657.inf10",
+   "first": {
+    "field": "para:pe68a07c66657.inf10",
+    "verdict": "reword",
+    "reason": "The count 33 is right and reconciles: 454 - 411 = 43 = 33 false + 10 registered names on an entity with no value (the unresolved offering:1C and offering:6VZ). But 'almost all one thing' overstates: by name and store value the 33 are IS_SMALL_SAMPLE 10 (at 5 x3, 7 x4, 8 x2, 10 x1), IS_STRONG 9 (74 x3, 63 x4, 60 x1, 8 x1), IS_RELIABLE_SAMPLE 4 (8 x4), IS_GREY_RISK 5 (29 x2, 5 x1, 4 x2), IS_HIGH_ABSENCE 3 (5, 4, 4), IS_LOW_PASS 2 (75, 82). The four near-miss cases the sentence names cover 20 of 33; the other 13 are judgments bound to the wrong entity (IS_LOW_PASS on the offering where the student at 6 was meant; small sample on 6VZ at 10 where 2ZW at 4 was meant) or far misses (strong at 8, grey risk at 4 or 5).",
+    "evidence": "Tally from steps[0].inferences.names across experiments/judgment-results-registry-*.json joined to data/mastery-layers-demo.json (offering:10025 2BW 5 pupils, 10008 5BO 7, 10004 3BS 8, 10066 6VZ 10 pupils passRate 63, 10012 6ZW passRate 74, student:20656 Vic Pauwels passRate 8, 20321 Nathan Lambert absent 29, 20400 Ali Peeters absent 5, 20376 Noor Maes absent 4); judgment-summary.mjs 'false judgments on the first pass, by name'.",
+    "suggest": "The 33 first-pass failures are mostly near misses (20 of 33): ... The rest are a judgment bound to the class where the pupil was meant, or a word the question invited used to deny it."
+   },
+   "second": {
+    "field": "para:pe68a07c66657.inf10",
+    "verdict": "reword",
+    "reason": "Reproduced the first checker's tally independently and it holds. The 33 is right (454 first-pass judgments, 411 verified, 33 false; the remaining 10 are registered names on an entity that resolved to no value, offering:1C 4 and offering:6VZ 6, so 411 + 33 + 10 = 454). But the sentence then says the 33 are \"almost all one thing\" and lists four cases; joined to the store those four cases cover 20 of 33: small sample at 5 (x3) or 7 (x4) against 5, strong at 74 (x3) or 63 (x4) against 75, reliable sample at 8 (x4) against 10, grey risk at 29 (x2) against 30. The other 13 are not near misses: small sample at 8 (x2) and 10 (x1); strong at 60 and at 8 (a pupil with passRate 8 asked about as \"a strong pupil\"); low pass at 75 and 82, both bound to an offering when a pupil was asked about (Noor Maes, Ali Peeters); high absence at 5, 4, 4 against 10 and grey risk at 5, 4, 4 against 30. Twenty of 33 is \"mostly\", not \"almost all\". One detail in the list is also unsupported: \"reliable sample at 7 or 8\" never occurs at 7; all four are at 8. The 33 itself stands; the characterisation and the \"7\" need rewording.",
+    "evidence": "node experiments/judgment-summary.mjs prints \"all registry runs (9): 454 judgments on the first pass, 411 verified, 33 false; after one correction 427 judgments, 425 verified, 1 false\" and \"judgments on an entity that did not resolve (registered name, no value): offering:1C 4, offering:6VZ 6\". Per-value join: steps[0].inferences.names with status \"failed\" across experiments/judgment-results-registry-{claude-opus-5,claude-sonnet-5,deepseek-ai_DeepSeek-V4-Pro-0813}-run{1,2,3}.json, registry from the same files, values from data/mastery-layers-demo.json flattened as in experiments/deployment-numbers.mjs lines 28-43 (studentCount = students.length, passRate = rounded mean of rate, absent = grijs). Result: IS_SMALL_SAMPLE @5 x3, @7 x4, @8 x2, @10 x1; IS_STRONG @74 x3, @63 x4, @60 x1, @8 x1; IS_RELIABLE_SAMPLE @8 x4; IS_GREY_RISK @29 x2, @5 x1, @4 x2; IS_HIGH_ABSENCE @5 x1, @4 x2; IS_LOW_PASS @75 x1 (offering:10050 on \"Is Noor Maes motivated?\"), @82 x1 (offering:10054 on \"Is Ali Peeters at risk?\"). Entities: offering:10025 2BW (5 pupils), 10008 5BO (7), 10004 3BS (8, passRate 60), 10066 6VZ (10, passRate 63), 10012 6ZW (passRate 74), student:20656 Vic Pauwels (passRate 8), 20321 Nathan Lambert (absent 29), 20400 Ali Peeters (absent 5), 20376 Noor Maes (absent 4).",
+    "suggest": "The 33 first-pass failures are mostly near misses (20 of 33): \"small sample\" at 5 or 7 pupils against a bound of 5, \"strong\" at 74 or 63 against 75, \"reliable sample\" at 8 against 10, \"risk of grey marks\" at 29 absences against 30. The other 13 are a judgment bound to the class where the pupil was asked about, or a word the question invited used far from its bound (\"strong\" at 8, \"high absence\" at 4)."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:pe68a07c66657.inf11",
+   "first": {
+    "field": "para:pe68a07c66657.inf11",
+    "verdict": "reword",
+    "reason": "Ten IS_SMALL_SAMPLE failures on the first pass: 5 pupils x3 (2BW, bound_sample_5), 7 x4 (5BO, contra_unreliable), 8 x2 (3BS, judg_class_assess, Opus run 2 and Sonnet run 3), 10 x1 (6VZ in Sonnet run 1 judg_sample_ground, a binding error: 2ZW at 4 was meant). The bound of 5 is right; '5 or 7' covers 7 of 10.",
+    "evidence": "experiments/judgment-results-registry-*.json steps[0] names with status failed and entity offering:10025/10008/10004/10066; studentCount from data/mastery-layers-demo.json (5, 7, 8, 10); registry IS_SMALL_SAMPLE studentCount < 5.",
+    "suggest": "\"small sample\" at 5, 7 or 8 pupils against a bound of 5"
+   },
+   "second": {
+    "field": "para:pe68a07c66657.inf11",
+    "verdict": "reword",
+    "reason": "Reproduced independently. Across the nine registry runs, step 0 of experiments/judgment-results-registry-*.json holds exactly 33 inferences with status \"failed\" (43 non-verified minus 10 \"unverifiable\"), matching the paragraph's 33. Ten of them are IS_SMALL_SAMPLE: offering:10025 (2BW, studentCount 5) x3 in Sonnet runs 1-3 on bound_sample_5; offering:10008 (5BO, 7) x4 on contra_unreliable (Opus run 3, Sonnet runs 1-3); offering:10004 (3BS, 8) x2 on judg_class_assess (Opus run 2, Sonnet run 3); offering:10066 (6VZ, 10) x1 in Sonnet run 1 judg_sample_ground, where the model's own correction text says the %[studentCount]{4} and the judgment meant for 2ZW were bound to 6VZ, so that one is a binding error, not a reach for the word. The bound is IS_SMALL_SAMPLE: studentCount < 5 (formal/check-vectors.mjs:27, formal/Vectors.lean:39, and the run systemPrompt). \"at 5 or 7 pupils\" therefore omits two genuine cases at 8 pupils; 7 of 10 are covered as written. Adding 8 is a correction on evidence, not style; the 10-pupil misbinding can stay out since the sentence describes the model reaching for the invited word.",
+    "evidence": "experiments/judgment-results-registry-claude-opus-5-run2.json and -claude-sonnet-5-run3.json, results[id=judg_class_assess].steps[0].inferences.names: {IS_SMALL_SAMPLE, failed, offering:10004}; 3BS studentCount 8 in the verified fact %[studentCount]{8} of the same responses and in experiments/test-judgment.js:58,125 (factStore offering:10004.studentCount from o.students.length; example line \"3BS has %[studentCount]{8} students\"). 2BW=5 (offering:10025, bound_sample_5 \"near\": studentCount 5, benchmarks/proveml-judgment-en.v1.json:28), 5BO=7 (offering:10008), 6VZ=10 (offering:10066) from the verified %[studentCount] facts in the run responses. Registry bound: formal/check-vectors.mjs:27 IS_SMALL_SAMPLE studentCount < 5.",
+    "suggest": "\"small sample\" at 5, 7 or 8 pupils against a bound of 5"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:pe68a07c66657.inf12",
+   "first": {
+    "field": "para:pe68a07c66657.inf12",
+    "verdict": "reword",
+    "reason": "Nine IS_STRONG failures on the first pass (eight plain, one with an explicit path): 74 x3 (6ZW, bound_strong_74), 63 x4 (6VZ, contra_badly and judg_sample_ground), 60 x1 (3BS, Sonnet run 3 judg_class_assess), 8 x1 (Vic Pauwels, Sonnet run 2 contra_strong_student). The bound of 75 is right; '74 or 63' covers 7 of 9, and the one at 8 is not a near miss.",
+    "evidence": "experiments/judgment-results-registry-*.json steps[0] IS_STRONG failed on offering:10012 (passRate 74), offering:10066 (63), offering:10004 (60), student:20656 (8) per data/mastery-layers-demo.json; registry IS_STRONG passRate >= 75.",
+    "suggest": "\"strong\" at 74, 63 or 60 against 75 (once at 8, on the pupil the question called strong)"
+   },
+   "second": {
+    "field": "para:pe68a07c66657.inf12",
+    "verdict": "reword",
+    "reason": "Reproduced independently. Across the nine registry runs, steps[0] shows nine IS_STRONG failures (eight named plain, one as IS_STRONG(offering:10066.passRate)): 6ZW at passRate 74 three times (Sonnet runs 1-3, bound_strong_74), 6VZ at 63 four times (Opus run 1 contra_badly; Sonnet run 1 judg_sample_ground twice; Sonnet run 2 contra_badly), 3BS at 60 once (Sonnet run 3 judg_class_assess), and Vic Pauwels at 8 once (Sonnet run 2 contra_strong_student). Registry IS_STRONG is passRate >= 75, so 'against 75' is right and 74 and 63 are real, but '74 or 63' reads as the full list and covers 7 of 9; 60 is a wider miss and 8 is no near miss at all (the model echoed the word the contrary question offered). Since the sentence's point is that the failures are near misses, the two omitted cases are material, not style.",
+    "evidence": "experiments/judgment-results-registry-*.json, results[].steps[0].inferences.names with name IS_STRONG and status failed (entities offering:10012, offering:10066, offering:10004, student:20656); registry.IS_STRONG {field passRate, op >=, value 75} in the same files. passRate recomputed from data/mastery-layers-demo.json with the flattening in experiments/test-judgment.js lines 55-70: 6ZW 74.25 -> 74, 6VZ 63.4 -> 63, 3BS 60.125 -> 60, student 20656 rate 8; the same values appear as %[passRate]{...} in each run's finalResponse.",
+    "suggest": "\"strong\" at 74, 63 or 60 against 75 (once at 8, on the pupil the question called strong)"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:pe68a07c66657.inf13",
+   "first": {
+    "field": "para:pe68a07c66657.inf13",
+    "verdict": "reword",
+    "reason": "All four IS_RELIABLE_SAMPLE failures on the first pass are at 8 pupils (3BS, offering:10004: Opus run 1 unreg_teacher, Opus run 3 judg_class_assess, Sonnet runs 2 and 3 judg_class_assess). None is at 7: 5BO with 7 pupils drew 'small sample' four times, never 'reliable sample'. The bound of 10 is right.",
+    "evidence": "experiments/judgment-results-registry-claude-opus-5-run1.json, -run3.json, -claude-sonnet-5-run2.json, -run3.json: IS_RELIABLE_SAMPLE failed, entity offering:10004; data/mastery-layers-demo.json offering 10004 has 8 students; no IS_RELIABLE_SAMPLE failure on offering:10008 (7).",
+    "suggest": "\"reliable sample\" at 8 against 10"
+   },
+   "second": {
+    "field": "para:pe68a07c66657.inf13",
+    "verdict": "reword",
+    "reason": "Reproduced independently. Across the nine registry run files the first pass has exactly 33 failed inferences (matching the paragraph's count), and IS_RELIABLE_SAMPLE fails four times, every one on offering:10004 (3BS), which has 8 students in data/mastery-layers-demo.json. No IS_RELIABLE_SAMPLE failure sits at 7: the 7-pupil class 5BO (offering:10008) drew four IS_SMALL_SAMPLE failures, never a reliable-sample claim. The only other non-verified IS_RELIABLE_SAMPLE entries are three \"unverifiable\" ones where the model wrote the class name as the id (offering:6VZ, offering:1C, classes of 10 and 11 pupils), a subject-resolution error, not a bound miss at 7. The \"7\" belongs to the small-sample clause and was carried over into this one. The first checker's finding stands; the bound of 10 is right.",
+    "evidence": "experiments/judgment-results-registry-claude-opus-5-run1.json (unreg_teacher), -claude-opus-5-run3.json (judg_class_assess), -claude-sonnet-5-run2.json and -run3.json (judg_class_assess): steps[0].inferences.names contains IS_RELIABLE_SAMPLE status \"failed\" entity \"offering:10004\"; data/mastery-layers-demo.json offerings[3] id 10004 name 3BS has 8 students. Sum of summary.inferencesFirst.failed over the nine registry files = 33; IS_SMALL_SAMPLE failures on offering:10008 (5BO, 7 students) x4, offering:10025 (2BW, 5) x3. Registry in each run file: IS_RELIABLE_SAMPLE studentCount >= 10.",
+    "suggest": "\"reliable sample\" at 8 against 10"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:pe68a07c66657.inf14",
+   "first": {
+    "field": "para:pe68a07c66657.inf14",
+    "verdict": "reword",
+    "reason": "Five IS_GREY_RISK failures on the first pass: 29 absences x2 (Nathan Lambert, bound_grey_29, Sonnet runs 2 and 3), 5 x1 (Ali Peeters, Sonnet run 1 judg_student_risk), 4 x2 (Noor Maes, Sonnet runs 2 and 3 unreg_motivation). The bound of 30 is right; the near miss at 29 is 2 of 5, the other three are at 4 or 5 absences, far from the bound.",
+    "evidence": "experiments/judgment-results-registry-claude-sonnet-5-run*.json steps[0] IS_GREY_RISK failed on student:20321 (absent 29), student:20400 (absent 5), student:20376 (absent 4) per data/mastery-layers-demo.json; registry IS_GREY_RISK absent > 30.",
+    "suggest": "\"risk of grey marks\" at 29 absences against 30, and three times at 4 or 5"
+   },
+   "second": {
+    "field": "para:pe68a07c66657.inf14",
+    "verdict": "reword",
+    "reason": "Reproduced independently: across the nine registry runs there are exactly five first-pass (loop 0) IS_GREY_RISK failures, all Sonnet 5. Two are the near miss the paper names (student:20321 Nathan Lambert, absent 29, on bound_grey_29 in runs 2 and 3). The other three are nowhere near the bound: student:20376 Noor Maes at 4 absences (unreg_motivation, runs 2 and 3) and student:20400 Ali Peeters at 5 absences (judg_student_risk, run 1). The value \"29 against 30\" is true of the archive, but as the sole figure given for this item it makes the grey failures read as boundary cases when three of five were the model calling 4 or 5 grey marks a \"risk of grey marks\" against a bound of 30. The paper's own framing (\"reached for the word the question invited, the bound said no\") still covers all five, so this is a reword, not a falsehood. Also verified in passing: 43 non-verified first-pass judgments minus 10 \"unverifiable\" = 33 failed, matching the paragraph's 33. Note for the neighbouring claim: in run 2 the 29-absence judgment failed again on the correction pass (loop 1), so the correction did not remove that claim; that belongs to the \"correction removed the claim\" sentence, not this field.",
+    "evidence": "experiments/judgment-results-registry-claude-sonnet-5-run2.json and run3.json, result id bound_grey_29, steps[0].inferences.names: IS_GREY_RISK failed, entity student:20321; run2.json and run3.json, result id unreg_motivation, steps[0]: IS_GREY_RISK failed, entity student:20376; run1.json, result id judg_student_risk, steps[0]: IS_GREY_RISK failed, entity student:20400. Absences from data/mastery-layers-demo.json field grijs (mapped to absent in experiments/test-judgment.js line 69): 20321 = 29, 20376 = 4, 20400 = 5. Registry in the same run files: IS_GREY_RISK: absent > 30. No IS_GREY_RISK failure in any Opus 5 or DeepSeek registry run.",
+    "suggest": "\"risk of grey marks\" at 29 absences against 30 (twice), and three times at 4 or 5"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p7859efac67e0.inf4",
+   "first": {
+    "field": "para:p7859efac67e0.inf4",
+    "verdict": "reword",
+    "reason": "True of the two entity-and-fact benchmarks (education, finance): no convergence or SymGen run file contains a single ?[ construct. False as 'neither benchmark' without qualification: the repository holds a third benchmark, benchmarks/proveml-judgment-en.v1.json (20 prompts, registry of 14 names), whose runs of 11 September 2026 produced inferences on nearly every question, and the technical report says that judgment study is 'reported in the short paper'. A reader of this paragraph is told no run produced an inference while the same paper reports runs that did.",
+    "evidence": "grep for '?[' over experiments/convergence-results-*.json and experiments/symgen-results-*.json: 0 matches in every file. experiments/judgment-runs.log: 'Q1 ... inferences 3/3', 'Q6 ... inferences 3/6 (3 false...)'; experiments/judgment-results-registry-claude-opus-5-run1.json carries a 14-name registry and 21 inference constructs. paper/proveml-technical-report.tex line 914: 'The judgment study of September 2026 (reported in the short paper) covers one store, one registry of fourteen names and twenty questions; the local-model runs in this report predate it and asked for entities and facts only.' Aside, same sentence: the shipped example registry has 21 entries, not twenty-four (../proveml/src/thresholds.js, Object.keys(thresholds).length = 21; technical report lines 738 and 834 say twenty-one).",
+    "suggest": "...and neither entity-and-fact benchmark needed one (no education or finance run produced an inference); the judgment study is where the registry does its work, with fourteen names. Also correct 'twenty-four entries' to 'twenty-one entries'."
+   },
+   "second": {
+    "field": "para:p7859efac67e0.inf4",
+    "verdict": "reword",
+    "reason": "Reproduced. The two entity-and-fact benchmarks (education, finance) indeed produced no inference: 0 of 99 convergence and SymGen run files contain a '?[' construct. But the repository holds a third benchmark, benchmarks/proveml-judgment-en.v1.json (20 prompts, registry of 14 names), whose nine registry-condition runs of 2026-09-11 each carry 17 to 21 inference constructs, and the technical report says that study is reported in the short paper. As displayed, 'neither benchmark ... no run produced an inference' tells the reader that no run anywhere produced one, which is false of what the repository holds; the sentence needs its scope stated. The first checker's aside is also correct: the shipped registry has 21 entries (technical report line 738 says twenty-one), while the paragraph says twenty-four; that is a separate value in the same paragraph but should be fixed with it.",
+    "evidence": "grep -l '?\\[' experiments/convergence-results-*.json experiments/symgen-results-*.json: 0 of 99 files match. grep -c '?\\[' experiments/judgment-results-registry-*.json: opus 21/21/21, sonnet 17/19/17, deepseek 18/20/19 (all nine timestamped 2026-09-11, condition 'registry', registry of 14 names, benchmark 'ProveML Judgment Benchmark (English prompts)'); the 'none' condition files have 0. benchmarks/proveml-judgment-en.v1.json: 20 prompts. experiments/judgment-runs.log lines 5, 8, 11: 'inferences 3/3', '2/2', '1/3 (2 false ...)'. paper/proveml-technical-report.tex line 914: 'The judgment study of September 2026 (reported in the short paper) covers one store, one registry of fourteen names and twenty questions; the local-model runs in this report predate it and asked for entities and facts only.' Registry size: node on ../proveml/src/thresholds.js gives Object.keys(thresholds).length = 21; technical report line 738 reads 'twenty-one entries'.",
+    "suggest": "...the example registry that ships with the implementation has twenty-one entries, and neither entity-and-fact benchmark needed one (no education or finance run produced an inference); the judgment study is where the registry does its work, with fourteen names. Its cost falls entirely on the deployments that use it."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p2ad866091584.inf3",
+   "first": {
+    "field": "para:p2ad866091584.inf3",
+    "verdict": "reword",
+    "reason": "Overstated for two of the three link kinds it refers back to. A quote is re-checked and a failure refuses the build, as stated. A derivation is not re-checked by the page build: derived and absence evidence are declarations that are rendered as such, and the only machine check on a derived number is regenerate.mjs, which re-runs the script and RECORDS a differing output ('Output differs from the snapshot') rather than refusing. An absence cannot be checked at all. Separately, the claim-equals-store check does refuse by default, but this paper's own build passes allowMismatch: true, so a mismatch is carried in red rather than refused.",
+    "evidence": "../proveml/src/review-page.js lines 4-7: 'The machine re-checks what it can at build time (the claim equals the store, a quote is verbatim in its snapshot) and refuses to emit the page if any check fails.' Lines 711-720: basis 'derived' and 'absence' branches push a review id and a label ('derived, not quoted'; 'rests on absence') with no check. Lines 170-177: 'With allowMismatch the page carries it, red... without it the build refuses'; paper/review/build.mjs line 627: 'allowMismatch: true'. paper/review/regenerate.mjs lines 1-9: 'a differing output is recorded as such ... --adopt writes it over the snapshot'; review-page.js line 244 renders 'Output differs from the snapshot the page binds to'.",
+    "suggest": "The machine re-checks what it can at build time (a quote is verbatim in its snapshot, a claim equals the store) and refuses to emit the review page when such a check fails; a derivation is re-run by a recorded command whose record says whether the output still matches, and an absence is a declaration the page hands to the reader as the whole source."
+   },
+   "second": {
+    "field": "para:p2ad866091584.inf3",
+    "verdict": "reword",
+    "reason": "Confirmed. The sentence refers back to three links (verbatim quote, declared derivation, declared absence) and says the machine re-checks \"those links\" and refuses the page \"when any fails\". Only the quote link is checked and refused at build time. A derived value is rendered as a declaration (\"derived, not quoted\") with no check; the only machine test of a derived number is regenerate.mjs, run separately, which records a differing output as such and leaves the build to bind to the old snapshot (build.mjs's own note: \"a number the scripts did not reproduce is a catch, not a pass\"). An absence has nothing to check. Two of the three links are therefore not re-checked and cannot make the build refuse. Additionally, the claim-equals-store refusal that the layer does have is switched off in this paper's own build (allowMismatch: true), so a mismatch is carried in red rather than refused. The first checker's suggestion describes the layer's actual behaviour and is warranted.",
+    "evidence": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml/src/review-page.js lines 676-680: for basis \"quote\", `throw new Error(... quote not found verbatim in the snapshot.)`; lines 711-720: basis \"derived\" and \"absence\" only push a review id and render a label (\"derived, not quoted\"; \"rests on absence: you cannot quote a source not having something\"), no check, no throw. Lines 170-176: claim mismatch throws only `if (!allowMismatch ...)`. /Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research/paper/review/build.mjs line 627: `allowMismatch: true`; line 549: the only build-side refusal is `QUOTE NOT IN SNAPSHOT ... process.exit(3)`; line 574 loads report/runs/*.json and passes them as `runs` with no exit on drift; line 583 note: \"a number the scripts did not reproduce is a catch, not a pass\". paper/review/regenerate.mjs lines 7-9: \"The snapshots are NOT replaced by default: a differing output is recorded as such ... --adopt writes it over the snapshot\"; line 63 `sameAsSnapshot`, line 70 prints \"DIFFERS from the snapshot\" without a nonzero exit. review-page.js line 244 renders that record as \"Output differs from the snapshot the page binds to\".",
+    "suggest": "The machine re-checks what it can at build time (a quote is verbatim in its snapshot, a claim equals the store) and refuses to emit the review page when such a check fails; a derivation is re-run by a recorded command whose record says whether the output still matches the snapshot the page binds to, and an absence is a declaration the page hands to the reader with the whole source as its only evidence."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p2ad866091584.inf5",
+   "first": {
+    "field": "para:p2ad866091584.inf5",
+    "verdict": "reword",
+    "reason": "The path exists (docs/review-protocol.md in abovebeyond-ai/vera) but the URL points at main, and main carries version 1.1 (2026-09-11, evening), not 1.0. The version 1.0 text survives only in the commit history. A reader who follows the link as printed finds a document that says 'Version 1.1' with a different step order, and the round this reading is being checked in already runs under 1.1 (the rounds log names 'protocol 1.1'). Either cite 1.1, or pin the link to the 1.0 commit.",
+    "evidence": "/Volumes/shanedeconinck.be/Projects/vera (remote git@github.com:abovebeyond-ai/vera.git), docs/review-protocol.md line 3: 'Version 1.1, 2026-09-11.' Changelog: '1.1 (2026-09-11, evening)...; 1.0 (2026-09-11): first statement'. git log: 536ce35 'Reviewprotocol 1.0', 62ba871 'Reviewprotocol 1.1'; origin/main is at 04400bd, which includes 62ba871. paper/review/report/rounds.txt lines 4-5: 'caught by resolver (workflow smoke run, protocol 1.1)'.",
+    "suggest": "Vera review protocol 1.1, https://github.com/abovebeyond-ai/vera/blob/main/docs/review-protocol.md (or keep 1.0 and pin the link to commit 536ce35: https://github.com/abovebeyond-ai/vera/blob/536ce35/docs/review-protocol.md)."
+   },
+   "second": {
+    "field": "para:p2ad866091584.inf5",
+    "verdict": "reword",
+    "reason": "Reproduced. The URL as printed resolves to main, and origin/main (04400bd, 2026-09-12) carries docs/review-protocol.md at \"Version 1.1, 2026-09-11\", whose round is nine steps (pull, bind, flag, resolve, edit once, rebuild and push once, repeat, read, judge). The paragraph names \"protocol 1.0\" and lists \"bind, flag, resolve, read, judge\", which is exactly the six-step loop of the 1.0 text (write, bind, flag, resolve, read, judge) that now exists only at commit 536ce35. So the version number and the step list describe 1.0 while the link delivers 1.1: a reader following the link cannot confirm either. Since the paragraph's description of the steps is 1.0's, the minimal correct fix is to pin the link to the 1.0 commit rather than rename the version (renaming to 1.1 would also make the step list in the same sentence inaccurate). Not a style remark: the statement as displayed is checkable and does not check out against what the link returns.",
+    "evidence": "/Volumes/shanedeconinck.be/Projects/vera (origin git@github.com:abovebeyond-ai/vera.git): `git log -1 origin/main` = 04400bd 2026-09-12 07:49; `git merge-base --is-ancestor 62ba871 origin/main` and `... 536ce35 origin/main` both true. docs/review-protocol.md on main, line 3: \"Version 1.1, 2026-09-11.\"; lines 18-43 list steps 1 Pull, 2 Bind, 3 Flag, 4 Resolve, 5 Edit once, 6 Rebuild/push once, 7 Repeat, 8 Read, 9 Judge; changelog lines 77-78: \"1.1 (2026-09-11, evening)... 1.0 (2026-09-11): first statement\". `git show 536ce35:docs/review-protocol.md` line 3: \"Version 1.0, 2026-09-11.\", steps 1 Write, 2 Bind, 3 Flag, 4 Resolve, 5 Read, 6 Judge. In proveml-research: paper/review/report/rounds.txt lines 4-5 and paper/review/readings.mjs line 4 already name \"protocol 1.1\".",
+    "suggest": "Vera review protocol 1.0, https://github.com/abovebeyond-ai/vera/blob/536ce35739a4c1979d3f69b229b4ebfa9ac78bae/docs/review-protocol.md (pin to the 1.0 commit; the step list \"bind, flag, resolve, read, judge\" in the same sentence is 1.0's, so keep the version and fix the link rather than the other way round)"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p2ad866091584.inf6",
+   "first": {
+    "field": "para:p2ad866091584.inf6",
+    "verdict": "reword",
+    "reason": "Neither version of the protocol lists these five steps. Version 1.0's loop is write, bind, flag, resolve, read, judge (six steps; the paper drops 'write'). Version 1.1, which is what the printed URL serves, is a round of nine: pull, bind, flag, resolve every flag before touching any text, edit once, rebuild and push once, repeat, read, judge. The five words the paper gives all occur in both, but as a summary of 'the protocol' they match neither, and under 1.1 they omit the ordering rule that the changelog says is the protocol.",
+    "evidence": "vera docs/review-protocol.md at 536ce35 (1.0), '## The loop': '1. Write. 2. Bind. 3. Flag. 4. Resolve. 5. Read. 6. Judge.' Current file (1.1), '## The round': '1. Pull 2. Bind 3. Flag 4. Resolve every flag before touching any text 5. Edit once 6. Rebuild, re-flag the edited paragraphs, push once 7. Repeat 8. Read 9. Judge', with 'The order is the protocol'.",
+    "suggest": "If citing 1.0: 'write, bind, flag, resolve, read, judge'. If citing 1.1: 'pull, bind, flag, resolve everything before editing anything, edit once, push once, read, judge'."
+   },
+   "second": {
+    "field": "para:p2ad866091584.inf6",
+    "verdict": "reword",
+    "reason": "Confirmed. The paper names version 1.0 and lists five steps as the protocol; 1.0's section \"The loop\" has six, beginning with Write, so the list drops the first step of the version it cites. The printed URL (blob/main) serves 1.1, whose \"The round\" has nine steps in a fixed order (pull, bind, flag, resolve all before editing, edit once, rebuild and push once, repeat, read, judge) and says the order is the protocol; the five words match that even less. The reading's own bar is an exact match with the protocol document, and neither version gives it. The rest of the sentence (a written rubric for the resolve step, a per-round measure ending the loop at zero) holds in both versions.",
+    "evidence": "/Volumes/shanedeconinck.be/Projects/vera, `git show 536ce35:docs/review-protocol.md` (1.0), \"## The loop\": \"1. **Write.** ... 2. **Bind.** ... 3. **Flag.** ... 4. **Resolve.** ... 5. **Read.** ... 6. **Judge.**\". Working tree and origin/main (04400bd, contains 62ba871), docs/review-protocol.md 1.1, \"## The round\": \"The order is the protocol ... 1. **Pull** ... 2. **Bind** ... 3. **Flag.** ... 4. **Resolve every flag before touching any text.** ... 5. **Edit once** ... 6. **Rebuild, re-flag the edited paragraphs, push once.** ... 7. **Repeat** ... 8. **Read** ... 9. **Judge.**\". Both versions keep \"## The measure, and when a round ends\" (\"the loop ends when it is zero\").",
+    "suggest": "Keep the citation to 1.0 and list its loop in full: \"write, bind, flag, resolve, read, judge\"; and since the link points at main, which now serves 1.1, add that the version at the link has since batched the round (resolve everything before editing anything, edit once, push once) and that the changelog records the change."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:rdfa.cited_p73da2bde21ab",
+   "first": {
+    "field": "citation:rdfa.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "As displayed, the quote carries only the lead of the sentence (tagging human-readable text for machines: 'machine-readable hints' on 'the visual information'). It says nothing about spans of prose being bound to entities in a structured vocabulary, and it cannot carry 'assumes the author meant it', which is a claim about what the Primer does not contain. The reader is shown one sentence about hints and asked to confirm a characterisation of vocabularies and of trust.",
+    "evidence": "Shown: 'it provides a set of markup attributes to augment the visual information on the Web with machine-readable hints' (Primer abstract). Available in the same archive, audit/references/raw/rdfa.html: abstract, next sentence: 'In this Primer, we show how to express data using RDFa in HTML, and in particular how to mark up existing human-readable Web page content to express machine-readable data'; section 2.1.1.1: 'She would like to use the terms defined in the Dublin Core vocabulary [dc11], a set of terms that are widely used by, for example, the publishing industry or libraries'; section on vocabularies: 'When each vocabulary term is a URL, a detailed explanation for the vocabulary term is just one click away.' No passage in the Primer mentions verifying or trusting the marked-up statements (search for 'verif', 'trust', 'assum': none).",
+    "suggest": "Quote the abstract's 'how to mark up existing human-readable Web page content to express machine-readable data' together with the Dublin Core vocabulary passage from 2.1.1.1 for 'binds spans of prose to entities in a structured vocabulary'; carry 'assumes the author meant it' as a reading on absence (basis: absence, scan the whole source), since no quote can show that the Primer never checks what it expresses."
+   },
+   "second": {
+    "field": "citation:rdfa.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "Confirmed, not refuted. The paper uses the Primer for three things: (1) tagging human-readable text for machine resolution, (2) binding spans of prose to entities in a structured vocabulary, (3) that RDFa \"assumes the author meant it\", i.e. expresses without checking. The single displayed quote (\"markup attributes to augment the visual information on the Web with machine-readable hints\") carries only (1). It contains no word for vocabulary, entity, term or span, so a reader with the archive out of reach cannot confirm (2), and (3) is a statement about what the Primer does not contain, which no quote can carry; it needs a basis of absence over the whole source. Partial is the right verdict: the lead of the sentence is supported as displayed, the second half is not.",
+    "evidence": "Reproduced from audit/references/raw/rdfa.html (tags stripped). Abstract, sentence after the quoted one: \"In this Primer, we show how to express data using RDFa in HTML, and in particular how to mark up existing human-readable Web page content to express machine-readable data.\" Section 2.1.1.1 \"Hints on Social Networking Sites\": \"She would like to use the terms defined in the Dublin Core vocabulary [dc11], a set of terms that are widely used by, for example, the publishing industry or libraries.\" Example 2 in the same section shows the binding literally: `<span property=\"http://purl.org/dc/terms/created\">2011-09-10</span>` followed by \"(Notice the markup colored in red: these are the RDFa 'hints'.)\" Section 2.1.1.1 further: \"By using URLs as identifiers, RDFa provides a solid way of disambiguating vocabulary terms.\" Case-insensitive counts over the whole archive: \"verif\" 0, \"trust\" 0, \"assum\" 0, \"author meant\" 0; the only two hits for \"check\" are the boilerplate \"Please check the errata\". Nothing in the Primer describes verifying, trusting or checking the marked-up statements.",
+    "suggest": "Keep the abstract quote for \"tagging human-readable text for machine resolution\" and add, for \"binds spans of prose to entities in a structured vocabulary\", the abstract's \"how to mark up existing human-readable Web page content to express machine-readable data\" plus the 2.1.1.1 Dublin Core vocabulary sentence (or Example 2's `<span property=\"http://purl.org/dc/terms/created\">` with the \"these are the RDFa 'hints'\" gloss, which shows a span bound to a vocabulary term directly). Carry \"assumes the author meant it\" as a separate reading with basis \"absence\" over the whole source (no occurrence of verify/trust/assume/check outside the errata boilerplate), since the claim is about what the Primer never does and a quote cannot show it."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p73da2bde21ab.inf2",
+   "first": {
+    "field": "para:p73da2bde21ab.inf2",
+    "verdict": "reword",
+    "reason": "The description of iXBRL is true (Inline XBRL embeds XBRL tags in an HTML document so they can be processed automatically), but as displayed the sentence dates it to 2009 and points at XBRL Validation 1.0, which is the assertion-testing spec, not iXBRL. Inline XBRL Part 1: Specification 1.1 is a Recommendation of 18 November 2013 (bib key ixbrl). The technical report cites the same sentence to ixbrl, not to xbrlvalidation2009.",
+    "evidence": "audit/references/raw/ixbrl.html abstract: 'Inline XBRL is a standard for embedding XBRL fragments into an HTML document ... XBRL tags which can be processed automatically by consuming applications', header 'Recommendation 18 November 2013'; paper/proveml.bib @misc{ixbrl, year 2013} vs @misc{xbrlvalidation2009, title Validation 1.0}; paper/proveml-technical-report.tex lines 175 and 772 cite \\citep{ixbrl} for this sentence.",
+    "suggest": "Cite the Inline XBRL specification: 'iXBRL embeds machine-readable tags in financial reports for automated audit (XBRL International, 2013)' with bib key ixbrl. If the 'automated audit' half needs its own source, Validation 1.0 (2009) supplies 'assertions that may be tested against the content of XBRL reports' and can be cited alongside, not instead."
+   },
+   "second": {
+    "field": "para:p73da2bde21ab.inf2",
+    "verdict": "reword",
+    "reason": "Confirmed. The description of iXBRL is true, but as displayed the sentence attributes it to \"XBRL International, 2009\", and the only 2009 XBRL International entries in the bibliography are the formula-linkbase assertion specs (Validation 1.0 and Value Assertions 1.0), not Inline XBRL. The archived Inline XBRL Part 1: Specification 1.1 is dated 18 November 2013 (bib key ixbrl), and its abstract carries the sentence directly; the technical report cites this same claim to ixbrl. The date/attribution is wrong, so the sentence should be reworded to cite ixbrl (2013).",
+    "evidence": "audit/references/raw/ixbrl.html header \"Inline XBRL Part 1: Specification 1.1 Recommendation 18 November 2013\", abstract \"Inline XBRL is a standard for embedding XBRL fragments into an HTML document ... making use of XBRL tags which can be processed automatically by consuming applications\"; audit/references/raw/xbrlvalidation2009.html header \"Validation 1.0 Recommendation 22 June 2009\", abstract \"the base syntax for expression of assertions that may be tested against the content of XBRL reports\" (no mention of inline tagging); paper/proveml.bib lines 106-111 @misc{ixbrl, year 2013} vs lines 795-800 @misc{xbrlvalidation2009, title Validation 1.0, year 2009}; paper/proveml-technical-report.tex lines 175 and 772 cite \\citep{ixbrl} for \"embeds machine-readable tags in human-readable financial reports\".",
+    "suggest": "\"iXBRL embeds machine-readable tags in financial reports for automated audit (XBRL International, 2013)\", bound to bib key ixbrl, quoting the abstract of audit/references/raw/ixbrl.html: \"Inline XBRL is a standard for embedding XBRL fragments into an HTML document ... XBRL tags which can be processed automatically by consuming applications\". If \"automated audit\" needs its own support, add xbrlvalidation2009 alongside (\"assertions that may be tested against the content of XBRL reports\"), not in place of ixbrl."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p73da2bde21ab.inf6",
+   "first": {
+    "field": "para:p73da2bde21ab.inf6",
+    "verdict": "reword",
+    "reason": "'A wrong number is impossible' overstates what substitution guarantees. The SymGen paper itself says references can point to the wrong field (reference accuracy 99.77% and 99.52%, not 100%) and that it 'cannot completely ensure the avoidance of hallucinations'; the technical report states the property precisely as 'cannot produce a wrong value for a reference that resolves' and found 22% of SymGen's educational references addressing a nonexistent path. What is impossible is a fabricated value; a wrong-field number is not.",
+    "evidence": "audit/references/raw/symgen.html section 4.1: 'symbolic references may be incorrect even when the final text is accurate ... a symbolic reference is made to the wrong field', accuracy '99.77% and 99.52%'; section 6: 'it cannot completely ensure the avoidance of hallucinations'. paper/proveml-technical-report.tex line 678: 'Substitution cannot produce a wrong value for a reference that resolves --- SymGen's value-error count is zero by construction'; line 697: '306 of its 1,392 educational references (22%) address a path that does not exist'.",
+    "suggest": "'... the model emits references and a parser substitutes the values, so a fabricated value is impossible and so is reporting one; a reference to the wrong field remains possible'."
+   },
+   "second": {
+    "field": "para:p73da2bde21ab.inf6",
+    "verdict": "reword",
+    "reason": "Confirmed. \"A wrong number is impossible\" is broader than what the repository's own technical report claims for SymGen. The report states the property narrowly (\"cannot produce a wrong value for a reference that resolves\") and in the same passage records that the model can still choose the wrong path: 22% of SymGen's educational references address a nonexistent path and render as \"undefined\", and \"neither approach prevents a model from choosing the wrong path\". A reference that resolves to the wrong field puts a real but wrong number in the delivered sentence; the archived SymGen paper says so itself (reference accuracy 99.77% / 99.52%, not 100%; \"a symbolic reference is made to the wrong field\") and additionally shows the model computing a wrong number inside a Jinja expression (Fig. 9B, \"the model incorrectly increments the values by one\"). What substitution rules out is a transcribed or invented value, and that is also the class the report says SymGen \"cannot produce, and equally cannot report\", so the second half of the sentence survives. The first half should name the narrower property.",
+    "evidence": "paper/proveml-technical-report.tex line 678: \"Substitution cannot produce a wrong value for a reference that resolves --- SymGen's value-error count is zero by construction\"; line 697: \"306 of its 1,392 educational references (22%) address a path that does not exist, and each of those renders as the literal string undefined\"; line 699: \"Neither approach prevents a model from choosing the wrong path ... 40 of them wrong values --- a class SymGen cannot produce, and equally cannot report\". audit/references/raw/symgen.html section 4.1: \"symbolic references may be incorrect even when the final text is accurate; for example if two fields in our data have the same value, but a symbolic reference is made to the wrong field\"; \"the accuracy of SymGen is 99.77% and 99.52%\"; section 6: \"it cannot completely ensure the avoidance of hallucinations\"; Appendix F / Figure 9: \"In A SymGen makes an error ... when the model needs to add up two values; in B, the model incorrectly increments the values by one.\"",
+    "suggest": "\"... the model emits references and a parser substitutes the values, so a fabricated value is impossible and so is reporting one; a reference to the wrong field, or one that resolves to nothing, remains possible\" (or cite the technical report's own phrasing: substitution cannot produce a wrong value for a reference that resolves)."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p73da2bde21ab.inf7",
+   "first": {
+    "field": "para:p73da2bde21ab.inf7",
+    "verdict": "reword",
+    "reason": "The technical report does compare SymGen with ProveML, but on 'identical models, prompts and data', not identical runs: ProveML's responses passed through up to three correction loops while SymGen generated in a single pass, an asymmetry the report names. And 'the two' is ambiguous after a sentence about PCN and SymGen; the report explicitly did not compare PCN.",
+    "evidence": "paper/proveml-technical-report.tex line 693 (table caption): 'SymGen reimplementation against ProveML on identical models, prompts and data (4 models x 3 runs each)'; line 674: 'ProveML's delivered responses passed through up to three correction loops, while SymGen generated in a single pass'; line 676: 'We baseline against SymGen rather than the nearer neighbour, Proof-Carrying Numbers ... we did not attempt it'. Run files experiments/symgen-results-*-run{1,2,3}.json.",
+    "suggest": "'the technical report compares SymGen's substitution with ProveML on identical models, prompts and data'."
+   },
+   "second": {
+    "field": "para:p73da2bde21ab.inf7",
+    "verdict": "reword",
+    "reason": "Reproduced: the technical report compares SymGen with ProveML, but not on \"identical runs\". The SymGen baseline is a separate set of generations (its own script and result files, timestamped 2026-07-31, system \"symgen-direct-reimplementation\") made under the same models, prompts, fact stores and context slices as the ProveML runs; the report's own wording is \"identical models, prompts and data\", and it names a run-level asymmetry (ProveML responses passed through up to three correction loops, SymGen a single pass). \"Identical runs\" therefore claims more than the record holds. The secondary point also stands: after a sentence naming PCN and SymGen, \"the two\" can be read as PCN versus SymGen, whereas the report explicitly did not compare PCN. The first checker's reword is warranted; nothing found that refutes it.",
+    "evidence": "paper/proveml-technical-report.tex line 693 (table caption): \"SymGen reimplementation against ProveML on identical models, prompts and data (4 models × 3 runs each)\"; line 674: \"We reimplemented its Direct strategy against the same fact stores, prompts, context slices and models used above ... One asymmetry remains: ProveML's delivered responses passed through up to three correction loops, while SymGen generated in a single pass\"; line 676: \"We baseline against SymGen rather than the nearer neighbour, Proof-Carrying Numbers ... we did not attempt it\". experiments/run-symgen-baseline.sh (header: \"same models, benchmarks and runs as the ProveML experiments, so the two systems differ only in markup mechanism\"; separate generation loop calling test-symgen-baseline.js); experiments/symgen-results-education-haiku-run1.json (\"system\": \"symgen-direct-reimplementation\", \"timestamp\": \"2026-07-31T23:08:03.044Z\") and the other 23 symgen-results-*-run{1,2,3}.json files, distinct from the ProveML run files.",
+    "suggest": "the technical report compares SymGen's substitution with ProveML on identical models, prompts and data"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:claimlocked2026.cited_p73da2bde21ab",
+   "first": {
+    "field": "citation:claimlocked2026.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "The displayed quote carries the mechanism clause (numbers, direction and allowed language strength fixed before the LLM writes connective prose). It does not carry the second clause, that the work shares the premise that qualitative wording must be tied to a declared threshold; the abstract supports that through the failure it targets ('restate thresholded contrasts as categorical effects'), which is not shown. The closing clause about not auditing text it did not produce is the paper's own inference and is not something the source states.",
+    "evidence": "audit/references/raw/claimlocked2026.html abstract: 'statistical reports can still drift numerical values, invert effect directions, or restate thresholded contrasts as categorical effects ... the evidence-bearing content of a scientific report should be fixed by structured statistical results rather than sampled during prose generation'. Only the abstract page is archived (about 4.7k characters).",
+    "suggest": "Add a second quote: 'statistical reports can still drift numerical values, invert effect directions, or restate thresholded contrasts as categorical effects' to carry the shared-premise clause."
+   },
+   "second": {
+    "field": "citation:claimlocked2026.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "Confirmed. The displayed quote carries the mechanism clause verbatim (evidence source, numbers, direction and allowed language strength fixed before the LLM writes only connective prose). It does not carry the clause that the work shares ProveML's premise that qualitative wording must be tied to a declared threshold: the quote binds language strength to evidence, numbers and direction, and never mentions a threshold. The archive supports that clause only through the failure the protocol targets (\"restate thresholded contrasts as categorical effects\"), which is not shown. The closing clause about not auditing text it did not produce is the paper's own inference from the mechanism and needs no quote. Attempted refutation (\"allowed language strength\" already governs qualitative wording) fails because the sentence's specific claim is the tie to a threshold, and the word appears in the archive only in the failure clause.",
+    "evidence": "audit/references/raw/claimlocked2026.html (arXiv abstract page only, 4,692 characters of text after stripping markup): \"statistical reports can still drift numerical values, invert effect directions, or restate thresholded contrasts as categorical effects. We frame these failures as a control problem: the evidence-bearing content of a scientific report should be fixed by structured statistical results rather than sampled during prose generation. [...] We propose claim-locked reporting, a provenance-before-prose protocol that fixes the evidence source, numbers, direction, and allowed language strength of each reportable claim before the LLM writes only connective prose.\" The displayed quote and the proposed second quote both occur verbatim in this text; the word \"threshold\" occurs nowhere else in the archive.",
+    "suggest": "Add a second quote from the abstract: \"statistical reports can still drift numerical values, invert effect directions, or restate thresholded contrasts as categorical effects\", so the shared-premise clause (qualitative wording tied to a declared threshold) is carried by what the reader sees."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:verifin2026.cited_p73da2bde21ab",
+   "first": {
+    "field": "citation:verifin2026.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "The quotes carry 'XBRL facts' and 'checks claims using Z3' (Z3 is an SMT solver, though the abstract never uses the term). They do not carry 'placing the arithmetic in the verifier': the abstract's statement that VeriFin derives the calculations itself and reports solver-derived unsatisfiable cores naming the formula is what shows the arithmetic sits in the verifier, and it is not shown.",
+    "evidence": "audit/references/raw/verifin2026.html abstract: 'derives calculations from the question, filing linkbases, or documented metric definitions, and checks claims using Z3. When a claim is inconsistent, solver-derived unsatisfiable cores identify the conflicting facts, formula, and candidate value'.",
+    "suggest": "Add the quote 'derives calculations from the question, filing linkbases, or documented metric definitions' (and optionally 'solver-derived unsatisfiable cores identify the conflicting facts, formula, and candidate value') to carry the arithmetic-in-the-verifier clause."
+   },
+   "second": {
+    "field": "citation:verifin2026.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "Confirmed. The sentence uses VeriFin for three things: XBRL facts as ground, an SMT solver as checker, and the arithmetic sitting in the verifier (the contrast with ProveML's data layer). The two displayed quotes carry the first two (\"grounds operands in filed XBRL facts\"; \"checks claims using Z3\", Z3 being an SMT solver even though the abstract never says the term). Neither displayed quote shows that VeriFin's verifier itself establishes the calculation: a reader seeing only \"grounds operands\" and \"checks claims using Z3\" cannot rule out that the comparison is against precomputed values. The abstract does carry that clause, in a passage not shown: the verifier \"must ... establish the authorized calculation\" and VeriFin \"derives calculations from the question, filing linkbases, or documented metric definitions\". The first checker's quote reproduces verbatim in the archive; the addition is warranted, the wording of the sentence is not at fault.",
+    "evidence": "audit/references/raw/verifin2026.html, abstract (block 18): \"a verifier must ground the relevant facts, establish the authorized calculation, and determine whether the candidate value follows from both. We propose VeriFin, a neurosymbolic verification framework for numerical financial question answering that grounds operands in filed XBRL facts, derives calculations from the question, filing linkbases, or documented metric definitions, and checks claims using Z3. When a claim is inconsistent, solver-derived unsatisfiable cores identify the conflicting facts, formula, and candidate value\".",
+    "suggest": "Add the verbatim quote \"derives calculations from the question, filing linkbases, or documented metric definitions\" (abstract, block 18) alongside the two existing quotes, so the displayed passage carries \"placing the arithmetic in the verifier\". Optionally also \"solver-derived unsatisfiable cores identify the conflicting facts, formula, and candidate value\". No change to the paper's sentence."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p73da2bde21ab.inf13",
+   "first": {
+    "field": "para:p73da2bde21ab.inf13",
+    "verdict": "reword",
+    "reason": "The sentence says Yang et al. measure the failure class the residual errors belong to, namely values miscited from a table. The repository's own classification of the frontier residue says otherwise: experiments/frontier-residuals.mjs classifies 66% (Opus 5), 71% (Sonnet 5) and 75% (DeepSeek V4 Pro) of the residual errors as 'student-field-under-offering', a pupil field bound to the class entity by the carry-forward rule, i.e. a scoping error in the markup where the stated value is the pupil's; only 23 to 28% are 'wrong-value' (path exists, number does not match), which is the class Yang et al. call a data referencing error. The context was also handed to the models as JSON (experiments/test-convergence.js line 191, JSON.stringify(promptContext)), not as a table.",
+    "evidence": "node experiments/frontier-residuals.mjs: 'claude-opus-5: 71 residual errors ... binding: 47 (66%) ... wrong value: 20 (28%)'; 'claude-sonnet-5: 82 ... binding: 58 (71%) ... wrong value: 19 (23%)'; 'deepseek ... binding: 3 (75%) ... wrong value: 1 (25%)'. Script header defines the binding class as 'a pupil field ... bound to an offering entity: the sentence named the pupil, then the class, and linear carry-forward chose the class'. Yang et al. abstract (audit/references/raw/datareferencing2026.html): 'data referencing errors (DREs), i.e., incorrectly citing or omitting table values'.",
+    "suggest": "measure a neighbouring failure class, values miscited from a table the model was shown, which covers the wrong-value part of our residue (roughly a quarter) but not the entity-binding errors that dominate it; they detect it with a trained critic, ProveML detects it with a lookup."
+   },
+   "second": {
+    "field": "para:p73da2bde21ab.inf13",
+    "verdict": "reword",
+    "reason": "Reproduced. The sentence asserts that Yang et al. measure \"the failure class our residual errors belong to\", a single class. The repository's own accounting says the residue is not one class and that the dominant part is not the one Yang et al. measure. Running experiments/frontier-residuals.mjs gives, for the frontier runs, 66% (Opus 5), 71% (Sonnet 5) and 75% (DeepSeek V4 Pro) of residual errors as \"student-field-under-offering\" (status field-not-found on an offering path for a pupil field: the reference points at a cell that does not exist because carry-forward bound the pupil's field to the class), against 28%, 23% and 25% \"wrong-value\" (value-mismatch: the path exists, the number does not). The technical report says the same for the earlier models: \"Most residual failures are addressability errors rather than value mismatches\" (line 196) and \"residual failures are dominated by addressability errors --- 75--82\\% of the residue --- rather than value mismatches\" (line 605). Yang et al.'s class, as the archive quotes it, is \"data referencing errors (DREs), i.e., incorrectly citing or omitting table values\", which is the wrong-value part of the residue, roughly a quarter. The archived source is the arXiv abstract page only, so nothing in reach shows their taxonomy covering a markup-scoping error. The first checker's secondary point also holds: the context is handed to the model as JSON (experiments/test-convergence.js line 191, JSON.stringify(promptContext)), so \"table\" should be qualified if the sentence keeps it. The suggested wording is warranted; I would not soften it further.",
+    "evidence": "node experiments/frontier-residuals.mjs (run 2026-09-12): \"claude-opus-5: 71 residual errors on 14 non-converged query-runs; binding: 47 (66%) in 6 query-runs; threshold-as-fact: 2 (3%); wrong value: 20 (28%); other: 2 (3%)\"; \"claude-sonnet-5: 82 residual errors ... binding: 58 (71%) ... wrong value: 19 (23%) ...\"; \"deepseek-ai/DeepSeek-V4-Pro-0813: 4 residual errors ... binding: 3 (75%) ... wrong value: 1 (25%)\". Script header (lines 5-9) defines the binding class as \"a pupil field (passRate, passed, evaluated, total, absent) bound to an offering entity: the sentence named the pupil, then the class, and linear carry-forward chose the class\". Raw errors in experiments/convergence-results-frontier-claude-sonnet-5-run1.json are {\"status\":\"field-not-found\",\"errorClass\":\"reference\",\"path\":\"offering:10056.evaluated\"} etc., not value-mismatch. paper/proveml-technical-report.tex line 196: \"Most residual failures are addressability errors rather than value mismatches\"; line 605: \"residual failures are dominated by addressability errors --- 75--82\\% of the residue --- rather than value mismatches\". audit/references/related-work-claims.json (id datareferencing2026) quotes the abstract: \"data referencing errors (DREs), i.e., incorrectly citing or omitting table values\"; audit/references/raw/datareferencing2026.html is the arXiv abs page (abstract only). experiments/test-convergence.js line 191: const promptContextJson = JSON.stringify(promptContext, null, 2), passed as \"DATA:\" in the prompt.",
+    "suggest": "measure a neighbouring failure class, values miscited from a table the model was shown, which covers the wrong-value part of our residue (roughly a quarter) but not the entity-binding errors that dominate it; they detect it with a trained critic, ProveML detects it with a lookup."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:fever.cited_p73da2bde21ab",
+   "first": {
+    "field": "citation:fever.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "The displayed quotes show that FEVER labels claims Supported/Refuted/NotEnoughInfo, which carries 'fact verification against evidence', but the second quote attributes the judgment to human annotators and a Fleiss kappa; nothing shown carries 'a trained model judges support', the half of the sentence that sets up the contrast with ProveML's lookup. The archive does carry it elsewhere.",
+    "evidence": "Shown: 'claims are classified as Supported, Refuted or NotEnoughInfo' / 'by annotators achieving 0.6841 in Fleiss'. Archive abstract (audit/references/raw/fever.html) also has: 'a new publicly available dataset for verification against textual sources' and 'we develop a pipeline approach and compare it to suitably designed oracles. The best accuracy we achieve on labeling a claim accompanied by the correct evidence is 31.87%'.",
+    "suggest": "Quote instead: 'a new publicly available dataset for verification against textual sources' and 'we develop a pipeline approach and compare it to suitably designed oracles. The best accuracy we achieve on labeling a claim accompanied by the correct evidence is 31.87%'; drop the annotator/Fleiss line, which points at human judgment rather than a model."
+   },
+   "second": {
+    "field": "citation:fever.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "Confirmed. The sentence uses FEVER for two things: a benchmark for fact verification against evidence, and a lineage \"in which a trained model judges support\". As displayed, the first quote carries the Supported/Refuted/NotEnoughInfo labels (fact verification), but the second quote (\"by annotators achieving 0.6841 in Fleiss\") attributes the judgment to human annotators, which works against the \"trained model judges support\" half rather than for it. Nothing shown mentions a model, pipeline, or system accuracy. The archive does carry that half in the same abstract block, so the fix is a requoting, not a change to the sentence.",
+    "evidence": "Reading quotes: \"claims are classified as Supported, Refuted or NotEnoughInfo\" / \"by annotators achieving 0.6841 in Fleiss\" (abstract, block 55). Archive audit/references/raw/fever.html, same abstract, verbatim: \"a new publicly available dataset for verification against textual sources, FEVER: Fact Extraction and VERification\" and \"To characterize the challenge of the dataset presented, we develop a pipeline approach and compare it to suitably designed oracles. The best accuracy we achieve on labeling a claim accompanied by the correct evidence is 31.87%\". Both located in the archived HTML by grep; the first checker's citations reproduce.",
+    "suggest": "Replace the quotes with: \"a new publicly available dataset for verification against textual sources\" and \"we develop a pipeline approach and compare it to suitably designed oracles. The best accuracy we achieve on labeling a claim accompanied by the correct evidence is 31.87%\". Keep \"claims are classified as Supported, Refuted or NotEnoughInfo\" if a third quote is allowed; drop the annotator/Fleiss line, which points at human judgment."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:tabfact.cited_p73da2bde21ab",
+   "first": {
+    "field": "citation:tabfact.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "The quotes establish TabFact as a benchmark of statements verified against table evidence (ENTAILED/REFUTED), but show nothing about a trained model doing the judging, which is what the sentence uses the lineage for.",
+    "evidence": "Shown: '16k Wikipedia tables as the evidence for 118k human-annotated natural language statements' / 'labeled as either ENTAILED or REFUTED'. Archive abstract (audit/references/raw/tabfact.html) also has: 'we design two different models: Table-BERT and Latent Program Algorithm (LPA). Table-BERT leverages the state-of-the-art pre-trained language model to encode the linearized tables and statements into continuous vectors for verification'.",
+    "suggest": "Add the quote 'we design two different models: Table-BERT and Latent Program Algorithm (LPA). Table-BERT leverages the state-of-the-art pre-trained language model to encode the linearized tables and statements into continuous vectors for verification' to carry 'a trained model judges support'."
+   },
+   "second": {
+    "field": "citation:tabfact.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "Confirmed. The sentence uses TabFact for two things: a benchmark of fact verification against evidence, and a lineage \"in which a trained model judges support\". The two quotes shown carry the first (tables as evidence, statements labeled ENTAILED or REFUTED) but say nothing about who or what does the judging; as displayed, \"a trained model judges support\" rests on nothing. The archive carries it two sentences later in the same abstract, and the passage is verbatim, so the fix is an added quote, not a change to the sentence.",
+    "evidence": "Shown: \"16k Wikipedia tables as the evidence for 118k human-annotated natural language statements\" / \"labeled as either ENTAILED or REFUTED\" (abstract, block 18). Reproduced in audit/references/raw/tabfact.html, same abstract, immediately following: \"To address these reasoning challenges, we design two different models: Table-BERT and Latent Program Algorithm (LPA). Table-BERT leverages the state-of-the-art pre-trained language model to encode the linearized tables and statements into continuous vectors for verification.\"",
+    "suggest": "Add the verbatim quote \"we design two different models: Table-BERT and Latent Program Algorithm (LPA). Table-BERT leverages the state-of-the-art pre-trained language model to encode the linearized tables and statements into continuous vectors for verification\" (abstract, audit/references/raw/tabfact.html) so the displayed passage carries \"a trained model judges support\". No change to the sentence."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:feverous.cited_p73da2bde21ab",
+   "first": {
+    "field": "citation:feverous.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "The quotes show the dataset size and that evidence is sentences and table cells, which carries the benchmark part; neither quote shows a model predicting the verdict, so 'a trained model judges support' is uncarried as displayed.",
+    "evidence": "Shown: 'consists of 87,026 verified claims' / 'evidence in the form of sentences and/or cells from tables'. Archive abstract (audit/references/raw/feverous.html) also has: 'we develop a baseline for verifying claims against text and tables which predicts both the correct evidence and verdict for 18% of the claims' and 'a label indicating whether this evidence supports, refutes, or does not provide enough information to reach a verdict'.",
+    "suggest": "Replace the size quote with 'we develop a baseline for verifying claims against text and tables which predicts both the correct evidence and verdict for 18% of the claims'."
+   },
+   "second": {
+    "field": "citation:feverous.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "Confirmed. The sentence uses FEVEROUS for two things: a benchmark in the fact-verification-against-evidence lineage, and the shared design \"in which a trained model judges support\". As displayed, \"consists of 87,026 verified claims\" and \"evidence in the form of sentences and/or cells from tables\" carry the first (a verified-claim dataset with evidence) but neither quote mentions a model, a baseline or a verdict prediction, so the second use is uncarried on the page. The size quote in particular does no work for the sentence; the archive has a passage that does.",
+    "evidence": "Reproduced in audit/references/raw/feverous.html (abstract): \"consists of 87,026 verified claims\" and \"evidence in the form of sentences and/or cells from tables in Wikipedia\" are verbatim; the same abstract continues \"a label indicating whether this evidence supports, refutes, or does not provide enough information to reach a verdict\" and \"we develop a baseline for verifying claims against text and tables which predicts both the correct evidence and verdict for 18% of the claims\", which is the only passage naming a model judging support.",
+    "suggest": "Keep the evidence quote and replace \"consists of 87,026 verified claims\" with \"we develop a baseline for verifying claims against text and tables which predicts both the correct evidence and verdict for 18% of the claims\"."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:alignscore.cited_p73da2bde21ab",
+   "first": {
+    "field": "citation:alignscore.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "The single quote says AlignScore rests on an information-alignment function; as displayed it does not say the work checks factual consistency of generated text or produces a score, so it does not carry 'probabilistic faithfulness checker ... score responses after generation'.",
+    "evidence": "Shown: 'AlignScore is based on a general function of information alignment'. Archive abstract (audit/references/raw/alignscore.html) also has: 'Many text generation applications require the generated text to be factually consistent with input information. Automatic evaluation of factual consistency is challenging' and 'we propose AlignScore, a new holistic metric that applies to a variety of factual inconsistency scenarios'.",
+    "suggest": "Quote 'we propose AlignScore, a new holistic metric that applies to a variety of factual inconsistency scenarios' together with 'Many text generation applications require the generated text to be factually consistent with input information'."
+   },
+   "second": {
+    "field": "citation:alignscore.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "Confirmed. The sentence uses Zha et al. as an example of a probabilistic faithfulness checker that scores generated text. The single displayed quote says only that AlignScore rests on a function of information alignment between two text pieces; as displayed it does not say the work evaluates factual consistency of generated text or that it is a metric/score, so the reader cannot see the \"faithfulness checker\" use from the quote alone. The archive carries that use one sentence earlier in the same abstract, so the fix is a better quote, not a change to the sentence.",
+    "evidence": "Shown quote: \"AlignScore is based on a general function of information alignment\". Archive audit/references/raw/alignscore.html (abstract): \"Many text generation applications require the generated text to be factually consistent with input information. Automatic evaluation of factual consistency is challenging.\" and \"In this paper, we propose AlignScore, a new holistic metric that applies to a variety of factual inconsistency scenarios as above. AlignScore is based on a general function of information alignment between two arbitrary text pieces.\" Title in archive: \"AlignScore: Evaluating Factual Consistency with A Unified Alignment Function\".",
+    "suggest": "Replace or extend the quote with \"In this paper, we propose AlignScore, a new holistic metric that applies to a variety of factual inconsistency scenarios as above. AlignScore is based on a general function of information alignment between two arbitrary text pieces.\" (abstract, same block), optionally preceded by \"Automatic evaluation of factual consistency is challenging.\""
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:evergreen2026.cited_p73da2bde21ab",
+   "first": {
+    "field": "citation:evergreen2026.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "The quote carries 'verifies claims as queries' but nothing shown carries 'aggregate claims over relational data', the part that makes the contrast with ProveML's materialised facts.",
+    "evidence": "Shown: 'recasts claim verification as a semantic query processing task'. Archive abstract (audit/references/raw/evergreen2026.html) also has: 'semantic aggregation has become a primitive operator, enabling the reduction of a relation into a natural language aggregate using an LLM. However, the resulting semantic aggregate may contain claims that are not grounded in the underlying relation' and 'Evergreen compiles each claim into a declarative semantic verification query that can execute on the same query engine used to produce the aggregate'.",
+    "suggest": "Add the quote 'Evergreen compiles each claim into a declarative semantic verification query that can execute on the same query engine used to produce the aggregate', or 'the resulting semantic aggregate may contain claims that are not grounded in the underlying relation'."
+   },
+   "second": {
+    "field": "citation:evergreen2026.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "Confirmed. The sentence uses Evergreen for three things: that it verifies claims, that it does so as queries, and that the claims are aggregate claims over relational data. The single quote shown (\"recasts claim verification as a semantic query processing task\") carries the first two but says nothing about aggregates or relations, and that is the half the contrast with ProveML rests on (ProveML binds only once the aggregate is materialised as a fact). As displayed, a reader cannot see that Evergreen's claims are aggregates over a relation. The archive carries it in the same abstract, one and two sentences away, so the fix is a second quote, not a rewording of the sentence.",
+    "evidence": "Reading shows one quote: \"recasts claim verification as a semantic query processing task\" (abstract, block 19). Archive audit/references/raw/evergreen2026.html, abstract, reproduced: \"semantic aggregation has become a primitive operator, enabling the reduction of a relation into a natural language aggregate using an LLM. However, the resulting semantic aggregate may contain claims that are not grounded in the underlying relation.\" and \"Evergreen compiles each claim into a declarative semantic verification query that can execute on the same query engine used to produce the aggregate.\" Content words \"aggregate\" and \"relation\" appear in neither shown quote.",
+    "suggest": "Keep the shown quote and add from the same abstract: \"Evergreen compiles each claim into a declarative semantic verification query that can execute on the same query engine used to produce the aggregate\" (carries aggregate + query), or \"the resulting semantic aggregate may contain claims that are not grounded in the underlying relation\" (carries aggregate + relation)."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:fullcite2026.cited_p73da2bde21ab",
+   "first": {
+    "field": "citation:fullcite2026.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "The quote carries 'structured inline citation' but the sentence uses the work as 'the constrained-generation route', and nothing shown mentions constrained decoding. The archive does: constrained decoding over a citation grammar is one of FullCite's three strategies (alongside prompt-based generation and posthoc alignment).",
+    "evidence": "Shown: 'generates structured inline citations linking each claim to both its source document and supporting evidence'. Archive abstract (audit/references/raw/fullcite2026.html) also has: 'FullCite proposes three strategies to inline citation generation: prompt-based generation, constrained decoding over a citation grammar, and posthoc span alignment'.",
+    "suggest": "Add the quote 'FullCite proposes three strategies to inline citation generation: prompt-based generation, constrained decoding over a citation grammar, and posthoc span alignment' so the constrained-generation label is carried; since constrained decoding is one of three strategies, consider 'structured inline citation (in its constrained-decoding form, ...)'."
+   },
+   "second": {
+    "field": "citation:fullcite2026.cited_p73da2bde21ab",
+    "verdict": "partial",
+    "reason": "Confirmed. The displayed quote carries the label the paper attaches to the work (\"structured inline citation\") but not the predicate the sentence puts on it: that it is a \"constrained-generation route\". Nothing shown mentions decoding, grammar or constraint, so a reader with only this quote cannot see why FullCite sits beside decode-time grammars on that route. The archive does carry it, in the sentence immediately following the quoted one: FullCite's three strategies include \"constrained decoding over a citation grammar\". The paper's wording is not false (one of the three strategies is constrained decoding, so grouping it under that route is a fair summary); the defect is in the quote selection, so the text need not change once the second quote is shown.",
+    "evidence": "Reading shows only: \"generates structured inline citations linking each claim to both its source document and supporting evidence\" (abstract, block 18 of 128). Archive audit/references/raw/fullcite2026.html, abstract, next sentence: \"FullCite proposes three strategies to inline citation generation: prompt-based generation, constrained decoding over a citation grammar, and posthoc span alignment.\" Reproduced by stripping the HTML and searching for \"constrained\".",
+    "suggest": "Add the adjacent abstract sentence as a second quote: \"FullCite proposes three strategies to inline citation generation: prompt-based generation, constrained decoding over a citation grammar, and posthoc span alignment.\" With that shown, the sentence stands as written; the first checker's optional rewording (\"in its constrained-decoding form\") is not required by the evidence and can be left out."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p73da2bde21ab.inf24",
+   "first": {
+    "field": "para:p73da2bde21ab.inf24",
+    "verdict": "false",
+    "reason": "The technical report does not discuss the 2026 neighbours this paragraph names at all: claim-locked reporting (Fan et al.), VeriFin (Hall et al.), decode-time grammars (Zhang et al.) and structured inline citation (Yeginbergen et al.) have zero mentions, and Proof-Carrying Numbers appears in one sentence only, as the baseline not chosen. Only SymGen, RDFa, iXBRL and the schema validators are treated in full. Whether Table 5 exists in the short paper cannot be checked under this run's evidence boundary.",
+    "evidence": "grep over paper/proveml-technical-report.tex: claimlocked2026 0, verifin2026 0, dtg2026 0, fullcite2026 0, 'VeriFin' 0, 'Claim-locked' 0, 'decode-time' 0; pcn2025 appears only at line 676 ('We baseline against SymGen rather than the nearer neighbour, Proof-Carrying Numbers'); symgen 21 mentions; related-work paragraphs at lines 768 to 774 cover schema validation, inline tagging and provenance standards.",
+    "suggest": "Table 5 places the neighbours; the technical report discusses the older lineage (RDFa, iXBRL, SymGen, schema validators) in full, while the 2026 systems are treated only here."
+   },
+   "second": {
+    "field": "para:p73da2bde21ab.inf24",
+    "verdict": "false",
+    "reason": "Reproduced independently. The paragraph names, as recent neighbours, Proof-Carrying Numbers, SymGen, Claim-locked reporting (Fan et al. 2026), VeriFin (Hall et al. 2026) and Yang et al. 2026 (the paragraph is cut there; the bib also carries Yeginbergen et al. 2026 and Zhang et al. 2026 in the same 2026 block). The technical report treats the older lineage in full (RDFa, iXBRL, SymGen with a reimplemented baseline, PCN in the related-work paragraph, the comparison table and the baseline discussion) but contains no mention whatsoever of any 2026 system: the cite keys claimlocked2026, verifin2026, datareferencing2026, fullcite2026 and dtg2026 and the surface names VeriFin, Claim-locked, Decode-Time, Yang, Zhang, Yeginbergen all return zero hits. \"Discusses each in full\" is therefore false for at least three of the neighbours the paragraph itself names. One correction to the first checker's evidence, which does not change the verdict: PCN is not confined to one sentence; it also has a full sentence in Related Work (line 772) and a row in the comparison table (line 790), so PCN belongs with the neighbours the report does cover. Whether Table 5 exists cannot be checked under this run's evidence boundary, so the suggestion leaves that half as written.",
+    "evidence": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research/paper/proveml-technical-report.tex: grep -c for claimlocked, verifin, VeriFin, Claim-locked, decode-time, dtg2026, fullcite, Yang, Zhang, Yeginbergen, \"Fan et\", \"Hall et\" all 0; pcn2025 2 (lines 676 and 772), PCN 2 (line 790 table row), SymGen 16, iXBRL 7, RDFa 1 (line 772). Related Work is lines 758 to 774 (paragraphs: fact-checking family, schema, inline tagging, provenance standards); the comparison table at lines 780 to 795 lists iXBRL, SymGen, PCN, FinGround and ProveML, no 2026 system. paper/proveml.bib lines 537 to 570 give the 2026 entries: Fan et al. (claimlocked2026), Hall et al. (verifin2026), Yang et al. (datareferencing2026), Yeginbergen et al. (fullcite2026), Zhang et al. (dtg2026).",
+    "suggest": "Table 5 places the neighbours; the technical report discusses the older lineage (RDFa, iXBRL, Proof-Carrying Numbers, SymGen) in full, while the 2026 systems are treated only here."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p8a3191557346.inf3",
+   "first": {
+    "field": "para:p8a3191557346.inf3",
+    "verdict": "reword",
+    "reason": "The phrase itself is right (UCUM is a code system for units of measure) but the citation attached to it in the displayed sentence is wrong: SIX Financial Information is the ISO 4217 maintenance agency; UCUM is by Schadow and McDonald (Regenstrief Institute and the UCUM Organization, version 2.2, 2024). The two citations in the sentence are swapped relative to the bibliography and the technical report.",
+    "evidence": "paper/proveml.bib line 825: @misc{ucum, author = {Schadow, Gunther and McDonald, Clement J.}, ... Regenstrief Institute and the UCUM Organization, year 2024}; line 832: @misc{iso4217, author = {{SIX Financial Information}}, ... Maintenance Agency for ISO 4217, year 2026}. paper/proveml-technical-report.tex line 912: 'UCUM~\\citep{ucum}, ISO 4217~\\citep{iso4217}'. audit/references/raw/ucum.html header: 'Gunther Schadow ... Clement J. McDonald ... Version: 2.2 ... Date: 2024-06-17 Copyright 1998-2024, Regenstrief Institute, Inc. and the UCUM Organization'.",
+    "suggest": "UCUM for units of measure (Schadow and McDonald, 2024), ISO 4217 for currency codes (SIX Financial Information, 2026)"
+   },
+   "second": {
+    "field": "para:p8a3191557346.inf3",
+    "verdict": "reword",
+    "reason": "Confirmed. The value \"UCUM for units of measure\" is itself correct, but the paragraph as displayed attaches the wrong citation to it: UCUM is credited to (SIX Financial Information, 2026) and ISO 4217 to (Schadow and McDonald, 2024). The bibliography and the archived source say the reverse: UCUM is by Schadow and McDonald (Regenstrief Institute and the UCUM Organization, v2.2, 2024) and SIX Financial Information is the ISO 4217 maintenance agency. The technical report cites them in the right order, so the swap is confined to this paragraph. Change on evidence, not style: a reader following the citation lands on the wrong work.",
+    "evidence": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research/paper/proveml.bib lines 825-830: @misc{ucum, author = {Schadow, Gunther and McDonald, Clement J.}, title = {The Unified Code for Units of Measure}, howpublished = {Version 2.2, Regenstrief Institute and the UCUM Organization}, year = {2024}; lines 832-837: @misc{iso4217, author = {{SIX Financial Information}}, title = {ISO 4217 - Currency Codes}, howpublished = {Maintenance Agency for ISO 4217}, year = {2026}. paper/proveml-technical-report.tex line 912: \"UCUM~\\citep{ucum}, ISO 4217~\\citep{iso4217}\" (same order at lines 268 and 924). audit/references/raw/ucum.html: \"Schadow\", \"McDonald\", \"Version: 2.2\", \"Date: 2024-06-17\", \"Regenstrief Institute, Inc. and the UCUM Organization\". audit/references/raw/iso4217.html: \"SIX Financial Information Ltd as the Secretariat of the Maintenance Agency\".",
+    "suggest": "UCUM for units of measure (Schadow and McDonald, 2024), ISO 4217 for currency codes (SIX Financial Information, 2026)"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p8a3191557346.inf4",
+   "first": {
+    "field": "para:p8a3191557346.inf4",
+    "verdict": "reword",
+    "reason": "The phrase is right (ISO 4217 is the currency-code standard) but the displayed citation is the UCUM authors. Schadow and McDonald wrote the Unified Code for Units of Measure; the ISO 4217 entry in the bibliography is SIX Financial Information, 2026. The two citations are swapped.",
+    "evidence": "paper/proveml.bib lines 825 to 837 (ucum = Schadow and McDonald 2024; iso4217 = SIX Financial Information 2026); paper/proveml-technical-report.tex line 912 cites them in the correct order; audit/references/raw/iso4217.html: 'SIX is the official Maintenance Agency of these currency codes under ISO 4217'.",
+    "suggest": "ISO 4217 for currency codes (SIX Financial Information, 2026)"
+   },
+   "second": {
+    "field": "para:p8a3191557346.inf4",
+    "verdict": "reword",
+    "reason": "Confirmed. As displayed, the paragraph attributes \"ISO 4217 for currency codes\" to Schadow and McDonald (2024) and \"UCUM for units of measure\" to SIX Financial Information (2026). Both attributions are swapped: the repository's bibliography and the technical report cite ucum = Schadow and McDonald and iso4217 = SIX Financial Information, and the archived sources show Schadow and McDonald as the UCUM authors and SIX as the ISO 4217 Maintenance Agency. The phrase itself (ISO 4217 is the currency-code standard) is true; only the citation placement is wrong, so reword rather than false. The fix must swap both citations in the sentence, not just this one.",
+    "evidence": "paper/proveml.bib lines 825-837: @misc{ucum, author = Schadow, Gunther and McDonald, Clement J., \"The Unified Code for Units of Measure\", 2024; @misc{iso4217, author = {SIX Financial Information}, \"ISO 4217 - Currency Codes\", 2026. paper/proveml-technical-report.tex line 912: \"(UCUM~\\citep{ucum}, ISO 4217~\\citep{iso4217})\" (also lines 268 and 924, same order). audit/references/raw/iso4217.html: \"SIX is the official Maintenance Agency of these currency codes under ISO 4217 and as such the only recognized, authoritative source on currency code designations.\" audit/references/raw/ucum.html: \"The Unified Code for Units of Measure Gunther Schadow Pragmatic Data LLC Clement J. McDonald National Library of Medicine ... Version: 2.2 ... Date: 2024-06-17\".",
+    "suggest": "UCUM for units of measure (Schadow and McDonald, 2024), ISO 4217 for currency codes (SIX Financial Information, 2026)"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p295d6d4cb14c.inf2",
+   "first": {
+    "field": "para:p295d6d4cb14c.inf2",
+    "verdict": "reword",
+    "reason": "The claim that the evidence is mixed is true of the two archived sources (SymGen: 20% less verification time; TEN: no significant effort difference), but as displayed both halves are attributed to Mehrotra et al. (2026), so the reader sees one paper reporting two contradictory results and the word 'mixed' has nothing to rest on. The first study is Torroba Hennigen et al. (2024), SymGen, cited as \\citet{symgen} in paper/proveml-technical-report.tex line 932.",
+    "evidence": "audit/references/raw/symgen.html: 'in a human study, we find that the annotations enabled by SymGen simplify the process of post-hoc verification, both as perceived by the user and by reducing the average verification time by 20%' (authors Torroba Hennigen, Shen, Nrusimha, Gapp, Sontag, Kim). audit/references/raw/ten2026.html abstract: 'verification and correction effort did not differ significantly between conditions.' paper/proveml.bib lines 150-156 (symgen) and 425-431 (ten2026).",
+    "suggest": "...the evidence from adjacent systems is mixed: Torroba Hennigen et al. (2024) report their user study reduced average verification time by 20%, while Mehrotra et al. (2026) report a 21-participant study..."
+   },
+   "second": {
+    "field": "para:p295d6d4cb14c.inf2",
+    "verdict": "reword",
+    "reason": "Confirmed independently. The substance of \"mixed\" holds: the two archived sources do disagree (SymGen: verification time down 20%; TEN: no significant difference in verification and correction effort). But the paragraph as displayed attributes BOTH results to Mehrotra et al. (2026), which is false of the archive: the 20% figure belongs to Torroba Hennigen et al. (2024), SymGen (arXiv:2311.09188), whose author list is Torroba Hennigen, Shen, Nrusimha, Gapp, Sontag, Kim; Mehrotra et al. is the TEN paper (ACL Industry 2026) and reports only the 21-participant null result. Judged as displayed, the reader sees one paper contradicting itself, so the word \"mixed\" rests on nothing and the first attribution is a false statement. The fix is a correction of the first author name, not a softening of \"mixed\".",
+    "evidence": "audit/references/raw/symgen.html: \"in a human study, we find that the annotations enabled by SymGen simplify the process of post-hoc verification, both as perceived by the user and by reducing the average verification time by 20%\"; author block \"Lucas Torroba Hennigen Shannon Zejiang Shen Aniruddha Nrusimha Bernhard Gapp David Sontag Yoon Kim\", arXiv:2311.09188v2. audit/references/raw/ten2026.html: \"A 21-participant user study rates TEN tables more accurate and preferred in over 60% of pairwise comparisons, though verification and correction effort did not differ significantly between conditions\"; authors \"Nikita Mehrotra, Aayush Kumar, Sumit Gulwani, Arjun Radhakrishna, and Ashish Tiwari. 2026\". paper/proveml.bib lines 150-156 (symgen, Torroba Hennigen et al., 2024) and 425-431 (ten2026, Mehrotra et al., 2026).",
+    "suggest": "...and the evidence from adjacent systems is mixed: Torroba Hennigen et al. (2024) report their user study reduced average verification time by 20%, while Mehrotra et al. (2026) report a 21-participant study in which verification and correction effort did not differ significantly from their baseline, even though their system reduced hallucination."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p295d6d4cb14c.inf3",
+   "first": {
+    "field": "para:p295d6d4cb14c.inf3",
+    "verdict": "false",
+    "reason": "As displayed the 20% reduction in verification time is attributed to Mehrotra et al. (2026), whose archived abstract says the opposite: verification and correction effort did not differ significantly. The 20% figure comes from the SymGen paper (Torroba Hennigen et al., 2024), which the technical report cites at this exact spot as \\citet{symgen}.",
+    "evidence": "paper/proveml-technical-report.tex line 932: '\\citet{symgen} report their user study reduced average verification time by 20\\%, while \\citet{ten2026} report a 21-participant study'. audit/references/raw/symgen.html: 'reducing the average verification time by 20%' and 'they took on average 20% less time to reach a decision'; Table 7 (Time 1.98 vs 2.50 minutes). audit/references/raw/ten2026.html has no such figure.",
+    "suggest": "Torroba Hennigen et al. (2024) report their user study reduced average verification time by 20%"
+   },
+   "second": {
+    "field": "para:p295d6d4cb14c.inf3",
+    "verdict": "false",
+    "reason": "Confirmed. As displayed, the paragraph contrasts \"Mehrotra et al. (2026)\" with \"Mehrotra et al. (2026)\": the same work is credited with both a 20% reduction in verification time and a null result on effort. The archived TEN paper (Mehrotra et al., 2026) reports only the latter (\"effort did not differ significantly between conditions\") and contains no 20% figure. The 20% figure belongs to SymGen (Torroba Hennigen et al., 2024), which the technical report cites at exactly this spot as \\citet{symgen}, with \\citet{ten2026} as the contrasting study. The first attribution is therefore misassigned, and the sentence as written states something false of the cited work.",
+    "evidence": "paper/proveml-technical-report.tex line 932: \"\\citet{symgen} report their user study reduced average verification time by 20\\%, while \\citet{ten2026} report a 21-participant study in which verification and correction effort did not differ significantly\". paper/proveml.bib lines 150-156: symgen = Torroba Hennigen, L. et al., \"Towards Verifiable Text Generation with Symbolic References\", COLM 2024; lines 425-431: ten2026 = Mehrotra, N. et al., \"TEN: Table Explicitization, Neurosymbolically\", ACL Industry 2026. audit/references/raw/symgen.html: \"reducing the average verification time by 20%\" and line 907 \"they took on average 20% less time to reach a decision about whether an error was present or not\". audit/references/raw/ten2026.html: \"effort did not differ significantly between conditions\"; no 20% figure anywhere in the file.",
+    "suggest": "Torroba Hennigen et al. (2024) report their user study reduced average verification time by 20%"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:aiindex2026.cited_p1176f149722b",
+   "first": {
+    "field": "citation:aiindex2026.cited_p1176f149722b",
+    "verdict": "partial",
+    "reason": "The displayed quote carries the breadth of deployment (generative AI in at least one business function at 70% of organizations) but says nothing about consequential settings; the archived source is the Economy chapter's ten findings and contains no passage about high-stakes, medical, legal or safety-critical use. 'Consequential' must rest on the second citation (Magesh et al., 2025).",
+    "evidence": "audit/references/raw/aiindex2026.html, Economy chapter Finding 5 (the quoted sentence); the full archived text (Findings 1-10) has no occurrence of 'consequential', 'high-stakes', 'medical', 'legal' or 'critical'",
+    "suggest": "Split the use so each source carries its own half, e.g. 'Organizations deploy LLMs at scale (Stanford HAI, 2026), including in consequential settings (Magesh et al., 2025)'"
+   },
+   "second": {
+    "field": "citation:aiindex2026.cited_p1176f149722b",
+    "verdict": "partial",
+    "reason": "Confirmed, not refuted. The single quote shown (\"Generative AI is now used in at least one business function at 70% of organizations\") carries the breadth half of the clause, that organizations deploy these models, and nothing of \"consequential settings\": no content word of that half appears in it. I reproduced the checker's search on the archived Economy chapter: its ten findings (investment, revenue, adoption at 88%/70%/53%, labor market, productivity, robots) contain no occurrence of \"consequential\", \"high-stakes\", \"medical\", \"legal\", \"healthcare\" or \"safety\"; the four hits on \"critical\" are site-navigation text (\"critical partners\"), not the chapter. So there is no other passage the reading could quote instead, and the source cannot carry that half anywhere. The \"consequential\" half rests on Magesh et al., whose reading quotes \"making their use risky in high-stakes domains\" and whose audit record already tags that quote with the paper use \"deploying LLMs in consequential settings\". The repository's own audit record for aiindex2026 carries only the 70% share, and the paper's introduction (citation context at line 121) already makes exactly the split the checker proposes: 70% of organizations for the AI Index, legal research for Magesh. A joint \\citep for one clause is conventional, but as displayed the reader of this field sees a source that says nothing about stakes being cited for stakes; splitting the use costs nothing and matches how the paper itself uses the two works two paragraphs later.",
+    "evidence": "audit/references/raw/aiindex2026.html, Economy chapter Finding 5 (the quoted sentence; the chapter's ten findings listed and grep'd, zero hits for consequential / high-stakes / medical / legal / healthcare / safety; \"critical\" only in site navigation). audit/references/related-work-claims.json: aiindex2026 entry has a single evidence field \"share\" = 70%; magesh2025 entry fields \"adoption\" and \"stakes\" carry paperUse \"deploying LLMs in consequential settings\" with the quote \"making their use risky in high-stakes domains\". audit/references/paper-citation-contexts.json, line 121 context: \"Generative AI is used in at least one business function at 70% of surveyed organizations [aiindex2026], in legal research [magesh2025]\", the paper's own split.",
+    "suggest": "Split the use so each source carries its own half: \"Organizations deploy LLMs at scale (Stanford HAI, 2026), including in consequential settings (Magesh et al., 2025)\". Optionally \"generative AI\" rather than \"LLMs\" for the first half, since that is the word the source uses; not required."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:citednotverified.cited_p1176f149722b",
+   "first": {
+    "field": "citation:citednotverified.cited_p1176f149722b",
+    "verdict": "partial",
+    "reason": "The three displayed quotes show the disconnect the sentence relies on (links valid above 94% yet factual accuracy only 39-77%, judged by 'human or model evaluators') and so support that the links present cannot be checked mechanically; none of them states the sentence's own point that generated text seldom carries a machine-checkable link between claim and data. The abstract's opening sentence carries that directly and is not quoted.",
+    "evidence": "audit/references/raw/citednotverified.html, abstract: 'Large language models (LLMs) power deep research agents that synthesize information from hundreds of web sources into cited reports, yet these citations cannot be reliably verified.' and 'These findings reveal a critical disconnect between surface-level citation quality and factual reliability'",
+    "suggest": "Quote the abstract's first sentence ('...yet these citations cannot be reliably verified.') as the lead passage, keeping the 94% / 39-77% result as the second"
+   },
+   "second": {
+    "field": "citation:citednotverified.cited_p1176f149722b",
+    "verdict": "partial",
+    "reason": "Reproduced the first checker's evidence in the archive. Judged as displayed, the three quotes carry the sentence only by inference: quote 1 says checking a citation against its source needs \"human or model evaluators\", quote 3 that links resolve (94%) while factual accuracy is 39-77%, so a reader can work out that the link present is not one a machine can check. None of the shown quotes states the sentence's own point, which the abstract's opening sentence does verbatim (\"these citations cannot be reliably verified\"), and it is not quoted. The tagging is otherwise correct (this sentence is the only use of the work in the paragraph); the fix is to lead with that sentence and keep the 94% / 39-77% result behind it.",
+    "evidence": "audit/references/raw/citednotverified.html, abstract: \"Large language models (LLMs) power deep research agents that synthesize information from hundreds of web sources into cited reports, yet these citations cannot be reliably verified.\" Also present and unquoted: \"These findings reveal a critical disconnect between surface-level citation quality and factual reliability\". The three displayed quotes are each verbatim in the same abstract block.",
+    "suggest": "Lead with the abstract's first sentence (\"...cited reports, yet these citations cannot be reliably verified.\") and keep the \"link validity above 94% ... yet achieve only 39-77% factual accuracy\" quote as the second passage; the \"human or model evaluators\" quote may stay as the third or be dropped."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p1176f149722b.inf7",
+   "first": {
+    "field": "para:p1176f149722b.inf7",
+    "verdict": "reword",
+    "reason": "The implemented rate is marked / (marked + unmarked), where marked counts fact constructs whose value contains a digit and unmarked counts standalone prose numbers outside every construct (years, list markers, identifiers exempt). Numbers inside an entity's display text or a judgement's braces are in neither count, so 'inside any claim' overstates the numerator: it is facts, not any construct. The technical report defines it the same way ('marked counts %[field]{value} constructs containing a digit').",
+    "evidence": "../proveml/src/verify.js lines 142-151 (marked = tokens.filter(t => t.type === 'fact' && /\\d/.test(t.value)); rate = marked / (marked + unmarked)) and 163-176, 195-207 (entity headers and inference tokens blanked, not counted); ../proveml/src/types.d.ts lines 139-146; paper/proveml-technical-report.tex line 708",
+    "suggest": "coverage, the share of a text's numbers that are bound as facts rather than left in prose"
+   },
+   "second": {
+    "field": "para:p1176f149722b.inf7",
+    "verdict": "reword",
+    "reason": "Confirmed. The numerator of coverage is fact constructs only, not \"any claim\". The package's own vocabulary counts entities, facts and inferences as claims (types.d.ts: \"claims inside markup (entities, facts, inferences)\"), but the rate is marked / (marked + unmarked) with marked = fact tokens whose value contains a digit; a number inside an inference's braces is never in the numerator, and in certificate mode it is counted as unmarked, i.e. as NOT inside a claim. Reproduced: verifyProveml('@[a] has %[x]{5}, ?[low: X_LOW]{under 3 units} and 7 more.', {a:{x:5}}) gives coverage {marked:1, unmarked:1, rate:0.5} in prose mode (the 3 in the judgement counts on neither side) and {marked:1, unmarked:2, rate:0.333} with coverage:'certificate' (the 3 is listed as unmarked). The technical report defines it the same way. \"Inside any claim\" therefore overstates the numerator; the first checker's wording is accurate.",
+    "evidence": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml/src/verify.js lines 142-151 (const marked = tokens.filter(t => t.type === 'fact' && /\\d/.test(t.value)).length; rate = marked / (marked + unmarked.length)) and lines 195-208 (inference tokens blanked in prose mode, braces scanned as prose in certificate mode); /Volumes/shanedeconinck.be/Projects/proveml-all/proveml/src/types.d.ts lines 139-146 (\"fact constructs whose value contains a digit\") and 148-150 (\"claims inside markup (entities, facts, inferences)\"); /Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research/paper/proveml-technical-report.tex line 708 (\"marked counts %[field]{value} constructs containing a digit\"); reproduction run above.",
+    "suggest": "coverage, the share of a text's numbers that are bound as facts rather than left in prose"
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "citation:magesh2025.cited_intro_production",
+   "first": {
+    "field": "citation:magesh2025.cited_intro_production",
+    "verdict": "partial",
+    "reason": "The sentence uses Magesh et al. for generative AI being in production use in legal research. The displayed quote establishes a sharp rise in AI products for caselaw search and summarization, which is legal research, but not that these tools are generative (LLM-based) or which deployed products they are; that is carried by the sentences immediately following in the same abstract.",
+    "evidence": "audit/references/raw/magesh2025.html, abstract, continues directly after the quoted sentences: \"However, the large language models used in these tools are prone to 'hallucinate,' or make up false information ... we find that the AI research tools made by LexisNexis (Lexis+ AI) and Thomson Reuters (Westlaw AI-Assisted Research and Ask Practical Law AI) each hallucinate between 17% and 33% of the time.\"",
+    "suggest": "Extend the quote by its next sentence (\"However, the large language models used in these tools are prone to 'hallucinate,' ...\") or add the LexisNexis/Thomson Reuters sentence, so the reader sees that the legal research tools are LLM-based commercial products, which is what \"generative AI ... in legal research\" needs."
+   },
+   "second": {
+    "field": "citation:magesh2025.cited_intro_production",
+    "verdict": "partial",
+    "reason": "Confirmed. The sentence uses the work for generative AI being in production use in legal research. As displayed, the quote carries \"legal research\" (search and summarization of caselaw) and \"in use\" (a sharp rise in products), but says only \"artificial intelligence (AI)\": nothing in it says the tools are generative or LLM-based, which is the content word the sentence rests on. The very next sentence of the same abstract supplies it (\"the large language models used in these tools\"), so the fix is a one-sentence extension of the quote, not a change to the paper's text.",
+    "evidence": "audit/references/raw/magesh2025.html, abstract, immediately after the two quoted sentences: \"However, the large language models used in these tools are prone to “hallucinate,” or make up false information, making their use risky in high-stakes domains.\" Later in the same abstract: \"we find that the AI research tools made by LexisNexis (Lexis+ AI) and Thomson Reuters (Westlaw AI-Assisted Research and Ask Practical Law AI) each hallucinate between 17% and 33% of the time.\"",
+    "suggest": "Extend the displayed quote by its next sentence: \"However, the large language models used in these tools are prone to 'hallucinate,' or make up false information, making their use risky in high-stakes domains.\" That names the tools as LLM-based, which is what \"generative AI ... in legal research\" needs; the LexisNexis/Thomson Reuters sentence may be added as well to show the products are deployed commercial ones. Paper text unchanged."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p8725480a44d1.inf3",
+   "first": {
+    "field": "para:p8725480a44d1.inf3",
+    "verdict": "reword",
+    "reason": "The sentence describes embedding machine-readable tags in human-readable filings, which is Inline XBRL, and the cited specification dates that mechanism to 2010 (Recommendation 1.0), with the cited version from 2013. From 2026 that is sixteen years, not two decades; XBRL 2.1 (2003) is two decades old but tags a separate instance document, not the human-readable filing. The technical report carries the same sentence, so it is not independent evidence.",
+    "evidence": "audit/references/raw/ixbrl.html: \"Inline XBRL Part 1: Specification 1.1 Recommendation 18 November 2013\"; Section 2.3: previous namespace \"http://www.xbrl.org/2008/inlineXBRL 1.0 20 April 2010\"; Appendix D: \"20 April 2010 Recommendation v1.0\". XBRL 2.1 is REC-2003-12-31 (references section). paper/proveml-technical-report.tex line 134 repeats the same wording.",
+    "suggest": "\"Financial reporting solved a version of this problem more than a decade ago by embedding machine-readable tags in human-readable filings\" (or \"since 2010\")."
+   },
+   "second": {
+    "field": "para:p8725480a44d1.inf3",
+    "verdict": "reword",
+    "reason": "Confirmed. The sentence dates the solution by its mechanism, \"embedding machine-readable tags in human-readable filings\", and the archived specification says that mechanism is Inline XBRL, an extension created to tie XBRL 2.1's machine-readable data to co-existing human-readable formats; its first Recommendation is 20 April 2010 and the cited version is 18 November 2013. From 2026 that is sixteen years, not two decades. The only two-decade-old item in the archive is XBRL 2.1 (REC-2003-12-31), which is the separate instance document the intro contrasts with, not the embedding. The reading shows no quotes, so nothing displayed supports \"two decades\"; the technical report carries the same sentence and is not independent evidence. \"More than a decade ago\" (or \"in 2010\") is what the archive carries.",
+    "evidence": "audit/references/raw/ixbrl.html: title \"Inline XBRL Part 1: Specification 1.1 Recommendation 18 November 2013\"; Introduction: \"it has become necessary to create an extension to the [XBRL 2.1] standard which will tie the machine-readable data to co-existing human-readable formats\"; Section 2.3 namespace table: \"http://www.xbrl.org/2008/inlineXBRL 1.0 20 April 2010\"; Appendix D: \"20 April 2010 Recommendation v1.0 ... 18 November 2013 Recommendation v1.1\"; references: XBRL-2.1-REC-2003-12-31. audit/references/raw/ixbrl-overview.html carries no origin date at all. paper/proveml-technical-report.tex line 134 repeats the sentence verbatim.",
+    "suggest": "\"Financial reporting solved a version of this problem more than a decade ago by embedding machine-readable tags in human-readable filings\" (or \"in 2010\"), and quote Appendix D \"20 April 2010 Recommendation v1.0\" from audit/references/raw/ixbrl.html as the passage."
+   },
+   "confirmed": true
+  },
+  {
+   "reading": "para:p4515f3279d4d.inf7",
+   "first": {
+    "field": "para:p4515f3279d4d.inf7",
+    "verdict": "reword",
+    "reason": "The earlier version did print a microsecond figure: 1.5 µs per claim (and 'microseconds per claim' in the introduction), removed in commit cb66c2b of 2026-09-11. But that figure was printed against the same 4,826-key store, not a toy store, and the commit that replaced it says the cost had been estimated rather than measured ('verificatiekost gemeten in plaats van geraamd (0,30 ms per claim, niet 1,5 µs)'). 'Only holds on a toy store' is the authors' explanation via the uniqueness scan (core.js subjectUniqueness walks adapter.subjects() for every fact), not what the record shows about the earlier figure. The technical report in the repo still carries the contradicting text: '0.006 ms per claim' and 'scales with the number of claims, not with the size of the store' (line 734), and 'under 0.2 ms per claim' (line 119).",
+    "evidence": "git show cb66c2b -- paper/proveml-spec.tex, removed lines: 'takes 3.4 ms on a laptop --- 0.013 ms per response, 1.5 µs per claim' and 'so it is effectively free (microseconds per claim)'; commit message cb66c2b: 'verificatiekost gemeten in plaats van geraamd (0,30 ms per claim, niet 1,5 µs)'; ../proveml/src/core.js lines 95-100 (subjectUniqueness filters adapter.subjects() per fact); paper/proveml-technical-report.tex lines 119 and 734.",
+    "suggest": "an earlier version of this paper printed a microsecond figure (1.5 µs per claim) that was estimated from a hash-lookup model of the verifier rather than measured; with the uniqueness scan it holds only on a toy store. Also bring paper/proveml-technical-report.tex lines 119 and 734 in line (they still say 'under 0.2 ms per claim' and '0.006 ms per claim ... not with the size of the store')."
+   },
+   "second": {
+    "field": "para:p4515f3279d4d.inf7",
+    "verdict": "reword",
+    "reason": "The first checker is right that the sentence needs rewording, but for a different reason than the one proposed, and its suggestion introduces a second error. The earlier figure (3.4 ms, 1.5 µs per claim) was neither a toy-store result nor an estimate: it was measured by the same script, against the same 4,826-key store, with the verifier as it stood on the morning of 2026-08-29, three hours before the subject-uniqueness scan landed in proveml (c1f6549, 13:55; the paper's figure was committed at 10:57 in d715822, when the research repo used file:../proveml). I reproduced both numbers: the script against proveml 0.3.0 (c1f6549^, no subjectUniqueness) gives 3.2 ms per pass, 0.013 ms per response, 0.0015 ms per claim; against the installed 0.9.0 it gives 698 ms, 2.77 ms per response, 0.3195 ms per claim. So \"only holds on a toy store\" is false: the microsecond figure held on this store with the pre-scan verifier, and what changed is the verifier, not the store. The commit message's \"gemeten in plaats van geraamd\" is contradicted by the unchanged script (only one commit in its history, d715822, timing loop with performance.now() and 20 reps already present), so the checker's \"estimated from a hash-lookup model rather than measured\" should not go in either. The technical report still carries the pre-scan wording (\"under 0.2 ms per claim\", line 119; \"0.006 ms per claim ... scales with the number of claims, not with the size of the store\", line 734) and would need the same correction.",
+    "evidence": "proveml-research: git show d715822 -- paper/proveml-spec.tex (added: \"takes 3.4 ms on a laptop --- 0.013 ms per response, 1.5 µs per claim ... a hash lookup and a comparison per claim\"), committed 2026-08-29 10:57:36 +0200 with package.json \"proveml\": \"file:../proveml\"; git log -- experiments/deployment-numbers.mjs shows only d715822 (script unchanged since; lines 66-75 time 20 passes with performance.now()). proveml: git show -s c1f6549 = \"Uniek onderwerp: gemeten, niet aangenomen\", 2026-08-29 13:55:46 +0200, the commit that adds subjectUniqueness to src/core.js (lines 95-100 filter adapter.subjects() per fact). Reproduction: node experiments/deployment-numbers.mjs --tag frontier with node_modules/proveml 0.9.0 prints \"698.0 ms per pass over all responses (mean of 20), 2.770 ms per response, 0.3195 ms per claim\"; the same script with git archive c1f6549^ of proveml (version 0.3.0, no subjectUniqueness) as node_modules/proveml prints \"3.2 ms per pass over all responses (mean of 20), 0.013 ms per response, 0.0015 ms per claim\", same \"fact store: 4826 keys (95 offerings, 741 students)\". paper/proveml-technical-report.tex lines 119 and 734 still carry the pre-scan figures.",
+    "suggest": "an earlier version of this paper printed a microsecond figure (1.5 µs per claim), measured with the same script and the same store against a verifier that did not yet check subject uniqueness; that scan, added on 29 August 2026, is what the difference costs. Bring paper/proveml-technical-report.tex lines 119 and 734 in line with the same explanation (they still say \"under 0.2 ms per claim\" and \"0.006 ms per claim ... scales with the number of claims, not with the size of the store\")."
+   },
+   "confirmed": true
+  }
+ ],
+ "overruled": [],
+ "summary": [
+  "planted: 43 (bound 9, number 9, statement 14, citation 11)",
+  "build refused: 9 of 9 bound",
+  "flag pass marked: 33 of 34 prose plants",
+  "resolver confirmed: 33 of 33 marked",
+  "caught in all: 42 of 43",
+  "missed: S5",
+  "unplanted readings checked: 242",
+  "confirmed changes among them: 56",
+  "  collateral of a plant: 13",
+  "  defects of the paper: 42 (18 already found by the previous round)",
+  "  faults of the page: 1",
+  "  refutable: 0",
+  "  not adjudicated: 0",
+  "second reader overruled the first: 0"
+ ]
+}

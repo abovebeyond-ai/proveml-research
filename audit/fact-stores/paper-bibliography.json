@@ -584,7 +584,7 @@
   "paperref:finground.paperUseCount": "0",
   "paperref:finground.sourcePassageCount": "0",
   "paperref:finground.summaryPassageCount": "0",
-  "paperref:finground.autoSummaryPassageCount": "0",
+  "paperref:finground.autoSummaryPassageCount": "1",
   "paperref:finground.summaryAlignment": "not-reviewed",
   "paperref:finground.selectionRisk": "not-reviewed",
   "paperref:claimdb.key": "claimdb",

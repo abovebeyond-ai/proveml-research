@@ -80,7 +80,9 @@ const inline = (t) => {
   s = s.replace(/\\%/g, '%').replace(/\\_/g, '_').replace(/\\&/g, '&').replace(/\\\$/g, '$').replace(/\\#/g, '#');
   s = s.replace(/---/g, '—').replace(/--/g, '–');
   s = s.replace(/``|''/g, '"');
-  s = s.replace(/\$([^$]*)\$/g, (m, inner) => inner.replace(/\\[a-zA-Z]+\{([^}]*)\}/g, '$1').replace(/\\[a-zA-Z]+/g, ''));
+  // math: relation and logic symbols keep their meaning on the page ("lo ≤ v < hi", "S ⊑ S'"); bold letters lose the bold
+  const MATH = { le: '≤', leq: '≤', ge: '≥', geq: '≥', neq: '≠', ne: '≠', sqsubseteq: '⊑', subseteq: '⊆', neg: '¬', land: '∧', lor: '∨', wedge: '∧', vee: '∨', to: '→', rightarrow: '→', mapsto: '↦', in: '∈', notin: '∉', times: '×', cdot: '·', ldots: '…', infty: '∞', forall: '∀', exists: '∃', bot: '⊥', top: '⊤', cup: '∪', cap: '∩', emptyset: '∅' };
+  s = s.replace(/\$([^$]*)\$/g, (m, inner) => inner.replace(/\\[a-zA-Z]+\{([^}]*)\}/g, '$1').replace(/\\([a-zA-Z]+)/g, (mm, c) => MATH[c] ? ' ' + MATH[c] + ' ' : '').replace(/\s+/g, ' ').trim());
   s = s.replace(/\\\\/g, ' ');
   s = s.replace(/\\[a-zA-Z]+\*?\{([^{}]*)\}/g, '$1');   // any other \cmd{X} -> X
   s = s.replace(/\\[a-zA-Z]+\*?/g, '');                  // bare commands

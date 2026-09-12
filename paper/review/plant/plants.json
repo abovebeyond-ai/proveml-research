@@ -1,0 +1,303 @@
+[
+ {
+  "id": "A1",
+  "class": "bound",
+  "find": "cover 90--96\\% of their numbers, and verify 87--100\\%",
+  "replace": "cover 90--97\\% of their numbers, and verify 87--100\\%",
+  "truth": "frontier-summary: coverage 89.8–96.4, bound as 90–96 (abstract)"
+ },
+ {
+  "id": "A2",
+  "class": "bound",
+  "find": "108 (69\\%) have one shape",
+  "replace": "108 (71\\%) have one shape",
+  "truth": "frontier-residuals: 108 of 157 = 69%"
+ },
+ {
+  "id": "A3",
+  "class": "bound",
+  "find": "takes 0.66\\,s on a laptop",
+  "replace": "takes 0.46\\,s on a laptop",
+  "truth": "deployment-numbers --tag frontier: 0.66 s"
+ },
+ {
+  "id": "A4",
+  "class": "bound",
+  "find": "generated educational dataset of 741 pupils",
+  "replace": "generated educational dataset of 714 pupils",
+  "truth": "benchmarks: 741 pupils"
+ },
+ {
+  "id": "A5",
+  "class": "bound",
+  "find": "454 judgments over nine runs, 411 of them",
+  "replace": "445 judgments over nine runs, 411 of them",
+  "truth": "judgment-summary: 454 judgments"
+ },
+ {
+  "id": "N1",
+  "class": "number",
+  "find": "3--13\\% of the citation URLs supplied by commercial models",
+  "replace": "3--18\\% of the citation URLs supplied by commercial models",
+  "truth": "rao2026 archive: 3–13%"
+ },
+ {
+  "id": "N2",
+  "class": "number",
+  "find": "lifts Opus 5 by eight points on education",
+  "replace": "lifts Opus 5 by twelve points on education",
+  "truth": "Table 2: 86.5 → 94.8, eight points"
+ },
+ {
+  "id": "N3",
+  "class": "bound",
+  "find": "are 16 in the second, all in that one run",
+  "replace": "are 26 in the second, all in that one run",
+  "truth": "frontier-residuals --tag frontier2: 16"
+ },
+ {
+  "id": "N4",
+  "class": "number",
+  "find": "19 of 20 Sonnet 5 responses",
+  "replace": "17 of 20 Sonnet 5 responses",
+  "truth": "Table 4 / judgment-summary: 19.3 of 20"
+ },
+ {
+  "id": "N5",
+  "class": "bound",
+  "find": "The 33 first-pass failures are almost all one thing",
+  "replace": "The 38 first-pass failures are almost all one thing",
+  "truth": "judgment-summary: 33 false on the first pass"
+ },
+ {
+  "id": "N6",
+  "class": "bound",
+  "find": "(1.06 for DeepSeek, 1.33 for Opus 5)",
+  "replace": "(1.06 for DeepSeek, 1.43 for Opus 5)",
+  "truth": "deployment-numbers: 1.33"
+ },
+ {
+  "id": "N7",
+  "class": "number",
+  "find": "has twenty-one entries, and neither benchmark",
+  "replace": "has twenty-four entries, and neither benchmark",
+  "truth": "proveml src/thresholds.js example registry: 21 entries"
+ },
+ {
+  "id": "N8",
+  "class": "number",
+  "find": "the 4{,}617 papers",
+  "replace": "the 4{,}167 papers",
+  "truth": "audit ACL sweep: 4,617"
+ },
+ {
+  "id": "N9",
+  "class": "number",
+  "find": "6ZW at a pass rate of 74 against",
+  "replace": "6ZW at a pass rate of 72 against",
+  "truth": "education store: 6ZW passRate 74"
+ },
+ {
+  "id": "N10",
+  "class": "number",
+  "find": "wrong values (5), wrong entity (3)",
+  "replace": "wrong values (6), wrong entity (2)",
+  "truth": "error-detection test: 5 wrong values, 3 wrong entity"
+ },
+ {
+  "id": "N11",
+  "class": "number",
+  "find": "1.6T parameters with 49B active",
+  "replace": "1.6T parameters with 37B active",
+  "truth": "deepseekv4pro archive: 49B active"
+ },
+ {
+  "id": "N12",
+  "class": "number",
+  "find": "Claude Sonnet 5, released 30 June 2026",
+  "replace": "Claude Sonnet 5, released 30 May 2026",
+  "truth": "anthropicsonnet5 archive: 30 June 2026"
+ },
+ {
+  "id": "S1",
+  "class": "statement",
+  "find": "using characters (\\texttt{@}, \\texttt{\\%}, \\texttt{?})",
+  "replace": "using characters (\\texttt{@}, \\texttt{\\%}, \\texttt{!})",
+  "truth": "tokenizer: @ % ?"
+ },
+ {
+  "id": "S2",
+  "class": "statement",
+  "find": "Four outcomes: \\textit{verified}, \\textit{mismatch}, \\textit{unverifiable} (no such field), \\textit{no context}",
+  "replace": "Five outcomes: \\textit{verified}, \\textit{mismatch}, \\textit{unverifiable} (no such field), \\textit{no context}, \\textit{ambiguous}",
+  "truth": "core.js: four fact verdicts"
+ },
+ {
+  "id": "S3",
+  "class": "statement",
+  "find": "compose with \\texttt{AND}, \\texttt{OR}, \\texttt{NOT} and can reference",
+  "replace": "compose with \\texttt{AND}, \\texttt{OR}, \\texttt{NOT}, \\texttt{XOR} and can reference",
+  "truth": "condition grammar: AND OR NOT only"
+ },
+ {
+  "id": "S4",
+  "class": "statement",
+  "find": "\\texttt{NOT} of an unverifiable condition is still unverifiable",
+  "replace": "\\texttt{NOT} of an unverifiable condition is verified",
+  "truth": "Kleene: not u = u (Lean Kleene.lean, core.js)"
+ },
+ {
+  "id": "S5",
+  "class": "statement",
+  "find": "both through the Claude Code CLI with default settings",
+  "replace": "both through the Anthropic Messages API with default settings",
+  "truth": "experiments/llm.mjs: claude CLI"
+ },
+ {
+  "id": "S6",
+  "class": "statement",
+  "find": "served by Together AI",
+  "replace": "served by Fireworks AI",
+  "truth": "experiments: Together AI"
+ },
+ {
+  "id": "S7",
+  "class": "statement",
+  "find": "The scoped form exists for exactly this, and no model used it.",
+  "replace": "The scoped form exists for exactly this, and only DeepSeek used it.",
+  "truth": "frontier runs: no scoped form"
+ },
+ {
+  "id": "S8",
+  "class": "statement",
+  "find": "which the grammar's \\texttt{path\\_field} production always admitted",
+  "replace": "which required a new grammar production, \\texttt{path\\_field}, which",
+  "truth": "grammar had path_field before 0.3.0"
+ },
+ {
+  "id": "S9",
+  "class": "bound",
+  "find": "whose verifier has no runtime dependencies (only the optional markdown-it plugin needs a peer)",
+  "replace": "whose verifier has one runtime dependency, markdown-it",
+  "truth": "proveml package.json: no dependencies"
+ },
+ {
+  "id": "S10",
+  "class": "statement",
+  "find": "each judgement is saved under a hash of exactly what it judged, so it expires",
+  "replace": "each judgement is saved under the reviewer's name and a timestamp, so it expires",
+  "truth": "proveml/review: judgements keyed by hash"
+ },
+ {
+  "id": "S11",
+  "class": "statement",
+  "find": "(\\texttt{formal/}, no dependencies beyond Lean)",
+  "replace": "(\\texttt{formal/}, built on Mathlib)",
+  "truth": "formal/lakefile.toml: no requires"
+ },
+ {
+  "id": "S12",
+  "class": "statement",
+  "find": "The connectives are Kleene's strong three-valued logic",
+  "replace": "The connectives are Bochvar's weak three-valued logic",
+  "truth": "formal/ProveML/Kleene.lean: strong Kleene, f wins conjunction"
+ },
+ {
+  "id": "S13",
+  "class": "statement",
+  "find": "The tokenizer silently skips constructs with unmatched brackets or braces.",
+  "replace": "The tokenizer raises an error on constructs with unmatched brackets or braces.",
+  "truth": "tokenizer skips silently"
+ },
+ {
+  "id": "S14",
+  "class": "statement",
+  "find": "If $R(N)$ is undefined, $\\mathbf{u}$.",
+  "replace": "If $R(N)$ is undefined, $\\mathbf{f}$.",
+  "truth": "Store.lean evalAtom: none → uu"
+ },
+ {
+  "id": "S15",
+  "class": "statement",
+  "find": "The open-weight model is the strongest of the three on both benchmarks",
+  "replace": "The open-weight model is the weakest of the three on both benchmarks",
+  "truth": "Table 2: DeepSeek highest on both"
+ },
+ {
+  "id": "C1",
+  "class": "citation",
+  "find": "LLMs hallucinate} \\citep{ji2023}",
+  "replace": "LLMs hallucinate} \\citep{nadkarni1999}",
+  "truth": "nadkarni1999 is the EAV paper"
+ },
+ {
+  "id": "C2",
+  "class": "citation",
+  "find": "a number growing year over year \\citep{liu2026citations}",
+  "replace": "a number growing year over year \\citep{magesh2025}",
+  "truth": "magesh2025 is the legal tools study, not the court filings survey"
+ },
+ {
+  "id": "C3",
+  "class": "citation",
+  "find": "routinely answer in Markdown \\citep{sun2025idiosyncrasies}",
+  "replace": "routinely answer in Markdown \\citep{commonmark}",
+  "truth": "commonmark spec says nothing about models"
+ },
+ {
+  "id": "C4",
+  "class": "citation",
+  "find": "\\citep{nadkarni1999,dinu2007}",
+  "replace": "\\citep{nadkarni1999,jsonschema2022}",
+  "truth": "jsonschema2022 is not about EAV"
+ },
+ {
+  "id": "C5",
+  "class": "citation",
+  "find": "\\citep{ozarda2016,jsonschema2022,prometheusalerting}",
+  "replace": "\\citep{ucum,jsonschema2022,prometheusalerting}",
+  "truth": "ucum is a units vocabulary, not clinical reference intervals"
+ },
+ {
+  "id": "C6",
+  "class": "citation",
+  "find": "in financial reports for automated audit \\citep{ixbrl}",
+  "replace": "in financial reports for automated audit \\citep{xbrlvalidation2009}",
+  "truth": "xbrlvalidation2009 is the formula spec, not Inline XBRL"
+ },
+ {
+  "id": "C7",
+  "class": "citation",
+  "find": "SymGen \\citep{symgen} takes the opposite strategy",
+  "replace": "SymGen \\citep{pcn2025} takes the opposite strategy",
+  "truth": "pcn2025 is Proof-Carrying Numbers"
+ },
+ {
+  "id": "C8",
+  "class": "citation",
+  "find": "UCUM for units of measure~\\citep{ucum}, ISO 4217 for currency codes~\\citep{iso4217}",
+  "replace": "UCUM for units of measure~\\citep{iso4217}, ISO 4217 for currency codes~\\citep{ucum}",
+  "truth": "swapped"
+ },
+ {
+  "id": "C9",
+  "class": "citation",
+  "find": "(PICARD, \\citealp{picard}; Synchromesh, \\citealp{synchromesh})",
+  "replace": "(PICARD, \\citealp{synchromesh}; Synchromesh, \\citealp{picard})",
+  "truth": "swapped"
+ },
+ {
+  "id": "C10",
+  "class": "citation",
+  "find": "\\citet{symgen} report their user study reduced average verification time by 20\\%,",
+  "replace": "\\citet{ten2026} report their user study reduced average verification time by 20\\%,",
+  "truth": "the 20% is SymGen's user study"
+ },
+ {
+  "id": "C11",
+  "class": "citation",
+  "find": "daily still can \\citep{russell2025}",
+  "replace": "daily still can \\citep{jones2026}",
+  "truth": "jones2026 is a Turing-test result, not the daily-writers finding"
+ }
+]

@@ -1,0 +1,21 @@
+{
+ "id": "plant",
+ "snapshot": "plant-score.txt",
+ "command": "node paper/review/plant/run.mjs score paper/review/plant/out/verdicts.json",
+ "cwd": "<repo>",
+ "repo": {
+  "path": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research",
+  "commit": "d05cd75",
+  "branch": "judgment-study",
+  "uncommittedChanges": 38
+ },
+ "startedAt": "2026-09-12T07:13:26.173Z",
+ "durationMs": 61,
+ "exitCode": 0,
+ "stdoutSha256": "c05cbcb12649693304dcc82794a4437bf3bbdf92adc9f0d7c1f4e7ececdb045f",
+ "stdoutBytes": 739,
+ "snapshotSha256": null,
+ "sameAsSnapshot": false,
+ "stderrTail": [],
+ "node": "v24.13.0"
+}

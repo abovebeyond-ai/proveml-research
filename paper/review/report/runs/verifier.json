@@ -5,17 +5,17 @@
  "cwd": "<repo>/paper/review",
  "repo": {
   "path": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research",
-  "commit": "4d1f22a",
-  "branch": "vera-round-2",
-  "uncommittedChanges": 43
+  "commit": "d05cd75",
+  "branch": "judgment-study",
+  "uncommittedChanges": 38
  },
- "startedAt": "2026-09-11T15:03:37.686Z",
- "durationMs": 71,
+ "startedAt": "2026-09-12T07:13:08.453Z",
+ "durationMs": 41,
  "exitCode": 0,
  "stdoutSha256": "da3229bc8bf07123a4a99d6280a2705c7cd8fe78f6fad5254adb9e9f0534b876",
  "stdoutBytes": 509,
- "snapshotSha256": null,
- "sameAsSnapshot": false,
+ "snapshotSha256": "da3229bc8bf07123a4a99d6280a2705c7cd8fe78f6fad5254adb9e9f0534b876",
+ "sameAsSnapshot": true,
  "stderrTail": [],
  "node": "v24.13.0"
 }

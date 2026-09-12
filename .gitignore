@@ -23,3 +23,8 @@ experiments/archive/
 
 # Lean build output
 formal/.lake/
+
+# Planted-error measurement of the review loop: a copy of paper/review with a planted paper
+paper/review-planted/
+paper/review/plant/out/all.log
+paper/review/report/pending.json

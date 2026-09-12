@@ -1,0 +1,806 @@
+{
+ "map": {
+  "N1": {
+   "class": "number",
+   "sections": [
+    "p95f3b5cd45d0"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:p95f3b5cd45d0.inf7"
+   ],
+   "readingsInSection": 20,
+   "otherInferred": [
+    "untrained readers can no longer reliably distinguish from human-authored content",
+    "readers who write with these models daily still can",
+    "deployed models rarely volunteer uncertainty even when they are wrong",
+    "verbalised confidence is systematically overconfident",
+    "the training pipeline rewards a confident guess over an admission of ignorance",
+    "LLMs hallucinate",
+    "numbers with no basis in the source",
+    "statements whose citations do not support them"
+   ]
+  },
+  "N2": {
+   "class": "number",
+   "sections": [
+    "finding1"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:p0b8bb08e8841.inf4"
+   ],
+   "readingsInSection": 11,
+   "otherInferred": [
+    "query-runs, produced an empty answer or an answer without markup, and no call failed",
+    "First-pass verification runs from",
+    "coverage from",
+    "closes finance entirely (Table 2)",
+    "The open-weight model is the weakest of the three on both benchmarks",
+    "at a third of the latency",
+    "s per query against",
+    "Rate and coverage move together here",
+    "unlike in the earlier study of small models, where they diverged by more than thirty points at identical rates (technical report)"
+   ]
+  },
+  "N4": {
+   "class": "number",
+   "sections": [
+    "finding4"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:pe68a07c66657.inf1"
+   ],
+   "readingsInSection": 20,
+   "otherInferred": [
+    "judgments over nine runs",
+    "of them verified on the first pass",
+    "after one correction",
+    "(Table 4)",
+    "qualitative words per run",
+    "Not one of the 454 named a threshold outside the registry",
+    "On the four questions with no matching entry",
+    "one correction on Sonnet 5 produced a malformed label, the single judgment left unverified",
+    "first-pass failures are almost all one thing",
+    "\"small sample\" at 5 or 7 pupils against a bound of 5",
+    "\"strong\" at 74 or 63 against 75",
+    "\"reliable sample\" at 7 or 8 against 10",
+    "\"risk of grey marks\" at 29 absences against 30",
+    "on the eight boundary and contrary questions Sonnet 5 answered 3.7 of 8 soundly on the first pass and 7.7 after one correction",
+    "Opus 5 went from 7.3 to 8",
+    "DeepSeek was sound on all 8 in both",
+    "an `is_null` judgment is vacuously true on a record type that never carries the field",
+    "`IS_MISSING` on `evaluated` would have verified for every class",
+    "it was excluded"
+   ]
+  },
+  "N7": {
+   "class": "number",
+   "sections": [
+    "p7859efac67e0"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:p7859efac67e0.inf3"
+   ],
+   "readingsInSection": 6,
+   "otherInferred": [
+    "a normalized database with joins does not announce what counts as one addressable entity",
+    "rather than in the verifier (Section 2)",
+    "neither benchmark needed one (no run produced an inference)",
+    "its cost falls entirely on the deployments that use it",
+    "the store's vocabulary (Section 3)"
+   ]
+  },
+  "N8": {
+   "class": "number",
+   "sections": [
+    "p73da2bde21ab"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:p73da2bde21ab.inf22"
+   ],
+   "readingsInSection": 41,
+   "otherInferred": [
+    "RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it",
+    "iXBRL embeds machine-readable tags in financial reports for automated audit",
+    "Proof-Carrying Numbers",
+    "claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies",
+    "its paper describes neither entity scoping in prose nor a named vocabulary for qualitative judgments",
+    "the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one",
+    "the technical report compares the two on identical runs",
+    "is the 2026 form of that strategy",
+    "the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose",
+    "shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce",
+    "checks financial claims against XBRL facts with an SMT solver",
+    "placing the arithmetic in the verifier where ProveML places it in the data layer",
+    "measure the failure class our residual errors belong to",
+    "values miscited from a table the model was shown — and detect it with a trained critic",
+    "ProveML detects it with a lookup",
+    "in which a trained model judges support",
+    "verifies aggregate claims over relational data as queries",
+    "which ProveML can only bind once the aggregate is materialised as a fact",
+    "structured inline citation",
+    "decode-time grammars whose reference slots admit only declared names",
+    "To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system.",
+    "The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.",
+    "Table 5 places the neighbours; the technical report discusses each in full."
+   ]
+  },
+  "N9": {
+   "class": "number",
+   "sections": [
+    "pbc1fd5408435"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:pbc1fd5408435.inf4"
+   ],
+   "readingsInSection": 13,
+   "otherInferred": [
+    "run in September 2026",
+    "Twenty questions over the education store",
+    "eight that the data supports, four at a registered bound",
+    "a pupil with 29 absences against `IS_GREY_RISK` above 30",
+    "four that presuppose a judgment the data refutes",
+    "four that invite a judgment no registry entry covers",
+    "fourteen names selected by field",
+    "the prompt is the one `proveml/prompt` generates from the store and that registry",
+    "The same questions ran under the facts-only prompt of the second study as the baseline",
+    "Same three models, three runs each, one correction pass",
+    "Which registered conditions hold for each record in a question's context is computed by the verifier and saved with the run",
+    "so the boundary and contrary questions score themselves"
+   ]
+  },
+  "N10": {
+   "class": "number",
+   "sections": [
+    "p6efdb3471828"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:p6efdb3471828.inf1"
+   ],
+   "readingsInSection": 9,
+   "otherInferred": [
+    "ProveML detected all 20",
+    "yielding a 100% error detection rate",
+    "This is a consequence of deterministic checking",
+    "it is a conformance test, not a detector benchmark",
+    "it is one-sided",
+    "a canonicalization difference such as `18.50` vs.\\ `18.5` is flagged despite numeric equality",
+    "see Section 6",
+    "Robustness to malformed LLM markup is partially addressed by the correction-loop results in Section 3"
+   ]
+  },
+  "N11": {
+   "class": "number",
+   "sections": [
+    "setup"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:p3bf2581395c5.inf4"
+   ],
+   "readingsInSection": 18,
+   "otherInferred": [
+    "released 24 July 2026",
+    "coming \"close to the frontier intelligence of Claude Fable 5 at half the price\"",
+    "released 30 May 2026",
+    "open weights under the MIT licence",
+    "served by Fireworks AI",
+    "Anthropic's own frontier model at the time was Fable 5, which we did not run",
+    "English prompts over a",
+    "an earlier draft used a de-identified extract of real records under the label \"synthetic\"; it was withdrawn, replaced, and every educational result re-measured on the replacement",
+    "English prompts over real SEC EDGAR FY2025 filings",
+    "Three runs per model and benchmark, one correction pass",
+    "Context is sliced per prompt from the benchmark's own entity lists — an oracle retriever, which makes the rates an upper bound conditional on retrieval",
+    "no run produced an inference construct, so all rates measure those two",
+    "the verifier's own conformance test (20 planted errors, all caught)"
+   ]
+  },
+  "N12": {
+   "class": "number",
+   "sections": [
+    "setup"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:p3bf2581395c5.inf3"
+   ],
+   "readingsInSection": 18,
+   "otherInferred": [
+    "released 24 July 2026",
+    "coming \"close to the frontier intelligence of Claude Fable 5 at half the price\"",
+    "1.6T parameters with 37B active",
+    "open weights under the MIT licence",
+    "served by Fireworks AI",
+    "Anthropic's own frontier model at the time was Fable 5, which we did not run",
+    "English prompts over a",
+    "an earlier draft used a de-identified extract of real records under the label \"synthetic\"; it was withdrawn, replaced, and every educational result re-measured on the replacement",
+    "English prompts over real SEC EDGAR FY2025 filings",
+    "Three runs per model and benchmark, one correction pass",
+    "Context is sliced per prompt from the benchmark's own entity lists — an oracle retriever, which makes the rates an upper bound conditional on retrieval",
+    "no run produced an inference construct, so all rates measure those two",
+    "the verifier's own conformance test (20 planted errors, all caught)"
+   ]
+  },
+  "S1": {
+   "class": "statement",
+   "sections": [
+    "p15e662b154ec"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:p15e662b154ec.inf1"
+   ],
+   "readingsInSection": 6,
+   "otherInferred": [
+    "Instruction-tuned models routinely answer in Markdown",
+    "a CommonMark-conformant renderer passes the constructs through unchanged, because characters not given an interpretation by any Markdown rule are parsed as plain textual content",
+    "in our runs every model produced the markup on every query"
+   ]
+  },
+  "S2": {
+   "class": "statement",
+   "sections": [
+    "pdbaff9720d57"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:pdbaff9720d57.inf2"
+   ],
+   "readingsInSection": 3,
+   "otherInferred": [
+    "The verifier checks `store`[entity.field] = value by exact string equality on the store's canonical representation",
+    "Section 3 shows why that is needed"
+   ]
+  },
+  "S3": {
+   "class": "statement",
+   "sections": [
+    "p4da7fb8f6742"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:p4da7fb8f6742.inf1"
+   ],
+   "readingsInSection": 1,
+   "otherInferred": []
+  },
+  "S4": {
+   "class": "statement",
+   "sections": [
+    "pd80657093a7e"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:pd80657093a7e.inf4"
+   ],
+   "readingsInSection": 12,
+   "otherInferred": [
+    "string equality for entities and facts, typed comparison for thresholds",
+    "with no model in the loop, so it is exact, explainable and effectively free",
+    "(Section 4)",
+    "Without that rule a model could get a claim past the verifier by negating a threshold that does not exist.",
+    "verification can sit inside a generation loop that feeds each error back to the model",
+    "the verifier only reads the text, it can equally audit text it did not generate",
+    "a text that marks one number and leaves nine in prose would score 100%",
+    "the share of standalone numbers that sit inside a claim (years, list markers and code excluded)",
+    "in strict mode treats each number outside one as a finding",
+    "Figure 3 shows the pipeline; Figure 4 the audit rendering",
+    "The complete grammar is in Appendix C; Appendix B states the semantics and the properties the mechanised model proves for it."
+   ]
+  },
+  "S5": {
+   "class": "statement",
+   "sections": [
+    "setup"
+   ],
+   "moved": [],
+   "flagged": [],
+   "readingsInSection": 18,
+   "otherInferred": [
+    "released 24 July 2026",
+    "coming \"close to the frontier intelligence of Claude Fable 5 at half the price\"",
+    "released 30 May 2026",
+    "1.6T parameters with 37B active",
+    "open weights under the MIT licence",
+    "served by Fireworks AI",
+    "Anthropic's own frontier model at the time was Fable 5, which we did not run",
+    "English prompts over a",
+    "an earlier draft used a de-identified extract of real records under the label \"synthetic\"; it was withdrawn, replaced, and every educational result re-measured on the replacement",
+    "English prompts over real SEC EDGAR FY2025 filings",
+    "Three runs per model and benchmark, one correction pass",
+    "Context is sliced per prompt from the benchmark's own entity lists — an oracle retriever, which makes the rates an upper bound conditional on retrieval",
+    "no run produced an inference construct, so all rates measure those two",
+    "the verifier's own conformance test (20 planted errors, all caught)"
+   ]
+  },
+  "S6": {
+   "class": "statement",
+   "sections": [
+    "setup"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:p3bf2581395c5.inf6"
+   ],
+   "readingsInSection": 18,
+   "otherInferred": [
+    "released 24 July 2026",
+    "coming \"close to the frontier intelligence of Claude Fable 5 at half the price\"",
+    "released 30 May 2026",
+    "1.6T parameters with 37B active",
+    "open weights under the MIT licence",
+    "Anthropic's own frontier model at the time was Fable 5, which we did not run",
+    "English prompts over a",
+    "an earlier draft used a de-identified extract of real records under the label \"synthetic\"; it was withdrawn, replaced, and every educational result re-measured on the replacement",
+    "English prompts over real SEC EDGAR FY2025 filings",
+    "Three runs per model and benchmark, one correction pass",
+    "Context is sliced per prompt from the benchmark's own entity lists — an oracle retriever, which makes the rates an upper bound conditional on retrieval",
+    "no run produced an inference construct, so all rates measure those two",
+    "the verifier's own conformance test (20 planted errors, all caught)"
+   ]
+  },
+  "S7": {
+   "class": "statement",
+   "sections": [
+    "finding2"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:pf7c476db3e18.inf6"
+   ],
+   "readingsInSection": 18,
+   "otherInferred": [
+    "errors still standing after the correction pass on the educational benchmark",
+    "%) have one shape",
+    "linear carry-forward binds the pupil's facts to the class, the nearest preceding entity",
+    "non-converged query-runs",
+    "the correction pass could not repair it because nothing in the error message says which entity the fact should have gone to",
+    "required a new grammar production, `path_field`",
+    "measured it (Finding 3)",
+    "Wrong values are",
+    "almost all on aggregation prompts that ask for a rank or a count the store does not hold",
+    "Two errors are a bound written as a fact"
+   ]
+  },
+  "S8": {
+   "class": "statement",
+   "sections": [
+    "finding2"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:pf7c476db3e18.inf7"
+   ],
+   "readingsInSection": 18,
+   "otherInferred": [
+    "errors still standing after the correction pass on the educational benchmark",
+    "%) have one shape",
+    "linear carry-forward binds the pupil's facts to the class, the nearest preceding entity",
+    "non-converged query-runs",
+    "the correction pass could not repair it because nothing in the error message says which entity the fact should have gone to",
+    "only DeepSeek used it",
+    "measured it (Finding 3)",
+    "Wrong values are",
+    "almost all on aggregation prompts that ask for a rank or a count the store does not hold",
+    "Two errors are a bound written as a fact"
+   ]
+  },
+  "S10": {
+   "class": "statement",
+   "sections": [
+    "p2ad866091584"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:p2ad866091584.inf4"
+   ],
+   "readingsInSection": 12,
+   "otherInferred": [
+    "The first limitation in Section 6 — verified means consistent with the store, not true",
+    "a quote checked verbatim against an archived snapshot of its source",
+    "The machine re-checks those links at build time and refuses to emit the review page when any fails",
+    "Vera review protocol 1.0, https://github.com/abovebeyond-ai/vera/blob/main/docs/review-protocol.md",
+    "bind, flag, resolve, read, judge",
+    "a written rubric for the resolve step and a per-round measure that ends the loop at zero",
+    "The round of 11 September 2026 went over 229 readings that asked for a judgment",
+    "left one false statement and twelve rewordings behind it",
+    "the next pass recorded nothing",
+    "this first round was resolved by the author and agents the author ran",
+    "an independent reviewer has not yet judged a reading"
+   ]
+  },
+  "S11": {
+   "class": "statement",
+   "sections": [
+    "formal-intro"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:pb9c4d1bdf34f.inf2"
+   ],
+   "readingsInSection": 4,
+   "otherInferred": [
+    "mechanised in Lean 4 in the artifact repository",
+    "every proposition below names its theorem there",
+    "not the tokenizer that turns text into constructs"
+   ]
+  },
+  "S12": {
+   "class": "statement",
+   "sections": [
+    "pf6e97a4b5081"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:pf6e97a4b5081.inf1"
+   ],
+   "readingsInSection": 4,
+   "otherInferred": [
+    "f wins a conjunction and u otherwise wins it",
+    "t wins a disjunction and u otherwise wins it",
+    "All three connectives are monotone in"
+   ]
+  },
+  "S13": {
+   "class": "statement",
+   "sections": [
+    "p4f4431a82e47"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:p4f4431a82e47.inf1"
+   ],
+   "readingsInSection": 1,
+   "otherInferred": []
+  },
+  "S14": {
+   "class": "statement",
+   "sections": [
+    "p892b8e1e3744"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:p892b8e1e3744.inf1"
+   ],
+   "readingsInSection": 8,
+   "otherInferred": [
+    "the path be p if p is given and addresses t.field, undefined if p is given and addresses another field",
+    "c`.`t.field if no p is given and c is defined",
+    "If t.op is is_null, the verdict is t iff S has no value at the path.",
+    "if t declares a unit and the store's unit at the path is absent or different, u",
+    "if an ordering operator meets a text, u",
+    "A label reference @ is the verdict recorded under earlier in the document, u if none.",
+    "Text the condition grammar rejects, a bare comparison included, is u."
+   ]
+  },
+  "S15": {
+   "class": "statement",
+   "sections": [
+    "finding1"
+   ],
+   "moved": [],
+   "flagged": [
+    "para:p0b8bb08e8841.inf6"
+   ],
+   "readingsInSection": 11,
+   "otherInferred": [
+    "query-runs, produced an empty answer or an answer without markup, and no call failed",
+    "First-pass verification runs from",
+    "coverage from",
+    "one correction pass lifts Opus 5 by twelve points on education",
+    "closes finance entirely (Table 2)",
+    "at a third of the latency",
+    "s per query against",
+    "Rate and coverage move together here",
+    "unlike in the earlier study of small models, where they diverged by more than thirty points at identical rates (technical report)"
+   ]
+  },
+  "C1": {
+   "class": "citation",
+   "sections": [
+    "p95f3b5cd45d0"
+   ],
+   "moved": [
+    "nadkarni1999"
+   ],
+   "flagged": [
+    "citation:nadkarni1999.cited_p95f3b5cd45d0"
+   ],
+   "readingsInSection": 20,
+   "otherInferred": [
+    "untrained readers can no longer reliably distinguish from human-authored content",
+    "readers who write with these models daily still can",
+    "deployed models rarely volunteer uncertainty even when they are wrong",
+    "verbalised confidence is systematically overconfident",
+    "the training pipeline rewards a confident guess over an admission of ignorance",
+    "LLMs hallucinate",
+    "fabricated citations, 3–18% of the citation URLs supplied by commercial models and deep research agents in 2026 having no archived record and likely never having existed",
+    "numbers with no basis in the source",
+    "statements whose citations do not support them"
+   ]
+  },
+  "C2": {
+   "class": "citation",
+   "sections": [
+    "intro-regulation"
+   ],
+   "moved": [
+    "magesh2025"
+   ],
+   "flagged": [
+    "citation:magesh2025.cited_intro_regulation",
+    "citation:magesh2025.cited_intro_regulation_2"
+   ],
+   "readingsInSection": 20,
+   "otherInferred": [
+    "calibrated language models must hallucinate at a rate approaching the fraction of facts appearing exactly once in training",
+    "standard training pipelines reward guessing over acknowledging uncertainty",
+    "The EU AI Act's transparency duties have applied since",
+    "the Commission's Article 50 guidelines adopted two weeks before",
+    "the Digital Omnibus deferred only one of those duties, machine-readable marking by systems already on the market, to",
+    "the Code of Practice that operationalises these duties concerns marking the origin of content and says nothing about its accuracy",
+    "the leading legal research tools hallucinated on",
+    "despite vendor claims of near-elimination",
+    "a 2026 survey of court filings found",
+    "a number growing year over year"
+   ]
+  },
+  "C3": {
+   "class": "citation",
+   "sections": [
+    "p15e662b154ec"
+   ],
+   "moved": [
+    "commonmark"
+   ],
+   "flagged": [
+    "citation:commonmark.cited_p15e662b154ec",
+    "citation:commonmark.cited_p15e662b154ec_2"
+   ],
+   "readingsInSection": 6,
+   "otherInferred": [
+    "using characters (`@`, `%`, `!`) that do not conflict with standard Markdown syntax",
+    "Instruction-tuned models routinely answer in Markdown",
+    "a CommonMark-conformant renderer passes the constructs through unchanged, because characters not given an interpretation by any Markdown rule are parsed as plain textual content",
+    "in our runs every model produced the markup on every query"
+   ]
+  },
+  "C4": {
+   "class": "citation",
+   "sections": [
+    "pc4e85cf21a38"
+   ],
+   "moved": [
+    "jsonschema2022"
+   ],
+   "flagged": [
+    "citation:jsonschema2022.cited_pc4e85cf21a38"
+   ],
+   "readingsInSection": 3,
+   "otherInferred": [
+    "any source with records and fields flattens into it"
+   ]
+  },
+  "C5": {
+   "class": "citation",
+   "sections": [
+    "p821389586347"
+   ],
+   "moved": [
+    "ucum"
+   ],
+   "flagged": [
+    "citation:ucum.cited_p821389586347"
+   ],
+   "readingsInSection": 5,
+   "otherInferred": [
+    "a pattern shared by clinical reference intervals, JSON Schema validation and monitoring alert rules",
+    "Each definition has a name, a field, one predicate from a deliberately small vocabulary (Table 1), an optional unit constraint, a label and a source for audit"
+   ]
+  },
+  "C6": {
+   "class": "citation",
+   "sections": [
+    "p73da2bde21ab"
+   ],
+   "moved": [
+    "xbrlvalidation2009"
+   ],
+   "flagged": [
+    "citation:xbrlvalidation2009.cited_p73da2bde21ab"
+   ],
+   "readingsInSection": 41,
+   "otherInferred": [
+    "RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it",
+    "iXBRL embeds machine-readable tags in financial reports for automated audit",
+    "Proof-Carrying Numbers",
+    "claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies",
+    "its paper describes neither entity scoping in prose nor a named vocabulary for qualitative judgments",
+    "the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one",
+    "the technical report compares the two on identical runs",
+    "is the 2026 form of that strategy",
+    "the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose",
+    "shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce",
+    "checks financial claims against XBRL facts with an SMT solver",
+    "placing the arithmetic in the verifier where ProveML places it in the data layer",
+    "measure the failure class our residual errors belong to",
+    "values miscited from a table the model was shown — and detect it with a trained critic",
+    "ProveML detects it with a lookup",
+    "in which a trained model judges support",
+    "verifies aggregate claims over relational data as queries",
+    "which ProveML can only bind once the aggregate is materialised as a fact",
+    "structured inline citation",
+    "decode-time grammars whose reference slots admit only declared names",
+    "To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system.",
+    "the 4,167 papers in the ACL 2026 main, short, findings and industry volumes",
+    "The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.",
+    "Table 5 places the neighbours; the technical report discusses each in full."
+   ]
+  },
+  "C7": {
+   "class": "citation",
+   "sections": [
+    "p73da2bde21ab"
+   ],
+   "moved": [
+    "pcn2025"
+   ],
+   "flagged": [
+    "citation:pcn2025.cited_p73da2bde21ab",
+    "citation:pcn2025.cited_p73da2bde21ab_2"
+   ],
+   "readingsInSection": 41,
+   "otherInferred": [
+    "RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it",
+    "iXBRL embeds machine-readable tags in financial reports for automated audit",
+    "Proof-Carrying Numbers",
+    "claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies",
+    "its paper describes neither entity scoping in prose nor a named vocabulary for qualitative judgments",
+    "the model emits references and a parser substitutes the values, so a wrong number is impossible and so is reporting one",
+    "the technical report compares the two on identical runs",
+    "is the 2026 form of that strategy",
+    "the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose",
+    "shares ProveML's premise that qualitative wording must be tied to a declared threshold, while giving up the ability to audit text it did not produce",
+    "checks financial claims against XBRL facts with an SMT solver",
+    "placing the arithmetic in the verifier where ProveML places it in the data layer",
+    "measure the failure class our residual errors belong to",
+    "values miscited from a table the model was shown — and detect it with a trained critic",
+    "ProveML detects it with a lookup",
+    "in which a trained model judges support",
+    "verifies aggregate claims over relational data as queries",
+    "which ProveML can only bind once the aggregate is materialised as a fact",
+    "structured inline citation",
+    "decode-time grammars whose reference slots admit only declared names",
+    "To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system.",
+    "the 4,167 papers in the ACL 2026 main, short, findings and industry volumes",
+    "The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.",
+    "Table 5 places the neighbours; the technical report discusses each in full."
+   ]
+  },
+  "C8": {
+   "class": "citation",
+   "sections": [
+    "p8a3191557346"
+   ],
+   "moved": [
+    "iso4217",
+    "ucum"
+   ],
+   "flagged": [
+    "citation:iso4217.cited_p8a3191557346",
+    "citation:ucum.cited_p8a3191557346"
+   ],
+   "readingsInSection": 6,
+   "otherInferred": [
+    "Units are supported as nullable metadata with exact string matching.",
+    "Semantic unit equivalence (e.g., mg/dL vs mmol/L)",
+    "UCUM for units of measure",
+    "ISO 4217 for currency codes"
+   ]
+  },
+  "C9": {
+   "class": "citation",
+   "sections": [
+    "pee8a9b854451"
+   ],
+   "moved": [
+    "synchromesh",
+    "picard"
+   ],
+   "flagged": [
+    "citation:synchromesh.cited_pee8a9b854451",
+    "citation:picard.cited_pee8a9b854451"
+   ],
+   "readingsInSection": 4,
+   "otherInferred": [
+    "makes that an application of known technique rather than a research program",
+    "it would remove much of what we measure as addressability error"
+   ]
+  },
+  "C10": {
+   "class": "citation",
+   "sections": [
+    "p295d6d4cb14c"
+   ],
+   "moved": [
+    "ten2026"
+   ],
+   "flagged": [
+    "citation:ten2026.cited_p295d6d4cb14c",
+    "citation:ten2026.cited_p295d6d4cb14c_2"
+   ],
+   "readingsInSection": 7,
+   "otherInferred": [
+    "We have not measured whether this reduces human verification effort",
+    "the evidence from adjacent systems is mixed",
+    "report their user study reduced average verification time by 20%",
+    "report a 21-participant study in which verification and correction effort did not differ significantly from their baseline",
+    "even though their system reduced hallucination"
+   ]
+  },
+  "C11": {
+   "class": "citation",
+   "sections": [
+    "p95f3b5cd45d0"
+   ],
+   "moved": [
+    "jones2026"
+   ],
+   "flagged": [
+    "citation:jones2026.cited_p95f3b5cd45d0",
+    "citation:jones2026.cited_p95f3b5cd45d0_2"
+   ],
+   "readingsInSection": 20,
+   "otherInferred": [
+    "untrained readers can no longer reliably distinguish from human-authored content",
+    "readers who write with these models daily still can",
+    "deployed models rarely volunteer uncertainty even when they are wrong",
+    "verbalised confidence is systematically overconfident",
+    "the training pipeline rewards a confident guess over an admission of ignorance",
+    "LLMs hallucinate",
+    "fabricated citations, 3–18% of the citation URLs supplied by commercial models and deep research agents in 2026 having no archived record and likely never having existed",
+    "numbers with no basis in the source",
+    "statements whose citations do not support them"
+   ]
+  }
+ },
+ "control": [
+  "citation:aiindex2026.cited_p1176f149722b",
+  "citation:citednotverified.cited_p1176f149722b",
+  "para:p1176f149722b.inf7",
+  "para:pf4fb7c50d8b2.inf4",
+  "study:judgment.registryNames",
+  "para:pf4fb7c50d8b2.inf11",
+  "citation:magesh2025.cited_intro_production",
+  "para:p834f9d5e8da1.inf6",
+  "citation:alce.cited_intro_production",
+  "para:p8725480a44d1.inf3",
+  "para:p8725480a44d1.inf8",
+  "para:p7d263abbe6fa.inf4",
+  "para:p2bd9cc52803a.inf6",
+  "para:p29a3a35b7ccd.inf4",
+  "para:p50e21027e8c4.inf1",
+  "para:p18bd483b9956.inf4",
+  "para:p27abddb45ad6.inf2",
+  "para:p44dae585c161.inf3",
+  "para:p44dae585c161.inf9",
+  "para:p44dae585c161.inf14",
+  "para:pfcea852c3b7d.inf3",
+  "para:p4515f3279d4d.inf1",
+  "para:p4515f3279d4d.inf7",
+  "para:pd2df682f924d.inf3",
+  "para:p4aa380ca5e34.inf2",
+  "para:pa0c07465fc20.inf1",
+  "para:peb0ee6f7670b.inf1",
+  "para:peb0ee6f7670b.inf7",
+  "para:pba6642c2ad0d.inf2",
+  "para:pba6642c2ad0d.inf5"
+ ],
+ "newlyFlagged": null
+}
