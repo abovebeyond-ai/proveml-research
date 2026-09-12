@@ -15,3 +15,4 @@ snapshot: the deployment passes snapshot "edgar-fy2025-2026-09-12" and the resul
 arithmetic in the data layer: the difference is stored as region:EU._salesDiff = 12000 USD; the fact %[_salesDiff]{12000 USD} is verified and the judgment ?[g: SALES_GAP_MATERIAL] against it is verified
 negation: ?[p: NOT IS_HUGE_REVENUE]{modest revenue} with the name unregistered: unverifiable
 inputs: verifyProveml(markdown, store, options) takes 3 arguments, none of them a model or a generation; every claim above was written by hand, not generated
+strict mode: the same text has 0 finding(s) without strict and 1 with it: "2 in prose is not a claim"
