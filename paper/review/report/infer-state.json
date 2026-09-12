@@ -8402,5 +8402,62 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "pb47e77e9f1cd": {
+  "at": "2026-09-12T19:53:58.529Z",
+  "claims": [
+   {
+    "span": "The 20 errors span six categories: wrong values (5), wrong entity (3), no context (2), wrong threshold (4), cross-entity swaps (2), and subtle errors including trailing spaces and swapped entity order (4)",
+    "kind": "number",
+    "why": "Category counts must sum to 20 and match the actual error set used in the experiment; easy to miscount or mislabel a category."
+   },
+   {
+    "span": "ProveML detected all 20, yielding a 100% error detection rate",
+    "kind": "number",
+    "why": "Claims a perfect detection rate that should be verified against the actual experiment log/output, not just asserted."
+   },
+   {
+    "span": "it is a conformance test, not a detector benchmark",
+    "kind": "other",
+    "why": "A characterization of what the experiment demonstrates that a reviewer may contest given the 100% figure is being reported prominently."
+   },
+   {
+    "span": "a canonicalization difference such as `18.50` vs.\\ `18.5` is flagged despite numeric equality",
+    "kind": "other",
+    "why": "Specific behavioral claim about the system that should be demonstrated/traced to Section 6 or a test case, not just asserted."
+   },
+   {
+    "span": "every response carried markup",
+    "kind": "absence",
+    "why": "An absolute claim (no exceptions) about all responses in Section 3 that needs to be checked against the actual run data."
+   },
+   {
+    "span": "coverage stayed above 89%",
+    "kind": "number",
+    "why": "Specific numeric threshold that should trace to the Section 3 measurements."
+   },
+   {
+    "span": "broken constructs were rare",
+    "kind": "other",
+    "why": "Vague quantifier presented as a finding; should be backed by an actual count or rate."
+   },
+   {
+    "span": "the tokenizer skips a broken construct silently (Section 6)",
+    "kind": "citation",
+    "why": "Behavioral claim attributed to Section 6 that should be confirmed to actually appear/be demonstrated there."
+   },
+   {
+    "span": "the correction loop therefore never sees one",
+    "kind": "causal",
+    "why": "Causal inference from 'broken constructs were rare' and silent skipping to 'never seen'; the word 'never' is a strong absolute claim that needs support."
+   },
+   {
+    "span": "Stress-testing with malformed markup remains to be done",
+    "kind": "absence",
+    "why": "States no such testing has been performed; should be confirmed as accurate and not contradicted elsewhere in the paper."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }

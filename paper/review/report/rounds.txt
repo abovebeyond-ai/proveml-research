@@ -139,3 +139,5 @@ caught by reader (2026-09-12, Shane): the earlier-draft sentence in the dataset 
 2026-09-12T19:45:35Z push 114 | pass recorded 0 | verified 679/679 | blocks 161 | readings 662 | bound 324 | sources 114 | measure (own statements unanswered + judged no) 290+0
 2026-09-12T19:46:15Z push 115 | pass recorded 0 | verified 680/680 | blocks 161 | readings 663 | bound 326 | sources 114 | measure (own statements unanswered + judged no) 289+0
 caught by reader (2026-09-12, Shane): the finance benchmark's origin and the run count with its correction budget were flagged spans; bound to the benchmark metadata and to a design line the summary script reads off the run files (pushes 114 and 115).
+2026-09-12T19:54:02Z push 116 | pass recorded 1 | verified 683/683 | blocks 161 | readings 666 | bound 326 | sources 114 | measure (own statements unanswered + judged no) 287+0
+caught by reader (2026-09-12, Shane): the malformed-markup sentence in Appendix A packed three things; split in two (push 116).
