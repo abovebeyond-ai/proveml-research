@@ -70,3 +70,5 @@ console.log(`render: the reader sees ${/>(\$[0-9.]+ billion)</.exec(html)?.[1] |
   const d = verifyProveml('@[company:aapl]{Apple Inc.} had ?[p: NOT IS_HUGE_REVENUE]{modest revenue}.', store).details.find((x) => x.type === 'inference');
   console.log(`negation: ?[p: NOT IS_HUGE_REVENUE]{modest revenue} with the name unregistered: ${d.status}`);
 }
+// The verifier's inputs are the text, the store and the options; who wrote the text is not one of them.
+console.log(`inputs: verifyProveml(markdown, store, options) takes ${verifyProveml.length} arguments, none of them a model or a generation; every claim above was written by hand, not generated`);
