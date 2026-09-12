@@ -72,3 +72,9 @@ console.log(`render: the reader sees ${/>(\$[0-9.]+ billion)</.exec(html)?.[1] |
 }
 // The verifier's inputs are the text, the store and the options; who wrote the text is not one of them.
 console.log(`inputs: verifyProveml(markdown, store, options) takes ${verifyProveml.length} arguments, none of them a model or a generation; every claim above was written by hand, not generated`);
+// Strict mode: a number left in prose becomes a finding.
+{
+  const md = '@[company:aapl]{Apple Inc.} reported revenue of %[revenue]{391035000000 USD} across 2 segments.';
+  const loose = verifyProveml(md, store), strict = verifyProveml(md, store, { strict: true });
+  console.log(`strict mode: the same text has ${loose.errors.length} finding(s) without strict and ${strict.errors.length} with it: "${strict.errors[strict.errors.length - 1]}"`);
+}
