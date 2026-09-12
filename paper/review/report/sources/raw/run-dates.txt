@@ -1,0 +1,6 @@
+finance runs of the small-model study: 12 files, 2026-03-30 to 2026-03-30
+education runs of the small-model study: 24 files, 2026-07-31 to 2026-08-01
+full-context ablation of the small-model study: 3 files, 2026-07-31 to 2026-07-31
+first frontier study (education and finance): 18 files, 2026-08-29 to 2026-08-29
+second frontier study (education and finance): 18 files, 2026-08-29 to 2026-08-29
+judgment study: 18 files, 2026-09-11 to 2026-09-11
