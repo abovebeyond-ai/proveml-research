@@ -56,3 +56,12 @@ console.log(`render: the reader sees ${/>(\$[0-9.]+ billion)</.exec(html)?.[1] |
   const withIt = verifyProveml(md, store, { thresholds: registry }).details.find((x) => x.type === 'inference');
   console.log(`registry from outside: the deployment passes {IS_HUGE_REVENUE: revenue >= 100000000000} to the verifier and the same judgment is ${withIt.status}; without it, unverifiable (line above)`);
 }
+// A snapshot identifier travels with the result; a computed difference is a fact in the store, bounded by a registered predicate.
+{
+  const r = verifyProveml('@[company:aapl]{Apple Inc.} reported revenue of %[revenue]{391035000000 USD}.', store, { snapshot: 'edgar-fy2025-2026-09-12' });
+  console.log(`snapshot: the deployment passes snapshot "edgar-fy2025-2026-09-12" and the result carries snapshot "${r.snapshot}" beside its ${r.verified}/${r.total} verified`);
+  const regions = { 'region:EU.name': 'EU', 'region:EU._salesDiff': 12000, 'region:EU._salesDiff._unit': 'USD' };
+  const registry = { SALES_GAP_MATERIAL: { field: '_salesDiff', op: '>=', value: 10000, label: 'material sales gap', source: 'this script' } };
+  const d = verifyProveml('@[region:EU]{EU} shows a ?[g: SALES_GAP_MATERIAL]{material gap} of %[_salesDiff]{12000 USD}.', regions, { thresholds: registry }).details;
+  console.log(`arithmetic in the data layer: the difference is stored as region:EU._salesDiff = 12000 USD; the fact %[_salesDiff]{12000 USD} is ${d.find((x) => x.type === 'fact').status} and the judgment ?[g: SALES_GAP_MATERIAL] against it is ${d.find((x) => x.type === 'inference').status}`);
+}
