@@ -464,6 +464,9 @@ const inferSubject = (pidv, text) => {
     const pa = view.out.indexOf(c.span); if (pa < 0) continue;
     let at = view.map[pa]; let end = view.map[pa + c.span.length];
     if (placed.some((p) => at < p.end && end > p.at)) continue;
+    // A span that runs straight into a citation is the clause that citation carries; the citation reading
+    // already asks whether the quoted passage supports it, so a second reading of the same words is a
+    // duplicate question (the reader met "Organizations deploy LLMs widely" twice on 2026-09-12).
     if (taken.some((p) => at < p.end && end > p.at)) {
       // the proposal reaches into a mark or a citation: keep the longest stretch outside them
       // ("Claude Sonnet 5, released 30 May 2026" with the name already an entity mark becomes "released 30 May 2026")
@@ -479,6 +482,7 @@ const inferSubject = (pidv, text) => {
       if (!/\s/.test(seg.trim())) continue;   // one word is not a claim
       at = best[0]; end = best[1]; c = { ...c, span: seg };
     }
+    if (/^[\s,;:]*\(?\s*%\[citation:/.test(text.slice(end))) continue;
     if ((text.slice(0, at).match(/`/g) || []).length % 2 === 1) continue;   // inside a code span: the verifier skips it, the reader would see raw markup
     if (/[%@?]\[|\]\{/.test(c.span)) continue;   // the span itself quotes markup
     if (/[%@?]\[[^\]]*$/.test(text.slice(Math.max(0, at - 80), at)) && text.slice(end).match(/^[^{]*\]\{/)) continue; // inside another construct's head
