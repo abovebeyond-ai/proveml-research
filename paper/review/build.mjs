@@ -62,6 +62,7 @@ const store = {
   'formal:theorems.name': 'the mechanised model', 'formal:theorems.factSound': "a verified fact equals the store's value", 'formal:theorems.registered': 'a judgment is verified only by a threshold the registry holds', 'formal:theorems.unresolved': 'what the verifier cannot resolve, it neither verifies nor fails', 'formal:theorems.checked': 'machine-checked',
   'techreport:sections.name': 'the technical report', 'techreport:sections.algorithm': 'verification algorithm', 'techreport:sections.comparison': 'comparison semantics', 'techreport:sections.rendering': 'rendering', 'techreport:sections.julyStudy': 'July 2026 study',
   'spec:commonmark.name': 'CommonMark', 'spec:commonmark.noConflict': 'do not conflict with standard Markdown syntax', 'study:frontier.markupEvery': 'produced the markup on every query',
+  'verifier:entity.nameCheck': 'checks the display name against the store',
   'runs:dates.name': 'the run dates', 'runs:dates.financeSmall': 'March 2026', 'runs:dates.educationSmall': 'the turn of July and August', 'formal:theorems.deploymentNamed': 'a judgment the deployment never named cannot be made checkable by the model',
   'reg:ixbrl.name': 'Inline XBRL', 'reg:ixbrl.age': 'more than a decade ago', 'reg:art50.name': 'the Article 50 guidelines', 'reg:art50.leadTime': 'two weeks before',
   'verifier:coverage.definition': 'the share of a text\'s numbers that sit inside a fact claim rather than in prose',
@@ -186,6 +187,11 @@ const bound = [
     ], evidence: [
       q('study:frontier.markupEvery', 'produced the markup on every query', 'summary', 'query-runs whose first pass carried no construct: 0 of 342', 'frontier-summary.mjs, last count', 'The first study; the second (frontier2-summary.txt) and the judgment study (judgment-summary.txt) print 0 of 342 and 0 of 360 by the same count. Fair reading?'),
       q('spec:commonmark.noConflict', 'do not conflict with standard Markdown syntax', 'cite-commonmark', 'Any characters not given an interpretation by the above rules will be parsed as plain textual content.', 'CommonMark 0.31.2, section 6.9', 'No rule of the specification gives @, % or ? an interpretation. The brackets after them are link syntax, resolved only against a reference definition the markup never creates; the braces are plain text. Fair reading?'),
+    ] },
+  { anchor: 'Entity references', id: 'entities', kind: 'para', marks: [
+      ['The verifier checks the display name against the store', 'The verifier %[verifier:entity.nameCheck]{checks the display name against the store}'],
+    ], evidence: [
+      q('verifier:entity.nameCheck', 'checks the display name against the store', 'verifier', 'wrong entity name: @[company:aapl]{Apple} against company:aapl.name = Apple Inc.: name-mismatch', 'entity lines', 'The right name verifies, a wrong one is a name mismatch against the name stored at that id. Fair reading?'),
     ] },
   { anchor: 'This paper is deliberately compact', id: 'intro-compact', marks: [
       ['(verification algorithm, comparison semantics, rendering)', '(%[techreport:sections.algorithm]{verification algorithm}, %[techreport:sections.comparison]{comparison semantics}, %[techreport:sections.rendering]{rendering})'],

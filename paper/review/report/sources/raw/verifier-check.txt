@@ -4,3 +4,5 @@ rounded value: claim %[revenue]{$391 billion} against company:aapl.revenue = 391
 net income: claim %[netIncome]{93736000000 USD} against company:aapl.netIncome = 93736000000: verified, shown as $93.7 billion
 render: the reader sees $391.0 billion, the audit keeps 391035000000 USD
 coverage: one fact claim with a digit and one prose number (2 segments; the year 2025 excluded): marked 1 (numbers inside a fact claim), unmarked 1 (numbers in prose), rate 0.5
+entity name: @[company:aapl]{Apple Inc.} against company:aapl.name = Apple Inc.: verified
+wrong entity name: @[company:aapl]{Apple} against company:aapl.name = Apple Inc.: name-mismatch

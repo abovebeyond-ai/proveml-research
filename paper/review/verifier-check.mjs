@@ -27,3 +27,10 @@ console.log(`render: the reader sees ${/>(\$[0-9.]+ billion)</.exec(html)?.[1] |
   const r = verifyProveml(md, store);
   console.log(`coverage: one fact claim with a digit and one prose number (2 segments; the year 2025 excluded): marked ${r.coverage.marked} (numbers inside a fact claim), unmarked ${r.coverage.unmarked} (numbers in prose), rate ${r.coverage.rate}`);
 }
+// Entities: the display name is checked against the store's name at that id.
+{
+  for (const [md, label] of [['@[company:aapl]{Apple Inc.} reported.', 'entity name'], ['@[company:aapl]{Apple} reported.', 'wrong entity name']]) {
+    const r = verifyProveml(md, store); const d = r.details.find((x) => x.type === 'entity') || r.details[0];
+    console.log(`${label}: ${md.match(/@\[[^\]]*\]\{[^}]*\}/)[0]} against company:aapl.name = ${store['company:aapl.name']}: ${d.status}`);
+  }
+}
