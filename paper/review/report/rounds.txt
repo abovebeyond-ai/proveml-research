@@ -75,3 +75,5 @@ caught by reader (2026-09-12, Shane): "more than a decade ago" was flagged; now 
 2026-09-12T12:19:38Z push 80 | pass recorded 0 | verified 697/697 | blocks 161 | readings 680 | bound 293 | sources 112 | measure (own statements unanswered + judged no) 376+0
 2026-09-12T12:20:07Z push 81 | pass recorded 0 | verified 698/698 | blocks 161 | readings 681 | bound 294 | sources 112 | measure (own statements unanswered + judged no) 376+0
 caught by reader (2026-09-12, Shane): "have applied since" was a scrap cut off before the bound date (residue rule extended with since/until/before/after and copulas, push 80); "two weeks before" is now bound to the guidelines' publication date, 20 July against 2 August (push 81).
+2026-09-12T12:22:43Z push 82 | pass recorded 1 | verified 696/696 | blocks 161 | readings 679 | bound 294 | sources 112 | measure (own statements unanswered + judged no) 372+0
+caught by reader (2026-09-12, Shane): "in 2026 the citations ... for only" was a scrap before the bound 39–77 (residue rule extended with only/roughly/nearly), and "in 2026" was the publication year, dropped as in the Rao sentence (push 82).
