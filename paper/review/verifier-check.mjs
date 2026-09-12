@@ -48,3 +48,11 @@ console.log(`render: the reader sees ${/>(\$[0-9.]+ billion)</.exec(html)?.[1] |
     console.log(`${label}: ${md.match(/\?\[[^\]]*\]\{[^}]*\}/)[0]}: ${d.status} (${d.error})`);
   }
 }
+// The registry is an argument of the verifier, given by the deployment: the same judgment verifies only when the
+// deployment has declared the name, and nothing in the text can declare one.
+{
+  const md = '@[company:aapl]{Apple Inc.} had ?[p: IS_HUGE_REVENUE]{huge revenue}.';
+  const registry = { IS_HUGE_REVENUE: { field: 'revenue', op: '>=', value: 100000000000, label: 'huge revenue', source: 'this script' } };
+  const withIt = verifyProveml(md, store, { thresholds: registry }).details.find((x) => x.type === 'inference');
+  console.log(`registry from outside: the deployment passes {IS_HUGE_REVENUE: revenue >= 100000000000} to the verifier and the same judgment is ${withIt.status}; without it, unverifiable (line above)`);
+}
