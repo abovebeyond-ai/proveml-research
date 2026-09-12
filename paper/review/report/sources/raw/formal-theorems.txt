@@ -1,4 +1,5 @@
 lake build: exit 0 (Build completed successfully (7 jobs).)
+toolchain: leanprover/lean4:v4.33.1; packages required in lakefile.toml: none
 sorry: 0 occurrences in 4 files
 theorems: 41
   Kleene.not_uu: Negating the unresolved leaves it unresolved: NOT of an unverifiable condition is still unverifiable.
