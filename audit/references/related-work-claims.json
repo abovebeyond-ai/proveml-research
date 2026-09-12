@@ -1571,28 +1571,6 @@
     "claim": "@[citation:citednotverified]{Onweller et al.} evaluate the citations of deep research agents by %[judgment]{enabling human or model evaluators to judge each citation against its source}, scoring them with rubric-based LLM-as-a-judge evaluators calibrated through human review, and finds that even the strongest frontier models %[factualAccuracy]{achieve only 39-77% factual accuracy}. The abstract opens with the gap: %[unverifiable]{yet these citations cannot be reliably verified}, and closes with %[disconnect]{These findings reveal a critical disconnect between surface-level citation quality and factual reliability}.",
     "evidence": [
       {
-        "field": "judgment",
-        "claimValue": "enabling human or model evaluators to judge each citation against its source",
-        "basis": "quote",
-        "sourceQuote": "Unlike methods that verify claims in isolation, our framework closes the loop by retrieving the actual cited content, enabling human or model evaluators to judge each citation against its source.",
-        "sourceLocator": "abstract",
-        "paperUse": [
-          "judged by a person",
-          "machine can check"
-        ]
-      },
-      {
-        "field": "factualAccuracy",
-        "claimValue": "achieve only 39-77% factual accuracy",
-        "basis": "quote",
-        "sourceQuote": "Our results reveal that even the strongest frontier models maintain link validity above 94% and relevance above 80%, yet achieve only 39-77% factual accuracy, while fewer than half of open-source models successfully generate cited reports in a one-shot setting.",
-        "sourceLocator": "abstract",
-        "paperUse": [
-          "39",
-          "machine can check"
-        ]
-      },
-      {
         "field": "unverifiable",
         "claimValue": "yet these citations cannot be reliably verified",
         "basis": "quote",
@@ -1610,6 +1588,27 @@
         "sourceLocator": "abstract, closing sentence",
         "paperUse": [
           "machine can check"
+        ]
+      },
+      {
+        "field": "factualAccuracy",
+        "claimValue": "achieve only 39-77% factual accuracy",
+        "basis": "quote",
+        "sourceQuote": "Our results reveal that even the strongest frontier models maintain link validity above 94% and relevance above 80%, yet achieve only 39-77% factual accuracy, while fewer than half of open-source models successfully generate cited reports in a one-shot setting.",
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "39",
+          "machine can check"
+        ]
+      },
+      {
+        "field": "judgment",
+        "claimValue": "enabling human or model evaluators to judge each citation against its source",
+        "basis": "quote",
+        "sourceQuote": "Unlike methods that verify claims in isolation, our framework closes the loop by retrieving the actual cited content, enabling human or model evaluators to judge each citation against its source.",
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "judged by a person"
         ]
       }
     ],
