@@ -34,3 +34,17 @@ console.log(`render: the reader sees ${/>(\$[0-9.]+ billion)</.exec(html)?.[1] |
     console.log(`${label}: ${md.match(/@\[[^\]]*\]\{[^}]*\}/)[0]} against company:aapl.name = ${store['company:aapl.name']}: ${d.status}`);
   }
 }
+// The other two fact outcomes: a field the store does not hold, and a fact with no entity in force.
+{
+  const r1 = verifyProveml('@[company:aapl]{Apple Inc.} reported %[headcount]{164000}.', store); const d1 = r1.details.find((x) => x.type === 'fact');
+  console.log(`unverifiable: claim %[headcount]{164000} against company:aapl.headcount, which the store does not hold: ${d1.status}`);
+  const r2 = verifyProveml('Revenue was %[revenue]{391035000000 USD}.', store); const d2 = r2.details.find((x) => x.type === 'fact');
+  console.log(`no context: claim %[revenue]{391035000000 USD} with no entity in force: ${d2.status}`);
+}
+// Judgments: a condition is a registered name; a comparison written by the model, or a name the registry lacks, is unverifiable.
+{
+  for (const [md, label] of [['@[company:aapl]{Apple Inc.} had ?[p: revenue > 100]{strong revenue}.', 'bare comparison'], ['@[company:aapl]{Apple Inc.} had ?[p: IS_HUGE_REVENUE]{strong revenue}.', 'unregistered name']]) {
+    const r = verifyProveml(md, store); const d = r.details.find((x) => x.type === 'inference');
+    console.log(`${label}: ${md.match(/\?\[[^\]]*\]\{[^}]*\}/)[0]}: ${d.status} (${d.error})`);
+  }
+}
