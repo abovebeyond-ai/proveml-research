@@ -101,6 +101,19 @@ for (const model of order) for (const cond of ['none', 'registry']) {
 const failedNames = {};
 for (const r of runs) if (r.condition === 'registry') for (const x of r.results) if (!x.empty) for (const n of x.steps[0].inferences.names) if (n.status === 'failed') failedNames[n.name] = (failedNames[n.name] || 0) + 1;
 console.log('\nfalse judgments on the first pass, by name (all registry runs):', Object.entries(failedNames).sort((a, b) => b[1] - a[1]).map(([n, c]) => `${n} ${c}`).join(', ') || 'none');
+// Of those failures, how many name a threshold whose own word the question used ("Is 6ZW a strong
+// class?" answered with IS_STRONG at 74 against 75): the word the question invited, refused by the
+// bound. Counted by the threshold's word appearing in the question; the rest are listed by question.
+{
+    const WORD = { IS_STRONG: /strong/i, IS_SMALL_SAMPLE: /small/i, IS_GREY_RISK: /grey/i, IS_RELIABLE_SAMPLE: /reliable/i, IS_HIGH_ABSENCE: /absen/i, IS_LOW_PASS: /\blow\b/i };
+    const invitedBy = {}, other = {}; let invited = 0, rest = 0;
+    for (const r of runs) if (r.condition === 'registry') for (const x of r.results) if (!x.empty) for (const n of x.steps[0].inferences.names) if (n.status === 'failed') {
+        const base = String(n.name).replace(/\(.*$/, '');
+        if (WORD[base] && WORD[base].test(x.prompt || '')) { invited++; invitedBy[x.id] = (invitedBy[x.id] || 0) + 1; } else { rest++; other[x.id] = (other[x.id] || 0) + 1; }
+    }
+    const list = (o) => Object.entries(o).sort((a, b) => b[1] - a[1]).map(([q, c]) => `${q} ${c}`).join(', ');
+    console.log(`first-pass failures whose threshold names the word the question used: ${invited} of ${invited + rest} (${list(invitedBy)}), the largest single class; the other ${rest} spread over ${Object.keys(other).length} questions (${list(other)})`);
+}
 const invented = {};
 for (const r of runs) if (r.condition === 'registry') for (const x of r.results) if (!x.empty) for (const n of x.steps[0].inferences.names) if (n.status === 'unverifiable' && !(String(n.name).replace(/\(.*$/, '') in r.registry)) invented[n.name] = (invented[n.name] || 0) + 1;
 const unresolved = {};
