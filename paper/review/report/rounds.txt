@@ -72,3 +72,6 @@ caught by reader (2026-09-12, Shane): "the commonest failure is the word the que
 caught by reader (2026-09-12, Shane): "verbalised confidence is systematically overconfident": Xiong and Zhou both say tends to be; the paper now says the same (push 78).
 2026-09-12T12:17:42Z push 79 | pass recorded 0 | verified 701/701 | blocks 161 | readings 684 | bound 293 | sources 112 | measure (own statements unanswered + judged no) 378+0
 caught by reader (2026-09-12, Shane): "more than a decade ago" was flagged; now bound to the Inline XBRL specification's own dates (1.0 in 2010, Recommendation 2013), push 79.
+2026-09-12T12:19:38Z push 80 | pass recorded 0 | verified 697/697 | blocks 161 | readings 680 | bound 293 | sources 112 | measure (own statements unanswered + judged no) 376+0
+2026-09-12T12:20:07Z push 81 | pass recorded 0 | verified 698/698 | blocks 161 | readings 681 | bound 294 | sources 112 | measure (own statements unanswered + judged no) 376+0
+caught by reader (2026-09-12, Shane): "have applied since" was a scrap cut off before the bound date (residue rule extended with since/until/before/after and copulas, push 80); "two weeks before" is now bound to the guidelines' publication date, 20 July against 2 August (push 81).
