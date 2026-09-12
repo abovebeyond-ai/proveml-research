@@ -68,6 +68,12 @@ for (const [bench, models] of Object.entries(groups)) {
             ` ${share('reference')} / ${share('value')} / ${resid ? Math.round(100 * (residual.context + residual.other) / resid) + '%' : '-'}  (n=${resid})`);
     }
 }
+// Every query-run's first pass, counted once: did the model produce any construct at all?
+{
+    let n = 0, none = 0;
+    for (const models of Object.values(groups)) for (const runs of Object.values(models)) for (const { doc } of runs) for (const q of doc.results) { n++; if (!q || !q.steps || !q.steps[0] || !(q.steps[0].total > 0)) none++; }
+    console.log(`\nquery-runs whose first pass carried no construct: ${none} of ${n}`);
+}
 console.log('\nfirst%/final%: mean over runs of the per-run mean verification rate (per query), ± sample sd over runs.');
 console.log('conv: queries verifying every claim after at most one correction. cover%: numbers inside a claim / all numbers.');
 console.log('noCorr: queries with errors where no correction was attempted or the call failed (should be 0).');

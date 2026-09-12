@@ -5,17 +5,17 @@
  "cwd": "<repo>/experiments",
  "repo": {
   "path": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research",
-  "commit": "d05cd75",
-  "branch": "judgment-study",
-  "uncommittedChanges": 38
+  "commit": "ce3e65f",
+  "branch": "constructs-commonmark",
+  "uncommittedChanges": 9
  },
- "startedAt": "2026-09-12T07:12:53.684Z",
- "durationMs": 82,
+ "startedAt": "2026-09-12T17:09:11.289Z",
+ "durationMs": 80,
  "exitCode": 0,
- "stdoutSha256": "4b663c451fb4b701106f9740669e1281247b31ba91d379113cb32b14fa569fc5",
- "stdoutBytes": 1340,
+ "stdoutSha256": "5d9169838ea3ee3b64ee18a599db2a1eee8c75d704adbfd4d919d8b66f156121",
+ "stdoutBytes": 1400,
  "snapshotSha256": "4b663c451fb4b701106f9740669e1281247b31ba91d379113cb32b14fa569fc5",
- "sameAsSnapshot": true,
+ "sameAsSnapshot": false,
  "stderrTail": [],
  "node": "v24.13.0"
 }

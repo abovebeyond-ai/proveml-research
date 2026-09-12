@@ -11,6 +11,8 @@ claude-opus-5                           3  95.4 ± 7.5  97.1 ± 4.7 25.7/28    9
 claude-sonnet-5                         3  99.4 ± 0.2  99.4 ± 0.2 25.7/28    91.1     0      0  43% / 29% / 29%  (n=7)
 deepseek-ai/DeepSeek-V4-Pro-0813        3  99.2 ± 1.5 100.0 ± 0.0 28.0/28    95.1     0      0  - / - / -  (n=0)
 
+query-runs whose first pass carried no construct: 0 of 342
+
 first%/final%: mean over runs of the per-run mean verification rate (per query), ± sample sd over runs.
 conv: queries verifying every claim after at most one correction. cover%: numbers inside a claim / all numbers.
 noCorr: queries with errors where no correction was attempted or the call failed (should be 0).

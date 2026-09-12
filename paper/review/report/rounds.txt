@@ -94,3 +94,5 @@ caught by reader (2026-09-12, Shane): the small-model study's label and run date
 caught by reader (2026-09-12, Shane): "whose results this paper does not reproduce": Finding 1 and the retrieval paragraph cite two of them; now "cites in two places but does not reprint" (push 90).
 2026-09-12T16:56:51Z push 91 | pass recorded 0 | verified 687/687 | blocks 161 | readings 670 | bound 302 | sources 114 | measure (own statements unanswered + judged no) 341+0
 caught by reader (2026-09-12, Shane): "do not conflict with standard Markdown syntax" was a flagged span; bound to CommonMark 6.9 with the bracket caveat in the note (push 91).
+2026-09-12T17:09:19Z push 92 | pass recorded 0 | verified 688/688 | blocks 161 | readings 671 | bound 303 | sources 114 | measure (own statements unanswered + judged no) 340+0
+caught by reader (2026-09-12, Shane): "produced the markup on every query" had no printed count; both summary scripts now print query-runs whose first pass carried no construct (0 of 342, 0 of 342, 0 of 360) and the clause binds to it (push 92).

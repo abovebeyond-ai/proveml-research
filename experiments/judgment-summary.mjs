@@ -97,6 +97,12 @@ for (const model of order) for (const cond of ['none', 'registry']) {
     console.log(`\nall registry runs (${reg.length}): ${s0('total')} judgments on the first pass, ${s0('verified')} verified, ${s0('failed')} false; after one correction ${s1('total')} judgments, ${s1('verified')} verified, ${s1('failed')} false`);
 }
 
+// Every query-run's first pass, both conditions: did the model produce any construct at all?
+{
+    let n = 0, none = 0;
+    for (const r of runs) for (const x of r.results) { n++; const s = x.steps && x.steps[0]; const facts = s ? (s.claims ?? s.total ?? 0) : 0; const inf = s && s.inferences ? s.inferences.total : 0; if (!(facts > 0 || inf > 0)) none++; }
+    console.log(`query-runs whose first pass carried no construct: ${none} of ${n}`);
+}
 // Which registry names failed, across all registry runs: the sentence the model reached for.
 const failedNames = {};
 for (const r of runs) if (r.condition === 'registry') for (const x of r.results) if (!x.empty) for (const n of x.steps[0].inferences.names) if (n.status === 'failed') failedNames[n.name] = (failedNames[n.name] || 0) + 1;
