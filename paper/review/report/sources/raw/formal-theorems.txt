@@ -42,3 +42,30 @@ theorems: 41
   Theorems.unitOk_mono
   Theorems.evalAtom_store_mono
   Theorems.isNull_vacuous: The exception, stated: an `isNull` threshold holds wherever the store is silent.
+definitions: 26
+  Kleene.not
+  Kleene.and
+  Kleene.or
+  Kleene.le: The information order: the unresolved verdict is below both decided ones.
+  Store.Val.show
+  Store.surface: The text a fact is compared against: the value, then the unit if the store declares one.
+  Store.fieldOf: The field a path addresses: `student:100.passRate` is `passRate`; a bare `student:100` has none.
+  Store.evalOp: One operator against one value. Unresolved when an ordering operator meets text.
+  Store.unitOk: Does the store's unit at `p` satisfy what the threshold asks?
+  Store.evalAtom
+  Store.evalCond
+  Theorems.atomPath: The path an atom evaluates at, once the name resolved to a threshold.
+  Theorems.Registry.le
+  Theorems.flat: A body that opens no scope of its own and closes none.
+  Theorems.runState
+  Theorems.Store.le
+  Verify.entityVerdict
+  Verify.targetPath: The path a fact addresses: its own, or a field of the entity in force.
+  Verify.targetField
+  Verify.compareAt: Compare a value with what the store shows at a path.
+  Verify.factVerdict
+  Verify.step
+  Verify.isConstruct: A close is not a construct and yields no verdict; everything else yields one.
+  Verify.go
+  Verify.verify: The verifier: one verdict per construct, in document order.
+  Verify.verifiedCount
