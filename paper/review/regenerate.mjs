@@ -35,6 +35,7 @@ const RUNS = [
   { id: 'formal', out: 'formal-check.txt', cwd: REPO, cmd: ['node', 'formal/check-vectors.mjs'] },
   { id: 'theorems', out: 'formal-theorems.txt', cwd: REPO, cmd: ['node', 'formal/list-theorems.mjs'] },
   { id: 'dates', out: 'run-dates.txt', cwd: REPO + '/experiments', cmd: ['node', 'run-dates.mjs'] },
+  { id: 'history', out: 'repo-history.txt', cwd: process.cwd(), cmd: ['node', 'history.mjs'] },
   { id: 'techreport', out: 'technical-report.txt', cwd: REPO, cmd: ['node', '-e', "process.stdout.write(require('fs').readFileSync('paper/proveml-technical-report.tex','utf8'))"] },
   { id: 'verifier', out: 'verifier-check.txt', cwd: process.cwd(), cmd: ['node', 'verifier-check.mjs'] },
   { id: 'plant', out: 'plant-score.txt', cwd: REPO, cmd: ['node', 'paper/review/plant/run.mjs', 'score', 'paper/review/plant/out/verdicts.json'] },
