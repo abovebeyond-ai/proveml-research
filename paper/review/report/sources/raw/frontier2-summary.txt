@@ -11,7 +11,7 @@ claude-opus-5                           3  95.4 ± 7.5  97.1 ± 4.7 25.7/28    9
 claude-sonnet-5                         3  99.4 ± 0.2  99.4 ± 0.2 25.7/28    91.1     0      0  43% / 29% / 29%  (n=7)
 deepseek-ai/DeepSeek-V4-Pro-0813        3  99.2 ± 1.5 100.0 ± 0.0 28.0/28    95.1     0      0  - / - / -  (n=0)
 
-runs per model and benchmark: 3; correction passes allowed (maxLoops in every run file): 1
+runs per model and benchmark: 3; correction passes allowed (maxLoops in every run file): 1; empty answers scored 0% (education harness): 0; empty answers dropped (finance harness writes null): 0
 
 query-runs whose first pass carried no construct: 0 of 342
 

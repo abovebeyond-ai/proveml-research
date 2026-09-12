@@ -72,7 +72,9 @@ for (const [bench, models] of Object.entries(groups)) {
 {
     const runsPer = Object.values(groups).flatMap((models) => Object.values(models).map((runs) => runs.length));
     const loops = new Set(Object.values(groups).flatMap((models) => Object.values(models).flatMap((runs) => runs.map(({ doc }) => doc.maxLoops))));
-    console.log(`\nruns per model and benchmark: ${[...new Set(runsPer)].join('/')}; correction passes allowed (maxLoops in every run file): ${[...loops].join('/')}`);
+    let empty = 0, dropped = 0;
+    for (const models of Object.values(groups)) for (const runs of Object.values(models)) for (const { doc } of runs) for (const q of doc.results) { if (q === null) dropped++; else if (q.emptyResponse) empty++; }
+    console.log(`\nruns per model and benchmark: ${[...new Set(runsPer)].join('/')}; correction passes allowed (maxLoops in every run file): ${[...loops].join('/')}; empty answers scored 0% (education harness): ${empty}; empty answers dropped (finance harness writes null): ${dropped}`);
 }
 // Every query-run's first pass, counted once: did the model produce any construct at all?
 {
