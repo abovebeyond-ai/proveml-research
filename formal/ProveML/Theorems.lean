@@ -303,6 +303,7 @@ theorem runState_flat_stack (S : Store ν) (R : Registry ν) (body : List Tok) (
     | fact tg v => simp only [flat] at hb; simp only [runState, step]; exact ih hb _
     | infer l c => simp only [flat] at hb; simp only [runState, step]; exact ih hb _
 
+/-- Closing a scope restores the entity that was in force when it opened, whatever the body did. -/
 theorem scope_restores (S : Store ν) (R : Registry ν) (st : St) (p n : String) (body : List Tok)
     (hb : flat body = true) :
     (runState S R st ([.entity p n true] ++ body ++ [.close])).ctx = st.ctx := by

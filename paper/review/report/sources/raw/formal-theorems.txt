@@ -38,7 +38,7 @@ theorems: 41
   Theorems.evalCond_empty: In particular, against the empty registry nothing holds and nothing fails: every judgment is unresolved.
   Theorems.runState_append
   Theorems.runState_flat_stack
-  Theorems.scope_restores
+  Theorems.scope_restores: Closing a scope restores the entity that was in force when it opened, whatever the body did.
   Theorems.unitOk_mono
   Theorems.evalAtom_store_mono
   Theorems.isNull_vacuous: The exception, stated: an `isNull` threshold holds wherever the store is silent.
@@ -64,7 +64,7 @@ definitions: 26
   Verify.targetField
   Verify.compareAt: Compare a value with what the store shows at a path.
   Verify.factVerdict
-  Verify.step
+  Verify.step: One construct at a time. An entity becomes the entity in force, and a scoped one remembers the entity that was in force before it; a close restores that entity; a fact binds to the entity in force, or to its own absolute path; a judgment records its verdict under its label.
   Verify.isConstruct: A close is not a construct and yields no verdict; everything else yields one.
   Verify.go
   Verify.verify: The verifier: one verdict per construct, in document order.

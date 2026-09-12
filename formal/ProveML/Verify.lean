@@ -74,6 +74,7 @@ def factVerdict (S : Store ν) (ctx : Option String) (t : Target) (value : Strin
   | none => .factNoContext (targetField t) value
   | some q => compareAt S q value
 
+/-- One construct at a time. An entity becomes the entity in force, and a scoped one remembers the entity that was in force before it; a close restores that entity; a fact binds to the entity in force, or to its own absolute path; a judgment records its verdict under its label. -/
 def step (S : Store ν) (R : Registry ν) (st : St) : Tok → St × Verdict
   | .entity p n sc =>
     let st' := { st with ctx := some p, stack := if sc then st.ctx :: st.stack else st.stack }

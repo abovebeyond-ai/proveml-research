@@ -100,3 +100,5 @@ caught by reader (2026-09-12, Shane): "produced the markup on every query" had n
 caught by reader (2026-09-12, Shane): the entity name check was a flagged span; verifier-check.mjs now prints an entity line and the sentence binds to it (push 93).
 2026-09-12T17:18:52Z push 94 | pass recorded 0 | verified 689/689 | blocks 161 | readings 672 | bound 305 | sources 114 | measure (own statements unanswered + judged no) 337+0
 caught by reader (2026-09-12, Shane): "binding is structural ... by fixed rules" was a flagged span; the theorem listing now also prints the model's definitions and the sentence binds to Verify.targetPath (push 94).
+2026-09-12T17:24:16Z push 95 | pass recorded 0 | verified 689/689 | blocks 161 | readings 672 | bound 307 | sources 114 | measure (own statements unanswered + judged no) 335+0
+caught by reader (2026-09-12, Shane): carry-forward and scope restore were flagged spans; step and scope_restores got docstrings in the model and the two clauses bind to them (push 95).
