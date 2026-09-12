@@ -7549,5 +7549,72 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "pf8a0aaf523f5": {
+  "at": "2026-09-12T09:34:05.256Z",
+  "claims": [
+   {
+    "span": "Organizations deploy LLMs widely (Stanford HAI, 2026)",
+    "kind": "citation",
+    "why": "Need to confirm Stanford HAI 2026 actually supports 'widely' and check the report exists with that year/claim."
+   },
+   {
+    "span": "in consequential settings (Magesh et al., 2025)",
+    "kind": "citation",
+    "why": "Confirm Magesh et al. 2025 specifically documents consequential (high-stakes) deployment settings, not a narrower claim."
+   },
+   {
+    "span": "regulation now reaches AI-generated content (European Parliament and Council of the European Union, 2024; European Commission, 2026)",
+    "kind": "citation",
+    "why": "Verify both citations exist, are correctly dated, and actually address regulation of AI-generated content specifically."
+   },
+   {
+    "span": "European Commission, 2026",
+    "kind": "date",
+    "why": "2026 is a future/very recent date relative to typical citation lag; confirm this document exists and the year is correct, not a placeholder or typo."
+   },
+   {
+    "span": "the link generated text carries between a claim and the data behind it, a citation, is not one a machine can check against the claim (Onweller et al., 2026; Rao et al., 2026)",
+    "kind": "absence",
+    "why": "Strong absence claim that no machine-checkable link exists; must confirm both cited works actually establish this gap and don't propose a checkable mechanism."
+   },
+   {
+    "span": "Onweller et al., 2026",
+    "kind": "citation",
+    "why": "Confirm this citation exists, year is correct, and it supports the specific claim about uncheckable citations."
+   },
+   {
+    "span": "Rao et al., 2026",
+    "kind": "citation",
+    "why": "Confirm this citation exists, year is correct, and it supports the specific claim about uncheckable citations."
+   },
+   {
+    "span": "three inline constructs",
+    "kind": "number",
+    "why": "Confirm ProveML actually has exactly three inline constructs as described elsewhere in the paper."
+   },
+   {
+    "span": "milliseconds per response",
+    "kind": "number",
+    "why": "Quantitative performance claim needs a source or benchmark figure elsewhere in the paper to substantiate 'milliseconds'."
+   },
+   {
+    "span": "no model in the loop",
+    "kind": "absence",
+    "why": "Absolute absence claim about the verification process; confirm no model dependency exists anywhere in the verifier pipeline."
+   },
+   {
+    "span": "its guarantees, that verified means equal to the store and that no unregistered name can decide a judgment, are machine-checked",
+    "kind": "other",
+    "why": "Confirm these guarantees are actually proven/machine-checked (e.g., via a proof assistant or test suite) as claimed, not merely asserted."
+   },
+   {
+    "span": "no unregistered name can decide a judgment",
+    "kind": "absence",
+    "why": "Absolute absence/security-style claim that should be verified against the formal semantics or proofs referenced."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
