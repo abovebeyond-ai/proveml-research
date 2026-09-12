@@ -83,3 +83,5 @@ caught by reader (2026-09-12, Shane): "where the author is a model" overstated t
 caught by reader (2026-09-12, Shane): "(Section 2)" was a flagged span; a cross-reference is not a claim, 13 such readings dropped (push 84).
 2026-09-12T12:32:10Z push 85 | pass recorded 0 | verified 689/689 | blocks 161 | readings 672 | bound 295 | sources 112 | measure (own statements unanswered + judged no) 356+0
 caught by reader (2026-09-12, Shane): the introduction's registry guarantee was a flagged span; bound to evalAtom_tt_registered like the abstract (push 85).
+2026-09-12T12:33:35Z push 86 | pass recorded 0 | verified 692/692 | blocks 161 | readings 675 | bound 298 | sources 113 | measure (own statements unanswered + judged no) 356+0
+caught by reader (2026-09-12, Shane): the claim that the technical report holds the algorithm, comparison semantics and rendering was flagged; the report is now a source on the page and the three words bind to its headings and its comparison rule (push 86).

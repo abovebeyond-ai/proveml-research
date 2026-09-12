@@ -27,6 +27,7 @@ const snapshots = {
   ...(existsSync('report/sources/raw/judgment-summary.txt') ? { judgment: read('judgment-summary.txt') } : {}),
   ...(existsSync('report/sources/raw/formal-check.txt') ? { formal: read('formal-check.txt') } : {}),
   ...(existsSync('report/sources/raw/formal-theorems.txt') ? { theorems: read('formal-theorems.txt') } : {}),
+  ...(existsSync('report/sources/raw/technical-report.txt') ? { techreport: read('technical-report.txt') } : {}),
   ...(existsSync('report/sources/raw/plant-score.txt') ? { plant: read('plant-score.txt') } : {}),
   ...(existsSync('report/sources/raw/pdpp-students.txt') ? { 'pdpp-students': read('pdpp-students.txt') } : {}),
   magesh2025: htmlToText(read('magesh2025-arxiv.html')), liu2026citations: htmlToText(read('liu2026citations.html')), omnibus2026: htmlToText(read('omnibus2026.html')),
@@ -57,7 +58,8 @@ const store = {
   'model:sonnet5.judgWith': '19.3', 'model:sonnet5.judgPerRun': '42.3', 'model:sonnet5.judgFirst': '77.8', 'model:sonnet5.judgFinal': '98.2', 'model:sonnet5.judgSound0': '3.7', 'model:sonnet5.judgSound1': '7.7',
   'model:deepseek.judgWith': '18.0', 'model:deepseek.judgPerRun': '41.3', 'model:deepseek.judgFirst': '100', 'model:deepseek.judgFinal': '100', 'model:deepseek.judgSound0': '8.0', 'model:deepseek.judgSound1': '8.0',
   'formal:vectors.name': 'the model vectors', 'formal:vectors.agree': '11', 'formal:vectors.total': '11',
-  'formal:theorems.name': 'the mechanised model', 'formal:theorems.factSound': "a verified fact equals the store's value", 'formal:theorems.registered': 'a judgment is verified only by a threshold the registry holds', 'formal:theorems.unresolved': 'what the verifier cannot resolve, it neither verifies nor fails', 'formal:theorems.checked': 'machine-checked', 'formal:theorems.deploymentNamed': 'a judgment the deployment never named cannot be made checkable by the model',
+  'formal:theorems.name': 'the mechanised model', 'formal:theorems.factSound': "a verified fact equals the store's value", 'formal:theorems.registered': 'a judgment is verified only by a threshold the registry holds', 'formal:theorems.unresolved': 'what the verifier cannot resolve, it neither verifies nor fails', 'formal:theorems.checked': 'machine-checked',
+  'techreport:sections.name': 'the technical report', 'techreport:sections.algorithm': 'verification algorithm', 'techreport:sections.comparison': 'comparison semantics', 'techreport:sections.rendering': 'rendering', 'formal:theorems.deploymentNamed': 'a judgment the deployment never named cannot be made checkable by the model',
   'reg:ixbrl.name': 'Inline XBRL', 'reg:ixbrl.age': 'more than a decade ago', 'reg:art50.name': 'the Article 50 guidelines', 'reg:art50.leadTime': 'two weeks before',
   'verifier:coverage.definition': 'the share of a text\'s numbers that sit inside a fact claim rather than in prose',
   'loop:plant.name': 'the planted-error run', 'loop:plant.planted': '43', 'loop:plant.bound': '9', 'loop:plant.number': '9', 'loop:plant.statement': '14', 'loop:plant.citation': '11', 'loop:plant.buildCaught': '9', 'loop:plant.flagged': '33', 'loop:plant.prose': '34', 'loop:plant.caught': '42', 'loop:plant.unplanted': '242', 'loop:plant.changes': '56', 'loop:plant.collateral': '13', 'loop:plant.defects': '42', 'loop:plant.known': '18', 'loop:plant.pageFaults': 'one', 'loop:plant.refutable': 'none',
@@ -174,6 +176,13 @@ const bound = [
       q('reg:omnibus.deferredTo', '2 December 2026', 'omnibus2026', 'comply with Article 50(2) by 2 December 2026', 'Regulation (EU) 2026/1744, EUR-Lex, amended Article 113'),
       q('study:magesh.hallucinationRange', '17–33', 'magesh2025', 'each hallucinate between 17% and 33% of the time', 'arXiv 2405.20362 abstract', 'The abstract says "between 17% and 33% of the time"; the paper writes "17–33% of queries". Fair reading?'),
       q('study:liu.filings', 'more than a thousand', 'liu2026citations', 'we found over 1,000 filings containing fabricated citations', 'arXiv 2606.21155 abstract', 'The abstract says "over 1,000 filings"; the paper writes "more than a thousand". Fair?'),
+    ] },
+  { anchor: 'This paper is deliberately compact', id: 'intro-compact', marks: [
+      ['(verification algorithm, comparison semantics, rendering)', '(%[techreport:sections.algorithm]{verification algorithm}, %[techreport:sections.comparison]{comparison semantics}, %[techreport:sections.rendering]{rendering})'],
+    ], evidence: [
+      q('techreport:sections.algorithm', 'verification algorithm', 'techreport', '\\section{Verification Algorithm}', 'section heading', 'The report has a section of that name.'),
+      q('techreport:sections.comparison', 'comparison semantics', 'techreport', 'Direct fact references use exact string equality against the store\'s canonical representation', 'section Fact Store', 'The comparison rule for facts; thresholds use typed comparison (section Threshold Registry). Fair reading?'),
+      q('techreport:sections.rendering', 'rendering', 'techreport', '\\section{Rendering}', 'section heading', 'The report has a section of that name.'),
     ] },
   { anchor: 'The response this paper takes is not to make the model more truthful', id: 'intro-ixbrl', marks: [
       ['Financial reporting solved a version of this problem more than a decade ago', 'Financial reporting solved a version of this problem %[reg:ixbrl.age]{more than a decade ago}'],
@@ -629,7 +638,7 @@ for (const [id, text] of Object.entries(snapshots)) manifests[id] = buildManifes
 const committedReview = migrated;
 const sourceTitles = {
   benchmarks: 'benchmark files (regenerated)', dataset: 'dataset metadata', finance: 'finance benchmark', summary: 'frontier study summary (experiments/run-frontier.sh)',
-  residuals: 'frontier residual errors', deployment: 'deployment numbers (deployment-numbers.mjs)', verifier: 'the verifier on the paper\'s example (verifier-check.mjs)', judgment: 'judgment study summary (judgment-summary.mjs over judgment-results-*.json)', formal: 'the package against the mechanised model (formal/check-vectors.mjs)', theorems: 'the mechanised model: Lean build, sorry count, every theorem (formal/list-theorems.mjs)', plant: 'the planted-error run over the review loop (paper/review/plant/run.mjs score)', package: 'the npm package (package.json)', summary2: 'second frontier study summary (--tag frontier2)',
+  residuals: 'frontier residual errors', deployment: 'deployment numbers (deployment-numbers.mjs)', verifier: 'the verifier on the paper\'s example (verifier-check.mjs)', judgment: 'judgment study summary (judgment-summary.mjs over judgment-results-*.json)', formal: 'the package against the mechanised model (formal/check-vectors.mjs)', theorems: 'the mechanised model: Lean build, sorry count, every theorem (formal/list-theorems.mjs)', techreport: 'the technical report (paper/proveml-technical-report.tex, as text)', plant: 'the planted-error run over the review loop (paper/review/plant/run.mjs score)', package: 'the npm package (package.json)', summary2: 'second frontier study summary (--tag frontier2)',
   magesh2025: 'Magesh et al. 2025, arXiv 2405.20362 (abstract page)', liu2026citations: 'Liu et al. 2026, arXiv 2606.21155 (abstract page)',
   omnibus2026: 'Regulation (EU) 2026/1744, EUR-Lex', art50guidelines2026: 'Article 50 guidelines, European Commission',
   'pdpp-students': 'pupil records, stream students, under a PDPP grant',
