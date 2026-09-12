@@ -11,3 +11,5 @@ no context: claim %[revenue]{391035000000 USD} with no entity in force: no-conte
 bare comparison: ?[p: revenue > 100]{strong revenue}: unverifiable (Direct comparison not allowed: use a threshold from the registry)
 unregistered name: ?[p: IS_HUGE_REVENUE]{strong revenue}: unverifiable (Unknown threshold: IS_HUGE_REVENUE)
 registry from outside: the deployment passes {IS_HUGE_REVENUE: revenue >= 100000000000} to the verifier and the same judgment is verified; without it, unverifiable (line above)
+snapshot: the deployment passes snapshot "edgar-fy2025-2026-09-12" and the result carries snapshot "edgar-fy2025-2026-09-12" beside its 2/2 verified
+arithmetic in the data layer: the difference is stored as region:EU._salesDiff = 12000 USD; the fact %[_salesDiff]{12000 USD} is verified and the judgment ?[g: SALES_GAP_MATERIAL] against it is verified
