@@ -63,7 +63,7 @@ const store = {
   'study:rao.name': 'Rao et al.', 'study:rao.deepResearchRate': '10.7', 'study:rao.searchRate': '4.8',
   'study:liu.name': 'Liu et al.', 'study:liu.filings': 'more than a thousand',
   'study:frontier.coverageRange': '90–96', 'study:frontier.firstPassRange': '87–100', 'study:frontier.correctedRange': '92–100',
-  'deploy:frontier.overheadRange': '49–79', 'deploy:frontier.secTotal': '0.66', 'deploy:frontier.msPerResponse': '2.6', 'deploy:frontier.msPerClaim': '0.30', 
+  'deploy:frontier.overheadRange': '49–79', 'deploy:frontier.secTotal': '0.66', 'deploy:frontier.msPerResponse': '2.6', 'deploy:frontier.perResponseUnit': 'milliseconds', 'deploy:frontier.msPerClaim': '0.30', 
   'study:frontier2.name': 'the second study', 'study:frontier2.firstPassRange': '95–100', 'study:frontier2.bindingErrors': 16,
   'model:opus5.edu2First': 95.4, 'model:opus5.edu2Final': 97.1, 'model:opus5.edu2Coverage': 97.9, 'model:opus5.fin2First': 100, 'model:opus5.fin2Final': 100, 'model:opus5.fin2Coverage': 98.2,
   'model:sonnet5.edu2First': 99.4, 'model:sonnet5.edu2Final': 99.4, 'model:sonnet5.edu2Coverage': 91.1, 'model:sonnet5.fin2First': 100, 'model:sonnet5.fin2Final': 100, 'model:sonnet5.fin2Coverage': 94.4,
@@ -174,6 +174,11 @@ const bound = [
     ], evidence: [
       q('verifier:example.canonical', '391035000000', 'verifier', 'claim %[revenue]{391035000000 USD} against company:aapl.revenue = 391035000000: verified, shown as $391.0 billion', 'verifier-check.mjs, canonical value'),
       q('verifier:example.rounded', 'fails', 'verifier', 'claim %[revenue]{$391 billion} against company:aapl.revenue = 391035000000: value-mismatch', 'verifier-check.mjs, rounded value', 'The verifier reports value-mismatch; the paper says fails.'),
+    ] },
+  { anchor: 'Organizations deploy LLMs widely', id: 'abstract-mechanism', marks: [
+      ['milliseconds per response', '%[deploy:frontier.perResponseUnit]{milliseconds} per response'],
+    ], evidence: [
+      q('deploy:frontier.perResponseUnit', 'milliseconds', 'deployment', '2.602 ms per response', 'timing line', 'The abstract names the unit of the measured figure (2.6 ms per response in Section 4). Is the word a fair reading of the number?'),
     ] },
   { anchor: 'A planted-error run on 12 September 2026 measured the loop itself', id: 'provenance', marks: [
       ['Of 43 errors planted', 'Of %[loop:plant.planted]{43} errors planted'],
@@ -478,8 +483,8 @@ const inferSubject = (pidv, text) => {
         .filter(([a, b]) => b > a).sort((x, y) => (y[1] - y[0]) - (x[1] - x[0]))[0];
       if (!best) continue;
       const seg = text.slice(best[0], best[1]);
-      if (seg.length < 12 && !/\d/.test(seg)) continue;
-      if (!/\s/.test(seg.trim())) continue;   // one word is not a claim
+      // what is left beside a mark must still be a claim: a number, or at least three words
+      if (!/\d/.test(seg) && (seg.length < 12 || seg.trim().split(/\s+/).length < 3)) continue;
       at = best[0]; end = best[1]; c = { ...c, span: seg };
     }
     if (/^[\s,;:]*\(?\s*%\[citation:/.test(text.slice(end))) continue;
