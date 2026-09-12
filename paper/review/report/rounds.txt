@@ -90,3 +90,5 @@ caught by reader (2026-09-12, Shane): "is in the accompanying technical report" 
 2026-09-12T12:41:10Z push 88 | pass recorded 0 | verified 688/688 | blocks 161 | readings 671 | bound 299 | sources 113 | measure (own statements unanswered + judged no) 349+0
 2026-09-12T12:41:45Z push 89 | pass recorded 0 | verified 688/688 | blocks 161 | readings 671 | bound 301 | sources 114 | measure (own statements unanswered + judged no) 347+0
 caught by reader (2026-09-12, Shane): the small-model study's label and run dates were flagged spans; experiments/run-dates.mjs prints each study's date span from the run files and the paper binds to it (pushes 88 and 89).
+2026-09-12T16:53:50Z push 90 | pass recorded 1 | verified 686/686 | blocks 161 | readings 669 | bound 301 | sources 114 | measure (own statements unanswered + judged no) 347+0
+caught by reader (2026-09-12, Shane): "whose results this paper does not reproduce": Finding 1 and the retrieval paragraph cite two of them; now "cites in two places but does not reprint" (push 90).
