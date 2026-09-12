@@ -64,3 +64,5 @@ caught by reader (2026-09-12, Shane): coverage "inside any claim" overstated the
 2026-09-12T11:32:59Z push 74 | pass recorded 0 | verified 709/709 | blocks 161 | readings 692 | bound 291 | sources 112 | measure (own statements unanswered + judged no) 395+0
 2026-09-12T11:33:20Z push 75 | pass recorded 0 | verified 701/701 | blocks 161 | readings 684 | bound 291 | sources 112 | measure (own statements unanswered + judged no) 387+0
 caught by reader (2026-09-12, Shane): "% after one correction" and "lifts the first pass to" were scraps the trimmer left beside bound numbers; a residue that starts on a unit sign or ends on a preposition is now dropped (19 readings, pushes 74 and 75).
+2026-09-12T12:06:24Z push 76 | pass recorded 1 | verified 701/701 | blocks 161 | readings 684 | bound 291 | sources 112 | measure (own statements unanswered + judged no) 390+0
+caught by reader (2026-09-12, Shane): the abstract carried Finding 3's prompt detail; now "a second prompt that adds the binding rule lifts the first pass to 95–100%" (push 76).
