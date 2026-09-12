@@ -552,6 +552,7 @@ const inferSubject = (pidv, text) => {
     if ((text.slice(0, at).match(/`/g) || []).length % 2 === 1) continue;   // inside a code span: the verifier skips it, the reader would see raw markup
     if (/[%@?]\[|\]\{/.test(c.span)) continue;   // the span itself quotes markup
     if (/^\(?\s*(?:Section|Table|Figure|Appendix|Finding)s?\s*[\dA-Z]+(?:[.\d]*)?\s*\)?$/.test(c.span.trim())) continue;   // a cross-reference is not a claim ("(Section 2)")
+    if (/^\(?(?:Section|Table|Figure|Appendix)\s*[\dA-Z]+\b/.test(c.span.trim())) continue;   // a sentence that starts on a cross-reference is navigation ("Section 3 shows why that is needed"); the reader follows it
     if (/[%@?]\[[^\]]*$/.test(text.slice(Math.max(0, at - 80), at)) && text.slice(end).match(/^[^{]*\]\{/)) continue; // inside another construct's head
     placed.push({ at, end, c });
   }
