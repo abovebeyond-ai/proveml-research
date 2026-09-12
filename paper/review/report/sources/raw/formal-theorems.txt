@@ -1,0 +1,44 @@
+lake build: exit 0 (Build completed successfully (7 jobs).)
+sorry: 0 occurrences in 4 files
+theorems: 41
+  Kleene.not_uu
+  Kleene.not_not
+  Kleene.and_ff_left
+  Kleene.and_ff_right
+  Kleene.or_tt_left
+  Kleene.or_tt_right
+  Kleene.and_comm
+  Kleene.or_comm
+  Kleene.and_uu_tt: An unresolved operand never produces a decided conjunction on its own.
+  Kleene.or_uu_ff: An unresolved operand never produces a decided conjunction on its own.
+  Kleene.le_refl
+  Kleene.uu_le
+  Kleene.not_mono: Every connective is monotone in the information order: resolving an
+  Kleene.and_mono: Every connective is monotone in the information order: resolving an
+  Kleene.or_mono: Every connective is monotone in the information order: resolving an
+  Kleene.le_tt_iff: A decided verdict stays what it is under refinement.
+  Kleene.le_ff_iff: A decided verdict stays what it is under refinement.
+  Theorems.compareAt_sound
+  Theorems.factVerdict_sound
+  Theorems.entityVerdict_sound
+  Theorems.mem_go: What `go` produces for one token is `step`'s verdict, then the rest.
+  Theorems.step_fact_sound
+  Theorems.step_entity_sound
+  Theorems.go_fact_sound
+  Theorems.go_entity_sound
+  Theorems.verify_fact_sound: Lifted to a document: every fact the verifier calls verified is the store's own surface value.
+  Theorems.verify_entity_sound
+  Theorems.evalAtom_eq
+  Theorems.evalAtom_tt_registered: An atom that holds names a registered threshold.
+  Theorems.evalAtom_tt_holds: An atom that holds, under any operator but `isNull`, names a stored value the operator holds of,
+  Theorems.evalAtom_mono
+  Theorems.evalCond_mono
+  Theorems.evalCond_tt_stable: A judgment that holds keeps holding when the registry grows.
+  Theorems.evalCond_ff_stable: And one that fails keeps failing: registering more names never rescues a false judgment.
+  Theorems.evalCond_empty: In particular, against the empty registry nothing holds and nothing fails: every judgment is unresolved.
+  Theorems.runState_append
+  Theorems.runState_flat_stack
+  Theorems.scope_restores
+  Theorems.unitOk_mono
+  Theorems.evalAtom_store_mono
+  Theorems.isNull_vacuous: The exception, stated: an `isNull` threshold holds wherever the store is silent.

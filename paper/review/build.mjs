@@ -26,6 +26,7 @@ const snapshots = {
   ...(existsSync('report/sources/raw/verifier-check.txt') ? { verifier: read('verifier-check.txt') } : {}),
   ...(existsSync('report/sources/raw/judgment-summary.txt') ? { judgment: read('judgment-summary.txt') } : {}),
   ...(existsSync('report/sources/raw/formal-check.txt') ? { formal: read('formal-check.txt') } : {}),
+  ...(existsSync('report/sources/raw/formal-theorems.txt') ? { theorems: read('formal-theorems.txt') } : {}),
   ...(existsSync('report/sources/raw/plant-score.txt') ? { plant: read('plant-score.txt') } : {}),
   ...(existsSync('report/sources/raw/pdpp-students.txt') ? { 'pdpp-students': read('pdpp-students.txt') } : {}),
   magesh2025: htmlToText(read('magesh2025-arxiv.html')), liu2026citations: htmlToText(read('liu2026citations.html')), omnibus2026: htmlToText(read('omnibus2026.html')),
@@ -56,6 +57,7 @@ const store = {
   'model:sonnet5.judgWith': '19.3', 'model:sonnet5.judgPerRun': '42.3', 'model:sonnet5.judgFirst': '77.8', 'model:sonnet5.judgFinal': '98.2', 'model:sonnet5.judgSound0': '3.7', 'model:sonnet5.judgSound1': '7.7',
   'model:deepseek.judgWith': '18.0', 'model:deepseek.judgPerRun': '41.3', 'model:deepseek.judgFirst': '100', 'model:deepseek.judgFinal': '100', 'model:deepseek.judgSound0': '8.0', 'model:deepseek.judgSound1': '8.0',
   'formal:vectors.name': 'the model vectors', 'formal:vectors.agree': '11', 'formal:vectors.total': '11',
+  'formal:theorems.name': 'the mechanised model', 'formal:theorems.factSound': 'verified means equal to the store', 'formal:theorems.registered': 'no unregistered name can decide a judgment', 'formal:theorems.checked': 'machine-checked',
   'loop:plant.name': 'the planted-error run', 'loop:plant.planted': '43', 'loop:plant.bound': '9', 'loop:plant.number': '9', 'loop:plant.statement': '14', 'loop:plant.citation': '11', 'loop:plant.buildCaught': '9', 'loop:plant.flagged': '33', 'loop:plant.prose': '34', 'loop:plant.caught': '42', 'loop:plant.unplanted': '242', 'loop:plant.changes': '56', 'loop:plant.collateral': '13', 'loop:plant.defects': '42', 'loop:plant.known': '18', 'loop:plant.pageFaults': 'one', 'loop:plant.refutable': 'none',
   'study:judgment.name': 'the judgment study', 'study:judgment.registryNames': 'fourteen', 'study:judgment.firstRange': '78–100', 'study:judgment.finalRange': '98–100', 'study:judgment.total': '454', 'study:judgment.verifiedFirst': '411', 'study:judgment.verifiedFinal': '425', 'study:judgment.totalFinal': '427', 'study:judgment.falseFirst': '33', 'study:judgment.wordsLow': '18', 'study:judgment.wordsHigh': '26',
   'verifier:example.name': 'the verifier on the paper\'s example', 'verifier:example.canonical': '391035000000', 'verifier:example.rounded': 'fails', 'verifier:example.netIncome': '93736000000', 'verifier:example.shown': '$93.7 billion',
@@ -177,8 +179,12 @@ const bound = [
     ] },
   { anchor: 'Organizations deploy LLMs widely', id: 'abstract-mechanism', marks: [
       ['milliseconds per response', '%[deploy:frontier.perResponseUnit]{milliseconds} per response'],
+      ['that verified means equal to the store and that no unregistered name can decide a judgment, are machine-checked', 'that %[formal:theorems.factSound]{verified means equal to the store} and that %[formal:theorems.registered]{no unregistered name can decide a judgment}, are %[formal:theorems.checked]{machine-checked}'],
     ], evidence: [
       q('deploy:frontier.perResponseUnit', 'milliseconds', 'deployment', '2.602 ms per response', 'timing line', 'The abstract names the unit of the measured figure (2.6 ms per response in Section 4). Is the word a fair reading of the number?'),
+      q('formal:theorems.factSound', 'verified means equal to the store', 'theorems', 'Theorems.verify_fact_sound: Lifted to a document: every fact the verifier calls verified is the store\'s own surface value.', 'theorem list, Theorems.lean', 'The theorem, with verify_entity_sound for entities. Is the abstract\'s phrase a fair reading of what it proves?'),
+      q('formal:theorems.registered', 'no unregistered name can decide a judgment', 'theorems', 'Theorems.evalAtom_tt_registered: An atom that holds names a registered threshold.', 'theorem list, Theorems.lean', 'With evalCond_mono and evalCond_empty (Appendix B): an unregistered name is unresolved and unresolved never decides. Fair reading?'),
+      q('formal:theorems.checked', 'machine-checked', 'theorems', 'sorry: 0 occurrences in 4 files', 'second line, after the lake build verdict', 'Lean built the model with no admitted gap; that is what machine-checked means here.'),
     ] },
   { anchor: 'A planted-error run on 12 September 2026 measured the loop itself', id: 'provenance', marks: [
       ['Of 43 errors planted', 'Of %[loop:plant.planted]{43} errors planted'],
@@ -604,7 +610,7 @@ for (const [id, text] of Object.entries(snapshots)) manifests[id] = buildManifes
 const committedReview = migrated;
 const sourceTitles = {
   benchmarks: 'benchmark files (regenerated)', dataset: 'dataset metadata', finance: 'finance benchmark', summary: 'frontier study summary (experiments/run-frontier.sh)',
-  residuals: 'frontier residual errors', deployment: 'deployment numbers (deployment-numbers.mjs)', verifier: 'the verifier on the paper\'s example (verifier-check.mjs)', judgment: 'judgment study summary (judgment-summary.mjs over judgment-results-*.json)', formal: 'the package against the mechanised model (formal/check-vectors.mjs)', plant: 'the planted-error run over the review loop (paper/review/plant/run.mjs score)', package: 'the npm package (package.json)', summary2: 'second frontier study summary (--tag frontier2)',
+  residuals: 'frontier residual errors', deployment: 'deployment numbers (deployment-numbers.mjs)', verifier: 'the verifier on the paper\'s example (verifier-check.mjs)', judgment: 'judgment study summary (judgment-summary.mjs over judgment-results-*.json)', formal: 'the package against the mechanised model (formal/check-vectors.mjs)', theorems: 'the mechanised model: Lean build, sorry count, every theorem (formal/list-theorems.mjs)', plant: 'the planted-error run over the review loop (paper/review/plant/run.mjs score)', package: 'the npm package (package.json)', summary2: 'second frontier study summary (--tag frontier2)',
   magesh2025: 'Magesh et al. 2025, arXiv 2405.20362 (abstract page)', liu2026citations: 'Liu et al. 2026, arXiv 2606.21155 (abstract page)',
   omnibus2026: 'Regulation (EU) 2026/1744, EUR-Lex', art50guidelines2026: 'Article 50 guidelines, European Commission',
   'pdpp-students': 'pupil records, stream students, under a PDPP grant',
