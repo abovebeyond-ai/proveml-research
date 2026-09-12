@@ -65,3 +65,8 @@ console.log(`render: the reader sees ${/>(\$[0-9.]+ billion)</.exec(html)?.[1] |
   const d = verifyProveml('@[region:EU]{EU} shows a ?[g: SALES_GAP_MATERIAL]{material gap} of %[_salesDiff]{12000 USD}.', regions, { thresholds: registry }).details;
   console.log(`arithmetic in the data layer: the difference is stored as region:EU._salesDiff = 12000 USD; the fact %[_salesDiff]{12000 USD} is ${d.find((x) => x.type === 'fact').status} and the judgment ?[g: SALES_GAP_MATERIAL] against it is ${d.find((x) => x.type === 'inference').status}`);
 }
+// NOT of an unverifiable condition is still unverifiable.
+{
+  const d = verifyProveml('@[company:aapl]{Apple Inc.} had ?[p: NOT IS_HUGE_REVENUE]{modest revenue}.', store).details.find((x) => x.type === 'inference');
+  console.log(`negation: ?[p: NOT IS_HUGE_REVENUE]{modest revenue} with the name unregistered: ${d.status}`);
+}

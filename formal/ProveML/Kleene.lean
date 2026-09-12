@@ -50,6 +50,7 @@ instance : LE K := ⟨le⟩
 instance (a b : K) : Decidable (a ≤ b) := by
   cases a <;> cases b <;> simp [LE.le, le] <;> exact inferInstance
 
+/-- Negating the unresolved leaves it unresolved: NOT of an unverifiable condition is still unverifiable. -/
 theorem not_uu : not uu = uu := rfl
 theorem not_not (a : K) : not (not a) = a := by cases a <;> rfl
 theorem and_ff_left (a : K) : and ff a = ff := by cases a <;> rfl

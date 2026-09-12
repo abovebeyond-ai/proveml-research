@@ -115,3 +115,6 @@ caught by reader (2026-09-12, Shane): the store paragraph had few readings; the 
 caught by reader (2026-09-12, Shane): a display rule that disagrees with a field's unit renders nonsense over a correct verdict and nothing refuses it; named in future work (push 101).
 2026-09-12T18:08:36Z push 102 | pass recorded 1 | verified 690/690 | blocks 161 | readings 673 | bound 316 | sources 114 | measure (own statements unanswered + judged no) 327+0
 caught by reader (2026-09-12, Shane): the registry pattern credited clinical intervals with a name they do not carry; now a label in all three, a name where it is reused (push 102).
+2026-09-12T18:20:51Z push 103 | pass recorded 0 | verified 690/690 | blocks 161 | readings 673 | bound 317 | sources 114 | measure (own statements unanswered + judged no) 324+0
+2026-09-12T18:21:32Z push 104 | pass recorded 0 | verified 691/691 | blocks 161 | readings 674 | bound 318 | sources 114 | measure (own statements unanswered + judged no) 324+0
+caught by reader (2026-09-12, Shane): the comparison rule and the NOT rule in the verification paragraph were flagged spans; bound to the technical report's rule and to Kleene.not_uu (docstring added), with a negation line in the verifier run (pushes 103 and 104).
