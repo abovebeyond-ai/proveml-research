@@ -7931,5 +7931,82 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "p9e47ddc035d8": {
+  "at": "2026-09-12T12:06:20.279Z",
+  "claims": [
+   {
+    "span": "three current models of August 2026",
+    "kind": "date",
+    "why": "Claims these three models were current/available as of August 2026; verify release/availability dates."
+   },
+   {
+    "span": "Claude Opus 5, Claude Sonnet 5 and DeepSeek V4 Pro",
+    "kind": "citation",
+    "why": "Model identities and versions should be confirmed as the exact models tested, including provider naming conventions."
+   },
+   {
+    "span": "real SEC EDGAR filings",
+    "kind": "other",
+    "why": "Should confirm the filings are genuinely sourced from SEC EDGAR and not synthetic or paraphrased."
+   },
+   {
+    "span": "produce the markup on every query",
+    "kind": "number",
+    "why": "An absolute 100% claim; should be verified against the actual run logs/artifacts for zero exceptions."
+   },
+   {
+    "span": "cover 90–96% of their numbers",
+    "kind": "number",
+    "why": "Specific percentage range needs to be checked against reported results/tables."
+   },
+   {
+    "span": "verify 87–100% of claims on the first pass",
+    "kind": "number",
+    "why": "Specific percentage range needs to be checked against reported results/tables."
+   },
+   {
+    "span": "92–100% after one correction",
+    "kind": "number",
+    "why": "Specific percentage range needs to be checked against reported results/tables."
+   },
+   {
+    "span": "a second prompt that adds the binding rule lifts the first pass to 95–100%",
+    "kind": "causal",
+    "why": "Attributes an improvement causally to the added binding rule; should confirm this is an ablation result and not confounded by other changes."
+   },
+   {
+    "span": "a registry of fourteen named conditions",
+    "kind": "number",
+    "why": "Specific count of conditions in the registry should be verified against the actual registry definition."
+   },
+   {
+    "span": "on the first pass none names a condition the registry does not hold",
+    "kind": "absence",
+    "why": "Absolute absence claim (zero hallucinated conditions) should be checked against all logged outputs, not just aggregate stats."
+   },
+   {
+    "span": "verify 78–100% of those judgments on the first pass",
+    "kind": "number",
+    "why": "Specific percentage range needs to be checked against reported results/tables."
+   },
+   {
+    "span": "98–100% after one correction",
+    "kind": "number",
+    "why": "Specific percentage range needs to be checked against reported results/tables."
+   },
+   {
+    "span": "the commonest failure is the word the question invited, refused by the bound",
+    "kind": "causal",
+    "why": "Characterizes the dominant failure mode; should be confirmed by actual error analysis/counts rather than impression."
+   },
+   {
+    "span": "The specification, verifier, benchmarks and run artifacts are published",
+    "kind": "other",
+    "why": "Claim of public availability should be confirmed with a working link/location at submission and camera-ready time."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
