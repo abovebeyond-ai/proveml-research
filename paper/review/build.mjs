@@ -673,11 +673,13 @@ blocks.forEach((b, i) => {
     const inf = inferSubject(id, ctext); if (inf) { ctext = inf.claim; cev = inTextOrder(ctext, [...cev, ...inf.evidence]); }
     subjects.push({ id, title: b.lead || '', meta: '', pre: b.kind === 'table', capLead: cm ? cm[1] : undefined, scan: scanOf(id, inf), claim: ctext, evidence: cev }); return;
   }
-  const inf = inferSubject(id, neutralize(b.text));
+  const inf = b.kind === 'table' ? null : inferSubject(id, neutralize(b.text));
   if (inf) { subjects.push({ id, title: b.lead || '', meta: '', pre: b.kind === 'table', claim: inf.claim, evidence: inf.evidence }); return; }
   const st = inferState[id];
-  // a paragraph the pass read but proposed nothing placeable for is clean, not pending: pending means never read
-  const scan = b.kind === 'code' ? 'clean' : (st ? 'clean' : 'pending');
+  // a paragraph the pass read but proposed nothing placeable for is clean, not pending: pending means never read;
+  // a table is not put to the pass at all: its rows are not sentences, and what they say is carried by the
+  // citations and marks around it (Table 5's rows each came back as an own statement on 2026-09-12)
+  const scan = b.kind === 'code' || b.kind === 'table' ? 'clean' : (st ? 'clean' : 'pending');
   if (scan === 'pending') pendingIds.push(id);
   subjects.push({ id, title: b.lead || '', meta: '', pre: b.kind === 'table', capLead: cm ? cm[1] : undefined, scan, claim: neutralize(b.text), evidence: [] });
 });

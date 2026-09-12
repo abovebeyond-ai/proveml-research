@@ -128,3 +128,5 @@ caught by reader (2026-09-12, Shane): Section 2's coverage definition bound to t
 caught by reader (2026-09-12, Shane): strict mode was a flagged span; the verifier run shows the same text with 0 findings without strict and 1 with it, and the clause binds to it (push 108).
 2026-09-12T18:42:48Z push 109 | pass recorded 0 | verified 691/691 | blocks 161 | readings 674 | bound 321 | sources 114 | measure (own statements unanswered + judged no) 310+0
 caught by reader (2026-09-12, Shane): Figure 3 was missing from the page (a TikZ drawing, no image file); render-tikz-figure.mjs renders it from the paper's source and the adapter reads the file from a comment in the figure (push 109).
+2026-09-12T18:44:32Z push 110 | pass recorded 0 | verified 680/680 | blocks 161 | readings 663 | bound 321 | sources 114 | measure (own statements unanswered + judged no) 299+0
+caught by reader (2026-09-12, Shane): Table 5 rendered as pipe-separated lines and each row was an own statement; the page renders table blocks as tables (proveml PR #43) and tables are kept out of the flag pass (push 110).
