@@ -33,6 +33,7 @@ const RUNS = [
   { id: 'finance', out: 'finance.txt', cwd: process.cwd(), cmd: ['python3', 'meta-sources.py', REPO, 'finance'] },
   { id: 'judgment', out: 'judgment-summary.txt', cwd: REPO + '/experiments', cmd: ['node', 'judgment-summary.mjs'] },
   { id: 'formal', out: 'formal-check.txt', cwd: REPO, cmd: ['node', 'formal/check-vectors.mjs'] },
+  { id: 'theorems', out: 'formal-theorems.txt', cwd: REPO, cmd: ['node', 'formal/list-theorems.mjs'] },
   { id: 'verifier', out: 'verifier-check.txt', cwd: process.cwd(), cmd: ['node', 'verifier-check.mjs'] },
   { id: 'plant', out: 'plant-score.txt', cwd: REPO, cmd: ['node', 'paper/review/plant/run.mjs', 'score', 'paper/review/plant/out/verdicts.json'] },
   // node, not python: the earlier line handed python a JavaScript expression and had exited 1 since it was written,
