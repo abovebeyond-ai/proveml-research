@@ -8132,5 +8132,52 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "p90eb597c8a5f": {
+  "at": "2026-09-12T12:25:47.142Z",
+  "claims": [
+   {
+    "span": "more than a decade ago",
+    "kind": "date",
+    "why": "Vague relative date tied to a 2013 citation; should confirm this phrasing matches when XBRL/iXBRL tagging was actually established relative to the paper's writing date."
+   },
+   {
+    "span": "(XBRL International, 2013)",
+    "kind": "citation",
+    "why": "Need to confirm this citation exists, is correctly attributed to XBRL International, and that 2013 is the correct year for the cited standard/document."
+   },
+   {
+    "span": "Financial reporting solved a version of this problem more than a decade ago by embedding machine-readable tags in human-readable filings",
+    "kind": "historical",
+    "why": "Characterizes the history and achievement of XBRL/iXBRL adoption; should verify this framing (that it 'solved' the problem via tagging) is accurate and not an overstatement."
+   },
+   {
+    "span": "so a regulator can audit a number without reading the prose around it",
+    "kind": "causal",
+    "why": "Asserts a specific capability/benefit of XBRL tagging for regulators; should confirm this is an accurate characterization of how XBRL audit workflows actually function."
+   },
+   {
+    "span": "ProveML is iXBRL for AI-generated text",
+    "kind": "comparison",
+    "why": "Strong analogy claim equating ProveML's mechanism to iXBRL; should confirm the comparison holds structurally (tag semantics, audit trail) and isn't misleading about differences."
+   },
+   {
+    "span": "ProveML applies that idea to text whose author may be a model rather than a person",
+    "kind": "other",
+    "why": "Characterizes ProveML's scope/target as a direct extension of the iXBRL idea; should confirm this is precisely what the system does, not an approximation."
+   },
+   {
+    "span": "adds what that setting needs: entity scoping, so a value is bound to the record it describes, and a threshold registry, so a qualitative judgment is a declared predicate rather than a choice of adjective",
+    "kind": "other",
+    "why": "Claims these two features are necessary additions unique to the AI-text setting; should verify neither exists already in iXBRL/XBRL practice (which would undercut the novelty claim) and that the description of each mechanism is accurate."
+   },
+   {
+    "span": "Figure 1 shows what that buys the reader",
+    "kind": "other",
+    "why": "Reference to a specific figure; should confirm Figure 1 exists, is correctly numbered, and actually demonstrates the stated benefit."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
