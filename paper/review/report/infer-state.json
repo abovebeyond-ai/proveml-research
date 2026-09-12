@@ -8268,5 +8268,37 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "pd90a9b5f5f1d": {
+  "at": "2026-09-12T18:08:32.488Z",
+  "claims": [
+   {
+    "span": "Ozarda, 2016",
+    "kind": "citation",
+    "why": "Need to confirm this citation actually discusses clinical reference intervals as characterized and correctly attributes the pattern described."
+   },
+   {
+    "span": "Wright et al., 2022",
+    "kind": "citation",
+    "why": "Need to verify this citation covers JSON Schema validation as described and that the characterization (label/description reuse pattern) matches the source."
+   },
+   {
+    "span": "Prometheus Authors, 2026",
+    "kind": "citation",
+    "why": "Future-dated citation (2026) should be checked for correctness; also verify the claim that alert rules follow this exact named-condition-with-label pattern."
+   },
+   {
+    "span": "a pattern shared by clinical reference intervals, JSON Schema validation and monitoring alert rules",
+    "kind": "comparison",
+    "why": "The claim that these three disparate systems share the same underlying pattern is an analogy that needs justification or risks being overstated."
+   },
+   {
+    "span": "so the judgment can be invoked and audited by that name rather than restated as an expression wherever it is used",
+    "kind": "causal",
+    "why": "Asserts a causal/functional justification (naming enables audit/reuse) that should be supported rather than assumed self-evident."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }

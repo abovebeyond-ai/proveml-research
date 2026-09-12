@@ -184,7 +184,7 @@ account:901.transaction:2026-01.amount._unit -> "EUR"
 \label{fig:display}
 \end{figure}
 
-\paragraph{The threshold registry} follows a pattern shared by clinical reference intervals, JSON Schema validation and monitoring alert rules: a bounded condition on a single field is given a name and a human-readable label, so the judgment can be invoked and audited by that name rather than restated as an expression wherever it is used \citep{ozarda2016,jsonschema2022,prometheusalerting}. Each definition has a name, a field, one predicate from a deliberately small vocabulary (Table~\ref{tab:operators}), an optional unit constraint, a label and a source for audit:
+\paragraph{The threshold registry} follows a pattern shared by clinical reference intervals, JSON Schema validation and monitoring alert rules: a bounded condition on a single field carries a human-readable label (a flagged result, a schema's description, an alert's summary) and, where it is reused, a name, so the judgment can be invoked and audited by that name rather than restated as an expression wherever it is used \citep{ozarda2016,jsonschema2022,prometheusalerting}. Each definition has a name, a field, one predicate from a deliberately small vocabulary (Table~\ref{tab:operators}), an optional unit constraint, a label and a source for audit:
 
 \begin{lstlisting}
 IS_LOW:        score lt 25         "critically low"
