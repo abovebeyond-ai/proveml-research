@@ -68,6 +68,12 @@ for (const [bench, models] of Object.entries(groups)) {
             ` ${share('reference')} / ${share('value')} / ${resid ? Math.round(100 * (residual.context + residual.other) / resid) + '%' : '-'}  (n=${resid})`);
     }
 }
+// The design, read off the run files: runs per model and benchmark, and the correction budget every run carried.
+{
+    const runsPer = Object.values(groups).flatMap((models) => Object.values(models).map((runs) => runs.length));
+    const loops = new Set(Object.values(groups).flatMap((models) => Object.values(models).flatMap((runs) => runs.map(({ doc }) => doc.maxLoops))));
+    console.log(`\nruns per model and benchmark: ${[...new Set(runsPer)].join('/')}; correction passes allowed (maxLoops in every run file): ${[...loops].join('/')}`);
+}
 // Every query-run's first pass, counted once: did the model produce any construct at all?
 {
     let n = 0, none = 0;
