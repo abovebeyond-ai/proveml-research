@@ -6,3 +6,7 @@ render: the reader sees $391.0 billion, the audit keeps 391035000000 USD
 coverage: one fact claim with a digit and one prose number (2 segments; the year 2025 excluded): marked 1 (numbers inside a fact claim), unmarked 1 (numbers in prose), rate 0.5
 entity name: @[company:aapl]{Apple Inc.} against company:aapl.name = Apple Inc.: verified
 wrong entity name: @[company:aapl]{Apple} against company:aapl.name = Apple Inc.: name-mismatch
+unverifiable: claim %[headcount]{164000} against company:aapl.headcount, which the store does not hold: field-not-found
+no context: claim %[revenue]{391035000000 USD} with no entity in force: no-context
+bare comparison: ?[p: revenue > 100]{strong revenue}: unverifiable (Direct comparison not allowed: use a threshold from the registry)
+unregistered name: ?[p: IS_HUGE_REVENUE]{strong revenue}: unverifiable (Unknown threshold: IS_HUGE_REVENUE)

@@ -62,7 +62,7 @@ const store = {
   'formal:theorems.name': 'the mechanised model', 'formal:theorems.factSound': "a verified fact equals the store's value", 'formal:theorems.registered': 'a judgment is verified only by a threshold the registry holds', 'formal:theorems.unresolved': 'what the verifier cannot resolve, it neither verifies nor fails', 'formal:theorems.checked': 'machine-checked',
   'techreport:sections.name': 'the technical report', 'techreport:sections.algorithm': 'verification algorithm', 'techreport:sections.comparison': 'comparison semantics', 'techreport:sections.rendering': 'rendering', 'techreport:sections.julyStudy': 'July 2026 study',
   'spec:commonmark.name': 'CommonMark', 'spec:commonmark.noConflict': 'do not conflict with standard Markdown syntax', 'study:frontier.markupEvery': 'produced the markup on every query',
-  'verifier:entity.nameCheck': 'checks the display name against the store', 'formal:defs.binding': 'follows from the markup by fixed rules', 'formal:defs.carry': 'a fact outside binds to the last simple-form entity at the current depth', 'formal:theorems.scopeRestores': 'closing a scope restores the context that was in force when it opened',
+  'verifier:entity.nameCheck': 'checks the display name against the store', 'verifier:fact.equality': 'exact string equality', 'verifier:infer.noInvent': 'the model cannot invent a comparison value, a bound, or a direction', 'verifier:infer.unregistered': 'an unregistered name is an error rather than a claim', 'verifier:fact.outcomes': 'verified, mismatch, unverifiable (no such field), no context', 'formal:defs.binding': 'follows from the markup by fixed rules', 'formal:defs.carry': 'a fact outside binds to the last simple-form entity at the current depth', 'formal:theorems.scopeRestores': 'closing a scope restores the context that was in force when it opened',
   'runs:dates.name': 'the run dates', 'runs:dates.financeSmall': 'March 2026', 'runs:dates.educationSmall': 'the turn of July and August', 'formal:theorems.deploymentNamed': 'a judgment the deployment never named cannot be made checkable by the model',
   'reg:ixbrl.name': 'Inline XBRL', 'reg:ixbrl.age': 'more than a decade ago', 'reg:art50.name': 'the Article 50 guidelines', 'reg:art50.leadTime': 'two weeks before',
   'verifier:coverage.definition': 'the share of a text\'s numbers that sit inside a fact claim rather than in prose',
@@ -198,6 +198,20 @@ const bound = [
       q('formal:defs.carry', 'a fact outside binds to the last simple-form entity at the current depth', 'theorems', 'Verify.step: One construct at a time. An entity becomes the entity in force, and a scoped one remembers the entity that was in force before it; a close restores that entity; a fact binds to the entity in force, or to its own absolute path; a judgment records its verdict under its label.', 'definition list, Verify.lean', 'A scoped entity is in force only inside its braces and the close restores what preceded it, so only a simple-form entity carries forward; a fact with no entity in force is the no-context outcome. Fair reading?'),
       q('formal:defs.binding', 'follows from the markup by fixed rules', 'theorems', 'Verify.targetPath: The path a fact addresses: its own, or a field of the entity in force.', 'definition list, Verify.lean', 'The rule is a function of the token sequence: an entity sets the entity in force, a scoped one pushes the previous, a close pops it, a fact binds to the entity in force or its own path (Verify.step). No model is consulted; the package has no dependency that could (package.txt). Fair reading?'),
       q('verifier:entity.nameCheck', 'checks the display name against the store', 'verifier', 'wrong entity name: @[company:aapl]{Apple} against company:aapl.name = Apple Inc.: name-mismatch', 'entity lines', 'The right name verifies, a wrong one is a name mismatch against the name stored at that id. Fair reading?'),
+    ] },
+  { anchor: 'Inference references', id: 'inferences', marks: [
+      ['the model cannot invent a comparison value, a bound, or a direction', '%[verifier:infer.noInvent]{the model cannot invent a comparison value, a bound, or a direction}'],
+      ['an unregistered name is an error rather than a claim', '%[verifier:infer.unregistered]{an unregistered name is an error rather than a claim}'],
+    ], evidence: [
+      q('verifier:infer.noInvent', 'the model cannot invent a comparison value, a bound, or a direction', 'verifier', 'bare comparison: ?[p: revenue > 100]{strong revenue}: unverifiable (Direct comparison not allowed: use a threshold from the registry)', 'judgment lines', 'The condition grammar admits registered names and AND, OR, NOT; a comparison the model writes is rejected, so value, bound and direction can only come from the registry. Fair reading?'),
+      q('verifier:infer.unregistered', 'an unregistered name is an error rather than a claim', 'verifier', 'unregistered name: ?[p: IS_HUGE_REVENUE]{strong revenue}: unverifiable (Unknown threshold: IS_HUGE_REVENUE)', 'judgment lines', 'Reported as an error, never as a verified or failed claim (Appendix B, evalAtom_tt_registered). Fair reading?'),
+    ] },
+  { anchor: 'Fact references', id: 'facts', marks: [
+      ['by exact string equality on the store', 'by %[verifier:fact.equality]{exact string equality} on the store'],
+      ['Four outcomes: verified, mismatch, unverifiable (no such field), no context.', 'Four outcomes: %[verifier:fact.outcomes]{verified, mismatch, unverifiable (no such field), no context}.'],
+    ], evidence: [
+      q('verifier:fact.equality', 'exact string equality', 'verifier', 'rounded value: claim %[revenue]{$391 billion} against company:aapl.revenue = 391035000000: value-mismatch', 'rounded value line', 'The same number written differently is a mismatch: equality is on the string, not the quantity. Fair reading?'),
+      q('verifier:fact.outcomes', 'verified, mismatch, unverifiable (no such field), no context', 'verifier', 'no context: claim %[revenue]{391035000000 USD} with no entity in force: no-context', 'the four fact lines: canonical value (verified), rounded value (value-mismatch), unverifiable (field-not-found), no context', 'The verifier\'s four statuses on the paper\'s example, one line each. Fair reading?'),
     ] },
   { anchor: 'This paper is deliberately compact', id: 'intro-compact', marks: [
       ['(verification algorithm, comparison semantics, rendering)', '(%[techreport:sections.algorithm]{verification algorithm}, %[techreport:sections.comparison]{comparison semantics}, %[techreport:sections.rendering]{rendering})'],
@@ -632,7 +646,8 @@ blocks.forEach((b, i) => {
   const inf = inferSubject(id, neutralize(b.text));
   if (inf) { subjects.push({ id, title: b.lead || '', meta: '', pre: b.kind === 'table', claim: inf.claim, evidence: inf.evidence }); return; }
   const st = inferState[id];
-  const scan = b.kind === 'code' ? 'clean' : (st && st.state === 'clean' ? 'clean' : 'pending');
+  // a paragraph the pass read but proposed nothing placeable for is clean, not pending: pending means never read
+  const scan = b.kind === 'code' ? 'clean' : (st ? 'clean' : 'pending');
   if (scan === 'pending') pendingIds.push(id);
   subjects.push({ id, title: b.lead || '', meta: '', pre: b.kind === 'table', capLead: cm ? cm[1] : undefined, scan, claim: neutralize(b.text), evidence: [] });
 });
