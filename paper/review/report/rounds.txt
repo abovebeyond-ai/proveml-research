@@ -87,3 +87,6 @@ caught by reader (2026-09-12, Shane): the introduction's registry guarantee was 
 caught by reader (2026-09-12, Shane): the claim that the technical report holds the algorithm, comparison semantics and rendering was flagged; the report is now a source on the page and the three words bind to its headings and its comparison rule (push 86).
 2026-09-12T12:35:19Z push 87 | pass recorded 0 | verified 687/687 | blocks 161 | readings 670 | bound 298 | sources 113 | measure (own statements unanswered + judged no) 349+0
 caught by reader (2026-09-12, Shane): "is in the accompanying technical report" was the tail of a proposal whose subject had become marks; a residue starting on a verb or conjunction is now dropped, 7 readings (push 87).
+2026-09-12T12:41:10Z push 88 | pass recorded 0 | verified 688/688 | blocks 161 | readings 671 | bound 299 | sources 113 | measure (own statements unanswered + judged no) 349+0
+2026-09-12T12:41:45Z push 89 | pass recorded 0 | verified 688/688 | blocks 161 | readings 671 | bound 301 | sources 114 | measure (own statements unanswered + judged no) 347+0
+caught by reader (2026-09-12, Shane): the small-model study's label and run dates were flagged spans; experiments/run-dates.mjs prints each study's date span from the run files and the paper binds to it (pushes 88 and 89).

@@ -1,0 +1,21 @@
+{
+ "id": "dates",
+ "snapshot": "run-dates.txt",
+ "command": "node run-dates.mjs",
+ "cwd": "<repo>/experiments",
+ "repo": {
+  "path": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research",
+  "commit": "aa4f2d2",
+  "branch": "main",
+  "uncommittedChanges": 10
+ },
+ "startedAt": "2026-09-12T12:41:37.718Z",
+ "durationMs": 235,
+ "exitCode": 0,
+ "stdoutSha256": "4354efd0c0dc4299a7745ebaffbf1d339d73c3ff25fb1b8d09fee847357623ff",
+ "stdoutBytes": 446,
+ "snapshotSha256": null,
+ "sameAsSnapshot": false,
+ "stderrTail": [],
+ "node": "v24.13.0"
+}
