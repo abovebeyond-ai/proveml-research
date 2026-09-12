@@ -58,7 +58,7 @@ const store = {
   'model:deepseek.judgWith': '18.0', 'model:deepseek.judgPerRun': '41.3', 'model:deepseek.judgFirst': '100', 'model:deepseek.judgFinal': '100', 'model:deepseek.judgSound0': '8.0', 'model:deepseek.judgSound1': '8.0',
   'formal:vectors.name': 'the model vectors', 'formal:vectors.agree': '11', 'formal:vectors.total': '11',
   'formal:theorems.name': 'the mechanised model', 'formal:theorems.factSound': "a verified fact equals the store's value", 'formal:theorems.registered': 'a judgment is verified only by a threshold the registry holds', 'formal:theorems.unresolved': 'what the verifier cannot resolve, it neither verifies nor fails', 'formal:theorems.checked': 'machine-checked',
-  'reg:ixbrl.name': 'Inline XBRL', 'reg:ixbrl.age': 'more than a decade ago',
+  'reg:ixbrl.name': 'Inline XBRL', 'reg:ixbrl.age': 'more than a decade ago', 'reg:art50.name': 'the Article 50 guidelines', 'reg:art50.leadTime': 'two weeks before',
   'verifier:coverage.definition': 'the share of a text\'s numbers that sit inside a fact claim rather than in prose',
   'loop:plant.name': 'the planted-error run', 'loop:plant.planted': '43', 'loop:plant.bound': '9', 'loop:plant.number': '9', 'loop:plant.statement': '14', 'loop:plant.citation': '11', 'loop:plant.buildCaught': '9', 'loop:plant.flagged': '33', 'loop:plant.prose': '34', 'loop:plant.caught': '42', 'loop:plant.unplanted': '242', 'loop:plant.changes': '56', 'loop:plant.collateral': '13', 'loop:plant.defects': '42', 'loop:plant.known': '18', 'loop:plant.pageFaults': 'one', 'loop:plant.refutable': 'none',
   'study:judgment.name': 'the judgment study', 'study:judgment.registryNames': 'fourteen', 'study:judgment.firstRange': '78–100', 'study:judgment.finalRange': '98–100', 'study:judgment.total': '454', 'study:judgment.verifiedFirst': '411', 'study:judgment.verifiedFinal': '425', 'study:judgment.totalFinal': '427', 'study:judgment.falseFirst': '33', 'study:judgment.wordsLow': '18', 'study:judgment.wordsHigh': '26', 'study:judgment.commonest': 'the commonest failure is the word the question invited',
@@ -164,10 +164,12 @@ const d = (field, claimValue, source, note) => ({ field, claimValue, basis: 'der
 const bound = [
   { anchor: 'Hallucination is structural', id: 'intro-regulation', marks: [
       ['since 2 August 2026', 'since %[reg:euaiact.appliedFrom]{2 August 2026}'],
+      ['guidelines adopted two weeks before', 'guidelines adopted %[reg:art50.leadTime]{two weeks before}'],
       ['to 2 December 2026', 'to %[reg:omnibus.deferredTo]{2 December 2026}'],
       ['on 17–33% of queries', 'on %[study:magesh.hallucinationRange]{17–33}% of queries'],
       ['found more than a thousand containing', 'found %[study:liu.filings]{more than a thousand} containing'],
     ], evidence: [
+      q('reg:art50.leadTime', 'two weeks before', 'cite-art50guidelines2026', 'Publication 20 July 2026', 'Commission library page, publication date line', 'Published 20 July, applied from 2 August 2026: thirteen days. Is two weeks a fair reading?'),
       q('reg:euaiact.appliedFrom', '2 August 2026', 'cite-euaiact', 'shall apply from 2 August 2026', 'Regulation (EU) 2024/1689, EUR-Lex, Article 113', 'The Regulation text itself; the Commission announcement of the same date is archived next to it as cite-euaiact-news.'),
       q('reg:omnibus.deferredTo', '2 December 2026', 'omnibus2026', 'comply with Article 50(2) by 2 December 2026', 'Regulation (EU) 2026/1744, EUR-Lex, amended Article 113'),
       q('study:magesh.hallucinationRange', '17–33', 'magesh2025', 'each hallucinate between 17% and 33% of the time', 'arXiv 2405.20362 abstract', 'The abstract says "between 17% and 33% of the time"; the paper writes "17–33% of queries". Fair reading?'),
@@ -504,7 +506,7 @@ const inferSubject = (pidv, text) => {
       // what is left beside a mark must still be a claim: a number, or at least three words
       if (!/\d/.test(seg) && (seg.length < 12 || seg.trim().split(/\s+/).length < 3)) continue;
       if (/^[%‰°$€£)\]]/.test(seg)) continue;   // a unit sign or a closing bracket hanging off the mark it was cut from ("% after one correction")
-      if (/\b(?:to|of|at|by|from|the|a|an|and|or|in|on|for|with|than|versus|against)$/i.test(seg.trim())) continue;   // cut off in front of its number ("lifts the first pass to")
+      if (/\b(?:to|of|at|by|from|the|a|an|and|or|in|on|for|with|than|versus|against|since|until|before|after|between|over|under|about|is|are|was|were)$/i.test(seg.trim())) continue;   // cut off in front of its number ("lifts the first pass to")
       at = best[0]; end = best[1]; c = { ...c, span: seg };
     }
     if (/^[\s,;:]*\(?\s*%\[citation:/.test(text.slice(end))) continue;
