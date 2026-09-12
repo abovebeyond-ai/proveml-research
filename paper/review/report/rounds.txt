@@ -122,3 +122,5 @@ caught by reader (2026-09-12, Shane): the comparison rule and the NOT rule in th
 caught by reader (2026-09-12, Shane): a residue ended on a colon and a code span ("... verified: `NOT`"); trailing colons, commas and code spans are now trimmed (push 105).
 2026-09-12T18:28:44Z push 106 | pass recorded 0 | verified 692/692 | blocks 161 | readings 675 | bound 319 | sources 114 | measure (own statements unanswered + judged no) 319+0
 caught by reader (2026-09-12, Shane): "it can equally audit text it did not generate" was flagged; the verifier run now states its three inputs and that every claim in it was hand-written, and the clause binds to that line (push 106).
+2026-09-12T18:31:46Z push 107 | pass recorded 0 | verified 693/693 | blocks 161 | readings 676 | bound 320 | sources 114 | measure (own statements unanswered + judged no) 318+0
+caught by reader (2026-09-12, Shane): Section 2's coverage definition bound to the verifier's coverage line like the abstract's (push 107).
