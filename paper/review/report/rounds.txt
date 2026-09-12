@@ -70,3 +70,5 @@ caught by reader (2026-09-12, Shane): the abstract carried Finding 3's prompt de
 caught by reader (2026-09-12, Shane): "the commonest failure is the word the question invited" had no count behind it; judgment-summary.mjs now classes the 33 first-pass failures by whether the threshold's word is in the question (13 of 33, the largest class; the rest over six questions), and the abstract binds to that line (push 77).
 2026-09-12T12:14:40Z push 78 | pass recorded 1 | verified 700/700 | blocks 161 | readings 683 | bound 292 | sources 112 | measure (own statements unanswered + judged no) 378+0
 caught by reader (2026-09-12, Shane): "verbalised confidence is systematically overconfident": Xiong and Zhou both say tends to be; the paper now says the same (push 78).
+2026-09-12T12:17:42Z push 79 | pass recorded 0 | verified 701/701 | blocks 161 | readings 684 | bound 293 | sources 112 | measure (own statements unanswered + judged no) 378+0
+caught by reader (2026-09-12, Shane): "more than a decade ago" was flagged; now bound to the Inline XBRL specification's own dates (1.0 in 2010, Recommendation 2013), push 79.
