@@ -134,3 +134,5 @@ caught by reader (2026-09-12, Shane): Table 5 rendered as pipe-separated lines a
 caught by reader (2026-09-12, Shane): the two model release dates were flagged spans; bound to the announcements' datelines (push 111).
 2026-09-12T18:52:11Z push 112 | pass recorded 0 | verified 683/683 | blocks 161 | readings 666 | bound 325 | sources 115 | measure (own statements unanswered + judged no) 298+0
 caught by reader (2026-09-12, Shane): the footnote on the withdrawn dataset asked whether to say it at all; kept, and bound to the repository's own commits and gitignore rule via history.mjs (push 112).
+2026-09-12T18:54:27Z push 113 | pass recorded 1 | verified 679/679 | blocks 161 | readings 662 | bound 323 | sources 114 | measure (own statements unanswered + judged no) 296+0
+caught by reader (2026-09-12, Shane): the earlier-draft sentence in the dataset footnote referred to nothing the paper uses or publishes; removed, with the history source added an hour earlier (push 113).

@@ -8300,5 +8300,107 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "p7ec340280733": {
+  "at": "2026-09-12T18:54:23.443Z",
+  "claims": [
+   {
+    "span": "Claude Opus 5, released 24 July 2026",
+    "kind": "date",
+    "why": "Release date should be checked against Anthropic's official announcement."
+   },
+   {
+    "span": "close to the frontier intelligence of Claude Fable 5 at half the price",
+    "kind": "citation",
+    "why": "Direct quote attributed to Anthropic needs to be verified verbatim against the cited source."
+   },
+   {
+    "span": "Claude Sonnet 5, released 30 June 2026",
+    "kind": "date",
+    "why": "Release date should be checked against Anthropic's official announcement."
+   },
+   {
+    "span": "DeepSeek-V4-Pro-0813",
+    "kind": "citation",
+    "why": "Exact model identifier should be confirmed against DeepSeek's release documentation."
+   },
+   {
+    "span": "1.6T parameters with 49B active",
+    "kind": "number",
+    "why": "Parameter counts should be verified against the model card or technical report."
+   },
+   {
+    "span": "open weights under the MIT licence",
+    "kind": "citation",
+    "why": "License claim should be checked against the actual repository/model card, as MIT is unusual for large open-weight models."
+   },
+   {
+    "span": "served by Together AI",
+    "kind": "other",
+    "why": "Vendor/serving claim should be confirmed as accurate for the reported experiments."
+   },
+   {
+    "span": "Anthropic's own announcement places Opus 5 close to, not at, the frontier intelligence of Fable 5, and names Mythos 5 as stronger on some tasks",
+    "kind": "citation",
+    "why": "Characterization of the announcement's content and the naming of 'Mythos 5' should be verified against the actual source text."
+   },
+   {
+    "span": "we ran neither",
+    "kind": "absence",
+    "why": "Absence claim (that Fable 5 and Mythos 5 were not run) should be confirmed against the actual experimental scope."
+   },
+   {
+    "span": "28 English prompts over a generated educational dataset of 741 pupils in 95 class offerings",
+    "kind": "number",
+    "why": "Counts of prompts, pupils, and class offerings should match the dataset artifacts."
+   },
+   {
+    "span": "10 English prompts over real SEC EDGAR FY2025 filings (2 entities, 11 fields)",
+    "kind": "number",
+    "why": "Counts of prompts, entities, and fields should match the benchmark artifacts."
+   },
+   {
+    "span": "Three runs per model and benchmark, one correction pass",
+    "kind": "number",
+    "why": "Run counts should match the experiment logs/scripts referenced."
+   },
+   {
+    "span": "the corrected answer is accepted only if it verifies better without dropping claims",
+    "kind": "other",
+    "why": "Methodological rule should be confirmed as actually implemented in the correction-pass code."
+   },
+   {
+    "span": "a response with no markup scores 0%",
+    "kind": "number",
+    "why": "Scoring rule should be confirmed against the verifier implementation."
+   },
+   {
+    "span": "on the educational harness an empty answer also scores 0% rather than being dropped (the finance harness would leave it out; no run on either benchmark produced one)",
+    "kind": "absence",
+    "why": "Both the differing scoring behavior and the absence claim (no empty answers occurred) should be checked against the run data."
+   },
+   {
+    "span": "Context is sliced per prompt from the benchmark's own entity lists — an oracle retriever, which makes the rates an upper bound conditional on retrieval",
+    "kind": "causal",
+    "why": "The causal claim that oracle retrieval makes rates an upper bound depends on retrieval implementation details that should be verified."
+   },
+   {
+    "span": "no run produced an inference construct, so all rates measure those two",
+    "kind": "absence",
+    "why": "Absence claim about inference constructs should be checked against the full run outputs, not just a sample."
+   },
+   {
+    "span": "Every number in this section regenerates from the published runs",
+    "kind": "other",
+    "why": "Reproducibility claim should be verified by actually running the cited scripts against the published run data."
+   },
+   {
+    "span": "the verifier's own conformance test (20 planted errors, all caught) is in Appendix A",
+    "kind": "number",
+    "why": "The count of planted errors and the claim that all were caught should be verified against Appendix A."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
