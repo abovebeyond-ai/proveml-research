@@ -10,6 +10,9 @@ const env = { ...process.env, PATH: homedir() + '/.elan/bin:' + (process.env.PAT
 const b = spawnSync('lake', ['build'], { cwd: DIR, encoding: 'utf8', env });
 const last = (b.stdout || '').trim().split('\n').pop() || '';
 console.log(`lake build: exit ${b.status} (${last})`);
+const lakefile = readFileSync(DIR + 'lakefile.toml', 'utf8');
+const requires = [...lakefile.matchAll(/^\[\[require\]\][^\[]*name\s*=\s*"([^"]+)"/gm)].map((m) => m[1]);
+console.log(`toolchain: ${readFileSync(DIR + 'lean-toolchain', 'utf8').trim()}; packages required in lakefile.toml: ${requires.length ? requires.join(', ') : 'none'}`);
 const files = readdirSync(DIR + 'ProveML').filter((f) => f.endsWith('.lean')).sort();
 let sorry = 0; const theorems = [], defs = [];
 for (const f of files) {

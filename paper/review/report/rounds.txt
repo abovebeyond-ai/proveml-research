@@ -141,3 +141,5 @@ caught by reader (2026-09-12, Shane): the earlier-draft sentence in the dataset 
 caught by reader (2026-09-12, Shane): the finance benchmark's origin and the run count with its correction budget were flagged spans; bound to the benchmark metadata and to a design line the summary script reads off the run files (pushes 114 and 115).
 2026-09-12T19:54:02Z push 116 | pass recorded 1 | verified 683/683 | blocks 161 | readings 666 | bound 326 | sources 114 | measure (own statements unanswered + judged no) 287+0
 caught by reader (2026-09-12, Shane): the malformed-markup sentence in Appendix A packed three things; split in two (push 116).
+2026-09-12T19:57:34Z push 117 | pass recorded 0 | verified 685/685 | blocks 161 | readings 668 | bound 328 | sources 114 | measure (own statements unanswered + judged no) 287+0
+caught by reader (2026-09-12, Shane): "Lean 4, no dependencies beyond Lean" was a flagged span; list-theorems.mjs prints the toolchain and the lakefile's requirements (none) and the clause binds to it (push 117).
