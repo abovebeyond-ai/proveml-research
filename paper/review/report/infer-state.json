@@ -7673,5 +7673,82 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "pe9a25f4950f5": {
+  "at": "2026-09-12T11:01:12.325Z",
+  "claims": [
+   {
+    "span": "Organizations deploy LLMs widely (Stanford HAI, 2026)",
+    "kind": "citation",
+    "why": "Need to confirm Stanford HAI 2026 actually makes this claim of widespread deployment and that the year/attribution is correct."
+   },
+   {
+    "span": "in consequential settings (Magesh et al., 2025)",
+    "kind": "citation",
+    "why": "Need to confirm Magesh et al. 2025 exists and specifically discusses LLM deployment in high-stakes/consequential settings."
+   },
+   {
+    "span": "regulation now reaches AI-generated content (European Parliament and Council of the European Union, 2024; European Commission, 2026)",
+    "kind": "historical",
+    "why": "Should verify both cited regulatory acts exist, their dates, and that they specifically address AI-generated content (not just AI systems generally)."
+   },
+   {
+    "span": "European Parliament and Council of the European Union, 2024",
+    "kind": "citation",
+    "why": "Need to confirm this citation (likely the EU AI Act) is dated and titled correctly."
+   },
+   {
+    "span": "European Commission, 2026",
+    "kind": "date",
+    "why": "2026 is the current year per the system date; should confirm this specific Commission document exists and is correctly dated, not a placeholder or future/incorrect date."
+   },
+   {
+    "span": "the link generated text carries between a claim and the data behind it, a citation, is not one a machine can check against the claim (Onweller et al., 2026; Rao et al., 2026)",
+    "kind": "citation",
+    "why": "Need to confirm both cited works actually support the specific claim that machine-checkable verification of citations is lacking."
+   },
+   {
+    "span": "ProveML is a Markdown extension of three inline constructs",
+    "kind": "number",
+    "why": "Should confirm the current spec/implementation actually defines exactly three inline constructs."
+   },
+   {
+    "span": "milliseconds per response",
+    "kind": "number",
+    "why": "Performance claim should be backed by a benchmark or measurement rather than asserted without a cited figure."
+   },
+   {
+    "span": "no model in the loop",
+    "kind": "absence",
+    "why": "Absolute absence claim about the verifier's design; should confirm no part of verification (e.g., threshold judgment matching) invokes a model."
+   },
+   {
+    "span": "two guarantees are machine-checked",
+    "kind": "number",
+    "why": "Should confirm exactly two formal guarantees are proven/checked in the referenced formalization, not more or fewer."
+   },
+   {
+    "span": "a verified fact equals the store's value",
+    "kind": "other",
+    "why": "This is a formal guarantee statement; should verify it matches the precise theorem statement in the formalization, not a simplified paraphrase."
+   },
+   {
+    "span": "a judgment is verified only by a threshold the registry holds",
+    "kind": "other",
+    "why": "Should verify this matches the exact soundness statement of the second guarantee in the formal spec."
+   },
+   {
+    "span": "what the verifier cannot resolve, it neither verifies nor fails",
+    "kind": "absence",
+    "why": "Absence/behavioral claim about verifier semantics; should confirm this 'undecided' state is actually implemented/proven and not just aspirational."
+   },
+   {
+    "span": "The verifier also reports coverage, the share of a text's numbers that sit inside any claim",
+    "kind": "other",
+    "why": "Should confirm this feature exists in the current implementation and that the definition given matches the actual coverage metric computed."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
