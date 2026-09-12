@@ -132,3 +132,5 @@ caught by reader (2026-09-12, Shane): Figure 3 was missing from the page (a TikZ
 caught by reader (2026-09-12, Shane): Table 5 rendered as pipe-separated lines and each row was an own statement; the page renders table blocks as tables (proveml PR #43) and tables are kept out of the flag pass (push 110).
 2026-09-12T18:49:43Z push 111 | pass recorded 0 | verified 681/681 | blocks 161 | readings 664 | bound 323 | sources 114 | measure (own statements unanswered + judged no) 298+0
 caught by reader (2026-09-12, Shane): the two model release dates were flagged spans; bound to the announcements' datelines (push 111).
+2026-09-12T18:52:11Z push 112 | pass recorded 0 | verified 683/683 | blocks 161 | readings 666 | bound 325 | sources 115 | measure (own statements unanswered + judged no) 298+0
+caught by reader (2026-09-12, Shane): the footnote on the withdrawn dataset asked whether to say it at all; kept, and bound to the repository's own commits and gitignore rule via history.mjs (push 112).
