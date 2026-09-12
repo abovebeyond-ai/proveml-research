@@ -416,7 +416,7 @@ The deeper value is not the correction loop but the boundary itself. With ProveM
     \item \textbf{Group claims.} An inference takes its implicit context from a single entity. A claim like ``5TW, 4B, and 6WE all have low coverage'' verifies as one inference only if each atom names its record explicitly (\texttt{IS\_LOW\_COVERAGE(offering:a.evalRate) AND \ldots}); otherwise it must be decomposed into one inference per entity.
 \end{itemize}
 
-\noindent Future work follows from the limits: derived-value claims, standardized unit vocabularies, an abstention metric for unsupported queries, and constraining decoding to well-formed ProveML with only existing paths --- grammar-constrained generation (PICARD, \citealp{picard}; Synchromesh, \citealp{synchromesh}) makes that an application of known technique rather than a research program, and it would remove much of what we measure as addressability error.
+\noindent Future work follows from the limits: derived-value claims, standardized unit vocabularies, a check that a field's display rule agrees with its unit (a percent rule on a currency field renders nonsense over a correct verdict, and nothing refuses it yet), an abstention metric for unsupported queries, and constraining decoding to well-formed ProveML with only existing paths --- grammar-constrained generation (PICARD, \citealp{picard}; Synchromesh, \citealp{synchromesh}) makes that an application of known technique rather than a research program, and it would remove much of what we measure as addressability error.
 
 \section{Conclusion}
 
