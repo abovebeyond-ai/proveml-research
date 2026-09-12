@@ -1,14 +1,14 @@
 lake build: exit 0 (Build completed successfully (7 jobs).)
 sorry: 0 occurrences in 4 files
 theorems: 41
-  Kleene.not_uu
-  Kleene.not_not
-  Kleene.and_ff_left
-  Kleene.and_ff_right
-  Kleene.or_tt_left
-  Kleene.or_tt_right
-  Kleene.and_comm
-  Kleene.or_comm
+  Kleene.not_uu: Negating the unresolved leaves it unresolved: NOT of an unverifiable condition is still unverifiable.
+  Kleene.not_not: Negating the unresolved leaves it unresolved: NOT of an unverifiable condition is still unverifiable.
+  Kleene.and_ff_left: Negating the unresolved leaves it unresolved: NOT of an unverifiable condition is still unverifiable.
+  Kleene.and_ff_right: Negating the unresolved leaves it unresolved: NOT of an unverifiable condition is still unverifiable.
+  Kleene.or_tt_left: Negating the unresolved leaves it unresolved: NOT of an unverifiable condition is still unverifiable.
+  Kleene.or_tt_right: Negating the unresolved leaves it unresolved: NOT of an unverifiable condition is still unverifiable.
+  Kleene.and_comm: Negating the unresolved leaves it unresolved: NOT of an unverifiable condition is still unverifiable.
+  Kleene.or_comm: Negating the unresolved leaves it unresolved: NOT of an unverifiable condition is still unverifiable.
   Kleene.and_uu_tt: An unresolved operand never produces a decided conjunction on its own.
   Kleene.or_uu_ff: An unresolved operand never produces a decided conjunction on its own.
   Kleene.le_refl
