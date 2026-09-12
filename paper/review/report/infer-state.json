@@ -8080,5 +8080,57 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "p16465e5d60e8": {
+  "at": "2026-09-12T12:22:39.413Z",
+  "claims": [
+   {
+    "span": "Generative AI is used in at least one business function at 70% of surveyed organizations (Stanford HAI, 2026)",
+    "kind": "number",
+    "why": "Verify the 70% figure and survey population/methodology match the cited Stanford HAI report."
+   },
+   {
+    "span": "in legal research (Magesh et al., 2025)",
+    "kind": "citation",
+    "why": "Confirm this paper actually addresses legal research use of generative AI as characterized."
+   },
+   {
+    "span": "in clinical documentation (Wright et al., 2026)",
+    "kind": "citation",
+    "why": "Confirm this paper actually addresses clinical documentation use as characterized."
+   },
+   {
+    "span": "the citations of frontier deep-research agents checked out against their sources for only 39–77% of citations",
+    "kind": "number",
+    "why": "Verify the 39–77% range is correctly drawn from the source and not misattributed or rounded."
+   },
+   {
+    "span": "10.7% of the citation URLs of the two commercial deep research agents had no archived record and likely never existed",
+    "kind": "causal",
+    "why": "The inference that missing archival record implies the URL 'likely never existed' is an interpretive leap that should be checked against the source's own claims."
+   },
+   {
+    "span": "against 4.8% for search-augmented models",
+    "kind": "comparison",
+    "why": "Verify this comparison figure comes from the same study/methodology and is comparable to the 10.7% figure."
+   },
+   {
+    "span": "three years after the first generative search engines fully supported about half of their sentences (Liu et al., 2023)",
+    "kind": "historical",
+    "why": "Confirm the 'about half' figure and the characterization of Liu et al. 2023 as evaluating 'the first generative search engines'; also check the three-year gap is calculated relative to the right comparison year."
+   },
+   {
+    "span": "a rate the ALCE benchmark reproduced for the best models of the time (Gao et al., 2023)",
+    "kind": "comparison",
+    "why": "Verify ALCE's reported rate actually matches 'about half' and that this is an accurate characterization of Gao et al., 2023's findings."
+   },
+   {
+    "span": "whether a citation holds is judged by a person or by another model rather than by a deterministic check (Rashkin et al., 2023; Onweller et al., 2026)",
+    "kind": "absence",
+    "why": "Confirm no deterministic verification method exists across the cited literature, and that both citations actually support this absence claim."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }

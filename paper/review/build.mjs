@@ -506,7 +506,7 @@ const inferSubject = (pidv, text) => {
       // what is left beside a mark must still be a claim: a number, or at least three words
       if (!/\d/.test(seg) && (seg.length < 12 || seg.trim().split(/\s+/).length < 3)) continue;
       if (/^[%‰°$€£)\]]/.test(seg)) continue;   // a unit sign or a closing bracket hanging off the mark it was cut from ("% after one correction")
-      if (/\b(?:to|of|at|by|from|the|a|an|and|or|in|on|for|with|than|versus|against|since|until|before|after|between|over|under|about|is|are|was|were)$/i.test(seg.trim())) continue;   // cut off in front of its number ("lifts the first pass to")
+      if (/\b(?:to|of|at|by|from|the|a|an|and|or|in|on|for|with|than|versus|against|since|until|before|after|between|over|under|about|is|are|was|were|only|roughly|nearly|just|some|around)$/i.test(seg.trim())) continue;   // cut off in front of its number ("lifts the first pass to")
       at = best[0]; end = best[1]; c = { ...c, span: seg };
     }
     if (/^[\s,;:]*\(?\s*%\[citation:/.test(text.slice(end))) continue;
