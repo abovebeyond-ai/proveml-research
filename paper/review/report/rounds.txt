@@ -126,3 +126,5 @@ caught by reader (2026-09-12, Shane): "it can equally audit text it did not gene
 caught by reader (2026-09-12, Shane): Section 2's coverage definition bound to the verifier's coverage line like the abstract's (push 107).
 2026-09-12T18:35:07Z push 108 | pass recorded 0 | verified 693/693 | blocks 161 | readings 676 | bound 321 | sources 114 | measure (own statements unanswered + judged no) 315+0
 caught by reader (2026-09-12, Shane): strict mode was a flagged span; the verifier run shows the same text with 0 findings without strict and 1 with it, and the clause binds to it (push 108).
+2026-09-12T18:42:48Z push 109 | pass recorded 0 | verified 691/691 | blocks 161 | readings 674 | bound 321 | sources 114 | measure (own statements unanswered + judged no) 310+0
+caught by reader (2026-09-12, Shane): Figure 3 was missing from the page (a TikZ drawing, no image file); render-tikz-figure.mjs renders it from the paper's source and the adapter reads the file from a comment in the figure (push 109).

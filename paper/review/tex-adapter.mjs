@@ -129,7 +129,8 @@ while ((m = re.exec(body))) {
   if (env === 'abstract') { push('heading', 'Abstract', { level: 1 }); prose(inner); }
   else if (env === 'lstlisting') push('code', '```\n' + inner.replace(/^\n+|\n+$/g, '') + '\n```');
   else if (env === 'table') { tabN++; const t = table(m[0]); push('table', t.rows.join('\n'), { caption: t.caption }); if (t.caption) push('para', `Table ${tabN}: ` + t.caption); }
-  else if (env === 'figure') { figN++; const cap = (m[0].match(/\\caption\{((?:[^{}]|\{[^{}]*\})*)\}/) || [])[1]; const img = (m[0].match(/\\includegraphics(?:\[[^\]]*\])?\{([^}]*)\}/) || [])[1]; push(img ? 'figure' : 'para', `Figure ${figN}: ` + (cap ? inline(cap) : ''), img ? { file: img } : {}); }
+  // a figure drawn in TikZ has no \includegraphics; it names its rendered image in a comment (render-tikz-figure.mjs)
+  else if (env === 'figure') { figN++; const cap = (m[0].match(/\\caption\{((?:[^{}]|\{[^{}]*\})*)\}/) || [])[1]; const img = (m[0].match(/\\includegraphics(?:\[[^\]]*\])?\{([^}]*)\}/) || m[0].match(/%\s*review-image:\s*(\S+)/) || [])[1]; push(img ? 'figure' : 'para', `Figure ${figN}: ` + (cap ? inline(cap) : ''), img ? { file: img } : {}); }
   else if (env === 'itemize' || env === 'enumerate') { for (const it of inner.split(/\\item\s*/).map((x) => x.trim()).filter(Boolean)) push('para', '- ' + inline(it)); }
   else if (env === 'algorithm') push('code', '```\n' + inline(inner) + '\n```');
   last = m.index + m[0].length;
