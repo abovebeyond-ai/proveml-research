@@ -58,6 +58,7 @@ const store = {
   'model:deepseek.judgWith': '18.0', 'model:deepseek.judgPerRun': '41.3', 'model:deepseek.judgFirst': '100', 'model:deepseek.judgFinal': '100', 'model:deepseek.judgSound0': '8.0', 'model:deepseek.judgSound1': '8.0',
   'formal:vectors.name': 'the model vectors', 'formal:vectors.agree': '11', 'formal:vectors.total': '11',
   'formal:theorems.name': 'the mechanised model', 'formal:theorems.factSound': "a verified fact equals the store's value", 'formal:theorems.registered': 'a judgment is verified only by a threshold the registry holds', 'formal:theorems.unresolved': 'what the verifier cannot resolve, it neither verifies nor fails', 'formal:theorems.checked': 'machine-checked',
+  'reg:ixbrl.name': 'Inline XBRL', 'reg:ixbrl.age': 'more than a decade ago',
   'verifier:coverage.definition': 'the share of a text\'s numbers that sit inside a fact claim rather than in prose',
   'loop:plant.name': 'the planted-error run', 'loop:plant.planted': '43', 'loop:plant.bound': '9', 'loop:plant.number': '9', 'loop:plant.statement': '14', 'loop:plant.citation': '11', 'loop:plant.buildCaught': '9', 'loop:plant.flagged': '33', 'loop:plant.prose': '34', 'loop:plant.caught': '42', 'loop:plant.unplanted': '242', 'loop:plant.changes': '56', 'loop:plant.collateral': '13', 'loop:plant.defects': '42', 'loop:plant.known': '18', 'loop:plant.pageFaults': 'one', 'loop:plant.refutable': 'none',
   'study:judgment.name': 'the judgment study', 'study:judgment.registryNames': 'fourteen', 'study:judgment.firstRange': '78–100', 'study:judgment.finalRange': '98–100', 'study:judgment.total': '454', 'study:judgment.verifiedFirst': '411', 'study:judgment.verifiedFinal': '425', 'study:judgment.totalFinal': '427', 'study:judgment.falseFirst': '33', 'study:judgment.wordsLow': '18', 'study:judgment.wordsHigh': '26', 'study:judgment.commonest': 'the commonest failure is the word the question invited',
@@ -171,6 +172,11 @@ const bound = [
       q('reg:omnibus.deferredTo', '2 December 2026', 'omnibus2026', 'comply with Article 50(2) by 2 December 2026', 'Regulation (EU) 2026/1744, EUR-Lex, amended Article 113'),
       q('study:magesh.hallucinationRange', '17–33', 'magesh2025', 'each hallucinate between 17% and 33% of the time', 'arXiv 2405.20362 abstract', 'The abstract says "between 17% and 33% of the time"; the paper writes "17–33% of queries". Fair reading?'),
       q('study:liu.filings', 'more than a thousand', 'liu2026citations', 'we found over 1,000 filings containing fabricated citations', 'arXiv 2606.21155 abstract', 'The abstract says "over 1,000 filings"; the paper writes "more than a thousand". Fair?'),
+    ] },
+  { anchor: 'The response this paper takes is not to make the model more truthful', id: 'intro-ixbrl', marks: [
+      ['Financial reporting solved a version of this problem more than a decade ago', 'Financial reporting solved a version of this problem %[reg:ixbrl.age]{more than a decade ago}'],
+    ], evidence: [
+      q('reg:ixbrl.age', 'more than a decade ago', 'cite-ixbrl', 'http://www.xbrl.org/2008/inlineXBRL 1.0 20 April 2010', 'Inline XBRL Part 1 specification, namespace table (previous versions)', 'Inline XBRL 1.0 was published on 20 April 2010 and the cited Recommendation on 18 November 2013; from 2026 that is sixteen and thirteen years. Is the phrase a fair reading?'),
     ] },
   { anchor: 'Two things decide whether ProveML fits a use', id: 'intro-limits', marks: [
       ['the store holds it, `391035000000`, and "$391 billion" in its place fails', 'the store holds it, %[verifier:example.canonical]{391035000000}, and "$391 billion" in its place %[verifier:example.rounded]{fails}'],
