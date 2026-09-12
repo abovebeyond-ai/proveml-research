@@ -79,3 +79,5 @@ caught by reader (2026-09-12, Shane): "have applied since" was a scrap cut off b
 caught by reader (2026-09-12, Shane): "in 2026 the citations ... for only" was a scrap before the bound 39–77 (residue rule extended with only/roughly/nearly), and "in 2026" was the publication year, dropped as in the Rao sentence (push 82).
 2026-09-12T12:25:51Z push 83 | pass recorded 1 | verified 694/694 | blocks 161 | readings 677 | bound 294 | sources 112 | measure (own statements unanswered + judged no) 370+0
 caught by reader (2026-09-12, Shane): "where the author is a model" overstated the split; a person writes the markup too and the verifier reads what it did not generate. Now "whose author may be a model" (push 83).
+2026-09-12T12:30:11Z push 84 | pass recorded 0 | verified 689/689 | blocks 161 | readings 672 | bound 294 | sources 112 | measure (own statements unanswered + judged no) 357+0
+caught by reader (2026-09-12, Shane): "(Section 2)" was a flagged span; a cross-reference is not a claim, 13 such readings dropped (push 84).
