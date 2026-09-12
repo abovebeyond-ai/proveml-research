@@ -574,6 +574,10 @@ const inferSubject = (pidv, text) => {
       const best = segs.map(([a, b]) => { const raw = text.slice(a, b); const lead = raw.match(/^[\s,;:()]+/)?.[0].length || 0; const tail = raw.match(/[\s,;:(]+$/)?.[0].length || 0; return [a + lead, b - tail]; })
         .filter(([a, b]) => b > a).sort((x, y) => (y[1] - y[0]) - (x[1] - x[0]))[0];
       if (!best) continue;
+      let segEnd = best[1];
+      // a residue does not end on a colon or on a code span that introduced the mark ("... does not make it verified: `NOT`")
+      for (;;) { const t = text.slice(best[0], segEnd); const m = t.match(/(?:\s*[:;,]\s*|\s*`[^`]*`\s*|\s+)$/); if (!m || !m[0]) break; segEnd -= m[0].length; }
+      best[1] = segEnd;
       const seg = text.slice(best[0], best[1]);
       // what is left beside a mark must still be a claim: a number, or at least three words
       if (!/\d/.test(seg) && (seg.length < 12 || seg.trim().split(/\s+/).length < 3)) continue;
