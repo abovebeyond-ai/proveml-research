@@ -61,6 +61,7 @@ const store = {
   'formal:vectors.name': 'the model vectors', 'formal:vectors.agree': '11', 'formal:vectors.total': '11',
   'formal:theorems.name': 'the mechanised model', 'formal:theorems.factSound': "a verified fact equals the store's value", 'formal:theorems.registered': 'a judgment is verified only by a threshold the registry holds', 'formal:theorems.unresolved': 'what the verifier cannot resolve, it neither verifies nor fails', 'formal:theorems.checked': 'machine-checked',
   'techreport:sections.name': 'the technical report', 'techreport:sections.algorithm': 'verification algorithm', 'techreport:sections.comparison': 'comparison semantics', 'techreport:sections.rendering': 'rendering', 'techreport:sections.julyStudy': 'July 2026 study',
+  'spec:commonmark.name': 'CommonMark', 'spec:commonmark.noConflict': 'do not conflict with standard Markdown syntax',
   'runs:dates.name': 'the run dates', 'runs:dates.financeSmall': 'March 2026', 'runs:dates.educationSmall': 'the turn of July and August', 'formal:theorems.deploymentNamed': 'a judgment the deployment never named cannot be made checkable by the model',
   'reg:ixbrl.name': 'Inline XBRL', 'reg:ixbrl.age': 'more than a decade ago', 'reg:art50.name': 'the Article 50 guidelines', 'reg:art50.leadTime': 'two weeks before',
   'verifier:coverage.definition': 'the share of a text\'s numbers that sit inside a fact claim rather than in prose',
@@ -178,6 +179,11 @@ const bound = [
       q('reg:omnibus.deferredTo', '2 December 2026', 'omnibus2026', 'comply with Article 50(2) by 2 December 2026', 'Regulation (EU) 2026/1744, EUR-Lex, amended Article 113'),
       q('study:magesh.hallucinationRange', '17–33', 'magesh2025', 'each hallucinate between 17% and 33% of the time', 'arXiv 2405.20362 abstract', 'The abstract says "between 17% and 33% of the time"; the paper writes "17–33% of queries". Fair reading?'),
       q('study:liu.filings', 'more than a thousand', 'liu2026citations', 'we found over 1,000 filings containing fabricated citations', 'arXiv 2606.21155 abstract', 'The abstract says "over 1,000 filings"; the paper writes "more than a thousand". Fair?'),
+    ] },
+  { anchor: 'ProveML extends Markdown with three constructs', id: 'constructs', marks: [
+      ['that do not conflict with standard Markdown syntax', 'that %[spec:commonmark.noConflict]{do not conflict with standard Markdown syntax}'],
+    ], evidence: [
+      q('spec:commonmark.noConflict', 'do not conflict with standard Markdown syntax', 'cite-commonmark', 'Any characters not given an interpretation by the above rules will be parsed as plain textual content.', 'CommonMark 0.31.2, section 6.9', 'No rule of the specification gives @, % or ? an interpretation. The brackets after them are link syntax, resolved only against a reference definition the markup never creates; the braces are plain text. Fair reading?'),
     ] },
   { anchor: 'This paper is deliberately compact', id: 'intro-compact', marks: [
       ['(verification algorithm, comparison semantics, rendering)', '(%[techreport:sections.algorithm]{verification algorithm}, %[techreport:sections.comparison]{comparison semantics}, %[techreport:sections.rendering]{rendering})'],
