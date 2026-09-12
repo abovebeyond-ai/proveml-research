@@ -7616,5 +7616,62 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "p5680845b3eb2": {
+  "at": "2026-09-12T10:58:38.746Z",
+  "claims": [
+   {
+    "span": "Organizations deploy LLMs widely (Stanford HAI, 2026)",
+    "kind": "citation",
+    "why": "Confirm the cited Stanford HAI 2026 report actually supports the specific claim of widespread deployment, not just general AI adoption."
+   },
+   {
+    "span": "in consequential settings (Magesh et al., 2025)",
+    "kind": "citation",
+    "why": "Verify Magesh et al. 2025 is about LLM deployment in consequential (e.g. legal) settings and that 'consequential' matches their framing."
+   },
+   {
+    "span": "regulation now reaches AI-generated content (European Parliament and Council of the European Union, 2024; European Commission, 2026)",
+    "kind": "citation",
+    "why": "Check both citations exist, are correctly dated, and actually establish that regulation covers AI-generated content specifically."
+   },
+   {
+    "span": "European Parliament and Council of the European Union, 2024",
+    "kind": "date",
+    "why": "Confirm the year 2024 is the correct publication/enactment date for this EU instrument (e.g. AI Act)."
+   },
+   {
+    "span": "European Commission, 2026",
+    "kind": "date",
+    "why": "Confirm this European Commission source is correctly dated 2026 and not a placeholder/future date error."
+   },
+   {
+    "span": "the link generated text carries between a claim and the data behind it, a citation, is not one a machine can check against the claim (Onweller et al., 2026; Rao et al., 2026)",
+    "kind": "absence",
+    "why": "Verify both cited works actually support the strong absence claim that no machine-checkable link exists, rather than merely discussing citation quality issues."
+   },
+   {
+    "span": "milliseconds per response",
+    "kind": "number",
+    "why": "Confirm this latency figure is measured/benchmarked somewhere rather than asserted, and under what conditions."
+   },
+   {
+    "span": "three inline constructs",
+    "kind": "number",
+    "why": "Verify the count of constructs matches what is defined elsewhere in the paper/spec."
+   },
+   {
+    "span": "verified means equal to the store and that a threshold the registry does not hold can neither verify nor fail a judgment, are machine-checked",
+    "kind": "other",
+    "why": "Confirm these formal guarantees are actually proved/machine-checked (e.g. in Lean) as claimed, not just asserted informally."
+   },
+   {
+    "span": "Verification is deterministic, exact comparison against a flat key-value store with no model in the loop",
+    "kind": "other",
+    "why": "Check this characterization matches the actual implementation, since 'no model in the loop' is a strong absence claim about the verifier's design."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
