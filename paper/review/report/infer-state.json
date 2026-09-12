@@ -8179,5 +8179,57 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "p617481ed789e": {
+  "at": "2026-09-12T16:53:46.100Z",
+  "claims": [
+   {
+    "span": "what we measured in August and September 2026",
+    "kind": "date",
+    "why": "confirm the actual measurement window matches these months"
+   },
+   {
+    "span": "three then-current models (Claude Opus 5, Claude Sonnet 5 and DeepSeek V4 Pro)",
+    "kind": "citation",
+    "why": "confirm exact model names/versions and that these were indeed the models used, not other variants"
+   },
+   {
+    "span": "The complete specification (verification algorithm, comparison semantics, rendering) is in the accompanying technical report",
+    "kind": "other",
+    "why": "verify the technical report actually contains all three named components"
+   },
+   {
+    "span": "the technical report's July 2026 study of smaller models that preceded this one",
+    "kind": "historical",
+    "why": "confirm the study's date and that it chronologically precedes the current one"
+   },
+   {
+    "span": "its finance runs date from March 2026",
+    "kind": "date",
+    "why": "confirm the finance runs' actual date"
+   },
+   {
+    "span": "its education runs from the turn of July and August",
+    "kind": "date",
+    "why": "confirm the education runs' actual date"
+   },
+   {
+    "span": "whose results this paper cites in two places but does not reprint",
+    "kind": "number",
+    "why": "verify the exact count of citation locations and that no reprinting occurs"
+   },
+   {
+    "span": "the three-valued condition semantics is stated in Appendix B",
+    "kind": "other",
+    "why": "confirm this content is actually located in Appendix B"
+   },
+   {
+    "span": "Both documents are published in the artifact repository alongside every benchmark, every run the results draw on, and the scripts that regenerate every results table",
+    "kind": "absence",
+    "why": "strong completeness claim; confirm nothing is missing from the artifact repository"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
