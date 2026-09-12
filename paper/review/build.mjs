@@ -41,7 +41,7 @@ const store = {
   'study:frontier.residualErrors': 157, 'study:frontier.bindingErrors': 108, 'study:frontier.bindingShare': 69,
   'study:frontier.bindingQueryRuns': 17, 'study:frontier.nonConverged': 35, 'study:frontier.wrongValues': 40, 'study:frontier.wrongShare': 25,
   'bench:education.name': 'the education benchmark', 'bench:education.prompts': 28, 'bench:education.pupils': 741, 'bench:education.offerings': 95, 'bench:education.synthetic': 'generated',
-  'bench:finance.name': 'the finance benchmark', 'bench:finance.prompts': 10, 'bench:finance.entities': 2, 'bench:finance.fields': 11,
+  'bench:finance.name': 'the finance benchmark', 'bench:finance.prompts': 10, 'bench:finance.entities': 2, 'bench:finance.fields': 11, 'bench:finance.origin': 'real SEC EDGAR FY2025 filings', 'study:frontier.runsPer': 'Three runs per model and benchmark', 'study:frontier.correctionBudget': 'one correction pass',
   'model:opus5.name': 'Claude Opus 5', 'model:opus5.eduFirst': 86.5, 'model:opus5.eduFinal': 94.8, 'model:opus5.eduCoverage': 91.4,
   'model:opus5.finFirst': 97.9, 'model:opus5.finFinal': 100, 'model:opus5.finCoverage': 95.8, 'model:opus5.latency': 11.8, 'model:opus5.overhead': 49, 'model:opus5.generations': 1.33,
   'model:sonnet5.name': 'Claude Sonnet 5', 'model:sonnet5.eduFirst': 89.3, 'model:sonnet5.eduFinal': 92.2, 'model:sonnet5.eduCoverage': 92.3,
@@ -348,8 +348,11 @@ const bound = [
       ['and Claude Sonnet 5, released 30 June 2026', 'and @[model:sonnet5]{Claude Sonnet 5}, released %[model:sonnet5.released]{30 June 2026}'],
       ['and DeepSeek V4 Pro (', 'and @[model:deepseek]{DeepSeek V4 Pro} ('],
       ['28 English prompts over a generated educational dataset of 741 pupils in 95 class offerings', '%[bench:education.prompts]{28} English prompts over a %[bench:education.synthetic]{generated} educational dataset of %[bench:education.pupils]{741} pupils in %[bench:education.offerings]{95} class offerings'],
-      ['10 English prompts over real SEC EDGAR FY2025 filings (2 entities, 11 fields)', '%[bench:finance.prompts]{10} English prompts over real SEC EDGAR FY2025 filings (%[bench:finance.entities]{2} entities, %[bench:finance.fields]{11} fields)'],
-    ], evidence: [
+      ['10 English prompts over real SEC EDGAR FY2025 filings (2 entities, 11 fields)', '%[bench:finance.prompts]{10} English prompts over %[bench:finance.origin]{real SEC EDGAR FY2025 filings} (%[bench:finance.entities]{2} entities, %[bench:finance.fields]{11} fields)'],
+    
+      ['Three runs per model and benchmark, one correction pass', '%[study:frontier.runsPer]{Three runs per model and benchmark}, %[study:frontier.correctionBudget]{one correction pass}'],], evidence: [
+      q('study:frontier.runsPer', 'Three runs per model and benchmark', 'summary', 'runs per model and benchmark: 3; correction passes allowed (maxLoops in every run file): 1', 'frontier-summary.mjs, design line', 'Read off the run files: 3 per model and benchmark. Fair reading?'),
+      q('study:frontier.correctionBudget', 'one correction pass', 'summary', 'runs per model and benchmark: 3; correction passes allowed (maxLoops in every run file): 1', 'frontier-summary.mjs, design line', 'maxLoops is 1 in every run file. Fair reading?'),
       q('model:opus5.released', '24 July 2026', 'cite-anthropicopus5', 'Introducing Claude Opus 5 Jul 24, 2026 Claude Opus 5 is available today.', 'announcement, dateline', 'Dated 24 July and available that day. Fair reading?'),
       q('model:sonnet5.released', '30 June 2026', 'cite-anthropicsonnet5', 'From today, Claude Sonnet 5 is available across all plans', 'announcement, body; dateline Jun 30, 2026', 'Dated 30 June and available that day. Fair reading?'),
       q('bench:education.prompts', '28', 'benchmarks', 'education prompts: 28', 'pilot-en benchmark, prompts array'),
@@ -358,6 +361,7 @@ const bound = [
       ...(existsSync('report/sources/raw/pdpp-students.txt') ? [q('bench:education.pupils', '741', 'pdpp-students', 'records: 741', 'line 1', 'The same count received as records under a purpose-bound grant, one record per pupil, names withheld. Does the study rest on this many pupils?')] : []),
       q('bench:education.offerings', '95', 'dataset', 'offerings: 95', 'meta.offerings'),
       q('bench:finance.prompts', '10', 'benchmarks', 'finance prompts: 10', 'finance benchmark, prompts array'),
+      q('bench:finance.origin', 'real SEC EDGAR FY2025 filings', 'finance', 'note: FY2025 10-K filings for Apple Inc. and Microsoft Corporation. Values in USD (millions where noted in raw data, stored as filed).', 'benchmark metadata; source line: SEC EDGAR XBRL Company Facts API', 'Real filings, fiscal year 2025, from the SEC\'s own API. Fair reading?'),
       q('bench:finance.entities', '2', 'finance', 'companies: 2', 'companies array'),
       q('bench:finance.fields', '11', 'finance', 'fields per company: 11', 'per company, excluding id, name, cik and unit companions'),
     ] },
