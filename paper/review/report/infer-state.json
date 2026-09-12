@@ -8008,5 +8008,77 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "pafa26cbf858c": {
+  "at": "2026-09-12T12:14:36.578Z",
+  "claims": [
+   {
+    "span": "Clark et al., 2021",
+    "kind": "citation",
+    "why": "verify this study actually shows untrained readers cannot reliably distinguish LLM text from human text"
+   },
+   {
+    "span": "Jakesch et al., 2023",
+    "kind": "citation",
+    "why": "confirm the cited finding matches the claim about readers not distinguishing AI-generated text"
+   },
+   {
+    "span": "Jones and Bergen, 2026",
+    "kind": "citation",
+    "why": "future-dated citation (2026); confirm this work exists and is published/accepted, and check the year is correct"
+   },
+   {
+    "span": "readers who write with these models frequently still can (Russell et al., 2025)",
+    "kind": "citation",
+    "why": "verify this specific comparative finding (frequent co-writers retain detection ability) is what the cited paper actually claims"
+   },
+   {
+    "span": "Zhou et al., 2024",
+    "kind": "citation",
+    "why": "confirm this source supports the specific claim that deployed models rarely volunteer uncertainty even when wrong"
+   },
+   {
+    "span": "Xiong et al., 2024",
+    "kind": "citation",
+    "why": "confirm this source supports the claim that verbalised confidence tends to be overconfident"
+   },
+   {
+    "span": "Kalai et al., 2025",
+    "kind": "citation",
+    "why": "verify this source supports the causal claim about training pipelines rewarding confident guesses over admissions of ignorance"
+   },
+   {
+    "span": "the training pipeline rewards a confident guess over an admission of ignorance",
+    "kind": "causal",
+    "why": "causal/mechanistic claim about training incentives that needs direct support from the cited source rather than being an inference"
+   },
+   {
+    "span": "Ji et al., 2023",
+    "kind": "citation",
+    "why": "confirm this is an appropriate/accurate citation for the general hallucination phenomenon"
+   },
+   {
+    "span": "3–13% of the citation URLs supplied by commercial models and deep research agents having no archived record and likely never having existed",
+    "kind": "number",
+    "why": "verify this specific percentage range and the 'likely never having existed' interpretation against the cited source's actual findings and methodology"
+   },
+   {
+    "span": "Rao et al., 2026",
+    "kind": "citation",
+    "why": "future-dated citation (2026); confirm this work exists/is published and that the 3-13% figure is drawn accurately from it"
+   },
+   {
+    "span": "Cao et al., 2024",
+    "kind": "citation",
+    "why": "confirm this source supports the specific claim about numbers with no basis in the source"
+   },
+   {
+    "span": "Liu et al., 2023",
+    "kind": "citation",
+    "why": "confirm this source supports the specific claim about statements whose citations do not support them"
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
