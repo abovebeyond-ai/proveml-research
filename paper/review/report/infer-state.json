@@ -8231,5 +8231,42 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "p269fb5d010b5": {
+  "at": "2026-09-12T18:02:01.895Z",
+  "claims": [
+   {
+    "span": "PICARD, Scholak et al., 2021",
+    "kind": "citation",
+    "why": "Confirm author list, year, and venue for the PICARD paper are correct."
+   },
+   {
+    "span": "Synchromesh, Poesia et al., 2022",
+    "kind": "citation",
+    "why": "Confirm author list, year, and venue for the Synchromesh paper are correct."
+   },
+   {
+    "span": "makes that an application of known technique rather than a research program",
+    "kind": "characterization",
+    "why": "Asserts the cited grammar-constrained generation work is sufficient to reduce this future-work item to routine engineering; needs support that PICARD/Synchromesh's techniques actually transfer to ProveML's path/grammar constraints."
+   },
+   {
+    "span": "it would remove much of what we measure as addressability error",
+    "kind": "causal",
+    "why": "Predicts a quantitative effect on a specific error category without evidence or measurement backing the claim."
+   },
+   {
+    "span": "nothing refuses it yet",
+    "kind": "absence",
+    "why": "Absence claim about current system capability; should be confirmed against the actual implementation rather than asserted in passing."
+   },
+   {
+    "span": "a percent rule on a currency field renders nonsense over a correct verdict",
+    "kind": "other",
+    "why": "Specific illustrative claim about system behavior that should be confirmed with an actual example/test rather than presented as a given."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }

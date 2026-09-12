@@ -111,3 +111,5 @@ caught by reader (2026-09-12, Shane): the fact paragraph had no readings (the fl
 caught by reader (2026-09-12, Shane): "a registry defined outside generation" asked what enforces it; the verifier run now shows the same judgment unverifiable alone and verified once the deployment passes the registry in, and the phrase binds to it (push 99).
 2026-09-12T17:47:59Z push 100 | pass recorded 0 | verified 689/689 | blocks 161 | readings 672 | bound 316 | sources 114 | measure (own statements unanswered + judged no) 327+0
 caught by reader (2026-09-12, Shane): the store paragraph had few readings; the verifier run now shows the snapshot identifier, a materialised difference under a registered predicate, and the display rule, and four claims bind to those lines (push 100).
+2026-09-12T18:02:06Z push 101 | pass recorded 1 | verified 691/691 | blocks 161 | readings 674 | bound 316 | sources 114 | measure (own statements unanswered + judged no) 329+0
+caught by reader (2026-09-12, Shane): a display rule that disagrees with a field's unit renders nonsense over a correct verdict and nothing refuses it; named in future work (push 101).
