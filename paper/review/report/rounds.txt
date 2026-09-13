@@ -143,3 +143,5 @@ caught by reader (2026-09-12, Shane): the finance benchmark's origin and the run
 caught by reader (2026-09-12, Shane): the malformed-markup sentence in Appendix A packed three things; split in two (push 116).
 2026-09-12T19:57:34Z push 117 | pass recorded 0 | verified 685/685 | blocks 161 | readings 668 | bound 328 | sources 114 | measure (own statements unanswered + judged no) 287+0
 caught by reader (2026-09-12, Shane): "Lean 4, no dependencies beyond Lean" was a flagged span; list-theorems.mjs prints the toolchain and the lakefile's requirements (none) and the clause binds to it (push 117).
+2026-09-12T20:01:40Z push 118 | pass recorded 0 | verified 686/686 | blocks 161 | readings 669 | bound 329 | sources 114 | measure (own statements unanswered + judged no) 286+0
+caught by reader (2026-09-12, Shane): the empty-answer rule and its absence claim were flagged; the summary now counts empty and dropped answers (0 and 0) and the absence binds to it (push 118).
