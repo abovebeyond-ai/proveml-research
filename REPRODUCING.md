@@ -96,7 +96,7 @@ through Together AI, key in `~/.config/proveml/together-key` or `TOGETHER_API_KE
 cd experiments
 ./run-frontier.sh              # resume-safe: existing artifacts are skipped
 node frontier-summary.mjs      # Table 2 of the short paper
-node frontier-residuals.mjs    # the residual-error classification
+node frontier-residuals.mjs    # the residual-error classification (add --tag frontier2 for the second study)
 node deployment-numbers.mjs --tag frontier
 ```
 
