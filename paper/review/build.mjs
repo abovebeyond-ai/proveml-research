@@ -60,17 +60,20 @@ const store = {
   'model:deepseek.judgWith': '18.0', 'model:deepseek.judgPerRun': '41.3', 'model:deepseek.judgFirst': '100', 'model:deepseek.judgFinal': '100', 'model:deepseek.judgSound0': '8.0', 'model:deepseek.judgSound1': '8.0',
   'formal:vectors.name': 'the model vectors', 'formal:vectors.agree': '11', 'formal:vectors.total': '11',
   'formal:theorems.name': 'the mechanised model', 'formal:theorems.factSound': "a verified fact equals the store's value", 'formal:theorems.registered': 'a judgment is verified only by a threshold the registry holds', 'formal:theorems.unresolved': 'what the verifier cannot resolve, it neither verifies nor fails', 'formal:theorems.checked': 'machine-checked', 'formal:theorems.lean4': 'Lean 4', 'formal:theorems.noDeps': 'no dependencies beyond Lean',
-  'techreport:sections.name': 'the technical report', 'techreport:sections.algorithm': 'verification algorithm', 'techreport:sections.comparison': 'comparison semantics', 'techreport:sections.rendering': 'rendering', 'techreport:sections.julyStudy': 'July 2026 study',
+  'techreport:sections.name': 'the technical report', 'techreport:sections.symgen': "compares SymGen's substitution with ProveML on identical models, prompts and data", 'techreport:sections.algorithm': 'verification algorithm', 'techreport:sections.comparison': 'comparison semantics', 'techreport:sections.rendering': 'rendering', 'techreport:sections.julyStudy': 'July 2026 study',
   'spec:commonmark.name': 'CommonMark', 'spec:commonmark.noConflict': 'do not conflict with standard Markdown syntax', 'study:frontier.markupEvery': 'produced the markup on every query',
   'verifier:entity.nameCheck': 'checks the display name against the store', 'verifier:fact.equality': 'exact string equality', 'verifier:infer.noInvent': 'the model cannot invent a comparison value, a bound, or a direction', 'verifier:infer.outside': 'a registry defined outside generation', 'verifier:store.snapshot': 'deployments can bind a snapshot identifier to each result', 'techreport:sections.comparisonRule': 'string equality for entities and facts, typed comparison for thresholds', 'formal:theorems.notUu': 'of an unverifiable condition is still unverifiable', 'verifier:inputs.textOnly': 'it can equally audit text it did not generate', 'verifier:coverage.section2': 'the share of standalone numbers that sit inside a fact claim', 'verifier:strict.finding': 'in strict mode treats each number outside one as a finding', 'model:opus5.released': '24 July 2026', 'model:sonnet5.released': '30 June 2026', 'verifier:store.arithmetic': 'a cross-entity difference is materialized as an addressable fact', 'verifier:store.display': 'tells the renderer to show a verified', 'verifier:store.canonical': 'with the canonical value kept on the element and in the audit view', 'verifier:infer.unregistered': 'an unregistered name is an error rather than a claim', 'verifier:fact.outcomes': 'verified, mismatch, unverifiable (no such field), no context', 'formal:defs.binding': 'follows from the markup by fixed rules', 'formal:defs.carry': 'a fact outside binds to the last simple-form entity at the current depth', 'formal:theorems.scopeRestores': 'closing a scope restores the context that was in force when it opened',
   'runs:dates.name': 'the run dates', 'runs:dates.financeSmall': 'March 2026', 'runs:dates.educationSmall': 'the turn of July and August', 'formal:theorems.deploymentNamed': 'a judgment the deployment never named cannot be made checkable by the model',
   'reg:ixbrl.name': 'Inline XBRL', 'reg:ixbrl.age': 'more than a decade ago', 'reg:art50.name': 'the Article 50 guidelines', 'reg:art50.leadTime': 'two weeks before',
   'verifier:coverage.definition': 'the share of a text\'s numbers that sit inside a fact claim rather than in prose',
+  'verifier:store.dataLayer': 'where ProveML places it in the data layer', 'verifier:store.materialised': 'which ProveML can only bind once the aggregate is materialised as a fact',
+  'study:frontier.bindingMost': 'most of our own residue was a binding error, not a wrong value',
+  'work:claimlocked.name': 'claim-locked reporting', 'work:claimlocked.foreignText': 'giving up the ability to audit text it did not produce',
   'loop:plant.name': 'the planted-error run', 'loop:plant.planted': '43', 'loop:plant.bound': '9', 'loop:plant.number': '9', 'loop:plant.statement': '14', 'loop:plant.citation': '11', 'loop:plant.buildCaught': '9', 'loop:plant.flagged': '33', 'loop:plant.prose': '34', 'loop:plant.caught': '42', 'loop:plant.unplanted': '242', 'loop:plant.changes': '56', 'loop:plant.collateral': '13', 'loop:plant.defects': '42', 'loop:plant.known': '18', 'loop:plant.pageFaults': 'one', 'loop:plant.refutable': 'none',
   'study:judgment.name': 'the judgment study', 'study:judgment.registryNames': 'fourteen', 'study:judgment.firstRange': '78–100', 'study:judgment.finalRange': '98–100', 'study:judgment.total': '454', 'study:judgment.verifiedFirst': '411', 'study:judgment.verifiedFinal': '425', 'study:judgment.totalFinal': '427', 'study:judgment.falseFirst': '33', 'study:judgment.wordsLow': '18', 'study:judgment.wordsHigh': '26', 'study:judgment.commonest': 'the commonest failure is the word the question invited',
   'verifier:example.name': 'the verifier on the paper\'s example', 'verifier:example.canonical': '391035000000', 'verifier:example.rounded': 'fails', 'verifier:example.netIncome': '93736000000', 'verifier:example.shown': '$93.7 billion',
   'study:onweller.name': 'Onweller et al.', 'study:onweller.factualAccuracy': '39–77',
-  'study:rao.name': 'Rao et al.', 'study:rao.deepResearchRate': '10.7', 'study:rao.searchRate': '4.8',
+  'study:rao.name': 'Rao et al.', 'study:rao.deepResearchRate': '10.7', 'study:rao.searchRate': '4.8', 'study:rao.hallucinatedRange': '3–13',
   'study:liu.name': 'Liu et al.', 'study:liu.filings': 'more than a thousand',
   'study:frontier.coverageRange': '90–96', 'study:frontier.firstPassRange': '87–100', 'study:frontier.correctedRange': '92–100',
   'deploy:frontier.overheadRange': '49–79', 'deploy:frontier.secTotal': '0.66', 'deploy:frontier.msPerResponse': '2.6', 'deploy:frontier.perResponseUnit': 'milliseconds', 'deploy:frontier.msPerClaim': '0.30', 
@@ -115,14 +118,18 @@ const sentenceAround = (text, idx) => {
   while (semi > dot && !outsideParens(semi)) semi = text.lastIndexOf('; ', semi - 1);
   const a = Math.max(dot, semi, 0);
   const dotEnd = nextStop(idx);
-  const afterParens = (p) => { const seg = text.slice(idx, p); return (seg.split('(').length - 1) <= (seg.split(')').length - 1); };
+  // counted from the sentence's start, not from the citation: counted from inside "(Solatorio, 2025)" the closing
+  // bracket balanced the one that opened the parenthesis after it, and "; its paper describes" cut the sentence (2026-09-13)
+  const afterParens = (p) => { const seg = text.slice(a ? a + 2 : 0, p); return (seg.split('(').length - 1) <= (seg.split(')').length - 1); };
   let semiEnd = text.indexOf('; ', idx);
   while (semiEnd >= 0 && (dotEnd < 0 || semiEnd < dotEnd) && !afterParens(semiEnd)) semiEnd = text.indexOf('; ', semiEnd + 1);
   const ends = [dotEnd, semiEnd].filter((x) => x >= 0);
   const bEnd = ends.length ? Math.min(...ends) : -1;
-  return text.slice(a ? a + 2 : 0, bEnd < 0 ? text.length : bEnd + 1).replace(/\u27e6c:[^\u27e7]*\u27e7|\u27e6\/c\u27e7/g, '').trim();
+  // the sentence as the reader sees it: a bound mark shows its value, not its key ("%[study:aiindex.adoption]{70}%" stood in a citing sentence until 2026-09-13)
+  return text.slice(a ? a + 2 : 0, bEnd < 0 ? text.length : bEnd + 1).replace(/\u27e6c:[^\u27e7]*\u27e7|\u27e6\/c\u27e7/g, '').replace(/[%@?]\[[^\]]*\]\{([^}]*)\}/g, '$1').trim();
 };
 const MENTIONS = {};   // key -> [{ id, sent }], in page order: a citation reading lists the work's other mentions
+const COVERED = {};    // block id -> the paper's words a curated passage is tagged to (paperUse) in that block; inferSubject treats them as sourced
 const citify = (text, blockId, evidence) => {
   const seen = {};
   return text.replace(CITE, (whole, key, label, offset) => {
@@ -139,6 +146,7 @@ const citify = (text, blockId, evidence) => {
     const low = sent.toLowerCase();
     const tagged = all.filter((e) => Array.isArray(e.paperUse) && e.paperUse.some((w) => low.includes(String(w).toLowerCase())));
     const chosen = tagged.length ? tagged : all.filter((e) => !e.paperUse).length ? all.filter((e) => !e.paperUse) : all;
+    for (const e of tagged) for (const w of e.paperUse) if (low.includes(String(w).toLowerCase())) (COVERED[String(blockId)] ||= []).push(String(w));
     // One reading quotes one archive. Where the tagged quotes span the cited work and a companion
     // document (the Regulation and the Commission's announcement of it), the cited work wins.
     const own = chosen.filter((e) => !e.source || e.source === key);
@@ -281,7 +289,7 @@ const bound = [
       ['(9 in bound numbers, 9 in unbound numbers, 14 in own statements, 11 in citations', '(%[loop:plant.bound]{9} in bound numbers, %[loop:plant.number]{9} in unbound numbers, %[loop:plant.statement]{14} in own statements, %[loop:plant.citation]{11} in citations'],
       ['refused all 9 bound ones', 'refused all %[loop:plant.buildCaught]{9} bound ones'],
       ['marked 33 of the other 34', 'marked %[loop:plant.flagged]{33} of the other %[loop:plant.prose]{34}'],
-      ['42 of 43 in all', '%[loop:plant.caught]{42} of 43 in all'],
+      ['42 of 43 in all', '%[loop:plant.caught]{42} of %[loop:plant.planted]{43} in all'],
       ['On the 242 unplanted readings', 'On the %[loop:plant.unplanted]{242} unplanted readings'],
       ['confirmed 56 changes: 13 were', 'confirmed %[loop:plant.changes]{56} changes: %[loop:plant.collateral]{13} were'],
       ['42 were defects of the paper as it then stood (18 of them', '%[loop:plant.defects]{42} were defects of the paper as it then stood (%[loop:plant.known]{18} of them'],
@@ -465,7 +473,7 @@ const bound = [
       ['rises from 89.3% to 99.4%', 'rises from %[model:sonnet5.eduFirst]{89.3}% to %[model:sonnet5.edu2First]{99.4}%'],
       ['DeepSeek from 97.2% to 99.2% and to 100% after one correction', 'DeepSeek from %[model:deepseek.eduFirst]{97.2}% to %[model:deepseek.edu2First]{99.2}% and to %[model:deepseek.edu2Final]{100}% after one correction'],
       ['Opus 5 from 86.5% to 95.4%', 'Opus 5 from %[model:opus5.eduFirst]{86.5}% to %[model:opus5.edu2First]{95.4}%'],
-      ['are 16 in the second', 'are %[study:frontier2.bindingErrors]{16} in the second'],
+      ['The 108 binding errors of the first study are 16 in the second', 'The %[study:frontier.bindingErrors]{108} binding errors of the first study are %[study:frontier2.bindingErrors]{16} in the second'],
     ], evidence: [
       q('model:sonnet5.eduFirst', '89.3', 'summary', '89.3 ± 2.1', 'first study, education, claude-sonnet-5'),
       q('model:sonnet5.edu2First', '99.4', 'summary2', '99.4 ± 0.2', 'second study, education, claude-sonnet-5'),
@@ -474,6 +482,7 @@ const bound = [
       q('model:deepseek.edu2Final', '100', 'summary2', '100.0 ± 0.0', 'second study, education, DeepSeek, final%', 'Printed 100.0, written 100.'),
       q('model:opus5.eduFirst', '86.5', 'summary', '86.5 ± 0.3', 'first study, education, claude-opus-5'),
       q('model:opus5.edu2First', '95.4', 'summary2', '95.4 ± 7.5', 'second study, education, claude-opus-5'),
+      d('study:frontier.bindingErrors', '108', 'residuals', 'Pooled binding errors of the first study: 47 + 58 + 3 = 108.'),
       d('study:frontier2.bindingErrors', '16', 'summary2', 'CATCH. The published residuals script has no --tag option: under --tag frontier2 it reproduces the first study (71/82/4). The second study cannot be regenerated with it. The summary for the second study reports addressability errors of 80% of 25 (Opus 5) and 43% of 7 (Sonnet 5), about 23, a broader class than the binding pattern. The paper\'s 16 did not regenerate here. Your call.'),
     ] },
   { anchor: 'No model, on any of the', id: 'finding1', marks: [
@@ -495,7 +504,8 @@ const bound = [
       ['Of the 157 errors', 'Of the %[study:frontier.residualErrors]{157} errors'],
       ['108 (69%)', '%[study:frontier.bindingErrors]{108} (%[study:frontier.bindingShare]{69}%)'],
       ['17 of the 35 non-converged', '%[study:frontier.bindingQueryRuns]{17} of the %[study:frontier.nonConverged]{35} non-converged'],
-      ['Wrong values are 40 of the 157 (25%)', 'Wrong values are %[study:frontier.wrongValues]{40} of the 157 (%[study:frontier.wrongShare]{25}%)'],
+      ['Wrong values are 40 of the 157 (25%)', 'Wrong values are %[study:frontier.wrongValues]{40} of the %[study:frontier.residualErrors]{157} (%[study:frontier.wrongShare]{25}%)'],
+      ['that is why 108 is a floor', 'that is why %[study:frontier.bindingErrors]{108} is a floor'],
     ], evidence: [
       d('study:frontier.residualErrors', '157', 'residuals', 'Pooled over the three models: 71 + 82 + 4 = 157 residual errors.'),
       d('study:frontier.bindingErrors', '108', 'residuals', 'Pooled binding errors: 47 + 58 + 3 = 108.'),
@@ -540,6 +550,26 @@ const bound = [
     ], evidence: [
       q('impl:proveml.runtimeDeps', 'no', 'package', 'dependencies {}', 'package.json dependencies', 'The dependencies object is empty ({}); recorded as "no". Fair?'),
     ] },
+  { anchor: 'fabricated citations, 3–13% of the citation URLs', id: 'intro-hallucination', marks: [
+      ['fabricated citations, 3–13% of the citation URLs', 'fabricated citations, %[study:rao.hallucinatedRange]{3–13}% of the citation URLs'],
+    ], evidence: [
+      q('study:rao.hallucinatedRange', '3–13', 'cite-rao2026', 'We find that 3–13% of citation URLs are hallucinated—they have no record in the Wayback Machine and likely never existed', 'arXiv 2604.03173, abstract', 'The range across the ten systems studied; the paper\'s clause names the population as commercial models and deep research agents, which the abstract\'s next sentence and RQ1 do. Fair reading?'),
+    ] },
+  // Related work: what the paper says about the neighbours is carried by the tagged passages (paperUse in
+  // audit/references/related-work-claims.json); what it says about itself beside them is bound here.
+  { anchor: 'takes the opposite strategy', id: 'related-neighbours', marks: [
+      ["compares SymGen's substitution with ProveML on identical models, prompts and data", "%[techreport:sections.symgen]{compares SymGen's substitution with ProveML on identical models, prompts and data}"],
+      ['giving up the ability to audit text it did not produce', '%[work:claimlocked.foreignText]{giving up the ability to audit text it did not produce}'],
+      ['where ProveML places it in the data layer', '%[verifier:store.dataLayer]{where ProveML places it in the data layer}'],
+      ['most of our own residue was a binding error, not a wrong value', '%[study:frontier.bindingMost]{most of our own residue was a binding error, not a wrong value}'],
+      ['which ProveML can only bind once the aggregate is materialised as a fact', '%[verifier:store.materialised]{which ProveML can only bind once the aggregate is materialised as a fact}'],
+    ], evidence: [
+      q('techreport:sections.symgen', "compares SymGen's substitution with ProveML on identical models, prompts and data", 'techreport', 'SymGen reimplementation against ProveML on identical models, prompts and data', 'technical report, caption of the SymGen table (tab:symgen)', "The report reimplements SymGen's Direct strategy against the same fact stores, prompts, context slices and models as its own runs. Fair reading?"),
+      d('work:claimlocked.foreignText', 'giving up the ability to audit text it did not produce', 'cite-claimlocked2026', 'Not a sentence of the cited work but a consequence of its mechanism: the evidence source, numbers, direction and language strength are fixed before the model writes; text produced outside that protocol has nothing locked, so there is nothing to audit. Do you stand behind the inference?'),
+      q('verifier:store.dataLayer', 'where ProveML places it in the data layer', 'verifier', 'arithmetic in the data layer: the difference is stored as region:EU._salesDiff = 12000 USD; the fact %[_salesDiff]{12000 USD} is verified and the judgment ?[g: SALES_GAP_MATERIAL] against it is verified', 'arithmetic line', 'The verifier compares and never computes: a derived quantity is a stored value with a path. Fair reading?'),
+      d('study:frontier.bindingMost', 'most of our own residue was a binding error, not a wrong value', 'residuals', 'Binding errors 47 + 58 + 3 = 108 of 157 residual errors (69%); wrong values 20 + 19 + 1 = 40 (25%). Fair reading of "most"?'),
+      q('verifier:store.materialised', 'which ProveML can only bind once the aggregate is materialised as a fact', 'verifier', 'arithmetic in the data layer: the difference is stored as region:EU._salesDiff = 12000 USD; the fact %[_salesDiff]{12000 USD} is verified and the judgment ?[g: SALES_GAP_MATERIAL] against it is verified', 'arithmetic line', 'A fact reference resolves a path in the store; an aggregate that is not a stored value has no path, so it is bound only after something computes and stores it. Fair reading?'),
+    ] },
 ];
 
 const blocks = JSON.parse(readFileSync('report/paper1-blocks.json', 'utf8'));
@@ -559,7 +589,8 @@ if (handed && handed.judgements) for (const [rid, j] of Object.entries(handed.ju
 }
 const migrated = handed ? { ...handed, judgements: { ...handed.judgements } } : null;
 const QUESTION = ' Do you stand behind this as written, or should it be sourced or softened?';
-const inferSubject = (pidv, text) => {
+const hasNumber = (t) => /\d/.test(t.replace(/\b(?:Opus|Sonnet|Fable|Mythos|Haiku|Claude|GPT|Lean|Section|Table|Figure|Appendix|Finding|V)\s*\d[\w.-]*/g, '').replace(/\b(?:19|20)\d\d\b/g, ''));
+const inferSubject = (pidv, text, covered = []) => {
   const list = proposed[pidv]; if (!list || !list.length) return null;
   // Positions on the ORIGINAL text; a proposal that overlaps one already
   // placed is skipped (the model proposed a span inside a span once), and the
@@ -573,6 +604,11 @@ const inferSubject = (pidv, text) => {
   const view = (() => { const map = []; let out = ''; const re = /[%@?]\[[^\]]*\]\{([^}]*)\}/g; let last = 0, m;
     while ((m = re.exec(text))) { for (let i = last; i < m.index; i++) { map.push(i); out += text[i]; } const v0 = m.index + m[0].length - 1 - m[1].length; for (let i = 0; i < m[1].length; i++) { map.push(v0 + i); out += m[1][i]; } last = m.index + m[0].length; }
     for (let i = last; i < text.length; i++) { map.push(i); out += text[i]; } map.push(text.length); return { out, map }; })();
+  // Words a curated passage is tagged to (paperUse) are sourced: the citation reading shows that passage under
+  // exactly those words, so a proposal on them is the same question asked twice. Thirteen own-statement readings
+  // on the related-work paragraph on 2026-09-13 were clauses whose passages stood one reading above them.
+  const lowView = view.out.toLowerCase();
+  for (const w of covered) { const wl = w.toLowerCase(); for (let p = lowView.indexOf(wl); p >= 0; p = lowView.indexOf(wl, p + 1)) taken.push({ at: view.map[p], end: view.map[p + wl.length] }); }
   for (let c of list) {
     if (!c.span) continue;
     const pa = view.out.indexOf(c.span); if (pa < 0) continue;
@@ -589,11 +625,17 @@ const inferSubject = (pidv, text) => {
       for (const p of cuts) { if (p.at > from) segs.push([from, p.at]); from = Math.max(from, p.end); }
       if (from < end) segs.push([from, end]);
       const best = segs.map(([a, b]) => { const raw = text.slice(a, b); const lead = raw.match(/^[\s,;:()]+/)?.[0].length || 0; const tail = raw.match(/[\s,;:(]+$/)?.[0].length || 0; return [a + lead, b - tail]; })
-        .filter(([a, b]) => b > a).sort((x, y) => (y[1] - y[0]) - (x[1] - x[0]))[0];
+        // a stretch with a number in it wins over a longer one without: the number is what the pass exists for
+        // (a planted "3–18%" was cut away in favour of the longer tail behind a covered clause on 2026-09-13)
+        // a number here is a measured one: not the 5 of a model name, a year, or a cross-reference ("Sonnet 5 rises", "a 2026 survey")
+        .filter(([a, b]) => b > a).sort((x, y) => (hasNumber(text.slice(y[0], y[1])) ? 1 : 0) - (hasNumber(text.slice(x[0], x[1])) ? 1 : 0) || (y[1] - y[0]) - (x[1] - x[0]))[0];
       if (!best) continue;
       let segEnd = best[1];
       // a residue does not end on a colon or on a code span that introduced the mark ("... does not make it verified: `NOT`")
-      for (;;) { const t = text.slice(best[0], segEnd); const m = t.match(/(?:\s*[:;,]\s*|\s*`[^`]*`\s*|\s+)$/); if (!m || !m[0]) break; segEnd -= m[0].length; }
+      // nor on the connective that introduced the clause a mark or a passage carries ("shares ProveML's premise that", "decode-time grammars whose")
+      for (;;) { const t = text.slice(best[0], segEnd); const m = t.match(/(?:\s*[:;,]\s*|\s*`[^`]*`\s*|\s+|\s+(?:that|which|whose|while|though|so|because|where|when|as))$/i); if (!m || !m[0]) break; segEnd -= m[0].length; }
+      // a stretch that has its number but lost the noun after a preposition keeps the number and drops the preposition ("3–18% of the citation URLs supplied by")
+      if (hasNumber(text.slice(best[0], segEnd))) for (;;) { const t = text.slice(best[0], segEnd); const m = t.match(/\s+(?:to|of|at|by|from|the|a|an|and|or|in|on|for|with|than|versus|against|since|until|before|after|between|over|under|about|is|are|was|were)$/i); if (!m) break; segEnd -= m[0].length; }
       best[1] = segEnd;
       const seg = text.slice(best[0], best[1]);
       // what is left beside a mark must still be a claim: a number, or at least three words
@@ -601,6 +643,8 @@ const inferSubject = (pidv, text) => {
       if (/^[%‰°$€£)\]]/.test(seg)) continue;   // a unit sign or a closing bracket hanging off the mark it was cut from ("% after one correction")
       if (/^(?:is|are|was|were|has|have|had|does|do|did|and|or|than|that|which)\b/i.test(seg.trim())) continue;   // a tail whose subject is the mark it was cut from ("is in the accompanying technical report")
       if (/\b(?:to|of|at|by|from|the|a|an|and|or|in|on|for|with|than|versus|against|since|until|before|after|between|over|under|about|is|are|was|were|only|roughly|nearly|just|some|around)$/i.test(seg.trim())) continue;   // cut off in front of its number ("lifts the first pass to")
+      // a few words with no number, running straight into a mark or a covered clause, are that claim's subject, not a claim ("the technical report" before "compares SymGen's ...")
+      if (!/\d/.test(seg) && seg.trim().split(/\s+/).length <= 4 && taken.some((p) => p.at >= best[1] && /^\s*(?:that|which|whose|while|though|so|because|where|when|as)?\s*$/i.test(text.slice(best[1], p.at)))) continue;
       at = best[0]; end = best[1]; c = { ...c, span: seg };
     }
     if (/^[\s,;:]*\(?\s*%\[citation:/.test(text.slice(end))) continue;
@@ -661,8 +705,12 @@ blocks.forEach((b, i) => {
   if (hit) {
     used.add(hit.id);
     const pidv = infId(b);
+    // A paragraph that was unbound until now was judged under its hash; bound, it is judged under its name.
+    // Carry the judgements across (the page rekeys a citation by work within a paragraph), or binding the
+    // paragraph would ask again what was answered (ten citations of the hallucination paragraph, 2026-09-13).
+    if (migrated) for (const [rid, j] of Object.entries(migrated.judgements)) if (j && j.src === pidv && !j.inference) migrated.judgements[rid] = { ...j, src: hit.id };
     let ev = [...hit.evidence]; let claim = citify(mark(neutralize(b.text), hit.marks, hit.id), hit.id, ev);
-    const inf = inferSubject(pidv, claim); if (inf) { claim = inf.claim; ev = [...ev, ...inf.evidence]; }
+    const inf = inferSubject(pidv, claim, COVERED[hit.id]); if (inf) { claim = inf.claim; ev = [...ev, ...inf.evidence]; }
     ev = inTextOrder(claim, ev);
     subjects.push({ id: hit.id, title: b.lead || hit.id, meta: '', pre: b.kind === 'table', scan: b.kind === 'table' ? undefined : scanOf(pidv, inf), claim, evidence: ev });
     return;
@@ -681,7 +729,7 @@ blocks.forEach((b, i) => {
   const id = pid(b.text);
   let cev = []; let ctext = citify(neutralize(b.text), id, cev); cev = inTextOrder(ctext, cev);
   if (cev.length) {
-    const inf = inferSubject(id, ctext); if (inf) { ctext = inf.claim; cev = inTextOrder(ctext, [...cev, ...inf.evidence]); }
+    const inf = inferSubject(id, ctext, COVERED[id]); if (inf) { ctext = inf.claim; cev = inTextOrder(ctext, [...cev, ...inf.evidence]); }
     subjects.push({ id, title: b.lead || '', meta: '', pre: b.kind === 'table', capLead: cm ? cm[1] : undefined, scan: scanOf(id, inf), claim: ctext, evidence: cev }); return;
   }
   const inf = b.kind === 'table' ? null : inferSubject(id, neutralize(b.text));

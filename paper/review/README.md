@@ -78,6 +78,12 @@ taught what each step is for and where it goes wrong.
    - Cheap signal for a work cited in several sentences with quotes tagged per sentence
      (`paperUse` in `related-work-claims.json`): when none of the sentence's content words
      appear in the quotes shown for it, the tagging is suspect.
+   - A `paperUse` tag is the paper's words the passage is shown under, so it also tells the
+     flag pass those words are sourced: a proposal on them is the citation reading's question
+     asked twice, and is cut to what lies outside them (since 2026-09-13, when thirteen own
+     statements on the related-work paragraph were clauses whose passages stood one reading
+     above). Tag the whole clause the passage backs, not a selector for it: a tag that covers
+     half a clause leaves the other half as a scrap.
    - Change text only on a verdict with evidence: false, or a quote that does not carry the
      use. Leave "stands" alone.
 5. **Read.** Awkward wording, an ambiguous "may not", a block too dense. A person, once, on
