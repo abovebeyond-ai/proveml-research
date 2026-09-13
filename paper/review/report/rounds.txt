@@ -155,3 +155,4 @@ caught by planted run (2026-09-13): seven plants no longer located in the paper 
 2026-09-13T07:26:35Z push 120 | pass recorded 0 | verified 678/678 | blocks 161 | readings 658 | bound 336 | sources 114 | measure (own statements unanswered + judged no) 267+0
 caught by reader (2026-09-13, Shane): a judged citation clicked in the paper stayed folded in the panel; the page script unfolds it now (proveml #44, push 120).
 caught by reader (2026-09-13, Shane): the operator's word for the workbench is a signature on the YubiKey (#operator-2), verified by the gateway against the DID document; this line is the first proposal made under it.
+caught by reader (2026-09-13, Shane): the identity moved to did:webvh:…:abovebeyond.ai:id after the first log was closed by a mistaken key generation; this line is the first proposal admitted by #operator under the successor.
