@@ -8611,5 +8611,102 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "pe3f560ebb981": {
+  "at": "2026-09-13T18:56:21.582Z",
+  "claims": [
+   {
+    "span": "Claude Opus 5, released 24 July 2026",
+    "kind": "date",
+    "why": "Release date should be verified against Anthropic's official announcement."
+   },
+   {
+    "span": "close to the frontier intelligence of Claude Fable 5 at half the price",
+    "kind": "citation",
+    "why": "Direct quote attributed to Anthropic needs to be checked against the actual source text for accuracy and context."
+   },
+   {
+    "span": "(Anthropic, 2026)",
+    "kind": "citation",
+    "why": "Generic year-only citation should resolve to a specific, verifiable source (blog post, press release, or model card)."
+   },
+   {
+    "span": "Claude Sonnet 5, released 30 June 2026",
+    "kind": "date",
+    "why": "Release date should be verified against Anthropic's official announcement."
+   },
+   {
+    "span": "DeepSeek-V4-Pro-0813",
+    "kind": "citation",
+    "why": "Exact model identifier/version string should be confirmed against the vendor's release naming."
+   },
+   {
+    "span": "1.6T parameters with 49B active",
+    "kind": "number",
+    "why": "Parameter counts for DeepSeek V4 Pro need to be confirmed against the official model card or technical report."
+   },
+   {
+    "span": "open weights under the MIT licence",
+    "kind": "citation",
+    "why": "Licence claim should be checked against the actual repository/model card, as MIT is unusual for very large weight releases."
+   },
+   {
+    "span": "(DeepSeek-AI, 2026)",
+    "kind": "citation",
+    "why": "Generic year-only citation should resolve to a specific, verifiable source."
+   },
+   {
+    "span": "names Mythos 5 as stronger on some tasks",
+    "kind": "citation",
+    "why": "Characterization of Anthropic's announcement should be checked for accuracy against the actual wording and scope of the claim."
+   },
+   {
+    "span": "we ran neither",
+    "kind": "absence",
+    "why": "Absence claim (models not tested) should be confirmed as accurate and consistent with the rest of the methodology."
+   },
+   {
+    "span": "28 English prompts over a generated educational dataset of 741 pupils in 95 class offerings",
+    "kind": "number",
+    "why": "Dataset size and prompt counts should match the actual benchmark files/generator output."
+   },
+   {
+    "span": "10 English prompts over real SEC EDGAR FY2025 filings (2 entities, 11 fields)",
+    "kind": "number",
+    "why": "Benchmark size and filing counts should be verified against the actual EDGAR data used."
+   },
+   {
+    "span": "Three runs per model and benchmark, one correction pass",
+    "kind": "number",
+    "why": "Experimental design counts should match the run logs/artifacts."
+   },
+   {
+    "span": "no run on either benchmark produced one",
+    "kind": "absence",
+    "why": "Absence claim (no empty answers) should be verifiable from the run logs, not just asserted."
+   },
+   {
+    "span": "no run produced an inference construct",
+    "kind": "absence",
+    "why": "Absence claim about markup construct usage should be checked against actual run outputs."
+   },
+   {
+    "span": "20 planted errors, all caught",
+    "kind": "number",
+    "why": "Conformance test result should be verified against Appendix A's actual test data and outcomes."
+   },
+   {
+    "span": "Every number in this section regenerates from the published runs",
+    "kind": "causal",
+    "why": "Reproducibility claim should be checked by actually running the cited scripts against the published run data."
+   },
+   {
+    "span": "an oracle retriever, which makes the rates an upper bound conditional on retrieval",
+    "kind": "causal",
+    "why": "Causal/methodological claim about what the oracle retriever implies should be checked for correctness of reasoning."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }

@@ -22,6 +22,7 @@ const read = (f) => readFileSync('report/sources/raw/' + f, 'utf8').trimEnd();
 const snapshots = {
   benchmarks: read('benchmarks.txt'), dataset: read('dataset-meta.txt'), finance: read('finance.txt'),
   summary: read('frontier-summary.txt'), residuals: read('frontier-residuals.txt'),
+  ...(existsSync('report/sources/raw/frontier2-residuals.txt') ? { residuals2: read('frontier2-residuals.txt') } : {}),
   deployment: read('deployment-numbers.txt'), package: read('package.txt'), summary2: read('frontier2-summary.txt'),
   ...(existsSync('report/sources/raw/verifier-check.txt') ? { verifier: read('verifier-check.txt') } : {}),
   ...(existsSync('report/sources/raw/judgment-summary.txt') ? { judgment: read('judgment-summary.txt') } : {}),
@@ -483,7 +484,7 @@ const bound = [
       q('model:opus5.eduFirst', '86.5', 'summary', '86.5 ± 0.3', 'first study, education, claude-opus-5'),
       q('model:opus5.edu2First', '95.4', 'summary2', '95.4 ± 7.5', 'second study, education, claude-opus-5'),
       d('study:frontier.bindingErrors', '108', 'residuals', 'Pooled binding errors of the first study: 47 + 58 + 3 = 108.'),
-      d('study:frontier2.bindingErrors', '16', 'summary2', 'CATCH. The published residuals script has no --tag option: under --tag frontier2 it reproduces the first study (71/82/4). The second study cannot be regenerated with it. The summary for the second study reports addressability errors of 80% of 25 (Opus 5) and 43% of 7 (Sonnet 5), about 23, a broader class than the binding pattern. The paper\'s 16 did not regenerate here. Your call.'),
+      q('study:frontier2.bindingErrors', '16', 'residuals2', 'binding: 16 (64%) in 3 query-runs', 'second study, education, claude-opus-5', 'The residuals script took a --tag on 2026-09-13, after this reading first flagged that the second study could not be regenerated with it; the other two models have none. The summary line for the second study counts addressability more broadly (80% of 25 and 43% of 7, about 23), which is why the binding figure comes from the classifier and not from it.'),
     ] },
   { anchor: 'No model, on any of the', id: 'finding1', marks: [
       ['342 query-runs', '%[study:frontier.queryRuns]{342} query-runs'],
@@ -773,7 +774,7 @@ for (const [id, text] of Object.entries(snapshots)) manifests[id] = buildManifes
 const committedReview = migrated;
 const sourceTitles = {
   benchmarks: 'benchmark files (regenerated)', dataset: 'dataset metadata', finance: 'finance benchmark', summary: 'frontier study summary (experiments/run-frontier.sh)',
-  residuals: 'frontier residual errors', deployment: 'deployment numbers (deployment-numbers.mjs)', verifier: 'the verifier on the paper\'s example (verifier-check.mjs)', judgment: 'judgment study summary (judgment-summary.mjs over judgment-results-*.json)', formal: 'the package against the mechanised model (formal/check-vectors.mjs)', theorems: 'the mechanised model: Lean build, sorry count, every theorem (formal/list-theorems.mjs)', techreport: 'the technical report (paper/proveml-technical-report.tex, as text)', dates: 'when each study ran, from the timestamps in the run files (experiments/run-dates.mjs)', plant: 'the planted-error run over the review loop (paper/review/plant/run.mjs score)', package: 'the npm package (package.json)', summary2: 'second frontier study summary (--tag frontier2)',
+  residuals: 'frontier residual errors', residuals2: 'second frontier study residual errors (--tag frontier2)', deployment: 'deployment numbers (deployment-numbers.mjs)', verifier: 'the verifier on the paper\'s example (verifier-check.mjs)', judgment: 'judgment study summary (judgment-summary.mjs over judgment-results-*.json)', formal: 'the package against the mechanised model (formal/check-vectors.mjs)', theorems: 'the mechanised model: Lean build, sorry count, every theorem (formal/list-theorems.mjs)', techreport: 'the technical report (paper/proveml-technical-report.tex, as text)', dates: 'when each study ran, from the timestamps in the run files (experiments/run-dates.mjs)', plant: 'the planted-error run over the review loop (paper/review/plant/run.mjs score)', package: 'the npm package (package.json)', summary2: 'second frontier study summary (--tag frontier2)',
   magesh2025: 'Magesh et al. 2025, arXiv 2405.20362 (abstract page)', liu2026citations: 'Liu et al. 2026, arXiv 2606.21155 (abstract page)',
   omnibus2026: 'Regulation (EU) 2026/1744, EUR-Lex', art50guidelines2026: 'Article 50 guidelines, European Commission',
   'pdpp-students': 'pupil records, stream students, under a PDPP grant',

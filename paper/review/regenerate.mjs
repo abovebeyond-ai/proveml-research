@@ -27,6 +27,7 @@ const RUNS = [
   { id: 'summary', out: 'frontier-summary.txt', cwd: REPO + '/experiments', cmd: ['node', 'frontier-summary.mjs'] },
   { id: 'summary2', out: 'frontier2-summary.txt', cwd: REPO + '/experiments', cmd: ['node', 'frontier-summary.mjs', '--tag', 'frontier2'] },
   { id: 'residuals', out: 'frontier-residuals.txt', cwd: REPO + '/experiments', cmd: ['node', 'frontier-residuals.mjs'] },
+  { id: 'residuals2', out: 'frontier2-residuals.txt', cwd: REPO + '/experiments', cmd: ['node', 'frontier-residuals.mjs', '--tag', 'frontier2'] },
   { id: 'deployment', out: 'deployment-numbers.txt', cwd: REPO + '/experiments', cmd: ['node', 'deployment-numbers.mjs', '--tag', 'frontier'] },
   { id: 'dataset', out: 'dataset-meta.txt', cwd: process.cwd(), cmd: ['python3', 'meta-sources.py', REPO, 'dataset'] },
   { id: 'benchmarks', out: 'benchmarks.txt', cwd: process.cwd(), cmd: ['python3', 'meta-sources.py', REPO, 'benchmarks'] },

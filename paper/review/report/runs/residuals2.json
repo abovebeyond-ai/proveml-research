@@ -1,0 +1,21 @@
+{
+ "id": "residuals2",
+ "snapshot": "frontier2-residuals.txt",
+ "command": "node frontier-residuals.mjs --tag frontier2",
+ "cwd": "<repo>/experiments",
+ "repo": {
+  "path": "/Volumes/shanedeconinck.be/Projects/proveml-all/proveml-research",
+  "commit": "4d90d75",
+  "branch": "main",
+  "uncommittedChanges": 9
+ },
+ "startedAt": "2026-09-13T18:53:27.381Z",
+ "durationMs": 28,
+ "exitCode": 0,
+ "stdoutSha256": "faf27ad93d1c5a828ccbc23152c1f79c0d0028d96cfb84dec271484adeb9c934",
+ "stdoutBytes": 486,
+ "snapshotSha256": null,
+ "sameAsSnapshot": false,
+ "stderrTail": [],
+ "node": "v24.13.0"
+}
