@@ -49,21 +49,30 @@
         "claimValue": "claim-bound tokens tied to structured claims",
         "basis": "quote",
         "sourceQuote": "Under PCN, numeric spans are emitted as claim-bound tokens tied to structured claims, and a verifier checks each token under a declared policy",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "claim-bound numeric tokens"
+        ]
       },
       {
         "field": "verificationSite",
         "claimValue": "the renderer, not the model",
         "basis": "quote",
         "sourceQuote": "Crucially, PCN places verification in the renderer , not the model: only claim-checked numbers are marked as verified",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "deterministically verified in the renderer"
+        ]
       },
       {
         "field": "policies",
         "claimValue": "declared policies such as exact equality, rounding, aliases, or tolerance",
         "basis": "quote",
         "sourceQuote": "a verifier checks each token under a declared policy (e.g., exact equality, rounding, aliases, or tolerance with qualifiers)",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "declared tolerance policies"
+        ]
       },
       {
         "field": "notCovered",
@@ -76,14 +85,20 @@
         "claimValue": "Under PCN, a number is marked as “verified” only if it is bound to an authoritative claim and passes deterministic checks at the presentation layer.",
         "basis": "quote",
         "sourceQuote": "Under PCN, a number is marked as “verified” only if it is bound to an authoritative claim and passes deterministic checks at the presentation layer.",
-        "sourceLocator": "Section 2"
+        "sourceLocator": "Section 2",
+        "paperUse": [
+          "deterministically verified in the renderer"
+        ]
       },
       {
         "field": "scope",
         "claimValue": "PCN secures numeric fidelity only.",
         "basis": "quote",
         "sourceQuote": "PCN secures numeric fidelity only.",
-        "sourceLocator": "Section 6.1"
+        "sourceLocator": "Section 6.1",
+        "paperUse": [
+          "neither entity scoping in prose nor a named vocabulary for qualitative judgments"
+        ]
       }
     ],
     "note": "Archived copy is now the arXiv full text (HTML); the words qualitative and vocabulary do not occur in it, and entity occurs only as a field of the claim tuple, which is the absence the paper relies on."
@@ -113,7 +128,7 @@
         "sourceQuote": "as perceived by the user and by reducing the average verification time by 20%.",
         "sourceLocator": "Section 1, Introduction (full text)",
         "paperUse": [
-          "verification time by 20"
+          "reduced average verification time by 20%"
         ]
       },
       {
@@ -123,7 +138,9 @@
         "sourceQuote": "A parser then substitutes the symbolic references with their corresponding values in the structured data (e.g., Portland for visitor . city ) to obtain the final rendered text (3).",
         "sourceLocator": "Section 2, Figure 2 caption (full text)",
         "paperUse": [
-          "a parser substitutes the values"
+          "takes the opposite strategy",
+          "a parser substitutes the values",
+          "a value that arrives through a plain field reference is copied from the data rather than written by the model"
         ]
       },
       {
@@ -133,7 +150,7 @@
         "sourceQuote": "Although it is capable of generating accurate symbolic references, the surrounding context text may still be incorrect, thus leading to verifiable but incorrect generations.",
         "sourceLocator": "Section 6, limitations (full text)",
         "paperUse": [
-          "surrounding prose"
+          "a number the model writes in the surrounding prose can be wrong too, as its own limitations section says"
         ]
       },
       {
@@ -143,7 +160,7 @@
         "sourceQuote": "symbolic references may be incorrect even when the final text is accurate; for example if two fields in our data have the same value, but a symbolic reference is made to the wrong field, then the rendered text would be correct but not the reference",
         "sourceLocator": "Section 4.1 (full text)",
         "paperUse": [
-          "reference to the wrong field"
+          "a reference to the wrong field still renders a wrong one"
         ]
       },
       {
@@ -153,7 +170,7 @@
         "sourceQuote": "The references can be used to display the provenance of different spans of text in the generation, reducing the effort required for manual verification.",
         "sourceLocator": "abstract",
         "paperUse": [
-          "left to the reader"
+          "verification is left to the reader"
         ]
       },
       {
@@ -163,7 +180,7 @@
         "sourceQuote": "Our SymGen pipeline can implicitly leverage the input data to generate prose without any symbolic references",
         "sourceLocator": "Section 2, Figure 2 caption (full text)",
         "paperUse": [
-          "surrounding prose"
+          "a number the model writes in the surrounding prose can be wrong too"
         ]
       },
       {
@@ -173,7 +190,7 @@
         "sourceQuote": "a simple approach for enabling easier manual validation of an LLM’s output",
         "sourceLocator": "abstract",
         "paperUse": [
-          "left to the reader"
+          "verification is left to the reader"
         ]
       },
       {
@@ -183,7 +200,7 @@
         "sourceQuote": "LLM verification is an orthogonal improvement to the reliability of LLMs, where the output of an LLM is automatically verified.",
         "sourceLocator": "Section 7, related work (full text)",
         "paperUse": [
-          "nothing in the pipeline reports"
+          "nothing in the pipeline reports it"
         ]
       }
     ],
@@ -202,7 +219,10 @@
         "claimValue": "the evidence source, numbers, direction, and allowed language strength of each reportable claim before the LLM writes only connective prose",
         "basis": "quote",
         "sourceQuote": "fixes the evidence source, numbers, direction, and allowed language strength of each reportable claim before the LLM writes only connective prose",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose"
+        ]
       },
       {
         "field": "foreignText",
@@ -215,7 +235,10 @@
         "claimValue": "restate thresholded contrasts as categorical effects",
         "basis": "quote",
         "sourceQuote": "restate thresholded contrasts as categorical effects",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "qualitative wording must be tied to a declared threshold"
+        ]
       }
     ]
   },
@@ -232,28 +255,40 @@
         "claimValue": "operands in filed XBRL facts",
         "basis": "quote",
         "sourceQuote": "grounds operands in filed XBRL facts",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "checks financial claims against XBRL facts"
+        ]
       },
       {
         "field": "solver",
         "claimValue": "Z3",
         "basis": "quote",
         "sourceQuote": "checks claims using Z3",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "with the Z3 solver"
+        ]
       },
       {
         "field": "derives",
         "claimValue": "derives calculations from the question, filing linkbases, or documented metric definitions",
         "basis": "quote",
         "sourceQuote": "derives calculations from the question, filing linkbases, or documented metric definitions",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "placing the arithmetic in the verifier"
+        ]
       },
       {
         "field": "cores",
         "claimValue": "solver-derived unsatisfiable cores identify the conflicting facts, formula, and candidate value",
         "basis": "quote",
         "sourceQuote": "solver-derived unsatisfiable cores identify the conflicting facts, formula, and candidate value",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "placing the arithmetic in the verifier"
+        ]
       }
     ]
   },
@@ -270,21 +305,30 @@
         "claimValue": "incorrectly citing or omitting table values",
         "basis": "quote",
         "sourceQuote": "data referencing errors (DREs), i.e., incorrectly citing or omitting table values",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "values miscited from a table the model was shown"
+        ]
       },
       {
         "field": "detector",
         "claimValue": "trained a lightweight 4B-parameter critic model that achieves an average F1 score of 78.2% in detecting both in-distribution and out-of-distribution DREs",
         "basis": "quote",
         "sourceQuote": "trained a lightweight 4B-parameter critic model that achieves an average F1 score of 78.2% in detecting both in-distribution and out-of-distribution DREs",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "detect it with a trained critic"
+        ]
       },
       {
         "field": "evaluation",
         "claimValue": "we present the first systematic evaluation of tabular data referencing errors across different models and tasks",
         "basis": "quote",
         "sourceQuote": "we present the first systematic evaluation of tabular data referencing errors across different models and tasks",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "measure a neighbouring failure class"
+        ]
       }
     ]
   },
@@ -301,21 +345,30 @@
         "claimValue": "Supported, Refuted or NotEnoughInfo",
         "basis": "quote",
         "sourceQuote": "claims are classified as Supported, Refuted or NotEnoughInfo",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "in which a trained model judges support"
+        ]
       },
       {
         "field": "dataset",
         "claimValue": "a new publicly available dataset for verification against textual sources",
         "basis": "quote",
         "sourceQuote": "a new publicly available dataset for verification against textual sources",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "canonical benchmark lineage"
+        ]
       },
       {
         "field": "pipeline",
         "claimValue": "we develop a pipeline approach and compare it to suitably designed oracles. The best accuracy we achieve on labeling a claim accompanied by the correct evidence is 31.87%",
         "basis": "quote",
         "sourceQuote": "we develop a pipeline approach and compare it to suitably designed oracles. The best accuracy we achieve on labeling a claim accompanied by the correct evidence is 31.87%",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "in which a trained model judges support"
+        ]
       }
     ]
   },
@@ -332,21 +385,30 @@
         "claimValue": "16k Wikipedia tables as the evidence for 118k human-annotated natural language statements",
         "basis": "quote",
         "sourceQuote": "16k Wikipedia tables as the evidence for 118k human-annotated natural language statements",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "canonical benchmark lineage"
+        ]
       },
       {
         "field": "labels",
         "claimValue": "ENTAILED or REFUTED",
         "basis": "quote",
         "sourceQuote": "labeled as either ENTAILED or REFUTED",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "in which a trained model judges support"
+        ]
       },
       {
         "field": "model",
         "claimValue": "Table-BERT leverages the state-of-the-art pre-trained language model to encode the linearized tables and statements into continuous vectors for verification.",
         "basis": "quote",
         "sourceQuote": "Table-BERT leverages the state-of-the-art pre-trained language model to encode the linearized tables and statements into continuous vectors for verification.",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "in which a trained model judges support"
+        ]
       }
     ]
   },
@@ -363,28 +425,40 @@
         "claimValue": "87,026 verified claims",
         "basis": "quote",
         "sourceQuote": "consists of 87,026 verified claims",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "canonical benchmark lineage"
+        ]
       },
       {
         "field": "evidence",
         "claimValue": "sentences and/or cells from tables",
         "basis": "quote",
         "sourceQuote": "evidence in the form of sentences and/or cells from tables",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "canonical benchmark lineage"
+        ]
       },
       {
         "field": "label",
         "claimValue": "a label indicating whether this evidence supports, refutes, or does not provide enough information to reach a verdict",
         "basis": "quote",
         "sourceQuote": "a label indicating whether this evidence supports, refutes, or does not provide enough information to reach a verdict",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "in which a trained model judges support"
+        ]
       },
       {
         "field": "baseline",
         "claimValue": "we develop a baseline for verifying claims against text and tables which predicts both the correct evidence and verdict for 18% of the claims",
         "basis": "quote",
         "sourceQuote": "we develop a baseline for verifying claims against text and tables which predicts both the correct evidence and verdict for 18% of the claims",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "in which a trained model judges support"
+        ]
       }
     ]
   },
@@ -401,7 +475,10 @@
         "claimValue": "NLI models applied at the right granularity",
         "basis": "quote",
         "sourceQuote": "In this work, we revisit the use of NLI for inconsistency detection, finding that past work suffered from a mismatch in input granularity between NLI datasets (sentence-level), and inconsistency detection (document level).",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "score responses after generation"
+        ]
       }
     ]
   },
@@ -418,7 +495,10 @@
         "claimValue": "AlignScore is based on a general function of information alignment between two arbitrary text pieces. Crucially, we develop a unified training framework of the alignment function by integrating a large diversity of data sources, resulting in 4.7M training examples",
         "basis": "quote",
         "sourceQuote": "AlignScore is based on a general function of information alignment between two arbitrary text pieces. Crucially, we develop a unified training framework of the alignment function by integrating a large diversity of data sources, resulting in 4.7M training examples",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "score responses after generation"
+        ]
       }
     ]
   },
@@ -435,7 +515,10 @@
         "claimValue": "small fact-checking models with GPT-4-level performance at 400x lower cost",
         "basis": "quote",
         "sourceQuote": "small fact-checking models that have GPT-4-level performance but for 400x lower cost",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "score responses after generation"
+        ]
       },
       {
         "field": "grounding",
@@ -449,7 +532,10 @@
         "claimValue": "Current approaches to this kind of fact-checking are based on verifying each piece of a model generation against potential evidence using an LLM",
         "basis": "quote",
         "sourceQuote": "Current approaches to this kind of fact-checking are based on verifying each piece of a model generation against potential evidence using an LLM",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "score responses after generation"
+        ]
       }
     ]
   },
@@ -466,7 +552,10 @@
         "claimValue": "generated content into atomic claims, each verified by a compact encoder-based entailment model",
         "basis": "quote",
         "sourceQuote": "generated content is decomposed into atomic claims, each verified by a compact encoder-based entailment model",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "score responses after generation"
+        ]
       }
     ]
   },
@@ -483,21 +572,30 @@
         "claimValue": "recasts claim verification as a semantic query processing task",
         "basis": "quote",
         "sourceQuote": "recasts claim verification as a semantic query processing task",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "verifies aggregate claims over relational data as queries"
+        ]
       },
       {
         "field": "aggregate",
         "claimValue": "the resulting semantic aggregate may contain claims that are not grounded in the underlying relation",
         "basis": "quote",
         "sourceQuote": "the resulting semantic aggregate may contain claims that are not grounded in the underlying relation",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "verifies aggregate claims over relational data as queries"
+        ]
       },
       {
         "field": "compiles",
         "claimValue": "Evergreen compiles each claim into a declarative semantic verification query that can execute on the same query engine used to produce the aggregate",
         "basis": "quote",
         "sourceQuote": "Evergreen compiles each claim into a declarative semantic verification query that can execute on the same query engine used to produce the aggregate",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "verifies aggregate claims over relational data as queries"
+        ]
       }
     ]
   },
@@ -514,14 +612,20 @@
         "claimValue": "structured inline citations linking each claim to both its source document and supporting evidence",
         "basis": "quote",
         "sourceQuote": "generates structured inline citations linking each claim to both its source document and supporting evidence",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "structured inline citation"
+        ]
       },
       {
         "field": "strategies",
         "claimValue": "FullCite proposes three strategies to inline citation generation: prompt-based generation, constrained decoding over a citation grammar, and posthoc span alignment.",
         "basis": "quote",
         "sourceQuote": "FullCite proposes three strategies to inline citation generation: prompt-based generation, constrained decoding over a citation grammar, and posthoc span alignment.",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "constrained-generation route"
+        ]
       }
     ]
   },
@@ -538,7 +642,10 @@
         "claimValue": "a tightening operator replaces open reference positions with Gamma-typed slots whose candidates are exactly the names, fields, APIs, or options available at that point",
         "basis": "quote",
         "sourceQuote": "a tightening operator replaces open reference positions with Gamma-typed slots whose candidates are exactly the names, fields, APIs, or options available at that point",
-        "sourceLocator": "abstract"
+        "sourceLocator": "abstract",
+        "paperUse": [
+          "reference slots admit only declared names"
+        ]
       }
     ]
   },
@@ -1792,7 +1899,7 @@
         "sourceQuote": "It’s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.",
         "sourceLocator": "announcement, opening paragraph",
         "paperUse": [
-          "close to the frontier intelligence"
+          "close to the frontier intelligence of Claude Fable 5 at half the price"
         ]
       }
     ]
@@ -1842,7 +1949,7 @@
         "sourceQuote": "two strong Mixture-of-Experts (MoE) language models — DeepSeek-V4-Pro with 1.6T parameters (49B activated) and DeepSeek-V4-Flash with 284B parameters (13B activated)",
         "sourceLocator": "model card, Introduction",
         "paperUse": [
-          "1.6T parameters"
+          "1.6T parameters with 49B active"
         ]
       },
       {
@@ -1852,7 +1959,7 @@
         "sourceQuote": "This repository and the model weights are licensed under the MIT License .",
         "sourceLocator": "model card, License",
         "paperUse": [
-          "MIT licence"
+          "open weights under the MIT licence"
         ]
       }
     ]

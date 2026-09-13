@@ -8459,5 +8459,157 @@
   ],
   "state": "checked",
   "by": "claude sonnet, build-time pass"
+ },
+ "pc187b2be0760": {
+  "at": "2026-09-13T05:53:13.911Z",
+  "claims": [
+   {
+    "span": "RDFa binds spans of prose to entities in a structured vocabulary and assumes the author meant it (W3C, 2015)",
+    "kind": "citation",
+    "why": "Characterization of RDFa's semantics should be checked against the actual W3C spec."
+   },
+   {
+    "span": "iXBRL embeds machine-readable tags in financial reports for automated audit (XBRL International, 2013)",
+    "kind": "citation",
+    "why": "Purpose/date attributed to iXBRL standard should be verified against the source."
+   },
+   {
+    "span": "Proof-Carrying Numbers (Solatorio, 2025) is the nearest neighbor",
+    "kind": "comparison",
+    "why": "Claim of closest relation to ProveML is a judgment call that should be justified/confirmed."
+   },
+   {
+    "span": "claim-bound numeric tokens, deterministically verified in the renderer, with declared tolerance policies",
+    "kind": "citation",
+    "why": "Technical characterization of the cited system's mechanism needs to match its paper."
+   },
+   {
+    "span": "its paper describes neither entity scoping in prose nor a named vocabulary for qualitative judgments",
+    "kind": "absence",
+    "why": "Absence claim about what a cited paper does not contain requires a careful re-read to confirm."
+   },
+   {
+    "span": "SymGen (Torroba Hennigen et al., 2024) takes the opposite strategy: the model emits references and a parser substitutes the values",
+    "kind": "citation",
+    "why": "Mechanism attributed to SymGen should be verified against its paper."
+   },
+   {
+    "span": "a reference to the wrong field still renders a wrong one and nothing in the pipeline reports it, since verification is left to the reader",
+    "kind": "absence",
+    "why": "Strong claim that SymGen's pipeline reports nothing on wrong-field references needs verification."
+   },
+   {
+    "span": "a number the model writes in the surrounding prose can be wrong too, as its own limitations section says",
+    "kind": "citation",
+    "why": "Attributes a specific admission to SymGen's limitations section; should be quoted/checked verbatim."
+   },
+   {
+    "span": "the technical report compares SymGen's substitution with ProveML on identical models, prompts and data",
+    "kind": "other",
+    "why": "Claim about the authors' own technical report's experimental setup should be confirmed as accurate."
+   },
+   {
+    "span": "Claim-locked reporting (Fan et al., 2026) is the 2026 form of that strategy",
+    "kind": "date",
+    "why": "Publication year 2026 and characterization as successor strategy should be checked."
+   },
+   {
+    "span": "the numbers, their direction and the permitted strength of language are fixed before the model writes connective prose",
+    "kind": "citation",
+    "why": "Mechanism attributed to Fan et al. needs to match the cited paper's actual method."
+   },
+   {
+    "span": "shares ProveML's premise that qualitative wording must be tied to a declared threshold",
+    "kind": "comparison",
+    "why": "Claim of shared premise with ProveML is an interpretive comparison that should be justified."
+   },
+   {
+    "span": "while giving up the ability to audit text it did not produce",
+    "kind": "comparison",
+    "why": "Limitation attributed to the cited method should be verified as accurate and fair."
+   },
+   {
+    "span": "VeriFin (Hall et al., 2026) checks financial claims against XBRL facts with the Z3 solver",
+    "kind": "citation",
+    "why": "Technical description of VeriFin's verification mechanism (Z3 solver) needs confirmation."
+   },
+   {
+    "span": "placing the arithmetic in the verifier where ProveML places it in the data layer",
+    "kind": "comparison",
+    "why": "Architectural comparison between VeriFin and ProveML should be checked for accuracy."
+   },
+   {
+    "span": "Yang et al. (2026) measure a neighbouring failure class — values miscited from a table the model was shown — and detect it with a trained critic",
+    "kind": "citation",
+    "why": "Characterization of Yang et al.'s method and failure class should match their paper."
+   },
+   {
+    "span": "most of our own residue was a binding error, not a wrong value (Section 3)",
+    "kind": "number",
+    "why": "Proportion claim ('most') about the authors' own error analysis should be confirmed against Section 3 data."
+   },
+   {
+    "span": "FEVER (Thorne et al., 2018), TabFact (Chen et al., 2020), FEVEROUS (Aly et al., 2021)",
+    "kind": "date",
+    "why": "Publication years for these benchmark papers should be verified."
+   },
+   {
+    "span": "in which a trained model judges support",
+    "kind": "citation",
+    "why": "Generalization about the benchmark lineage's methodology should be checked for accuracy across all three."
+   },
+   {
+    "span": "SummaC, Laban et al., 2022; AlignScore, Zha et al., 2023; MiniCheck, Tang et al., 2024; HallDetect, Oukelmoun et al., 2026",
+    "kind": "date",
+    "why": "Multiple citation years grouped together should each be individually verified."
+   },
+   {
+    "span": "score responses after generation",
+    "kind": "citation",
+    "why": "Generalized characterization of these five+ systems' timing/mechanism should be confirmed for each."
+   },
+   {
+    "span": "Evergreen (Lee et al., 2026) verifies aggregate claims over relational data as queries",
+    "kind": "citation",
+    "why": "Mechanism attributed to Evergreen should be checked against its source."
+   },
+   {
+    "span": "which ProveML can only bind once the aggregate is materialised as a fact",
+    "kind": "other",
+    "why": "Claim about ProveML's own limitation relative to Evergreen should be confirmed as accurate."
+   },
+   {
+    "span": "structured inline citation (Yeginbergen et al., 2026)",
+    "kind": "citation",
+    "why": "Characterization/date of this cited work should be verified."
+   },
+   {
+    "span": "decode-time grammars whose reference slots admit only declared names (Zhang et al., 2026)",
+    "kind": "citation",
+    "why": "Technical mechanism attributed to Zhang et al. should be verified against the source."
+   },
+   {
+    "span": "To our knowledge, no existing framework combines inline claim markup, deterministic mismatch detection against structured data, and composable threshold inference in a single system.",
+    "kind": "absence",
+    "why": "Strong novelty/absence claim depends entirely on the completeness of the literature sweep and could be falsified by an unlisted system."
+   },
+   {
+    "span": "We screened the titles and abstracts of the papers in the ACL 2026 main, short, findings and industry volumes against concept patterns for claim-level attribution, structured-data faithfulness, symbolic or deterministic verification, provenance and markup schemes, then read the resulting candidates by hand.",
+    "kind": "historical",
+    "why": "Methodology claim about the literature search process should be confirmed as actually performed as described."
+   },
+   {
+    "span": "The sweep was not preserved as a runnable artifact, so this is the result of a search rather than an exhaustive negative.",
+    "kind": "other",
+    "why": "Self-caveat about reproducibility should be checked that no artifact exists and this framing is accurate."
+   },
+   {
+    "span": "Table 5 places the neighbours; the technical report discusses the earlier ones in full.",
+    "kind": "other",
+    "why": "Cross-reference to Table 5 and the technical report should be confirmed to exist and match content described."
+   }
+  ],
+  "state": "checked",
+  "by": "claude sonnet, build-time pass"
  }
 }
