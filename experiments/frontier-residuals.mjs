@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
  * What the residual errors of the frontier runs are, by mechanism.
- * Reads the education artifacts (tag frontier), looks at the errors still
+ * Reads the education artifacts of one tag (--tag frontier, the default, or
+ * --tag frontier2 for the second study), looks at the errors still
  * standing on non-converged queries after the last step, and classifies each:
  *   student-field-under-offering  a pupil field (passRate, passed, evaluated,
  *                                 total, absent) bound to an offering entity:
@@ -16,9 +17,13 @@ import { readFileSync, readdirSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
+const tagArg = process.argv.indexOf('--tag');
+const TAG = tagArg > -1 ? process.argv[tagArg + 1] : 'frontier';
+if (!/^[\w.-]+$/.test(TAG || '')) { console.error('usage: frontier-residuals.mjs [--tag <tag>]'); process.exit(2); }
+const FILES = new RegExp(`^convergence-results-${TAG}-.*-run\\d\\.json$`);
 const STUDENT_FIELDS = new Set(['passRate', 'passed', 'evaluated', 'total', 'absent']);
 const byModel = {};
-for (const f of readdirSync(__dirname).filter(f => /^convergence-results-frontier-.*-run\d\.json$/.test(f))) {
+for (const f of readdirSync(__dirname).filter(f => FILES.test(f))) {
     const d = JSON.parse(readFileSync(join(__dirname, f), 'utf8'));
     const m = (byModel[d.model] ||= { total: 0, queries: 0, affectedQueries: 0, classes: {} });
     for (const q of d.results) {
@@ -37,6 +42,7 @@ for (const f of readdirSync(__dirname).filter(f => /^convergence-results-frontie
         if (bindingHere) m.affectedQueries++;
     }
 }
+if (!Object.keys(byModel).length) { console.error(`no run files for tag ${TAG}`); process.exit(1); }
 for (const [model, m] of Object.entries(byModel)) {
     const pct = (k) => m.total ? `${m.classes[k] || 0} (${Math.round(100 * (m.classes[k] || 0) / m.total)}%)` : '0';
     console.log(`${model}: ${m.total} residual errors on ${m.queries} non-converged query-runs; binding: ${pct('student-field-under-offering')} in ${m.affectedQueries} query-runs; threshold-as-fact: ${pct('threshold-as-fact')}; wrong value: ${pct('wrong-value')}; other: ${pct('other')}`);
