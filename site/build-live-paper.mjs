@@ -22,6 +22,7 @@
  *   <out>/proveml-paper-live.html   rendered fragment (site CSS classes)
  *   <out>/proveml-paper-live.json   { claims, verified, generated }
  *   <out>/proveml-paper-live.pml.txt  the raw markup
+ *   <out>/proveml-paper-live.store.json  the fact store, registry and provenance it verified against
  *
  * Default out: ~/Projects/abovebeyond/src/generated/
  */
@@ -250,5 +251,14 @@ writeFileSync(join(outDir, 'proveml-paper-live.json'), JSON.stringify({
     source: 'proveml-research site/build-live-paper.mjs — verified against the frontier run artifacts at build time',
 }, null, 2) + '\n');
 writeFileSync(join(outDir, 'proveml-paper-live.pml.txt'), BODY.trim() + '\n');
+// The store and registry the markup was verified against, so the site can run the same
+// verification itself with the proveml it ships. Without this file the page could only
+// SAY it was verified: three frozen files, nothing on the receiving end that could rerun
+// them, and a package bump that changed a verdict would never have been noticed.
+writeFileSync(join(outDir, 'proveml-paper-live.store.json'), JSON.stringify({
+    facts: factStore,
+    thresholds: registry,
+    provenance,
+}, null, 2) + '\n');
 
 console.log(`${result.verified}/${result.total} claims verified — fragment written to ${outDir}`);
