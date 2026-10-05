@@ -170,7 +170,8 @@ elsewhere.
 fetched sources and their provenance, the judgements handed back and the model pass state.
 The rendered page, the manifests and the inclusion proofs are not committed; the build makes
 them again from these. Keys live outside the repository, in `~/.config/proveml/`:
-`abovebeyond-signing.jwk`, `hedera-operator.json`, `rekor-key.pem`, `vana-key.json`.
+key-1 (a YubiKey slot named by `abovebeyond-key-1.key.json`, or until then the file
+`abovebeyond-signing.jwk`), `hedera-operator.json`, `rekor-key.pem`, `vana-key.json`.
 
 Known not to reproduce byte for byte: `deployment-numbers.mjs` prints timings, and a rerun
 differs from the snapshot; the run record says so and the page shows it.
@@ -181,4 +182,7 @@ differs from the snapshot; the run record says so and the page shows it.
 proveml pull request #19 or later, `npm link ../proveml` until it is published), plus
 `@hashgraph/sdk` and `ethers` from this folder's `package.json`. `sign-review.mjs` uses the
 credential adapter in the sibling `proveml-demos` checkout (`PROVEML_DEMOS` to point
-elsewhere).
+elsewhere) and opens key-1 through `scripts/key-1.mjs` in the sibling `abovebeyond` checkout
+(`ABOVEBEYOND`), so it signs on the token once key-1 lives there. Sign-offs since then name
+`did:web:abovebeyond.ai:id`; the earlier ones keep `did:web:abovebeyond.ai` and verify against
+its document, which keeps the old key.
